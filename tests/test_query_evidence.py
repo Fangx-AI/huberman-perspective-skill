@@ -78,6 +78,25 @@ class EvidenceQueryTests(unittest.TestCase):
         results = MODULE.query_cards(self.cards, "stothart")
         self.assertEqual(results[0]["review_id"], "stothard-2017-natural-light-seasons-weekend")
 
+    def test_active_retrieval_query_returns_bounded_three_card_cluster(self) -> None:
+        results = MODULE.query_cards(self.cards, "主动提取 测试效应 长期保持 反馈")
+        self.assertEqual(
+            [item["review_id"] for item in results[:3]],
+            [
+                "dunlosky-2013-effective-learning-techniques-review",
+                "roediger-karpicke-2006-test-enhanced-learning",
+                "karpicke-roediger-2008-repeated-retrieval",
+            ],
+        )
+        review = MODULE.concise_record(results[0], self.cards, self.relations)
+        self.assertEqual(len(review["related_evidence"]), 2)
+        self.assertTrue(all(item["direction"] == "outgoing" for item in review["related_evidence"]))
+        self.assertTrue(all(item["relation"] == "qualifies" for item in review["related_evidence"]))
+        first_experiment = MODULE.concise_record(results[1], self.cards, self.relations)
+        self.assertEqual({item["relation"] for item in first_experiment["related_evidence"]}, {"supports", "qualifies"})
+        self.assertIn("反馈", review["safe_interpretation"])
+        self.assertIn("固定", review["safe_interpretation"])
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

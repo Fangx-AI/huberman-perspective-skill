@@ -28,8 +28,10 @@ class PublicSnapshotTests(unittest.TestCase):
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
         self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
-        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 114)
-        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 507)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 116)
+        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 33)
+        self.assertEqual(sum(row["verification_status"] == "verified-observational" for row in rows), 21)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 504)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -94,7 +96,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 10)
+        self.assertGreaterEqual(len(cards), 13)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])

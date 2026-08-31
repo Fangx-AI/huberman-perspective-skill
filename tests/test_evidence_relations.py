@@ -22,7 +22,7 @@ class EvidenceRelationTests(unittest.TestCase):
 
     def test_committed_relations_validate(self) -> None:
         MODULE.validate_relations(self.cards, self.relations)
-        self.assertGreaterEqual(len(self.relations), 4)
+        self.assertGreaterEqual(len(self.relations), 7)
 
     def test_natural_light_followup_is_support_not_independent_replication(self) -> None:
         relation = next(
@@ -33,6 +33,25 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertEqual(relation["relation"], "supports")
         self.assertIn("不是独立复制", relation["boundary"])
         self.assertIn("作者重叠", relation["boundary"])
+
+    def test_retrieval_followup_is_support_not_independent_replication(self) -> None:
+        relation = next(
+            item
+            for item in self.relations
+            if item["relation_id"] == "karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval"
+        )
+        self.assertEqual(relation["relation"], "supports")
+        self.assertIn("不是独立复制", relation["boundary"])
+
+    def test_narrative_review_qualifies_both_retrieval_experiments(self) -> None:
+        relations = [
+            item
+            for item in self.relations
+            if item["source_review_id"] == "dunlosky-2013-effective-learning-techniques-review"
+        ]
+        self.assertEqual(len(relations), 2)
+        self.assertTrue(all(item["relation"] == "qualifies" for item in relations))
+        self.assertTrue(any("不是荟萃分析" in item["boundary"] for item in relations))
 
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])

@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.6.0] - 2026-08-31
+
+### Added
+
+- Added Roediger and Karpicke (2006), Karpicke and Roediger (2008), and Dunlosky et al. (2013) cards as an active-retrieval evidence cluster, preserving immediate-versus-delayed performance, no-feedback, spacing, transfer and wrong-answer-intrusion boundaries.
+- Added one bounded `supports` relation between the two same-team experiments and two `qualifies` relations from the narrative review; the later experiment is explicitly not labeled an independent replication.
+- Added Chinese retrieval, relation-direction, review-scope schema and queue-distribution regression tests.
+
+### Changed
+
+- Review cards now encode `sample_size` as a non-empty review-scope description rather than a fictitious participant count; original and observational studies still require a positive integer.
+- Promoted two queue records to `verified-study` and one to `verified-review`, yielding 116 study, 33 review, 21 observational and 504 bibliographic-only rows while keeping 674 verified and 75 pending totals unchanged.
+- Expanded the graph to 13 study cards, 63 findings, 84 limitations, 54 evidence topics, seven evidence relations, 6,023 resource nodes and 8,607 edges.
+
 ## [0.5.0] - 2026-08-31
 
 ### Added

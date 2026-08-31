@@ -9,10 +9,10 @@
 - 425 个官方 Episode 元数据记录
 - 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
 - 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
-- 749 个 Show Notes 学术/医学来源，674 个已核验、75 个待核验；其中 114 条已完成原始研究级核查，待核验来源已按修复原因分流
-- 10 张结构化高关联研究证据卡：7 张回写 9 条 Show Notes 来源记录，3 张为不改变队列统计的外部反证/限定卡
-- 4 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习证据三角与自然明暗周期的同实验室后续支持
-- 研究证据图谱包含 10 个研究卡、47 个结果/阴性发现、63 个局限、40 个证据主题及 4 个研究关系节点，共 8,538 条可追溯关系
+- 749 个 Show Notes 学术/医学来源，674 个已核验、75 个待核验；其中 116 条原始研究、33 条综述、21 条观察研究和 504 条仅书目确认，待核验来源已按修复原因分流
+- 13 张结构化高关联研究证据卡：10 张连接 12 条 Show Notes 来源记录，3 张为不改变队列统计的外部反证/限定卡
+- 7 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期与主动提取/测试效应证据簇
+- 研究证据图谱包含 13 个研究卡、63 个结果/阴性发现、84 个局限、54 个证据主题及 7 个研究关系节点，共 8,607 条可追溯关系
 - 40 个脱敏的主张定位记录
 - 8 个课程、讲座、AMA 或机构访谈入口
 
@@ -71,6 +71,7 @@ python scripts/query_evidence.py "咖啡因 多巴胺"
 python scripts/query_evidence.py "睡眠 运动学习 巩固"
 python scripts/query_evidence.py "睡眠 稳定 运动学习"
 python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
+python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
 python scripts/query_evidence.py "gratitude inflammation" --json
 ```
 
@@ -106,4 +107,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.5.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。
+当前版本：`0.6.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。

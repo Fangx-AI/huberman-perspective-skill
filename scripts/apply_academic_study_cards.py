@@ -73,7 +73,11 @@ def validate_cards(cards: list[dict]) -> None:
             raise ValueError(f"queue_urls must be a list for {review_id}")
         if source_scope == "external-context" and ("queue_urls" not in card or card["queue_urls"]):
             raise ValueError(f"external-context cards must declare an empty queue_urls list for {review_id}")
-        if not isinstance(card["sample_size"], int) or card["sample_size"] <= 0:
+        sample_size = card["sample_size"]
+        if card["verification_status"] == "verified-review":
+            if not isinstance(sample_size, str) or not sample_size.strip():
+                raise ValueError(f"sample_size must be a non-empty review-scope string for {review_id}")
+        elif not (isinstance(sample_size, int) and not isinstance(sample_size, bool) and sample_size > 0):
             raise ValueError(f"sample_size must be a positive integer for {review_id}")
         for field in ("source_urls", "provenance_urls", "topic_tags", "outcomes", "null_findings", "limitations"):
             if not isinstance(card[field], list) or not card[field]:

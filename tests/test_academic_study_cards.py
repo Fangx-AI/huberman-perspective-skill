@@ -19,7 +19,25 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertGreaterEqual(len(self.cards), 10)
+        self.assertGreaterEqual(len(self.cards), 13)
+
+    def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
+        card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
+        self.assertEqual(card["verification_status"], "verified-review")
+        self.assertIsInstance(card["sample_size"], str)
+        self.assertIn("叙述性综述", card["sample_size"])
+
+    def test_sample_size_schema_rejects_empty_review_scope_and_nonpositive_study_counts(self) -> None:
+        review = dict(next(item for item in self.cards if item["verification_status"] == "verified-review"))
+        review["sample_size"] = "  "
+        with self.assertRaisesRegex(ValueError, "review-scope"):
+            MODULE.validate_cards([review])
+        study = dict(next(item for item in self.cards if item["verification_status"] == "verified-study"))
+        for invalid in (0, True, "40"):
+            with self.subTest(invalid=invalid):
+                study["sample_size"] = invalid
+                with self.assertRaisesRegex(ValueError, "positive integer"):
+                    MODULE.validate_cards([study])
 
     def test_stothard_card_uses_the_exact_circadian_article_url(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "stothard-2017-natural-light-seasons-weekend")

@@ -144,6 +144,12 @@ def check() -> list[str]:
                 review_ids.add(review_id)
                 if not card.get("null_findings") or not card.get("limitations") or not card.get("safe_interpretation"):
                     errors.append(f"study card lacks negative findings/boundaries at line {line_number}")
+                sample_size = card.get("sample_size")
+                if card.get("verification_status") == "verified-review":
+                    if not isinstance(sample_size, str) or not sample_size.strip():
+                        errors.append(f"review card lacks a review-scope sample_size at line {line_number}")
+                elif not (isinstance(sample_size, int) and not isinstance(sample_size, bool) and sample_size > 0):
+                    errors.append(f"study card lacks a positive integer sample_size at line {line_number}")
                 if not all(url.startswith("https://") for url in card.get("provenance_urls", [])):
                     errors.append(f"study card lacks HTTPS provenance at line {line_number}")
                 queue_urls = card.get("queue_urls", card.get("source_urls", []))
@@ -153,7 +159,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 10:
+        if card_count < 13:
             errors.append(f"too few study cards: {card_count}")
 
     evidence_relations: list[dict] = []
@@ -179,7 +185,7 @@ def check() -> list[str]:
                     errors.append(f"evidence relation lacks rationale/boundary at line {line_number}")
         if not evidence_relations:
             errors.append("evidence relation catalog is empty")
-        elif len(evidence_relations) < 4:
+        elif len(evidence_relations) < 7:
             errors.append(f"too few evidence relations: {len(evidence_relations)}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"

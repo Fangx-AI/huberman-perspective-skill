@@ -5,15 +5,15 @@
     "claim_nodes": 40,
     "claims": 40,
     "course_lecture_nodes": 8,
-    "edges": 8538,
+    "edges": 8607,
     "episode_nodes": 425,
     "episodes": 425,
-    "evidence_relation_nodes": 4,
-    "evidence_topic_nodes": 40,
+    "evidence_relation_nodes": 7,
+    "evidence_topic_nodes": 54,
     "resource_nodes": 6023,
-    "study_card_nodes": 10,
-    "study_finding_nodes": 47,
-    "study_limitation_nodes": 63,
+    "study_card_nodes": 13,
+    "study_finding_nodes": 63,
+    "study_limitation_nodes": 84,
     "top_topics": [
       {
         "count": 58,
@@ -121,13 +121,13 @@
     "video_urls": 8,
     "youtube_nodes": 424
   },
-  "generated_at": "2026-08-31T03:48:57.380328+00:00",
+  "generated_at": "2026-08-31T04:47:37.511913+00:00",
   "raw_payloads_included": false,
   "schema": "public-release-manifest-v1",
   "sha256": {
     "claim-index.jsonl": "34291a1ec0dbcebcccebde8e6ce5e2a3a24a7914035d6346e6d85bfdc0bade0d",
     "episodes.csv": "1f0204093ca0080e46b01c117a8ab5f413e83fa837de59ce5d8f8f71184cd039",
-    "knowledge-graph.json": "3967858e1bc470797bc8ec7d3d87a88f4a88ea7a10f02bb8528a223aeebf3a95",
+    "knowledge-graph.json": "516a97f103dbc64e70496677a8e4e44aef8afb27ed89e132fdcdb03b994daf68",
     "video-urls.csv": "54d0f495f54e1af0bcb1ae22488eee73d7f784ce37d458d9d168193593aec0d9"
   }
 }
