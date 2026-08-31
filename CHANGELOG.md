@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.5.0] - 2026-08-31
+
+### Added
+
+- Added Wright et al. (2013) and Stothard et al. (2017) natural-light/circadian study cards with participant counts, light exposure, melatonin phase shifts, sleep outcomes, null findings and dose-extrapolation boundaries.
+- Added a typed `supports` relation from the seasonal/weekend follow-up to the 2013 summer camping study, explicitly recording shared authors, the same laboratory and reused summer data so it is not mislabeled as independent replication.
+- Added Chinese retrieval and source-identity regression tests, including an exact Current Biology URL guard against a similarly formatted but unrelated article.
+
+### Changed
+
+- Expanded the graph to 10 study cards, 47 findings, 63 limitations, 40 evidence topics, four evidence relations, 6,023 resource nodes and 8,538 edges.
+- Kept the 749-row Episode Show Notes queue and its 674 verified rows unchanged while raising graph-level verified academic resources to 676 through one additional external-context card.
+- Clarified contribution rules for independent replication versus same-laboratory support or qualification.
+
 ## [0.4.1] - 2026-08-31
 
 ### Added

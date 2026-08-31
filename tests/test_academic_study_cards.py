@@ -19,7 +19,16 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertGreaterEqual(len(self.cards), 8)
+        self.assertGreaterEqual(len(self.cards), 10)
+
+    def test_stothard_card_uses_the_exact_circadian_article_url(self) -> None:
+        card = next(item for item in self.cards if item["review_id"] == "stothard-2017-natural-light-seasons-weekend")
+        self.assertEqual(
+            MODULE.queue_urls(card),
+            ["https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6"],
+        )
+        self.assertEqual(card["search_aliases"], ["stothart"])
+        self.assertNotIn("S0960-9822(17)30504-3", " ".join(card["provenance_urls"]))
 
     def test_application_is_idempotent(self) -> None:
         rows = [

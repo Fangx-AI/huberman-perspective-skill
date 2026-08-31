@@ -10,6 +10,7 @@ Contributions are welcome when they improve traceability, evidence quality, safe
 4. Do not present mechanism, animal evidence or a single study as settled human efficacy.
 5. Health changes must state population, design, primary outcome, uncertainty, contraindications and when professional care is needed.
 6. Replication or counterevidence not cited in Episode Show Notes must use `source_scope=external-context` and `queue_urls=[]`; never add it to the Episode queue merely to satisfy card validation.
+7. Use `replicates` only for genuinely independent repetition. Overlapping authors/laboratories or reused cohorts/data should normally be represented as `supports` or `qualifies`, with the overlap stated in the relation boundary.
 
 ## Evidence contribution template
 

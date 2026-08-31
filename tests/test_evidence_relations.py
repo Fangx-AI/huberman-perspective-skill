@@ -22,7 +22,17 @@ class EvidenceRelationTests(unittest.TestCase):
 
     def test_committed_relations_validate(self) -> None:
         MODULE.validate_relations(self.cards, self.relations)
-        self.assertGreaterEqual(len(self.relations), 3)
+        self.assertGreaterEqual(len(self.relations), 4)
+
+    def test_natural_light_followup_is_support_not_independent_replication(self) -> None:
+        relation = next(
+            item
+            for item in self.relations
+            if item["relation_id"] == "stothard-2017-supports-wright-2013-natural-light-entrainment"
+        )
+        self.assertEqual(relation["relation"], "supports")
+        self.assertIn("不是独立复制", relation["boundary"])
+        self.assertIn("作者重叠", relation["boundary"])
 
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])

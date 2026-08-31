@@ -78,6 +78,12 @@ def validate_cards(cards: list[dict]) -> None:
         for field in ("source_urls", "provenance_urls", "topic_tags", "outcomes", "null_findings", "limitations"):
             if not isinstance(card[field], list) or not card[field]:
                 raise ValueError(f"{field} must be a non-empty list for {review_id}")
+        if "search_aliases" in card and (
+            not isinstance(card["search_aliases"], list)
+            or not card["search_aliases"]
+            or not all(isinstance(alias, str) and alias.strip() for alias in card["search_aliases"])
+        ):
+            raise ValueError(f"search_aliases must be a non-empty string list for {review_id}")
         if not all(url.startswith("https://") for url in card["source_urls"] + card["provenance_urls"]):
             raise ValueError(f"all source/provenance URLs must use HTTPS for {review_id}")
         for source_url in card["source_urls"]:

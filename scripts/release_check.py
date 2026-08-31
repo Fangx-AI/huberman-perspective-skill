@@ -153,7 +153,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 8:
+        if card_count < 10:
             errors.append(f"too few study cards: {card_count}")
 
     evidence_relations: list[dict] = []
@@ -179,7 +179,7 @@ def check() -> list[str]:
                     errors.append(f"evidence relation lacks rationale/boundary at line {line_number}")
         if not evidence_relations:
             errors.append("evidence relation catalog is empty")
-        elif len(evidence_relations) < 3:
+        elif len(evidence_relations) < 4:
             errors.append(f"too few evidence relations: {len(evidence_relations)}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"

@@ -56,7 +56,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 675)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 676)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
@@ -94,7 +94,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 8)
+        self.assertGreaterEqual(len(cards), 10)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])
@@ -105,7 +105,7 @@ class PublicSnapshotTests(unittest.TestCase):
                 self.assertEqual(by_url[url]["verification_status"], card["verification_status"])
                 self.assertEqual(by_url[url]["evidence_notes"], card["queue_note"])
         external = [card for card in cards if card.get("source_scope") == "external-context"]
-        self.assertGreaterEqual(len(external), 2)
+        self.assertGreaterEqual(len(external), 3)
         self.assertTrue(all(card.get("queue_urls") == [] for card in external))
 
 

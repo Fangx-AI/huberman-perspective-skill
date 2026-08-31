@@ -21,7 +21,7 @@ SEARCH_FIELDS = (
     "result_summary",
     "safe_interpretation",
 )
-LIST_FIELDS = ("topic_tags", "outcomes", "null_findings", "limitations")
+LIST_FIELDS = ("search_aliases", "topic_tags", "outcomes", "null_findings", "limitations")
 CORE_FIELDS = ("study_design", "intervention_exposure", "result_summary", "safe_interpretation")
 
 

@@ -49,7 +49,7 @@ One row for every `pending` academic verification record. It preserves Episode l
 
 ## `academic-study-cards.jsonl`
 
-One JSON object per manually reviewed high-priority paper. A card records source URLs, primary-source provenance, study design, sample, intervention/exposure, comparator, outcomes, result summary, negative findings, limitations and a bounded safe interpretation. Episode-linked cards default to `source_scope=episode-linked`; their `queue_urls` default to `source_urls` and must remain aligned with the Show Notes queue. An independently selected replication or counter-study uses `source_scope=external-context` plus an explicit empty `queue_urls` list, so it cannot mutate or inflate Episode queue statistics. `apply_academic_study_cards.py` is the only supported path for promoting queue-linked records.
+One JSON object per manually reviewed high-priority paper. A card records source URLs, primary-source provenance, study design, sample, intervention/exposure, comparator, outcomes, result summary, negative findings, limitations and a bounded safe interpretation. Optional `search_aliases` preserve discoverability for documented legacy spellings without changing canonical IDs or names. Episode-linked cards default to `source_scope=episode-linked`; their `queue_urls` default to `source_urls` and must remain aligned with the Show Notes queue. An independently selected replication or counter-study uses `source_scope=external-context` plus an explicit empty `queue_urls` list, so it cannot mutate or inflate Episode queue statistics. `apply_academic_study_cards.py` is the only supported path for promoting queue-linked records.
 
 ## `evidence-relations.jsonl`
 

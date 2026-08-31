@@ -59,6 +59,25 @@ class EvidenceQueryTests(unittest.TestCase):
         self.assertTrue(all(item["direction"] == "outgoing" for item in concise["related_evidence"]))
         self.assertEqual({item["relation"] for item in concise["related_evidence"]}, {"qualifies", "supports"})
 
+    def test_natural_light_query_returns_bounded_followup_pair(self) -> None:
+        results = MODULE.query_cards(self.cards, "自然光 昼夜节律 周末露营")
+        self.assertEqual(results[0]["review_id"], "stothard-2017-natural-light-seasons-weekend")
+        self.assertEqual(results[1]["review_id"], "wright-2013-natural-light-entrainment")
+        concise = MODULE.concise_record(results[0], self.cards, self.relations)
+        relation = next(
+            item
+            for item in concise["related_evidence"]
+            if item["relation_id"] == "stothard-2017-supports-wright-2013-natural-light-entrainment"
+        )
+        self.assertEqual(relation["direction"], "outgoing")
+        self.assertEqual(relation["relation"], "supports")
+        self.assertIn("不是独立复制", relation["boundary"])
+        self.assertIn("固定晨光分钟数", concise["safe_interpretation"])
+
+    def test_legacy_stothart_spelling_remains_searchable(self) -> None:
+        results = MODULE.query_cards(self.cards, "stothart")
+        self.assertEqual(results[0]["review_id"], "stothard-2017-natural-light-seasons-weekend")
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

@@ -41791,6 +41791,11 @@
       "target": "study-card:walker-2003-sleep-motor-learning"
     },
     {
+      "relation": "supports",
+      "source": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment",
+      "target": "study-card:wright-2013-natural-light-entrainment"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:basso-2019-brief-daily-meditation",
       "target": "evidence-topic:attention"
@@ -42296,6 +42301,141 @@
       "target": "resource:https://www.nature.com/articles/s41598-020-63980-y"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:actigraphy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:camping"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:circadian-entrainment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:light-exposure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:melatonin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:natural-light"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:seasonality"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:sleep-timing"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "evidence-topic:social-jetlag"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:0f89c6d04a334242"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:1b538447a2c7e98d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:8fbf519bce1d68d9"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:bca64c5d0b4bc8e7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:cbd7482742eb0035"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:ce547aee2496c490"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:f0de29e6f4ba62e7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:fc394855a99f5f75"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-limitation:fc44139ee1a42673"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:007aedc5573be309"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:4c1d88e2eaeb5947"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:50cfb4e3b5b665a8"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:5e9dcc71efa679c2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:7b40a1dc9a2e0a66"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:bf5e926d208e0b8d"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "study-finding:b2493b7f10c20899"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "target": "resource:https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:volkow-2015-caffeine-pet",
       "target": "evidence-topic:alertness"
@@ -42449,9 +42589,109 @@
       "relation": "reviews_resource",
       "source": "study-card:walker-2003-sleep-motor-learning",
       "target": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:actigraphy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:chronotype"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:circadian-entrainment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:light-exposure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:melatonin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:natural-light"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "evidence-topic:sleep-timing"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:0fbb006d9cb00cbc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:47bf240bfff8f085"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:528d3573d7151a09"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:56fb63c63196830c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:9b3c1e2981c7ac9b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:a06b6b0ea071411b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:b3243a1c9a4d1f0f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-limitation:e0320d9c11a9af50"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-finding:7470c7c94360bd7e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-finding:b8cd8f9a9a6c3cb9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-finding:e66c39efa3a424f3"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "study-finding:01c1538cdc11355a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:wright-2013-natural-light-entrainment",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T03:27:16.308054+00:00",
+  "generated_at": "2026-08-31T03:48:57.380328+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47731,6 +47971,29 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "这不是独立复制：两篇论文来自同一实验室、作者重叠，季节比较还使用 Wright 2013 的夏季数据；两者都研究露营式组合暴露，不能推出单独晨光、固定分钟数、隔窗照度或临床治疗效果。",
+      "id": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment",
+      "label": "从现代电灯环境转入完整自然明暗周期后，健康成人的褪黑素昼夜相位是否会在数天内提前",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28162893/",
+        "https://pubmed.ncbi.nlm.nih.gov/23910656/",
+        "https://doi.org/10.1016/j.cub.2016.12.041",
+        "https://doi.org/10.1016/j.cub.2013.06.039"
+      ],
+      "rationale": "Stothard 等在冬季约 6 天露营和夏季周末露营中都观察到较早的褪黑素相位，方向上支持 Wright 2013 夏季一周露营后的约 2 小时相位提前，并把结果扩展到季节和较短周末暴露。",
+      "relation": "supports",
+      "relation_id": "stothard-2017-supports-wright-2013-natural-light-entrainment",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "stothard-2017-natural-light-seasons-weekend",
+      "target_review_id": "wright-2013-natural-light-entrainment",
+      "type": "evidence-relation"
+    },
+    {
+      "id": "evidence-topic:actigraphy",
+      "label": "actigraphy",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:alertness",
       "label": "alertness",
       "type": "evidence-topic"
@@ -47756,8 +48019,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:camping",
+      "label": "camping",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:chronotype",
+      "label": "chronotype",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:circadian-control",
       "label": "circadian-control",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:circadian-entrainment",
+      "label": "circadian-entrainment",
       "type": "evidence-topic"
     },
     {
@@ -47806,6 +48084,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:light-exposure",
+      "label": "light-exposure",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:major-depressive-disorder",
       "label": "major-depressive-disorder",
       "type": "evidence-topic"
@@ -47813,6 +48096,11 @@
     {
       "id": "evidence-topic:meditation",
       "label": "meditation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:melatonin",
+      "label": "melatonin",
       "type": "evidence-topic"
     },
     {
@@ -47833,6 +48121,11 @@
     {
       "id": "evidence-topic:motor-learning",
       "label": "motor-learning",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:natural-light",
+      "label": "natural-light",
       "type": "evidence-topic"
     },
     {
@@ -47861,8 +48154,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:seasonality",
+      "label": "seasonality",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sleep",
       "label": "sleep",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-timing",
+      "label": "sleep-timing",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:social-jetlag",
+      "label": "social-jetlag",
       "type": "evidence-topic"
     },
     {
@@ -61688,6 +61996,17 @@
       "verification_status": "verified-bibliographic"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部支持研究级核验：该 PubMed 来源不是当前 Episode Show Notes 队列项，因此不回写队列。8 人固定顺序研究显示夏季自然光露营后一组褪黑素与作息相位提前，但暴露同时改变日间光、夜间电灯、活动和设备使用，且未测临床结局或固定晨光剂量。证据卡：academic-study-cards.jsonl#wright-2013-natural-light-entrainment。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/23910656/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23910656/",
+      "verification_status": "verified-observational"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "自动书目核验：PMC4126803；《Low-level laser (light) therapy (LLLT) in skin: stimulating, healing, restoring.》；期刊未返回；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/24049929/",
@@ -70583,7 +70902,7 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "研究把自然光、减少电灯/电子设备、户外生活和自选作息捆绑在一起；不能直接换算成固定晨光分钟数，也不能外推为失眠或昼夜节律障碍治疗（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工观察研究级核验：两项科罗拉多自然实验共 19 人；冬季约 6 天露营使褪黑素起始提前约 2.6 小时，夏季周末露营组提前约 1.4 小时而现代周末组延后约 0.98 小时。研究未随机、样本小，且露营同时改变日间/夜间光、活动、温度、设备与作息；不能换算为固定晨光分钟数或临床治疗。证据卡：academic-study-cards.jsonl#stothard-2017-natural-light-seasons-weekend。",
       "id": "resource:https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6",
@@ -92457,6 +92776,36 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "研究 1 为同一参与者此前现代电灯环境；研究 2 为各参与者工作日基线及自选留在现代环境的周末组",
+      "doi": "10.1016/j.cub.2016.12.041",
+      "evidence_level": "A-Direct（19 人两项非随机自然实验）",
+      "id": "study-card:stothard-2017-natural-light-seasons-weekend",
+      "intervention_exposure": "冬季约 6 天无手电/电子设备的自然光露营，或夏季周末两天自然光露营（允许手电/头灯）；冬季醒时照度约 10297 lux，夏季周末露营约 9181 lux",
+      "label": "Circadian Entrainment to the Natural Light-Dark Cycle Across Seasons and the Weekend",
+      "outcomes": [
+        "褪黑素起始、中点、结束和生物夜时长",
+        "睡眠开始、结束、时长和效率",
+        "腕部照度、光谱代理和活动量",
+        "周末社会时差方向"
+      ],
+      "population": "研究 1 为 5 名身体活跃成人（1 名女性），30.4±8.6 岁；研究 2 为 14 名身体活跃成人（7 名女性），28.4±8.8 岁；均在美国科罗拉多约北纬 40°",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28162893/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5335920/",
+        "https://doi.org/10.1016/j.cub.2016.12.041",
+        "https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6"
+      ],
+      "result_summary": "冬季露营后褪黑素起始约提前 2.6 小时，睡眠开始约提前 2.5 小时；夏季周末露营组褪黑素起始和中点相对工作日分别提前约 1.4 和 1.0 小时，而现代环境周末组分别延后约 0.98 和 1.0 小时。结果支持完整自然明暗周期组合暴露与较早昼夜相位相关。",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持在小样本健康成人中，几天完整自然明暗周期暴露可较快提前褪黑素相位，并减少现代周末常见的相位延后；不能据此把“露营组合”简化成人人固定晨光分钟数、治疗承诺或单一照度阈值。",
+      "sample_size": 19,
+      "source_scope": "episode-linked",
+      "study_design": "研究 1 让 5 人先在冬季现代环境生活约 6 天，再共同露营约 6 天；研究 2 在夏季让 14 人先维持两天日常作息，随后自选进入现代环境周末组（n=5）或露营组（n=9）。腕部记录活动和光照，两种研究均在条件前后以实验室暗光唾液褪黑素测量昼夜相位",
+      "type": "study-card",
+      "verification_status": "verified-observational"
+    },
+    {
       "comparator": "同日较早给予糖片安慰剂；固定顺序而非随机平衡",
       "doi": "10.1038/tp.2015.46",
       "evidence_level": "A-Direct（小样本人体急性药理 PET 研究）",
@@ -92510,6 +92859,49 @@
       "study_design": "40 名新参与者分为四个各 10 人的训练/复测日程组，完成非优势手五键序列敲击任务；论文另引用作者 2002 年研究的 30 人两组数据作睡眠先行与清醒先行比较",
       "type": "study-card",
       "verification_status": "verified-study"
+    },
+    {
+      "comparator": "同一参与者此前一周的工作、学习和社交日常环境，醒时平均照度 979±352 lux、醒后前两小时 934±867 lux，日落至睡前照度高于露营条件",
+      "doi": "10.1016/j.cub.2013.06.039",
+      "evidence_level": "A-Direct（8 人固定顺序同体自然实验）",
+      "id": "study-card:wright-2013-natural-light-entrainment",
+      "intervention_exposure": "一周夏季自然明暗周期露营、自选睡眠、无电灯和个人电子设备；腕部活动/照度监测显示醒时平均照度 4487±552 lux，醒后前两小时 3074±1035 lux",
+      "label": "Entrainment of the human circadian clock to the natural light-dark cycle",
+      "outcomes": [
+        "暗光褪黑素起始、中央和结束时间",
+        "睡眠开始、醒来、时长和效率",
+        "腕部白光照度与活动量",
+        "作息型与相位变化的相关"
+      ],
+      "population": "8 名成人（2 名女性），30.3±8.5 岁；包含早型、中间型和晚型作息偏好，研究地点约北纬 40° 的美国科罗拉多",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/23910656/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4020279/",
+        "https://doi.org/10.1016/j.cub.2013.06.039"
+      ],
+      "result_summary": "自然光露营时醒时平均照度提高四倍以上，日落后照度由约 21 降至 8 lux；一周后褪黑素起始、中点和结束等昼夜标记均约提前 2 小时，睡眠开始与醒来约提前 1.2 小时，晚型参与者的相位提前更大。",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持“更强日间自然光、较少日落后电灯的组合环境可使特定健康成人的昼夜相位提前”这一生理结论；不能把一周露营直接换算为晨起看光 5、10 或 30 分钟，也不能据此治疗失眠、抑郁或昼夜节律障碍。",
+      "sample_size": 8,
+      "source_scope": "external-context",
+      "study_design": "8 人连续完成两周固定顺序方案：先在现代电灯与自然光并存的日常环境中维持一周自选作息，再于科罗拉多夏季露营一周，仅接触阳光和营火、禁用手电及个人电子设备；两种条件后均在实验室暗光下测量 24 小时唾液褪黑素节律",
+      "type": "study-card",
+      "verification_status": "verified-observational"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:007aedc5573be309",
+      "label": "冬季露营后褪黑素结束时间无显著变化（p=0.57）",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:01c1538cdc11355a",
+      "label": "自然光露营时醒时平均照度提高四倍以上，日落后照度由约 21 降至 8 lux；一周后褪黑素起始、中点和结束等昼夜标记均约提前 2 小时，睡眠开始与醒来约提前 1.2 小时，晚型参与者的相位提前更大。",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
     },
     {
       "finding_kind": "null",
@@ -92583,6 +92975,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4c1d88e2eaeb5947",
+      "label": "夏季周末露营组睡眠开始与结束时间相对工作日均无显著变化（p=0.76 和 p=0.63）",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:4cd7a198865e2cc4",
       "label": "并非所有情绪、认知或生理指标均改善",
       "review_id": "basso-2019-brief-daily-meditation",
@@ -92593,6 +92992,13 @@
       "id": "study-finding:4eea6082addd75e6",
       "label": "实验 2 未设置清醒对照，不能单独估计睡眠相对等长清醒的稳定作用",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:50cfb4e3b5b665a8",
+      "label": "夏季周末的总睡眠时长与夜间睡眠效率在组内和组间均相近",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-finding"
     },
     {
@@ -92610,6 +93016,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:5e9dcc71efa679c2",
+      "label": "冬季露营后褪黑素中点变化未达到校正后的显著性阈值（p=0.085）",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:5fd1618b55a8479d",
       "label": "训练后清醒 30 分钟出现 21.22% 的早期表现提升，至清醒 4 小时降为 6.26%。训练后 30 分钟入睡者在约 12 小时测试时提升 15.39%，与 30 分钟早期提升无显著差异；延迟 4 小时入睡者睡后提升 15.16%，高于 4 小时清醒结果且恢复到早期提升水平。睡后表现从未超过睡前已经达到的最高水平，支持稳定或恢复而非额外增强。",
@@ -92617,10 +93030,24 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:7470c7c94360bd7e",
+      "label": "褪黑素结束与睡眠开始的相关不显著（p=0.11），与醒来时间的相关趋势未通过多重比较阈值（p=0.0133；要求 p<0.0125）",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:7957a6968eabdbff",
       "label": "传统 30 秒区块与通常平均方法仍产生约 13.3% 的表观反应时提升；改用 10 秒分散练习并按学习曲线校正后仅余 3.5%，落在正常试次学习外推线上，未出现支持额外睡眠增强机制的离散跃升。",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:7b40a1dc9a2e0a66",
+      "label": "夏季周末露营组的褪黑素结束变化不显著（p=0.11）",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-finding"
     },
     {
@@ -92670,6 +93097,27 @@
       "id": "study-finding:b0e1aac5f99e1088",
       "label": "感恩组与对照组在感恩或威胁任务的腹侧纹状体、隔区或杏仁核反应上无显著组间差异；全样本中支持给予增加、杏仁核反应下降与刺激性炎症指标下降之间存在相关和统计中介关系。",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:b2493b7f10c20899",
+      "label": "冬季露营后褪黑素起始约提前 2.6 小时，睡眠开始约提前 2.5 小时；夏季周末露营组褪黑素起始和中点相对工作日分别提前约 1.4 和 1.0 小时，而现代环境周末组分别延后约 0.98 和 1.0 小时。结果支持完整自然明暗周期组合暴露与较早昼夜相位相关。",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b8cd8f9a9a6c3cb9",
+      "label": "每周平均睡眠时长在现代环境与露营条件间无显著差异（6.7±0.9 对 6.8±0.7 小时，p=0.268）",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:bf5e926d208e0b8d",
+      "label": "冬季露营的睡眠效率下降仅呈趋势（89.4% 对 91.9%，p=0.064）",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-finding"
     },
     {
@@ -92737,6 +93185,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:e66c39efa3a424f3",
+      "label": "睡眠效率无显著差异（87.6±5.6% 对 87.0±4.6%，p=0.49）",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:ef5c1411fac50cad",
       "label": "MEG 未发现明确的听觉—视觉交互调制",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
@@ -92767,6 +93222,24 @@
       "id": "study-limitation:0e99d05364c03b56",
       "label": "单一显式手指序列任务不能区分一般按键速度与序列特异学习",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0f89c6d04a334242",
+      "label": "腕部照度和颜色通道不能等同于视网膜实际接收的光谱剂量",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0fbb006d9cb00cbc",
+      "label": "所有参与者都先经历现代环境再露营，未随机条件顺序，也没有平行对照组",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:1b538447a2c7e98d",
+      "label": "研究团队与 Wright 2013 高度重叠，季节比较还直接使用该团队先前夏季数据，不是独立复制",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-limitation"
     },
     {
@@ -92818,9 +93291,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:47bf240bfff8f085",
+      "label": "作者团队与后续 Stothard 研究高度重叠，后续结果不构成完全独立复制",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:4818b03f24eb5746",
       "label": "主要分析仅纳入 48 名至少完成 4 周者并使用末次观测结转",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:528d3573d7151a09",
+      "label": "样本仅 8 人且仅 2 名女性，无法稳定估计人群差异",
+      "review_id": "wright-2013-natural-light-entrainment",
       "type": "study-limitation"
     },
     {
@@ -92851,6 +93336,12 @@
       "id": "study-limitation:5570216a6ea24884",
       "label": "睡眠时长、午睡和期间练习主要依赖自报，未使用多导睡眠监测",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:56fb63c63196830c",
+      "label": "露营同时增加全天和早晨光照、减少夜间电灯、改变活动、社交、设备使用和环境，不能分离单一成分",
+      "review_id": "wright-2013-natural-light-entrainment",
       "type": "study-limitation"
     },
     {
@@ -92926,9 +93417,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8fbf519bce1d68d9",
+      "label": "研究 2 由参与者自选周末组别，研究 1 与两项研究的条件顺序均未随机",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:960cc0384f2d9326",
       "label": "睡眠与清醒条件的测试时点和保留间隔不同，虽然昼夜控制与警觉任务降低了部分混杂",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9b3c1e2981c7ac9b",
+      "label": "结局主要是褪黑素相位与作息时间，没有测量失眠缓解、情绪、认知或长期健康结局",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a06b6b0ea071411b",
+      "label": "研究未确定需要多少天自然光暴露，也未测试固定晨间分钟数、隔窗光照或消费级灯具剂量",
+      "review_id": "wright-2013-natural-light-entrainment",
       "type": "study-limitation"
     },
     {
@@ -92956,6 +93465,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b3243a1c9a4d1f0f",
+      "label": "腕部照度不是眼部实际接收的光谱和照度",
+      "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b3dbd6ee0bbb2733",
       "label": "仅 20 名低咖啡因摄入健康男性",
       "review_id": "volkow-2015-caffeine-pet",
@@ -92965,6 +93480,12 @@
       "id": "study-limitation:b9c2110776139c68",
       "label": "统计中介不能把阴性的组间神经结局转化为已证实的治疗效应",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bca64c5d0b4bc8e7",
+      "label": "两项研究分别只有 5 人和 14 人，现代周末对照组仅 5 人",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-limitation"
     },
     {
@@ -92986,9 +93507,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:cbd7482742eb0035",
+      "label": "没有直接测量晨光单独效应、最低有效分钟数、隔窗光照或特定照度处方",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:ce547aee2496c490",
+      "label": "冬季露营睡眠更长且活动更高，温度和行为变化可能影响睡眠结局",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d032e716a38c1240",
       "label": "实验 2 所有人均跨夜睡眠，没有独立清醒对照",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e0320d9c11a9af50",
+      "label": "仅在科罗拉多约北纬 40° 的仲夏条件研究一周，不能直接外推到其他季节、纬度和文化",
+      "review_id": "wright-2013-natural-light-entrainment",
       "type": "study-limitation"
     },
     {
@@ -93007,6 +93546,12 @@
       "id": "study-limitation:e83471f8ad4a0c64",
       "label": "安慰剂始终先于咖啡因，存在固定顺序混杂",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f0de29e6f4ba62e7",
+      "label": "露营把日间光、夜间电灯、作息、户外活动、环境温度、设备和社交行为捆绑在一起",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-limitation"
     },
     {
@@ -93037,6 +93582,18 @@
       "id": "study-limitation:f85138fd27c59b5c",
       "label": "单次 300 mg 急性暴露",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fc394855a99f5f75",
+      "label": "研究对象是科罗拉多身体活跃健康成人，纬度、季节、文化和健康状态限制外推",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fc44139ee1a42673",
+      "label": "没有检验失眠、冬季抑郁、昼夜节律障碍治疗或长期健康获益；作者明确要求在临床人群进一步研究",
+      "review_id": "stothard-2017-natural-light-seasons-weekend",
       "type": "study-limitation"
     },
     {
@@ -95760,18 +96317,18 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 750,
+    "academic_resource_nodes": 751,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8490,
+    "edges": 8538,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 3,
-    "evidence_topic_nodes": 30,
-    "resource_nodes": 6022,
-    "study_card_nodes": 8,
-    "study_finding_nodes": 36,
-    "study_limitation_nodes": 46,
+    "evidence_relation_nodes": 4,
+    "evidence_topic_nodes": 40,
+    "resource_nodes": 6023,
+    "study_card_nodes": 10,
+    "study_finding_nodes": 47,
+    "study_limitation_nodes": 63,
     "top_topics": [
       {
         "count": 58,
@@ -95875,7 +96432,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 675,
+    "verified_academic_resource_nodes": 676,
     "youtube_nodes": 424
   }
 }
