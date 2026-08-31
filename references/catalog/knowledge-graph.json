@@ -41776,7 +41776,7 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     }
   ],
-  "generated_at": "2026-08-31T02:10:07.523660+00:00",
+  "generated_at": "2026-08-31T02:17:52.793147+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -53868,7 +53868,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1097/00004647-200201000-00003；《Mild Hypothermia Reduces Apoptosis of Mouse Neurons\n                    <i>In vitro</i>\n                    Early in the Cascade》；Journal of Cerebral Blood Flow &amp; Metabolism；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1097/00004647-200201000-00003；《Mild Hypothermia Reduces Apoptosis of Mouse Neurons <i>In vitro</i> Early in the Cascade》；Journal of Cerebral Blood Flow &amp; Metabolism；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://journals.sagepub.com/doi/10.1097/00004647-200201000-00003",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1097/00004647-200201000-00003",
@@ -59039,7 +59039,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：PMC9178665；《A neuroanatomical basis for electroacupuncture to drive the vagal-adrenal axis.》；期刊未返回；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：PMC9178665；《A neuroanatomical basis for electroacupuncture to drive the vagal-adrenal axis.》；期刊未返回；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9178665/pdf/nihms-1808398.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9178665/pdf/nihms-1808398.pdf",
@@ -69152,7 +69152,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2023.101324；《The anabolic response to protein ingestion during recovery from exercise has no upper limit in magnitude and duration in vivo in humans 》；Cell Reports Medicine；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2023.101324；《The anabolic response to protein ingestion during recovery from exercise has no upper limit in magnitude and duration in vivo in humans 》；Cell Reports Medicine；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2823%2900540-2",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2823%2900540-2",
@@ -69272,7 +69272,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.celrep.2019.08.016；《Serotonin Induces Structural Plasticity of Both Extrinsic Modulating and Intrinsic Mediating Circuits In Vitro in Aplysia Californica\n             》；Cell Reports；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2019.08.016；《Serotonin Induces Structural Plasticity of Both Extrinsic Modulating and Intrinsic Mediating Circuits In Vitro in Aplysia Californica 》；Cell Reports；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31049-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124719310496%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31049-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124719310496%3Fshowall%3Dtrue",
@@ -69449,7 +69449,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.cell.2013.11.045；《Tachykinin-Expressing Neurons Control Male-Specific Aggressive Arousal in Drosophila\n             》；Cell；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2013.11.045；《Tachykinin-Expressing Neurons Control Male-Specific Aggressive Arousal in Drosophila 》；Cell；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell/fulltext/S0092-8674(13)01536-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867413015365%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell/fulltext/S0092-8674(13)01536-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867413015365%3Fshowall%3Dtrue",
@@ -69806,7 +69806,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.cell.2011.10.042；《Transgenerational Inheritance of an Acquired Small RNA-Based Antiviral Response in C. elegans\n             》；Cell；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2011.10.042；《Transgenerational Inheritance of an Acquired Small RNA-Based Antiviral Response in C. elegans 》；Cell；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/fulltext/S0092-8674%2811%2901341-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/fulltext/S0092-8674%2811%2901341-9",
@@ -70060,7 +70060,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.06.008；《Psilocybin induces rapid and persistent growth of dendritic spines in frontal cortex in vivo\n             》；Neuron；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.06.008；《Psilocybin induces rapid and persistent growth of dendritic spines in frontal cortex in vivo 》；Neuron；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(21)00423-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321004232%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00423-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321004232%3Fshowall%3Dtrue",
@@ -79987,7 +79987,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1038/s41586-021-04001-4；《A neuroanatomical basis for electroacupuncture to drive the vagal–adrenal axis》；Nature；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1038/s41586-021-04001-4；《A neuroanatomical basis for electroacupuncture to drive the vagal–adrenal axis》；Nature；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/s41586-021-04001-4",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41586-021-04001-4",
@@ -80057,7 +80057,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1038/s41586-023-06568-6；《The β1-adrenergic receptor links sympathetic nerves to T cell exhaustion》；Nature；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1038/s41586-023-06568-6；《The β1-adrenergic receptor links sympathetic nerves to T cell exhaustion》；Nature；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/s41586-023-06568-6",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41586-023-06568-6",
@@ -85541,7 +85541,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.evolhumbehav.2007.06.002；《Ovulatory cycle effects on tip earnings by lap dancers: economic evidence for human estrus?☆\n             》；Evolution and Human Behavior；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1016/j.evolhumbehav.2007.06.002；《Ovulatory cycle effects on tip earnings by lap dancers: economic evidence for human estrus?☆ 》；Evolution and Human Behavior；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1090513807000694",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1090513807000694",
@@ -85711,7 +85711,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.3945/ajcn.111.013904；《Short sleep duration increases energy intakes but does not change energy expenditure in normal-weight individuals\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n             》；The American Journal of Clinical Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.111.013904；《Short sleep duration increases energy intakes but does not change energy expenditure in normal-weight individuals 1 2 3 》；The American Journal of Clinical Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523023833?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523023833?via%3Dihub",
@@ -85731,7 +85731,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.3945/ajcn.111.027383；《Sleep restriction leads to increased activation of brain regions sensitive to food stimuli\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n               \n                  4\n               \n             》；The American Journal of Clinical Nutrition；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.111.027383；《Sleep restriction leads to increased activation of brain regions sensitive to food stimuli 1 2 3 4 》；The American Journal of Clinical Nutrition；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523027363?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523027363?via%3Dihub",
@@ -85741,7 +85741,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.3945/ajcn.113.069427；《Experimental sleep curtailment causes wake-dependent increases in 24-h energy expenditure as measured by whole-room indirect calorimetry\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n               \n                  4\n               \n             》；The American Journal of Clinical Nutrition；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.113.069427；《Experimental sleep curtailment causes wake-dependent increases in 24-h energy expenditure as measured by whole-room indirect calorimetry 1 2 3 4 》；The American Journal of Clinical Nutrition；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523053303?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523053303?via%3Dihub",
@@ -85761,7 +85761,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/ajcn/87.3.621；《Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/87.3.621；《Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil 2 》；The American Journal of Clinical Nutrition；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523235339?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523235339?via%3Dihub",
@@ -85781,7 +85781,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/ajcn/85.2.426；《High-glycemic-index carbohydrate meals shorten sleep onset\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/85.2.426；《High-glycemic-index carbohydrate meals shorten sleep onset 2 》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523279290?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523279290?via%3Dihub",
@@ -85791,7 +85791,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/ajcn/85.6.1503；《Snack chips fried in corn oil alleviate cardiovascular disease risk factors when substituted for low-fat or high-fat snacks\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/85.6.1503；《Snack chips fried in corn oil alleviate cardiovascular disease risk factors when substituted for low-fat or high-fat snacks 2 》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523281046?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523281046?via%3Dihub",
@@ -85801,7 +85801,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/ajcn/84.3.475；《The underappreciated role of muscle in health and disease\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/84.3.475；《The underappreciated role of muscle in health and disease 2 》；The American Journal of Clinical Nutrition；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523290450?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523290450?via%3Dihub",
@@ -85871,7 +85871,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.3945/jn.110.137323；《Caffeinated Coffee Does Not Acutely Affect Energy Intake, Appetite, or Inflammation but Prevents Serum Cortisol Concentrations from Falling in Healthy Men1–4\n             》；The Journal of Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.3945/jn.110.137323；《Caffeinated Coffee Does Not Acutely Affect Energy Intake, Appetite, or Inflammation but Prevents Serum Cortisol Concentrations from Falling in Healthy Men1–4 》；The Journal of Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622025615?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622025615?via%3Dihub",
@@ -85881,7 +85881,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.3945/jn.108.099440；《A Moderate-Protein Diet Produces Sustained Weight Loss and Long-Term Changes in Body Composition and Blood Lipids in Obese Adults\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.3945/jn.108.099440；《A Moderate-Protein Diet Produces Sustained Weight Loss and Long-Term Changes in Body Composition and Blood Lipids in Obese Adults 1 2 》；The Journal of Nutrition；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622066822?via%3Dihub#t4",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622066822?via%3Dihub#t4",
@@ -85891,7 +85891,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women 1 2 》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622103445",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622103445",
@@ -85901,7 +85901,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women 1 2 》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622103445?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622103445?via%3Dihub",
@@ -86001,13 +86001,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.ecoenv.2023.114782；《Microplastics in European sea salts – An example of exposure through consumer choice and of interstudy methodological discrepancies 》；Ecotoxicology and Environmental Safety；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0147651323002865",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0147651323002865",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0147651323002865",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -94220,7 +94220,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 672,
+    "verified_academic_resource_nodes": 673,
     "youtube_nodes": 424
   }
 }

@@ -74,6 +74,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - [课程与讲座目录](references/catalog/courses-lectures.csv)：Stanford 课程元数据、公开讲座、AMA 和机构访谈；区分教学背景与疗效证据。
 - [学术书目缓存](references/catalog/academic-metadata.jsonl)：增量公开 API 核对得到的题名、年份、期刊和标识；仅作书目 provenance，不等同于疗效证据。
 - [学术标识覆盖表](references/catalog/academic-identifier-overrides.csv)：只用于无法由旧式 URL 安全推导的少数标识修复；每条必须带官方 provenance，且仍需书目 API 二次确认。
+- [学术修复队列](references/catalog/academic-repair-queue.csv)：把仍为 `pending` 的来源按 PII 未解析、非具体检索页、参考工具书、截断 URL 等原因分流；用于维护与贡献，不计为证据。
 - [01 著作与系统思考](references/research/01-writings.md)
 - [02 长对话与长视频](references/research/02-conversations.md)
 - [主张级索引](references/catalog/claim-index.jsonl)：从本地批次分析中保守导出的 40 条公开来源定位，含中性主题、官方 YouTube ID/URL、时间戳、证据层、说话者范围和边界；不含逐字主张、完整字幕或 Show Notes。详细字幕分析只保留在维护者的合法本地研究缓存，不随公开仓库分发。
@@ -97,8 +98,9 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 展平所有公开 Show Notes 中的资源/论文链接：`python scripts/build_resource_catalog.py --input references/catalog/episode-pages.jsonl --output references/catalog/episode-resources.csv`
 - 建立去重的学术/医学证据核查队列：`python scripts/build_academic_queue.py --input references/catalog/episode-resources.csv --output references/catalog/academic-verification-queue.csv`
 - 增量核对 PMC/PMID/DOI/PII 书目信息（默认只把明确命中的来源升级为 `verified-bibliographic`，不自动推断疗效）：`python scripts/verify_academic_batch.py --queue references/catalog/academic-verification-queue.csv --limit 20`。脚本会跳过无标准标识的查询页，读取带 provenance 的旧标识覆盖表，在 Europe PMC 未命中 PMCID 时回退到 NCBI ID Converter，并在同一提供方连续报错后熔断；若 Elsevier 被限流，可用 `--providers europe-pmc crossref` 继续处理其他公开来源。
+- 重建待核验来源的确定性修复队列：`python scripts/build_academic_repair_queue.py --queue references/catalog/academic-verification-queue.csv --output references/catalog/academic-repair-queue.csv`。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
-- 构建主张级索引：`python scripts/build_claim_index.py --input references/research/batch-02-transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
+- 维护者从合法本地分析缓存重建主张级索引：`python scripts/build_claim_index.py --input /path/to/lawful-local/transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
 - 把外部字幕缓存的下载状态和字幕来源写回队列（不把完整转录复制进 Skill）：`python scripts/update_transcript_status.py --queue references/catalog/youtube-transcript-queue.csv --cache /path/to/work/youtube-transcript/andrew-huberman`
 - 把人工整理的 YouTube/B站 URL 去重并追加到登记表：`python scripts/update_catalog.py --urls <url-file> --output references/catalog/video-urls.csv`
 - YouTube 字幕：使用 `baoyu-youtube-transcript` 的 `main.ts`，优先先 `--list` 再用 `--chapters --speakers`；不要抓取或保存付费转录。

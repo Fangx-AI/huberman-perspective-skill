@@ -27,7 +27,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(len(rows), 749)
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
-        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 673)
+        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -54,7 +54,16 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-claim-v1")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 672)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 673)
+
+    def test_repair_queue_matches_pending_urls(self) -> None:
+        academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
+        repair_path = ROOT / "references" / "catalog" / "academic-repair-queue.csv"
+        with academic_path.open(encoding="utf-8-sig", newline="") as handle:
+            pending_urls = {row["url"] for row in csv.DictReader(handle) if row["verification_status"] == "pending"}
+        with repair_path.open(encoding="utf-8-sig", newline="") as handle:
+            repair_urls = {row["url"] for row in csv.DictReader(handle)}
+        self.assertEqual(repair_urls, pending_urls)
 
 
 if __name__ == "__main__":

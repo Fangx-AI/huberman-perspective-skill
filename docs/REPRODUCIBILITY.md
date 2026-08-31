@@ -59,4 +59,12 @@ python scripts/verify_academic_batch.py \
 
 The verifier skips identifier-free search pages, preserves unresolved rows as `pending` and stops querying a provider after repeated API errors. It reads exact legacy repairs from `academic-identifier-overrides.csv` and can use the NCBI ID Converter when Europe PMC search does not return a known PMCID. Overrides require official provenance and still pass through a public bibliographic API. A successful API match produces `verified-bibliographic` only; it does not establish study design, efficacy or safety.
 
+After each verification batch, rebuild the deterministic repair queue:
+
+```bash
+python scripts/build_academic_repair_queue.py \
+  --queue references/catalog/academic-verification-queue.csv \
+  --output references/catalog/academic-repair-queue.csv
+```
+
 After review, promote only the safe derived fields through `export_public_snapshot.py`. The full private contract check is available as `scripts/contract_check_full.py` when all local raw catalogs exist.

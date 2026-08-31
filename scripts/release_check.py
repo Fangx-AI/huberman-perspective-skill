@@ -30,6 +30,7 @@ REQUIRED = [
     "references/catalog/episodes.csv",
     "references/catalog/claim-index.jsonl",
     "references/catalog/academic-identifier-overrides.csv",
+    "references/catalog/academic-repair-queue.csv",
     "references/catalog/knowledge-graph.json",
     "references/catalog/release-manifest.json",
 ]
@@ -110,6 +111,16 @@ def check() -> list[str]:
         path = ROOT / relative
         if path.is_file() and csv_count(path) != expected:
             errors.append(f"unexpected row count for {relative}: expected {expected}, got {csv_count(path)}")
+
+    academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
+    repair_path = ROOT / "references" / "catalog" / "academic-repair-queue.csv"
+    if academic_path.is_file() and repair_path.is_file():
+        with academic_path.open(encoding="utf-8-sig", newline="") as handle:
+            pending_urls = {row["url"] for row in csv.DictReader(handle) if row["verification_status"] == "pending"}
+        with repair_path.open(encoding="utf-8-sig", newline="") as handle:
+            repair_urls = {row["url"] for row in csv.DictReader(handle)}
+        if repair_urls != pending_urls:
+            errors.append("academic repair queue does not match pending verification URLs")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():

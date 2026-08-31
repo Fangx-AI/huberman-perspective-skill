@@ -7,6 +7,17 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue upgrading bibliographic-only and pending academic sources to study-level evidence records.
 - Add periodic drift checks for official Episode and platform metadata.
 
+## [0.1.4] - 2026-08-31
+
+### Added
+
+- Added a deterministic academic repair queue that classifies every remaining pending source and gives a bounded next action for Elsevier PII, nonspecific search/publisher pages, reference works, missing identifiers and malformed URLs.
+- Added three repair-queue regression tests and a release invariant requiring repair-queue URLs to equal pending verification-queue URLs.
+
+### Changed
+
+- Verified one additional Elsevier source, raising coverage to 674 of 749 records and reducing the classified repair queue to 75 rows.
+
 ## [0.1.3] - 2026-08-31
 
 ### Changed

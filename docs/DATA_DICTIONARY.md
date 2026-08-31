@@ -43,6 +43,10 @@ Discovery-only Bilibili records. `source_level=C` or `mirror-only` cannot indepe
 
 Traceable repairs for legacy source URLs whose canonical PMID, PMCID, DOI or PII cannot be derived safely. Each row records the exact queue URL, replacement identifier, official `provenance_url` and a short note. An override only supplies a lookup key; the verifier still requires a successful public bibliographic API response before changing queue status.
 
+## `academic-repair-queue.csv`
+
+One row for every `pending` academic verification record. It preserves Episode linkage and adds `repair_class`, any safely parsed provider/identifier, and a bounded `next_action`. The file is a maintenance/contribution queue, not evidence; release validation requires its URL set to match the pending verification URL set exactly.
+
 ## `claim-index.jsonl`
 
 One JSON object per source locator. Public records contain `claim_id`, neutral `topic`, YouTube IDs/URLs, timestamps, speaker scope, evidence layer, boundary and parse quality. The private `claim_text` field is deliberately omitted.
