@@ -41776,7 +41776,7 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     }
   ],
-  "generated_at": "2026-08-31T02:17:52.793147+00:00",
+  "generated_at": "2026-08-31T02:26:33.813812+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -80417,13 +80417,13 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "自动书目核验：10.1038/s41598-020-63980-y；《40-Hz Binaural beats enhance training to mitigate the attentional blink》；Scientific Reports；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：29 名健康年轻成人完成三日注意瞬脱实验，排除 2 人后行为 n=27；40 Hz 与 16.3 Hz 随机顺序交叉。会话内和刺激当下无平均优势，但 40 Hz 后的跨日训练轨迹出现交互信号；总效应小，睡眠机制未直接检验，不能外推为普遍专注/生产力或治疗工具。证据卡：academic-study-cards.jsonl#ross-lopez-2020-binaural-attentional-blink。",
       "id": "resource:https://www.nature.com/articles/s41598-020-63980-y",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41598-020-63980-y",
       "type": "resource",
       "url": "https://www.nature.com/articles/s41598-020-63980-y",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -80757,13 +80757,13 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "自动书目核验：10.1038/tp.2015.46；《Caffeine increases striatal dopamine D2/D3 receptor availability in the human brain》；Translational Psychiatry；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：20 名低咖啡因摄入健康男性接受同日安慰剂后 300 mg 咖啡因 PET；壳核和腹侧纹状体 D2/D3 可用性小幅增加，腹侧纹状体变化与警觉度相关。结果不支持简单的纹状体多巴胺释放增加；固定顺序、男性小样本和 PET 配体歧义限制外推。证据卡：academic-study-cards.jsonl#volkow-2015-caffeine-pet。",
       "id": "resource:https://www.nature.com/articles/tp201546",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/tp201546",
       "type": "resource",
       "url": "https://www.nature.com/articles/tp201546",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "id": "resource:https://www.navy.com/careers-benefits/careers/special-operations",
@@ -85001,23 +85001,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1016/j.bbr.2018.08.023；《Brief, daily meditation enhances attention, memory, mood, and emotional regulation in non-experienced meditators 》；Behavioural Brain Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：42 名 18–45 岁健康冥想新手随机接受每日 13 分钟引导冥想或播客主动对照 8 周；4 周无显著效果，8 周时部分情绪、注意与记忆指标改善，但睡眠质量指标出现反向结果且依从性不同。不能外推为普遍最低剂量或精神疾病治疗。证据卡：academic-study-cards.jsonl#basso-2019-brief-daily-meditation。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "7",
-      "evidence_notes": "自动书目核验：10.1016/j.bbr.2018.08.023；《Brief, daily meditation enhances attention, memory, mood, and emotional regulation in non-experienced meditators 》；Behavioural Brain Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：42 名 18–45 岁健康冥想新手随机接受每日 13 分钟引导冥想或播客主动对照 8 周；4 周无显著效果，8 周时部分情绪、注意与记忆指标改善，但睡眠质量指标出现反向结果且依从性不同。不能外推为普遍最低剂量或精神疾病治疗。证据卡：academic-study-cards.jsonl#basso-2019-brief-daily-meditation。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X?via%3Dihub",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -86141,13 +86141,13 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "自动书目核验：10.1016/j.bbi.2021.04.019；《Exploring neural mechanisms of the health benefits of gratitude in women: A randomized controlled trial 》；Brain, Behavior, and Immunity；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：61 名 35–50 岁健康女性随机接受六周感恩或控制写作；预设神经区域的组间差异不显著。支持给予、杏仁核和刺激性炎症指标的关系来自全样本相关/统计中介，不能改写为感恩干预已证实降低炎症或治疗疾病。证据卡：academic-study-cards.jsonl#hazlett-2021-gratitude-rct。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",

@@ -31,6 +31,7 @@ REQUIRED = [
     "references/catalog/claim-index.jsonl",
     "references/catalog/academic-identifier-overrides.csv",
     "references/catalog/academic-repair-queue.csv",
+    "references/catalog/academic-study-cards.jsonl",
     "references/catalog/knowledge-graph.json",
     "references/catalog/release-manifest.json",
 ]
@@ -121,6 +122,33 @@ def check() -> list[str]:
             repair_urls = {row["url"] for row in csv.DictReader(handle)}
         if repair_urls != pending_urls:
             errors.append("academic repair queue does not match pending verification URLs")
+
+    study_cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
+    if academic_path.is_file() and study_cards_path.is_file():
+        with academic_path.open(encoding="utf-8-sig", newline="") as handle:
+            academic_by_url = {row["url"]: row for row in csv.DictReader(handle)}
+        review_ids = set()
+        card_count = 0
+        with study_cards_path.open(encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, 1):
+                if not line.strip():
+                    continue
+                card_count += 1
+                card = json.loads(line)
+                review_id = card.get("review_id", "")
+                if not review_id or review_id in review_ids:
+                    errors.append(f"empty or duplicate study-card review_id at line {line_number}")
+                review_ids.add(review_id)
+                if not card.get("null_findings") or not card.get("limitations") or not card.get("safe_interpretation"):
+                    errors.append(f"study card lacks negative findings/boundaries at line {line_number}")
+                if not all(url.startswith("https://") for url in card.get("provenance_urls", [])):
+                    errors.append(f"study card lacks HTTPS provenance at line {line_number}")
+                for url in card.get("source_urls", []):
+                    row = academic_by_url.get(url)
+                    if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
+                        errors.append(f"study card and academic queue drifted for {url}")
+        if card_count != 4:
+            errors.append(f"unexpected study-card count: {card_count}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():

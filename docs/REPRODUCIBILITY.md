@@ -67,4 +67,14 @@ python scripts/build_academic_repair_queue.py \
   --output references/catalog/academic-repair-queue.csv
 ```
 
+After a human reviewer has read the primary study and recorded design, sample, positive and negative findings, limitations, safe interpretation and provenance in `academic-study-cards.jsonl`, apply the cards deterministically:
+
+```bash
+python scripts/apply_academic_study_cards.py \
+  --cards references/catalog/academic-study-cards.jsonl \
+  --queue references/catalog/academic-verification-queue.csv
+```
+
+The command refuses to promote a `pending` record, verifies exact URL alignment and is idempotent. Use `--check-only` to validate cards without writing.
+
 After review, promote only the safe derived fields through `export_public_snapshot.py`. The full private contract check is available as `scripts/contract_check_full.py` when all local raw catalogs exist.

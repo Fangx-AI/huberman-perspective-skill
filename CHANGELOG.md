@@ -4,8 +4,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 
 ## [Unreleased]
 
-- Continue upgrading bibliographic-only and pending academic sources to study-level evidence records.
+- Continue expanding structured study cards beyond the first high-priority batch.
 - Add periodic drift checks for official Episode and platform metadata.
+
+## [0.2.0] - 2026-08-31
+
+### Added
+
+- Added four machine-readable study cards for high-priority meditation, binaural-beat, caffeine PET and gratitude-writing papers. Every card preserves study design, sample, outcomes, negative findings, limitations, safe interpretation and primary-source provenance.
+- Added a deterministic card-to-queue application command, idempotence and refusal guards, release invariants and regression tests.
+
+### Changed
+
+- Promoted five URL records representing four papers from bibliographic-only to `verified-study`, yielding 111 study-level, 32 review-level, 21 observational and 510 bibliographic-only verified records.
+- Corrected the brief-meditation sample from 76 to 42 and recorded its four-week null result, unexpected sleep-quality result and adherence imbalance.
+- Tightened the binaural-beat, caffeine and gratitude summaries so task-specific, correlational and null findings cannot be rewritten as universal protocols or treatment effects.
 
 ## [0.1.4] - 2026-08-31
 

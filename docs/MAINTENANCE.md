@@ -19,8 +19,8 @@
 ## Roadmap
 
 - `0.1.x`: public-repository hardening, rights review, schema stabilization and bug fixes.
-- `0.2.0`: raise research-level academic coverage and expand timestamped claim cards without transcript redistribution.
-- `0.3.0`: add contradiction/replication edges and automated link-rot reports.
+- `0.2.x`: expand structured study cards and research-level academic coverage without transcript redistribution.
+- `0.3.0`: add contradiction/replication edges, outcome-level links and automated link-rot reports.
 - `1.0.0`: stable schemas, repeatable update cadence, independent behavior evaluation and documented maintainer succession.
 
 ## Deprecation

@@ -47,6 +47,10 @@ Traceable repairs for legacy source URLs whose canonical PMID, PMCID, DOI or PII
 
 One row for every `pending` academic verification record. It preserves Episode linkage and adds `repair_class`, any safely parsed provider/identifier, and a bounded `next_action`. The file is a maintenance/contribution queue, not evidence; release validation requires its URL set to match the pending verification URL set exactly.
 
+## `academic-study-cards.jsonl`
+
+One JSON object per manually reviewed high-priority paper. A card records the exact queue URLs, primary-source provenance, study design, sample, intervention/exposure, comparator, outcomes, result summary, negative findings, limitations and a bounded safe interpretation. `apply_academic_study_cards.py` is the only supported path for promoting these records from bibliographic-only to research-level status; release validation requires every card URL, status and queue note to remain aligned.
+
 ## `claim-index.jsonl`
 
 One JSON object per source locator. Public records contain `claim_id`, neutral `topic`, YouTube IDs/URLs, timestamps, speaker scope, evidence layer, boundary and parse quality. The private `claim_text` field is deliberately omitted.

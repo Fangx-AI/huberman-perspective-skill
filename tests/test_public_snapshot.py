@@ -28,6 +28,8 @@ class PublicSnapshotTests(unittest.TestCase):
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
         self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 111)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 510)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -64,6 +66,22 @@ class PublicSnapshotTests(unittest.TestCase):
         with repair_path.open(encoding="utf-8-sig", newline="") as handle:
             repair_urls = {row["url"] for row in csv.DictReader(handle)}
         self.assertEqual(repair_urls, pending_urls)
+
+    def test_study_cards_preserve_negative_findings_and_match_queue(self) -> None:
+        cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
+        queue_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
+        cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
+        with queue_path.open(encoding="utf-8-sig", newline="") as handle:
+            by_url = {row["url"]: row for row in csv.DictReader(handle)}
+        self.assertEqual(len(cards), 4)
+        for card in cards:
+            self.assertTrue(card["null_findings"])
+            self.assertTrue(card["limitations"])
+            self.assertTrue(card["safe_interpretation"])
+            self.assertTrue(all(url.startswith("https://") for url in card["provenance_urls"]))
+            for url in card["source_urls"]:
+                self.assertEqual(by_url[url]["verification_status"], card["verification_status"])
+                self.assertEqual(by_url[url]["evidence_notes"], card["queue_note"])
 
 
 if __name__ == "__main__":
