@@ -7,6 +7,14 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue upgrading bibliographic-only and pending academic sources to study-level evidence records.
 - Add periodic drift checks for official Episode and platform metadata.
 
+## [0.1.2] - 2026-08-31
+
+### Changed
+
+- Verified 171 additional source identities through Europe PMC, Crossref and available Elsevier responses, raising the verified queue count from 279 to 450 and reducing pending records from 470 to 299.
+- Updated the academic verifier to skip identifier-free search pages without consuming the API batch limit, recognize additional Nature and Elsevier identifiers, filter providers and stop querying a provider after repeated API errors.
+- Added five verifier regression tests and rebuilt the public knowledge graph with 450 verified academic resource nodes.
+
 ## [0.1.1] - 2026-08-31
 
 ### Changed

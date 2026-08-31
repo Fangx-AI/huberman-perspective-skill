@@ -24,9 +24,10 @@ from urllib.request import Request, urlopen
 PMCID_RE = re.compile(r"PMC\d+", re.IGNORECASE)
 PMID_RE = re.compile(r"(?:pubmed\.ncbi\.nlm\.nih\.gov/|pmid[:/ ]+)(\d+)", re.IGNORECASE)
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
-PII_RE = re.compile(r"S\d{4,8}-\d{4}\(\d{2}\)\d{4,6}-[0-9X]|\bS\d{14,18}\b", re.IGNORECASE)
-NATURE_SLUG_RE = re.compile(r"(?:d41586|s\d{4,6}-\d{3,4}-\d{4,6}|nature\d+|nrn\d+|nm\d+[_-]\d+|tp\d+|\d{6,8}[a-z]\d*)", re.IGNORECASE)
-MALFORMED_SUFFIXES = ("(21", "(22")
+PII_RE = re.compile(r"S\d{4,8}-\d{4}\(\d{2}\)\d{4,6}-[0-9X]|\bS\d{14,17}[0-9X]\b", re.IGNORECASE)
+NATURE_SLUG_RE = re.compile(r"(?:d41586|s\d{4,6}-\d{3,4}-\d{4,6}(?:-[a-z0-9]+)?|nature\d+|nrn\d+|nm\d+[_-]\d+|tp\d+|\d{6,8}[a-z]\d*)", re.IGNORECASE)
+MALFORMED_CELL_URL_RE = re.compile(r"/S\d{4}-\d{4}\(\d{2}$", re.IGNORECASE)
+PROVIDERS = ("europe-pmc", "crossref", "elsevier")
 
 
 def request_json(url: str, timeout: float, user_agent: str) -> dict:
@@ -50,6 +51,51 @@ def identifiers(url: str) -> dict[str, str]:
         if host == "nature.com" and NATURE_SLUG_RE.fullmatch(slug):
             doi = "10.1038/" + slug.replace("_", "-")
     return {"pmcid": pmcid, "pmid": pmid_match.group(1) if pmid_match else "", "doi": doi, "pii": pii}
+
+
+def is_malformed_url(url: str) -> bool:
+    return bool(MALFORMED_CELL_URL_RE.search(unquote(url)))
+
+
+def provider_for_identifiers(ids: dict[str, str]) -> str:
+    if ids["pmcid"] or ids["pmid"]:
+        return "europe-pmc"
+    if ids["doi"]:
+        return "crossref"
+    if ids["pii"]:
+        return "elsevier"
+    return ""
+
+
+def select_candidates(
+    pending: list[dict[str, str]],
+    limit: int,
+    scan_limit: int = 0,
+    allowed_providers: set[str] | None = None,
+) -> tuple[list[tuple[dict[str, str], dict[str, str]]], int, int, int, int]:
+    scan_rows = pending[: scan_limit or None]
+    candidates: list[tuple[dict[str, str], dict[str, str]]] = []
+    skipped_malformed = 0
+    skipped_no_identifier = 0
+    skipped_provider = 0
+    scanned = 0
+    for row in scan_rows:
+        scanned += 1
+        url = row.get("url", "")
+        if is_malformed_url(url):
+            skipped_malformed += 1
+            continue
+        ids = identifiers(url)
+        if not any(ids.values()):
+            skipped_no_identifier += 1
+            continue
+        if allowed_providers is not None and provider_for_identifiers(ids) not in allowed_providers:
+            skipped_provider += 1
+            continue
+        candidates.append((row, ids))
+        if len(candidates) >= limit:
+            break
+    return candidates, scanned, skipped_malformed, skipped_no_identifier, skipped_provider
 
 
 def europe_pmc_lookup(id_kind: str, value: str, timeout: float, user_agent: str) -> dict | None:
@@ -144,6 +190,25 @@ def main() -> int:
     parser.add_argument("--output", type=Path)
     parser.add_argument("--metadata-output", type=Path)
     parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument(
+        "--scan-limit",
+        type=int,
+        default=0,
+        help="maximum pending rows to inspect while finding resolvable identifiers; 0 scans all pending rows",
+    )
+    parser.add_argument(
+        "--providers",
+        nargs="+",
+        choices=PROVIDERS,
+        default=list(PROVIDERS),
+        help="bibliographic providers to use; restrict this when one provider is rate-limited",
+    )
+    parser.add_argument(
+        "--max-provider-errors",
+        type=int,
+        default=3,
+        help="stop querying a provider for the current run after this many network/API errors",
+    )
     parser.add_argument("--delay", type=float, default=0.25)
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--user-agent", default="huberman-perspective-academic-verifier/1.0")
@@ -151,6 +216,10 @@ def main() -> int:
     args = parser.parse_args()
     if args.limit < 1:
         parser.error("--limit must be positive")
+    if args.scan_limit < 0:
+        parser.error("--scan-limit cannot be negative")
+    if args.max_provider_errors < 1:
+        parser.error("--max-provider-errors must be positive")
 
     output = args.output or args.queue
     metadata_output = args.metadata_output or args.queue.with_name("academic-metadata.jsonl")
@@ -158,17 +227,21 @@ def main() -> int:
         rows = list(csv.DictReader(handle))
 
     pending = [row for row in rows if row.get("verification_status", "pending") == "pending"]
-    candidates = pending[: args.limit]
+    candidates, scanned, skipped_malformed, skipped_no_identifier, skipped_provider = select_candidates(
+        pending, args.limit, args.scan_limit, set(args.providers)
+    )
+
     records: list[dict] = []
     matched = 0
-    skipped = 0
     errors = 0
-    for index, row in enumerate(candidates):
+    provider_errors: dict[str, int] = {}
+    skipped_provider_cooldown = 0
+    for index, (row, ids) in enumerate(candidates):
         url = row.get("url", "")
-        if url.endswith(MALFORMED_SUFFIXES):
-            skipped += 1
+        provider_hint = provider_for_identifiers(ids)
+        if provider_errors.get(provider_hint, 0) >= args.max_provider_errors:
+            skipped_provider_cooldown += 1
             continue
-        ids = identifiers(url)
         record = None
         provider = ""
         try:
@@ -189,10 +262,12 @@ def main() -> int:
                 record = None
             else:
                 errors += 1
+                provider_errors[provider_hint] = provider_errors.get(provider_hint, 0) + 1
                 records.append({"source_url": url, "lookup_error": str(exc), "retrieved_at": datetime.now(timezone.utc).isoformat()})
                 continue
         except Exception as exc:  # network/API errors should not destroy the queue
             errors += 1
+            provider_errors[provider_hint] = provider_errors.get(provider_hint, 0) + 1
             records.append({"source_url": url, "lookup_error": str(exc), "retrieved_at": datetime.now(timezone.utc).isoformat()})
             continue
         if record:
@@ -212,7 +287,24 @@ def main() -> int:
             for record in records:
                 handle.write(json.dumps(record, ensure_ascii=False) + "\n")
 
-    print(json.dumps({"candidates": len(candidates), "matched": matched, "skipped_malformed": skipped, "errors": errors, "dry_run": args.dry_run}, ensure_ascii=False))
+    print(
+        json.dumps(
+            {
+                "pending": len(pending),
+                "scanned": scanned,
+                "candidates": len(candidates),
+                "matched": matched,
+                "skipped_malformed": skipped_malformed,
+                "skipped_no_identifier": skipped_no_identifier,
+                "skipped_provider": skipped_provider,
+                "skipped_provider_cooldown": skipped_provider_cooldown,
+                "provider_errors": provider_errors,
+                "errors": errors,
+                "dry_run": args.dry_run,
+            },
+            ensure_ascii=False,
+        )
+    )
     return 0
 
 

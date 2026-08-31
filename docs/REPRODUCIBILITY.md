@@ -40,4 +40,23 @@ The exporter reads local `episode-pages.jsonl`, `claim-index.jsonl` and `knowled
 
 The collectors use public webpages/APIs and therefore produce time-varying results. Run them into an ignored `work/` directory first. Review source terms, robots/access constraints, rate limits and individual article licenses before retrieval. Never bypass paywalls or access controls.
 
+Incremental bibliographic verification can be run in small batches:
+
+```bash
+python scripts/verify_academic_batch.py \
+  --queue references/catalog/academic-verification-queue.csv \
+  --limit 20
+```
+
+If one provider is rate-limited, continue only through the unaffected public providers:
+
+```bash
+python scripts/verify_academic_batch.py \
+  --queue references/catalog/academic-verification-queue.csv \
+  --limit 20 \
+  --providers europe-pmc crossref
+```
+
+The verifier skips identifier-free search pages, preserves unresolved rows as `pending` and stops querying a provider after repeated API errors. A successful API match produces `verified-bibliographic` only; it does not establish study design, efficacy or safety.
+
 After review, promote only the safe derived fields through `export_public_snapshot.py`. The full private contract check is available as `scripts/contract_check_full.py` when all local raw catalogs exist.

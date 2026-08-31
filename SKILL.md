@@ -95,7 +95,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 采集 Stanford Huberman Lab 公开出版物分页目录：`python scripts/collect_publications.py --output references/catalog/publications.csv`
 - 展平所有公开 Show Notes 中的资源/论文链接：`python scripts/build_resource_catalog.py --input references/catalog/episode-pages.jsonl --output references/catalog/episode-resources.csv`
 - 建立去重的学术/医学证据核查队列：`python scripts/build_academic_queue.py --input references/catalog/episode-resources.csv --output references/catalog/academic-verification-queue.csv`
-- 增量核对 PMC/PMID/DOI 书目信息（默认只把明确命中的来源升级为 `verified-bibliographic`，不自动推断疗效）：`python scripts/verify_academic_batch.py --queue references/catalog/academic-verification-queue.csv --limit 20`
+- 增量核对 PMC/PMID/DOI/PII 书目信息（默认只把明确命中的来源升级为 `verified-bibliographic`，不自动推断疗效）：`python scripts/verify_academic_batch.py --queue references/catalog/academic-verification-queue.csv --limit 20`。脚本会跳过无标准标识的查询页，并在同一提供方连续报错后熔断；若 Elsevier 被限流，可用 `--providers europe-pmc crossref` 继续处理其他公开来源。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
 - 构建主张级索引：`python scripts/build_claim_index.py --input references/research/batch-02-transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
 - 把外部字幕缓存的下载状态和字幕来源写回队列（不把完整转录复制进 Skill）：`python scripts/update_transcript_status.py --queue references/catalog/youtube-transcript-queue.csv --cache /path/to/work/youtube-transcript/andrew-huberman`
