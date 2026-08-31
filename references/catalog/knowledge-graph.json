@@ -277,6 +277,41 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:escalate-recurrent-or-impairing-anxiety-instead-of-stacking-breathwork"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:triage-the-stress-spike-and-name-one-function"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "claim:batch02-claim-0041"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "study-card:balban-2023-structured-respiration-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "study-card:chin-2024-brief-state-anxiety-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "target": "study-card:fincham-2023-breathwork-stress-meta-analysis"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:protect-one-focus-block",
       "target": "action-step:protect-one-focus-block:define-output-and-remove-one-interruption"
     },
@@ -784,6 +819,56 @@
       "relation": "grounded_in",
       "source": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option",
       "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:escalate-recurrent-or-impairing-anxiety-instead-of-stacking-breathwork",
+      "target": "claim:batch02-claim-0041"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:escalate-recurrent-or-impairing-anxiety-instead-of-stacking-breathwork",
+      "target": "study-card:chin-2024-brief-state-anxiety-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:escalate-recurrent-or-impairing-anxiety-instead-of-stacking-breathwork",
+      "target": "study-card:fincham-2023-breathwork-stress-meta-analysis"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset",
+      "target": "claim:batch02-claim-0041"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset",
+      "target": "study-card:balban-2023-structured-respiration-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset",
+      "target": "study-card:chin-2024-brief-state-anxiety-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset",
+      "target": "study-card:fincham-2023-breathwork-stress-meta-analysis"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:triage-the-stress-spike-and-name-one-function",
+      "target": "claim:batch02-claim-0041"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:triage-the-stress-spike-and-name-one-function",
+      "target": "study-card:balban-2023-structured-respiration-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:triage-the-stress-spike-and-name-one-function",
+      "target": "study-card:chin-2024-brief-state-anxiety-review"
     },
     {
       "relation": "grounded_in",
@@ -1504,6 +1589,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0040",
       "target": "youtube:https://www.youtube.com/watch?v=_DfqnpSbMfE"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0041",
+      "target": "youtube:https://www.youtube.com/watch?v=x4m_PdFbu-s"
     },
     {
       "relation": "cites_resource",
@@ -42807,6 +42897,16 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:chin-2024-qualifies-balban-2023-acute-anxiety-superiority",
+      "target": "study-card:balban-2023-structured-respiration-rct"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:chin-2024-qualifies-fincham-2023-acute-transfer",
+      "target": "study-card:fincham-2023-breathwork-stress-meta-analysis"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer",
       "target": "study-card:jagdeo-2018-led-dermatology-review"
     },
@@ -42829,6 +42929,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:dunlosky-2013-qualifies-roediger-karpicke-2006-practice-testing",
       "target": "study-card:roediger-karpicke-2006-test-enhanced-learning"
+    },
+    {
+      "relation": "supports",
+      "source": "evidence-relation:fincham-2023-supports-balban-2023-broad-breathwork-context",
+      "target": "study-card:balban-2023-structured-respiration-rct"
     },
     {
       "relation": "qualifies",
@@ -43114,6 +43219,116 @@
       "relation": "reviews_resource",
       "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/42080982/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:breathwork"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:cyclic-sighing"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:mood"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:respiratory-rate"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:state-anxiety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "evidence-topic:stress"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:0c42d9ee38f46716"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:225e59761a2a14b1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:69f512c2ed53b008"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:8e815451d37e5562"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:b863cced1f2470a7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-limitation:d13410d687f59cb9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-finding:7cd8a3d508dc79d1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-finding:a01e22d29209e2a1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-finding:db19c2151ee58dec"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-finding:fa747b42e0692c75"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "study-finding:72c5464caa963d90"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666379122004748%3Fshowall%3Dtrue"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S2666379122004748?showall%3Dtrue"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:balban-2023-structured-respiration-rct",
+      "target": "resource:https://www.sciencedirect.com/science/article/pii/S2666379122004748?via%3Dihub"
     },
     {
       "relation": "has_evidence_topic",
@@ -43597,6 +43812,111 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-relation:chin-2024-qualifies-balban-2023-acute-anxiety-superiority"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-relation:chin-2024-qualifies-fincham-2023-acute-transfer"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-topic:acute-stress"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-topic:breathwork"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-topic:mindfulness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-topic:state-anxiety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-limitation:02beeedca9a15a4e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-limitation:22d3f3e47c32dacd"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-limitation:539d4da4380706d9"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-limitation:6ea9852a421953cd"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-limitation:f91a9b34f456c6d7"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:3f560f576df7a02c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:5706110346f4740c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:5d1affa87239907a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:7e3e01e9192e192d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:fdc64cc281e20972"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "study-finding:b5166884047c13d0"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "resource:https://doi.org/10.3389/fpsyg.2024.1412928"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:chin-2024-brief-state-anxiety-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/38933581/"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:cohen-2021-home-dermatology-devices-review",
       "target": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer"
     },
@@ -44019,6 +44339,101 @@
       "relation": "reviews_resource",
       "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
       "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/pdf/pnas.201015950.pdf"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-relation:fincham-2023-supports-balban-2023-broad-breathwork-context"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:anxiety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:breathwork"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:depression"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:mental-health"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "evidence-topic:stress"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-limitation:363432651d45347e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-limitation:40ed5a0d147063ff"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-limitation:60044cd331cd6082"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-limitation:819417237ed77447"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-limitation:bb8015e4bbfc1a14"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:6ffc6225bd4381e5"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:99d0a339d27849b9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:a627e68f389e8e6d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:d850ade4debaa009"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:e4872b0fba6ba337"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "study-finding:04a28a14fd8ae54a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "target": "resource:https://www.nature.com/articles/s41598-022-27247-y"
     },
     {
       "relation": "has_evidence_relation",
@@ -47231,7 +47646,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T08:40:53.996547+00:00",
+  "generated_at": "2026-08-31T11:37:44.934701+00:00",
   "nodes": [
     {
       "aliases": [
@@ -47436,6 +47851,52 @@
       "scope": "适用于一般成人对一顿重复餐或一种常见零食做低风险环境替换；不是减重治疗、进食障碍干预或糖尿病、肾病、胃肠病等疾病饮食处方",
       "type": "action-playbook",
       "user_goal": "不靠极端规则或营养细节过载，先改变一个反复导致无计划进食的现实场景"
+    },
+    {
+      "aliases": [
+        "压力突然上来怎么办",
+        "焦虑时怎么呼吸",
+        "生理叹息",
+        "循环叹息",
+        "双吸长呼",
+        "呼吸减压",
+        "惊恐时呼吸",
+        "acute stress breathing",
+        "physiological sigh",
+        "cyclic sighing",
+        "breathwork anxiety"
+      ],
+      "baseline_checks": [
+        "先区分短时生理唤醒、现实危险/急症，以及反复或持续的焦虑/惊恐；三者不能走同一条自助路径",
+        "记录一个现实功能目标和练习前主观唤醒，不把呼吸率、HRV或机制词当作用户真正想改善的结果",
+        "确认当前不在驾驶、游泳、浴缸、冷水、梯子、机械操作或其他一旦头晕就可能受伤的环境",
+        "若专注呼吸曾触发惊恐、创伤闪回、解离或失控感，优先用环境落地和社会支持，不强迫内感受练习"
+      ],
+      "escalation": [
+        "胸痛、严重或新发呼吸困难、晕厥、意识混乱、发绀、单侧无力/言语异常等立即联系当地急救",
+        "自伤/他伤风险、无法保证安全、躁狂或精神病性症状应立即联系当地危机/急救服务并让可信任的人陪同",
+        "反复惊恐、持续焦虑、创伤/解离、睡眠和功能明显受损，或药物/物质相关症状，应联系基层医疗、心理/精神科或现有治疗团队",
+        "心肺疾病、癫痫、青光眼、孕期、物质使用问题或其他研究排除情境不等于绝对禁忌，但表示现有循环叹息试验没有建立可自用的安全性，应先咨询专业人员"
+      ],
+      "first_questions": [
+        "这是一次明确诱因后的短时紧张，还是反复惊恐/持续焦虑？现在最想恢复的一个具体功能是什么？",
+        "有没有胸痛、严重或新发气促、晕厥感、意识/神经异常、自伤想法或现实安全威胁？",
+        "专注呼吸、深呼吸或屏息过去会让你更稳，还是更头晕、更恐慌或出现创伤/解离感？"
+      ],
+      "id": "action-playbook:manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "label": "处理一次非紧急压力高峰，并判断呼吸练习是否适合",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "胸痛、严重/新发呼吸困难、晕厥、神经症状或其他急症的自助鉴别与处理",
+        "自伤/他伤风险、躁狂、精神病性症状、暴力或现实危险场景",
+        "用呼吸练习治疗惊恐障碍、广泛性焦虑、PTSD、OCD、抑郁、心肺疾病或替代专业照护",
+        "在驾驶、游泳、浴缸、冷水、密闭空间、高处或机械操作时做练习",
+        "快速过度换气、长时间屏息、Wim Hof式组合、追求缺氧/麻木/眩晕或个人化呼吸剂量"
+      ],
+      "safe_summary": "先排除急症、现实危险和需要持续治疗的焦虑，再决定是否尝试呼吸。循环叹息可作为一般成人一次可立即停止的温和状态试验，但108人探索性RCT只显示正性情绪和呼吸率优势，没有证明它在状态焦虑下降上优于正念，特质焦虑、HRV、静息心率和睡眠也未改善；后续12项急性RCT综述中，单独呼吸总体不显著且高度异质。不要在驾驶、浸水或高风险环境练，不做快速过度换气或屏息；一旦头晕、气短加重、胸痛、失控感或接近晕厥就停止。反复惊恐、持续焦虑或功能受损应找专业支持，不用更多呼吸协议覆盖根因。",
+      "scope": "适用于一般成人在非紧急、轻到中度的短时压力或紧张中，判断温和呼气偏重练习是否值得作为可撤销的状态调节选项；不诊断焦虑、惊恐或心肺疾病，不提供快速呼吸、屏息或临床治疗方案",
+      "type": "action-playbook",
+      "user_goal": "在压力突然升高时先保证安全，再用最小、可撤销的动作恢复一个现实功能，同时避免把循环叹息当成万能焦虑治疗"
     },
     {
       "aliases": [
@@ -47901,6 +48362,60 @@
       "trigger": "采购、备餐或下单时，在原选择进入手边之前完成替换",
       "type": "action-step",
       "why": "Hall 试验中超加工菜单导致更高平均自由摄入和短期增重，但它比较整套住院菜单，不能证明完全禁掉每种加工食品；单点替换是更保守的现实实验"
+    },
+    {
+      "adaptation": "等待评估时只保留不会加重症状的基础支持：规律睡眠/进食、减少明显刺激物、可信任的人陪伴和记录诱因/持续时间；不要自行停药、改药或用酒精、大麻、补剂、冷暴露压症状",
+      "classification": "framework-inference",
+      "id": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:escalate-recurrent-or-impairing-anxiety-instead-of-stacking-breathwork",
+      "label": "把反复压力、惊恐或功能受损当成需要找根因的问题，不用更复杂呼吸法覆盖它",
+      "metric": "是否联系到合适的基层医疗、心理/精神科或现有治疗团队；发作频率、持续时间和功能损害是否被如实记录，而不是只记录完成了多少呼吸次数",
+      "minimum_version": "若一周内反复发作、持续恶化、出现回避或明显影响睡眠/工作/关系，今天联系一个可获得的专业支持入口或可信任的人协助预约；若正在治疗，直接把症状变化和练习反应告诉原团队",
+      "playbook_id": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "出现自伤/他伤想法、无法照顾自己、躁狂/精神病性症状或快速恶化",
+        "为继续自助而延迟急救、必要检查、心理治疗、处方复诊或药物不良反应评估"
+      ],
+      "trigger": "压力/惊恐反复出现、温和练习无效或加重、需要越来越强的技巧，或已经影响日常功能时",
+      "type": "action-step",
+      "why": "呼吸训练荟萃分析显示平均主观收益但临床亚组、长期随访和安全报告有限；焦虑与惊恐的治疗需要按诊断、功能和个体风险选择循证照护，不能由播客工具替代"
+    },
+    {
+      "adaptation": "如果专注呼吸让焦虑或身体感觉更强，立即回到自然呼吸，改用看见/触摸周围物体、降低噪声、短暂离开冲突或联系可信任的人；没有明确功能改善就不加长、不加快、不堆更多技巧",
+      "classification": "bounded-experiment",
+      "id": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:test-one-gentle-exhale-biased-reset",
+      "label": "若只是轻到中度、非紧急的短时唤醒，做一次可立即停止的温和呼气偏重试验；不追求完美动作",
+      "metric": "练习前后主观唤醒是否下降，以及能否恢复刚才定义的一个功能；不以HRV、呼吸率或‘迷走神经被激活’代替现实结果",
+      "minimum_version": "保持坐稳和自然、舒适、不用力的呼吸；可尝试一次轻柔吸气、再补一小口舒适吸气，随后不费力地较长呼气，然后回到自然呼吸。只有感觉更稳才少量重复；不计时、不憋气、不快速深呼吸、不在驾驶、游泳、浴缸或冷水中练",
+      "playbook_id": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "priority": 2,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "头晕、视物异常、明显刺麻/手足痉挛、气短加重、胸痛、心悸伴不适、失控感或接近晕厥",
+        "为了获得效果而开始强吸、快速换气、屏息、浸水、闭锁空间练习或持续加码"
+      ],
+      "trigger": "已经排除急症和现实危险，能够安全坐稳，且用户愿意尝试而不是被要求必须完成时",
+      "type": "action-step",
+      "why": "108人探索性RCT支持每日呼吸练习的部分正性情绪和呼吸率信号，但循环叹息未被证明在状态焦虑下降上优于正念；后续急性综述中呼吸单独使用总体不显著且高度异质，因此只能作为可撤销的个人状态试验"
+    },
+    {
+      "adaptation": "若不是急症但压力反复出现、难以解释或持续影响睡眠、工作、饮食、关系，就不再把它当单次状态问题，转入专业评估与持续支持；若当前环境本身不安全，先离开威胁或联系可信任的人",
+      "classification": "framework-inference",
+      "id": "action-step:manage-an-acute-stress-spike-without-overclaiming-breathwork:triage-the-stress-spike-and-name-one-function",
+      "label": "先判断这是不是可以自助的短时压力高峰，并只定义一个恢复目标",
+      "metric": "是否排除急症/现实危险；能否写出一个压力下降后要恢复的具体功能，例如继续开会、停止争吵或安全回家",
+      "minimum_version": "暂停正在进行的非必要任务，坐稳或站稳，观察是否有胸痛、严重/新发气促、晕厥感、单侧无力/言语异常、意识混乱、自伤想法或现实威胁；任一存在就不做呼吸实验",
+      "playbook_id": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "胸痛、严重或新发呼吸困难、晕厥/接近晕厥、发绀、意识混乱、单侧无力或言语异常",
+        "有自伤/他伤风险、躁狂/精神病性症状、遭受暴力或当前环境不能保证安全"
+      ],
+      "trigger": "压力突然升高、准备打开呼吸练习视频或试图用意志力硬压症状时",
+      "type": "action-step",
+      "why": "呼吸练习只能处理部分生理唤醒，不能区分心肺/神经急症、药物反应、现实危险或需要治疗的焦虑；先分流比先套协议更能保护用户"
     },
     {
       "adaptation": "若仍无法开始，缩小交付物；若主要是内部想法打断，留下一个停车清单，不同时增加多种专注工具",
@@ -49075,6 +49590,21 @@
       "record_kind": "topic-synthesis",
       "speaker_scope": "guest-or-mixed",
       "timestamps": [],
+      "type": "claim"
+    },
+    {
+      "boundary": "节目把不同呼吸模式解释为可改变短期状态的工具，但不能仅凭节目表述证明循环叹息优于所有方法、治疗焦虑/惊恐/创伤，或授权心肺/神经高风险人群自行屏息与快速过度换气",
+      "evidence_layer": "podcast-claim",
+      "id": "claim:batch02-claim-0041",
+      "label": "batch02-claim-0041",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "Huberman",
+      "timestamps": [
+        "00:57:23",
+        "01:22:39",
+        "01:33:56",
+        "01:51:17"
+      ],
       "type": "claim"
     },
     {
@@ -53451,6 +53981,40 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "该综述按干预类别汇总、研究数少且存在偏倚与发表偏倚，不能证明循环叹息无效；它只否定‘对所有人、所有急性焦虑都最优’的强结论。",
+      "id": "evidence-relation:chin-2024-qualifies-balban-2023-acute-anxiety-superiority",
+      "label": "循环叹息能否被称为对急性焦虑普遍有效且优于其他简短方法的最佳技术",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/",
+        "https://doi.org/10.3389/fpsyg.2024.1412928"
+      ],
+      "rationale": "Chin等将Balban纳入12项急性状态焦虑RCT后，发现单独呼吸干预总体不显著，主动改变呼吸和注意呼吸的合并区间均跨过无效值，且异质性分别高达96%和80%。这与Balban中循环叹息优势主要落在正性情绪和呼吸率、而非状态焦虑优越性相一致。",
+      "relation": "qualifies",
+      "relation_id": "chin-2024-qualifies-balban-2023-acute-anxiety-superiority",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "chin-2024-brief-state-anxiety-review",
+      "target_review_id": "balban-2023-structured-respiration-rct",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "两篇综述的检索、纳入标准和结局不同，不构成直接矛盾；当前关系只要求区分多次练习的平均压力效应与单次急性焦虑效果。",
+      "id": "evidence-relation:chin-2024-qualifies-fincham-2023-acute-transfer",
+      "label": "多次呼吸训练对平均主观压力的合并收益，能否保证一次呼吸练习立即降低状态焦虑",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9828383/",
+        "https://doi.org/10.3389/fpsyg.2024.1412928"
+      ],
+      "rationale": "Fincham的主分析混合多次、不同方案并观察干预后主观压力；Chin专门分析一次性状态焦虑，发现呼吸单独使用总体不显著且技术依赖性很强。持续练习的组均值不能直接迁移成急性急救承诺。",
+      "relation": "qualifies",
+      "relation_id": "chin-2024-qualifies-fincham-2023-acute-transfer",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "chin-2024-brief-state-anxiety-review",
+      "target_review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "两篇综述存在作者重叠，不能称为独立复制；该关系也不表示所有家用设备无效，只要求疾病、型号、参数和临床结局匹配。",
       "id": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer",
       "label": "临床皮肤科LED试验的适应证级证据，能否直接迁移到任意家庭面罩或家用设备",
@@ -53535,6 +54099,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "dunlosky-2013-effective-learning-techniques-review",
       "target_review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "Fincham检索结束早于Balban论文，未纳入循环叹息，也不能证明具体动作、5分钟或28天得到独立复制；多数结局自评且偏倚和异质性有限制。",
+      "id": "evidence-relation:fincham-2023-supports-balban-2023-broad-breathwork-context",
+      "label": "Balban单项循环叹息研究是否处在更广泛呼吸训练与主观压力改善的同向证据背景中",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9828383/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/",
+        "https://doi.org/10.1038/s41598-022-27247-y"
+      ],
+      "rationale": "Fincham等在12项RCT、785名成人中发现呼吸训练对自评压力有小到中等平均效应，与Balban的短期情绪和状态焦虑信号方向相容，说明它并非完全孤立的干预类别。",
+      "relation": "supports",
+      "relation_id": "fincham-2023-supports-balban-2023-broad-breathwork-context",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "target_review_id": "balban-2023-structured-respiration-rct",
       "type": "evidence-relation"
     },
     {
@@ -53909,6 +54490,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-stress",
+      "label": "acute-stress",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:acute-surrogate",
       "label": "acute-surrogate",
       "type": "evidence-topic"
@@ -53946,6 +54532,11 @@
     {
       "id": "evidence-topic:amenorrhea",
       "label": "amenorrhea",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:anxiety",
+      "label": "anxiety",
       "type": "evidence-topic"
     },
     {
@@ -54001,6 +54592,11 @@
     {
       "id": "evidence-topic:brain-volume",
       "label": "brain-volume",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:breathwork",
+      "label": "breathwork",
       "type": "evidence-topic"
     },
     {
@@ -54116,6 +54712,16 @@
     {
       "id": "evidence-topic:cued-recall",
       "label": "cued-recall",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cyclic-sighing",
+      "label": "cyclic-sighing",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:depression",
+      "label": "depression",
       "type": "evidence-topic"
     },
     {
@@ -54484,6 +55090,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:mental-health",
+      "label": "mental-health",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:meta-analysis",
       "label": "meta-analysis",
       "type": "evidence-topic"
@@ -54496,6 +55107,11 @@
     {
       "id": "evidence-topic:metacognition",
       "label": "metacognition",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:mindfulness",
+      "label": "mindfulness",
       "type": "evidence-topic"
     },
     {
@@ -54689,6 +55305,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:respiratory-rate",
+      "label": "respiratory-rate",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:restudy",
       "label": "restudy",
       "type": "evidence-topic"
@@ -54786,6 +55407,11 @@
     {
       "id": "evidence-topic:stabilization",
       "label": "stabilization",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:state-anxiety",
+      "label": "state-anxiety",
       "type": "evidence-topic"
     },
     {
@@ -58554,6 +59180,17 @@
       "type": "resource",
       "url": "https://doi.org/10.1097/01.psy.0000149258.42508.70",
       "verification_status": "verified-observational"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部预注册系统综述：12项急性状态焦虑RCT中，单独呼吸干预总体不显著，主动改变呼吸与注意呼吸均高度异质；它包含Balban研究但不支持循环叹息是普遍最佳急性技术。证据卡：academic-study-cards.jsonl#chin-2024-brief-state-anxiety-review。",
+      "id": "resource:https://doi.org/10.3389/fpsyg.2024.1412928",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.3389/fpsyg.2024.1412928",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.3389/fpsyg.2024.1412928",
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "1",
@@ -67259,6 +67896,17 @@
       "verification_status": "verified-observational"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部预注册系统综述：12项急性状态焦虑RCT中，单独呼吸干预总体不显著，主动改变呼吸与注意呼吸均高度异质；它包含Balban研究但不支持循环叹息是普遍最佳急性技术。证据卡：academic-study-cards.jsonl#chin-2024-brief-state-anxiety-review。",
+      "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+      "kind": "academic-or-medical",
+      "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+      "verification_status": "verified-review"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "单病例不能证明普遍因果；尼古丁替代品仍需关注口腔卫生、依赖和适用禁忌，不能把“无糖”理解为无口腔风险（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11325015/pdf/CRID2024-6635130.pdf",
@@ -68292,7 +68940,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "研究比较循环叹息、盒式呼吸和正念；循环叹息信号较强，但研究远程、时间短、含自评结局，不证明治疗惊恐或其他疾病（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：108名成人远程随机接受循环叹息、盒式呼吸、循环过度换气加屏息或正念，每日约5分钟、持续28天。循环叹息的优势主要是正性情绪和呼吸率；状态焦虑四组均下降但未证明循环叹息优于正念，特质焦虑、HRV、静息心率和睡眠均无显著改善。试验探索性、回顾注册、远程且无随访，不能用于治疗惊恐/创伤或生成通用剂量。证据卡：academic-study-cards.jsonl#balban-2023-structured-respiration-rct。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/",
@@ -70413,6 +71061,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37650138/",
       "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部预注册系统综述：12项急性状态焦虑RCT中，单独呼吸干预总体不显著，主动改变呼吸与注意呼吸均高度异质；它包含Balban研究但不支持循环叹息是普遍最佳急性技术。证据卡：academic-study-cards.jsonl#chin-2024-brief-state-anxiety-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/38933581/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/38933581/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38933581/",
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "0",
@@ -79138,7 +79797,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "研究比较循环叹息、盒式呼吸和正念；循环叹息信号较强，但研究远程、时间短、含自评结局，不证明治疗惊恐或其他疾病（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：108名成人远程随机接受循环叹息、盒式呼吸、循环过度换气加屏息或正念，每日约5分钟、持续28天。循环叹息的优势主要是正性情绪和呼吸率；状态焦虑四组均下降但未证明循环叹息优于正念，特质焦虑、HRV、静息心率和睡眠均无显著改善。试验探索性、回顾注册、远程且无随访，不能用于治疗惊恐/创伤或生成通用剂量。证据卡：academic-study-cards.jsonl#balban-2023-structured-respiration-rct。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8",
@@ -79148,7 +79807,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "研究比较循环叹息、盒式呼吸和正念；循环叹息信号较强，但研究远程、时间短、含自评结局，不证明治疗惊恐或其他疾病（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：108名成人远程随机接受循环叹息、盒式呼吸、循环过度换气加屏息或正念，每日约5分钟、持续28天。循环叹息的优势主要是正性情绪和呼吸率；状态焦虑四组均下降但未证明循环叹息优于正念，特质焦虑、HRV、静息心率和睡眠均无显著改善。试验探索性、回顾注册、远程且无随访，不能用于治疗惊恐/创伤或生成通用剂量。证据卡：academic-study-cards.jsonl#balban-2023-structured-respiration-rct。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666379122004748%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666379122004748%3Fshowall%3Dtrue",
@@ -79158,7 +79817,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "研究比较循环叹息、盒式呼吸和正念；循环叹息信号较强，但研究远程、时间短、含自评结局，不证明治疗惊恐或其他疾病（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：108名成人远程随机接受循环叹息、盒式呼吸、循环过度换气加屏息或正念，每日约5分钟、持续28天。循环叹息的优势主要是正性情绪和呼吸率；状态焦虑四组均下降但未证明循环叹息优于正念，特质焦虑、HRV、静息心率和睡眠均无显著改善。试验探索性、回顾注册、远程且无随访，不能用于治疗惊恐/创伤或生成通用剂量。证据卡：academic-study-cards.jsonl#balban-2023-structured-respiration-rct。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S2666379122004748?showall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00474-8?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S2666379122004748?showall%3Dtrue",
@@ -90892,13 +91551,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1038/s41598-022-27247-y；《Effect of breathwork on stress and mental health: A meta-analysis of randomised-controlled trials》；Scientific Reports；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工综述级核验：预注册荟萃分析纳入压力12项RCT/785人，显示小到中等自评压力效应（g=-0.35），焦虑和抑郁也有平均信号，但偏倚、异质性、随访和安全报告均有限，且检索早于Balban循环叹息论文。不能识别最佳技术、生成统一剂量或替代临床治疗。证据卡：academic-study-cards.jsonl#fincham-2023-breathwork-stress-meta-analysis。",
       "id": "resource:https://www.nature.com/articles/s41598-022-27247-y",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41598-022-27247-y",
       "type": "resource",
       "url": "https://www.nature.com/articles/s41598-022-27247-y",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "1",
@@ -97430,7 +98089,7 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "研究比较循环叹息、盒式呼吸和正念；循环叹息信号较强，但研究远程、时间短、含自评结局，不证明治疗惊恐或其他疾病（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：108名成人远程随机接受循环叹息、盒式呼吸、循环过度换气加屏息或正念，每日约5分钟、持续28天。循环叹息的优势主要是正性情绪和呼吸率；状态焦虑四组均下降但未证明循环叹息优于正念，特质焦虑、HRV、静息心率和睡眠均无显著改善。试验探索性、回顾注册、远程且无随访，不能用于治疗惊恐/创伤或生成通用剂量。证据卡：academic-study-cards.jsonl#balban-2023-structured-respiration-rct。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S2666379122004748?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S2666379122004748?via%3Dihub",
@@ -102510,6 +103169,36 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "等时长正念冥想，每日约5分钟，持续28天",
+      "doi": "10.1016/j.xcrm.2022.100895",
+      "evidence_level": "A-Direct（108名成人、四组远程随机主动对照研究；探索性且回顾注册）",
+      "id": "study-card:balban-2023-structured-respiration-rct",
+      "intervention_exposure": "循环叹息、盒式呼吸或循环过度换气加屏息，每日约5分钟，持续28天",
+      "label": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+      "outcomes": [
+        "每日练习前后PANAS正性/负性情绪",
+        "每日练习前后STAI状态焦虑",
+        "基线与研究结束时特质焦虑",
+        "WHOOP呼吸率、静息心率、HRV和睡眠指标"
+      ],
+      "population": "18岁以上、能理解英文的成人；多数来自Stanford本科心理学课程，排除可能因练习而加重的中重度精神或躯体疾病人群",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36630953/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9873947/",
+        "https://clinicaltrials.gov/study/NCT05304000",
+        "https://doi.org/10.1016/j.xcrm.2022.100895"
+      ],
+      "result_summary": "四组每日练习后状态焦虑和负性情绪均下降；呼吸练习合并组的正性情绪改善大于正念，循环叹息组随练习日数增加的正性情绪信号最强，并较正念组更明显降低呼吸率。",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持一般成人把温和、可立即停止的呼气偏重练习当作短期状态调节选项；它不证明循环叹息是急性焦虑的最佳技术，不治疗惊恐、创伤或焦虑障碍，也不能把5分钟或28天改写成人人适用的精确处方。",
+      "sample_size": 108,
+      "source_scope": "episode-linked",
+      "study_design": "四组、重复测量的远程随机主动对照研究；每日练习前后测量，持续28天",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "每日约 13 分钟不同的 Radiolab 科学播客，持续 8 周",
       "doi": "10.1016/j.bbr.2018.08.023",
       "evidence_level": "A-Direct（小样本人体随机主动对照研究）",
@@ -102657,6 +103346,34 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "静坐、注意控制或其他非目标干预",
+      "doi": "10.3389/fpsyg.2024.1412928",
+      "evidence_level": "A-Direct（预注册系统综述/荟萃分析，12项急性状态焦虑RCT）",
+      "id": "study-card:chin-2024-brief-state-anxiety-review",
+      "intervention_exposure": "一次性主动改变呼吸、注意呼吸、身体放松、认知重评或组合练习，时长和技术不同",
+      "label": "A systematic review of brief respiratory, embodiment, cognitive, and mindfulness interventions to reduce state anxiety",
+      "outcomes": [
+        "干预前后状态焦虑量表",
+        "不同干预类别的标准化效应量",
+        "异质性、偏倚风险与发表偏倚"
+      ],
+      "population": "以健康成人、大学生和实验性状态焦虑样本为主；不同研究人群与基线焦虑水平不一",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38933581/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11203600/",
+        "https://doi.org/10.3389/fpsyg.2024.1412928"
+      ],
+      "result_summary": "单独呼吸干预对状态焦虑总体未显著优于对照：主动改变呼吸g=-0.46（95%CI -2.18至1.25），注意呼吸g=-0.21（95%CI -0.75至0.34）；技术间从较大改善到不改善甚至对照更好，异质性很高。",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "急性压力时可把温和呼吸作为可撤销选项，但不能承诺必然缓解，更不能把任何单一模式称为最优；若专注呼吸使焦虑、头晕、气短或失控感加重，应立即停止，改用环境落地、社会支持或专业照护。",
+      "sample_size": "系统综述/荟萃分析：12项RCT，其中9项并行、3项交叉设计",
+      "source_scope": "external-context",
+      "study_design": "预注册系统综述和随机效应荟萃分析，比较一次性认知、身体、呼吸或组合干预对状态焦虑的影响",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "假设备、标准治疗、基线或无对照，随试验设计而异",
       "doi": "10.1007/s00403-021-02231-0",
       "evidence_level": "A-Synthesis（37项家庭皮肤设备试验的系统综述）",
@@ -102771,6 +103488,35 @@
       "study_design": "120 名无痴呆老年人随机分配到中等强度有氧步行或伸展/塑形对照，持续一年；在基线、6 个月和 12 个月进行 MRI、体适能、血液和空间记忆测量，评估前海马体积、BDNF、体适能与记忆变化",
       "type": "study-card",
       "verification_status": "verified-study"
+    },
+    {
+      "comparator": "不含呼吸练习的主动或非主动对照",
+      "doi": "10.1038/s41598-022-27247-y",
+      "evidence_level": "A-Direct（预注册系统综述/荟萃分析；压力12项RCT共785人，焦虑20项、抑郁18项）",
+      "id": "study-card:fincham-2023-breathwork-stress-meta-analysis",
+      "intervention_exposure": "有意识控制呼吸深度、节律或速度，且呼吸占干预至少一半；方案、时长与交付方式多样",
+      "label": "Effect of breathwork on stress and mental health: A meta-analysis of randomised-controlled trials",
+      "outcomes": [
+        "自评/主观压力",
+        "自评焦虑",
+        "自评抑郁症状",
+        "不良反应与退出情况（仅部分研究报告）"
+      ],
+      "population": "18岁以上成人，包含非临床、躯体疾病和少量精神健康样本；压力分析中75%为女性",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36624160/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9828383/",
+        "https://doi.org/10.1038/s41598-022-27247-y"
+      ],
+      "result_summary": "相较非呼吸对照，压力的合并效应为小到中等（12项，g=-0.35，95%CI -0.55至-0.14，I²=42%）；焦虑和抑郁也出现小到中等平均效应，但异质性显著。",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "呼吸训练作为一类干预可能带来小到中等的平均主观压力收益，但该综述不能识别循环叹息为最佳技术、给出统一剂量，或替代焦虑/抑郁的评估与循证治疗；快速呼吸、屏息和出现不适的练习需要更严格边界。",
+      "sample_size": "系统综述/荟萃分析：主结局压力12项RCT、785名成人；次要结局焦虑20项、抑郁18项",
+      "source_scope": "episode-linked",
+      "study_design": "预注册系统综述与随机效应荟萃分析，检索至2022年2月；只纳入成人RCT和非呼吸对照",
+      "type": "study-card",
+      "verification_status": "verified-review"
     },
     {
       "comparator": "部分研究设有随机或非随机对照，部分为单组设计；综述同时比较自动化/习惯强度是否变化及其与主要健康或行为结局是否一致",
@@ -103752,6 +104498,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:04a28a14fd8ae54a",
+      "label": "相较非呼吸对照，压力的合并效应为小到中等（12项，g=-0.35，95%CI -0.55至-0.14，I²=42%）；焦虑和抑郁也出现小到中等平均效应，但异质性显著。",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:06a81cd3b08ddd9e",
       "label": "频率与时长分类不能确定最佳或最低有效剂量",
@@ -104053,6 +104806,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:3f560f576df7a02c",
+      "label": "主动呼吸研究I²=96%，注意呼吸研究I²=80%，无法支持一个通用急性技术",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:406e164b4435cab3",
       "label": "男性单次暴露后的生长激素和催乳素约升高16倍与2.3倍，女性催乳素超过4倍；生长激素反应在第3天后减弱。实验后7名女性中5名出现暂时性闭经，作者认为可能与热和脱水有关。",
@@ -104201,6 +104961,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:5706110346f4740c",
+      "label": "主动改变呼吸和仅注意呼吸两个亚组都未达到显著",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:57f43221df988584",
       "label": "久坐行为亚组的前后变化不显著（SMD 0.24，95% CI -0.18–0.66）",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -104232,6 +104999,13 @@
       "id": "study-finding:5d0e98f8724e371d",
       "label": "没有建立一般老年健康、长寿或无病人群购买设备的效益",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:5d1affa87239907a",
+      "label": "部分替代鼻孔呼吸研究中安静坐着的对照改善更多",
+      "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-finding"
     },
     {
@@ -104327,6 +105101,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:6ffc6225bd4381e5",
+      "label": "总练习时长、次数和频率与压力效应量均未见显著剂量—反应关系",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:705fbf36475eedb3",
       "label": "并非所有认知领域或单项研究都显示急性运动优势，部分结果无效或不利",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
@@ -104337,6 +105118,13 @@
       "id": "study-finding:727dfe8ff9f466f5",
       "label": "没有证明所有家用LED或红光设备可互换",
       "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:72c5464caa963d90",
+      "label": "四组每日练习后状态焦虑和负性情绪均下降；呼吸练习合并组的正性情绪改善大于正念，循环叹息组随练习日数增加的正性情绪信号最强，并较正念组更明显降低呼吸率。",
+      "review_id": "balban-2023-structured-respiration-rct",
       "type": "study-finding"
     },
     {
@@ -104397,9 +105185,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:7cd8a3d508dc79d1",
+      "label": "任何组的特质焦虑均无显著改变，组间也无差异",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7d1088e7864b7274",
       "label": "没有建立可跨设备使用的标准波长、剂量、部位或疗程",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:7e3e01e9192e192d",
+      "label": "单独呼吸干预总体没有显著降低状态焦虑",
+      "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-finding"
     },
     {
@@ -104544,6 +105346,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:99d0a339d27849b9",
+      "label": "只有6项（含次要结局研究）主动报告安全；未报告严重持久伤害不等于完整证明安全",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:9a64e1b2a1c04df0",
       "label": "相同颜色标签下的波长、剂量和疗程不统一，不能得出统一消费设备效果",
       "review_id": "jagdeo-2018-led-dermatology-review",
@@ -104621,6 +105430,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:a01e22d29209e2a1",
+      "label": "睡眠时长、睡眠效率、睡眠评分和日间睡眠干扰均无显著改善",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:a09d778041633461",
       "label": "没有比较购买设备与不购买设备的成本、依从性或安全",
       "review_id": "laukkanen-2015-sauna-mortality-cohort",
@@ -104645,6 +105461,13 @@
       "id": "study-finding:a4757add3f995dcd",
       "label": "没有证据确定统一温度、时长、频率或与力量训练的最佳安排",
       "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a627e68f389e8e6d",
+      "label": "躯体疾病样本和仅一项精神健康样本的压力亚组未达到显著，不能据此宣布临床治疗效果",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -104729,6 +105552,13 @@
       "id": "study-finding:b25504d93f86945e",
       "label": "不同加热方式、人群和方案不能证明桑拿房本身是必要组件",
       "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:b5166884047c13d0",
+      "label": "单独呼吸干预对状态焦虑总体未显著优于对照：主动改变呼吸g=-0.46（95%CI -2.18至1.25），注意呼吸g=-0.21（95%CI -0.75至0.34）；技术间从较大改善到不改善甚至对照更好，异质性很高。",
+      "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-finding"
     },
     {
@@ -104921,6 +105751,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:d850ade4debaa009",
+      "label": "可用于真实停练后的随访研究不足，无法合并持久效果",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:db19c2151ee58dec",
+      "label": "HRV和静息心率在研究期间无显著改变",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:db1c9163842459ee",
       "label": "新研究的一次训练组在跨一晚后的 24 小时复测中速度提高 17.0%、错误率下降 34.5%；双倍训练组的夜间增益相近。三晚组相对一晚组的额外改善仅为趋势，未达传统显著性阈值。",
@@ -104988,6 +105832,13 @@
       "id": "study-finding:e486febfd6c6afc5",
       "label": "关键机制链条主要来自跨全样本的相关与统计中介，而非随机组间效应",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e4872b0fba6ba337",
+      "label": "快速呼吸研究中有少数参与者报告潮热、气短或出汗",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -105146,10 +105997,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:fa747b42e0692c75",
+      "label": "循环叹息没有被证明在状态焦虑下降上优于正念；四组均出现练习前后下降",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:fb5ab4832745d4d4",
       "label": "没有长期激素、肌肉、恢复、情绪、疾病或安全结局",
       "review_id": "podstawski-2021-sauna-cold-endocrine",
       "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:fdc64cc281e20972",
+      "label": "综述没有证明循环叹息是急性焦虑的最佳或普遍有效工具",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:02beeedca9a15a4e",
+      "label": "多数研究没有同时测量内感受变化，机制解释不能被确认",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-limitation"
     },
     {
       "id": "study-limitation:02e4b82f33fd0b73",
@@ -105221,6 +106092,12 @@
       "id": "study-limitation:0bffb6fe286af7b4",
       "label": "高度受控的住院免费供餐环境与家庭、文化、预算和可获得性不同",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0c42d9ee38f46716",
+      "label": "10%的可选结题问卷受访者报告了与练习有关的负面体验，但论文未把它转成完整不良事件率",
+      "review_id": "balban-2023-structured-respiration-rct",
       "type": "study-limitation"
     },
     {
@@ -105332,6 +106209,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:225e59761a2a14b1",
+      "label": "全部远程执行，依从性主要依赖每日自报，无法确认每次动作质量",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:22d3f3e47c32dacd",
+      "label": "总共只有12项研究，分类后每组研究更少，单项研究对合并结果影响大",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:245d99a0841b5aeb",
       "label": "属于叙述性综述而非系统综述或新荟萃分析，没有完整检索、排除流程和风险偏倚综合",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
@@ -105434,6 +106323,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:363432651d45347e",
+      "label": "研究数量少，部分亚组只有一项研究，高异质性限制技术级结论",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:36743caee19193b3",
       "label": "设备类型、参数、适应证、对照和结局高度异质",
       "review_id": "cohen-2021-home-dermatology-devices-review",
@@ -105509,6 +106404,12 @@
       "id": "study-limitation:408ac1085baa6e47",
       "label": "随访仅 8 周，不能判断复发预防或长期安全性",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:40ed5a0d147063ff",
+      "label": "主要结局及焦虑/抑郁均以自评为主，方案、人群和对照高度多样",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
       "type": "study-limitation"
     },
     {
@@ -105638,6 +106539,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:539d4da4380706d9",
+      "label": "不同技术、时长、对照和人群高度异质",
+      "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:53c686f5ddbcfd5a",
       "label": "设备快速迭代使旧型号证据难以迁移到新产品",
       "review_id": "cohen-2021-home-dermatology-devices-review",
@@ -105746,6 +106653,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:60044cd331cd6082",
+      "label": "压力结局多数研究被判定为中等偏倚风险",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:607880ba8719c324",
       "label": "实验室测量不包含长期衰减、佩戴距离和真实使用依从性全部变化",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
@@ -105830,6 +106743,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:69f512c2ed53b008",
+      "label": "研究原定为探索性试验，临床试验登记是在结果出现后回顾完成",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:6a0108a382d3b63a",
       "label": "时长最长值与平均值可能来自模型外推或未完成形成者处理方式，不能用于个人倒计时",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -105845,6 +106764,12 @@
       "id": "study-limitation:6b6ebf0452a5b8d7",
       "label": "不能外推到陈述性知识、复杂技能、临床人群、最少睡眠时长或通用学习协议",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6ea9852a421953cd",
+      "label": "3项低偏倚风险、8项存在偏倚疑虑、1项高偏倚风险",
+      "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-limitation"
     },
     {
@@ -105998,6 +106923,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:819417237ed77447",
+      "label": "检索结束早于Balban 2023论文，因此不是循环叹息的独立复制或专门汇总",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:848854de7ea5494e",
       "label": "具体研究方案不是个人处方",
       "review_id": "debray-2023-sauna-stable-cad-rct",
@@ -106049,6 +106980,12 @@
       "id": "study-limitation:8d58d17d6037d2ec",
       "label": "参与者与研究人员难以对环境条件盲法，期待效应不能排除",
       "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:8e815451d37e5562",
+      "label": "多数参与者来自单一大学课程，且中重度精神/躯体疾病、孕期、癫痫、青光眼、物质使用障碍等被排除",
+      "review_id": "balban-2023-structured-respiration-rct",
       "type": "study-limitation"
     },
     {
@@ -106358,6 +107295,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b863cced1f2470a7",
+      "label": "只有4周且无后续随访，不能判断持久性、最低有效剂量或长期安全",
+      "review_id": "balban-2023-structured-respiration-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b9264b38cc80dd31",
       "label": "结果不等于一般健康成人的绝对风险",
       "review_id": "kaiser-2023-sauna-injury-series",
@@ -106379,6 +107322,12 @@
       "id": "study-limitation:ba8a9e4bf8f4b6f1",
       "label": "主要样本20人，持续一周分析和下午分析样本更小",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bb8015e4bbfc1a14",
+      "label": "焦虑与抑郁检索只纳入已发表资料，发表偏倚不能排除",
+      "review_id": "fincham-2023-breathwork-stress-meta-analysis",
       "type": "study-limitation"
     },
     {
@@ -106511,6 +107460,12 @@
       "id": "study-limitation:d0a4de909f72f4aa",
       "label": "仅10项研究且分散在多个不相干适应证",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:d13410d687f59cb9",
+      "label": "各组样本较小，对三种呼吸练习之间的直接比较效力有限",
+      "review_id": "balban-2023-structured-respiration-rct",
       "type": "study-limitation"
     },
     {
@@ -106739,6 +107694,12 @@
       "id": "study-limitation:f85d960aa4754b3b",
       "label": "无法从物理输出单独定义安全或最佳剂量",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f91a9b34f456c6d7",
+      "label": "部分研究的变化值标准差需用假定相关系数估算，发表偏倚也可能影响结果",
+      "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-limitation"
     },
     {
@@ -109516,20 +110477,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1754,
-    "action_playbook_nodes": 10,
-    "action_step_nodes": 30,
+    "academic_resource_nodes": 1757,
+    "action_playbook_nodes": 11,
+    "action_step_nodes": 33,
     "bilibili_nodes": 34,
-    "claim_nodes": 40,
+    "claim_nodes": 41,
     "course_lecture_nodes": 8,
-    "edges": 9446,
+    "edges": 9529,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 27,
-    "evidence_topic_nodes": 209,
-    "resource_nodes": 6038,
-    "study_card_nodes": 44,
-    "study_finding_nodes": 206,
-    "study_limitation_nodes": 274,
+    "evidence_relation_nodes": 30,
+    "evidence_topic_nodes": 218,
+    "resource_nodes": 6041,
+    "study_card_nodes": 47,
+    "study_finding_nodes": 223,
+    "study_limitation_nodes": 290,
     "top_topics": [
       {
         "count": 58,
@@ -109633,7 +110594,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 702,
+    "verified_academic_resource_nodes": 705,
     "youtube_nodes": 424
   }
 }

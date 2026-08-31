@@ -88,6 +88,25 @@ class EvidenceRelationTests(unittest.TestCase):
         )
         self.assertIn("没有总暴露分母", safety["boundary"])
 
+    def test_breathwork_relations_separate_broad_stress_acute_anxiety_and_specific_technique(self) -> None:
+        broad = next(
+            item for item in self.relations
+            if item["relation_id"] == "fincham-2023-supports-balban-2023-broad-breathwork-context"
+        )
+        self.assertEqual(broad["relation"], "supports")
+        self.assertIn("未纳入循环叹息", broad["boundary"])
+        acute = next(
+            item for item in self.relations
+            if item["relation_id"] == "chin-2024-qualifies-balban-2023-acute-anxiety-superiority"
+        )
+        self.assertEqual(acute["relation"], "qualifies")
+        self.assertIn("状态焦虑", acute["rationale"])
+        transfer = next(
+            item for item in self.relations
+            if item["relation_id"] == "chin-2024-qualifies-fincham-2023-acute-transfer"
+        )
+        self.assertIn("不构成直接矛盾", transfer["boundary"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

@@ -7,6 +7,26 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.15.0] - 2026-08-31
+
+### Added
+
+- Added a three-card breathing evidence cluster: the 108-participant Balban structured-respiration RCT, Fincham's preregistered breathwork meta-analysis and Chin's acute state-anxiety systematic review.
+- Added three claim-scoped evidence relations that distinguish broad average stress effects, a specific cyclic-sighing signal and nonsignificant, highly heterogeneous acute-anxiety results.
+- Added an eleventh outcome-first playbook and behavioral Case 15 for acute non-emergency stress, with emergency triage, one gentle stoppable option and professional escalation for recurrent or impairing symptoms.
+
+### Changed
+
+- Promoted six Show Notes queue records through study-card application while preserving the total at 684 verified and 1,052 pending: 122 studies, 37 reviews, 23 observational records and 502 bibliographic-only records.
+- Expanded structured coverage to 47 study cards: 27 cards connect 41 Show Notes URL records and 20 are explicit external-context qualifications.
+- Expanded the graph to 47 study cards, 223 findings, 290 limitations, 218 evidence topics, 30 evidence relations, 11 playbooks, 33 action steps and 9,529 traceable edges.
+- Added an official Episode/YouTube locator with four breathing-topic timestamps without distributing transcript or Show Notes payloads.
+
+### Evaluated
+
+- Added deterministic routing, evidence-query, evidence-relation, public-snapshot and safety-boundary regression tests for the breathing decision cluster.
+- Passed an independent read-only forward test of the raw Case 15 prompt after rejecting an earlier answer that compressed trauma/dissociation, cold-water and rapid-hyperventilation boundaries.
+
 ## [0.14.0] - 2026-08-31
 
 ### Added

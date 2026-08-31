@@ -33,17 +33,17 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
         self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 684)
         self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 122)
-        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 36)
+        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 37)
         self.assertEqual(sum(row["verification_status"] == "verified-observational" for row in rows), 23)
-        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 503)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 502)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
         records = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
-        self.assertEqual(len(records), 40)
+        self.assertEqual(len(records), 41)
         self.assertTrue(all("claim_text" not in record for record in records))
         self.assertTrue(all(record.get("source_urls") and record.get("youtube_ids") for record in records))
-        self.assertEqual(sum(bool(record.get("timestamps")) for record in records), 19)
+        self.assertEqual(sum(bool(record.get("timestamps")) for record in records), 20)
 
     def test_identifier_overrides_are_traceable(self) -> None:
         path = ROOT / "references" / "catalog" / "academic-identifier-overrides.csv"
@@ -61,8 +61,8 @@ class PublicSnapshotTests(unittest.TestCase):
         graph = json.loads(raw)
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
-        self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 702)
+        self.assertEqual(graph["stats"]["claim_nodes"], 41)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 705)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)

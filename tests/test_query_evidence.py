@@ -182,6 +182,19 @@ class EvidenceQueryTests(unittest.TestCase):
         self.assertTrue(any(item["relation_id"] == "hamaya-2025-qualifies-laukkanen-2018-causality" for item in concise["related_evidence"]))
         self.assertIn("频率类别不是处方剂量", concise["safe_interpretation"])
 
+    def test_breathwork_query_returns_direct_broad_and_acute_qualification_cluster(self) -> None:
+        results = MODULE.query_cards(self.cards, "循环叹息 急性焦虑 压力 呼吸")
+        first_three = {item["review_id"] for item in results[:3]}
+        self.assertEqual(first_three, {
+            "balban-2023-structured-respiration-rct",
+            "fincham-2023-breathwork-stress-meta-analysis",
+            "chin-2024-brief-state-anxiety-review",
+        })
+        balban = next(item for item in results if item["review_id"] == "balban-2023-structured-respiration-rct")
+        concise = MODULE.concise_record(balban, self.cards, self.relations)
+        self.assertTrue(any(item["relation_id"] == "chin-2024-qualifies-balban-2023-acute-anxiety-superiority" for item in concise["related_evidence"]))
+        self.assertIn("不证明循环叹息是急性焦虑的最佳技术", concise["safe_interpretation"])
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

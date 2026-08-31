@@ -50,6 +50,7 @@ class ActionPlaybookTests(unittest.TestCase):
             "Huberman说冷水澡提高多巴胺和免疫，我要不要每天冰浴？": "decide-whether-and-when-to-use-cold-exposure",
             "我力量训练后冰浴会不会影响增肌？": "decide-whether-and-when-to-use-cold-exposure",
             "Huberman说每周桑拿能提高生长激素、帮助长寿，我要不要买桑拿房？": "decide-whether-sauna-or-heat-is-worth-using",
+            "我压力突然很大，Huberman说生理叹息有用，我现在应该怎么呼吸？": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -132,6 +133,31 @@ class ActionPlaybookTests(unittest.TestCase):
         } <= evidence_ids)
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         for phrase in ("桑拿/热暴露决策", "5名出现暂时性闭经", "热适应、流汗", "禁止酒后"):
+            self.assertIn(phrase, skill)
+
+    def test_acute_stress_breathing_decision_preserves_nulls_and_triage(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        breathing = by_id["manage-an-acute-stress-spike-without-overclaiming-breathwork"]
+        self.assertEqual(len(breathing["actions"]), 3)
+        for phrase in (
+            "先排除急症",
+            "没有证明它在状态焦虑下降上优于正念",
+            "HRV",
+            "单独呼吸总体不显著",
+            "不要在驾驶",
+            "反复惊恐",
+        ):
+            self.assertIn(phrase, breathing["safe_summary"])
+        self.assertIn("不计时、不憋气、不快速深呼吸", breathing["actions"][1]["minimum_version"])
+        self.assertIn("失控感", " ".join(breathing["actions"][1]["stop_conditions"]))
+        evidence_ids = {link["review_id"] for link in breathing["evidence_links"]}
+        self.assertEqual(evidence_ids, {
+            "balban-2023-structured-respiration-rct",
+            "fincham-2023-breathwork-stress-meta-analysis",
+            "chin-2024-brief-state-anxiety-review",
+        })
+        skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+        for phrase in ("非紧急压力与呼吸决策", "回顾注册", "主动改变呼吸和注意呼吸均高度异质", "不得在驾驶"):
             self.assertIn(phrase, skill)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:

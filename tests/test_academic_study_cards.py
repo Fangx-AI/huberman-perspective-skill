@@ -65,6 +65,27 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(by_id[review_id]["source_scope"], "external-context")
             self.assertEqual(by_id[review_id]["queue_urls"], [])
 
+    def test_breathwork_cluster_separates_mood_signal_acute_nulls_and_clinical_boundaries(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "balban-2023-structured-respiration-rct",
+            "fincham-2023-breathwork-stress-meta-analysis",
+            "chin-2024-brief-state-anxiety-review",
+        }
+        self.assertTrue(expected <= set(by_id))
+        balban = by_id["balban-2023-structured-respiration-rct"]
+        self.assertEqual(balban["sample_size"], 108)
+        self.assertIn("没有被证明在状态焦虑下降上优于正念", " ".join(balban["null_findings"]))
+        self.assertIn("睡眠时长", " ".join(balban["null_findings"]))
+        self.assertIn("回顾完成", " ".join(balban["limitations"]))
+        fincham = by_id["fincham-2023-breathwork-stress-meta-analysis"]
+        self.assertIn("12项RCT、785名成人", fincham["sample_size"])
+        self.assertIn("未见显著剂量—反应", " ".join(fincham["null_findings"]))
+        chin = by_id["chin-2024-brief-state-anxiety-review"]
+        self.assertIn("总体没有显著降低状态焦虑", " ".join(chin["null_findings"]))
+        self.assertEqual(chin["source_scope"], "external-context")
+        self.assertEqual(chin["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")
