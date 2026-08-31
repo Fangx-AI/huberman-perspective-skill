@@ -125,6 +125,24 @@ class EvidenceQueryTests(unittest.TestCase):
         self.assertEqual(food["review_id"], "hall-2019-ultra-processed-diet-rct")
         self.assertIn("不要把所有加工食品妖魔化", food["safe_interpretation"])
 
+    def test_cold_exposure_query_returns_the_six_part_decision_cluster(self) -> None:
+        results = MODULE.query_cards(self.cards, "cold exposure ice bath cold shower recovery safety")
+        first_six = {item["review_id"] for item in results[:6]}
+        self.assertEqual(
+            first_six,
+            {
+                "sramek-2000-cold-water-physiology",
+                "moore-2022-cold-water-acute-recovery-review",
+                "cain-2025-cold-water-wellbeing-review",
+                "malta-2021-regular-cold-water-training-adaptation-review",
+                "tipton-2017-cold-water-risks-benefits-review",
+                "buijze-2016-cold-shower-rct",
+            },
+        )
+        recovery = next(item for item in results if item["review_id"] == "moore-2022-cold-water-acute-recovery-review")
+        concise = MODULE.concise_record(recovery, self.cards, self.relations)
+        self.assertTrue(any(item["relation_id"] == "malta-2021-qualifies-moore-2022-recovery-vs-adaptation" for item in concise["related_evidence"]))
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

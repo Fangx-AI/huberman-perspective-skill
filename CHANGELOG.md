@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.12.0] - 2026-08-31
+
+### Added
+
+- Added a six-card cold-exposure decision cluster spanning acute catecholamine physiology, general wellbeing, short-term exercise recovery, long-term training adaptation, cold-water safety and a 3,018-person cold-shower trial.
+- Added four typed `qualifies` relations so peripheral catecholamine changes do not become brain-optimization claims, sickness absence does not become immunity, and short-term recovery is not confused with long-term strength adaptation.
+- Added an eighth outcome-first playbook and behavioral Case 12 for deciding whether and when cold exposure serves a real user goal.
+
+### Changed
+
+- Promoted four repeated Show Notes URLs after provenance-bearing PMID verification: three to `verified-study` and one to `verified-review`, yielding 677 verified and 1,059 pending queue records.
+- Restricted any low-risk personal observation to a controllable ordinary shower change after an environmental and medical safety gate; no fixed temperature, duration, frequency or waiting period is invented.
+- Explicitly excludes open water, solitary immersion, head/face immersion and breath-hold or high-intensity breathing combinations from personal experiments.
+- Expanded the graph to 26 study cards, 119 findings, 167 limitations, 126 evidence topics, 14 evidence relations, eight playbooks, 24 action steps and 9,026 traceable edges.
+
 ## [0.11.0] - 2026-08-31
 
 ### Added

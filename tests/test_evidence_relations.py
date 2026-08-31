@@ -22,7 +22,23 @@ class EvidenceRelationTests(unittest.TestCase):
 
     def test_committed_relations_validate(self) -> None:
         MODULE.validate_relations(self.cards, self.relations)
-        self.assertGreaterEqual(len(self.relations), 7)
+        self.assertGreaterEqual(len(self.relations), 14)
+
+    def test_cold_exposure_relations_keep_short_term_recovery_and_long_term_adaptation_separate(self) -> None:
+        relation = next(
+            item
+            for item in self.relations
+            if item["relation_id"] == "malta-2021-qualifies-moore-2022-recovery-vs-adaptation"
+        )
+        self.assertEqual(relation["relation"], "qualifies")
+        self.assertIn("短期", relation["rationale"])
+        self.assertIn("长期", relation["rationale"])
+        immunity = next(
+            item
+            for item in self.relations
+            if item["relation_id"] == "buijze-2016-qualifies-cain-2025-immunity"
+        )
+        self.assertIn("患病天数没有显著变化", immunity["rationale"])
 
     def test_natural_light_followup_is_support_not_independent_replication(self) -> None:
         relation = next(

@@ -9,11 +9,11 @@
 - 425 个官方 Episode 元数据记录
 - 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
 - 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
-- 1,736 个 Show Notes 学术/医学来源，673 个已核验、1,063 个待核验；其中 115 条原始研究、34 条综述、21 条观察研究和 503 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
-- 20 张结构化高关联研究证据卡：15 张连接 20 条 Show Notes 来源记录，5 张为不改变队列统计的外部反证/限定卡
-- 10 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应与习惯形成时长证据簇
-- 7 个结果优先行动剧本、21 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步、饮食环境和健康协议决策；每步区分证据支持、有限个人实验与框架推断
-- 研究—行动图谱包含 20 个研究卡、95 个结果/阴性发现、131 个局限、98 个证据主题、10 个研究关系节点、7 个行动剧本和 21 个动作节点，共 8,880 条可追溯关系
+- 1,736 个 Show Notes 学术/医学来源，677 个已核验、1,059 个待核验；其中 118 条原始研究、35 条综述、21 条观察研究和 503 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
+- 26 张结构化高关联研究证据卡：17 张连接 24 条 Show Notes 来源记录，9 张为不改变队列统计的外部反证/限定卡
+- 14 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应、习惯形成与冷暴露决策证据簇
+- 8 个结果优先行动剧本、24 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步、饮食环境、健康协议和冷暴露决策；每步区分证据支持、有限个人实验与框架推断
+- 研究—行动图谱包含 26 个研究卡、119 个结果/阴性发现、167 个局限、126 个证据主题、14 个研究关系节点、8 个行动剧本和 24 个动作节点，共 9,026 条可追溯关系
 - 40 个脱敏的主张定位记录
 - 8 个课程、讲座、AMA 或机构访谈入口
 
@@ -75,6 +75,7 @@ python scripts/query_action_playbooks.py "总被手机和网页打断 专注"
 python scripts/query_action_playbooks.py "久坐很久 运动协议太多 不知怎么开始"
 python scripts/query_action_playbooks.py "总点外卖 吃零食 不想算卡路里"
 python scripts/query_action_playbooks.py "补剂和健康协议太多 怎么判断一个值不值得试"
+python scripts/query_action_playbooks.py "冷水澡提高多巴胺和免疫 要不要每天冰浴"
 ```
 
 每次只返回一个剧本、最多三个动作；每步带触发条件、最低版本、记录指标、复盘与失败后的调整。`evidence-supported`、`bounded-experiment` 和 `framework-inference` 必须分开，不把节目协议包装成已验证处方。
@@ -88,6 +89,7 @@ python scripts/query_evidence.py "睡眠 稳定 运动学习"
 python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
 python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
 python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"
+python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"
 python scripts/query_evidence.py "gratitude inflammation" --json
 ```
 
@@ -134,4 +136,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.11.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。
+当前版本：`0.12.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。

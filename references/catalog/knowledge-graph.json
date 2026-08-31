@@ -2,6 +2,66 @@
   "edges": [
     {
       "relation": "has_action",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "claim:batch02-claim-0017"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "claim:batch02-claim-0018"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "claim:batch02-claim-0037"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:buijze-2016-cold-shower-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:malta-2021-regular-cold-water-training-adaptation-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:moore-2022-cold-water-acute-recovery-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:sramek-2000-cold-water-physiology"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "target": "study-card:tipton-2017-cold-water-risks-benefits-review"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:decide-whether-to-try-one-health-protocol",
       "target": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card"
     },
@@ -274,6 +334,76 @@
       "relation": "uses_study_evidence",
       "source": "action-playbook:start-exercise-without-protocol-overload",
       "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "claim:batch02-claim-0018"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "claim:batch02-claim-0037"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "study-card:malta-2021-regular-cold-water-training-adaptation-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "study-card:moore-2022-cold-water-acute-recovery-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "target": "study-card:sramek-2000-cold-water-physiology"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "target": "claim:batch02-claim-0017"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "target": "claim:batch02-claim-0037"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "target": "study-card:buijze-2016-cold-shower-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "target": "study-card:tipton-2017-cold-water-risks-benefits-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate",
+      "target": "claim:batch02-claim-0037"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate",
+      "target": "study-card:tipton-2017-cold-water-risks-benefits-review"
     },
     {
       "relation": "grounded_in",
@@ -42387,6 +42517,16 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:buijze-2016-qualifies-cain-2025-immunity",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:cain-2025-qualifies-sramek-2000-wellbeing",
+      "target": "study-card:sramek-2000-cold-water-physiology"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval",
       "target": "study-card:karpicke-roediger-2008-repeated-retrieval"
     },
@@ -42404,6 +42544,11 @@
       "relation": "supports",
       "source": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval",
       "target": "study-card:roediger-karpicke-2006-test-enhanced-learning"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:malta-2021-qualifies-moore-2022-recovery-vs-adaptation",
+      "target": "study-card:moore-2022-cold-water-acute-recovery-review"
     },
     {
       "relation": "qualifies",
@@ -42434,6 +42579,11 @@
       "relation": "supports",
       "source": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment",
       "target": "study-card:wright-2013-natural-light-entrainment"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
+      "target": "study-card:cain-2025-cold-water-wellbeing-review"
     },
     {
       "relation": "has_evidence_topic",
@@ -42714,6 +42864,206 @@
       "relation": "reviews_resource",
       "source": "study-card:berman-2008-nature-directed-attention",
       "target": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-relation:buijze-2016-qualifies-cain-2025-immunity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:cold-shower"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:illness-days"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:quality-of-life"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:randomized-controlled-trial"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:sickness-absence"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "evidence-topic:work-productivity"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:2fd54ff3096d16ea"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:612e94ae68b3ede0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:86cfa0197dab90c5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:d977b17ad3dad029"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:e042d02989bf56db"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-limitation:eb229dcc8c853604"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-finding:29ab8e0609b6a40f"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-finding:4691a61a43893019"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-finding:cb38927fad4d7be3"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "study-finding:bbc256739a1b22b0"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:buijze-2016-cold-shower-rct",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-relation:cain-2025-qualifies-sramek-2000-wellbeing"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:immunity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:inflammation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:mood"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:stress"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "evidence-topic:wellbeing"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:288ee2680fb93059"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:2d6ddd6a353f3391"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:482caecfa4c4cbbf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:4901abbb9ae190bb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:9829e83f4678f541"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:acf12834ec3afe05"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-limitation:c434fb8a54a1d7d0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-finding:2b1b075b2b1d04fc"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-finding:4b1b4a6c997d5361"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-finding:b22a2f353b6f151c"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "study-finding:9beeac3b5eb51c4a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:cain-2025-cold-water-wellbeing-review",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/"
     },
     {
       "relation": "has_evidence_relation",
@@ -43497,6 +43847,196 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-relation:malta-2021-qualifies-moore-2022-recovery-vs-adaptation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:endurance-training"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:resistance-training"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:strength-adaptation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "evidence-topic:training-adaptation"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:6f6532551c421d62"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:95d37d7aae22ffd1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:9882fed8d2cc5c2f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:ab027c2176b094dd"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:e6b0d1bcf8e647f7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-limitation:edafae38e5c081b0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-finding:35668f2204261eed"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-finding:7914e6ee9076a9db"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-finding:9cc9f5e0b05edf6a"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "study-finding:f78e3dd2edb41ae5"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/33146851/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:creatine-kinase"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:exercise-recovery"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:muscle-soreness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:muscular-power"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:strength"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:1aed07bcbdc0b49d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:434aac3e1634f7f4"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:43faaa6ee93f9b08"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:7fca125f0e18518f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:a26a3702ed0fb10d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-limitation:d6ff7c2b49eb8722"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-finding:ccd7119668034198"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-finding:d05c635f9984d81a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-finding:f36846551c64f6a7"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "study-finding:4d2e3525a11c56d1"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "target": "resource:https://link.springer.com/article/10.1007/s40279-022-01644-9"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:nettersheim-2015-sleep-stabilization",
       "target": "evidence-relation:nettersheim-2015-qualifies-walker-2003-enhancement"
     },
@@ -44011,6 +44551,106 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/39685110/"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:acute-physiology"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:cardiovascular-response"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:catecholamines"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:dopamine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:metabolic-rate"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "evidence-topic:norepinephrine"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:09bab5a1ff2df484"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:3a92461f7d25e53c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:68f01f467a11323d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:7a806d142bd04e3a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:8f0e671c2d386721"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-limitation:953c93162e1baff3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-finding:9cd7f5750958e739"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-finding:9ef862e345607e77"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-finding:b23cfd40b8a6d913"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "study-finding:0eaad8c7cd4755a7"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "resource:https://link.springer.com/article/10.1007/s004210050065"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "resource:https://link.springer.com/article/10.1007/s004210050065?noAccess=true"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:sramek-2000-cold-water-physiology",
+      "target": "resource:https://link.springer.com/article/10.1007/s004210050065?noAccess=true#article-info"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:stothard-2017-natural-light-seasons-weekend",
       "target": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment"
@@ -44144,6 +44784,96 @@
       "relation": "reviews_resource",
       "source": "study-card:stothard-2017-natural-light-seasons-weekend",
       "target": "resource:https://www.cell.com/current-biology/fulltext/S0960-9822(16)31522-6"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-relation:tipton-2017-qualifies-cain-2025-safety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:arrhythmia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:cold-shock"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:drowning"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:hypothermia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:risk-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "evidence-topic:safety"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-limitation:4cbf1207946ad0d0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-limitation:6f70736bc5ce8fd9"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-limitation:714aa6d488ea806b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-limitation:99b9f044a4960324"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-limitation:afa51e63b3034ed8"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-finding:2397167c6d128095"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-finding:4cdd82eaef5e8cda"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-finding:bfe43d2545f93629"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "study-finding:2163ad927925de33"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/28833689/"
     },
     {
       "relation": "has_evidence_topic",
@@ -44401,8 +45131,51 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T07:00:52.803826+00:00",
+  "generated_at": "2026-08-31T07:21:58.101328+00:00",
   "nodes": [
+    {
+      "aliases": [
+        "冷暴露",
+        "冰浴",
+        "冷水澡",
+        "冷水淋浴",
+        "冷水浸泡",
+        "冷水提高多巴胺",
+        "冷水增强免疫",
+        "训练后冰浴",
+        "cold exposure",
+        "cold shower",
+        "ice bath",
+        "cold plunge"
+      ],
+      "baseline_checks": [
+        "先记录一个与你目标直接相关的现实基线，例如工作产出、患病天数、训练酸痛/次日表现或力量进展；不要只记录‘刺激感’或想象的多巴胺变化",
+        "把睡眠、光照、规律运动、营养、恢复和环境等基础项与冷暴露分开；冷暴露不是修复长期睡眠不足或训练计划混乱的替代品",
+        "先排除开放水域、独处浸泡、头面入水、屏气/过度换气组合和任何无法立即安全退出的场景"
+      ],
+      "escalation": [
+        "胸痛、晕厥、严重呼吸困难、持续心律异常、意识混乱、发绀或疑似低体温应立即寻求急救",
+        "既往有心肺/血压/循环/神经问题、冷诱发过敏反应、妊娠或医生限制时，先由医生判断是否应避免以及边界",
+        "持续疲劳、反复生病、抑郁/焦虑、训练退步或疼痛需要寻找根因；不要用更强冷刺激掩盖症状"
+      ],
+      "first_questions": [
+        "你真正想改善的是当下清醒感、一般健康/情绪、少生病、运动后 24 小时恢复，还是长期力量/增肌？",
+        "你考虑的是普通淋浴、浴缸/冰桶还是开放水域；是否会独处、浸头、屏气或先做强呼吸？",
+        "是否有心血管或呼吸疾病、心律失常、晕厥、控制不佳的血压、雷诺/冷性荨麻疹、癫痫、妊娠、近期疾病或医生给过限制？"
+      ],
+      "id": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
+      "label": "先决定冷暴露是否服务你的目标",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "用冷水治疗抑郁、焦虑、感染、慢性疼痛、肥胖、心血管疾病或其他疾病，或替代药物、心理治疗、康复和正规评估",
+        "开放水域、独处浴缸/冰桶、头面入水、屏气/过度换气组合、酒后或无法立即退出的暴露",
+        "儿童、孕期、近期生病/手术、已知心肺/循环/神经疾病、心律失常、晕厥、控制不佳的血压、雷诺或冷性荨麻疹等情况下的通用远程方案"
+      ],
+      "safe_summary": "冷暴露不是睡眠、专注、免疫、减脂或情绪的必需品。先明确一个现实目标并过安全门：一般 wellbeing 证据有限且有多项阴性结果；运动后部分短期恢复可能改善，但固定用于每次阻力训练可能妨碍长期适应。外周多巴胺、刺激感和缺勤下降都不等于脑内‘优化’、少生病或长期健康。若健康成人仍想试，只限可立即停止、正常呼吸的普通淋浴温度变化，不给固定温度/时长；开放水域、独处浸泡、浸头、屏气和高强度呼吸组合不进入个人实验。",
+      "scope": "适用于一般健康成人在非开放水域、非医疗治疗场景中判断是否采用可立即停止的居家冷水淋浴；运动员的比赛恢复可用于整理目标权衡，但具体浸泡方案应由合格专业人员结合项目和健康状态决定",
+      "type": "action-playbook",
+      "user_goal": "在不照搬冰浴或冷水澡协议的前提下，判断冷暴露是否值得做、适合什么情境，以及何时反而会妨碍目标"
+    },
     {
       "aliases": [
         "健康协议太多",
@@ -44676,6 +45449,60 @@
       "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
       "type": "action-playbook",
       "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "adaptation": "若没有清楚的现实收益或代价更大，回到不做；若是竞技恢复需求，把具体安排交给熟悉项目的运动医学/训练专业人员，不从一般健康研究推剂量",
+      "classification": "evidence-supported",
+      "id": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use",
+      "label": "按目标做一次取舍：一般健康/清醒把冷暴露保留为非必需选项；比赛或密集高强度活动只讨论短期恢复；长期力量/增肌时不把冷水浸泡固定在每次训练后",
+      "metric": "决定是否与目标一致；有没有牺牲睡眠、训练适应、时间、金钱或安全；目标结局是否有可比较基线",
+      "minimum_version": "只选‘不做、以后再评估、特定比赛/密集训练情境讨论’三种决定之一；不需要先买设备或复制固定温度、时长、频率",
+      "playbook_id": "decide-whether-and-when-to-use-cold-exposure",
+      "priority": 2,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "把外周儿茶酚胺、发抖或刺激感当成工作效率、减脂、免疫或心理治疗已经成功",
+        "为了缓解酸痛而忽略伤病、过度训练、恢复不足，或在力量/增肌阶段把冷浸泡机械地安排到每次训练后"
+      ],
+      "trigger": "安全门通过、且已经把目标归入一般生活结果、短期运动恢复或长期训练适应之一时",
+      "type": "action-step",
+      "why": "一般 wellbeing 综述的结果稀疏且阴性结局很多；运动恢复综述只支持部分短期结局，而规律训练综述提示阻力训练适应可能被削弱"
+    },
+    {
+      "adaptation": "多次没有可重复的目标收益就撤掉；只觉得更刺激但现实结果不变，也不升级强度。任何不适都优先回温、停止并重新评估，而不是靠适应叙事硬撑",
+      "classification": "bounded-experiment",
+      "id": "action-step:decide-whether-and-when-to-use-cold-exposure:if-still-appropriate-test-only-a-controllable-shower-change",
+      "label": "只有一般健康成人通过安全门、仍想尝试且不把它当治疗时，才在可立即停止的普通淋浴中做一次最小、可控的温度改变，并与一个现实结果比较",
+      "metric": "当下呼吸可控性与不适、目标相关的同类任务表现或次日状态，以及是否挤压睡眠/恢复；不记录所谓个人多巴胺百分比",
+      "minimum_version": "只把水调到仍能保持平稳自主呼吸、随时可退出的较凉程度；不规定温度或时长，不追求发抖、麻木、屏气、浸头或‘意志力’表现",
+      "playbook_id": "decide-whether-and-when-to-use-cold-exposure",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "无法控制的喘气或过度换气、胸痛、明显心悸、头晕、视物异常、麻木无力、意识混乱、发绀或接近晕厥",
+        "持续剧烈发抖、难以复温、皮肤风团/肿胀、呼吸困难或任何症状在退出后不缓解"
+      ],
+      "trigger": "正常淋浴即将结束、地面防滑、有人可联系且当天没有生病、饮酒、脱水、极度疲劳或异常症状时",
+      "type": "action-step",
+      "why": "大型冷水淋浴试验显示缺勤行为信号但患病天数未改善；现有综述不能给一般人确定最佳剂量。把实验限制在可退出的淋浴并保持正常呼吸，比冰桶、开放水域或屏气组合更容易止损"
+    },
+    {
+      "adaptation": "若目标仍是‘提高多巴胺/更健康’等不可直接验证表述，把它改成工作产出、患病天数、酸痛/次日表现或力量进展；风险信息不清就暂停并咨询专业人员",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate",
+      "label": "先写清冷暴露要改善的一个现实结果，并先过环境与医学安全门；没有明确结果或存在高风险情境时，答案就是先不做",
+      "metric": "目标是否可观察；是否发现高风险环境或健康因素；是否能用更低风险基础动作解决同一问题",
+      "minimum_version": "只完成一张决策卡：目标、当前基线、暴露形式、能否立即退出、是否独处/浸头/屏气，以及会改变安全性的健康状况；不接触冷水也算完成",
+      "playbook_id": "decide-whether-and-when-to-use-cold-exposure",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "计划包含开放水域、独处浸泡、锁门、头面入水、屏气或高强度呼吸后立即入冷水",
+        "存在胸痛、晕厥、心律异常、控制不佳的心肺/血压问题、冷性荨麻疹或医生限制而未获个体指导"
+      ],
+      "trigger": "购买设备、安排冰浴、进入冷水或把冷水澡加入日程之前",
+      "type": "action-step",
+      "why": "同一种冷刺激在一般 wellbeing、即时生理反应、比赛恢复和长期训练适应中回答的是不同问题；冷休克、喘气、心律和低体温风险必须早于潜在收益"
     },
     {
       "adaptation": "若仍列出多个目标或协议，只保留当前最重要且最可观察的一个；若无法说出直接结果，先不购买、不叠加",
@@ -50283,6 +51110,40 @@
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
     },
     {
+      "boundary": "该关系保留冷水淋浴可能改变缺勤行为或某些生活结果的信号；它不裁决机制，也不表示参与者应该带病工作。",
+      "id": "evidence-relation:buijze-2016-qualifies-cain-2025-immunity",
+      "label": "冷水淋浴降低缺勤是否证明免疫增强、感染减少或患病时间缩短",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+        "https://doi.org/10.1371/journal.pone.0161749"
+      ],
+      "rationale": "大型随机试验中因病缺勤下降，但患病天数没有显著变化，且结局依赖自报、无法盲法。Cain 综述中的长期缺勤信号主要由这项研究贡献，因此不能把缺勤行为指标改写成客观免疫或感染疗效。",
+      "relation": "qualifies",
+      "relation_id": "buijze-2016-qualifies-cain-2025-immunity",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "buijze-2016-cold-shower-rct",
+      "target_review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "该关系不否认 Sramek 在 10 名年轻男性的特定 14°C 一小时条件下测得急性交感和代谢反应，也不证明所有冷水暴露无效；它只限制从机制指标到一般生活结果的外推。",
+      "id": "evidence-relation:cain-2025-qualifies-sramek-2000-wellbeing",
+      "label": "14°C 长时浸泡引起外周多巴胺、去甲肾上腺素和代谢变化，是否足以支持一般人的情绪、专注、免疫或长期健康收益",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+        "https://pubmed.ncbi.nlm.nih.gov/10751106/",
+        "https://doi.org/10.1371/journal.pone.0317615"
+      ],
+      "rationale": "Cain 等只纳入健康成人随机试验的系统综述发现，多数一般健康结局证据稀少且高度依赖时点；总体情绪、即时免疫和多个压力时点无显著改善。因此，Sramek 的急性外周生理反应不能自动升级为可感知或持久健康收益。",
+      "relation": "qualifies",
+      "relation_id": "cain-2025-qualifies-sramek-2000-wellbeing",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "cain-2025-cold-water-wellbeing-review",
+      "target_review_id": "sramek-2000-cold-water-physiology",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "这一定性限定不否定 2008 年词对实验结果；它要求把 80% 对 33%–36% 留在小样本、单一材料和同形式终测语境中，不能当作任意课程的保证值或固定刷题次数。",
       "id": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval",
       "label": "词对实验中答对后继续提取的巨大一周保持优势，能否直接转化为通用刷题协议与预期效果大小",
@@ -50352,6 +51213,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "karpicke-roediger-2008-repeated-retrieval",
       "target_review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "该关系不否定比赛期、密集赛程或高强度运动后偶发使用的价值，也不给出统一等待时长；它只反对把短期恢复结果直接变成每次训练后的固定习惯。",
+      "id": "evidence-relation:malta-2021-qualifies-moore-2022-recovery-vs-adaptation",
+      "label": "运动后冷水浸泡改善部分短期酸痛、主观恢复或爆发力，是否意味着应在每次阻力训练后常规使用",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33146851/",
+        "https://pubmed.ncbi.nlm.nih.gov/35157264/",
+        "https://doi.org/10.1007/s40279-020-01362-0"
+      ],
+      "rationale": "Moore 等聚焦单次运动后的短期恢复，而 Malta 等聚焦多周训练适应；后者发现规律把冷水浸泡与阻力训练配套会削弱力量和弹震适应。因此，短期感觉或 24 小时恢复收益与长期力量目标可能发生权衡。",
+      "relation": "qualifies",
+      "relation_id": "malta-2021-qualifies-moore-2022-recovery-vs-adaptation",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "target_review_id": "moore-2022-cold-water-acute-recovery-review",
       "type": "evidence-relation"
     },
     {
@@ -50458,6 +51336,23 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "该关系不是说冷水对所有健康成人都不可接受，也不提供个体安全阈值；它要求把环境和医学安全门放在潜在收益之前。",
+      "id": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
+      "label": "健康成人随机试验中的潜在 wellbeing 信号能否直接变成面向所有人的自助冷水建议",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28833689/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+        "https://doi.org/10.1113/EP086283"
+      ],
+      "rationale": "Cain 等排除了慢病和高水平运动员且长期资料有限；Tipton 等跨领域综述显示突然冷水浸泡可触发喘气、过度换气、心律失常、溺水和低体温风险。健康志愿者平均结果不能覆盖高风险个体或开放水域、独处、屏气等高风险情境。",
+      "relation": "qualifies",
+      "relation_id": "tipton-2017-qualifies-cain-2025-safety",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "target_review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "evidence-relation"
+    },
+    {
       "id": "evidence-topic:21-day-boundary",
       "label": "21-day-boundary",
       "type": "evidence-topic"
@@ -50478,6 +51373,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-physiology",
+      "label": "acute-physiology",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:ad-libitum-feeding",
       "label": "ad-libitum-feeding",
       "type": "evidence-topic"
@@ -50490,6 +51390,11 @@
     {
       "id": "evidence-topic:alertness",
       "label": "alertness",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:arrhythmia",
+      "label": "arrhythmia",
       "type": "evidence-topic"
     },
     {
@@ -50548,6 +51453,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:cardiovascular-response",
+      "label": "cardiovascular-response",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:catecholamines",
+      "label": "catecholamines",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:chronotype",
       "label": "chronotype",
       "type": "evidence-topic"
@@ -50568,8 +51483,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:cold-shock",
+      "label": "cold-shock",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cold-shower",
+      "label": "cold-shower",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cold-water-immersion",
+      "label": "cold-water-immersion",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:context-cues",
       "label": "context-cues",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:creatine-kinase",
+      "label": "creatine-kinase",
       "type": "evidence-topic"
     },
     {
@@ -50598,6 +51533,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:drowning",
+      "label": "drowning",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:early-boost",
       "label": "early-boost",
       "type": "evidence-topic"
@@ -50610,6 +51550,11 @@
     {
       "id": "evidence-topic:education",
       "label": "education",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:endurance-training",
+      "label": "endurance-training",
       "type": "evidence-topic"
     },
     {
@@ -50635,6 +51580,11 @@
     {
       "id": "evidence-topic:executive-function",
       "label": "executive-function",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:exercise-recovery",
+      "label": "exercise-recovery",
       "type": "evidence-topic"
     },
     {
@@ -50690,6 +51640,21 @@
     {
       "id": "evidence-topic:hippocampus",
       "label": "hippocampus",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:hypothermia",
+      "label": "hypothermia",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:illness-days",
+      "label": "illness-days",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:immunity",
+      "label": "immunity",
       "type": "evidence-topic"
     },
     {
@@ -50753,6 +51718,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:metabolic-rate",
+      "label": "metabolic-rate",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:metacognition",
       "label": "metacognition",
       "type": "evidence-topic"
@@ -50765,6 +51735,16 @@
     {
       "id": "evidence-topic:motor-learning",
       "label": "motor-learning",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:muscle-soreness",
+      "label": "muscle-soreness",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:muscular-power",
+      "label": "muscular-power",
       "type": "evidence-topic"
     },
     {
@@ -50785,6 +51765,11 @@
     {
       "id": "evidence-topic:neurophysiology",
       "label": "neurophysiology",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:norepinephrine",
+      "label": "norepinephrine",
       "type": "evidence-topic"
     },
     {
@@ -50828,6 +51813,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:quality-of-life",
+      "label": "quality-of-life",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:randomized-controlled-trial",
       "label": "randomized-controlled-trial",
       "type": "evidence-topic"
@@ -50840,6 +51830,11 @@
     {
       "id": "evidence-topic:reactive-inhibition",
       "label": "reactive-inhibition",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:resistance-training",
+      "label": "resistance-training",
       "type": "evidence-topic"
     },
     {
@@ -50858,6 +51853,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:risk-review",
+      "label": "risk-review",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:safety",
+      "label": "safety",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:scoping-review",
       "label": "scoping-review",
       "type": "evidence-topic"
@@ -50865,6 +51870,11 @@
     {
       "id": "evidence-topic:seasonality",
       "label": "seasonality",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sickness-absence",
+      "label": "sickness-absence",
       "type": "evidence-topic"
     },
     {
@@ -50890,6 +51900,16 @@
     {
       "id": "evidence-topic:stabilization",
       "label": "stabilization",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:strength",
+      "label": "strength",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:strength-adaptation",
+      "label": "strength-adaptation",
       "type": "evidence-topic"
     },
     {
@@ -50923,6 +51943,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:training-adaptation",
+      "label": "training-adaptation",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:ultra-processed-food",
       "label": "ultra-processed-food",
       "type": "evidence-topic"
@@ -50938,8 +51963,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:wellbeing",
+      "label": "wellbeing",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:within-subject",
       "label": "within-subject",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:work-productivity",
+      "label": "work-productivity",
       "type": "evidence-topic"
     },
     {
@@ -59765,33 +60800,33 @@
     },
     {
       "academic_episode_count": "3",
-      "evidence_notes": "",
+      "evidence_notes": "人工研究级核验：10 名健康年轻男性随机顺序完成 14/20/32°C 各 1 小时头部露出浸泡；14°C 条件提高代谢、心率/血压及外周去甲肾上腺素和多巴胺，但肾上腺素无显著变化、皮质醇未上升。小样本急性外周生理反应不能证明生产力、情绪、减脂、免疫或长期健康收益，也不能推出固定冷暴露剂量。证据卡：academic-study-cards.jsonl#sramek-2000-cold-water-physiology。",
       "id": "resource:https://link.springer.com/article/10.1007/s004210050065",
       "kind": "academic-or-medical",
       "label": "https://link.springer.com/article/10.1007/s004210050065",
       "type": "resource",
       "url": "https://link.springer.com/article/10.1007/s004210050065",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "人工研究级核验：10 名健康年轻男性随机顺序完成 14/20/32°C 各 1 小时头部露出浸泡；14°C 条件提高代谢、心率/血压及外周去甲肾上腺素和多巴胺，但肾上腺素无显著变化、皮质醇未上升。小样本急性外周生理反应不能证明生产力、情绪、减脂、免疫或长期健康收益，也不能推出固定冷暴露剂量。证据卡：academic-study-cards.jsonl#sramek-2000-cold-water-physiology。",
       "id": "resource:https://link.springer.com/article/10.1007/s004210050065?noAccess=true",
       "kind": "academic-or-medical",
       "label": "https://link.springer.com/article/10.1007/s004210050065?noAccess=true",
       "type": "resource",
       "url": "https://link.springer.com/article/10.1007/s004210050065?noAccess=true",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "人工研究级核验：10 名健康年轻男性随机顺序完成 14/20/32°C 各 1 小时头部露出浸泡；14°C 条件提高代谢、心率/血压及外周去甲肾上腺素和多巴胺，但肾上腺素无显著变化、皮质醇未上升。小样本急性外周生理反应不能证明生产力、情绪、减脂、免疫或长期健康收益，也不能推出固定冷暴露剂量。证据卡：academic-study-cards.jsonl#sramek-2000-cold-water-physiology。",
       "id": "resource:https://link.springer.com/article/10.1007/s004210050065?noAccess=true#article-info",
       "kind": "academic-or-medical",
       "label": "https://link.springer.com/article/10.1007/s004210050065?noAccess=true#article-info",
       "type": "resource",
       "url": "https://link.springer.com/article/10.1007/s004210050065?noAccess=true#article-info",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -60055,13 +61090,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "人工综述级核验：52 项试验的系统综述/荟萃显示，运动后冷水浸泡在部分 24 小时爆发力、酸痛、主观恢复和肌酸激酶结局上有益，但对肌力恢复无显著影响，效果依赖运动类型、时点和结局。异质性和小亚组限制固定剂量外推，且本综述不回答长期训练适应或一般健康收益。证据卡：academic-study-cards.jsonl#moore-2022-cold-water-acute-recovery-review。",
       "id": "resource:https://link.springer.com/article/10.1007/s40279-022-01644-9",
       "kind": "academic-or-medical",
       "label": "https://link.springer.com/article/10.1007/s40279-022-01644-9",
       "type": "resource",
       "url": "https://link.springer.com/article/10.1007/s40279-022-01644-9",
-      "verification_status": "pending"
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "1",
@@ -63338,6 +64373,17 @@
       "verification_status": "verified-study"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：11 项健康成人随机试验、共 3,177 人的系统综述显示冷水浸泡效果高度依赖时点；即时炎症升高，12 小时压力下降，但多个压力时点、即时免疫和总体情绪均无显著改善。方案异质、女性和长期资料稀少，不能支持统一健康、免疫、情绪或最佳剂量处方。证据卡：academic-study-cards.jsonl#cain-2025-cold-water-wellbeing-review。",
+      "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+      "kind": "academic-or-medical",
+      "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+      "verification_status": "verified-review"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "当前只确认公开书目信息，不能从疾病特异性材料推导一般炎症、皮质醇或自行用药方案；相关患者应由专科管理（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11801236/pdf/nihms-2043717.pdf",
@@ -63906,6 +64952,17 @@
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4961620/pdf/nihms793134.pdf",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部研究级核验：3,018 名成人随机冷水淋浴试验发现因病缺勤下降，但患病天数无显著变化；79% 完成 30 天，未报告相关严重不良事件。自报、无法盲法和志愿者选择限制解释，不能称为减少感染或增强免疫。证据卡：academic-study-cards.jsonl#buijze-2016-cold-shower-rct。",
+      "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/",
+      "kind": "academic-or-medical",
+      "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -66335,6 +67392,17 @@
       "verification_status": "verified-bibliographic"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部安全综述级核验：跨领域综述指出，冷水浸泡可在特定恢复情境中有用，但突然入水会触发冷休克、过度换气、心律失常与溺水风险，持续暴露还有低体温风险。不能把强烈生理反应当作安全或疗效证明，也不能从综述推出个人温度/时长。证据卡：academic-study-cards.jsonl#tipton-2017-cold-water-risks-benefits-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/28833689/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/28833689/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28833689/",
+      "verification_status": "verified-review"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "31 名中期 AMD 患者与 11 名正常视网膜老年人；正常老化组部分暗视觉阈值改善，但 AMD 组 12 个月未见显著结构或功能改善；不能外推为一般认知、代谢或 AMD 治疗（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/32252424/",
@@ -66343,6 +67411,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/32252424/",
       "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：8 篇训练研究的系统综述/荟萃发现，规律把冷水浸泡与阻力训练配套会削弱力量和弹震表现适应，而耐力表现未见显著影响。研究少且方案异质，不能推出每次偶发冷水暴露或固定等待时长，但支持把短期恢复与长期适应分开决策。证据卡：academic-study-cards.jsonl#malta-2021-regular-cold-water-training-adaptation-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/33146851/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/33146851/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33146851/",
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "1",
@@ -98429,6 +99508,64 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "维持常规热水淋浴的对照组",
+      "doi": "10.1371/journal.pone.0161749",
+      "evidence_level": "A-Direct（3,018 名成人的四组随机冷水淋浴试验）",
+      "id": "study-card:buijze-2016-cold-shower-rct",
+      "intervention_exposure": "连续 30 天在常规淋浴后加入 30、60 或 90 秒冷水，之后 60 天可自行选择继续",
+      "label": "The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial",
+      "outcomes": [
+        "自报患病天数",
+        "因病缺勤",
+        "生活质量与工作生产力",
+        "焦虑、热感受、依从性和不良反应"
+      ],
+      "population": "18–65 岁、无严重合并症且无常规冷水淋浴经验的成人志愿者；自我选择参加，不能代表慢病或高风险人群",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5025014/",
+        "https://pubmed.ncbi.nlm.nih.gov/27631616/",
+        "https://doi.org/10.1371/journal.pone.0161749"
+      ],
+      "result_summary": "干预组自报因病缺勤率较低，但患病天数没有显著组间差异；79% 完成 30 天方案，未报告相关严重不良事件。结果可能反映带病工作、行为改变或其他机制，不能直接称为增强免疫或减少感染。",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项大型试验只支持‘冷水淋浴组少报因病缺勤’，同时患病天数没有改善；不要把它翻译成不生病、增强免疫或应带病工作，也不要据此向高风险人群推荐冷水。",
+      "sample_size": 3018,
+      "source_scope": "external-context",
+      "study_design": "3,018 名无严重合并症且没有冷水淋浴习惯的成人随机到常规淋浴末尾 30、60 或 90 秒冷水组或对照组，执行 30 天并继续随访 60 天；主要结局为患病天数和相关缺勤",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "基线、常规淋浴、热中性条件或其他随机对照，随研究而异",
+      "doi": "10.1371/journal.pone.0317615",
+      "evidence_level": "A-Synthesis（11 项健康成人随机试验的系统综述与荟萃）",
+      "id": "study-card:cain-2025-cold-water-wellbeing-review",
+      "intervention_exposure": "7–15°C 的冷水浴或淋浴，30 秒至 2 小时，单次或重复；不同研究的暴露与运动背景差异很大",
+      "label": "Effects of cold-water immersion on health and wellbeing: A systematic review and meta-analysis",
+      "outcomes": [
+        "即时至 48 小时压力与炎症指标",
+        "免疫指标与患病/缺勤",
+        "睡眠与生活质量",
+        "情绪、焦虑、注意和精力"
+      ],
+      "population": "健康成人，排除慢性病、肌肉骨骼伤病和高水平运动员；只有一项研究纳入女性，限制女性和临床人群外推",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/",
+        "https://pubmed.ncbi.nlm.nih.gov/39879231/",
+        "https://doi.org/10.1371/journal.pone.0317615"
+      ],
+      "result_summary": "证据显示效果强烈依赖时点：立即和 1 小时炎症指标上升，12 小时压力指标下降，但立即、1、24 和 48 小时压力无显著效果；即时和 1 小时免疫指标无显著变化。睡眠、生活质量及缺勤信号主要来自少数或单项研究，情绪未见一致改善。",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "一般健康或情绪目的下，冷水暴露不是证据充分的必需品。若用户仍想尝试，只能把它当低优先级、可撤销的个人偏好，并先处理安全；不能用来治疗抑郁、增强免疫、保证睡眠或替代基础生活习惯。",
+      "sample_size": "11 项随机试验、共 3,177 名参与者；总人数主要受一项大型冷水淋浴试验影响，各结局的实际样本明显不同",
+      "source_scope": "external-context",
+      "study_design": "预先注册的 PRISMA 系统综述，检索 10 个数据库至 2024 年 1 月；纳入健康成人、≤15°C 且至少 30 秒的胸部以上冷水淋浴/浸泡随机试验，对可合并结局按多个时点做随机效应荟萃",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "各技术相对不练习、重复阅读/复习或其他学习策略；同时比较练习测试的格式、次数、间隔与是否提供正确答案反馈",
       "doi": "10.1177/1529100612453266",
       "evidence_level": "A-Synthesis（十种学习技术的结构化叙述性综述）",
@@ -98662,6 +99799,63 @@
       "verification_status": "verified-observational"
     },
     {
+      "comparator": "同一训练计划中的非冷水恢复对照",
+      "doi": "10.1007/s40279-020-01362-0",
+      "evidence_level": "A-Synthesis（8 项训练研究的系统综述与荟萃）",
+      "id": "study-card:malta-2021-regular-cold-water-training-adaptation-review",
+      "intervention_exposure": "在多周训练计划中规律使用≤15°C 冷水浸泡，通常与训练课配套",
+      "label": "The Effects of Regular Cold-Water Immersion Use on Training-Induced Changes in Strength and Endurance Performance: A Systematic Review with Meta-Analysis",
+      "outcomes": [
+        "一次最大力量、最大等长力量和力量耐力适应",
+        "弹震/爆发表现适应",
+        "最大有氧功率与计时赛表现适应"
+      ],
+      "population": "参加规律阻力或耐力训练的人体样本；研究数量少且人群结构受既有运动训练研究限制",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33146851/",
+        "https://doi.org/10.1007/s40279-020-01362-0"
+      ],
+      "result_summary": "规律冷水浸泡与阻力训练结合时，力量和弹震表现的训练适应总体较差；耐力训练中的最大有氧功率和计时赛结局未见显著影响。结论针对长期训练适应，不能解释偶尔一次恢复使用。",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "若主要目标是力量、爆发力或增肌，不要把冷水浸泡固定安排在每次训练后；比赛恢复和长期适应是不同目标。偶发使用与精确间隔仍需按训练情境判断，现有综述不能给出统一等待时间。",
+      "sample_size": "8 篇符合条件的训练研究；各力量、弹震与耐力结局的参与者数不同，摘要未报告单一总样本量",
+      "source_scope": "external-context",
+      "study_design": "预注册系统综述与随机效应荟萃，检索至 2019 年 11 月；纳入人体对照研究，其中冷水浸泡≤15°C并与规律阻力或耐力训练结合，比较训练前后表现变化",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "被动恢复，不合并主动恢复、压缩、营养补充等复合干预",
+      "doi": "10.1007/s40279-022-01644-9",
+      "evidence_level": "A-Synthesis（52 项运动后冷水浸泡试验的系统综述、荟萃与元回归）",
+      "id": "study-card:moore-2022-cold-water-acute-recovery-review",
+      "intervention_exposure": "一次高强度或离心运动后 15 分钟内进行冷水浸泡；温度、持续时间、深度和后续浸泡次数跨研究不同",
+      "label": "Impact of Cold-Water Immersion Compared with Passive Recovery Following a Single Bout of Strenuous Exercise on Athletic Performance in Physically Active Participants: A Systematic Review with Meta-analysis and Meta-regression",
+      "outcomes": [
+        "1–168 小时的肌力、爆发力、冲刺、耐力和柔韧表现",
+        "肌肉酸痛与主观恢复感",
+        "血清肌酸激酶",
+        "温度与时长的元回归关系"
+      ],
+      "population": "规律运动或参与体育活动的 18 岁以上成人；不同项目、训练背景与性别分布不一，不等同于普通久坐人群或临床患者",
+      "provenance_urls": [
+        "https://link.springer.com/article/10.1007/s40279-022-01644-9",
+        "https://pubmed.ncbi.nlm.nih.gov/35157264/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9213381/",
+        "https://doi.org/10.1007/s40279-022-01644-9"
+      ],
+      "result_summary": "冷水浸泡在部分 24 小时结局中改善高强度运动后的肌肉爆发力、酸痛、主观恢复和肌酸激酶，也改善离心运动后的爆发力；但对两类运动后的肌力恢复均无显著影响。结果针对短期恢复，不回答长期训练适应。",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "若运动员在比赛或密集高强度活动后优先考虑次日主观酸痛或部分爆发力恢复，可把冷水浸泡视为情境工具；不应把它写成所有训练后的固定步骤、通用最佳剂量或长期力量增长方案。",
+      "sample_size": "52 项研究；各结局与时间点的参与者数不同，文章没有用一个总样本量代表全部分析",
+      "source_scope": "episode-linked",
+      "study_design": "预先注册的系统综述与随机效应荟萃/元回归，检索 7 个数据库至 2021 年 9 月，纳入运动后 15 分钟内进行冷水浸泡、与被动恢复比较的成人随机试验，并按高强度或离心运动及多个恢复时点分层",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "同一受试者的短清醒与跨夜睡眠条件；30 分钟和 4 小时间隔组；另设早晨清醒的昼夜节律控制组，但没有等长 12 小时纯清醒对照",
       "doi": "10.1523/JNEUROSCI.1236-14.2015",
       "evidence_level": "A-Direct（小样本重复测量实验、昼夜控制与多导睡眠监测）",
@@ -98807,6 +100001,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "同一参与者的不同水温条件及恒温空气静息对照",
+      "doi": "10.1007/s004210050065",
+      "evidence_level": "A-Direct（10 名健康年轻男性的随机顺序自身对照生理实验）",
+      "id": "study-card:sramek-2000-cold-water-physiology",
+      "intervention_exposure": "坐姿头部露出水面，在 14°C、20°C 或 32°C 水中浸泡 1 小时；三种水温顺序随机，每次间隔一周",
+      "label": "Human physiological responses to immersion into water of different temperatures",
+      "outcomes": [
+        "直肠温度和代谢率",
+        "心率与收缩压/舒张压",
+        "血浆去甲肾上腺素、多巴胺、肾上腺素和皮质醇",
+        "肾素、醛固酮与利尿"
+      ],
+      "population": "10 名平均 22.2 岁、体脂较低且最大摄氧量较高的健康年轻男性；不代表女性、老年人、慢病患者或普通冷水淋浴用户",
+      "provenance_urls": [
+        "https://link.springer.com/article/10.1007/s004210050065",
+        "https://pubmed.ncbi.nlm.nih.gov/10751106/",
+        "https://doi.org/10.1007/s004210050065"
+      ],
+      "result_summary": "14°C 浸泡降低核心体温并使代谢率、心率和血压上升；血浆去甲肾上腺素和多巴胺相对基线明显升高。结果证明特定长时间全身冷水浸泡能触发急性交感与代谢反应，但没有测量工作效率、动机、情绪改善或长期健康结局。",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项研究只支持‘强冷刺激会引起明显急性生理反应’，不支持把外周多巴胺百分比翻译成工作、情绪、减脂或健康处方，更不能据此复制 14°C 一小时暴露。",
+      "sample_size": 10,
+      "source_scope": "episode-linked",
+      "study_design": "10 名年轻男性以随机顺序、每次间隔一周完成 14°C、20°C 和 32°C 的 1 小时头部露出水面浸泡，并与恒温空气静息测量比较；连续记录体温、代谢和心血管指标并分时采血",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "研究 1 为同一参与者此前现代电灯环境；研究 2 为各参与者工作日基线及自选留在现代环境的周末组",
       "doi": "10.1016/j.cub.2016.12.041",
       "evidence_level": "A-Direct（19 人两项非随机自然实验）",
@@ -98835,6 +100058,34 @@
       "study_design": "研究 1 让 5 人先在冬季现代环境生活约 6 天，再共同露营约 6 天；研究 2 在夏季让 14 人先维持两天日常作息，随后自选进入现代环境周末组（n=5）或露营组（n=9）。腕部记录活动和光照，两种研究均在条件前后以实验室暗光唾液褪黑素测量昼夜相位",
       "type": "study-card",
       "verification_status": "verified-observational"
+    },
+    {
+      "comparator": "不同温度、暴露方式、适应状态或非冷水条件，随所综述研究而异",
+      "doi": "10.1113/EP086283",
+      "evidence_level": "A-Synthesis（跨冷水危害与用途的人体生理叙述性综述）",
+      "id": "study-card:tipton-2017-cold-water-risks-benefits-review",
+      "intervention_exposure": "突然或计划中的冷水浸泡，包括开放水域、全身浸泡和运动恢复情境",
+      "label": "Cold water immersion: kill or cure?",
+      "outcomes": [
+        "初始喘气与过度换气等冷休克反应",
+        "心律失常、心脏骤停、溺水和低体温风险",
+        "运动恢复与炎症相关结局",
+        "潜在临床或健康用途及证据强度"
+      ],
+      "population": "健康志愿者、开放水域暴露者、运动人群及部分临床情境；风险取决于健康状态、适应、环境和浸泡方式",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28833689/",
+        "https://doi.org/10.1113/EP086283"
+      ],
+      "result_summary": "冷水既可能在特定运动恢复或临床情境中有用，也能在入水早期触发危及生命的呼吸和心血管反应，并在持续暴露中导致低体温。收益与风险都依赖情境，不能把‘生理刺激强’等同于‘适合个人使用’。",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "任何冷水实验都必须先于收益讨论处理溺水、喘气过度换气、心律和低体温风险；不要在开放水域、独处、屏气或高强度呼吸后试验，也不要给存在心血管/晕厥等风险的人远程制定协议。",
+      "sample_size": "不适用（跨多个危害与用途领域的叙述性综述，未报告统一纳入研究数）",
+      "source_scope": "external-context",
+      "study_design": "跨领域叙述性综述，整合意外与自愿冷水浸泡的人体生理、溺水、心律、低体温、运动恢复和潜在治疗用途证据，并按情境评估收益与威胁",
+      "type": "study-card",
+      "verification_status": "verified-review"
     },
     {
       "comparator": "同日较早给予糖片安慰剂；固定顺序而非随机平衡",
@@ -98970,6 +100221,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:0eaad8c7cd4755a7",
+      "label": "14°C 浸泡降低核心体温并使代谢率、心率和血压上升；血浆去甲肾上腺素和多巴胺相对基线明显升高。结果证明特定长时间全身冷水浸泡能触发急性交感与代谢反应，但没有测量工作效率、动机、情绪改善或长期健康结局。",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:141dde45284957a2",
       "label": "部分研究主要改善反应速度而没有同步提高准确性",
@@ -99026,6 +100284,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:2163ad927925de33",
+      "label": "冷水既可能在特定运动恢复或临床情境中有用，也能在入水早期触发危及生命的呼吸和心血管反应，并在持续暴露中导致低体温。收益与风险都依赖情境，不能把‘生理刺激强’等同于‘适合个人使用’。",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:2397167c6d128095",
+      "label": "存在生理反应并不证明长期疾病预防或心理治疗效果",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:2609490ffa8ea8d4",
       "label": "EPA 与氟西汀单药之间未显示疗效差异",
@@ -99034,9 +100306,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:29ab8e0609b6a40f",
+      "label": "患病天数没有显著组间差异",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:2ad0f0cb0433500a",
       "label": "30 分钟入睡组的睡后提升与 30 分钟清醒早期提升无显著差异（p=0.30）",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:2b1b075b2b1d04fc",
+      "label": "立即与 1 小时免疫功能没有显著效果",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
       "type": "study-finding"
     },
     {
@@ -99058,6 +100344,13 @@
       "id": "study-finding:339b66169cd0f1e6",
       "label": "综述认为一次运动后情绪通常改善，认知总体呈小幅正向趋势，尤其常见于反应速度和部分执行功能；但单项研究从改善到无效甚至变差均有，结果依赖运动模式、强度、时长、测试时机、任务和人群。长期记忆和具体机制的证据相对有限。",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:35668f2204261eed",
+      "label": "研究没有证明所有冷水暴露形式、训练目标或安排都会产生同样影响",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
       "type": "study-finding"
     },
     {
@@ -99097,9 +100390,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4691a61a43893019",
+      "label": "缺勤下降不等于疾病发生、严重度或客观免疫指标改善",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:46ae6c22ec9c4097",
       "label": "可计算的效应量仅覆盖部分研究，异质性使其难以形成统一结论",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4b1b4a6c997d5361",
+      "label": "总体情绪没有显著改善，多个健康结局只能叙述性综合或来自单项研究",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
       "type": "study-finding"
     },
     {
@@ -99114,6 +100421,20 @@
       "id": "study-finding:4cd7a198865e2cc4",
       "label": "并非所有情绪、认知或生理指标均改善",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4cdd82eaef5e8cda",
+      "label": "多种潜在治疗或健康主张缺乏足够一致的人体结局证据",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:4d2e3525a11c56d1",
+      "label": "冷水浸泡在部分 24 小时结局中改善高强度运动后的肌肉爆发力、酸痛、主观恢复和肌酸激酶，也改善离心运动后的爆发力；但对两类运动后的肌力恢复均无显著影响。结果针对短期恢复，不回答长期训练适应。",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
       "type": "study-finding"
     },
     {
@@ -99229,6 +100550,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:7914e6ee9076a9db",
+      "label": "与耐力训练结合时，最大有氧功率没有显著差异",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:7957a6968eabdbff",
       "label": "传统 30 秒区块与通常平均方法仍产生约 13.3% 的表观反应时提升；改用 10 秒分散练习并按学习曲线校正后仅余 3.5%，落在正常试次学习外推线上，未出现支持额外睡眠增强机制的离散跃升。",
@@ -99327,10 +100655,38 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:9beeac3b5eb51c4a",
+      "label": "证据显示效果强烈依赖时点：立即和 1 小时炎症指标上升，12 小时压力指标下降，但立即、1、24 和 48 小时压力无显著效果；即时和 1 小时免疫指标无显著变化。睡眠、生活质量及缺勤信号主要来自少数或单项研究，情绪未见一致改善。",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9cc9f5e0b05edf6a",
+      "label": "耐力计时赛平均功率和完成时间没有显著差异",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9cd7f5750958e739",
+      "label": "体温变化与激素产生变化没有相关性",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:9de0b13a8bfed385",
       "label": "两种饮食间蛋白质摄入没有显著差异",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9ef862e345607e77",
+      "label": "不同水温浸泡均未提高血浆皮质醇，皮质醇反而有下降趋势",
+      "review_id": "sramek-2000-cold-water-physiology",
       "type": "study-finding"
     },
     {
@@ -99362,6 +100718,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:b22a2f353b6f151c",
+      "label": "立即、1 小时、24 小时和 48 小时的压力结局没有显著改善",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b23cfd40b8a6d913",
+      "label": "血浆肾上腺素没有显著变化",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:b2493b7f10c20899",
       "label": "冬季露营后褪黑素起始约提前 2.6 小时，睡眠开始约提前 2.5 小时；夏季周末露营组褪黑素起始和中点相对工作日分别提前约 1.4 和 1.0 小时，而现代环境周末组分别延后约 0.98 和 1.0 小时。结果支持完整自然明暗周期组合暴露与较早昼夜相位相关。",
@@ -99373,6 +100743,13 @@
       "id": "study-finding:b8cd8f9a9a6c3cb9",
       "label": "每周平均睡眠时长在现代环境与露营条件间无显著差异（6.7±0.9 对 6.8±0.7 小时，p=0.268）",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:bbc256739a1b22b0",
+      "label": "干预组自报因病缺勤率较低，但患病天数没有显著组间差异；79% 完成 30 天方案，未报告相关严重不良事件。结果可能反映带病工作、行为改变或其他机制，不能直接称为增强免疫或减少感染。",
+      "review_id": "buijze-2016-cold-shower-rct",
       "type": "study-finding"
     },
     {
@@ -99405,6 +100782,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:bfe43d2545f93629",
+      "label": "综述不支持把冷水浸泡视为无风险的普遍健康工具",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:c28978e8375e3004",
       "label": "没有纳入研究直接测量情境本身或情境—反应关联，尽管理论上这些是习惯的重要组成",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -99433,9 +100817,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:cb38927fad4d7be3",
+      "label": "不同 30、60、90 秒冷水时长之间没有明确剂量优势可用于推荐",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:cbdb6319102761ab",
       "label": "天气与季节并未解释实验 1 的自然条件优势",
       "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ccd7119668034198",
+      "label": "许多时间点或结局研究数较少，部分分析异质性高且证据等级较低",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
       "type": "study-finding"
     },
     {
@@ -99457,6 +100855,13 @@
       "id": "study-finding:cf77c7e94c636bbc",
       "label": "第 4 周未见显著改善；第 8 周相对主动对照在部分负性情绪、注意、工作记忆、识别记忆和 TSST 状态焦虑指标上更好。",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:d05c635f9984d81a",
+      "label": "离心和高强度运动后，肌力恢复均没有显著改善",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
       "type": "study-finding"
     },
     {
@@ -99573,9 +100978,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:f36846551c64f6a7",
+      "label": "离心运动后的大多数结局没有一致收益，除 24 小时爆发力外证据有限",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:f76544872daba26e",
       "label": "重复测试的三次初始自由回忆约维持在 70%，无反馈并未在练习阶段产生明显累积提高",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:f78e3dd2edb41ae5",
+      "label": "规律冷水浸泡与阻力训练结合时，力量和弹震表现的训练适应总体较差；耐力训练中的最大有氧功率和计时赛结局未见显著影响。结论针对长期训练适应，不能解释偶尔一次恢复使用。",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
       "type": "study-finding"
     },
     {
@@ -99589,6 +101008,12 @@
       "id": "study-limitation:06bd82b312d1a3ef",
       "label": "所有干预都是多组分，无法识别提示、重复、环境重构或奖励中哪一项是有效成分",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:09bab5a1ff2df484",
+      "label": "14°C 头部露出浸泡持续 1 小时，与短暂冷水淋浴、冰浴或开放水域不同",
+      "review_id": "sramek-2000-cold-water-physiology",
       "type": "study-limitation"
     },
     {
@@ -99634,6 +101059,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:1aed07bcbdc0b49d",
+      "label": "元回归为跨研究关系，不能给个人推出最佳温度和时长",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:1b538447a2c7e98d",
       "label": "研究团队与 Wright 2013 高度重叠，季节比较还直接使用该团队先前夏季数据，不是独立复制",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -99670,6 +101101,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:288ee2680fb93059",
+      "label": "仅一项研究纳入女性，且排除了慢病和高水平运动员",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:289ac06bc8359fb9",
       "label": "参与者全部来自同一所美国大学且年龄范围窄，不能直接外推到儿童、老年人或临床人群",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
@@ -99682,6 +101119,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:2d6ddd6a353f3391",
+      "label": "睡眠、情绪、免疫等若干结论来自单项中等质量研究",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:2de2dbf99a4062ae",
       "label": "仅纳入 35–50 岁健康女性",
       "review_id": "hazlett-2021-gratitude-rct",
@@ -99691,6 +101134,12 @@
       "id": "study-limitation:2f781e3226e857d7",
       "label": "样本年轻、以研究生和白人女性为主，不能直接外推到儿童、老年人、临床人群或成瘾行为",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:2fd54ff3096d16ea",
+      "label": "短期方案与随访不能确定长期收益或安全",
+      "review_id": "buijze-2016-cold-shower-rct",
       "type": "study-limitation"
     },
     {
@@ -99727,6 +101176,12 @@
       "id": "study-limitation:3a1025d8f1f8fddf",
       "label": "许多研究样本小，且可能受体适能、期待、练习效应和发表偏倚影响",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3a92461f7d25e53c",
+      "label": "自身对照但没有盲法，且只观察急性生理反应",
+      "review_id": "sramek-2000-cold-water-physiology",
       "type": "study-limitation"
     },
     {
@@ -99778,6 +101233,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:434aac3e1634f7f4",
+      "label": "方案、运动模式、恢复时间点与结局高度异质",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:43faaa6ee93f9b08",
+      "label": "参与者为身体活跃成人，不能直接外推到慢病、伤病或一般健康用途",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:47bf240bfff8f085",
       "label": "作者团队与后续 Stothard 研究高度重叠，后续结果不构成完全独立复制",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -99790,6 +101257,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:482caecfa4c4cbbf",
+      "label": "仅 11 项试验且方案、结局和时点高度异质",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:4901abbb9ae190bb",
+      "label": "当前资料不能确定最佳温度、时长、频率或长期安全性",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:49a5ded9728263c7",
       "label": "部分研究样本很小，且两项只是无结果的方案；不能用研究数量当成复制次数",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -99799,6 +101278,12 @@
       "id": "study-limitation:4a0d11832a4ccc07",
       "label": "急性运动后的短时结果不能外推为长期认知改善或神经退行性疾病预防",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:4cbf1207946ad0d0",
+      "label": "叙述性跨领域综述，不是所有结局的预注册系统综述或荟萃分析",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
       "type": "study-limitation"
     },
     {
@@ -99880,6 +101365,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:612e94ae68b3ede0",
+      "label": "排除严重合并症，不能说明高风险人群安全性",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:61fc0ad25db64148",
       "label": "研究由与 2006 年论文重叠的同一作者团队完成，不是独立复制",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
@@ -99895,6 +101386,12 @@
       "id": "study-limitation:6700e49e965abe97",
       "label": "文献截止约 2012 年，不能代表此后十余年的全部复制、课堂研究和争议",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:68f01f467a11323d",
+      "label": "仅 10 名健康、年轻、体适能较高的男性",
+      "review_id": "sramek-2000-cold-water-physiology",
       "type": "study-limitation"
     },
     {
@@ -99931,6 +101428,24 @@
       "id": "study-limitation:6b6ebf0452a5b8d7",
       "label": "不能外推到陈述性知识、复杂技能、临床人群、最少睡眠时长或通用学习协议",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6f6532551c421d62",
+      "label": "无法据此确定安全的精确等待时间或通用频率",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6f70736bc5ce8fd9",
+      "label": "风险会随水温、暴露速度、头面浸泡、呼吸、适应、独处与既有疾病显著变化",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:714aa6d488ea806b",
+      "label": "意外浸泡、开放水域、运动恢复和临床使用不能合并成同一风险/收益估计",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
       "type": "study-limitation"
     },
     {
@@ -99976,6 +101491,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:7a806d142bd04e3a",
+      "label": "百分比变化来自小样本实验，不能当作个人可感知的脑内多巴胺读数",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:7b5126c479b31ef3",
       "label": "单一门诊研究不能确立 EPA 可替代标准抗抑郁治疗",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
@@ -100000,9 +101521,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:7fca125f0e18518f",
+      "label": "肌酸激酶和酸痛是恢复指标，不等于长期表现、肌肥大或健康收益",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:80bb58c58df0265b",
       "label": "个体存在差异，组均值约 2% 不能预测任何一个人的脑体积变化",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:86cfa0197dab90c5",
+      "label": "缺勤受工作文化、是否居家和行为选择影响，不是纯医学结局",
+      "review_id": "buijze-2016-cold-shower-rct",
       "type": "study-limitation"
     },
     {
@@ -100024,6 +101557,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8f0e671c2d386721",
+      "label": "没有测量生产力、减脂、免疫、抑郁治疗或长期安全",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:8fbf519bce1d68d9",
       "label": "研究 2 由参与者自选周末组别，研究 1 与两项研究的条件顺序均未随机",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -100042,9 +101581,39 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:953c93162e1baff3",
+      "label": "外周血浆儿茶酚胺变化不等同于特定脑区多巴胺释放或持久行为效果",
+      "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:95d37d7aae22ffd1",
+      "label": "观察的是规律配套使用，不能外推到偶发冷水淋浴",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:960cc0384f2d9326",
       "label": "睡眠与清醒条件的测试时点和保留间隔不同，虽然昼夜控制与警觉任务降低了部分混杂",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9829e83f4678f541",
+      "label": "总样本量被一项大型冷水淋浴研究主导，多数单项研究样本小",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9882fed8d2cc5c2f",
+      "label": "运动员性别、训练水平和项目代表性有限",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:99b9f044a4960324",
+      "label": "不能据此给出个人安全温度、时长或频率阈值",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
       "type": "study-limitation"
     },
     {
@@ -100063,6 +101632,12 @@
       "id": "study-limitation:a06b6b0ea071411b",
       "label": "研究未确定需要多少天自然光暴露，也未测试固定晨间分钟数、隔窗光照或消费级灯具剂量",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a26a3702ed0fb10d",
+      "label": "被动恢复比较不能说明冷水优于睡眠、营养、主动恢复或其他现实方案",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
       "type": "study-limitation"
     },
     {
@@ -100108,6 +101683,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:ab027c2176b094dd",
+      "label": "不同研究的温度、时长、训练方案、浸泡部位和对照不同",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ab2e95e214b68adf",
       "label": "结局是短时实验室注意任务，没有测量工作产出、考试成绩或长期功能",
       "review_id": "berman-2008-nature-directed-attention",
@@ -100120,6 +101701,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:acf12834ec3afe05",
+      "label": "5 项研究在运动后实施，健康效果可能与运动恢复混杂",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ad827fe58cc47690",
       "label": "研究设计、行为、时长、样本与结局高度异质，未做荟萃分析或正式风险偏倚综合",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -100129,6 +101716,12 @@
       "id": "study-limitation:ae539d4152d4c484",
       "label": "不能外推到临床炎症、焦虑或其他疾病",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:afa51e63b3034ed8",
+      "label": "后续研究可能更新特定用途的效果估计",
+      "review_id": "tipton-2017-cold-water-risks-benefits-review",
       "type": "study-limitation"
     },
     {
@@ -100210,6 +101803,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:c434fb8a54a1d7d0",
+      "label": "6 项研究只考察单次暴露，无法判断持久效果",
+      "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:cbd7482742eb0035",
       "label": "没有直接测量晨光单独效应、最低有效分钟数、隔窗光照或特定照度处方",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -100240,6 +101839,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:d6ff7c2b49eb8722",
+      "label": "多个亚组参与者少于 100 人或统计异质性高，GRADE 被降级",
+      "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:d977b17ad3dad029",
+      "label": "主动招募的志愿者可能有较高期待和健康行为动机",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e00b68c902d6a46f",
       "label": "从 96 人到 82 人有足够数据、62 人可拟合、39 人良好拟合，选择性建模限制代表性",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -100249,6 +101860,12 @@
       "id": "study-limitation:e0320d9c11a9af50",
       "label": "仅在科罗拉多约北纬 40° 的仲夏条件研究一周，不能直接外推到其他季节、纬度和文化",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e042d02989bf56db",
+      "label": "没有证明感染率下降或免疫系统被增强",
+      "review_id": "buijze-2016-cold-shower-rct",
       "type": "study-limitation"
     },
     {
@@ -100276,6 +101893,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e6b0d1bcf8e647f7",
+      "label": "仅 8 篇研究，结局分组后证据更少",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e7f89e02ef507b74",
       "label": "没有盲法、预注册或客观健康结局，因果与现实长期维持均未建立",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -100285,6 +101908,18 @@
       "id": "study-limitation:e83471f8ad4a0c64",
       "label": "安慰剂始终先于咖啡因，存在固定顺序混杂",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:eb229dcc8c853604",
+      "label": "参与者和研究团队无法对淋浴分组盲法，主要结局依赖自报",
+      "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:edafae38e5c081b0",
+      "label": "表现适应不等同于肌肉体积、伤病、主观恢复或一般健康结局",
+      "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
       "type": "study-limitation"
     },
     {
@@ -103092,20 +104727,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1740,
-    "action_playbook_nodes": 7,
-    "action_step_nodes": 21,
+    "academic_resource_nodes": 1744,
+    "action_playbook_nodes": 8,
+    "action_step_nodes": 24,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8880,
+    "edges": 9026,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 10,
-    "evidence_topic_nodes": 98,
-    "resource_nodes": 6024,
-    "study_card_nodes": 20,
-    "study_finding_nodes": 95,
-    "study_limitation_nodes": 131,
+    "evidence_relation_nodes": 14,
+    "evidence_topic_nodes": 126,
+    "resource_nodes": 6028,
+    "study_card_nodes": 26,
+    "study_finding_nodes": 119,
+    "study_limitation_nodes": 167,
     "top_topics": [
       {
         "count": 58,
@@ -103209,7 +104844,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 677,
+    "verified_academic_resource_nodes": 685,
     "youtube_nodes": 424
   }
 }

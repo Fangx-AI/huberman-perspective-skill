@@ -12,7 +12,7 @@ Use $huberman-perspective. I keep collecting habit protocols but cannot start. H
 
 A good response should select one matching playbook, give no more than three actions, and attach a trigger, minimum version, observable measure, adjustable review point and failure adaptation. It should not add supplements, cold exposure or a full morning routine merely because Huberman has discussed them.
 
-## Seven outcome-first scenarios
+## Eight outcome-first scenarios
 
 | User request | Expected playbook | Non-loss boundary |
 |---|---|---|
@@ -23,6 +23,7 @@ A good response should select one matching playbook, give no more than three act
 | `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | Start below symptom limits; no guaranteed hippocampal growth or dementia prevention |
 | `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | Do not skip meals, moralize all processed food or substitute for clinical nutrition care |
 | `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | Proxy endpoints are not personal efficacy; medication, hormone, peptide and interaction decisions require a clinician/pharmacist |
+| `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | Separate wellbeing, acute recovery and long-term adaptation; no fixed dose, open-water or breath-hold experiment |
 
 The deterministic router can be inspected without loading the entire evidence archive:
 
@@ -44,6 +45,7 @@ The structured evidence cards are directly searchable:
 python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
 python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
 python scripts/query_evidence.py "超加工食品 饮食环境"
+python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"
 ```
 
 ## Ask about a personal health boundary

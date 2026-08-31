@@ -31,7 +31,7 @@ class ActionPlaybookTests(unittest.TestCase):
 
     def test_committed_catalog_is_valid_and_action_limited(self) -> None:
         VALIDATOR.validate_playbooks(self.playbooks, self.cards, self.claims)
-        self.assertGreaterEqual(len(self.playbooks), 7)
+        self.assertGreaterEqual(len(self.playbooks), 8)
         for playbook in self.playbooks:
             self.assertLessEqual(len(playbook["actions"]), 3)
             self.assertTrue({"evidence-supported", "bounded-experiment", "framework-inference"} & {
@@ -47,6 +47,8 @@ class ActionPlaybookTests(unittest.TestCase):
             "我久坐很久，看到很多 Huberman 运动协议反而不知道怎么开始。给我一个简单方案。": "start-exercise-without-protocol-overload",
             "我总点外卖、吃零食，但不想算卡路里。按 Huberman 视角帮我先做一个改变。": "improve-food-environment-first",
             "Huberman讲了很多补剂和健康协议，我怎么判断一个值不值得试？": "decide-whether-to-try-one-health-protocol",
+            "Huberman说冷水澡提高多巴胺和免疫，我要不要每天冰浴？": "decide-whether-and-when-to-use-cold-exposure",
+            "我力量训练后冰浴会不会影响增肌？": "decide-whether-and-when-to-use-cold-exposure",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -101,6 +103,18 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("先过医学安全门", skill)
         self.assertIn("不得让个人实验延迟照护", skill)
         self.assertIn("不改写成四步以上检查清单", skill)
+
+    def test_cold_exposure_decision_separates_goals_nulls_adaptation_and_safety(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        cold = by_id["decide-whether-and-when-to-use-cold-exposure"]
+        self.assertEqual(len(cold["actions"]), 3)
+        for phrase in ("不是睡眠、专注、免疫、减脂或情绪的必需品", "外周多巴胺", "缺勤下降", "长期适应", "不给固定温度/时长", "开放水域"):
+            self.assertIn(phrase, cold["safe_summary"])
+        self.assertIn("患病天数未改善", cold["actions"][2]["why"])
+        self.assertIn("不规定温度或时长", cold["actions"][2]["minimum_version"])
+        skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+        for phrase in ("冷暴露决策", "外周儿茶酚胺不等于脑内", "不得进入个人实验"):
+            self.assertIn(phrase, skill)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)

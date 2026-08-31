@@ -1,22 +1,22 @@
 {
   "counts": {
-    "academic_resource_nodes": 1740,
-    "action_playbook_nodes": 7,
-    "action_playbooks": 7,
-    "action_step_nodes": 21,
+    "academic_resource_nodes": 1744,
+    "action_playbook_nodes": 8,
+    "action_playbooks": 8,
+    "action_step_nodes": 24,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "claims": 40,
     "course_lecture_nodes": 8,
-    "edges": 8880,
+    "edges": 9026,
     "episode_nodes": 425,
     "episodes": 425,
-    "evidence_relation_nodes": 10,
-    "evidence_topic_nodes": 98,
-    "resource_nodes": 6024,
-    "study_card_nodes": 20,
-    "study_finding_nodes": 95,
-    "study_limitation_nodes": 131,
+    "evidence_relation_nodes": 14,
+    "evidence_topic_nodes": 126,
+    "resource_nodes": 6028,
+    "study_card_nodes": 26,
+    "study_finding_nodes": 119,
+    "study_limitation_nodes": 167,
     "top_topics": [
       {
         "count": 58,
@@ -120,18 +120,18 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 677,
+    "verified_academic_resource_nodes": 685,
     "video_urls": 8,
     "youtube_nodes": 424
   },
-  "generated_at": "2026-08-31T07:00:52.803826+00:00",
+  "generated_at": "2026-08-31T07:21:58.101328+00:00",
   "raw_payloads_included": false,
   "schema": "public-release-manifest-v1",
   "sha256": {
-    "action-playbooks.jsonl": "d552c084f1670deee09a0f7956d2439a1f29a88685eeeefd676e140256b9bea2",
+    "action-playbooks.jsonl": "e2ce90015f27bd665c9a9f28e3996c08276d18f6e21190359259ddd62e3a3a00",
     "claim-index.jsonl": "34291a1ec0dbcebcccebde8e6ce5e2a3a24a7914035d6346e6d85bfdc0bade0d",
     "episodes.csv": "1f0204093ca0080e46b01c117a8ab5f413e83fa837de59ce5d8f8f71184cd039",
-    "knowledge-graph.json": "498c488649de25e85d04fc010cc3e2a7b5f5a46393039bc46ac036fb7d3d5e81",
+    "knowledge-graph.json": "d8d20ceccc8ba02f6cf96d6a8831b2a0722d6e4c15aa694e0efada6edcd20f08",
     "video-urls.csv": "54d0f495f54e1af0bcb1ae22488eee73d7f784ce37d458d9d168193593aec0d9"
   }
 }

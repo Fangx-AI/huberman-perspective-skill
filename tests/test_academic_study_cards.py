@@ -19,7 +19,25 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertGreaterEqual(len(self.cards), 20)
+        self.assertGreaterEqual(len(self.cards), 26)
+
+    def test_cold_exposure_cluster_separates_proxy_recovery_adaptation_and_safety(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "sramek-2000-cold-water-physiology",
+            "moore-2022-cold-water-acute-recovery-review",
+            "cain-2025-cold-water-wellbeing-review",
+            "malta-2021-regular-cold-water-training-adaptation-review",
+            "tipton-2017-cold-water-risks-benefits-review",
+            "buijze-2016-cold-shower-rct",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertEqual(by_id["sramek-2000-cold-water-physiology"]["sample_size"], 10)
+        self.assertIn("患病天数没有显著", " ".join(by_id["buijze-2016-cold-shower-rct"]["null_findings"]))
+        self.assertIn("长期力量增长", by_id["moore-2022-cold-water-acute-recovery-review"]["safe_interpretation"])
+        for review_id in expected - {"sramek-2000-cold-water-physiology", "moore-2022-cold-water-acute-recovery-review"}:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
 
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
