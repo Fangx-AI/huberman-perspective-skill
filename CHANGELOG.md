@@ -7,6 +7,14 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue upgrading bibliographic-only and pending academic sources to study-level evidence records.
 - Add periodic drift checks for official Episode and platform metadata.
 
+## [0.1.1] - 2026-08-31
+
+### Changed
+
+- Verified 31 additional source identities through public bibliographic APIs, raising the verified queue count from 248 to 279 and reducing pending records from 501 to 470.
+- Rebuilt the knowledge graph and deterministic public manifest with 279 verified academic resource nodes.
+- Added a native PowerShell installation example for Windows users.
+
 ## [0.1.0] - 2026-08-31
 
 ### Added

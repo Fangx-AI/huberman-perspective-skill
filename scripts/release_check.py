@@ -19,6 +19,8 @@ REQUIRED = [
     "SECURITY.md",
     "CHANGELOG.md",
     "CITATION.cff",
+    "VERSION",
+    "pyproject.toml",
     "SKILL.md",
     "agents/openai.yaml",
     "docs/COPYRIGHT_AND_DATA_POLICY.md",
@@ -86,6 +88,16 @@ def check() -> list[str]:
     if not re.search(r"allow_implicit_invocation:\s*false", policy):
         errors.append("agents/openai.yaml must enforce explicit-only invocation")
 
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+    version_sources = {
+        "pyproject.toml": re.search(r'^version\s*=\s*"([^"]+)"', (ROOT / "pyproject.toml").read_text(encoding="utf-8"), re.MULTILINE),
+        "CITATION.cff": re.search(r'^version:\s*"([^"]+)"', (ROOT / "CITATION.cff").read_text(encoding="utf-8"), re.MULTILINE),
+        "README.md": re.search(r"当前版本：`([^`]+)`", (ROOT / "README.md").read_text(encoding="utf-8")),
+    }
+    for relative, match in version_sources.items():
+        if not match or match.group(1) != version:
+            errors.append(f"version mismatch in {relative}: expected {version}")
+
     expected_counts = {
         "references/catalog/episodes.csv": 425,
         "references/catalog/youtube-transcript-queue.csv": 424,
@@ -125,6 +137,12 @@ def check() -> list[str]:
         for node in graph.get("nodes", []):
             if node.get("type") == "claim" and ("http" in node.get("label", "") or len(node.get("label", "")) > 180):
                 errors.append(f"unsanitized claim label: {node.get('id')}")
+        academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
+        if academic_path.is_file():
+            with academic_path.open(encoding="utf-8-sig", newline="") as handle:
+                verified = sum(row["verification_status"] != "pending" for row in csv.DictReader(handle))
+            if graph.get("stats", {}).get("verified_academic_resource_nodes") != verified:
+                errors.append("knowledge graph verified academic count is stale")
 
     manifest_path = ROOT / "references" / "catalog" / "release-manifest.json"
     if manifest_path.is_file():

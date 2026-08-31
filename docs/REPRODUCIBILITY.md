@@ -14,6 +14,15 @@ python -m compileall -q scripts tests
 
 The committed public snapshot should validate without network access.
 
+On Windows installations whose Python default text encoding is not UTF-8, enable UTF-8 mode before running third-party validators that do not specify an encoding:
+
+```powershell
+$env:PYTHONUTF8 = "1"
+python path\to\quick_validate.py .
+```
+
+The repository's own scripts open project text files explicitly as UTF-8.
+
 ## Rebuilding the public snapshot
 
 Raw Episode page data is intentionally absent from Git. A maintainer with a lawful local research cache can rebuild the sanitized files:

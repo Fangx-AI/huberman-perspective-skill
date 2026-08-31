@@ -27,6 +27,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(len(rows), 749)
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
+        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 279)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"

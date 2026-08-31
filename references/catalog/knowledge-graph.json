@@ -41776,7 +41776,7 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     }
   ],
-  "generated_at": "2026-08-31T01:09:23.960871+00:00",
+  "generated_at": "2026-08-31T01:37:29.837293+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -59069,23 +59069,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC9767481；《An exercise-inducible metabolite that suppresses feeding and obesity.》；期刊未返回；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9767481/pdf/nihms-1852727.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9767481/pdf/nihms-1852727.pdf",
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9767481/pdf/nihms-1852727.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC9855677；《Effects of Near-Infrared Light on Well-Being and Health in Human Subjects with Mild Sleep-Related Complaints: A Double-Blind, Randomized, Placebo-Controlled Study.》；期刊未返回；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9855677/pdf/biology-12-00060.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9855677/pdf/biology-12-00060.pdf",
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9855677/pdf/biology-12-00060.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -59099,23 +59099,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC9905096；《Protective effect of COVID-19 vaccination against long COVID syndrome: A systematic review and meta-analysis.》；期刊未返回；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9905096/pdf/main.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9905096/pdf/main.pdf",
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9905096/pdf/main.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC9944513；《Metabolic regulation of species-specific developmental rates.》；期刊未返回；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC9944513/pdf/nihms-1864385.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9944513/pdf/nihms-1864385.pdf",
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9944513/pdf/nihms-1864385.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "id": "resource:https://pni.princeton.edu/people/annegret-falkner",
@@ -60683,53 +60683,53 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：12438211；《The discovery of umami.》；期刊未返回；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/12438211/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/12438211/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/12438211/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：13640019；《[Effect of weight-lifting exercise on electromyographic changes].》；期刊未返回；1959。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/13640019/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/13640019/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/13640019/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：16339268；《The sniff is part of the olfactory percept.》；期刊未返回；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/16339268/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/16339268/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/16339268/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：16507066；《Test-enhanced learning: taking memory tests improves long-term retention.》；期刊未返回；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/16507066/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/16507066/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/16507066/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC3776596；《White matter changes compromise prefrontal cortex function in healthy elderly individuals.》；期刊未返回；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/16513006/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/16513006/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/16513006/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -60743,23 +60743,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：18276894；《The critical importance of retrieval for learning.》；期刊未返回；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/18276894/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/18276894/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18276894/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：19235739；《Effects of olfactory training in patients with olfactory loss.》；期刊未返回；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/19235739/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/19235739/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19235739/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -60783,63 +60783,63 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：22138021；《How does long term exposure to base stations and mobile phones affect human hormone profiles?》；期刊未返回；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/22138021/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/22138021/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/22138021/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：23806438；《The effects of cardiovascular exercise on human memory: a review with meta-analysis.》；期刊未返回；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/23806438/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/23806438/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/23806438/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC4126803；《Low-level laser (light) therapy (LLLT) in skin: stimulating, healing, restoring.》；期刊未返回；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/24049929/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/24049929/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/24049929/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC3862078；《Prenatal exposure to phthalates is associated with decreased anogenital distance and penile size in male newborns.》；期刊未返回；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/24349678/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/24349678/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/24349678/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：26173288；《Improving Students' Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology.》；期刊未返回；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/26173288/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/26173288/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/26173288/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC4679590；《Thirst for knowledge: The effects of curiosity and interest on memory in younger and older adults.》；期刊未返回；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/26479013/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/26479013/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/26479013/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -60853,43 +60853,43 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC10332648；《The Relationship of Prolonged Grief Disorder Symptoms With Hemodynamic Response to Grief Recall Among Bereaved Adults.》；期刊未返回；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37260255/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/37260255/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37260255/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：5089199；《Mother love: what turns it on?》；期刊未返回；1971。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/5089199/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/5089199/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/5089199/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：690806；《Lottery winners and accident victims: is happiness relative?》；期刊未返回；1978。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/690806/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/690806/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/690806/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：9635069；《Relationship of childhood abuse and household dysfunction to many of the leading causes of death in adults. The Adverse Childhood Experiences (ACE) Study.》；期刊未返回；1998。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/9635069/",
       "kind": "academic-or-medical",
       "label": "https://pubmed.ncbi.nlm.nih.gov/9635069/",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/9635069/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69112,23 +69112,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cmet.2020.01.014；《Short-Term Consumption of Sucralose with, but Not without, Carbohydrate Impairs Neural and Metabolic Sensitivity to Sugar in Humans 》；Cell Metabolism；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7#%20",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7#%20",
       "type": "resource",
       "url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7#%20",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cmet.2020.01.014；《Short-Term Consumption of Sucralose with, but Not without, Carbohydrate Impairs Neural and Metabolic Sensitivity to Sugar in Humans 》；Cell Metabolism；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413120300577%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413120300577%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30057-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413120300577%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69142,23 +69142,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cmet.2023.02.015；《Habitual daily intake of a sweet and fatty snack modulates reward processing in humans 》；Cell Metabolism；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00051-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413123000517%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00051-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413123000517%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(23)00051-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413123000517%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2023.101324；《The anabolic response to protein ingestion during recovery from exercise has no upper limit in magnitude and duration in vivo in humans 》；Cell Reports Medicine；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2823%2900540-2",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2823%2900540-2",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2823%2900540-2",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69192,33 +69192,33 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2022.100633；《Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults 》；Cell Reports Medicine；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00158-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00158-6",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00158-6",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2022.100777；《Time-restricted eating with or without low-carbohydrate diet reduces visceral fat and improves metabolic syndrome: A randomized trial 》；Cell Reports Medicine；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00332-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00332-9",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00332-9",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.xcrm.2022.100813；《Anti-diabetic effects of GLP1 analogs are mediated by thermogenic interleukin-6 signaling in adipocytes 》；Cell Reports Medicine；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00372-X?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S266637912200372X%3Fshowall%3Dtrue&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab&utm_content=huber",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00372-X?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S266637912200372X%3Fshowall%3Dtrue&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab&utm_content=huber",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00372-X?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S266637912200372X%3Fshowall%3Dtrue&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab&utm_content=huber",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69262,33 +69262,33 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2019.02.104；《A Hallucinogenic Serotonin-2A Receptor Agonist Reduces Visual Response Gain and Alters Temporal Dynamics in Mouse V1 》；Cell Reports；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(19)30290-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(19)30290-6",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(19)30290-6",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2019.08.016；《Serotonin Induces Structural Plasticity of Both Extrinsic Modulating and Intrinsic Mediating Circuits In Vitro in Aplysia Californica\n             》；Cell Reports；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31049-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124719310496%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31049-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124719310496%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(19)31049-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124719310496%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2020.01.058；《NAD+ Repletion Rescues Female Fertility during Reproductive Aging 》；Cell Reports；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30083-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124720300838%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30083-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124720300838%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(20)30083-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2211124720300838%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -69309,13 +69309,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2021.109336；《Distribution of dietary protein intake in daily meals influences skeletal muscle hypertrophy via the muscle clock 》；Cell Reports；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00712-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00712-9",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)00712-9",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -94220,7 +94220,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 247,
+    "verified_academic_resource_nodes": 279,
     "youtube_nodes": 424
   }
 }
