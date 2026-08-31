@@ -29,6 +29,7 @@ REQUIRED = [
     "docs/MAINTENANCE.md",
     "references/catalog/episodes.csv",
     "references/catalog/claim-index.jsonl",
+    "references/catalog/academic-identifier-overrides.csv",
     "references/catalog/knowledge-graph.json",
     "references/catalog/release-manifest.json",
 ]
@@ -140,8 +141,13 @@ def check() -> list[str]:
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         if academic_path.is_file():
             with academic_path.open(encoding="utf-8-sig", newline="") as handle:
-                verified = sum(row["verification_status"] != "pending" for row in csv.DictReader(handle))
-            if graph.get("stats", {}).get("verified_academic_resource_nodes") != verified:
+                academic_rows = list(csv.DictReader(handle))
+            verified_urls = {row["url"] for row in academic_rows if row["verification_status"] != "pending"}
+            graph_resource_urls = {
+                node.get("url") for node in graph.get("nodes", []) if node.get("type") == "resource" and node.get("url")
+            }
+            linked_verified = len(verified_urls & graph_resource_urls)
+            if graph.get("stats", {}).get("verified_academic_resource_nodes") != linked_verified:
                 errors.append("knowledge graph verified academic count is stale")
 
     manifest_path = ROOT / "references" / "catalog" / "release-manifest.json"

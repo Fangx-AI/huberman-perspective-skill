@@ -25,7 +25,10 @@ PMCID_RE = re.compile(r"PMC\d+", re.IGNORECASE)
 PMID_RE = re.compile(r"(?:pubmed\.ncbi\.nlm\.nih\.gov/|pmid[:/ ]+)(\d+)", re.IGNORECASE)
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
 PII_RE = re.compile(r"S\d{4,8}-\d{4}\(\d{2}\)\d{4,6}-[0-9X]|\bS\d{14,17}[0-9X]\b", re.IGNORECASE)
-NATURE_SLUG_RE = re.compile(r"(?:d41586|s\d{4,6}-\d{3,4}-\d{4,6}(?:-[a-z0-9]+)?|nature\d+|nrn\d+|nm\d+[_-]\d+|tp\d+|\d{6,8}[a-z]\d*)", re.IGNORECASE)
+NATURE_ARTICLE_SLUG_RE = re.compile(r"[a-z0-9][a-z0-9._-]{3,}", re.IGNORECASE)
+NATURE_BRANDED_SLUG_RE = re.compile(r"(ejcn|ijo|mp|npp|tp)(\d{4})(\d+)", re.IGNORECASE)
+SCIENCEDIRECT_PATH_PII_RE = re.compile(r"/pii/([a-z0-9]{15,24})(?:[/?#]|$)", re.IGNORECASE)
+ELSEVIER_EID_RE = re.compile(r"1-s2\.0-([a-z0-9]{15,24})(?:[/?#]|$)", re.IGNORECASE)
 MALFORMED_CELL_URL_RE = re.compile(r"/S\d{4}-\d{4}\(\d{2}$", re.IGNORECASE)
 PROVIDERS = ("europe-pmc", "crossref", "elsevier")
 
@@ -36,21 +39,48 @@ def request_json(url: str, timeout: float, user_agent: str) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
-def identifiers(url: str) -> dict[str, str]:
+def identifiers(url: str, overrides: dict[str, dict[str, str]] | None = None) -> dict[str, str]:
     decoded = unquote(url)
+    parts = urlsplit(decoded)
+    host = parts.netloc.lower().removeprefix("www.")
     pmcid = (PMCID_RE.search(decoded) or [""])[0].upper()
     pmid_match = PMID_RE.search(decoded)
     doi_match = DOI_RE.search(decoded)
     pii_match = PII_RE.search(decoded)
     doi = doi_match.group(0).rstrip(".,;)") if doi_match else ""
     pii = pii_match.group(0).upper() if pii_match else ""
+    if not pii and host == "sciencedirect.com":
+        path_pii_match = SCIENCEDIRECT_PATH_PII_RE.search(decoded) or ELSEVIER_EID_RE.search(decoded)
+        pii = path_pii_match.group(1).upper() if path_pii_match else ""
     if not doi:
-        parts = urlsplit(decoded)
-        host = parts.netloc.lower().removeprefix("www.")
-        slug = parts.path.rstrip("/").rsplit("/", 1)[-1]
-        if host == "nature.com" and NATURE_SLUG_RE.fullmatch(slug):
-            doi = "10.1038/" + slug.replace("_", "-")
-    return {"pmcid": pmcid, "pmid": pmid_match.group(1) if pmid_match else "", "doi": doi, "pii": pii}
+        segments = parts.path.strip("/").split("/")
+        if host == "nature.com" and len(segments) >= 2 and segments[0].lower() == "articles":
+            slug = segments[1].removesuffix(".pdf")
+            if NATURE_ARTICLE_SLUG_RE.fullmatch(slug):
+                branded_match = NATURE_BRANDED_SLUG_RE.fullmatch(slug)
+                if branded_match:
+                    journal, year, article = branded_match.groups()
+                    doi = f"10.1038/{journal.lower()}.{year}.{article}"
+                else:
+                    doi = "10.1038/" + slug
+    result = {"pmcid": pmcid, "pmid": pmid_match.group(1) if pmid_match else "", "doi": doi, "pii": pii}
+    override = (overrides or {}).get(url, {})
+    for key in result:
+        if override.get(key):
+            result[key] = override[key]
+    return result
+
+
+def load_identifier_overrides(path: Path) -> dict[str, dict[str, str]]:
+    if not path.is_file():
+        return {}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    return {
+        row["url"]: {key: row.get(key, "") for key in ("pmcid", "pmid", "doi", "pii")}
+        for row in rows
+        if row.get("url")
+    }
 
 
 def is_malformed_url(url: str) -> bool:
@@ -72,6 +102,7 @@ def select_candidates(
     limit: int,
     scan_limit: int = 0,
     allowed_providers: set[str] | None = None,
+    identifier_overrides: dict[str, dict[str, str]] | None = None,
 ) -> tuple[list[tuple[dict[str, str], dict[str, str]]], int, int, int, int]:
     scan_rows = pending[: scan_limit or None]
     candidates: list[tuple[dict[str, str], dict[str, str]]] = []
@@ -85,7 +116,7 @@ def select_candidates(
         if is_malformed_url(url):
             skipped_malformed += 1
             continue
-        ids = identifiers(url)
+        ids = identifiers(url, identifier_overrides)
         if not any(ids.values()):
             skipped_no_identifier += 1
             continue
@@ -104,6 +135,19 @@ def europe_pmc_lookup(id_kind: str, value: str, timeout: float, user_agent: str)
     data = request_json(url, timeout, user_agent)
     results = data.get("resultList", {}).get("result", [])
     return results[0] if results else None
+
+
+def ncbi_idconv_lookup(pmcid: str, timeout: float, user_agent: str) -> dict | None:
+    url = (
+        "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids="
+        + quote(pmcid, safe="")
+        + "&format=json&tool=huberman-perspective-academic-verifier"
+    )
+    data = request_json(url, timeout, user_agent)
+    records = data.get("records", [])
+    if not records or records[0].get("status") == "error":
+        return None
+    return records[0]
 
 
 def crossref_lookup(doi: str, timeout: float, user_agent: str) -> dict | None:
@@ -180,7 +224,10 @@ def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     with temp.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(
+            {key: " ".join(str(row.get(key, "")).split()) for key in fields}
+            for row in rows
+        )
     temp.replace(path)
 
 
@@ -189,6 +236,11 @@ def main() -> int:
     parser.add_argument("--queue", type=Path, required=True)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--metadata-output", type=Path)
+    parser.add_argument(
+        "--overrides",
+        type=Path,
+        help="traceable CSV of exact URL-to-identifier repairs; defaults beside the queue when present",
+    )
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument(
         "--scan-limit",
@@ -223,12 +275,14 @@ def main() -> int:
 
     output = args.output or args.queue
     metadata_output = args.metadata_output or args.queue.with_name("academic-metadata.jsonl")
+    overrides_path = args.overrides or args.queue.with_name("academic-identifier-overrides.csv")
+    identifier_overrides = load_identifier_overrides(overrides_path)
     with args.queue.open(encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
 
     pending = [row for row in rows if row.get("verification_status", "pending") == "pending"]
     candidates, scanned, skipped_malformed, skipped_no_identifier, skipped_provider = select_candidates(
-        pending, args.limit, args.scan_limit, set(args.providers)
+        pending, args.limit, args.scan_limit, set(args.providers), identifier_overrides
     )
 
     records: list[dict] = []
@@ -248,6 +302,17 @@ def main() -> int:
             if ids["pmcid"]:
                 record = europe_pmc_lookup("PMCID", ids["pmcid"], args.timeout, args.user_agent)
                 provider = "europe-pmc"
+                if not record:
+                    idconv_record = ncbi_idconv_lookup(ids["pmcid"], args.timeout, args.user_agent)
+                    if idconv_record:
+                        ids["pmid"] = str(idconv_record.get("pmid") or ids["pmid"])
+                        ids["doi"] = idconv_record.get("doi") or ids["doi"]
+                        if ids["doi"]:
+                            record = crossref_lookup(ids["doi"], args.timeout, args.user_agent)
+                            provider = "crossref-via-ncbi-idconv"
+                        else:
+                            record = idconv_record
+                            provider = "ncbi-idconv"
             elif ids["pmid"]:
                 record = europe_pmc_lookup("EXT_ID", ids["pmid"], args.timeout, args.user_agent)
                 provider = "europe-pmc"
@@ -299,6 +364,7 @@ def main() -> int:
                 "skipped_provider": skipped_provider,
                 "skipped_provider_cooldown": skipped_provider_cooldown,
                 "provider_errors": provider_errors,
+                "overrides_loaded": len(identifier_overrides),
                 "errors": errors,
                 "dry_run": args.dry_run,
             },

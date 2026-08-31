@@ -7,6 +7,15 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue upgrading bibliographic-only and pending academic sources to study-level evidence records.
 - Add periodic drift checks for official Episode and platform metadata.
 
+## [0.1.3] - 2026-08-31
+
+### Changed
+
+- Verified 223 additional source identities, raising the queue from 450 to 673 verified records and reducing pending records from 299 to 76.
+- Added legacy Nature and ScienceDirect identifier parsing, a provenance-bearing identifier override table, and an NCBI ID Converter fallback for PMC records absent from Europe PMC search.
+- Corrected release validation to compare verified queue URLs with linked graph resource URLs; one verified queue record is intentionally not attached to an Episode, so the graph contains 672 verified academic resource nodes.
+- Expanded verifier regression coverage to nine tests while preserving bibliographic-only evidence semantics and provider error circuit breaking.
+
 ## [0.1.2] - 2026-08-31
 
 ### Changed

@@ -27,7 +27,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(len(rows), 749)
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
-        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 450)
+        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 673)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -37,6 +37,15 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertTrue(all(record.get("source_urls") and record.get("youtube_ids") for record in records))
         self.assertEqual(sum(bool(record.get("timestamps")) for record in records), 19)
 
+    def test_identifier_overrides_are_traceable(self) -> None:
+        path = ROOT / "references" / "catalog" / "academic-identifier-overrides.csv"
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertGreaterEqual(len(rows), 1)
+        for row in rows:
+            self.assertTrue(row["provenance_url"].startswith("https://"))
+            self.assertTrue(any(row[field] for field in ("pmcid", "pmid", "doi", "pii")))
+
     def test_public_graph_has_no_show_notes_payload(self) -> None:
         path = ROOT / "references" / "catalog" / "knowledge-graph.json"
         raw = path.read_text(encoding="utf-8")
@@ -45,6 +54,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-claim-v1")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 672)
 
 
 if __name__ == "__main__":

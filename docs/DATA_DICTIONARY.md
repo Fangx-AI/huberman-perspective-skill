@@ -39,6 +39,10 @@ Discovery-only Bilibili records. `source_level=C` or `mirror-only` cannot indepe
 | `verification_status` | `pending`, `verified-bibliographic`, `verified-study`, `verified-observational`, or `verified-review` |
 | `evidence_notes` | Independent design/result/boundary note; not an abstract copy |
 
+## `academic-identifier-overrides.csv`
+
+Traceable repairs for legacy source URLs whose canonical PMID, PMCID, DOI or PII cannot be derived safely. Each row records the exact queue URL, replacement identifier, official `provenance_url` and a short note. An override only supplies a lookup key; the verifier still requires a successful public bibliographic API response before changing queue status.
+
 ## `claim-index.jsonl`
 
 One JSON object per source locator. Public records contain `claim_id`, neutral `topic`, YouTube IDs/URLs, timestamps, speaker scope, evidence layer, boundary and parse quality. The private `claim_text` field is deliberately omitted.

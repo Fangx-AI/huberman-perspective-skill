@@ -41776,7 +41776,7 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     }
   ],
-  "generated_at": "2026-08-31T01:52:14.488214+00:00",
+  "generated_at": "2026-08-31T02:10:07.523660+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -58409,13 +58409,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC3060589；《The human circadian system adapts to prior photic history》；The Journal of Physiology；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC3060589/",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3060589/",
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3060589/",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -69062,13 +69062,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cmet.2012.04.019；《Time-Restricted Feeding without Reducing Caloric Intake Prevents Metabolic Diseases in Mice Fed a High-Fat Diet 》；Cell Metabolism；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(12)00189-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413112001891%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(12)00189-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413112001891%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(12)00189-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413112001891%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69369,13 +69369,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.celrep.2023.113521；《Ketogenic diet therapy for pediatric epilepsy is associated with alterations in the human gut microbiome that confer seizure resistance in mice 》；Cell Reports；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell-reports/fulltext/S2211-1247(23)01533-4",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-reports/fulltext/S2211-1247(23)01533-4",
       "type": "resource",
       "url": "https://www.cell.com/cell-reports/fulltext/S2211-1247(23)01533-4",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69419,13 +69419,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0092-8674(03)00844-4；《The Receptors for Mammalian Sweet and Umami Taste 》；Cell；2003。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell/fulltext/S0092-8674(03)00844-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867403008444%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell/fulltext/S0092-8674(03)00844-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867403008444%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell/fulltext/S0092-8674(03)00844-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867403008444%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -69479,13 +69479,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2017.05.034；《Enterochromaffin Cells Are Gut Chemosensors that Couple to Sensory Neural Pathways 》；Cell；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/cell/fulltext/S0092-8674(17)30595-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417305950%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell/fulltext/S0092-8674(17)30595-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417305950%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/cell/fulltext/S0092-8674(17)30595-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867417305950%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69646,13 +69646,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cub.2011.10.052；《REM Sleep Depotentiates Amygdala Activity to Previous Emotional Experiences 》；Current Biology；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/current-biology/fulltext/S0960-9822(11)01248-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982211012486%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/current-biology/fulltext/S0960-9822(11)01248-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982211012486%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(11)01248-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982211012486%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69746,13 +69746,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cub.2020.08.010；《Human nasal microbiota 》；Current Biology；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/current-biology/fulltext/S0960-9822(20)31164-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982220311647%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/current-biology/fulltext/S0960-9822(20)31164-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982220311647%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/current-biology/fulltext/S0960-9822(20)31164-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0960982220311647%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69796,53 +69796,53 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.devcel.2023.11.028；《An essential signaling cascade for avian auditory hair cell regeneration 》；Developmental Cell；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/developmental-cell/fulltext/S1534-5807(23)00649-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580723006494%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(23)00649-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580723006494%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(23)00649-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1534580723006494%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2011.10.042；《Transgenerational Inheritance of an Acquired Small RNA-Based Antiviral Response in C. elegans\n             》；Cell；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/fulltext/S0092-8674%2811%2901341-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/fulltext/S0092-8674%2811%2901341-9",
       "type": "resource",
       "url": "https://www.cell.com/fulltext/S0092-8674%2811%2901341-9",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2015.11.001；《Personalized Nutrition by Prediction of Glycemic Responses 》；Cell；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/fulltext/S0092-8674(15)01481-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/fulltext/S0092-8674(15)01481-6",
       "type": "resource",
       "url": "https://www.cell.com/fulltext/S0092-8674(15)01481-6",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2015.12.040；《Dorsal Raphe Dopamine Neurons Represent the Experience of Social Isolation 》；Cell；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/fulltext/S0092-8674(15)01704-3",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/fulltext/S0092-8674(15)01704-3",
       "type": "resource",
       "url": "https://www.cell.com/fulltext/S0092-8674(15)01704-3",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.heliyon.2019.e02444；《Low intensity white noise improves performance in auditory working memory task: An fMRI study 》；Heliyon；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/heliyon/fulltext/S2405-8440(19)36104-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844019361043%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/heliyon/fulltext/S2405-8440(19)36104-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844019361043%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/heliyon/fulltext/S2405-8440(19)36104-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844019361043%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -69883,103 +69883,103 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0896-6273(01)00222-7；《Eye Position Influences Auditory Responses in Primate Inferior Colliculus 》；Neuron；2001。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(01)00222-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627301002227%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(01)00222-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627301002227%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(01)00222-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627301002227%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0896-6273(02)00746-8；《Practice with Sleep Makes Perfect Sleep-Dependent Motor Skill Learning》；Neuron；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(02)00746-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627302007468%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(02)00746-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627302007468%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(02)00746-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627302007468%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2005.02.010；《Corelease of Dopamine and Serotonin from Striatal Dopamine Terminals 》；Neuron；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(05)00126-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627305001261%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(05)00126-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627305001261%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(05)00126-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627305001261%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2009.09.031；《Two Different Forms of Arousal in Drosophila Are Oppositely Regulated by the Dopamine D1 Receptor Ortholog DopR via Distinct Neural Circuits 》；Neuron；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(09)00742-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(09)00742-9",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(09)00742-9",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2009.12.026；《Enhancement of Learning and Memory by Elevating Brain Magnesium 》；Neuron；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(09)01044-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627309010447%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(09)01044-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627309010447%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(09)01044-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627309010447%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2010.09.003；《Neural Responses to Ingroup and Outgroup Members' Suffering Predict Individual Differences in Costly Helping 》；Neuron；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(10)00720-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627310007208%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(10)00720-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627310007208%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(10)00720-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627310007208%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2011.01.020；《Impulsivity, Compulsivity, and Top-Down Cognitive Control 》；Neuron；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(11)00068-7",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(11)00068-7",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(11)00068-7",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2011.08.019；《Multisensory Integration of Natural Odors and Sounds in the Auditory Cortex 》；Neuron；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(11)00740-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627311007409%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(11)00740-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627311007409%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(11)00740-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627311007409%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2013.03.006；《Auditory Closed-Loop Stimulation of the Sleep Slow Oscillation Enhances Memory 》；Neuron；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(13)00230-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313002304%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(13)00230-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313002304%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(13)00230-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313002304%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2013.07.051；《The Sensory Neurons of Touch 》；Neuron；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(13)00710-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313007101%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(13)00710-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313007101%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(13)00710-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627313007101%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -70003,53 +70003,53 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2014.08.060；《States of Curiosity Modulate Hippocampus-Dependent Learning via the Dopaminergic Circuit 》；Neuron；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(14)00804-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(14)00804-6",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(14)00804-6",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2017.11.041；《The Forebrain Thirst Circuit Drives Drinking through Negative Reinforcement 》；Neuron；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(17)31122-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627317311224%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(17)31122-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627317311224%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(17)31122-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627317311224%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2019.04.011；《Gamma Entrainment Binds Higher-Order Brain Regions and Offers Neuroprotection 》；Neuron；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(19)30346-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627319303460%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(19)30346-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627319303460%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(19)30346-0?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627319303460%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2020.02.014；《Hierarchical Representations of Aggression in a Hypothalamic-Midbrain Circuit 》；Neuron；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(20)30137-9",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(20)30137-9",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(20)30137-9",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2020.05.015；《Targeting Homeostatic Synaptic Plasticity for Treatment of Mood Disorders 》；Neuron；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(20)30361-5",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(20)30361-5",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(20)30361-5",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(2030532-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627320305328%3Fshowall%3Dtrue)",
@@ -70060,53 +70060,53 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.06.008；《Psilocybin induces rapid and persistent growth of dendritic spines in frontal cortex in vivo\n             》；Neuron；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(21)00423-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321004232%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00423-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321004232%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00423-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321004232%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.10.024；《Neocortex saves energy by reducing coding precision during food scarcity 》；Neuron；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(21)00839-4",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00839-4",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00839-4",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.12.002；《Make war not love: The neural substrate underlying a state-dependent switch in female social behavior 》；Neuron；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(21)00995-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321009958%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00995-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321009958%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)00995-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321009958%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2021.12.019；《Genome-wide identification of the genetic basis of amyotrophic lateral sclerosis 》；Neuron；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(21)01036-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321010369%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(21)01036-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321010369%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(21)01036-9?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627321010369%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.02.009；《A visual circuit related to the periaqueductal gray area for the antinociceptive effects of bright light treatment 》；Neuron；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(22)00147-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322001477%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(22)00147-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322001477%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(22)00147-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322001477%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -70120,83 +70120,83 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.10.032；《Astrocyte endfoot formation controls the termination of oligodendrocyte precursor cell perivascular migration during development 》；Neuron；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(22)00991-6",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(22)00991-6",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(22)00991-6",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.11.001；《Hemispherically lateralized rhythmic oscillations in the cingulate-amygdala circuit drive affective empathy in mice 》；Neuron；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(22)01000-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010005%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01000-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010005%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01000-5?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010005%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.12.011；《Oxytocin receptor is not required for social attachment in prairie voles 》；Neuron；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(22)01084-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010844%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01084-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010844%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01084-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322010844%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.12.031；《The costs and benefits of psychedelics on cognition and mood 》；Neuron；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(22)01152-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322011527%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01152-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322011527%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(22)01152-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627322011527%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2023.09.004；《Stress relief as a natural resilience mechanism against depression-like behaviors 》；Neuron；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/neuron/fulltext/S0896-6273(23)00668-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627323006682%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/neuron/fulltext/S0896-6273(23)00668-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627323006682%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/neuron/fulltext/S0896-6273(23)00668-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0896627323006682%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.tics.2021.08.009；《Sense of purpose in life and healthier cognitive aging 》；Trends in Cognitive Sciences；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(21)00226-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661321002266%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(21)00226-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661321002266%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(21)00226-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661321002266%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.tics.2022.02.007；《Undersociality: miscalibrated social cognition can inhibit social connection 》；Trends in Cognitive Sciences；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(22)00043-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661322000432%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(22)00043-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661322000432%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(22)00043-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1364661322000432%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.tins.2005.06.004；《Memory consolidation and reconsolidation: what is the role of sleep? 》；Trends in Neurosciences；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.cell.com/trends/neurosciences/abstract/S0166-2236(05)00159-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0166223605001591%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/trends/neurosciences/abstract/S0166-2236(05)00159-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0166223605001591%3Fshowall%3Dtrue",
       "type": "resource",
       "url": "https://www.cell.com/trends/neurosciences/abstract/S0166-2236(05)00159-1?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0166223605001591%3Fshowall%3Dtrue",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "id": "resource:https://www.cellbio.duke.edu/profile/cagla-eroglu",
@@ -78987,13 +78987,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/22268；《Neural correlates of decision variables in parietal cortex》；Nature；1999。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/22268",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/22268",
       "type": "resource",
       "url": "https://www.nature.com/articles/22268",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -79027,13 +79027,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/32408；《Regulation of ovulation by human pheromones》；Nature；1998。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/32408",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/32408",
       "type": "resource",
       "url": "https://www.nature.com/articles/32408",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -79047,13 +79047,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/35009043；《Induction of visual orientation modules in auditory cortex》；Nature；2000。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/35009043",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/35009043",
       "type": "resource",
       "url": "https://www.nature.com/articles/35009043",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -79087,23 +79087,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/43366；《Warm feet promote the rapid onset of sleep》；Nature；1999。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/43366",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/43366",
       "type": "resource",
       "url": "https://www.nature.com/articles/43366",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/43432；《Genetic enhancement of learning and memory in mice》；Nature；1999。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/43432",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/43432",
       "type": "resource",
       "url": "https://www.nature.com/articles/43432",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "7",
@@ -79117,83 +79117,83 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/d41586-021-02628-x；《The rise of the assembloid》；Nature；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/d41586-021-02628-x",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/d41586-021-02628-x",
       "type": "resource",
       "url": "https://www.nature.com/articles/d41586-021-02628-x",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/d41586-023-03435-2；《Brain and body are more intertwined than we knew》；Nature；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/d41586-023-03435-2",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/d41586-023-03435-2",
       "type": "resource",
       "url": "https://www.nature.com/articles/d41586-023-03435-2",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/d41586-024-01071-y；《Frans de Waal (1948–2024), primatologist who questioned the uniqueness of human minds》；Nature；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/d41586-024-01071-y",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/d41586-024-01071-y",
       "type": "resource",
       "url": "https://www.nature.com/articles/d41586-024-01071-y",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/ejcn.2008.81；《Reduced mania and depression in juvenile bipolar disorder associated with long-chain ω-3 polyunsaturated fatty acid supplementation》；European Journal of Clinical Nutrition；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/ejcn200881",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/ejcn200881",
       "type": "resource",
       "url": "https://www.nature.com/articles/ejcn200881",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/ejcn.2016.201；《The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis》；European Journal of Clinical Nutrition；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/ejcn2016201",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/ejcn2016201",
       "type": "resource",
       "url": "https://www.nature.com/articles/ejcn2016201",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/ijo.2016.225；《Effects of aspartame-, monk fruit-, stevia- and sucrose-sweetened beverages on postprandial glucose, insulin and energy intake》；International Journal of Obesity；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/ijo2016225",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/ijo2016225",
       "type": "resource",
       "url": "https://www.nature.com/articles/ijo2016225",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/mp.2014.51；《Genetic predisposition to schizophrenia associated with increased use of cannabis》；Molecular Psychiatry；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/mp201451",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/mp201451",
       "type": "resource",
       "url": "https://www.nature.com/articles/mp201451",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nature.2013.13112；《Gene switches make prairie voles fall in love》；Nature；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nature.2013.13112",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nature.2013.13112",
       "type": "resource",
       "url": "https://www.nature.com/articles/nature.2013.13112",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -79467,33 +79467,33 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/ncomms10996；《Computations of uncertainty mediate acute stress responses in humans》；Nature Communications；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/ncomms10996",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/ncomms10996",
       "type": "resource",
       "url": "https://www.nature.com/articles/ncomms10996",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/ncomms13800；《Resilient cooperators stabilize long-run cooperation in the finitely repeated Prisoner’s Dilemma》；Nature Communications；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/ncomms13800",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/ncomms13800",
       "type": "resource",
       "url": "https://www.nature.com/articles/ncomms13800",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nm.3479；《Dopamine mediates vagal modulation of the immune system by electroacupuncture》；Nature Medicine；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nm.3479",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nm.3479",
       "type": "resource",
       "url": "https://www.nature.com/articles/nm.3479",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "3",
@@ -79507,93 +79507,93 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nm1653；《Classification and prediction of clinical Alzheimer's diagnosis based on plasma signaling proteins》；Nature Medicine；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nm1653",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nm1653",
       "type": "resource",
       "url": "https://www.nature.com/articles/nm1653",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nn.4264；《Hypothalamic control of male aggression-seeking behavior》；Nature Neuroscience；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nn.4264",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nn.4264",
       "type": "resource",
       "url": "https://www.nature.com/articles/nn.4264",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nn0203-119；《A framework for consciousness》；Nature Neuroscience；2003。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nn0203-119",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nn0203-119",
       "type": "resource",
       "url": "https://www.nature.com/articles/nn0203-119",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/10154；《Can molecules explain long-term potentiation?》；Nature Neuroscience；1999。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nn0799_597",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nn0799_597",
       "type": "resource",
       "url": "https://www.nature.com/articles/nn0799_597",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nn1707；《Potential role for adult neurogenesis in the encoding of time in new memories》；Nature Neuroscience；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nn1707",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nn1707",
       "type": "resource",
       "url": "https://www.nature.com/articles/nn1707",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nn1819；《Mechanisms of scent-tracking in humans》；Nature Neuroscience；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nn1819",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nn1819",
       "type": "resource",
       "url": "https://www.nature.com/articles/nn1819",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/npp.2009.114；《Suppression of Amygdalar Endocannabinoid Signaling by Stress Contributes to Activation of the Hypothalamic–Pituitary–Adrenal Axis》；Neuropsychopharmacology；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/npp2009114",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/npp2009114",
       "type": "resource",
       "url": "https://www.nature.com/articles/npp2009114",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/npp.2014.301；《Dopaminergic System Dysfunction in Recreational Dexamphetamine Users》；Neuropsychopharmacology；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/npp2014301",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/npp2014301",
       "type": "resource",
       "url": "https://www.nature.com/articles/npp2014301",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/npp.2017.168；《Jaak Panksepp: Pioneer of Affective Neuroscience》；Neuropsychopharmacology；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/npp2017168",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/npp2017168",
       "type": "resource",
       "url": "https://www.nature.com/articles/npp2017168",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -79607,13 +79607,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/nrn2762-c1；《Overnight alchemy: sleep-dependent memory evolution》；Nature Reviews Neuroscience；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/nrn2762-c1",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/nrn2762-c1",
       "type": "resource",
       "url": "https://www.nature.com/articles/nrn2762-c1",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -80637,13 +80637,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/s42003-022-03643-y；《Hypnotic enhancement of slow-wave sleep increases sleep-associated hormone secretion and reduces sympathetic predominance in healthy humans》；Communications Biology；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/s42003-022-03643-y.pdf",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s42003-022-03643-y.pdf",
       "type": "resource",
       "url": "https://www.nature.com/articles/s42003-022-03643-y.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -80727,43 +80727,43 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/srep11610；《Neighborhood greenspace and health in a large urban center》；Scientific Reports；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/srep11610",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/srep11610",
       "type": "resource",
       "url": "https://www.nature.com/articles/srep11610",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/srep25464；《Cinema audiences reproducibly vary the chemical composition of air during films, by broadcasting scene specific emissions on breath》；Scientific Reports；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/srep25464",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/srep25464",
       "type": "resource",
       "url": "https://www.nature.com/articles/srep25464",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/srep46173；《The presence of microplastics in commercial salts from different countries》；Scientific Reports；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/srep46173/figures/5",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/srep46173/figures/5",
       "type": "resource",
       "url": "https://www.nature.com/articles/srep46173/figures/5",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1038/tp.2015.46；《Caffeine increases striatal dopamine D2/D3 receptor availability in the human brain》；Translational Psychiatry；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.nature.com/articles/tp201546",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/tp201546",
       "type": "resource",
       "url": "https://www.nature.com/articles/tp201546",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "id": "resource:https://www.navy.com/careers-benefits/careers/special-operations",
@@ -80842,13 +80842,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC1192044；《Concentration of carbon dioxide, interstitial pH and synaptic transmission in hippocampal formation of the rat.》；The Journal of Physiology；1988。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1192044/pdf/jphysiol00515-0258.pdf",
       "kind": "academic-or-medical",
       "label": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1192044/pdf/jphysiol00515-0258.pdf",
       "type": "resource",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1192044/pdf/jphysiol00515-0258.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -80872,13 +80872,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：PMC2278544；《Rapid Report》；The Journal of Physiology；2001。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2278544/pdf/tjp0532-0575.pdf",
       "kind": "academic-or-medical",
       "label": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2278544/pdf/tjp0532-0575.pdf",
       "type": "resource",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2278544/pdf/tjp0532-0575.pdf",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -84391,253 +84391,253 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0013-4694(85)90022-7；《Night-time sleep EEG changes following body heating in a warm bath 》；Electroencephalography and Clinical Neurophysiology；1985。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0013469485900227?via%3Dihub'",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0013469485900227?via%3Dihub'",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0013469485900227?via%3Dihub'",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0018-506X(71)90037-7；《Early androgen treatment and male and female sexual behavior in mice 》；Hormones and Behavior；1971。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0018506X71900377",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0018506X71900377",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0018506X71900377",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0022-3956(66)90003-3；《The effect of partial REM sleep deprivation and delayed recovery 》；Journal of Psychiatric Research；1966。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0022395666900033?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0022395666900033?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0022395666900033?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0023-9690(81)90020-5；《Spatial localization does not require the presence of local cues 》；Learning and Motivation；1981。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0023969081900205",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0023969081900205",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0023969081900205",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0028-3932(68)90021-3；《Further analysis of the hippocampal amnesic syndrome: 14-year follow-up study of H.M. 》；Neuropsychologia；1968。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0028393268900213?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0028393268900213?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0028393268900213?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0040-5809(76)90040-X；《Optimal foraging, the marginal value theorem 》；Theoretical Population Biology；1976。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/004058097690040X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/004058097690040X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/004058097690040X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0092-6566(86)90127-3；《At last, my research article on procrastination 》；Journal of Research in Personality；1986。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0092656686901273",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0092656686901273",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0092656686901273",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0196-0709(94)90036-1；《Oral magnesium intake reduces permanent hearing loss induced by noise exposure 》；American Journal of Otolaryngology；1994。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0196070994900361?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0196070994900361?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0196070994900361?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0196-9781(88)90182-9；《Water and sodium intake of wild and New Zealand rabbits following angiotensin 》；Peptides；1988。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0196978188901829?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0196978188901829?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0196978188901829?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0306-4565(87)90060-X；《Voluntary hypometabolism in an indian yogi 》；Journal of Thermal Biology；1987。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/030645658790060X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/030645658790060X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/030645658790060X",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0361-9230(94)90200-3；《Effect of tyrosine on cognitive function and blood pressure under stress 》；Brain Research Bulletin；1994。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0361923094902003?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0361923094902003?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0361923094902003?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0370-2693(71)90094-3；《Energy of a tachyon in a magnetic field 》；Physics Letters B；1971。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0370269371900943?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0370269371900943?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0370269371900943?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0378-4371(83)90199-1；《Mostly chaos 》；Physica A: Statistical Mechanics and its Applications；1983。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/0378437183901991",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/0378437183901991",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/0378437183901991",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0928-4257(93)90038-U；《A new gastric juice peptide, BPC. An overview of the stomach-stress-organoprotection hypothesis and beneficial effects of BPC 》；Journal of Physiology-Paris；1993。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/092842579390038U?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/092842579390038U?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/092842579390038U?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/B978-0-12-397045-9.00144-0；《Tobacco, Nicotine, Health, and Mental Health 》；Encyclopedia of Mental Health；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/B9780123970459001440",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/B9780123970459001440",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/B9780123970459001440",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/B978-0-12-821377-3.00012-X；《Chapter 15 Aphantasia: The science of visual imagery extremes 》；Handbook of Clinical Neurology；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/B978012821377300012X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/B978012821377300012X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/B978012821377300012X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.actpsy.2014.06.011；《A single bout of resistance exercise can enhance episodic memory performance 》；Acta Psychologica；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0001691814001577?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0001691814001577?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0001691814001577?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.actpsy.2018.08.020；《Brief aerobic exercise immediately enhances visual attentional control and perceptual speed. Testing the mediating role of feelings of energy 》；Acta Psychologica；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0001691817301336",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0001691817301336",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0001691817301336",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0005-7967(01)00012-2；《The management of unwanted pre-sleep thoughts in insomnia: distraction with imagery versus general distraction 》；Behaviour Research and Therapy；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0005796701000122?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0005796701000122?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0005796701000122?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.biopsych.2010.05.010；《Decreased Prefrontal Cortical Volume Associated with Increased Bedtime Cortisol in Traumatized Youth 》；Biological Psychiatry；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0006322310004701",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0006322310004701",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0006322310004701",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0006-3223(99)00230-9；《Antidepressant effects of ketamine in depressed patients 》；Biological Psychiatry；2000。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0006322399002309",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0006322399002309",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0006322399002309",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.brainres.2018.07.020；《Serotonin receptor regulation as a potential mechanism for sexually dimorphic oxytocin dysregulation in a model of Autism 》；Brain Research；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0006899318304049?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0006899318304049?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0006899318304049?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cognition.2010.03.007；《The (b)link between creativity and dopamine: Spontaneous eye blink rates predict and dissociate divergent and convergent thinking 》；Cognition；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0010027710000715?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0010027710000715?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0010027710000715?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cognition.2018.01.011；《A thought in the park: The influence of naturalness and low-level visual features on expressed thoughts 》；Cognition；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0010027718300192?utm_source=chatgpt.com",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0010027718300192?utm_source=chatgpt.com",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0010027718300192?utm_source=chatgpt.com",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cortex.2019.09.011；《The tenacious brain: How the anterior mid-cingulate contributes to achieving goals 》；Cortex；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0010945219303326",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0010945219303326",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0010945219303326",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "3",
@@ -84651,23 +84651,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.envres.2018.01.015；《Adverse physiological and psychological effects of screen time on children and adolescents: Literature review and case study 》；Environmental Research；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S001393511830015X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S001393511830015X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S001393511830015X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.envres.2020.110264；《Associations between prenatal phthalate exposure and sex-typed play behavior in preschool age boys and girls 》；Environmental Research；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0013935120311610?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0013935120311610?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0013935120311610?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -84681,103 +84681,103 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.exer.2019.107691；《Improving mitochondrial function significantly reduces the rate of age related photoreceptor loss 》；Experimental Eye Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0014483519302362?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0014483519302362?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0014483519302362?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1006/exnr.2000.7512；《Dietary Restriction Selectively Decreases Glucocorticoid Receptor Expression in the Hippocampus and Cerebral Cortex of Rats 》；Experimental Neurology；2000。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0014488600975125?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0014488600975125?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0014488600975125?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1006/hbeh.2001.1680；《The Interstitial Nuclei of the Human Anterior Hypothalamus: An Investigation of Variation with Sex, Sexual Orientation, and HIV Status 》；Hormones and Behavior；2001。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916800?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916800?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916800?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1006/hbeh.2001.1681；《Fraternal Birth Order and the Maternal Immune Hypothesis of Male Homosexuality 》；Hormones and Behavior；2001。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916812?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916812?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0018506X01916812?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jesp.2011.02.003；《Positive fantasies about idealized futures sap energy 》；Journal of Experimental Social Psychology；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S002210311100031X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S002210311100031X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S002210311100031X",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jpsychires.2014.08.015；《Adjunctive triple chronotherapy (combined total sleep deprivation, sleep phase advance, and bright light therapy) rapidly improves mood and suicidality in suicidal depressed inpatients: An open label pilot study 》；Journal of Psychiatric Research；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0022395614002519?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0022395614002519?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022395614002519?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jpsychires.2022.10.002；《Cortical activation predicts posttraumatic improvement in youth treated with TF-CBT or CCT 》；Journal of Psychiatric Research；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0022395622005453",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0022395622005453",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022395622005453",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jpsychores.2005.02.009；《The morning salivary cortisol response in burnout 》；Journal of Psychosomatic Research；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0022399905000218?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0022399905000218?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022399905000218?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jpsychores.2015.10.002；《Circadian rhythm disruption as a link between Attention-Deficit/Hyperactivity Disorder and obesity? 》；Journal of Psychosomatic Research；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0022399915005541",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0022399915005541",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022399915005541",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jpsychores.2020.109992；《Manipulating sleep duration perception changes cognitive performance – An exploratory analysis 》；Journal of Psychosomatic Research；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0022399919307081?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0022399919307081?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022399919307081?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -84791,73 +84791,73 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.lfs.2019.117139；《Protective effects of GHK-Cu in bleomycin-induced pulmonary fibrosis via anti-oxidative stress and anti-inflammation pathways 》；Life Sciences；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0024320519310677?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0024320519310677?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0024320519310677?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuropsychologia.2017.11.029；《Executive-related oculomotor control is improved following a 10-min single-bout of aerobic exercise: Evidence from the antisaccade task 》；Neuropsychologia；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0028393217304591?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0028393217304591?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0028393217304591?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.physbeh.2011.07.025；《Alterations of sucrose preference after Roux-en-Y gastric bypass 》；Physiology & Behavior；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0031938411003775?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0031938411003775?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0031938411003775?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.physbeh.2016.06.024；《The acute and chronic effects of “NO LOAD” resistance training 》；Physiology & Behavior；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S003193841630436X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S003193841630436X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S003193841630436X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.toxicon.2010.12.016；《The development of Byetta (exenatide) from the venom of the Gila monster as an anti-diabetic agent 》；Toxicon；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0041010110004472?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0041010110004472?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0041010110004472?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.scitotenv.2022.158699；《Detection of various microplastics in placentas, meconium, infant feces, breastmilk and infant formula: A pilot prospective study 》；Science of The Total Environment；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0048969722057989",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0048969722057989",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048969722057989",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.pbb.2021.173155；《Tolerance to alcohol: A critical yet understudied factor in alcohol addiction 》；Pharmacology Biochemistry and Behavior；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S009130572100054X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S009130572100054X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S009130572100054X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -84871,23 +84871,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jrp.2011.02.001；《Self-control training decreases aggression in response to provocation in aggressive individuals 》；Journal of Research in Personality；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0092656611000250",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0092656611000250",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0092656611000250",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0140-6736(23)02268-7；《Individualised neoantigen therapy mRNA-4157 (V940) plus pembrolizumab versus pembrolizumab monotherapy in resected melanoma (KEYNOTE-942): a randomised, phase 2b study 》；The Lancet；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0140673623022687?dgcid=coauthor",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0140673623022687?dgcid=coauthor",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140673623022687?dgcid=coauthor",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -84901,113 +84901,113 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neubiorev.2019.02.011；《Brain alterations in children/adolescents with ADHD revisited: A neuroimaging meta-analysis of 96 structural and functional studies 》；Neuroscience & Biobehavioral Reviews；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0149763418306626?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0149763418306626?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0149763418306626?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2012.03.012；《Interacting with nature improves cognition and affect for individuals with depression 》；Journal of Affective Disorders；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165032712002005?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165032712002005?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032712002005?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2018.10.092；《Effect of self-monitoring through experience sampling on emotion differentiation in depression 》；Journal of Affective Disorders；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165032718311017?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165032718311017?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032718311017?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2020.09.071；《Comparative efficacy of racemic ketamine and esketamine for depression: A systematic review and meta-analysis 》；Journal of Affective Disorders；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016503272032766X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S016503272032766X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S016503272032766X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2021.08.056；《Time spent in outdoor light is associated with mood, sleep, and circadian rhythm-related outcomes: A cross-sectional and longitudinal study in over 400,000 UK Biobank participants 》；Journal of Affective Disorders；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165032721008612?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165032721008612?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032721008612?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2023.02.151；《Arketamine as adjunctive therapy for treatment-resistant depression: A placebo-controlled pilot study 》；Journal of Affective Disorders；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165032723003233",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165032723003233",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032723003233",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jad.2023.04.081；《Increased low-frequency brain responses to music after psilocybin therapy for depression 》；Journal of Affective Disorders；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165032723005426?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165032723005426?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165032723005426?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psychres.2018.11.004；《Inverse association between caffeine intake and depressive symptoms in US adults: data from National Health and Nutrition Examination Survey (NHANES) 2005–2006 》；Psychiatry Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0165178118300064?via%3Dihub=&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0165178118300064?via%3Dihub=&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165178118300064?via%3Dihub=&utm_source=youtube&utm_medium=social&utm_campaign=hubermanlab",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.bbr.2011.05.035；《Involvement of AMPA receptor in both the rapid and sustained antidepressant-like effects of ketamine in animal models of depression 》；Behavioural Brain Research；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0166432811004402",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0166432811004402",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0166432811004402",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.bbr.2014.11.010；《Omega-3 fatty acids improve behavioral coping to stress in multiparous rats 》；Behavioural Brain Research；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0166432814007396",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0166432814007396",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0166432814007396",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.bbr.2018.08.023；《Brief, daily meditation enhances attention, memory, mood, and emotional regulation in non-experienced meditators 》；Behavioural Brain Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "7",
@@ -85021,63 +85021,63 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.joep.2008.04.006；《Do people trust too much or too little? 》；Journal of Economic Psychology；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0167487008000846",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0167487008000846",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167487008000846",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.ijpsycho.2012.09.014；《Catecholamine predictors of complicated grief treatment outcomes 》；International Journal of Psychophysiology；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0167876012006137?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0167876012006137?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167876012006137?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.applanim.2018.12.009；《Let me sniff! Nosework induces positive judgment bias in pet dogs 》；Applied Animal Behaviour Science；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0168159118304325",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0168159118304325",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0168159118304325",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neurobiolaging.2012.04.014；《Age-related retinal inflammation is reduced by 670 nm light via increased mitochondrial membrane potential 》；Neurobiology of Aging；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S019745801200262X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S019745801200262X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S019745801200262X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.yrtph.2020.104589；《Regulations for calcium, magnesium or hardness in drinking water in the European Union member states 》；Regulatory Toxicology and Pharmacology；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0273230020300155?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0273230020300155?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0273230020300155?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.bandc.2021.105705；《Using motor imagery practice for improving motor performance – A review 》；Brain and Cognition；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0278262621000257?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0278262621000257?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0278262621000257?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -85091,13 +85091,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.fct.2014.09.012；《Effects of grapefruit juice on cortisol metabolism in healthy male Chinese subjects 》；Food and Chemical Toxicology；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S027869151400413X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S027869151400413X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S027869151400413X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -85111,53 +85111,53 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.biopsycho.2017.10.008；《Cardiac vagal control as a marker of emotion regulation in healthy adults: A review 》；Biological Psychology；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0301051117302922?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0301051117302922?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0301051117302922?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jhazmat.2020.124004；《Estimation of the mass of microplastics ingested – A pivotal first step towards human health risk assessment 》；Journal of Hazardous Materials；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0304389420319944",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0304389420319944",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304389420319944",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jhazmat.2020.124118；《Microplastics and other harmful substances released from disposable paper cups into hot water 》；Journal of Hazardous Materials；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0304389420321087?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0304389420321087?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304389420321087?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psyneuen.2005.07.003；《Clinical burnout is not reflected in the cortisol awakening response, the day-curve or the response to a low-dose dexamethasone suppression test 》；Psychoneuroendocrinology；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306453005001757?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306453005001757?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306453005001757?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psyneuen.2007.01.008；《Is the cortisol awakening rise a response to awakening? 》；Psychoneuroendocrinology；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306453007000315?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306453007000315?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306453007000315?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -85171,133 +85171,133 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psyneuen.2013.02.014；《Oral contraceptive use in women changes preferences for male facial masculinity and is associated with partner facial masculinity 》；Psychoneuroendocrinology；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S030645301300070X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S030645301300070X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S030645301300070X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psyneuen.2014.04.006；《Plasma oxytocin concentrations following MDMA or intranasal oxytocin in humans 》；Psychoneuroendocrinology；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306453014001255?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306453014001255?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306453014001255?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.psyneuen.2019.05.016；《The effects of post-awakening light exposure on the cortisol awakening response in healthy male individuals 》；Psychoneuroendocrinology；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306453018306565?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306453018306565?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306453018306565?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.addbeh.2016.02.002；《Caffeinated and non-caffeinated alcohol use and indirect aggression: The impact of self-regulation 》；Addictive Behaviors；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306460316300387?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306460316300387?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306460316300387?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.addbeh.2022.107336；《Adolescents’ and young adults’ perceptions of risks and benefits differ by type of cannabis products 》；Addictive Behaviors；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306460322001022?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306460322001022?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306460322001022?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.addbeh.2023.107632；《Use, marketing, and appeal of oral nicotine products among adolescents, young adults, and adults 》；Addictive Behaviors；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0306460323000278?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0306460323000278?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306460323000278?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.drugalcdep.2009.01.023；《Comparison of subjective, pharmacokinetic, and physiological effects of marijuana smoked as joints and blunts 》；Drug and Alcohol Dependence；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0376871609001045?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0376871609001045?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376871609001045?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.drugalcdep.2021.108963；《Adults with a history of recreational cannabis use have altered speech production 》；Drug and Alcohol Dependence；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0376871621004580?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0376871621004580?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376871621004580?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.drugalcdep.2024.111267；《Vaporized D-limonene selectively mitigates the acute anxiogenic effects of Δ9-tetrahydrocannabinol in healthy adults who intermittently use cannabis 》；Drug and Alcohol Dependence；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0376871624001881?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0376871624001881?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0376871624001881?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.heares.2019.06.004；《A novel microneedle device for controlled and reliable liquid biopsy of the human inner ear 》；Hearing Research；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0378595519300565?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0378595519300565?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378595519300565?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0741-8329(00)00124-5；《Can alcohol promote aromatization of androgens to estrogens? A review 》；Alcohol；2000。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0741832900001245?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0741832900001245?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0741832900001245?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.chb.2018.09.023；《Smartphones reduce smiles between strangers 》；Computers in Human Behavior；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0747563218304643",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0747563218304643",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0747563218304643",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jbusvent.2008.04.009；《Rule breaking in adolescence and entrepreneurial status: An empirical investigation 》；Journal of Business Venturing；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0883902608000542",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0883902608000542",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0883902608000542",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "2",
@@ -85311,33 +85311,33 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuron.2022.02.009；《A visual circuit related to the periaqueductal gray area for the antinociceptive effects of bright light treatment 》；Neuron；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0896627322001477",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0896627322001477",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0896627322001477",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.schres.2017.01.053；《Ketogenic diet in the treatment of schizoaffective disorder: Two case studies 》；Schizophrenia Research；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0920996417300634?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0920996417300634?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0920996417300634?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.euroneuro.2021.01.005；《Comparative effects of (S)-ketamine and racemic (R/S)-ketamine on psychopathology, state of consciousness and neurocognitive performance in healthy volunteers 》；European Neuropsychopharmacology；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0924977X21000079?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0924977X21000079?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924977X21000079?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "5",
@@ -85351,643 +85351,643 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S0926-6410(02)00134-9；《Cognitive flexibility across the sleep–wake cycle: REM-sleep enhancement of anagram problem solving 》；Cognitive Brain Research；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0926641002001349",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0926641002001349",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0926641002001349",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.gde.2018.07.003；《Human adaptation to extreme environmental conditions 》；Current Opinion in Genetics & Development；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0959437X18300777?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0959437X18300777?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0959437X18300777?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.conb.2020.10.012；《Dopamine, Updated: Reward Prediction Error and Beyond 》；Current Opinion in Neurobiology；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0959438820301501?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0959438820301501?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0959438820301501?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.conb.2025.102978；《Eligibility traces as a synaptic substrate for learning 》；Current Opinion in Neurobiology；2025。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0959438825000091",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0959438825000091",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0959438825000091",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.ctim.2020.102512；《Sugar consumption, sugar sweetened beverages and Attention Deficit Hyperactivity Disorder: A systematic review and meta-analysis 》；Complementary Therapies in Medicine；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S0965229919320540",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S0965229919320540",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S0965229919320540",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.lindif.2024.102481；《Creativity and affect: A person-centered analysis 》；Learning and Individual Differences；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1041608024000748?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1041608024000748?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1041608024000748?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.pmr.2022.04.005；《Women: Diet, Cardiometabolic Health, and Functional Medicine 》；Physical Medicine and Rehabilitation Clinics of North America；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1047965122000353?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1047965122000353?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1047965122000353?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.concog.2011.12.010；《Familiarity from the configuration of objects in 3-dimensional space and its relation to déjà vu: A virtual reality investigation 》；Consciousness and Cognition；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053810012000049?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053810012000049?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053810012000049?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.concog.2017.10.009；《Inspired by Mary Jane? Mechanisms underlying enhanced creativity in cannabis users 》；Consciousness and Cognition；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053810017303744?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053810017303744?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053810017303744?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.concog.2021.103087；《What is the relationship between Aphantasia, Synaesthesia and Autism? 》；Consciousness and Cognition；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053810021000131?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053810021000131?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053810021000131?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1006/ccog.1995.1048；《A Novel Demonstration of Enhanced Memory Associated with Emotional Arousal 》；Consciousness and Cognition；1995。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053810085710483?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053810085710483?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053810085710483?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.neuroimage.2008.04.256；《Craving love? Enduring grief activates brain's reward center 》；NeuroImage；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053811908006101?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053811908006101?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053811908006101?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S1053-8119(09)71202-9；《Neural correlates of interspecies perspective taking in the post-mortem Atlantic Salmon: an argument for multiple comparisons correction 》；NeuroImage；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1053811909712029?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1053811909712029?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1053811909712029?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.wem.2014.11.006；《Novel Application of Chemical Cold Packs for Treatment of Exercise-Induced Hyperthermia: A Randomized Controlled Trial 》；Wilderness & Environmental Medicine；2015。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1080603214004050",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1080603214004050",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1080603214004050",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.smrv.2004.06.004；《Effects of exogenous melatonin on sleep: a meta-analysis 》；Sleep Medicine Reviews；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1087079204000607",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1087079204000607",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079204000607",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.smrv.2013.12.003；《Attention deficit hyperactivity disorder and sleep disordered breathing in pediatric populations: A meta-analysis 》；Sleep Medicine Reviews；2014。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1087079213001329?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1087079213001329?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079213001329?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.smrv.2020.101385；《Noise as a sleep aid: A systematic review 》；Sleep Medicine Reviews；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1087079220301283?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1087079220301283?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079220301283?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.smrv.2022.101593；《A systematic review and meta-analysis to assess the relationship between sleep duration/quality, mental toughness and resilience amongst healthy individuals 》；Sleep Medicine Reviews；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1087079222000065?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1087079222000065?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079222000065?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S1090-5138(02)00107-1；《Sex differences in response to children's toys in nonhuman primates (Cercopithecus aethiops sabaeus) 》；Evolution and Human Behavior；2002。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1090513802001071?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1090513802001071?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1090513802001071?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.evolhumbehav.2007.06.002；《Ovulatory cycle effects on tip earnings by lap dancers: economic evidence for human estrus?☆\n             》；Evolution and Human Behavior；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1090513807000694",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1090513807000694",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1090513807000694",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.avb.2011.04.015；《The evolution of intimate partner violence 》；Aggression and Violent Behavior；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S135917891100067X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S135917891100067X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S135917891100067X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S1388-2457(03)00255-4；《The alerting effects of caffeine, bright light and face washing after a short daytime nap 》；Clinical Neurophysiology；2003。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1388245703002554?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1388245703002554?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1388245703002554?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/S1389-9457(08)70014-5；《Cognitive consequences of sleep and sleep loss 》；Sleep Medicine；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1389945708700145?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1389945708700145?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1389945708700145?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.sleep.2019.05.001；《Resetting the late timing of ‘night owls’ has a positive impact on mental health and performance 》；Sleep Medicine；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1389945719301388?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1389945719301388?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1389945719301388?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.arr.2024.102356；《Does resistance training in older adults lead to structural brain changes associated with a lower risk of Alzheimer’s dementia? A narrative review 》；Ageing Research Reviews；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1568163724001740",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1568163724001740",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568163724001740",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.ehb.2010.01.001；《Brainstorm: Occupational choice, bipolar illness and creativity 》；Economics & Human Biology；2010。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S1570677X1000002X?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S1570677X1000002X?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S1570677X1000002X?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.jarmac.2020.11.002；《Photo-Taking Impairs Memory on Perceptual and Conceptual Memory Tests 》；Journal of Applied Research in Memory and Cognition；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S2211368120301017",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S2211368120301017",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S2211368120301017",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.copsyc.2017.06.008；《Cultural differences in the neural correlates of social–emotional feelings: an interdisciplinary, developmental perspective 》；Current Opinion in Psychology；2017。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S2352250X16302068?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S2352250X16302068?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S2352250X16302068?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cophys.2019.04.006；《Training for strength and hypertrophy: an evidence-based approach 》；Current Opinion in Physiology；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S2468867319300513",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S2468867319300513",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S2468867319300513",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.profnurs.2017.08.008；《Testing enhances learning: A review of the literature 》；Journal of Professional Nursing；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/abs/pii/S8755722317301047?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/abs/pii/S8755722317301047?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S8755722317301047?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/0031-9384(94)90361-1；《PTC/PROP tasting: Anatomy, psychophysics, and sex effects 》；Physiology & Behavior；1994。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/0031938494903611?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/0031938494903611?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/0031938494903611?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/nqac154；《Effect of a ketogenic diet versus Mediterranean diet on glycated hemoglobin in individuals with prediabetes and type 2 diabetes mellitus: The interventional Keto-Med randomized crossover trial 》；The American Journal of Clinical Nutrition；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916522000818?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916522000818?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916522000818?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/nqaa167；《Acute glycemic and insulinemic effects of low-energy sweeteners: a systematic review and meta-analysis of randomized controlled trials 》；The American Journal of Clinical Nutrition；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916522008656",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916522008656",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916522008656",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/nqaa203；《A randomized crossover trial on the effect of plant-based compared with animal-based meat on trimethylamine-N-oxide and cardiovascular disease risk factors in generally healthy adults: Study With Appetizing Plantfood—Meat Eating Alternative Trial (SWAP-MEAT) 》；The American Journal of Clinical Nutrition；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916522008905?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916522008905?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916522008905?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/nqz275；《High glycemic index and glycemic load diets as risk factors for insomnia: analyses from the Women’s Health Initiative 》；The American Journal of Clinical Nutrition；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916522010188?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916522010188?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916522010188?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/nqy185；《Intake of protein-rich foods in relation to outcomes of infertility treatment with assisted reproductive technologies 》；The American Journal of Clinical Nutrition；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916522030167?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916522030167?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916522030167?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.111.013904；《Short sleep duration increases energy intakes but does not change energy expenditure in normal-weight individuals\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n             》；The American Journal of Clinical Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523023833?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523023833?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523023833?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.111.022533；《Sucrose-sweetened beverages increase fat storage in the liver, muscle, and visceral fat depot: a 6-mo randomized intervention study 》；The American Journal of Clinical Nutrition；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523026588?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523026588?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523026588?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.111.027383；《Sleep restriction leads to increased activation of brain regions sensitive to food stimuli\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n               \n                  4\n               \n             》；The American Journal of Clinical Nutrition；2012。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523027363?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523027363?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523027363?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.113.069427；《Experimental sleep curtailment causes wake-dependent increases in 24-h energy expenditure as measured by whole-room indirect calorimetry\n                  1\n               \n               \n                  2\n               \n               \n                  3\n               \n               \n                  4\n               \n             》；The American Journal of Clinical Nutrition；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523053303?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523053303?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523053303?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/65.4.908；《Metabolic and behavioral effects of a high-sucrose diet during weight loss 》；The American Journal of Clinical Nutrition；1997。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523176799?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523176799?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523176799?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/87.3.621；《Weight-loss diet that includes consumption of medium-chain triacylglycerol oil leads to a greater rate of weight and fat mass loss than does olive oil\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523235339?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523235339?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523235339?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/ajcn.2008.26401；《Ingested protein dose response of muscle and albumin protein synthesis after resistance exercise in young men 》；The American Journal of Clinical Nutrition；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523239209?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523239209?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523239209?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/85.2.426；《High-glycemic-index carbohydrate meals shorten sleep onset\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523279290?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523279290?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523279290?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/85.6.1503；《Snack chips fried in corn oil alleviate cardiovascular disease risk factors when substituted for low-fat or high-fat snacks\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523281046?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523281046?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523281046?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/ajcn/84.3.475；《The underappreciated role of muscle in health and disease\n                  2\n               \n             》；The American Journal of Clinical Nutrition；2006。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523290450?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523290450?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523290450?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.ajcnut.2023.12.011；《Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS 》；The American Journal of Clinical Nutrition；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0002916523663427?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0002916523663427?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0002916523663427?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cognition.2022.105247；《Why people choose deliberate ignorance in times of societal transformation 》；Cognition；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0010027722002359",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0010027722002359",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010027722002359",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cortex.2012.04.013；《Dopamine reverses reward insensitivity in apathy following globus pallidus lesions 》；Cortex；2013。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0010945212001402?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0010945212001402?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0010945212001402?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.envres.2018.06.030；《The health benefits of the great outdoors: A systematic review and meta-analysis of greenspace exposure and health outcomes 》；Environmental Research；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0013935118303323?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0013935118303323?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0013935118303323?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.fertnstert.2007.01.015；《Self-rated health and semen quality among 3,457 young Danish men 》；Fertility and Sterility；2007。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0015028207001252",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0015028207001252",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0015028207001252",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/jn/nxaa401；《Metabolic Evaluation of the Dietary Guidelines’ Ounce Equivalents of Protein Food Sources in Young Adults: A Randomized Controlled Trial 》；The Journal of Nutrition；2021。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622001523?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622001523?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316622001523?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/jn.110.137323；《Caffeinated Coffee Does Not Acutely Affect Energy Intake, Appetite, or Inflammation but Prevents Serum Cortisol Concentrations from Falling in Healthy Men1–4\n             》；The Journal of Nutrition；2011。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622025615?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622025615?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316622025615?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.3945/jn.108.099440；《A Moderate-Protein Diet Produces Sustained Weight Loss and Long-Term Changes in Body Composition and Blood Lipids in Obese Adults\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2009。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622066822?via%3Dihub#t4",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622066822?via%3Dihub#t4",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316622066822?via%3Dihub#t4",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622103445",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622103445",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316622103445",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1093/jn/135.8.1903；《Dietary Protein and Exercise Have Additive Effects on Body Composition during Weight Loss in Adult Women\n                  1\n               \n               \n                  2\n               \n             》；The Journal of Nutrition；2005。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316622103445?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316622103445?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316622103445?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.tjnut.2023.11.004；《Higher Muscle Protein Synthesis Rates Following Ingestion of an Omnivorous Meal Compared with an Isocaloric and Isonitrogenous Vegan Meal in Healthy, Older Adults 》；The Journal of Nutrition；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0022316623727235?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0022316623727235?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0022316623727235?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.physbeh.2016.03.029；《Repeated high-intensity interval exercise shortens the positive effect on executive function during post-exercise recovery in healthy young males 》；Physiology & Behavior；2016。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0031938416301160?via%3Dihub",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0031938416301160?via%3Dihub",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0031938416301160?via%3Dihub",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.puhe.2024.07.005；《Gambling as a precipitating factor in deaths by suicide in the National Violent Death Reporting System 》；Public Health；2024。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S003335062400283X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S003335062400283X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S003335062400283X",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.scitotenv.2022.154907；《Detection of microplastics in human lung tissue using μFTIR spectroscopy 》；Science of The Total Environment；2022。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0048969722020009",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0048969722020009",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0048969722020009",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.pbb.2020.172870；《A historical review of antidepressant effects of ketamine and its enantiomers 》；Pharmacology Biochemistry and Behavior；2020。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0091305720300289#bb0265",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0091305720300289#bb0265",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0091305720300289#bb0265",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2018.03.054；《Physiological and Genetic Adaptations to Diving in Sea Nomads 》；Cell；2018。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0092867418303866",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0092867418303866",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0092867418303866",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2019.05.050；《Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior 》；Cell；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S009286741930621X",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S009286741930621X",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S009286741930621X",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "自动书目核验：10.1016/j.cell.2019.10.025；《Periodic Remodeling in a Neural Circuit Governs Timing of Female Sexual Behavior 》；Cell；2019。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://www.sciencedirect.com/science/article/pii/S0092867419311754",
       "kind": "academic-or-medical",
       "label": "https://www.sciencedirect.com/science/article/pii/S0092867419311754",
       "type": "resource",
       "url": "https://www.sciencedirect.com/science/article/pii/S0092867419311754",
-      "verification_status": "pending"
+      "verification_status": "verified-bibliographic"
     },
     {
       "academic_episode_count": "1",
@@ -94220,7 +94220,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 450,
+    "verified_academic_resource_nodes": 672,
     "youtube_nodes": 424
   }
 }
