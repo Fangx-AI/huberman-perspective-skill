@@ -31,7 +31,7 @@ class ActionPlaybookTests(unittest.TestCase):
 
     def test_committed_catalog_is_valid_and_action_limited(self) -> None:
         VALIDATOR.validate_playbooks(self.playbooks, self.cards, self.claims)
-        self.assertGreaterEqual(len(self.playbooks), 3)
+        self.assertGreaterEqual(len(self.playbooks), 6)
         for playbook in self.playbooks:
             self.assertLessEqual(len(playbook["actions"]), 3)
             self.assertTrue({"evidence-supported", "bounded-experiment", "framework-inference"} & {
@@ -43,6 +43,9 @@ class ActionPlaybookTests(unittest.TestCase):
             "收藏很多协议 执行不下去 习惯": "start-and-sustain-one-habit",
             "看完就忘 主动回忆 复习": "retain-what-you-learn",
             "作息漂移 晨光 睡眠": "stabilize-sleep-wake-timing",
+            "总被手机打断 无法专注 工作分心": "protect-one-focus-block",
+            "我久坐很久，看到很多 Huberman 运动协议反而不知道怎么开始。给我一个简单方案。": "start-exercise-without-protocol-overload",
+            "我总点外卖、吃零食，但不想算卡路里。按 Huberman 视角帮我先做一个改变。": "improve-food-environment-first",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -66,6 +69,18 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("不要用 21 或 66 天", habit)
         self.assertIn("不要直视太阳", sleep)
         self.assertIn("固定分钟数", sleep)
+
+    def test_new_playbooks_preserve_focus_exercise_and_food_boundaries(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        focus = by_id["protect-one-focus-block"]["safe_summary"]
+        exercise = by_id["start-exercise-without-protocol-overload"]["safe_summary"]
+        food = by_id["improve-food-environment-first"]["safe_summary"]
+        self.assertIn("不要套固定 45/5", focus)
+        self.assertIn("不要把它当 ADHD", focus)
+        self.assertIn("不等于长期认知改变", exercise)
+        self.assertIn("不能承诺个人海马增长", exercise)
+        self.assertIn("不要直接跳过进食", food)
+        self.assertIn("不要把 20 人短期住院结果", food)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)

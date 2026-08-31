@@ -10,6 +10,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skipIf(
+    (ROOT / "references" / "catalog" / "episode-pages.jsonl").exists(),
+    "the full maintainer cache is not a distributable clean-install source",
+)
 class CleanInstallationTests(unittest.TestCase):
     def test_clean_install_contains_action_layer_and_passes_release_check(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

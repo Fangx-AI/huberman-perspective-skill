@@ -10,6 +10,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skipIf(
+    (ROOT / "references" / "catalog" / "episode-pages.jsonl").exists(),
+    "public snapshot assertions do not apply to the maintainer's full local cache",
+)
 class PublicSnapshotTests(unittest.TestCase):
     def test_explicit_only_policy(self) -> None:
         policy = (ROOT / "agents" / "openai.yaml").read_text(encoding="utf-8")
@@ -96,7 +100,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 16)
+        self.assertGreaterEqual(len(cards), 20)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])

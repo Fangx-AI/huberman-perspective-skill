@@ -114,6 +114,17 @@ class EvidenceQueryTests(unittest.TestCase):
         observational = MODULE.concise_record(results[2], self.cards, self.relations)
         self.assertIn("不要把 66 天", observational["safe_interpretation"])
 
+    def test_focus_exercise_and_food_queries_keep_new_study_boundaries(self) -> None:
+        focus = MODULE.query_cards(self.cards, "自然提高专注 注意力恢复")[0]
+        exercise = MODULE.query_cards(self.cards, "久坐 有氧运动 海马 运动后提神")[0]
+        food = MODULE.query_cards(self.cards, "外卖 零食 超加工食品 饮食环境")[0]
+        self.assertEqual(focus["review_id"], "berman-2008-nature-directed-attention")
+        self.assertIn("不应承诺固定时长", focus["safe_interpretation"])
+        self.assertEqual(exercise["review_id"], "erickson-2011-aerobic-exercise-hippocampus")
+        self.assertIn("不能承诺个人海马增长", exercise["safe_interpretation"])
+        self.assertEqual(food["review_id"], "hall-2019-ultra-processed-diet-rct")
+        self.assertIn("不要把所有加工食品妖魔化", food["safe_interpretation"])
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

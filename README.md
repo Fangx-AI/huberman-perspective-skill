@@ -10,10 +10,10 @@
 - 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
 - 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
 - 1,736 个 Show Notes 学术/医学来源，673 个已核验、1,063 个待核验；其中 115 条原始研究、34 条综述、21 条观察研究和 503 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
-- 16 张结构化高关联研究证据卡：11 张连接 13 条 Show Notes 来源记录，5 张为不改变队列统计的外部反证/限定卡
+- 20 张结构化高关联研究证据卡：15 张连接 20 条 Show Notes 来源记录，5 张为不改变队列统计的外部反证/限定卡
 - 10 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应与习惯形成时长证据簇
-- 3 个结果优先行动剧本、9 个动作，覆盖习惯执行、学习保持和睡眠节律；每步区分证据支持、有限个人实验与框架推断
-- 研究—行动图谱包含 16 个研究卡、79 个结果/阴性发现、107 个局限、69 个证据主题、10 个研究关系节点、3 个行动剧本和 9 个动作节点，共 8,728 条可追溯关系
+- 6 个结果优先行动剧本、18 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步和饮食环境；每步区分证据支持、有限个人实验与框架推断
+- 研究—行动图谱包含 20 个研究卡、95 个结果/阴性发现、131 个局限、98 个证据主题、10 个研究关系节点、6 个行动剧本和 18 个动作节点，共 8,859 条可追溯关系
 - 40 个脱敏的主张定位记录
 - 8 个课程、讲座、AMA 或机构访谈入口
 
@@ -71,6 +71,9 @@ Use $huberman-perspective to analyze whether morning sunlight is a robust sleep 
 python scripts/query_action_playbooks.py "收藏很多协议 执行不下去 习惯"
 python scripts/query_action_playbooks.py "看完就忘 主动回忆 复习"
 python scripts/query_action_playbooks.py "作息漂移 晨光 睡眠"
+python scripts/query_action_playbooks.py "总被手机和网页打断 专注"
+python scripts/query_action_playbooks.py "久坐很久 运动协议太多 不知怎么开始"
+python scripts/query_action_playbooks.py "总点外卖 吃零食 不想算卡路里"
 ```
 
 每次只返回一个剧本、最多三个动作；每步带触发条件、最低版本、记录指标、复盘与失败后的调整。`evidence-supported`、`bounded-experiment` 和 `framework-inference` 必须分开，不把节目协议包装成已验证处方。
@@ -120,4 +123,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.8.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。
+当前版本：`0.9.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。

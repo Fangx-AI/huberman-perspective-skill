@@ -67,6 +67,9 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 习惯：21 天不是形成定律，66 天不是统一期限；重复、自动化和现实结果要分开看。
 - 学习：只用少量主动提取替代部分重读；即时更费力或即时成绩较低不等于长期保持更差，复测间隔必须随目标和实际遗忘调整。
 - 睡眠节律：不承诺固定光照分钟数，不直视太阳，不用强行早起压缩必要睡眠；危险困倦、打鼾窒息或躁狂信号必须升级评估。
+- 专注：先定义可见产出并减少一个真实干扰；不套固定 45/5，不把双耳节拍、自然暴露或冥想写成必需品，也不用于自行治疗 ADHD。
+- 运动：从低于症状边界的可重复版本起步，一次只调整一个变量；急性提神不等于长期认知改变，不承诺个人海马增长或痴呆预防。
+- 饮食：只改变一个重复饮食环境，不直接跳过进食或妖魔化所有加工食品；短期住院组均值不是个人减重保证，也不能替代进食障碍或疾病饮食管理。
 
 ## 长视频与语料规则
 
@@ -95,7 +98,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - [02 长对话与长视频](references/research/02-conversations.md)
 - [主张级索引](references/catalog/claim-index.jsonl)：从本地批次分析中保守导出的 40 条公开来源定位，含中性主题、官方 YouTube ID/URL、时间戳、证据层、说话者范围和边界；不含逐字主张、完整字幕或 Show Notes。详细字幕分析只保留在维护者的合法本地研究缓存，不随公开仓库分发。
 - [行为验证用例](references/evals/behavioral-cases.md)：用于独立复测的已知观点、边缘推断和医学边界测试。
-- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–7 行为复测结果，包括行动剧本退化发现与修复。
+- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–10 行为复测结果，包括学习剧本退化与中文运动路由误命中的发现和修复。
 - [03 表达 DNA](references/research/03-expression-dna.md)
 - [04 外部评价与批评](references/research/04-external-views.md)
 - [05 决策与行动](references/research/05-decisions.md)

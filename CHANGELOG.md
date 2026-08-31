@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.9.0] - 2026-08-31
+
+### Added
+
+- Added outcome-first playbooks for protecting one focus block, safely starting exercise and improving one repeated food environment, expanding the action layer to six playbooks and eighteen bounded actions.
+- Added structured study cards for Berman et al. (2008) on nature and directed attention, Erickson et al. (2011) on aerobic exercise and hippocampal outcomes, Basso & Suzuki (2017) on acute exercise, and Hall et al. (2019) on ultra-processed food environments.
+- Added behavioral Cases 8–10 and independent read-only black-box evaluation for focus, exercise and food-environment decisions.
+
+### Changed
+
+- Replaced whitespace-only Chinese routing with weighted 2–4 character CJK phrase matching after black-box Case 9 exposed a real exercise-to-focus misroute; the original prompt is now a regression fixture.
+- Expanded the graph to 20 study cards, 95 findings, 131 limitations, 98 evidence topics, six action playbooks, eighteen action steps and 8,859 traceable edges.
+- Tightened non-loss boundaries so focus avoids universal 45/5 timers and ADHD treatment claims, exercise avoids fixed protocols and brain/dementia promises, and food guidance avoids meal skipping, moralization and disease-diet substitution.
+
 ## [0.8.0] - 2026-08-31
 
 ### Added

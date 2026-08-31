@@ -165,7 +165,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 16:
+        if card_count < 20:
             errors.append(f"too few study cards: {card_count}")
 
     evidence_relations: list[dict] = []
@@ -220,7 +220,7 @@ def check() -> list[str]:
             validate_playbooks(action_playbooks, study_cards, claims)
         except (OSError, ValueError) as exc:
             errors.append(f"invalid action playbook catalog: {exc}")
-        if len(action_playbooks) != 3:
+        if len(action_playbooks) != 6:
             errors.append(f"unexpected action playbook count: {len(action_playbooks)}")
 
     graph_path = ROOT / "references" / "catalog" / "knowledge-graph.json"

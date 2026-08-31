@@ -17,6 +17,18 @@ SEARCH_FIELDS = ("playbook_id", "title", "user_goal", "scope", "safe_summary")
 LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
 
 
+def lexical_units(value: str) -> set[str]:
+    """Split Latin text and add 2–4 character CJK n-grams for phrase routing."""
+    normalized = value.casefold()
+    units = set(re.findall(r"[a-z0-9_-]+", normalized))
+    for run in re.findall(r"[\u4e00-\u9fff]+", normalized):
+        units.add(run)
+        for size in (2, 3, 4):
+            if len(run) >= size:
+                units.update(run[index : index + size] for index in range(len(run) - size + 1))
+    return units
+
+
 def searchable_text(playbook: dict) -> str:
     values = [str(playbook.get(field, "")) for field in SEARCH_FIELDS]
     values.extend(str(value) for field in LIST_FIELDS for value in playbook.get(field, []))
@@ -27,14 +39,26 @@ def searchable_text(playbook: dict) -> str:
 
 def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
     normalized = query.casefold().strip()
-    tokens = [token for token in re.split(r"[^\w\u4e00-\u9fff]+", normalized) if token]
-    if not tokens:
+    query_units = lexical_units(normalized)
+    if not query_units:
         return []
     scored = []
     for playbook in playbooks:
-        text = searchable_text(playbook)
-        score = sum(3 if token in str(playbook.get("title", "")).casefold() else 1 for token in tokens if token in text)
-        score += sum(4 for alias in playbook.get("aliases", []) if alias.casefold() in normalized or normalized in alias.casefold())
+        routing_text = "\n".join(
+            [playbook.get("playbook_id", ""), playbook.get("title", ""), playbook.get("user_goal", "")]
+            + playbook.get("aliases", [])
+        )
+        routing_units = lexical_units(routing_text)
+        body_units = lexical_units(searchable_text(playbook))
+        routing_overlap = query_units & routing_units
+        body_overlap = query_units & body_units
+        score = sum(max(1, min(len(unit), 4) - 1) * 3 for unit in routing_overlap)
+        score += sum(1 for unit in body_overlap - routing_overlap)
+        score += sum(
+            20
+            for alias in playbook.get("aliases", [])
+            if alias.casefold() in normalized or normalized in alias.casefold()
+        )
         if score:
             scored.append((score, playbook["playbook_id"], playbook))
     return [item[2] for item in sorted(scored, key=lambda item: (-item[0], item[1]))]

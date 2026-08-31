@@ -2,6 +2,86 @@
   "edges": [
     {
       "relation": "has_action",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "action-step:improve-food-environment-first:identify-one-high-friction-food-context"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "action-step:improve-food-environment-first:keep-only-what-improves-the-real-outcome"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "claim:batch02-claim-0015"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "claim:batch02-claim-0036"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "claim:batch02-claim-0039"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:improve-food-environment-first",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "action-step:protect-one-focus-block:define-output-and-remove-one-interruption"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "claim:batch02-claim-0013"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "claim:batch02-claim-0020"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "claim:batch02-claim-0023"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "study-card:basso-2019-brief-daily-meditation"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:protect-one-focus-block",
+      "target": "study-card:berman-2008-nature-directed-attention"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:retain-what-you-learn",
       "target": "action-step:retain-what-you-learn:correct-uncertain-and-wrong-answers"
     },
@@ -109,6 +189,136 @@
       "relation": "uses_study_evidence",
       "source": "action-playbook:start-and-sustain-one-habit",
       "target": "study-card:singh-2024-health-habit-formation-systematic-review"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "action-step:start-exercise-without-protocol-overload:choose-one-repeatable-movement-baseline"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "action-step:start-exercise-without-protocol-overload:separate-acute-state-from-long-term-outcomes"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "claim:batch02-claim-0017"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "claim:batch02-claim-0018"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "study-card:basso-suzuki-2017-acute-exercise-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:start-exercise-without-protocol-overload",
+      "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:identify-one-high-friction-food-context",
+      "target": "claim:batch02-claim-0015"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:identify-one-high-friction-food-context",
+      "target": "claim:batch02-claim-0036"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:identify-one-high-friction-food-context",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:keep-only-what-improves-the-real-outcome",
+      "target": "claim:batch02-claim-0036"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:keep-only-what-improves-the-real-outcome",
+      "target": "claim:batch02-claim-0039"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:keep-only-what-improves-the-real-outcome",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option",
+      "target": "claim:batch02-claim-0015"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option",
+      "target": "claim:batch02-claim-0036"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:define-output-and-remove-one-interruption",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:define-output-and-remove-one-interruption",
+      "target": "study-card:berman-2008-nature-directed-attention"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset",
+      "target": "claim:batch02-claim-0020"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset",
+      "target": "study-card:basso-2019-brief-daily-meditation"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset",
+      "target": "study-card:berman-2008-nature-directed-attention"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
+      "target": "claim:batch02-claim-0013"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
+      "target": "claim:batch02-claim-0023"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
+      "target": "claim:batch02-claim-0034"
     },
     {
       "relation": "grounded_in",
@@ -244,6 +454,56 @@
       "relation": "grounded_in",
       "source": "action-step:start-and-sustain-one-habit:separate-repetition-automaticity-outcome",
       "target": "study-card:singh-2024-health-habit-formation-systematic-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:choose-one-repeatable-movement-baseline",
+      "target": "claim:batch02-claim-0017"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:choose-one-repeatable-movement-baseline",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:choose-one-repeatable-movement-baseline",
+      "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data",
+      "target": "claim:batch02-claim-0017"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data",
+      "target": "study-card:basso-suzuki-2017-acute-exercise-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data",
+      "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:separate-acute-state-from-long-term-outcomes",
+      "target": "claim:batch02-claim-0018"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:separate-acute-state-from-long-term-outcomes",
+      "target": "study-card:basso-suzuki-2017-acute-exercise-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:start-exercise-without-protocol-overload:separate-acute-state-from-long-term-outcomes",
+      "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
     },
     {
       "relation": "maps_to_episode",
@@ -42151,6 +42411,206 @@
       "target": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X?via%3Dihub"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:acute-exercise"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:cognition"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:executive-function"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:memory"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:mood"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:narrative-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "evidence-topic:neurophysiology"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:245d99a0841b5aeb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:3a1025d8f1f8fddf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:4a0d11832a4ccc07"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:624962667a41a20d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:ccd5c17d27615598"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-limitation:f78e4f9cf802e4cd"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-finding:141dde45284957a2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-finding:705fbf36475eedb3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-finding:cd71b7b2ebc8cbbd"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "study-finding:339b66169cd0f1e6"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC5928534/pdf/bpl-2-bpl160040.pdf"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "target": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5928534/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:attention-restoration"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:directed-attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:environment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:executive-attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:focus"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:nature-exposure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:within-subject"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "evidence-topic:working-memory"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:51143d01f0026b3e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:71c10af1214062c2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:8d58d17d6037d2ec"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:ab2e95e214b68adf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:b0f2fd106b789ee5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-limitation:cd4b098984623fd0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-finding:916342dad9f1eff0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-finding:b05dd8e93f1525ca"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-finding:cbdb6319102761ab"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "study-finding:980aee41406cb3ae"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:berman-2008-nature-directed-attention",
+      "target": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:dunlosky-2013-effective-learning-techniques-review",
       "target": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval"
@@ -42271,6 +42731,101 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/26173288/"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:aerobic-exercise"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:brain-volume"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:cardiorespiratory-fitness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:hippocampus"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:long-term-exercise"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:older-adults"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:randomized-controlled-trial"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "evidence-topic:spatial-memory"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:362a4d2ba2d88d3e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:80bb58c58df0265b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:9108beec9de1ff0b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:a45e97e5eb37a0b4"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:ac950acb18d30c5d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-limitation:f600f40e91784aa7"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-finding:0ceb886f82ead0ef"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-finding:15383acdd2da4f45"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-finding:3aa6fb180ec4312a"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "study-finding:91491b29935c847d"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/pdf/pnas.201015950.pdf"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:fritz-2020-habit-interventions-scoping-review",
       "target": "evidence-relation:fritz-2020-qualifies-singh-2024-habit-intervention-effect"
@@ -42379,6 +42934,106 @@
       "relation": "reviews_resource",
       "source": "study-card:fritz-2020-habit-interventions-scoping-review",
       "target": "resource:https://journals.sagepub.com/doi/full/10.1177/1539449219876877"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:ad-libitum-feeding"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:eating-rate"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:energy-intake"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:food-environment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:nutrition"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:randomized-crossover-trial"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:ultra-processed-food"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "evidence-topic:weight-change"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:0bffb6fe286af7b4"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:3ac21f1bbd6cc054"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:3ecee488385346e7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:558662be59e87b22"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:b9cf04d24695f3c0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-limitation:e3870556c85f4252"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-finding:093620565a4c9714"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-finding:4565bd5883854a27"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-finding:9de0b13a8bfed385"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "study-finding:51c86068bce28125"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hall-2019-ultra-processed-diet-rct",
+      "target": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413119302487%3Fshowall%3Dtrue"
     },
     {
       "relation": "has_evidence_topic",
@@ -43641,8 +44296,86 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T05:45:18.928735+00:00",
+  "generated_at": "2026-08-31T06:25:05.067804+00:00",
   "nodes": [
+    {
+      "aliases": [
+        "饮食控制不住",
+        "外卖零食太多",
+        "超加工食品",
+        "减肥吃什么",
+        "改善饮食环境",
+        "不想算卡路里",
+        "food environment",
+        "ultra-processed food"
+      ],
+      "baseline_checks": [
+        "先记录一个真实重复场景中的食物、饱腹、无计划追加和现实阻力，不要求称重或计算热量",
+        "确认替换不会造成吃不够、过敏、食物安全问题或与医生给出的饮食限制冲突",
+        "把‘超加工’当研究分类而非道德标签，不给单个食品贴好坏人格标签"
+      ],
+      "escalation": [
+        "暴食、催吐、补偿运动、持续禁食、食物恐惧或体重/身体形象困扰应寻求进食障碍知情专业帮助",
+        "糖尿病用药、肾病、孕期、儿童营养或复杂胃肠症状应与医生/注册营养师协调",
+        "昏厥、严重低血糖、脱水、过敏反应或其他急症信号立即急救"
+      ],
+      "first_questions": [
+        "哪一个重复场景最常让你吃得超出原计划：某顿饭、零食、外卖还是夜间环境？",
+        "替换方案需要满足哪些预算、时间、文化、口味、储存或家庭条件？",
+        "是否存在进食障碍史、明显低体重、孕期/儿童需求、糖尿病/肾病/胃肠病或药物相关饮食限制？"
+      ],
+      "id": "action-playbook:improve-food-environment-first",
+      "label": "先改善一个重复饮食环境",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "进食障碍、明显低体重、儿童、孕期或哺乳期的自行限制饮食",
+        "糖尿病、肾病、胃肠疾病、食物过敏或药物相互作用的通用饮食处方",
+        "把所有加工食品妖魔化、完全排除食物组或以羞耻感管理进食"
+      ],
+      "safe_summary": "先找一个反复导致无计划追加的进食场景，只替换其中一个项目，并同时看饱腹、摄入、成本和可持续性。不要直接跳过进食、妖魔化所有加工食品，也不要把 20 人短期住院结果当作个人减重或疾病饮食处方。",
+      "scope": "适用于一般成人对一顿重复餐或一种常见零食做低风险环境替换；不是减重治疗、进食障碍干预或糖尿病、肾病、胃肠病等疾病饮食处方",
+      "type": "action-playbook",
+      "user_goal": "不靠极端规则或营养细节过载，先改变一个反复导致无计划进食的现实场景"
+    },
+    {
+      "aliases": [
+        "无法专注",
+        "总被手机打断",
+        "工作分心",
+        "专注区块",
+        "深度工作",
+        "自然恢复注意",
+        "focus block",
+        "distracted at work"
+      ],
+      "baseline_checks": [
+        "先选一个能在一次坐下中推进的单一产出，不把‘专注’当成抽象感受",
+        "记录一次原状态下的产出、错误和外部中断，不先叠加音乐、补剂、冷刺激等工具",
+        "确认困倦不是因明显睡眠不足、酒精/药物、疾病或需要停止驾驶/操作设备的状态"
+      ],
+      "escalation": [
+        "注意困难从儿童期或近期开始并持续跨场景损害学习、工作或关系时，寻求合格专业评估",
+        "突然出现意识混乱、单侧无力、言语异常、剧烈头痛或其他急性神经信号时立即急救",
+        "危险日间困倦、打鼾窒息、严重情绪症状或自伤风险应及时寻求专业帮助"
+      ],
+      "first_questions": [
+        "这个区块结束时，什么可见结果算完成？",
+        "你最常见的中断来自通知、开着的页面、他人打断，还是疲劳/困倦？",
+        "分心是否已持续影响多场景功能，或伴随危险困倦、明显情绪/神经症状？"
+      ],
+      "id": "action-playbook:protect-one-focus-block",
+      "label": "保护一个能产出结果的专注区块",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "用自然、冥想、声音、补剂或计时法自行治疗 ADHD、抑郁、焦虑或睡眠疾病",
+        "在危险困倦、急性意识变化、头部损伤或神经症状下继续工作/驾驶",
+        "以监控软件或断联方式损害隐私、照护责任、紧急联络或工作安全"
+      ],
+      "safe_summary": "先定义一个可见产出并移除一个真实干扰，再用产出、错误和切换次数调整工作长度。自然环境或短注意练习只能作为可撤销实验；不要套固定 45/5、依赖双耳节拍，也不要把它当 ADHD 等疾病的治疗。",
+      "scope": "适用于一般成人对低风险学习、写作或办公任务的环境调整与个人观察；不是 ADHD、焦虑、抑郁、睡眠障碍或认知疾病的诊断和治疗",
+      "type": "action-playbook",
+      "user_goal": "在容易分心或脑力下降时，完成一个可见的小结果，而不是继续收藏提神工具"
+    },
     {
       "aliases": [
         "看完就忘",
@@ -43757,6 +44490,153 @@
       "scope": "适用于非临床、低风险的日常正向行为，例如开始学习、散步、整理或创作；不用于成瘾、进食障碍、强迫行为或需要医疗监督的改变",
       "type": "action-playbook",
       "user_goal": "把收藏的习惯知识变成一个能在低状态下启动、可以持续复盘的现实行为"
+    },
+    {
+      "aliases": [
+        "开始运动",
+        "运动计划太复杂",
+        "久坐想锻炼",
+        "有氧运动",
+        "运动提升大脑",
+        "运动前提神",
+        "start exercising",
+        "exercise protocol overload"
+      ],
+      "baseline_checks": [
+        "先记录当前可完成的活动、结束时症状和次日恢复，不拿过去最好状态作起点",
+        "确认鞋具、路面、天气、交通和训练空间安全",
+        "有已知心肺/代谢/神经疾病、近期手术或明显伤病时先按专业建议确定边界"
+      ],
+      "escalation": [
+        "胸痛、晕厥、严重呼吸困难、疑似卒中或其他急症信号立即寻求急救",
+        "已知疾病、孕期、近期手术、显著伤病或长期久坐并担心风险时，先向医生/合格运动专业人员确认边界",
+        "疼痛、疲劳或情绪问题持续加重并影响功能时停止升级并寻求评估"
+      ],
+      "first_questions": [
+        "你现在能无明显症状完成的活动是什么，过去两周大约做了多少？",
+        "目标首先是能持续、日常功能、情绪状态，还是特定体能表现？",
+        "是否有胸痛、晕厥、异常呼吸困难、未稳定疾病、近期伤病、孕期或医生给过限制？"
+      ],
+      "id": "action-playbook:start-exercise-without-protocol-overload",
+      "label": "在不过载协议的前提下开始运动",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "胸痛、晕厥、未稳定心肺/代谢疾病、急性伤病或术后状态下自行制定训练",
+        "孕期、儿童、进食障碍、严重低体重或复杂慢病的通用运动处方",
+        "用运动替代药物、康复、物理治疗或专业评估"
+      ],
+      "safe_summary": "从一个低于症状边界、能重复的活动开始，只依据恢复数据一次调整一个变量。一次运动后的提神不等于长期认知改变；不要照搬固定频率/强度，更不能承诺个人海马增长或预防痴呆。",
+      "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
+      "type": "action-playbook",
+      "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "adaptation": "若记录本身负担大，只保留‘是否追加’和一个现实阻力；若场景不重复，换成出现更频繁的一餐或零食",
+      "classification": "framework-inference",
+      "id": "action-step:improve-food-environment-first:identify-one-high-friction-food-context",
+      "label": "只选一个反复出现、最容易无计划追加的进食场景，找出其中一个可改变的环境因素",
+      "metric": "该场景一周出现次数、无计划追加次数、餐后饱腹/满足 0–10、准备难度",
+      "minimum_version": "只记录吃了什么、是否又追加、饱腹感和当时最大阻力，不要求算卡路里或改变全天饮食",
+      "playbook_id": "improve-food-environment-first",
+      "priority": 1,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "记录触发强迫称重、补偿、催吐、禁食或明显进食焦虑",
+        "出现低血糖症状、持续头晕、体重快速异常变化或营养不足迹象"
+      ],
+      "trigger": "下一次该餐、零食或外卖场景发生前",
+      "type": "action-step",
+      "why": "住院试验说明提供的食物环境能改变平均自由摄入，但现实环境还包含预算、便利、家庭、压力和可获得性；先找具体场景比列禁食清单更可执行"
+    },
+    {
+      "adaptation": "结果改善但成本过高时找更便宜版本；没有改善时检查份量、可获得性、压力/睡眠等现实变量，不继续扩大禁食范围",
+      "classification": "bounded-experiment",
+      "id": "action-step:improve-food-environment-first:keep-only-what-improves-the-real-outcome",
+      "label": "复盘这一个替换是否改善饱腹、无计划追加和可持续性，只保留真正服务目标的版本",
+      "metric": "无计划追加、饱腹/满足、精力或胃肠感受，以及成本、时间和家庭接受度",
+      "minimum_version": "比较替换前后最重要的一个结果和一个代价，例如追加次数与成本；没有改善就撤销或换方案",
+      "playbook_id": "improve-food-environment-first",
+      "priority": 3,
+      "review_after_days": 14,
+      "stop_conditions": [
+        "出现暴食、补偿、强迫追踪、明显体重/功能恶化或月经等健康变化",
+        "需要改变糖尿病药物、抗凝药、肾病饮食或其他临床计划才能继续"
+      ],
+      "trigger": "完成若干次同一场景后，在不增加新规则的情况下复盘",
+      "type": "action-step",
+      "why": "短期住院平均摄入和体重差异不能预测个人长期结果；用户自己的执行、饱腹和功能需要与研究机制分开观察"
+    },
+    {
+      "adaptation": "若更贵、难吃、吃不够或难维持，换一种同等便利的选择；不要靠增加饥饿或把全天食物都清空来制造效果",
+      "classification": "bounded-experiment",
+      "id": "action-step:improve-food-environment-first:replace-one-item-with-a-convenient-less-ultraprocessed-option",
+      "label": "在这个场景中，用一个仍然方便、可负担且能吃够的较少超加工选择替换原来的一个项目，而不是直接跳过进食",
+      "metric": "替换是否实际发生、是否仍吃够、餐后饱腹、额外取食以及成本/准备时间",
+      "minimum_version": "只换一个高频项目或为其准备一个容易拿到的替代品；冷冻、罐装、发酵或为安全保存而加工不自动等于应排除",
+      "playbook_id": "improve-food-environment-first",
+      "priority": 2,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "替换导致过敏、胃肠症状、明显低血糖或与医疗饮食冲突",
+        "规则迅速扩展成恐惧食物、社交回避或越来越多禁食清单"
+      ],
+      "trigger": "采购、备餐或下单时，在原选择进入手边之前完成替换",
+      "type": "action-step",
+      "why": "Hall 试验中超加工菜单导致更高平均自由摄入和短期增重，但它比较整套住院菜单，不能证明完全禁掉每种加工食品；单点替换是更保守的现实实验"
+    },
+    {
+      "adaptation": "若仍无法开始，缩小交付物；若主要是内部想法打断，留下一个停车清单，不同时增加多种专注工具",
+      "classification": "framework-inference",
+      "id": "action-step:protect-one-focus-block:define-output-and-remove-one-interruption",
+      "label": "写下本区块唯一要交付的可见结果，并移除一个最常发生的外部中断",
+      "metric": "是否产出约定结果；主动切换任务次数；被外部打断次数",
+      "minimum_version": "只写一句完成标准，并处理一个干扰源，例如关闭非必要通知、关掉一个无关页面或告知一个短期勿扰边界；不要影响紧急联络",
+      "playbook_id": "protect-one-focus-block",
+      "priority": 1,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "限制联络影响照护、工作安全或紧急响应",
+        "持续注意困难已跨多个场景造成明显功能受损"
+      ],
+      "trigger": "准备开始一项需要持续注意的工作时",
+      "type": "action-step",
+      "why": "Huberman 的公开工作环境框架优先处理任务边界和环境，而现有注意研究并不证明靠意志力或单一设备即可持续增强专注"
+    },
+    {
+      "adaptation": "若多次没有可重复改善就撤掉该工具；若只是感觉更好但错误/产出不变，不把主观提神当成功能提升",
+      "classification": "bounded-experiment",
+      "id": "action-step:protect-one-focus-block:test-one-low-risk-attention-reset",
+      "label": "注意明显下降后，只选一种低风险重置方式做对照：短暂接触安全自然环境，或一次简短的呼吸注意练习",
+      "metric": "重置前后同类任务的产出、错误和主观清醒度；一次只比较一种方法",
+      "minimum_version": "选择一个可行的短版本，回来后先做同类型下一小段任务；自然条件不安全时不外出，冥想不适时不用坚持",
+      "playbook_id": "protect-one-focus-block",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "冥想加重惊恐、解离、创伤反应或明显不适",
+        "户外环境存在交通、极端天气、跌倒或人身安全风险"
+      ],
+      "trigger": "已经开始工作、且同类错误或非必要切换明显增加时，而不是每次稍感无聊就中断",
+      "type": "action-step",
+      "why": "小型自然暴露实验和短期冥想研究对特定注意任务给出方向性支持，但都不足以证明固定时长、长期生产力或临床治疗效果"
+    },
+    {
+      "adaptation": "错误或切换提前出现时缩小下一次区块或调整任务难度；能稳定完成时再逐步扩大，但一次只改一个参数",
+      "classification": "framework-inference",
+      "id": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
+      "label": "持续做同一任务到一个自然检查点，用产出和错误决定区块长度，不套固定 45/5 或万能番茄钟",
+      "metric": "完成的单位数、明显错误数、第一次非必要切换出现的位置",
+      "minimum_version": "只推进到一个自然边界，例如一段草稿、一题或一次审阅；状态明显下降时停止记录，不用硬撑到预设数字",
+      "playbook_id": "protect-one-focus-block",
+      "priority": 2,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "为了守计时规则持续压缩睡眠、进食、活动或必要休息",
+        "出现头痛、视觉异常、明显焦虑、躁动或认知状态突变"
+      ],
+      "trigger": "完成环境准备并开始第一步工作后",
+      "type": "action-step",
+      "why": "节目中的时间结构适合当作个人参数，但现有公开主张和研究没有验证人人相同的最佳专注分钟数"
     },
     {
       "adaptation": "若同类错误反复出现，改变解释、例子或题型，而不是单纯增加同样的测试次数",
@@ -43919,6 +44799,60 @@
       "trigger": "每 7 天固定复盘一次，不以第 21 天或第 66 天作为成败截止线",
       "type": "action-step",
       "why": "综述显示自动化提高不一定伴随主要健康或行为结局改善；形成时间也高度可变"
+    },
+    {
+      "adaptation": "若症状或次日功能变差，减小幅度或改低冲击形式；若稳定且恢复良好，再考虑只增加一个变量",
+      "classification": "framework-inference",
+      "id": "action-step:start-exercise-without-protocol-overload:choose-one-repeatable-movement-baseline",
+      "label": "选择一种当前能安全完成、愿意重复的身体活动，并把第一轮定在明显低于症状或力竭边界",
+      "metric": "是否完成；活动中症状 0–10；结束后和次日的疼痛、疲劳与日常功能",
+      "minimum_version": "做一个低状态也能安全完成的版本，例如短距离步行或温和活动；不追固定分钟、配速、心率区间或每周次数",
+      "playbook_id": "start-exercise-without-protocol-overload",
+      "priority": 1,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "胸痛、晕厥、严重或异常呼吸困难、心悸伴不适",
+        "锐痛、进行性神经症状、明显肿胀或动作后功能持续恶化"
+      ],
+      "trigger": "到达一个本来就存在的日常活动节点时，例如出门、午休或结束工作；节点只是个人选择",
+      "type": "action-step",
+      "why": "长期运动研究支持规律活动的潜在获益，但特定老年人一年监督方案不能直接变成所有人的起始剂量；先建立可重复基线更有利于安全调整"
+    },
+    {
+      "adaptation": "改善且恢复稳定才保留改变；无改善就回到基线，恶化则减量/停止并评估，不用‘坚持才有效’压过症状",
+      "classification": "bounded-experiment",
+      "id": "action-step:start-exercise-without-protocol-overload:progress-one-variable-from-recovery-data",
+      "label": "只有在当前版本可重复且恢复可接受时，下一轮才只调整一个变量",
+      "metric": "完成率、活动中症状、次日恢复、与目标直接相关的一项功能指标",
+      "minimum_version": "保持原计划不变也算合格；若要调整，只从活动时间、难度、频率或动作类型中选一个小改变",
+      "playbook_id": "start-exercise-without-protocol-overload",
+      "priority": 2,
+      "review_after_days": 14,
+      "stop_conditions": [
+        "疼痛或疲劳连续加重、影响睡眠或日常功能",
+        "需要靠止痛药、兴奋剂、极端冷却/脱水或忽略医疗限制才能完成"
+      ],
+      "trigger": "完成若干次同一基线版本并复盘症状、恢复和现实执行后",
+      "type": "action-step",
+      "why": "运动效果与风险都受模式、强度、时长、时机和基线影响；同时改多个变量无法判断什么有效、什么导致不适"
+    },
+    {
+      "adaptation": "若只是更兴奋但错误增加，降低强度或取消任务前运动；若无可重复帮助，不把它保留为必需仪式",
+      "classification": "bounded-experiment",
+      "id": "action-step:start-exercise-without-protocol-overload:separate-acute-state-from-long-term-outcomes",
+      "label": "若想用运动帮助工作或学习，把一次低风险活动当成状态实验，并把短时表现与长期健康目标分开记录",
+      "metric": "任务速度、错误、主观清醒度，以及运动后症状；短时和数周结果分开",
+      "minimum_version": "沿用已经安全的活动版本，之后做一小段同类任务；不要为追求提神临时提高强度",
+      "playbook_id": "start-exercise-without-protocol-overload",
+      "priority": 3,
+      "review_after_days": 14,
+      "stop_conditions": [
+        "运动后出现头晕、胸部不适、异常气促或认知表现明显恶化",
+        "开始依赖过量咖啡因、补剂、冷暴露或疼痛来完成活动"
+      ],
+      "trigger": "在一个可重复的低风险任务前，且运动本身不会挤压准备、睡眠或恢复时",
+      "type": "action-step",
+      "why": "急性运动综述显示情绪和部分认知可能短时改善，但结果异质，速度改善不一定伴随准确性；一年运动试验的结构变化也不能由一次提神推断"
     },
     {
       "bv_id": "BV14dkGBQEWR",
@@ -49338,6 +50272,21 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-exercise",
+      "label": "acute-exercise",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:ad-libitum-feeding",
+      "label": "ad-libitum-feeding",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:aerobic-exercise",
+      "label": "aerobic-exercise",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:alertness",
       "label": "alertness",
       "type": "evidence-topic"
@@ -49345,6 +50294,11 @@
     {
       "id": "evidence-topic:attention",
       "label": "attention",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:attention-restoration",
+      "label": "attention-restoration",
       "type": "evidence-topic"
     },
     {
@@ -49373,6 +50327,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:brain-volume",
+      "label": "brain-volume",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:caffeine",
       "label": "caffeine",
       "type": "evidence-topic"
@@ -49380,6 +50339,11 @@
     {
       "id": "evidence-topic:camping",
       "label": "camping",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cardiorespiratory-fitness",
+      "label": "cardiorespiratory-fitness",
       "type": "evidence-topic"
     },
     {
@@ -49398,6 +50362,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:cognition",
+      "label": "cognition",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:context-cues",
       "label": "context-cues",
       "type": "evidence-topic"
@@ -49405,6 +50374,11 @@
     {
       "id": "evidence-topic:cued-recall",
       "label": "cued-recall",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:directed-attention",
+      "label": "directed-attention",
       "type": "evidence-topic"
     },
     {
@@ -49428,13 +50402,38 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:eating-rate",
+      "label": "eating-rate",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:education",
       "label": "education",
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:energy-intake",
+      "label": "energy-intake",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:environment",
+      "label": "environment",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:epa",
       "label": "epa",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:executive-attention",
+      "label": "executive-attention",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:executive-function",
+      "label": "executive-function",
       "type": "evidence-topic"
     },
     {
@@ -49450,6 +50449,16 @@
     {
       "id": "evidence-topic:fmri",
       "label": "fmri",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:focus",
+      "label": "focus",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:food-environment",
+      "label": "food-environment",
       "type": "evidence-topic"
     },
     {
@@ -49478,6 +50487,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:hippocampus",
+      "label": "hippocampus",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:inflammation",
       "label": "inflammation",
       "type": "evidence-topic"
@@ -49495,6 +50509,11 @@
     {
       "id": "evidence-topic:light-exposure",
       "label": "light-exposure",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:long-term-exercise",
+      "label": "long-term-exercise",
       "type": "evidence-topic"
     },
     {
@@ -49548,13 +50567,38 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:narrative-review",
+      "label": "narrative-review",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:natural-light",
       "label": "natural-light",
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:nature-exposure",
+      "label": "nature-exposure",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:neurophysiology",
+      "label": "neurophysiology",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:nutrition",
+      "label": "nutrition",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:observational",
       "label": "observational",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:older-adults",
+      "label": "older-adults",
       "type": "evidence-topic"
     },
     {
@@ -49580,6 +50624,16 @@
     {
       "id": "evidence-topic:procedural-memory",
       "label": "procedural-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:randomized-controlled-trial",
+      "label": "randomized-controlled-trial",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:randomized-crossover-trial",
+      "label": "randomized-crossover-trial",
       "type": "evidence-topic"
     },
     {
@@ -49628,6 +50682,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:spatial-memory",
+      "label": "spatial-memory",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:stabilization",
       "label": "stabilization",
       "type": "evidence-topic"
@@ -49663,8 +50722,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:ultra-processed-food",
+      "label": "ultra-processed-food",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:vocabulary",
       "label": "vocabulary",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:weight-change",
+      "label": "weight-change",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:within-subject",
+      "label": "within-subject",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:working-memory",
+      "label": "working-memory",
       "type": "evidence-topic"
     },
     {
@@ -57407,7 +58486,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "PubMed 与论文正文已核对：两项小型人体实验比较自然/城市步行或自然/城市图片；实验 1 为 38 名大学生的被试内步行比较，实验 2 为更小的图片实验，部分定向注意任务在自然条件后改善。短期实验室指标、学生样本和环境复合差异限制外推，不能保证自然暴露治疗 ADHD、抑郁或长期提升认知。",
+      "evidence_notes": "人工研究级核验：两项小型人体实验共 50 人，比较自然/城市步行或自然/城市图片；部分定向注意任务在自然条件后改善，但警觉/定向成分并非都改善。样本小、年轻便利样本、短期实验室结局且环境是复合暴露，不能外推为固定时长、长期生产力或 ADHD/抑郁治疗。证据卡：academic-study-cards.jsonl#berman-2008-nature-directed-attention。",
       "id": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x",
@@ -57417,7 +58496,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "PubMed 与论文正文已核对：两项小型人体实验比较自然/城市步行或自然/城市图片；实验 1 为 38 名大学生的被试内步行比较，实验 2 为更小的图片实验，部分定向注意任务在自然条件后改善。短期实验室指标、学生样本和环境复合差异限制外推，不能保证自然暴露治疗 ADHD、抑郁或长期提升认知。",
+      "evidence_notes": "人工研究级核验：两项小型人体实验共 50 人，比较自然/城市步行或自然/城市图片；部分定向注意任务在自然条件后改善，但警觉/定向成分并非都改善。样本小、年轻便利样本、短期实验室结局且环境是复合暴露，不能外推为固定时长、长期生产力或 ADHD/抑郁治疗。证据卡：academic-study-cards.jsonl#berman-2008-nature-directed-attention。",
       "id": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
@@ -62329,7 +63408,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "具体人群、运动方案和空间记忆结局；不等于所有运动方案都能产生同样结构或临床效果，也不等于预防痴呆（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：120 名 55–80 岁无痴呆久坐老年人的一年随机试验；监督有氧步行组海马体积约增加 2%，伸展/塑形组下降，空间记忆改善，但尾状核/丘脑无同样效应。特定人群、长期监督方案和替代结局限制外推，不能作为个人固定剂量、海马增长保证或痴呆预防证明。证据卡：academic-study-cards.jsonl#erickson-2011-aerobic-exercise-hippocampus。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/pdf/pnas.201015950.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/pdf/pnas.201015950.pdf",
@@ -62669,7 +63748,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "不能把急性运动结果改写成统一运动剂量或持久认知增强承诺；同一论文的不同访问链接只计一条证据（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工综述级核验：叙述性综述认为急性运动后情绪多呈改善、认知总体仅小幅正向且高度异质；部分研究无效或不利，速度改善也不一定伴随准确性提高。它不是系统综述/新荟萃分析，不能支持统一运动剂量、持久认知增强或疾病预防承诺。证据卡：academic-study-cards.jsonl#basso-suzuki-2017-acute-exercise-review。",
       "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC5928534/pdf/bpl-2-bpl160040.pdf",
       "kind": "academic-or-medical",
       "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5928534/pdf/bpl-2-bpl160040.pdf",
@@ -73613,7 +74692,7 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "每种饮食约 2 周且在住院供餐条件下比较；支持食物环境/可食量机制，但不等于所有加工食品均有同效应或替代个体化营养管理（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：20 名成人在 NIH 住院随机交叉接受各 14 天超加工/未加工自由进食菜单；超加工阶段平均每日多摄入约 508 kcal 并平均增重约 0.9 kg，未加工阶段平均减重约 0.9 kg。样本小、周期短、住院供餐且实际食物性质仍不同，不能外推为所有加工食品、个人减重保证或疾病饮食处方。证据卡：academic-study-cards.jsonl#hall-2019-ultra-processed-diet-rct。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7",
@@ -73623,7 +74702,7 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "每种饮食约 2 周且在住院供餐条件下比较；支持食物环境/可食量机制，但不等于所有加工食品均有同效应或替代个体化营养管理（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工研究级核验：20 名成人在 NIH 住院随机交叉接受各 14 天超加工/未加工自由进食菜单；超加工阶段平均每日多摄入约 508 kcal 并平均增重约 0.9 kg，未加工阶段平均减重约 0.9 kg。样本小、周期短、住院供餐且实际食物性质仍不同，不能外推为所有加工食品、个人减重保证或疾病饮食处方。证据卡：academic-study-cards.jsonl#hall-2019-ultra-processed-diet-rct。",
       "id": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413119302487%3Fshowall%3Dtrue",
       "kind": "academic-or-medical",
       "label": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413119302487%3Fshowall%3Dtrue",
@@ -85932,7 +87011,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "不能把急性运动结果改写成统一运动剂量或持久认知增强承诺；同一论文的不同访问链接只计一条证据（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "人工综述级核验：叙述性综述认为急性运动后情绪多呈改善、认知总体仅小幅正向且高度异质；部分研究无效或不利，速度改善也不一定伴随准确性提高。它不是系统综述/新荟萃分析，不能支持统一运动剂量、持久认知增强或疾病预防承诺。证据卡：academic-study-cards.jsonl#basso-suzuki-2017-acute-exercise-review。",
       "id": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5928534/",
       "kind": "academic-or-medical",
       "label": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5928534/",
@@ -97091,6 +98170,64 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "静息、基线或不同运动强度/时序条件，具体比较随纳入研究而异",
+      "doi": "10.3233/BPL-160040",
+      "evidence_level": "A-Synthesis（急性运动对情绪、认知与神经生理的叙述性综述）",
+      "id": "study-card:basso-suzuki-2017-acute-exercise-review",
+      "intervention_exposure": "一次急性运动，模式、强度、持续时间、与认知测试的时序高度不同",
+      "label": "The Effects of Acute Exercise on Mood, Cognition, Neurophysiology, and Neurochemical Pathways: A Review",
+      "outcomes": [
+        "积极与消极情绪",
+        "注意、执行功能、工作记忆与长期记忆",
+        "反应速度与准确性",
+        "脑电、神经营养因子和神经递质等机制指标"
+      ],
+      "population": "跨健康年轻人、老年人及不同体适能人群的人体研究，并包含动物与机制研究；各结局的人群和证据量不同",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5928534/",
+        "https://pubmed.ncbi.nlm.nih.gov/29765853/",
+        "https://doi.org/10.3233/BPL-160040"
+      ],
+      "result_summary": "综述认为一次运动后情绪通常改善，认知总体呈小幅正向趋势，尤其常见于反应速度和部分执行功能；但单项研究从改善到无效甚至变差均有，结果依赖运动模式、强度、时长、测试时机、任务和人群。长期记忆和具体机制的证据相对有限。",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "可把一次适合自身能力的运动作为情绪或工作前状态调整实验，并记录同一任务的速度、错误和主观感受；不应规定通用强度/时长，也不能把短时提神承诺成长期认知增强或疾病预防。",
+      "sample_size": "不适用（叙述性综述，整合多类人体/动物研究与既有综述，未报告统一纳入研究数）",
+      "source_scope": "episode-linked",
+      "study_design": "叙述性综述整合急性运动对情绪、认知、神经生理和神经化学影响的人体与动物研究，并讨论既有综述和荟萃分析；未采用预注册系统检索、PRISMA 流程、统一风险偏倚评估或新的合并效应量",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "同一参与者的城市步行或城市图片条件；顺序进行平衡",
+      "doi": "10.1111/j.1467-9280.2008.02225.x",
+      "evidence_level": "A-Direct（两项小型人体实验，共 50 人）",
+      "id": "study-card:berman-2008-nature-directed-attention",
+      "intervention_exposure": "短时真实自然/城市步行或观看自然/城市图片，暴露前先完成需要定向注意的任务",
+      "label": "The cognitive benefits of interacting with nature",
+      "outcomes": [
+        "倒背数字广度",
+        "注意网络任务的执行控制成分",
+        "情绪评分",
+        "天气与季节对结果的影响"
+      ],
+      "population": "实验 1 为 38 名密歇根大学学生（平均约 22.6 岁），实验 2 为 12 名年轻参与者；均为非临床便利样本",
+      "provenance_urls": [
+        "https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x",
+        "https://pubmed.ncbi.nlm.nih.gov/19121124/",
+        "https://doi.org/10.1111/j.1467-9280.2008.02225.x"
+      ],
+      "result_summary": "两项实验中，自然条件后部分定向注意指标优于城市条件；实验 1 的倒背数字表现约提高 20%，实验 2 的倒背数字和注意网络任务执行成分出现自然条件优势。结果支持短时环境暴露与特定注意任务表现相关，而不是证明一般生产力或临床疗效。",
+      "review_id": "berman-2008-nature-directed-attention",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "可把短暂接触自然环境作为低成本的专注重置个人实验，并用同一任务的实际表现判断是否有帮助；不应承诺固定时长、通用生产力增益，或把自然暴露作为 ADHD、抑郁等疾病的治疗。",
+      "sample_size": 50,
+      "source_scope": "episode-linked",
+      "study_design": "实验 1 让 38 名参与者在完成耗竭注意的任务后，以被试内、平衡顺序分别在自然环境与城市中心步行约 2.8 英里并复测；实验 2 让 12 名参与者在类似注意耗竭后观看自然或城市图片，再完成倒背数字与注意网络任务",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "各技术相对不练习、重复阅读/复习或其他学习策略；同时比较练习测试的格式、次数、间隔与是否提供正确答案反馈",
       "doi": "10.1177/1529100612453266",
       "evidence_level": "A-Synthesis（十种学习技术的结构化叙述性综述）",
@@ -97121,6 +98258,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "频率和接触时间相近的伸展、塑形与肌张力练习组",
+      "doi": "10.1073/pnas.1015950108",
+      "evidence_level": "A-Direct（120 名无痴呆老年人的一年随机对照试验）",
+      "id": "study-card:erickson-2011-aerobic-exercise-hippocampus",
+      "intervention_exposure": "监督下中等强度有氧步行，逐步增加并以每周三次为研究方案，持续一年",
+      "label": "Exercise training increases size of hippocampus and improves memory",
+      "outcomes": [
+        "左右前海马体积",
+        "尾状核与丘脑体积",
+        "空间记忆表现",
+        "最大摄氧量与血清 BDNF"
+      ],
+      "population": "120 名 55–80 岁、久坐但可参加运动、无痴呆的社区老年人；不代表年轻人、虚弱老年人或已确诊神经退行性疾病患者",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/",
+        "https://pubmed.ncbi.nlm.nih.gov/21282661/",
+        "https://doi.org/10.1073/pnas.1015950108"
+      ],
+      "result_summary": "一年后有氧组左右海马体积约增加 2.12% 和 1.97%，对照组约下降 1.40% 和 1.43%；较高体适能改善与较大海马体积变化相关，空间记忆也改善。该结果来自特定老年人群和一年监督方案，不能当作个人可保证的结构变化。",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持规律有氧运动可能改善特定老年人群的体适能、海马结构和空间记忆方向，但实际起步应按当前能力、症状和医学风险调整。不能把持续一年、每周三次的监督步行复制成万能处方，也不能承诺个人海马增长或痴呆预防。",
+      "sample_size": 120,
+      "source_scope": "episode-linked",
+      "study_design": "120 名无痴呆老年人随机分配到中等强度有氧步行或伸展/塑形对照，持续一年；在基线、6 个月和 12 个月进行 MRI、体适能、血液和空间记忆测量，评估前海马体积、BDNF、体适能与记忆变化",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "部分研究设有随机或非随机对照，部分为单组设计；综述同时比较自动化/习惯强度是否变化及其与主要健康或行为结局是否一致",
       "doi": "10.1177/1539449219876877",
       "evidence_level": "A-Synthesis（18 项成人健康行为干预的范围综述）",
@@ -97149,6 +98315,38 @@
       "study_design": "范围综述检索 2008 年后、以习惯或自动化为干预目标或结局的成人社区健康行为研究，共纳入 18 项研究；作者映射干预内容、34 种行为改变技术、习惯测量及健康/行为结局，未进行效应量合并或正式风险偏倚综合",
       "type": "study-card",
       "verification_status": "verified-review"
+    },
+    {
+      "comparator": "同一参与者的未加工菜单阶段，所提供饮食按多项营养指标设计匹配",
+      "doi": "10.1016/j.cmet.2019.05.008",
+      "evidence_level": "A-Direct（20 名成人、NIH 住院随机交叉喂养试验）",
+      "id": "study-card:hall-2019-ultra-processed-diet-rct",
+      "intervention_exposure": "连续 14 天可自由进食的超加工菜单，随后或此前接受 14 天未加工菜单；顺序随机",
+      "label": "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake",
+      "outcomes": [
+        "每日自由能量摄入及宏量营养素摄入",
+        "进食速度",
+        "体重和体成分变化",
+        "能量消耗与代谢指标",
+        "饥饿、饱腹和餐食愉悦度"
+      ],
+      "population": "20 名体重稳定成人（10 男、10 女，平均约 31 岁、BMI 约 27），在封闭住院环境完成研究；不代表儿童、孕妇、进食障碍或复杂慢病人群",
+      "provenance_urls": [
+        "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/",
+        "https://pubmed.ncbi.nlm.nih.gov/31105044/",
+        "https://doi.org/10.1016/j.cmet.2019.05.008",
+        "https://doi.org/10.1016/j.cmet.2019.05.020"
+      ],
+      "result_summary": "超加工阶段平均每日多摄入约 508 千卡，额外能量主要来自碳水和脂肪而非蛋白质；参与者在超加工阶段平均增重约 0.9 kg、未加工阶段减重约 0.9 kg，体重变化与能量摄入相关。研究支持食物环境会影响自由摄入，但不能把效果归因于每一种加工技术或食品。",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "可优先改变一个重复出现的食物环境：用更少超加工、可负担且仍方便的选择替换一顿饭或一种常见零食，并观察饱腹、摄入和现实可持续性。不要把所有加工食品妖魔化，也不要把短期住院平均值当成个人减重承诺或疾病饮食处方。",
+      "sample_size": 20,
+      "source_scope": "episode-linked",
+      "study_design": "20 名体重稳定成人在 NIH 住院 28 天，随机先后接受各 14 天的超加工与未加工饮食；所提供菜单在热量、能量密度、宏量营养素、糖、钠和纤维等方面设计为匹配，参与者可自由进食，研究测量摄入、体重、能量消耗和代谢指标",
+      "type": "study-card",
+      "verification_status": "verified-study"
     },
     {
       "comparator": "六周线上控制写作干预",
@@ -97551,6 +98749,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:093620565a4c9714",
+      "label": "参与者对两类餐食的熟悉度和愉悦度总体相近，不能简单解释为更喜欢某一组菜单",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:09bd3e63be6a4aae",
       "label": "只有 4 项研究报告形成时长，因异质性和资料不足没有对时长进行荟萃",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -97558,9 +98763,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:0ceb886f82ead0ef",
+      "label": "基线海马体积没有因随机分组而存在显著差异",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:141dde45284957a2",
+      "label": "部分研究主要改善反应速度而没有同步提高准确性",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:14dacb5d888e5d51",
       "label": "少于 10 个独立研究可用于偏倚检验，因此未正式评估发表偏倚",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:15383acdd2da4f45",
+      "label": "研究没有检验或证明有氧运动可预防痴呆或治疗已确诊认知障碍",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
       "type": "study-finding"
     },
     {
@@ -97627,6 +98853,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:339b66169cd0f1e6",
+      "label": "综述认为一次运动后情绪通常改善，认知总体呈小幅正向趋势，尤其常见于反应速度和部分执行功能；但单项研究从改善到无效甚至变差均有，结果依赖运动模式、强度、时长、测试时机、任务和人群。长期记忆和具体机制的证据相对有限。",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:36125fd0eeb5556a",
       "label": "纳入研究不足以独立确定早晨、行为类型或情境等因素的普遍因果作用",
@@ -97642,9 +98875,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:3aa6fb180ec4312a",
+      "label": "尾状核和丘脑体积没有显示同样的组间运动效应",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:426f5d09770ca58d",
       "label": "按估计睡前水平计算，30 分钟入睡组睡前至睡后无显著变化（p=0.33）",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4565bd5883854a27",
+      "label": "饮食顺序和性别没有解释主要能量摄入差异",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "study-finding"
     },
     {
@@ -97687,6 +98934,13 @@
       "id": "study-finding:50cfb4e3b5b665a8",
       "label": "夏季周末的总睡眠时长与夜间睡眠效率在组内和组间均相近",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:51c86068bce28125",
+      "label": "超加工阶段平均每日多摄入约 508 千卡，额外能量主要来自碳水和脂肪而非蛋白质；参与者在超加工阶段平均增重约 0.9 kg、未加工阶段减重约 0.9 kg，体重变化与能量摄入相关。研究支持食物环境会影响自由摄入，但不能把效果归因于每一种加工技术或食品。",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "study-finding"
     },
     {
@@ -97757,6 +99011,13 @@
       "id": "study-finding:6c6d8c4b8a493c7f",
       "label": "四组在学习结束时几乎都能正确回忆全部 40 个词对，且预测一周后都约记住 50%；但一周后，持续反复提取的 ST/SNT 条件约回忆 80%，答对一次后停止提取的 STN/SNTN 条件仅为 36% 和 33%。答对后是否继续复习几乎不影响一周保持，是否继续提取则产生巨大差异。",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:705fbf36475eedb3",
+      "label": "并非所有认知领域或单项研究都显示急性运动优势，部分结果无效或不利",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
       "type": "study-finding"
     },
     {
@@ -97845,6 +99106,34 @@
     },
     {
       "finding_kind": "result",
+      "id": "study-finding:91491b29935c847d",
+      "label": "一年后有氧组左右海马体积约增加 2.12% 和 1.97%，对照组约下降 1.40% 和 1.43%；较高体适能改善与较大海马体积变化相关，空间记忆也改善。该结果来自特定老年人群和一年监督方案，不能当作个人可保证的结构变化。",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:916342dad9f1eff0",
+      "label": "实验 1 的情绪变化与倒背数字改善没有显著关系",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:980aee41406cb3ae",
+      "label": "两项实验中，自然条件后部分定向注意指标优于城市条件；实验 1 的倒背数字表现约提高 20%，实验 2 的倒背数字和注意网络任务执行成分出现自然条件优势。结果支持短时环境暴露与特定注意任务表现相关，而不是证明一般生产力或临床疗效。",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9de0b13a8bfed385",
+      "label": "两种饮食间蛋白质摄入没有显著差异",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
       "id": "study-finding:9f806e762c0a0f09",
       "label": "壳核与腹侧纹状体 D2/D3 受体可用性出现小幅增加（ROI 均 P=0.05），尾状核无显著变化；腹侧纹状体变化与警觉度变化相关（r=0.56，P=0.01）。",
       "review_id": "volkow-2015-caffeine-pet",
@@ -97855,6 +99144,13 @@
       "id": "study-finding:ae645d37efec32c1",
       "label": "两组从首日至末日均改善；即时/单次会话内无训练增益，40 Hz 与 16.3 Hz 会话当下也无平均表现差异，但刺激频率与下一时段变化存在交互，40 Hz 后跨日增益显著而 16.3 Hz 后不显著。",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b05dd8e93f1525ca",
+      "label": "实验 2 没有显示注意网络任务的警觉和定向成分同样改善",
+      "review_id": "berman-2008-nature-directed-attention",
       "type": "study-finding"
     },
     {
@@ -97932,6 +99228,20 @@
       "id": "study-finding:c697f12b8c159430",
       "label": "四种条件的学习阶段累计学习曲线没有显著差异",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:cbdb6319102761ab",
+      "label": "天气与季节并未解释实验 1 的自然条件优势",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:cd71b7b2ebc8cbbd",
+      "label": "长期记忆相关证据少于情绪、注意和执行功能证据，不能作同等强度结论",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
       "type": "study-finding"
     },
     {
@@ -98081,6 +99391,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:0bffb6fe286af7b4",
+      "label": "高度受控的住院免费供餐环境与家庭、文化、预算和可获得性不同",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:0ddf212ce6b59c95",
       "label": "即时表现与延迟保持出现反转，不能把学习当下的困难感直接解释为无效，也不能把延迟优势改写成所有时间尺度都更好",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
@@ -98141,6 +99457,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:245d99a0841b5aeb",
+      "label": "属于叙述性综述而非系统综述或新荟萃分析，没有完整检索、排除流程和风险偏倚综合",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:27322864e4c850d0",
       "label": "冥想组平均每周完成 5.5 次，对照组 6.4 次，依从性不同",
       "review_id": "basso-2019-brief-daily-meditation",
@@ -98183,6 +99505,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:362a4d2ba2d88d3e",
+      "label": "海马体积和空间记忆是结构/认知结局，不是痴呆发病、生活独立性或长期临床结局",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:36c6766e36fe4806",
       "label": "实验 2 的学习期总时长并不完全相等：学习期每次 5 分钟、自由回忆每次 10 分钟",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
@@ -98195,9 +99523,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:3a1025d8f1f8fddf",
+      "label": "许多研究样本小，且可能受体适能、期待、练习效应和发表偏倚影响",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3ac21f1bbd6cc054",
+      "label": "只有 20 人，每种饮食 14 天，无法估计长期坚持、营养充足性或长期健康结局",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:3cfbc2f4c70e80e2",
       "label": "这是叙述性综述而非预注册系统综述或荟萃分析，没有提供完整检索策略、风险偏倚评级或合并效应量",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3ecee488385346e7",
+      "label": "两套菜单虽然按所提供营养指标匹配，实际摄入的能量密度、进食速度、质地和具体食物仍不同，不能分离‘加工’的单一机制",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "study-limitation"
     },
     {
@@ -98249,6 +99595,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4a0d11832a4ccc07",
+      "label": "急性运动后的短时结果不能外推为长期认知改善或神经退行性疾病预防",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:51143d01f0026b3e",
+      "label": "实验 2 仅 12 人，多项注意指标增加偶然发现风险",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:528d3573d7151a09",
       "label": "样本仅 8 人且仅 2 名女性，无法稳定估计人群差异",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -98285,6 +99643,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:558662be59e87b22",
+      "label": "交叉设计没有独立平行长期对照，短期体重变化不等于长期脂肪变化",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:56fb63c63196830c",
       "label": "露营同时增加全天和早晨光照、减少夜间电灯、改变活动、社交、设备使用和环境，不能分离单一成分",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -98318,6 +99682,12 @@
       "id": "study-limitation:61fc0ad25db64148",
       "label": "研究由与 2006 年论文重叠的同一作者团队完成，不是独立复制",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:624962667a41a20d",
+      "label": "平均小效应不能保证某个人在某次运动后更专注，运动过强也可能暂时损害表现",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
       "type": "study-limitation"
     },
     {
@@ -98360,6 +99730,12 @@
       "id": "study-limitation:6b6ebf0452a5b8d7",
       "label": "不能外推到陈述性知识、复杂技能、临床人群、最少睡眠时长或通用学习协议",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:71c10af1214062c2",
+      "label": "没有研究 ADHD、抑郁、焦虑或其他临床人群，也没有评估治疗效果",
+      "review_id": "berman-2008-nature-directed-attention",
       "type": "study-limitation"
     },
     {
@@ -98423,6 +99799,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:80bb58c58df0265b",
+      "label": "个体存在差异，组均值约 2% 不能预测任何一个人的脑体积变化",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:89caccd93cdfc9c4",
       "label": "荟萃主要合并单组干预前后差值，易受时间趋势、回归均值、期待和共同干预影响，不能解释为随机对照效应",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -98435,9 +99817,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8d58d17d6037d2ec",
+      "label": "参与者与研究人员难以对环境条件盲法，期待效应不能排除",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:8fbf519bce1d68d9",
       "label": "研究 2 由参与者自选周末组别，研究 1 与两项研究的条件顺序均未随机",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9108beec9de1ff0b",
+      "label": "参与者无法对运动类型盲法，监督、社交接触与期待可能影响行为结局",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
       "type": "study-limitation"
     },
     {
@@ -98468,6 +99862,12 @@
       "id": "study-limitation:a06b6b0ea071411b",
       "label": "研究未确定需要多少天自然光暴露，也未测试固定晨间分钟数、隔窗光照或消费级灯具剂量",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a45e97e5eb37a0b4",
+      "label": "一年方案的频率和强度是研究暴露，不是人人适用的最低或最佳剂量",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
       "type": "study-limitation"
     },
     {
@@ -98507,6 +99907,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:ab2e95e214b68adf",
+      "label": "结局是短时实验室注意任务，没有测量工作产出、考试成绩或长期功能",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:ac950acb18d30c5d",
+      "label": "单一试验、特定 55–80 岁久坐无痴呆人群，不能直接外推到所有年龄或疾病状态",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ad827fe58cc47690",
       "label": "研究设计、行为、时长、样本与结局高度异质，未做荟萃分析或正式风险偏倚综合",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -98516,6 +99928,12 @@
       "id": "study-limitation:ae539d4152d4c484",
       "label": "不能外推到临床炎症、焦虑或其他疾病",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b0f2fd106b789ee5",
+      "label": "两项实验样本很小，主要是同一大学的年轻便利样本",
+      "review_id": "berman-2008-nature-directed-attention",
       "type": "study-limitation"
     },
     {
@@ -98546,6 +99964,12 @@
       "id": "study-limitation:b9c2110776139c68",
       "label": "统计中介不能把阴性的组间神经结局转化为已证实的治疗效应",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b9cf04d24695f3c0",
+      "label": "NOVA 分类内部异质，结果不能证明每一种加工食品都有同样效应或应被完全排除",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "study-limitation"
     },
     {
@@ -98591,6 +100015,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:ccd5c17d27615598",
+      "label": "混合人体、动物和机制证据，不能把动物神经化学结果直接当成人体行为效果",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:cd4b098984623fd0",
+      "label": "自然与城市条件同时改变视觉、声音、交通、步行体验和主观偏好，无法识别单一有效成分",
+      "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ce547aee2496c490",
       "label": "冬季露营睡眠更长且活动更高，温度和行为变化可能影响睡眠结局",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -98624,6 +100060,12 @@
       "id": "study-limitation:e27cf0d4d5ed8175",
       "label": "该综述没有验证 Huberman 节目提出的 21 天安装与测试系统，也没有给出统一形成时长",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e3870556c85f4252",
+      "label": "不包含进食障碍、儿童、孕妇或需疾病特异饮食的人群，不能替代个体化营养/医疗管理",
+      "review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "study-limitation"
     },
     {
@@ -98669,6 +100111,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:f600f40e91784aa7",
+      "label": "研究不能把有氧适能、社交监督、其他活动变化与所有潜在机制完全分离",
+      "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:f6a492e0e59050c2",
       "label": "没有等长约 12 小时的纯清醒对照，不能把所有时间相关变化唯一归因于睡眠",
       "review_id": "nettersheim-2015-sleep-stabilization",
@@ -98678,6 +100126,12 @@
       "id": "study-limitation:f707a217439e7afb",
       "label": "不能排除睡眠防止遗忘、稳定记忆或对其他程序性/陈述性任务的作用",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f78e4f9cf802e4cd",
+      "label": "运动模式、强度、时长、测试时点和认知任务高度异质，无法给出统一最佳剂量",
+      "review_id": "basso-suzuki-2017-acute-exercise-review",
       "type": "study-limitation"
     },
     {
@@ -101438,19 +102892,19 @@
   "schema": "public-evidence-v2",
   "stats": {
     "academic_resource_nodes": 1740,
-    "action_playbook_nodes": 3,
-    "action_step_nodes": 9,
+    "action_playbook_nodes": 6,
+    "action_step_nodes": 18,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8728,
+    "edges": 8859,
     "episode_nodes": 425,
     "evidence_relation_nodes": 10,
-    "evidence_topic_nodes": 69,
+    "evidence_topic_nodes": 98,
     "resource_nodes": 6024,
-    "study_card_nodes": 16,
-    "study_finding_nodes": 79,
-    "study_limitation_nodes": 107,
+    "study_card_nodes": 20,
+    "study_finding_nodes": 95,
+    "study_limitation_nodes": 131,
     "top_topics": [
       {
         "count": 58,
