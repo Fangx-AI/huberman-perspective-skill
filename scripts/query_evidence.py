@@ -144,8 +144,9 @@ def main() -> int:
             print(f"阴性结果：{'；'.join(result['null_findings'])}")
             print(f"边界：{result['safe_interpretation']}")
             for relation in result["related_evidence"]:
+                direction = "本研究→对方" if relation["direction"] == "outgoing" else "对方→本研究"
                 print(
-                    f"关联证据：{relation['relation']} → {relation['counterpart_title']}；"
+                    f"关联证据（{direction}，{relation['relation']}）：{relation['counterpart_title']}；"
                     f"{relation['rationale']}；关系边界：{relation['boundary']}"
                 )
             print(f"来源：{'；'.join(result['provenance_urls'])}")

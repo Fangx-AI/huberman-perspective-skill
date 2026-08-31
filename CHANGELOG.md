@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.4.1] - 2026-08-31
+
+### Added
+
+- Added a structured external-context card for Nettersheim et al. (2015), including its 61-person design, 30-minute early boost, four-hour decay, polysomnography, null sleep-stage correlations and pre-sleep-estimation boundary.
+- Added `qualifies` and `supports` relations that connect Nettersheim 2015 to Walker 2003 and Rickard 2008 as a three-study evidence triangle.
+- Added regression coverage for incoming/outgoing relation direction and stabilization-focused Chinese retrieval.
+
+### Changed
+
+- Expanded the graph to eight study cards, 36 findings, 46 limitations, 30 evidence topics, three evidence relations, 6,022 resource nodes and 8,490 edges.
+- Made command-line relation output explicit about whether the current study or the counterpart is the source of a relation.
+- Preserved the 749-row Episode Show Notes queue unchanged while raising graph-level verified academic resources to 675 through two explicitly external cards.
+
 ## [0.4.0] - 2026-08-31
 
 ### Added

@@ -22,7 +22,7 @@ class EvidenceRelationTests(unittest.TestCase):
 
     def test_committed_relations_validate(self) -> None:
         MODULE.validate_relations(self.cards, self.relations)
-        self.assertGreaterEqual(len(self.relations), 1)
+        self.assertGreaterEqual(len(self.relations), 3)
 
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])

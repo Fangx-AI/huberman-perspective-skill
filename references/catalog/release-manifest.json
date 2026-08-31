@@ -1,19 +1,19 @@
 {
   "counts": {
-    "academic_resource_nodes": 749,
+    "academic_resource_nodes": 750,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "claims": 40,
     "course_lecture_nodes": 8,
-    "edges": 8462,
+    "edges": 8490,
     "episode_nodes": 425,
     "episodes": 425,
-    "evidence_relation_nodes": 1,
-    "evidence_topic_nodes": 26,
-    "resource_nodes": 6021,
-    "study_card_nodes": 7,
-    "study_finding_nodes": 28,
-    "study_limitation_nodes": 38,
+    "evidence_relation_nodes": 3,
+    "evidence_topic_nodes": 30,
+    "resource_nodes": 6022,
+    "study_card_nodes": 8,
+    "study_finding_nodes": 36,
+    "study_limitation_nodes": 46,
     "top_topics": [
       {
         "count": 58,
@@ -117,17 +117,17 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 674,
+    "verified_academic_resource_nodes": 675,
     "video_urls": 8,
     "youtube_nodes": 424
   },
-  "generated_at": "2026-08-31T03:10:36.240546+00:00",
+  "generated_at": "2026-08-31T03:27:16.308054+00:00",
   "raw_payloads_included": false,
   "schema": "public-release-manifest-v1",
   "sha256": {
     "claim-index.jsonl": "34291a1ec0dbcebcccebde8e6ce5e2a3a24a7914035d6346e6d85bfdc0bade0d",
     "episodes.csv": "1f0204093ca0080e46b01c117a8ab5f413e83fa837de59ce5d8f8f71184cd039",
-    "knowledge-graph.json": "c92ec31926bace808d7b315e8d66d71486326e457d50f30be6d6500051903f4f",
+    "knowledge-graph.json": "26ac949a5593fcc49afaf598a2b1a2b4810b3da3190a5243ab6988f9c4993ea1",
     "video-urls.csv": "54d0f495f54e1af0bcb1ae22488eee73d7f784ce37d458d9d168193593aec0d9"
   }
 }

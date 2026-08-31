@@ -153,7 +153,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 7:
+        if card_count < 8:
             errors.append(f"too few study cards: {card_count}")
 
     evidence_relations: list[dict] = []
@@ -179,6 +179,8 @@ def check() -> list[str]:
                     errors.append(f"evidence relation lacks rationale/boundary at line {line_number}")
         if not evidence_relations:
             errors.append("evidence relation catalog is empty")
+        elif len(evidence_relations) < 3:
+            errors.append(f"too few evidence relations: {len(evidence_relations)}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():
@@ -231,6 +233,9 @@ def check() -> list[str]:
             relations[relation] = relations.get(relation, 0) + 1
         if relations.get("reports_null_finding") != expected_null_findings or relations.get("has_limitation") != expected_limitations:
             errors.append("public graph lost null-finding or limitation relations")
+        typed_relation_edges = sum(relations.get(kind, 0) for kind in {"replicates", "supports", "qualifies", "challenges", "contradicts"})
+        if relations.get("has_evidence_relation") != len(evidence_relations) or typed_relation_edges != len(evidence_relations):
+            errors.append("public graph lost or duplicated typed evidence-relation edges")
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         if academic_path.is_file():
             with academic_path.open(encoding="utf-8-sig", newline="") as handle:

@@ -43,12 +43,21 @@ class EvidenceQueryTests(unittest.TestCase):
     def test_sleep_card_surfaces_bounded_counterevidence(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "walker-2003-sleep-motor-learning")
         concise = MODULE.concise_record(card, self.cards, self.relations)
-        self.assertEqual(concise["related_evidence"][0]["relation"], "challenges")
-        self.assertEqual(
-            concise["related_evidence"][0]["counterpart_review_id"],
-            "rickard-2008-sleep-motor-sequence",
-        )
-        self.assertIn("不否定", concise["related_evidence"][0]["boundary"])
+        related = {item["relation_id"]: item for item in concise["related_evidence"]}
+        challenge = related["rickard-2008-challenges-walker-2003-enhancement"]
+        qualification = related["nettersheim-2015-qualifies-walker-2003-enhancement"]
+        self.assertEqual(challenge["counterpart_review_id"], "rickard-2008-sleep-motor-sequence")
+        self.assertEqual(challenge["direction"], "incoming")
+        self.assertEqual(qualification["direction"], "incoming")
+        self.assertIn("不否定", challenge["boundary"])
+
+    def test_stabilization_query_returns_outgoing_evidence_triangle(self) -> None:
+        results = MODULE.query_cards(self.cards, "睡眠 稳定 运动学习")
+        self.assertEqual(results[0]["review_id"], "nettersheim-2015-sleep-stabilization")
+        concise = MODULE.concise_record(results[0], self.cards, self.relations)
+        self.assertEqual(len(concise["related_evidence"]), 2)
+        self.assertTrue(all(item["direction"] == "outgoing" for item in concise["related_evidence"]))
+        self.assertEqual({item["relation"] for item in concise["related_evidence"]}, {"qualifies", "supports"})
 
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])

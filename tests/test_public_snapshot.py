@@ -56,7 +56,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 674)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 675)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
@@ -73,6 +73,11 @@ class PublicSnapshotTests(unittest.TestCase):
         relations = [edge["relation"] for edge in graph["edges"]]
         self.assertEqual(relations.count("reports_null_finding"), sum(len(card["null_findings"]) for card in cards))
         self.assertEqual(relations.count("has_limitation"), expected_limitations)
+        self.assertEqual(relations.count("has_evidence_relation"), len(evidence_relations))
+        self.assertEqual(
+            sum(relations.count(kind) for kind in {"replicates", "supports", "qualifies", "challenges", "contradicts"}),
+            len(evidence_relations),
+        )
 
     def test_repair_queue_matches_pending_urls(self) -> None:
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
@@ -89,7 +94,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 7)
+        self.assertGreaterEqual(len(cards), 8)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])
@@ -100,7 +105,7 @@ class PublicSnapshotTests(unittest.TestCase):
                 self.assertEqual(by_url[url]["verification_status"], card["verification_status"])
                 self.assertEqual(by_url[url]["evidence_notes"], card["queue_note"])
         external = [card for card in cards if card.get("source_scope") == "external-context"]
-        self.assertTrue(external)
+        self.assertGreaterEqual(len(external), 2)
         self.assertTrue(all(card.get("queue_urls") == [] for card in external))
 
 

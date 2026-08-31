@@ -13,10 +13,11 @@
 | B 站中文合集可提高可访问性，但页面自称搬运且字幕多为机翻 | B站页面 | https://www.bilibili.com/video/BV1YJ4m187LQ/ | C（来源元数据） | 必须回链到 YouTube/官方 Episode | 已记录 |
 | B 站出现名为 Andrew_Huberman 的欢迎视频，声称与中国观众连接并介绍 Huberman Lab | B站平台账号 | https://www.bilibili.com/video/BV1tuun6FEUz/ | A-Platform（账号待持续核验） | 需要确认账号认证与后续视频同步关系 | 待核验 |
 | B 站有 ADHD/专注力、学习、压力与睡眠等完整中文长视频样本 | B站发现层 | https://www.bilibili.com/video/BV1SfPCziEeM/；https://www.bilibili.com/video/BV1eePpeXEMc/；https://www.bilibili.com/video/BV1XRtjzoEo4/ | C（翻译/转载元数据） | 回到原视频和论文逐条核查 | 已登记 |
-| 跨 5 个原创长视频样本，稳定出现“机制→工具→时间/顺序→个体差异/复盘”的内容结构 | YouTube 人工/自动字幕样本 | `references/catalog/claim-index.jsonl`；视频 ID: yb5zpo5WDG4、nm1TxQj9IsQ、ddq8JIMhz7c、t1F7EEGPQwo、ntfcfJ28eiU；详细字幕分析仅保留在维护者本地缓存 | A-Synthesis（表达/结构） | 仍需扩展至更多 Solo、AMA、Journal Club 与 Guest 节目 | 初步确认 |
+| 跨 5 个原创长视频样本，稳定出现“机制→工具→时间/顺序→个体差异/复盘”的内容结构 | YouTube 人工/自动字幕样本 | 公开脱敏主张定位索引；视频 ID: yb5zpo5WDG4、nm1TxQj9IsQ、ddq8JIMhz7c、t1F7EEGPQwo、ntfcfJ28eiU | A-Synthesis（表达/结构） | 仍需扩展至更多 Solo、AMA、Journal Club 与 Guest 节目 | 初步确认 |
 | 85%/15% 训练难度规则在一类学习算法、人工神经网络和计算神经科学模型中得到约 85% 最佳准确率/15.87% 错误率 | 原始论文 | https://www.nature.com/articles/s41467-019-12552-4 | A-Direct（计算/模型） | 不能直接当作所有人类学习任务的精确处方 | 已核查，限度明确 |
 | 年轻健康成人在特定手指序列任务中出现跨夜的离线速度和准确性改善 | 原始人体实验 | https://pubmed.ncbi.nlm.nih.gov/12888546/；https://pmc.ncbi.nlm.nih.gov/articles/PMC202318/；DOI: 10.1101/lm.58503 | A-Direct（小样本人体跨时点实验） | 新样本 40 人、每组 10 人，另复用 30 人旧数据；任务单一、随机分组未说明、睡眠主要靠日志，三晚相对一晚仅呈非显著趋势；不能外推为所有学习或通用睡眠时长/时序协议 | 已核查，限度明确 |
 | 对同一显式手指序列范式的方法学复核显示，传统集中练习与平均算法会保留表观睡眠后提升，而控制反应性抑制、热身、时段和疲劳后未见高于训练已达水平的额外增强 | 外部原始人体实验/反证 | https://pubmed.ncbi.nlm.nih.gov/18605872/；DOI: 10.1037/0278-7393.34.4.834 | A-Direct（两项人体实验与方法学重分析） | 共招募 217 人、最终分析 141 人；实验 2 无清醒对照且睡眠靠自报。该证据挑战 enhancement，不否定 stabilization、防遗忘或其他学习类型，也不支持减少睡眠 | 已核查，已建立 `challenges` 关系 |
+| 训练后 30 分钟的手指序列表现早期提升会在 4 小时清醒中衰减；睡眠可维持或恢复到该早期水平，但没有超过睡前已达的最高表现 | 外部原始人体实验/限定证据 | https://pubmed.ncbi.nlm.nih.gov/25926448/；https://pmc.ncbi.nlm.nih.gov/articles/PMC4412892/；DOI: 10.1523/JNEUROSCI.1236-14.2015 | A-Direct（61 人重复测量、昼夜控制与多导睡眠监测） | 主实验每组 16/15 人；睡前水平由另一清醒条件估计，无等长 12 小时纯清醒对照，单一任务不能区分一般按键与序列特异学习。支持 stabilization 而非额外 enhancement，不外推到所有学习或睡眠处方 | 已核查，已建立 `qualifies` 与 `supports` 关系 |
 | 测试/提取练习在实验室与教育证据中通常比单纯追加学习更有利于后续保持 | 综述论文 | https://journals.sagepub.com/doi/10.1111/j.1745-6916.2006.00012.x | A-Direct（综述） | 结果受材料、反馈、测试形式与情境影响；支持主动提取这一工具方向，不等于固定学习日程或对所有人群同效 | 已核查，限度明确 |
 | 一年中等强度有氧训练在一项 120 名老年成人随机研究中增加前部海马体积并改善空间记忆 | 原始人体 RCT | https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/ | A-Direct（人体 RCT） | 具体人群、运动方案和空间记忆结局；不等于所有运动方案都能产生同样结构或临床效果，也不等于预防痴呆 | 已核查，限度明确 |
 | 受控住院交叉研究中，短睡眠改变了男性/女性不同的食欲相关激素信号，但没有在该受控能量条件下显示统一的血糖/胰岛素效应 | 原始人体交叉研究 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3466797/ | A-Direct（短期人体研究） | 27 名健康、正常体重成人；4 小时与 9 小时在床、短期且受控；不能直接替代长期睡眠或营养管理建议 | 已核查，限度明确 |
@@ -35,7 +36,7 @@
 | MDMA 辅助治疗在一项严重 PTSD 的多中心 III 期随机双盲安慰剂对照研究中改善 CAPS-5 与功能损害指标 | 原始人体 RCT | https://www.nature.com/articles/s41591-021-01336-3 | A-Direct（受监管临床研究） | n=90；研究包含手册化心理治疗、三次实验性给药与整合治疗；主要随访较短、盲法可能受主观药效影响，不能外推为娱乐使用或自行治疗 | 已核查，限度明确 |
 | 一项小样本研究中，被告知日常清洁工作符合运动建议的酒店客房清洁员，4 周后若干健康指标改善 | 原始人体研究 | https://journals.sagepub.com/doi/abs/10.1111/j.1467-9280.2007.01867.x?journalCode=pssa | A-Direct（小样本特定情境研究） | 84 名女性客房清洁员；研究支持待检验的 mindset/placebo 假说，不证明信念可替代运动、医疗或疾病治疗 | 已核查，限度明确 |
 | 建构性情景记忆同时服务于回忆过去与想象未来，并涉及重叠的心理/神经过程 | 综述论文 | https://pubmed.ncbi.nlm.nih.gov/17395575/ | A-Direct（综述背景） | PubMed 标为 2007 review；适合解释记忆机制，不是对 Huberman 播客协议的直接干预试验 | 已核查，类型已标注 |
-| 第二批 10 集长视频显示稳定的“机制/状态→行为工具→时间安排或复盘→限制条件”表达结构，并在嘉宾集加入信念、社会环境和个体差异 | YouTube 字幕与章节 | `references/catalog/claim-index.jsonl`；10 个官方视频 ID；详细字幕分析仅保留在维护者本地缓存 | A-Synthesis（表达/结构） | 这是内容结构归纳，不是每个工具的疗效证据 | 初步确认 |
+| 第二批 10 集长视频显示稳定的“机制/状态→行为工具→时间安排或复盘→限制条件”表达结构，并在嘉宾集加入信念、社会环境和个体差异 | YouTube 字幕与章节 | 公开脱敏主张定位索引；10 个官方视频 ID | A-Synthesis（表达/结构） | 这是内容结构归纳，不是每个工具的疗效证据 | 初步确认 |
 | Growth mindset 在访谈中被限定为“适当条件和支持下能力可改变”，而非“只要努力就能做任何事” | 嘉宾原话/视频时间戳 | https://www.youtube.com/watch?v=etEJrznE-c0，约 `00:04:14` | A-Direct（播客表述） | 介入效果、持续性和可迁移性须回到原始论文 | 待论文核查 |
 | Cannabis 讨论要求区分剂量、浓度、给药途径、频率、年龄和遗传脆弱性，并覆盖依赖、精神病风险和妊娠 | 嘉宾访谈/视频章节 | https://www.youtube.com/watch?v=jouFvyRZntk，`00:16:55`–`03:19:12` | A-Direct（内容记录） | 不构成个体化风险或剂量判断；待系统综述/指南核查 | 待核查 |
 | 激素优化集把血液检查、生活方式、TRT、补剂和副作用放在同一决策链中 | 嘉宾访谈/视频章节 | https://www.youtube.com/watch?v=O-groYMqrQw，`00:00:20`–`00:31:06` | A-Direct（内容记录） | 激素治疗与补剂必须依赖病史、化验和医生监督 | 待核查 |

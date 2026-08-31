@@ -41776,6 +41776,16 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     },
     {
+      "relation": "qualifies",
+      "source": "evidence-relation:nettersheim-2015-qualifies-walker-2003-enhancement",
+      "target": "study-card:walker-2003-sleep-motor-learning"
+    },
+    {
+      "relation": "supports",
+      "source": "evidence-relation:nettersheim-2015-supports-rickard-2008-no-enhancement",
+      "target": "study-card:rickard-2008-sleep-motor-sequence"
+    },
+    {
       "relation": "challenges",
       "source": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement",
       "target": "study-card:walker-2003-sleep-motor-learning"
@@ -41994,6 +42004,136 @@
       "relation": "reviews_resource",
       "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
       "target": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-relation:nettersheim-2015-qualifies-walker-2003-enhancement"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-relation:nettersheim-2015-supports-rickard-2008-no-enhancement"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:circadian-control"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:early-boost"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:memory-consolidation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:motor-learning"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:polysomnography"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "evidence-topic:stabilization"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:0e99d05364c03b56"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:5313c0b4db5e44f6"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:5495bae06a28eaff"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:69ed7d6f5742cd87"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:69ee927ffcd67d00"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:960cc0384f2d9326"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:c238ebb4ba403a38"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-limitation:f6a492e0e59050c2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:2ad0f0cb0433500a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:426f5d09770ca58d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:8776f9a593aed607"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:8fb11e1490ff0c26"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:9069cdc5e3fcac0a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:d2b8a0d6b1eb325c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:e19bbbbedff1d640"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "study-finding:5fd1618b55a8479d"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nettersheim-2015-sleep-stabilization",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/"
     },
     {
       "relation": "has_evidence_relation",
@@ -42311,7 +42451,7 @@
       "target": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/"
     }
   ],
-  "generated_at": "2026-08-31T03:10:36.240546+00:00",
+  "generated_at": "2026-08-31T03:27:16.308054+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47541,6 +47681,40 @@
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
     },
     {
+      "boundary": "该关系限定的是训练末端基线与 enhancement 解释；不否认 Walker 在特定手指序列任务中观察到跨夜离线变化，也不否定睡眠可能稳定记忆。",
+      "id": "evidence-relation:nettersheim-2015-qualifies-walker-2003-enhancement",
+      "label": "Walker 研究中训练末端到睡后测试的离线提升是否代表睡眠创造了此前从未达到的技能水平",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25926448/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4412892/",
+        "https://doi.org/10.1523/JNEUROSCI.1236-14.2015"
+      ],
+      "rationale": "Nettersheim 等直接测得训练后 30 分钟已有 21.22% 的早期提升，并发现睡后表现只是维持或恢复到这一睡前已出现的水平；因此，若以训练末端而非真实睡前最佳表现为基线，会把稳定或恢复误读为额外增强。",
+      "relation": "qualifies",
+      "relation_id": "nettersheim-2015-qualifies-walker-2003-enhancement",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "nettersheim-2015-sleep-stabilization",
+      "target_review_id": "walker-2003-sleep-motor-learning",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "该支持关系针对无额外 enhancement 的结论；Nettersheim 同时提供稳定或恢复信号，因此不能把两项研究合并解释成睡眠对运动记忆毫无作用。",
+      "id": "evidence-relation:nettersheim-2015-supports-rickard-2008-no-enhancement",
+      "label": "显式手指序列任务中的跨夜变化是否超过睡前已经达到的最佳表现水平",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25926448/",
+        "https://pubmed.ncbi.nlm.nih.gov/18605872/",
+        "https://doi.org/10.1523/JNEUROSCI.1236-14.2015"
+      ],
+      "rationale": "Nettersheim 等采用不同设计，控制早期提升、睡前再测练习和训练至入睡间隔后，同样未观察到超越睡前最佳水平的额外增益，并明确报告睡眠维持或恢复表现。",
+      "relation": "supports",
+      "relation_id": "nettersheim-2015-supports-rickard-2008-no-enhancement",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "nettersheim-2015-sleep-stabilization",
+      "target_review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "该关系只挑战 enhancement，不否定睡眠可能稳定记忆、防止遗忘，也不裁决其他运动任务、陈述性学习或睡眠不足的广泛影响。",
       "id": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement",
       "label": "跨夜睡眠是否会让显式手指序列技能提升到训练阶段已达到水平之上",
@@ -47582,6 +47756,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:circadian-control",
+      "label": "circadian-control",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:distributed-practice",
       "label": "distributed-practice",
       "type": "evidence-topic"
@@ -47589,6 +47768,11 @@
     {
       "id": "evidence-topic:dopamine",
       "label": "dopamine",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:early-boost",
+      "label": "early-boost",
       "type": "evidence-topic"
     },
     {
@@ -47662,6 +47846,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:polysomnography",
+      "label": "polysomnography",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:procedural-memory",
       "label": "procedural-memory",
       "type": "evidence-topic"
@@ -47674,6 +47863,11 @@
     {
       "id": "evidence-topic:sleep",
       "label": "sleep",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:stabilization",
+      "label": "stabilization",
       "type": "evidence-topic"
     },
     {
@@ -61512,6 +61706,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/24349678/",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部限定研究级核验：该来源不是当前 Episode Show Notes 队列项，因此不回写队列。61 人实验显示 30 分钟早期提升在 4 小时清醒中衰减，睡眠维持或恢复到早期水平但未超过睡前最佳表现；睡前水平来自另一条件估计且无等长 12 小时清醒对照。证据卡：academic-study-cards.jsonl#nettersheim-2015-sleep-stabilization。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/25926448/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25926448/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -92166,6 +92371,37 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "同一受试者的短清醒与跨夜睡眠条件；30 分钟和 4 小时间隔组；另设早晨清醒的昼夜节律控制组，但没有等长 12 小时纯清醒对照",
+      "doi": "10.1523/JNEUROSCI.1236-14.2015",
+      "evidence_level": "A-Direct（小样本重复测量实验、昼夜控制与多导睡眠监测）",
+      "id": "study-card:nettersheim-2015-sleep-stabilization",
+      "intervention_exposure": "用非优势手完成两个平衡顺序的五键显式序列；训练为 12 个 30 秒区块，测试为 3 个 30 秒区块。主实验比较训练后 30 分钟或 4 小时清醒测试，以及相同延迟后入睡并在训练约 12 小时后测试；睡眠夜接受多导睡眠监测",
+      "label": "The role of sleep in motor sequence consolidation: stabilization rather than enhancement",
+      "outcomes": [
+        "每 30 秒正确完成序列数",
+        "反应时与错误率",
+        "训练后 30 分钟早期提升及 4 小时衰减",
+        "由清醒条件估计的睡前水平到睡后水平变化",
+        "睡眠分期、频谱功率与警觉任务"
+      ],
+      "population": "主实验 31 名 19–32 岁健康、不吸烟成人（15 名女性；30 分钟组 16 人、4 小时组 15 人）；昼夜控制 30 名 18–30 岁健康、不吸烟成人（8 名女性；每组 15 人）",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25926448/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4412892/",
+        "https://doi.org/10.1523/JNEUROSCI.1236-14.2015",
+        "https://push-zb.helmholtz-munich.de/deliver.php?id=10104"
+      ],
+      "result_summary": "训练后清醒 30 分钟出现 21.22% 的早期表现提升，至清醒 4 小时降为 6.26%。训练后 30 分钟入睡者在约 12 小时测试时提升 15.39%，与 30 分钟早期提升无显著差异；延迟 4 小时入睡者睡后提升 15.16%，高于 4 小时清醒结果且恢复到早期提升水平。睡后表现从未超过睡前已经达到的最高水平，支持稳定或恢复而非额外增强。",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持在这一年轻健康成人手指序列范式中，睡眠可维持或恢复训练后短暂出现的较高表现，但没有显示超越睡前最佳水平的额外增益。该结果限定“睡一觉会自动把技能练到新高度”的强说法，也不等于睡眠对其他学习类型或睡眠不足后果不重要。",
+      "sample_size": 61,
+      "source_scope": "external-context",
+      "study_design": "主实验纳入 31 人，随机分到训练后清醒 30 分钟或 4 小时再睡的两组；每人以至少两周间隔、平衡顺序完成短清醒条件和跨夜睡眠条件。另有 30 人在早晨完成 30 分钟或 4 小时清醒控制，以检验昼夜节律混杂",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "实验 1 比较清醒与睡眠间隔；实验 2 比较集中与分散练习，但所有人均跨一晚睡眠且没有独立清醒对照",
       "doi": "10.1037/0278-7393.34.4.834",
       "evidence_level": "A-Direct（两项人体实验与方法学重分析）",
@@ -92319,6 +92555,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:2ad0f0cb0433500a",
+      "label": "30 分钟入睡组的睡后提升与 30 分钟清醒早期提升无显著差异（p=0.30）",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:2e3bd3c22183538e",
       "label": "结果不支持咖啡因增加纹状体多巴胺释放",
       "review_id": "volkow-2015-caffeine-pet",
@@ -92329,6 +92572,13 @@
       "id": "study-finding:3a956291329ee85b",
       "label": "作者此前 30 人数据中，12 小时清醒未出现与睡眠后相同的离线增益",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:426f5d09770ca58d",
+      "label": "按估计睡前水平计算，30 分钟入睡组睡前至睡后无显著变化（p=0.33）",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-finding"
     },
     {
@@ -92361,6 +92611,13 @@
     },
     {
       "finding_kind": "result",
+      "id": "study-finding:5fd1618b55a8479d",
+      "label": "训练后清醒 30 分钟出现 21.22% 的早期表现提升，至清醒 4 小时降为 6.26%。训练后 30 分钟入睡者在约 12 小时测试时提升 15.39%，与 30 分钟早期提升无显著差异；延迟 4 小时入睡者睡后提升 15.16%，高于 4 小时清醒结果且恢复到早期提升水平。睡后表现从未超过睡前已经达到的最高水平，支持稳定或恢复而非额外增强。",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
       "id": "study-finding:7957a6968eabdbff",
       "label": "传统 30 秒区块与通常平均方法仍产生约 13.3% 的表观反应时提升；改用 10 秒分散练习并按学习曲线校正后仅余 3.5%，落在正常试次学习外推线上，未出现支持额外睡眠增强机制的离散跃升。",
       "review_id": "rickard-2008-sleep-motor-sequence",
@@ -92368,9 +92625,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:8776f9a593aed607",
+      "label": "错误率没有显著组间或条件差异",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:87b3034ff7abb267",
       "label": "4 周时所检指标无显著组间效果",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:8fb11e1490ff0c26",
+      "label": "两组睡眠结构和频谱功率无显著差异，睡眠参数与表现变化的相关在多重比较校正后均不显著",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9069cdc5e3fcac0a",
+      "label": "警觉任务未见关键组间差异，也未与手指敲击表现相关",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-finding"
     },
     {
@@ -92423,6 +92701,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:d2b8a0d6b1eb325c",
+      "label": "4 小时入睡组从估计睡前水平到睡后的恢复仅呈边缘趋势（p=0.053）",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:db1c9163842459ee",
       "label": "新研究的一次训练组在跨一晚后的 24 小时复测中速度提高 17.0%、错误率下降 34.5%；双倍训练组的夜间增益相近。三晚组相对一晚组的额外改善仅为趋势，未达传统显著性阈值。",
@@ -92434,6 +92719,13 @@
       "id": "study-finding:e111ad450123ea42",
       "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e19bbbbedff1d640",
+      "label": "4 小时清醒条件相对训练末端的 6.26% 提升仅达边缘水平（p=0.06）",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-finding"
     },
     {
@@ -92470,6 +92762,12 @@
       "label": "48 名至少完成 4 周者进入带末次观测结转的第 8 周分析；联合组自第 4 周起优于两种单药，应答率分别为氟西汀 50%、EPA 56%、联合 81%。",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
       "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:0e99d05364c03b56",
+      "label": "单一显式手指序列任务不能区分一般按键速度与序列特异学习",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
     },
     {
       "id": "study-limitation:1ea7f1818b3ca7c5",
@@ -92526,9 +92824,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:5313c0b4db5e44f6",
+      "label": "睡眠条件为避免再次练习而未直接测量睡前表现；睡前水平由同一受试者另一清醒条件估计",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:53cfc911e6729a25",
       "label": "[11C]raclopride 不能区分 D2 与 D3，也不能单独区分受体数量、亲和力和其他结合因素",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5495bae06a28eaff",
+      "label": "仅适用于年轻健康不吸烟成人，不能外推到复杂技能、陈述性学习、临床人群或具体睡眠处方",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-limitation"
     },
     {
@@ -92559,6 +92869,18 @@
       "id": "study-limitation:69a14d6cd9cff47b",
       "label": "总样本仅 60 人，约每组 20 人",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:69ed7d6f5742cd87",
+      "label": "主实验每组仅 16 或 15 人，昼夜控制每组 15 人，统计精度有限",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:69ee927ffcd67d00",
+      "label": "两次重复测量使用不同序列且可能存在跨序列练习迁移，作者以平衡顺序减弱但不能完全消除",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-limitation"
     },
     {
@@ -92601,6 +92923,12 @@
       "id": "study-limitation:7dbbc6b4678fbfaa",
       "label": "本研究以睡眠日志和主观警觉度记录睡眠，而非对全部参与者进行多导睡眠监测",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:960cc0384f2d9326",
+      "label": "睡眠与清醒条件的测试时点和保留间隔不同，虽然昼夜控制与警觉任务降低了部分混杂",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-limitation"
     },
     {
@@ -92652,6 +92980,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:c238ebb4ba403a38",
+      "label": "未发现睡眠阶段或频谱指标与行为变化相关，不能据此确定稳定作用的睡眠机制",
+      "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d032e716a38c1240",
       "label": "实验 2 所有人均跨夜睡眠，没有独立清醒对照",
       "review_id": "rickard-2008-sleep-motor-sequence",
@@ -92685,6 +93019,12 @@
       "id": "study-limitation:f521c567f8492786",
       "label": "样本小且仅为健康成人",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f6a492e0e59050c2",
+      "label": "没有等长约 12 小时的纯清醒对照，不能把所有时间相关变化唯一归因于睡眠",
+      "review_id": "nettersheim-2015-sleep-stabilization",
       "type": "study-limitation"
     },
     {
@@ -95420,18 +95760,18 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 749,
+    "academic_resource_nodes": 750,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8462,
+    "edges": 8490,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 1,
-    "evidence_topic_nodes": 26,
-    "resource_nodes": 6021,
-    "study_card_nodes": 7,
-    "study_finding_nodes": 28,
-    "study_limitation_nodes": 38,
+    "evidence_relation_nodes": 3,
+    "evidence_topic_nodes": 30,
+    "resource_nodes": 6022,
+    "study_card_nodes": 8,
+    "study_finding_nodes": 36,
+    "study_limitation_nodes": 46,
     "top_topics": [
       {
         "count": 58,
@@ -95535,7 +95875,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 674,
+    "verified_academic_resource_nodes": 675,
     "youtube_nodes": 424
   }
 }
