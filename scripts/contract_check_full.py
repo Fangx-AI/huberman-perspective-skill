@@ -314,7 +314,7 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         action_playbooks = []
         failures.append(f"Action playbooks cannot be loaded or validated: {exc}")
-    require(len(action_playbooks) == 6, "Action playbook catalog must contain six reviewed playbooks", failures)
+    require(len(action_playbooks) == 7, "Action playbook catalog must contain seven reviewed playbooks", failures)
 
     graph_path = ROOT / "references/catalog/knowledge-graph.json"
     try:
@@ -436,11 +436,11 @@ def main() -> int:
     )
 
     cases = (ROOT / "references/evals/behavioral-cases.md").read_text(encoding="utf-8")
-    for case in ("Case 1", "Case 2", "Case 3", "Case 4", "Case 5", "Case 6", "Case 7", "Case 8", "Case 9", "Case 10"):
+    for case in ("Case 1", "Case 2", "Case 3", "Case 4", "Case 5", "Case 6", "Case 7", "Case 8", "Case 9", "Case 10", "Case 11"):
         require(case in cases, f"Behavioral eval missing {case}", failures)
     blackbox_path = ROOT / "references/evals/blackbox-2026-08-31.md"
     blackbox = blackbox_path.read_text(encoding="utf-8") if blackbox_path.exists() else ""
-    require("10/10 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
+    require("11/11 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
 
     eval_summary_path = ROOT / "references/evals/eval-summary.md"
     eval_summary = eval_summary_path.read_text(encoding="utf-8")
@@ -482,7 +482,7 @@ def main() -> int:
         return 1
 
     print(
-        "PASS  contract: trigger/safety/evidence/action rules, catalogs, Bilibili/course layers, and Case 1-10 fixtures"
+        "PASS  contract: trigger/safety/evidence/action rules, catalogs, Bilibili/course layers, and Case 1-11 fixtures"
     )
     print(
         f"summary: YouTube={len(transcript_rows)} ({dict(transcript_status)}), "

@@ -10,7 +10,7 @@ Status date: 2026-08-31.
 | Preserve traceable claims without redistributing transcripts | `claim-index.jsonl`, `source-registry.md`, `release_check.py` | Implemented for the current public snapshot |
 | Connect claims, studies, limitations and contradictions | `academic-study-cards.jsonl`, `evidence-relations.jsonl`, `knowledge-graph.json` | Implemented, but research-level coverage remains partial |
 | Produce a callable Chinese Huberman-perspective Skill | `SKILL.md`, `agents/openai.yaml`, `action-playbooks.jsonl` | Implemented and installed locally |
-| Put user outcomes ahead of knowledge accumulation | Six outcome-first playbooks and Cases 5–10 | Implemented for six high-frequency scenarios; more scenarios remain |
+| Put user outcomes ahead of knowledge accumulation | Seven outcome-first playbooks and Cases 5–11 | Implemented for seven high-frequency scenarios; more scenarios remain |
 | State evidence levels, medical boundaries and uncertainty | `SKILL.md`, `evidence-ledger.md`, structured card limitations and stop/escalation fields | Implemented and regression tested |
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
 | Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | Implemented for a public clone |

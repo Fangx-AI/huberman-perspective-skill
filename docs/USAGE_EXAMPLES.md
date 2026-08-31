@@ -12,7 +12,7 @@ Use $huberman-perspective. I keep collecting habit protocols but cannot start. H
 
 A good response should select one matching playbook, give no more than three actions, and attach a trigger, minimum version, observable measure, adjustable review point and failure adaptation. It should not add supplements, cold exposure or a full morning routine merely because Huberman has discussed them.
 
-## Six outcome-first scenarios
+## Seven outcome-first scenarios
 
 | User request | Expected playbook | Non-loss boundary |
 |---|---|---|
@@ -22,6 +22,7 @@ A good response should select one matching playbook, give no more than three act
 | `我工作时总被手机和网页打断。` | `protect-one-focus-block` | No universal 45/5 timer, binaural-beat requirement or ADHD treatment |
 | `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | Start below symptom limits; no guaranteed hippocampal growth or dementia prevention |
 | `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | Do not skip meals, moralize all processed food or substitute for clinical nutrition care |
+| `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | Proxy endpoints are not personal efficacy; medication, hormone, peptide and interaction decisions require a clinician/pharmacist |
 
 The deterministic router can be inspected without loading the entire evidence archive:
 

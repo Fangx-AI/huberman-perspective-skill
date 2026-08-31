@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.11.0] - 2026-08-31
+
+### Added
+
+- Added an outcome-first health-protocol decision playbook that turns mechanism-heavy supplement and protocol questions into one decision card, evidence/risk triage and—only for low-risk behavior—a reversible single-variable observation.
+- Added behavioral Case 11 and an independent read-only black-box evaluation covering direct outcomes, null findings, supplement/medication boundaries, clinician escalation and the limits of personal experiments.
+- Added three study-grounded decision examples: a caffeine PET proxy signal, a gratitude RCT with null prespecified group effects, and an early EPA/fluoxetine clinical signal that cannot authorize self-treatment.
+
+### Changed
+
+- Expanded the action layer to seven playbooks and twenty-one actions, and the graph to 8,880 traceable relations.
+- Tightened the medical safety gate so supplements, medications, psychiatric treatment, hormones, peptides and injections never enter the low-risk personal-experiment path.
+- Added specific exercise-routing aliases after the general health-protocol playbook initially captured the existing sedentary-exercise regression prompt.
+- Reconstructed a malformed duplicate playbook record after graph validation and the public release checker correctly failed closed during migration.
+
 ## [0.10.0] - 2026-08-31
 
 ### Added

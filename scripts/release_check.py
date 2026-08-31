@@ -228,7 +228,7 @@ def check() -> list[str]:
             validate_playbooks(action_playbooks, study_cards, claims)
         except (OSError, ValueError) as exc:
             errors.append(f"invalid action playbook catalog: {exc}")
-        if len(action_playbooks) != 6:
+        if len(action_playbooks) != 7:
             errors.append(f"unexpected action playbook count: {len(action_playbooks)}")
 
     graph_path = ROOT / "references" / "catalog" / "knowledge-graph.json"

@@ -47,6 +47,7 @@ README_LINKS = (
 )
 
 PLAYBOOK_IDS = (
+    "decide-whether-to-try-one-health-protocol",
     "start-and-sustain-one-habit",
     "retain-what-you-learn",
     "stabilize-sleep-wake-timing",

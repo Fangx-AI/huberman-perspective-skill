@@ -2,6 +2,51 @@
   "edges": [
     {
       "relation": "has_action",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "action-step:decide-whether-to-try-one-health-protocol:run-only-a-low-risk-reversible-single-variable-test"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "claim:batch02-claim-0002"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "claim:batch02-claim-0039"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "claim:batch02-claim-0040"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "study-card:hazlett-2021-gratitude-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "study-card:jazayeri-2008-epa-fluoxetine-mdd"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "study-card:volkow-2015-caffeine-pet"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:improve-food-environment-first",
       "target": "action-step:improve-food-environment-first:identify-one-high-friction-food-context"
     },
@@ -229,6 +274,66 @@
       "relation": "uses_study_evidence",
       "source": "action-playbook:start-exercise-without-protocol-overload",
       "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card",
+      "target": "claim:batch02-claim-0002"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card",
+      "target": "study-card:hazlett-2021-gratitude-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card",
+      "target": "study-card:volkow-2015-caffeine-pet"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:run-only-a-low-risk-reversible-single-variable-test",
+      "target": "claim:batch02-claim-0002"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:run-only-a-low-risk-reversible-single-variable-test",
+      "target": "claim:batch02-claim-0039"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:run-only-a-low-risk-reversible-single-variable-test",
+      "target": "claim:batch02-claim-0040"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "claim:batch02-claim-0002"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "claim:batch02-claim-0039"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "claim:batch02-claim-0040"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "study-card:hazlett-2021-gratitude-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "study-card:jazayeri-2008-epa-fluoxetine-mdd"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "study-card:volkow-2015-caffeine-pet"
     },
     {
       "relation": "grounded_in",
@@ -44296,8 +44401,48 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T06:25:05.067804+00:00",
+  "generated_at": "2026-08-31T07:00:52.803826+00:00",
   "nodes": [
+    {
+      "aliases": [
+        "健康协议太多",
+        "协议值不值得试",
+        "补剂要不要吃",
+        "怎么判断健康建议",
+        "想试Huberman协议",
+        "评估一个健康协议",
+        "health protocol decision",
+        "should I try a supplement"
+      ],
+      "baseline_checks": [
+        "把节目主张、嘉宾观点、广告、研究结论和自己的推断分开记录",
+        "优先确认当前症状、诊断、药物/补剂、孕哺状态和既往不良反应",
+        "检查协议是否要求购买、固定剂量、停药、极端暴露或延迟就医"
+      ],
+      "escalation": [
+        "处方药、停药、精神科治疗、激素、肽类、注射、孕哺期、儿童或复杂慢病决策交给合格医生/药师",
+        "不明成分、污染风险、禁药或声称替代正规治疗的产品不进入个人试验",
+        "胸痛、晕厥、呼吸困难、严重过敏、自伤念头、躁狂或快速恶化立即寻求急救/紧急专业帮助"
+      ],
+      "first_questions": [
+        "你真正想改善的一个现实结果是什么，现在的基线怎样？",
+        "这个协议属于行为、设备、补剂、药物/激素/肽类还是医疗处置，来源和实际剂量能否核实？",
+        "你是否有症状、诊断、用药/补剂、孕哺状态、既往不良反应或必须避免延误的专业治疗？"
+      ],
+      "id": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "label": "先判断一个健康协议值不值得试",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "推荐购买补剂、提供个体剂量或把补剂放入个人试验",
+        "自行开始、停止、替换或调整处方药、精神科治疗、激素、肽类或注射",
+        "把低风险个人实验当作疾病诊断、治疗证据或长期安全证明",
+        "有急症信号、严重精神症状、不明成分产品或需要延误正规照护的情况"
+      ],
+      "safe_summary": "先定义一个现实结果，再把证据强度和干预风险分开。必须主动报告主要阴性结果；代理指标、机制相关性或一项小研究不能授权个人处方。本剧本不推荐购买或给补剂剂量，只有低风险、可逆且不延误照护的行为才进入单变量试验；药物、精神科治疗、激素、肽类、注射和补剂决策转给医生或药师。个人试验只能决定是否保留该行为，不能证明疾病疗效或长期安全。",
+      "scope": "适用于一般成人评估一个公开健康建议、低风险行为或准备向专业人员提出更好问题；不是补剂、药物、激素、肽类或疾病治疗的个体化许可",
+      "type": "action-playbook",
+      "user_goal": "不被机制、名人权威或协议清单带着走，安全判断一个健康建议是否值得采取下一步"
+    },
     {
       "aliases": [
         "饮食控制不住",
@@ -44500,7 +44645,9 @@
         "运动提升大脑",
         "运动前提神",
         "start exercising",
-        "exercise protocol overload"
+        "exercise protocol overload",
+        "久坐很久",
+        "运动协议不知道怎么开始"
       ],
       "baseline_checks": [
         "先记录当前可完成的活动、结束时症状和次日恢复，不拿过去最好状态作起点",
@@ -44529,6 +44676,60 @@
       "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
       "type": "action-playbook",
       "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "adaptation": "若仍列出多个目标或协议，只保留当前最重要且最可观察的一个；若无法说出直接结果，先不购买、不叠加",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card",
+      "label": "把想尝试的协议改写成一张决策卡：一个现实目标、一个直接结果指标、当前基线、成本和最坏可逆后果",
+      "metric": "目标结果的基线、协议总成本、需要改变的变量数、最坏后果是否可逆",
+      "minimum_version": "用一句话写成：我想改善 X；现在 X 是 Y；我会看 Z；如果没有 Z 的改善就不保留",
+      "playbook_id": "decide-whether-to-try-one-health-protocol",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "目标涉及治疗疾病、改变药物/剂量或掩盖正在恶化的症状",
+        "协议来源无法定位、实际成分或剂量不明，或销售方把机制当保证"
+      ],
+      "trigger": "准备购买、开始或向现有习惯中加入一个健康协议之前",
+      "type": "action-step",
+      "why": "清晰目标和直接结果能防止被机制、名人权威或代理指标带偏；咖啡因 PET 与感恩 RCT 都显示机制信号和干预主结局不能互相替代"
+    },
+    {
+      "adaptation": "没有清晰改善就停止或回到基线，不通过加剂量、叠加协议或更换多个变量追逐效果；执行成本高于收益时也撤销",
+      "classification": "bounded-experiment",
+      "id": "action-step:decide-whether-to-try-one-health-protocol:run-only-a-low-risk-reversible-single-variable-test",
+      "label": "只有在对象是低风险行为、可逆、不会延误照护时才做一次单变量试验；预先写下停止条件、最短可观察窗口和保留标准",
+      "metric": "直接结果、预先指定的不良反应、执行成本以及是否需要违反原有医疗计划",
+      "minimum_version": "先保持其他变量不变，只测试一个低风险行为版本；不测试补剂、药物、激素、肽类或注射；每天记一个直接结果和一个副作用/成本指标",
+      "playbook_id": "decide-whether-to-try-one-health-protocol",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "任何预先指定的不良反应、症状恶化或功能下降",
+        "为了继续试验需要改变药物、补剂剂量、睡眠需求、进食安全或专业治疗"
+      ],
+      "trigger": "证据与风险分层完成且确认属于低风险可逆行为后",
+      "type": "action-step",
+      "why": "个人试验只能帮助判断自己是否愿意保留一个低风险行为，不能证明机制、疾病疗效或长期安全；预先承诺停止规则可减少不断加码"
+    },
+    {
+      "adaptation": "证据找不到时把信心降到未核验，不用更多节目片段补强；补剂及任何高于低风险可逆行为的干预不进入本剧本个人试验，把下一步改成整理成分、剂量、相互作用和疑问交给医生或药师",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "label": "把证据和风险分别分层：先找直接人体结局、重复/综述、适用人群和阴性结果，再判断它是低风险行为、补剂、药物/激素/肽类还是医疗处置",
+      "metric": "是否有人体直接结局、是否有独立重复/综述、研究人群是否匹配、阴性结果、相互作用/禁忌和信息缺口数量",
+      "minimum_version": "只回答五项：研究对象、直接结局、主要阴性结果、最大外推限制、风险类别；缺一项就标成未知",
+      "playbook_id": "decide-whether-to-try-one-health-protocol",
+      "priority": 2,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "涉及处方药、停药、加量、精神科症状、激素、肽类、注射或可能相互作用的补剂",
+        "出现胸痛、晕厥、呼吸困难、严重过敏、自伤念头、躁狂或其他急症信号"
+      ],
+      "trigger": "读完节目、广告、帖子或一篇论文并产生想尝试的冲动时",
+      "type": "action-step",
+      "why": "20 人急性 PET、小样本阴性组间 RCT 和无纯安慰剂的抑郁试验分别说明代理指标、探索性机制与早期临床信号都不能自动升级为个人疗效或安全处方"
     },
     {
       "adaptation": "若记录本身负担大，只保留‘是否追加’和一个现实阻力；若场景不重复，换成出现更频繁的一餐或零食",
@@ -102892,12 +103093,12 @@
   "schema": "public-evidence-v2",
   "stats": {
     "academic_resource_nodes": 1740,
-    "action_playbook_nodes": 6,
-    "action_step_nodes": 18,
+    "action_playbook_nodes": 7,
+    "action_step_nodes": 21,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8859,
+    "edges": 8880,
     "episode_nodes": 425,
     "evidence_relation_nodes": 10,
     "evidence_topic_nodes": 98,

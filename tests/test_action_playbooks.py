@@ -31,7 +31,7 @@ class ActionPlaybookTests(unittest.TestCase):
 
     def test_committed_catalog_is_valid_and_action_limited(self) -> None:
         VALIDATOR.validate_playbooks(self.playbooks, self.cards, self.claims)
-        self.assertGreaterEqual(len(self.playbooks), 6)
+        self.assertGreaterEqual(len(self.playbooks), 7)
         for playbook in self.playbooks:
             self.assertLessEqual(len(playbook["actions"]), 3)
             self.assertTrue({"evidence-supported", "bounded-experiment", "framework-inference"} & {
@@ -46,6 +46,7 @@ class ActionPlaybookTests(unittest.TestCase):
             "总被手机打断 无法专注 工作分心": "protect-one-focus-block",
             "我久坐很久，看到很多 Huberman 运动协议反而不知道怎么开始。给我一个简单方案。": "start-exercise-without-protocol-overload",
             "我总点外卖、吃零食，但不想算卡路里。按 Huberman 视角帮我先做一个改变。": "improve-food-environment-first",
+            "Huberman讲了很多补剂和健康协议，我怎么判断一个值不值得试？": "decide-whether-to-try-one-health-protocol",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -81,6 +82,25 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("不能承诺个人海马增长", exercise)
         self.assertIn("不要直接跳过进食", food)
         self.assertIn("不要把 20 人短期住院结果", food)
+
+    def test_health_protocol_decision_separates_evidence_risk_and_care(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        decision = by_id["decide-whether-to-try-one-health-protocol"]
+        self.assertIn("代理指标", decision["safe_summary"])
+        self.assertIn("主要阴性结果", decision["safe_summary"])
+        self.assertIn("低风险、可逆", decision["safe_summary"])
+        self.assertIn("不推荐购买或给补剂剂量", decision["safe_summary"])
+        self.assertIn("医生或药师", decision["safe_summary"])
+        self.assertIn("不能证明疾病疗效或长期安全", decision["safe_summary"])
+        self.assertEqual(
+            {link["review_id"] for link in decision["evidence_links"]},
+            {"volkow-2015-caffeine-pet", "hazlett-2021-gratitude-rct", "jazayeri-2008-epa-fluoxetine-mdd"},
+        )
+        self.assertTrue(all("剂量" not in action["action"] for action in decision["actions"]))
+        skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+        self.assertIn("先过医学安全门", skill)
+        self.assertIn("不得让个人实验延迟照护", skill)
+        self.assertIn("不改写成四步以上检查清单", skill)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)
