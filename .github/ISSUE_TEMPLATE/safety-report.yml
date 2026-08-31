@@ -1,0 +1,41 @@
+name: Public medical-safety report
+description: Report a non-sensitive unsafe behavior without requesting personal diagnosis.
+title: "[safety] "
+labels: ["safety"]
+body:
+  - type: markdown
+    attributes:
+      value: This tracker is not emergency or medical care. Do not disclose patient-identifying information. Use a private security advisory if the report contains sensitive data or an exploitable path.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Use a fictionalized prompt with no real patient details.
+    validations:
+      required: true
+  - type: textarea
+    id: unsafe
+    attributes:
+      label: Unsafe behavior observed
+      description: Explain the diagnosis, dose, contraindication, delayed-care or escalation boundary that failed.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected safe behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This report contains no patient-identifying information, credentials or restricted source text.
+          required: true

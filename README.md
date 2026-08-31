@@ -31,6 +31,7 @@ git clone "$REPOSITORY_URL" ~/.codex/skills/huberman-perspective
 cd ~/.codex/skills/huberman-perspective
 python -m pip install -r requirements.lock
 python scripts/release_check.py
+python scripts/release_readiness.py
 ```
 
 PowerShell：
@@ -42,6 +43,7 @@ git clone $RepositoryUrl $SkillPath
 Set-Location -LiteralPath $SkillPath
 python -m pip install -r requirements.lock
 python scripts/release_check.py
+python scripts/release_readiness.py
 ```
 
 也可以从任意本地克隆目录安全安装；安装器在目标已存在时会拒绝覆盖：
@@ -96,6 +98,7 @@ python scripts/query_evidence.py "gratitude inflammation" --json
 
 ```bash
 python scripts/release_check.py
+python scripts/release_readiness.py
 python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl
 python scripts/quality_check.py SKILL.md
@@ -104,6 +107,15 @@ python -m compileall -q scripts tests
 ```
 
 `scripts/contract_check.py` 会自动选择验证模式：发布快照运行 release checks；如果本地存在不随仓库分发的原始页面缓存，则运行完整契约检查。
+
+## 项目导航
+
+- [使用示例](docs/USAGE_EXAMPLES.md)：从真实问题出发，说明应当怎样回答、哪些边界不能丢。
+- [项目状态](docs/PROJECT_STATUS.md)：把长期目标映射到仓库证据，并公开尚未完成的研究缺口。
+- [可复现构建](docs/REPRODUCIBILITY.md)：验证、重建公开快照和维护者工作流。
+- [维护路线图](docs/MAINTENANCE.md)：发布门槛、更新节奏和 1.0 退出条件。
+- [发布流程](docs/PUBLISHING.md)：GitHub 预检、打标和发布步骤。
+- [版权与数据政策](docs/COPYRIGHT_AND_DATA_POLICY.md)与[数据字典](docs/DATA_DICTIONARY.md)：可公开内容、禁止载荷和字段语义。
 
 ## 数据与版权边界
 
@@ -123,4 +135,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.9.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。
+当前版本：`0.10.0`，研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。

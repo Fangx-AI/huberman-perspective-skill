@@ -15,6 +15,8 @@ Contributions are welcome when they improve traceability, evidence quality, safe
 9. Action playbooks must solve one observable user goal with one to three actions. Each action needs a classification, trigger, minimum version, metric, review interval, adaptation and stop conditions; each playbook must link reviewed study evidence and public claim context.
 10. Do not turn framework inferences or low-risk experiments into validated prescriptions. Preserve exclusions, escalation conditions and dose/timing uncertainty, especially for sleep, supplements, mental health and clinical topics.
 
+Use the GitHub **Evidence correction** issue form for source, interpretation or provenance errors. Use **Safety report** for unsafe behavior, but do not post patient information, credentials, copyrighted payloads or exploit details publicly; sensitive reports belong in a private security advisory.
+
 ## Evidence contribution template
 
 Include the following in the pull request description:
@@ -44,6 +46,7 @@ Include the following in the pull request description:
 
 ```bash
 python scripts/release_check.py
+python scripts/release_readiness.py
 python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl
 python scripts/quality_check.py SKILL.md

@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INSTALL_ITEMS = (
+    ".github",
     "SKILL.md",
     "agents",
     "scripts",

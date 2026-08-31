@@ -7,6 +7,7 @@ From a clean clone:
 ```bash
 python -m pip install -r requirements.lock
 python scripts/release_check.py
+python scripts/release_readiness.py
 python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl
 python scripts/quality_check.py SKILL.md

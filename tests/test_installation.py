@@ -26,7 +26,10 @@ class CleanInstallationTests(unittest.TestCase):
             )
             for relative in (
                 "SKILL.md",
+                ".github/ISSUE_TEMPLATE/evidence-correction.yml",
+                "docs/USAGE_EXAMPLES.md",
                 "references/catalog/action-playbooks.jsonl",
+                "scripts/release_readiness.py",
                 "scripts/query_action_playbooks.py",
                 "scripts/validate_action_playbooks.py",
                 "tests/test_action_playbooks.py",
@@ -40,6 +43,14 @@ class CleanInstallationTests(unittest.TestCase):
                 text=True,
             )
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            readiness = subprocess.run(
+                [sys.executable, str(destination / "scripts" / "release_readiness.py")],
+                cwd=destination,
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(readiness.returncode, 0, readiness.stdout + readiness.stderr)
 
 
 if __name__ == "__main__":

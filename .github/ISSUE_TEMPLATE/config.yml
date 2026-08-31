@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive security or safety report
+    url: https://github.com/Fangx-AI/huberman-perspective-skill/security/advisories/new
+    about: Privately report secrets, private data, exploitable behavior or sensitive safety issues.

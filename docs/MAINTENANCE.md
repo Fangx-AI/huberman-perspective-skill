@@ -18,10 +18,21 @@
 
 ## Roadmap
 
-- `0.1.x`: public-repository hardening, rights review, schema stabilization and bug fixes.
-- `0.2.x`: expand structured study cards and research-level academic coverage without transcript redistribution.
-- `0.3.x`: expand outcome-level links into explicit replication/contradiction reviews and add automated link-rot reports.
-- `1.0.0`: stable schemas, repeatable update cadence, independent behavior evaluation and documented maintainer succession.
+- `0.10.x`: finish public-repository navigation, stranger-facing examples, machine-checkable release readiness and the first verified GitHub release.
+- `0.11.x`: add reviewed evidence clusters and outcome-first scenarios across every priority domain without inflating protocol count.
+- `0.12.x`: automate official-catalog, link, release-manifest and dependency drift reports with a documented maintainer response path.
+- `0.x`: continue promoting high-reuse sources from bibliographic identity to structured study cards, preserving null results, contradictions and external-validity limits.
+
+## 1.0 exit criteria
+
+Version `1.0.0` requires all of the following, not merely a larger catalog:
+
+1. Sleep, focus, learning, behavior change, exercise, nutrition and health decisions each have a reviewed evidence cluster with direct human evidence, an external synthesis or qualification and a user-facing boundary.
+2. Every action playbook passes at least one independent realistic black-box case and has no unresolved high-severity safety regression.
+3. The highest-reuse academic sources are either structured study cards or explicitly triaged as unable to support action.
+4. Catalog, link and release-manifest drift are automatically reported and have a documented response process.
+5. A clean public clone installs and validates on supported Python versions, and an independent second maintainer can execute a release using only repository documentation.
+6. A fresh copyright, trademark, publicity-right and platform-term review records residual risks; public availability is never treated as legal clearance.
 
 ## Deprecation
 

@@ -1,0 +1,56 @@
+name: Evidence or source correction
+description: Correct a source locator, study card, evidence relation or bounded interpretation.
+title: "[evidence] "
+labels: ["evidence"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste full transcripts, Show Notes, paper text, paywalled material or personal medical data.
+  - type: dropdown
+    id: artifact
+    attributes:
+      label: Artifact type
+      options:
+        - Source locator or platform mapping
+        - Academic verification queue
+        - Structured study card
+        - Study-to-study relation
+        - Action playbook
+        - Knowledge graph or manifest
+    validations:
+      required: true
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or repository path
+      placeholder: review_id, claim_id, relation_id, playbook_id or path
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Use neutral language and distinguish source fact from your interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Canonical provenance
+      description: Provide primary URLs and timestamp, page, DOI, PMID or PMCID locators when available.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Limits and safety impact
+      description: Include null findings, population limits, conflicts and any medical-safety change.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy check
+      options:
+        - label: I have not included restricted source payloads, credentials or personal medical information.
+          required: true

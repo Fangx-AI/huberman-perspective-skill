@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.10.0] - 2026-08-31
+
+### Added
+
+- Added stranger-facing usage examples for all six outcome-first playbooks, evidence-only questions, framework inferences and personal-health boundaries.
+- Added a project completion audit that maps the long-term objective to authoritative repository artifacts and explicitly records the 1,063 pending academic URLs and partial structured-card coverage.
+- Added a machine-checkable release-readiness gate, publication runbook, evidence-correction and safety issue forms, and a provenance-aware pull-request template.
+
+### Changed
+
+- Replaced the stale early-version roadmap with measurable 0.10–1.0 milestones, including independent black-box evaluation, drift automation and second-maintainer release criteria.
+- Routed README, contribution, reproducibility and CI flows through the new release-readiness gate.
+- Added canonical repository metadata while preserving the unofficial, research-preview and non-medical boundaries.
+
 ## [0.9.0] - 2026-08-31
 
 ### Added
