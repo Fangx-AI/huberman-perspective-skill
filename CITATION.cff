@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this research skill, cite the software and the underlying primary sources for substantive claims."
+title: "Huberman Perspective Skill"
+version: "0.1.0"
+date-released: 2026-08-31
+type: software
+license: MIT
+authors:
+  - name: "Huberman Perspective Skill contributors"
+keywords:
+  - neuroscience
+  - evidence synthesis
+  - Codex skill
+  - health communication
+abstract: "An independent Chinese-first evidence-indexing Codex Skill for source-aware analysis of public Huberman Lab claims and related research."

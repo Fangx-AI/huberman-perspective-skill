@@ -1,0 +1,7 @@
+interface:
+  display_name: "Huberman Perspective"
+  short_description: "用可追溯证据分析 Huberman Lab 相关健康与行为问题"
+  default_prompt: "Use $huberman-perspective to analyze this question with source levels, practical boundaries, and medical safety caveats."
+
+policy:
+  allow_implicit_invocation: false

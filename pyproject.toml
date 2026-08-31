@@ -1,0 +1,15 @@
+[project]
+name = "huberman-perspective-skill"
+version = "0.1.0"
+description = "Independent, source-aware Chinese Codex Skill for Huberman Lab related evidence analysis"
+requires-python = ">=3.11"
+dependencies = [
+  "lxml==6.0.2",
+]
+
+[tool.unittest]
+start-directory = "tests"
+
+[tool.release]
+raw-cache-policy = "local-only"
+invocation-policy = "explicit-only"

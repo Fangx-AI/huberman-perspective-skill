@@ -1,0 +1,2 @@
+# Exact runtime dependency used by scripts/collect_publications.py.
+lxml==6.0.2

@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+
+# Local-only source caches; never publish these payloads.
+work/
+cache/
+raw/
+transcripts/
+captions/
+*.srt
+*.vtt
+*.mp3
+*.wav
+*.mp4
+references/catalog/episode-pages.jsonl
+references/catalog/episode-resources.csv
+references/catalog/raw-*.json*
+references/research/batch-02-transcript-analysis.md
+references/research/sample-transcript-analysis.md
+
+# Installer/CI smoke output.
+.tmp-install/

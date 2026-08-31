@@ -1,0 +1,128 @@
+{
+  "counts": {
+    "academic_resource_nodes": 748,
+    "bilibili_nodes": 34,
+    "claim_nodes": 40,
+    "claims": 40,
+    "course_lecture_nodes": 8,
+    "edges": 8355,
+    "episode_nodes": 425,
+    "episodes": 425,
+    "resource_nodes": 6020,
+    "top_topics": [
+      {
+        "count": 58,
+        "label": "General Health",
+        "url": "https://www.hubermanlab.com/topics/general-health"
+      },
+      {
+        "count": 51,
+        "label": "Mental Health",
+        "url": "https://www.hubermanlab.com/topics/mental-health"
+      },
+      {
+        "count": 45,
+        "label": "Emotional Intelligence And Relationships",
+        "url": "https://www.hubermanlab.com/topics/emotional-intelligence-and-relationships"
+      },
+      {
+        "count": 35,
+        "label": "Diet And Nutrition",
+        "url": "https://www.hubermanlab.com/topics/diet-and-nutrition"
+      },
+      {
+        "count": 32,
+        "label": "Fitness And Workout Routines",
+        "url": "https://www.hubermanlab.com/topics/fitness-and-workout-routines"
+      },
+      {
+        "count": 31,
+        "label": "Hormone Health",
+        "url": "https://www.hubermanlab.com/topics/hormone-health"
+      },
+      {
+        "count": 30,
+        "label": "Happiness And Wellbeing",
+        "url": "https://www.hubermanlab.com/topics/happiness-and-wellbeing"
+      },
+      {
+        "count": 30,
+        "label": "Memory And Learning",
+        "url": "https://www.hubermanlab.com/topics/memory-and-learning"
+      },
+      {
+        "count": 25,
+        "label": "Brain And Neuroplasticity",
+        "url": "https://www.hubermanlab.com/topics/brain-and-neuroplasticity"
+      },
+      {
+        "count": 22,
+        "label": "Aging And Longevity",
+        "url": "https://www.hubermanlab.com/topics/aging-and-longevity"
+      },
+      {
+        "count": 20,
+        "label": "Sleep Hygiene",
+        "url": "https://www.hubermanlab.com/topics/sleep-hygiene"
+      },
+      {
+        "count": 18,
+        "label": "Society And Technology",
+        "url": "https://www.hubermanlab.com/topics/society-and-technology"
+      },
+      {
+        "count": 18,
+        "label": "Light Exposure And Circadian Rhythm",
+        "url": "https://www.hubermanlab.com/topics/light-exposure-and-circadian-rhythm"
+      },
+      {
+        "count": 16,
+        "label": "Daily Routines",
+        "url": "https://www.hubermanlab.com/topics/daily-routines"
+      },
+      {
+        "count": 15,
+        "label": "Focus And Concentration",
+        "url": "https://www.hubermanlab.com/topics/focus-and-concentration"
+      },
+      {
+        "count": 15,
+        "label": "Goals And Habits",
+        "url": "https://www.hubermanlab.com/topics/goals-and-habits"
+      },
+      {
+        "count": 15,
+        "label": "Creativity",
+        "url": "https://www.hubermanlab.com/topics/creativity"
+      },
+      {
+        "count": 15,
+        "label": "Regulate Your Nervous System",
+        "url": "https://www.hubermanlab.com/topics/regulate-your-nervous-system"
+      },
+      {
+        "count": 12,
+        "label": "Supplementation",
+        "url": "https://www.hubermanlab.com/topics/supplementation"
+      },
+      {
+        "count": 12,
+        "label": "Motivation And Willpower",
+        "url": "https://www.hubermanlab.com/topics/motivation-and-willpower"
+      }
+    ],
+    "topic_nodes": 29,
+    "verified_academic_resource_nodes": 247,
+    "video_urls": 8,
+    "youtube_nodes": 424
+  },
+  "generated_at": "2026-08-31T01:09:23.960871+00:00",
+  "raw_payloads_included": false,
+  "schema": "public-release-manifest-v1",
+  "sha256": {
+    "claim-index.jsonl": "34291a1ec0dbcebcccebde8e6ce5e2a3a24a7914035d6346e6d85bfdc0bade0d",
+    "episodes.csv": "1f0204093ca0080e46b01c117a8ab5f413e83fa837de59ce5d8f8f71184cd039",
+    "knowledge-graph.json": "dc29d085f333e98ac2b7f4737367e300de274136ecc3ebed256b9c1d480d7b34",
+    "video-urls.csv": "54d0f495f54e1af0bcb1ae22488eee73d7f784ce37d458d9d168193593aec0d9"
+  }
+}

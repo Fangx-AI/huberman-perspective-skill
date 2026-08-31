@@ -1,0 +1,5353 @@
+{
+  "generated_at": "2026-08-30T21:30:14.977833+00:00",
+  "record_count": 425,
+  "theme_counts": [
+    {
+      "theme": "vision-neuroscience",
+      "episode_count": 374
+    },
+    {
+      "theme": "sleep-circadian",
+      "episode_count": 282
+    },
+    {
+      "theme": "stress-emotions",
+      "episode_count": 272
+    },
+    {
+      "theme": "learning-memory",
+      "episode_count": 261
+    },
+    {
+      "theme": "exercise-recovery",
+      "episode_count": 239
+    },
+    {
+      "theme": "motivation-goals",
+      "episode_count": 233
+    },
+    {
+      "theme": "supplements-drugs",
+      "episode_count": 207
+    },
+    {
+      "theme": "focus-attention",
+      "episode_count": 199
+    },
+    {
+      "theme": "nutrition-metabolism",
+      "episode_count": 187
+    },
+    {
+      "theme": "hormones-sexual-health",
+      "episode_count": 157
+    },
+    {
+      "theme": "breath-meditation-nsdr",
+      "episode_count": 138
+    }
+  ],
+  "theme_cooccurrences": [
+    {
+      "pair": "sleep-circadian__vision-neuroscience",
+      "episode_count": 260
+    },
+    {
+      "pair": "stress-emotions__vision-neuroscience",
+      "episode_count": 253
+    },
+    {
+      "pair": "learning-memory__vision-neuroscience",
+      "episode_count": 241
+    },
+    {
+      "pair": "exercise-recovery__vision-neuroscience",
+      "episode_count": 210
+    },
+    {
+      "pair": "motivation-goals__vision-neuroscience",
+      "episode_count": 210
+    },
+    {
+      "pair": "sleep-circadian__stress-emotions",
+      "episode_count": 190
+    },
+    {
+      "pair": "learning-memory__sleep-circadian",
+      "episode_count": 189
+    },
+    {
+      "pair": "supplements-drugs__vision-neuroscience",
+      "episode_count": 189
+    },
+    {
+      "pair": "focus-attention__vision-neuroscience",
+      "episode_count": 184
+    },
+    {
+      "pair": "learning-memory__stress-emotions",
+      "episode_count": 179
+    },
+    {
+      "pair": "exercise-recovery__sleep-circadian",
+      "episode_count": 173
+    },
+    {
+      "pair": "nutrition-metabolism__vision-neuroscience",
+      "episode_count": 171
+    },
+    {
+      "pair": "motivation-goals__stress-emotions",
+      "episode_count": 157
+    },
+    {
+      "pair": "exercise-recovery__stress-emotions",
+      "episode_count": 156
+    },
+    {
+      "pair": "sleep-circadian__supplements-drugs",
+      "episode_count": 152
+    },
+    {
+      "pair": "motivation-goals__sleep-circadian",
+      "episode_count": 151
+    },
+    {
+      "pair": "learning-memory__motivation-goals",
+      "episode_count": 145
+    },
+    {
+      "pair": "exercise-recovery__motivation-goals",
+      "episode_count": 143
+    },
+    {
+      "pair": "hormones-sexual-health__vision-neuroscience",
+      "episode_count": 140
+    },
+    {
+      "pair": "focus-attention__sleep-circadian",
+      "episode_count": 140
+    },
+    {
+      "pair": "exercise-recovery__learning-memory",
+      "episode_count": 139
+    },
+    {
+      "pair": "focus-attention__learning-memory",
+      "episode_count": 139
+    },
+    {
+      "pair": "nutrition-metabolism__sleep-circadian",
+      "episode_count": 135
+    },
+    {
+      "pair": "exercise-recovery__supplements-drugs",
+      "episode_count": 131
+    },
+    {
+      "pair": "focus-attention__stress-emotions",
+      "episode_count": 129
+    },
+    {
+      "pair": "breath-meditation-nsdr__vision-neuroscience",
+      "episode_count": 128
+    },
+    {
+      "pair": "exercise-recovery__nutrition-metabolism",
+      "episode_count": 127
+    },
+    {
+      "pair": "nutrition-metabolism__supplements-drugs",
+      "episode_count": 127
+    },
+    {
+      "pair": "learning-memory__supplements-drugs",
+      "episode_count": 124
+    },
+    {
+      "pair": "focus-attention__motivation-goals",
+      "episode_count": 123
+    },
+    {
+      "pair": "nutrition-metabolism__stress-emotions",
+      "episode_count": 121
+    },
+    {
+      "pair": "stress-emotions__supplements-drugs",
+      "episode_count": 121
+    },
+    {
+      "pair": "exercise-recovery__focus-attention",
+      "episode_count": 117
+    },
+    {
+      "pair": "motivation-goals__supplements-drugs",
+      "episode_count": 115
+    },
+    {
+      "pair": "hormones-sexual-health__sleep-circadian",
+      "episode_count": 113
+    },
+    {
+      "pair": "breath-meditation-nsdr__stress-emotions",
+      "episode_count": 107
+    },
+    {
+      "pair": "breath-meditation-nsdr__sleep-circadian",
+      "episode_count": 105
+    },
+    {
+      "pair": "learning-memory__nutrition-metabolism",
+      "episode_count": 104
+    },
+    {
+      "pair": "focus-attention__supplements-drugs",
+      "episode_count": 103
+    },
+    {
+      "pair": "hormones-sexual-health__stress-emotions",
+      "episode_count": 102
+    },
+    {
+      "pair": "motivation-goals__nutrition-metabolism",
+      "episode_count": 98
+    },
+    {
+      "pair": "hormones-sexual-health__supplements-drugs",
+      "episode_count": 96
+    },
+    {
+      "pair": "hormones-sexual-health__nutrition-metabolism",
+      "episode_count": 95
+    },
+    {
+      "pair": "breath-meditation-nsdr__learning-memory",
+      "episode_count": 95
+    },
+    {
+      "pair": "exercise-recovery__hormones-sexual-health",
+      "episode_count": 93
+    },
+    {
+      "pair": "breath-meditation-nsdr__exercise-recovery",
+      "episode_count": 89
+    },
+    {
+      "pair": "hormones-sexual-health__learning-memory",
+      "episode_count": 88
+    },
+    {
+      "pair": "hormones-sexual-health__motivation-goals",
+      "episode_count": 83
+    },
+    {
+      "pair": "focus-attention__nutrition-metabolism",
+      "episode_count": 82
+    },
+    {
+      "pair": "breath-meditation-nsdr__motivation-goals",
+      "episode_count": 80
+    }
+  ],
+  "episode_theme_assignments": [
+    {
+      "episode_id": "a-science-supported-journaling-protocol-to-improve-mental-physical-health",
+      "title": "A Science-Supported Journaling Protocol to Improve Mental & Physical Health",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "accelerate-learning-and-increase-cognitive-capacity-tommy-wood",
+      "title": "Accelerate Learning & Increase Cognitive Capacity | Dr. Tommy Wood",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "adderall-stimulants-and-modafinil-for-adhd-short-and-long-term-effects",
+      "title": "Adderall, Stimulants & Modafinil for ADHD: Short- & Long-Term Effects",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "adhd-and-how-anyone-can-improve-their-focus",
+      "title": "ADHD & How Anyone Can Improve Their Focus",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-1-leveraging-ultradian-cycles-how-to-protect-your-brain-seed-oils-examined-and-more",
+      "title": "AMA #1: Leveraging Ultradian Cycles, How to Protect Your Brain, Seed Oils Examined and More",
+      "themes": [
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-10-benefits-of-nature-grounding-hearing-loss-research-avoiding-altitude-sickness",
+      "title": "AMA #10: Benefits of Nature & “Grounding,\" Hearing Loss Research & Avoiding Altitude Sickness",
+      "themes": []
+    },
+    {
+      "episode_id": "ama-11-improve-task-switching-productivity-and-brain-fog",
+      "title": "AMA #11: Improve Task Switching & Productivity and Reduce Brain Fog",
+      "themes": [
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-12-thoughts-on-longevity-supplements-how-to-improve-memory",
+      "title": "AMA #12: Thoughts on Longevity Supplements (Resveratrol, NR, NMN, Etc.) & How to Improve Memory",
+      "themes": [
+        "learning-memory",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "ama-13-winter-months-sickness-wim-hof-breathing-stressors",
+      "title": "AMA #13: Winter Months & Sickness, Wim Hof Breathing & Stressors",
+      "themes": [
+        "breath-meditation-nsdr",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "ama-14-2023-philanthropy-evening-routine-light-therapy-health-metrics-more",
+      "title": "AMA #14: 2023 Philanthropy, Evening Routine, Light Therapy, Health Metrics & More",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-15-fluoride-benefits-risks-vagus-nerve-stimulation",
+      "title": "AMA #15: Fluoride Benefits/Risks & Vagus Nerve Stimulation",
+      "themes": [
+        "learning-memory",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-16-sleep-vertigo-tbi-ocd-tips-for-travelers-gut-brain-axis-more",
+      "title": "AMA #16: Sleep, Vertigo, TBI, OCD, Tips for Travelers, Gut-Brain Axis & More",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-17-making-time-for-fitness-top-sleep-tools-best-learning-strategies",
+      "title": "AMA #17: Making Time for Fitness, Top Sleep Tools & Best Learning Strategies",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-18-cold-therapy-advice-skin-health-tips-motivation-learning-strategies-more",
+      "title": "AMA #18: Cold Therapy Advice, Skin Health Tips, Motivation, Learning Strategies & More",
+      "themes": [
+        "learning-memory",
+        "motivation-goals"
+      ]
+    },
+    {
+      "episode_id": "ama-19-collagen-vs-whey-protein-creatine-smelling-salts-stimulants",
+      "title": "AMA #19: Collagen vs. Whey Protein, Creatine, Smelling Salts, Stimulants & More",
+      "themes": [
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ama-2-improve-sleep-reduce-sugar-cravings-optimal-protein-intake-stretching-frequency-more",
+      "title": "AMA #2: Improve Sleep, Reduce Sugar Cravings, Optimal Protein Intake, Stretching Frequency & More",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-3-adaptogens-fasting-fertility-bluetooth-emf-risks-cognitive-load-limits-more",
+      "title": "AMA #3: Adaptogens, Fasting & Fertility, Bluetooth/EMF Risks, Cognitive Load Limits & More",
+      "themes": [
+        "hormones-sexual-health"
+      ]
+    },
+    {
+      "episode_id": "ama-4-maintain-motivation-improve-rem-sleep-set-goals-manage-anxiety-more",
+      "title": "AMA #4: Maintain Motivation, Improve REM Sleep, Set Goals, Manage Anxiety & More",
+      "themes": [
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "ama-5-intrusive-thoughts-cgms-behavioral-change-naps-nsdr",
+      "title": "AMA #5: Intrusive Thoughts, CGMs, Behavioral Change, Naps & NSDR",
+      "themes": [
+        "breath-meditation-nsdr",
+        "motivation-goals",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-6-eye-health-why-we-yawn-increasing-motivation",
+      "title": "AMA #6: Eye Health, Why We Yawn & Increasing Motivation",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-7-cold-exposure-maximizing-rem-sleep-my-next-scientific-studies",
+      "title": "AMA #7: Cold Exposure, Maximizing REM Sleep & My Next Scientific Studies",
+      "themes": [
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "ama-8-balancing-caffeine-decision-fatigue-social-isolation",
+      "title": "AMA #8: Balancing Caffeine, Decision Fatigue & Social Isolation",
+      "themes": [
+        "nutrition-metabolism",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "ama-9-kratom-risks-does-infrared-sauna-work-journaling-benefits",
+      "title": "AMA #9: Kratom Risks, Does Infrared Sauna Work & Journaling Benefits",
+      "themes": [
+        "motivation-goals"
+      ]
+    },
+    {
+      "episode_id": "ari-wallach-create-your-ideal-future-using-science-based-protocols",
+      "title": "Ari Wallach: Create Your Ideal Future Using Science-Based Protocols",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "asi-wind-what-magic-mind-reading-reveal-about-the-brain",
+      "title": "Asi Wind: What Magic & Mind Reading Reveal About the Brain",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "avoiding-treating-and-curing-cancer-with-the-immune-system-alex-marson",
+      "title": "Avoiding, Treating & Curing Cancer With the Immune System | Dr. Alex Marson",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "behaviors-that-alter-your-genes-to-improve-your-health-performance-dr-melissa-ilardo",
+      "title": "Behaviors That Alter Your Genes to Improve Your Health & Performance | Dr. Melissa Ilardo",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "benefits-risks-of-peptide-therapeutics-for-physical-mental-health",
+      "title": "Benefits & Risks of Peptide Therapeutics for Physical & Mental Health",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "best-ways-to-build-better-habits-and-break-bad-ones-james-clear",
+      "title": "Best Ways to Build Better Habits & Break Bad Ones | James Clear",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "bill-eddy-how-to-deal-with-high-conflict-people",
+      "title": "Bill Eddy: How to Deal With High Conflict People",
+      "themes": [
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "biological-influences-on-sex-sex-differences-and-preferences",
+      "title": "How Hormones Shape Sexual Development",
+      "themes": [
+        "breath-meditation-nsdr",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "build-ideal-physique-bret-contreras",
+      "title": "Build Your Ideal Physique | Dr. Bret Contreras",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "build-muscle-and-strength-and-forge-your-life-path-dorian-yates",
+      "title": "Build Muscle & Strength & Forge Your Life Path | Dorian Yates",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "build-muscle-great-posture-and-resilience-to-injury-jeff-cavaliere",
+      "title": "Build Muscle, Great Posture & Resilience to Injury | Jeff Cavaliere",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "chris-voss-how-to-succeed-at-hard-conversations",
+      "title": "Chris Voss: How to Succeed at Hard Conversations",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "coleman-ruiz-overcoming-physical-emotional-challenges",
+      "title": "Coleman Ruiz: Overcoming Physical & Emotional Challenges",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "contracts-of-love-money-that-make-or-break-relationships-james-sexton",
+      "title": "Contracts of Love & Money That Make or Break Relationships | James Sexton",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "control-pain-and-heal-faster-with-your-brain",
+      "title": "Control Pain & Heal Faster with Your Brain",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "control-your-vagus-nerve-to-improve-mood-alertness-neuroplasticity",
+      "title": "Control Your Vagus Nerve to Improve Mood, Alertness & Neuroplasticity",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "controlling-sugar-cravings-and-metabolism-with-science-based-tools",
+      "title": "Controlling Sugar Cravings & Metabolism with Science-Based Tools",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "controlling-your-dopamine-for-motivation-focus-and-satisfaction",
+      "title": "Controlling Your Dopamine For Motivation, Focus & Satisfaction",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "cultivating-awe-and-emotional-connection-dr-dacher-keltner",
+      "title": "Cultivating Awe & Emotional Connection in Daily Life | Dr. Dacher Keltner",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "david-fajgenbaum-using-drugs-treat-diseases-brain-body",
+      "title": "Using Existing Drugs in New Ways to Treat & Cure Diseases of Brain & Body | Dr. David Fajgenbaum",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "david-goggins-how-to-build-immense-inner-strength",
+      "title": "David Goggins: How to Build Immense Inner Strength",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "defining-healthy-masculinity-how-to-build-it-terry-real",
+      "title": "Defining Healthy Masculinity & How to Build It | Terry Real",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "developing-a-rational-approach-to-supplementation-for-health-and-performance",
+      "title": "Developing a Rational Approach to Supplementation for Health & Performance",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-adam-grant-how-to-unlock-your-potential-motivation-unique-abilities",
+      "title": "Dr. Adam Grant: How to Unlock Your Potential, Motivation & Unique Abilities",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-alia-crum-science-of-mindsets-for-health-performance",
+      "title": "Dr. Alia Crum: Science of Mindsets for Health & Performance",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "dr-allan-schore-how-relationships-shape-your-brain",
+      "title": "Dr. Allan Schore: How Relationships Shape Your Brain",
+      "themes": [
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-how-to-assess-improve-all-aspects-of-your-fitness",
+      "title": "Guest Series | Dr. Andy Galpin: How to Assess & Improve All Aspects of Your Fitness",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-how-to-build-physical-endurance-and-lose-fat",
+      "title": "Guest Series | Dr. Andy Galpin: How to Build Physical Endurance & Lose Fat",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-how-to-build-strength-muscle-size-and-endurance",
+      "title": "Dr. Andy Galpin: How to Build Strength, Muscle Size & Endurance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-optimal-nutrition-and-supplementation-for-fitness",
+      "title": "Guest Series | Dr. Andy Galpin: Optimal Nutrition & Supplementation for Fitness",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-optimal-protocols-to-build-strength-and-grow-muscles",
+      "title": "Guest Series | Dr. Andy Galpin: Optimal Protocols to Build Strength & Grow Muscles",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-andy-galpin-optimize-your-training-program-for-fitness-and-longevity",
+      "title": "Guest Series | Dr. Andy Galpin: Optimize Your Training Program for Fitness & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-anna-lembke-understanding-and-treating-addiction",
+      "title": "Dr. Anna Lembke: Understanding & Treating Addiction",
+      "themes": [
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-becky-kennedy-overcoming-guilt-building-tenacity-in-kids-adults",
+      "title": "Dr. Becky Kennedy: Overcoming Guilt & Building Tenacity in Kids & Adults",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-becky-kennedy-protocols-for-excellent-parenting-improving-relationships-of-all-kinds",
+      "title": "Dr. Becky Kennedy: Protocols for Excellent Parenting & Improving Relationships of All Kinds",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-bernardo-huberman-how-to-use-curiosity-focus-to-create-a-joyful-meaningful-life",
+      "title": "Dr. Bernardo Huberman: How to Use Curiosity & Focus to Create a Joyful & Meaningful Life",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-bonnie-halpern-felsher-vaping-alcohol-use-other-risky-youth-behaviors",
+      "title": "Dr. Bonnie Halpern-Felsher: Vaping, Alcohol Use & Other Risky Youth Behaviors",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-brian-keating-charting-the-architecture-of-the-universe-human-life",
+      "title": "Dr. Brian Keating: Charting the Architecture of the Universe & Human Life",
+      "themes": [
+        "focus-attention",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-cal-newport-how-to-enhance-focus-and-improve-productivity",
+      "title": "Dr. Cal Newport: How to Enhance Focus and Improve Productivity",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-casey-halpern-biology-and-treatments-for-compulsive-eating-and-behaviors",
+      "title": "Dr. Casey Halpern: Biology & Treatments for Compulsive Eating & Behaviors",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-casey-means-transform-your-health-by-improving-metabolism-hormone-blood-sugar-regulation",
+      "title": "Dr. Casey Means: Transform Your Health by Improving Metabolism, Hormone & Blood Sugar Regulation",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-charan-ranganath-how-to-improve-memory-focus-using-science-protocols",
+      "title": "Dr. Charan Ranganath: How to Improve Memory & Focus Using Science Protocols",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-charles-zuker-the-biology-of-taste-perception-and-sugar-craving",
+      "title": "Dr. Charles Zuker: The Biology of Taste Perception & Sugar Craving",
+      "themes": [
+        "focus-attention",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-chris-palmer-diet-nutrition-for-mental-health",
+      "title": "Dr. Chris Palmer: Diet & Nutrition for Mental Health",
+      "themes": [
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-craig-heller-using-temperature-for-performance-brain-and-body-health",
+      "title": "Dr. Craig Heller: Using Temperature for Performance, Brain & Body Health",
+      "themes": [
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-craig-koniver-peptide-hormone-therapies-for-health-performance-longevity",
+      "title": "Dr. Craig Koniver: Peptide & Hormone Therapies for Health, Performance & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-anderson-the-biology-of-aggression-mating-and-arousal",
+      "title": "Dr. David Anderson: The Biology of Aggression, Mating & Arousal",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-berson-your-brains-logic-and-function",
+      "title": "Dr. David Berson: Your Brain's Logic & Function",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-buss-how-humans-select-and-keep-romantic-partners-in-short-and-long-term",
+      "title": "Dr. David Buss: How Humans Select & Keep Romantic Partners in Short & Long Term",
+      "themes": [
+        "hormones-sexual-health",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "dr-david-linden-life-death-and-the-neuroscience-of-your-unique-experience",
+      "title": "Dr. David Linden: Life, Death & the Neuroscience of Your Unique Experience",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-sinclair-the-biology-of-slowing-and-reversing-aging",
+      "title": "Dr. David Sinclair: The Biology of Slowing & Reversing Aging",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-spiegel-using-hypnosis-to-enhance-mental-and-physical-health-and-performance",
+      "title": "Dr. David Spiegel: Using Hypnosis to Enhance Mental & Physical Health & Performance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-david-yeager-how-to-master-growth-mindset-to-improve-performance",
+      "title": "Dr. David Yeager: How to Master Growth Mindset to Improve Performance",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-diego-bohorquez-the-science-of-your-gut-sense-the-gut-brain-axis",
+      "title": "Dr. Diego Bohórquez: The Science of Your Gut Sense & the Gut-Brain Axis",
+      "themes": [
+        "breath-meditation-nsdr",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-duncan-french-how-to-exercise-for-strength-gains-and-hormone-optimization",
+      "title": "Dr. Duncan French: How to Exercise for Strength Gains & Hormone Optimization",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-eddie-chang-the-science-of-learning-and-speaking-languages",
+      "title": "Dr. Eddie Chang: The Science of Learning & Speaking Languages",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-ej-chichilnisky-how-the-brain-works-curing-blindness-how-to-navigate-a-career-path",
+      "title": "Dr. E.J. Chichilnisky: How the Brain Works, Curing Blindness & How to Navigate a Career Path",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-elissa-epel-control-stress-for-healthy-eating-metabolism-and-aging",
+      "title": "Dr. Elissa Epel: Control Stress for Healthy Eating, Metabolism & Aging",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-ellen-langer-using-your-mind-to-control-your-physical-health-longevity",
+      "title": "Dr. Ellen Langer: Using Your Mind to Control Your Physical Health & Longevity",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-emily-balcetis-tools-for-setting-and-achieving-goals",
+      "title": "Dr. Emily Balcetis: Tools for Setting & Achieving Goals",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-erich-jarvis-the-neuroscience-of-speech-language-and-music",
+      "title": "Dr. Erich Jarvis: The Neuroscience of Speech, Language & Music",
+      "themes": [
+        "learning-memory",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-ethan-kross-how-to-control-your-inner-voice-increase-your-resilience",
+      "title": "Dr. Ethan Kross: How to Control Your Inner Voice & Increase Your Resilience",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-gabrielle-lyon-how-to-exercise-eat-for-optimal-health-longevity",
+      "title": "Dr. Gabrielle Lyon: How to Exercise & Eat for Optimal Health & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-gary-steinberg-how-to-improve-brain-health-offset-neurodegeneration",
+      "title": "Dr. Gary Steinberg: How to Improve Brain Health & Offset Neurodegeneration",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-gina-poe-use-sleep-to-enhance-learning-memory-and-emotional-state",
+      "title": "Dr. Gina Poe: Use Sleep to Enhance Learning, Memory & Emotional State",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-immordino-yang-how-emotions-and-social-factors-impact-learning",
+      "title": "Dr. Immordino-Yang: How Emotions & Social Factors Impact Learning",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-jack-feldman-breathing-for-mental-physical-health-and-performance",
+      "title": "Dr. Jack Feldman: Breathing for Mental & Physical Health & Performance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-james-hollis-how-to-find-your-true-purpose-create-your-best-life",
+      "title": "Dr. James Hollis: How to Find Your True Purpose & Create Your Best Life",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-jamil-zaki-how-to-cultivate-a-positive-growth-oriented-mindset",
+      "title": "Dr. Jamil Zaki: How to Cultivate a Positive, Growth-Oriented Mindset",
+      "themes": [
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-jeffrey-goldberg-how-to-improve-your-eye-health-and-offset-vision-loss",
+      "title": "Dr. Jeffrey Goldberg: How to Improve Your Eye Health & Offset Vision Loss",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-jonathan-haidt-how-smartphones-social-media-impact-mental-health-the-realistic-solutions",
+      "title": "Dr. Jonathan Haidt: How Smartphones & Social Media Impact Mental Health & the Realistic Solutions",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-jordan-peterson-how-to-best-guide-your-life-decisions-path",
+      "title": "Dr. Jordan Peterson: How to Best Guide Your Life Decisions & Path",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-justin-sonnenburg-how-to-build-maintain-and-repair-gut-health",
+      "title": "Dr. Justin Sonnenburg: How to Build, Maintain & Repair Gut Health",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-karen-parker-the-causes-treatments-for-autism",
+      "title": "Dr. Karen Parker: The Causes & Treatments for Autism",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-kay-tye-the-biology-of-social-interactions-and-emotions",
+      "title": "Dr. Kay Tye: The Biology of Social Interactions and Emotions",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-kelly-starrett-how-to-improve-your-mobility-posture-flexibility",
+      "title": "Dr. Kelly Starrett: How to Improve Your Mobility, Posture & Flexibility",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-kyle-gillett-tools-for-hormone-optimization-in-males",
+      "title": "Dr. Kyle Gillett: Tools for Hormone Optimization in Males",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-laurie-santos-how-to-achieve-true-happiness-using-science-based-protocols",
+      "title": "Dr. Laurie Santos: How to Achieve True Happiness Using Science-Based Protocols",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-layne-norton-the-science-of-eating-for-health-fat-loss-and-lean-muscle",
+      "title": "Dr. Layne Norton: The Science of Eating for Health, Fat Loss & Lean Muscle",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-layne-norton-tools-for-nutrition-fitness",
+      "title": "Dr. Layne Norton: Tools for Nutrition & Fitness",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-lex-fridman-machines-creativity-and-love",
+      "title": "Dr. Lex Fridman: Machines, Creativity & Love",
+      "themes": [
+        "learning-memory"
+      ]
+    },
+    {
+      "episode_id": "dr-lex-fridman-navigating-conflict-finding-purpose-and-maintaining-drive",
+      "title": "Dr. Lex Fridman: Navigating Conflict, Finding Purpose & Maintaining Drive",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-lisa-feldman-barrett-how-to-understand-emotions",
+      "title": "Dr. Lisa Feldman Barrett: How to Understand Emotions",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-marc-brackett-how-to-increase-your-emotional-intelligence",
+      "title": "Dr. Marc Brackett: How to Increase Your Emotional Intelligence",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-mark-desposito-how-to-optimize-cognitive-function-brain-health",
+      "title": "Dr. Mark D'Esposito: How to Optimize Cognitive Function & Brain Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-martha-beck-accessing-your-best-self-with-mind-body-practices-belief-testing-imagination",
+      "title": "Dr. Martha Beck: Access Your Best Self With Mind-Body Practices, Belief Testing & Imagination",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-mary-claire-haver-how-to-navigate-menopause-perimenopause-for-maximum-health-vitality",
+      "title": "Dr. Mary Claire Haver: How to Navigate Menopause & Perimenopause for Maximum Health & Vitality",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-matthew-hill-how-cannabis-impacts-health-the-potential-risks",
+      "title": "Dr. Matthew Hill: How Cannabis Impacts Health & the Potential Risks",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-matthew-johnson-psychedelic-medicine",
+      "title": "Dr. Matthew Johnson: Psychedelic Medicine",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-matthew-macdougall-neuralink-and-technologies-to-enhance-human-brains",
+      "title": "Dr. Matthew MacDougall: Neuralink & Technologies to Enhance Human Brains",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-matthew-walker-the-science-and-practice-of-perfecting-your-sleep",
+      "title": "Dr. Matt Walker: The Science & Practice of Perfecting Your Sleep",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "dr-maya-shankar-how-to-shape-your-identity-and-goals",
+      "title": "Dr. Maya Shankar: How to Shape Your Identity & Goals",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-michael-eisenberg-improving-male-sexual-health-function-fertility",
+      "title": "Dr. Michael Eisenberg: Improving Male Sexual Health, Function & Fertility",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-natalie-crawford-female-hormone-health-fertility-vitality",
+      "title": "Dr. Natalie Crawford: Female Hormone Health, Fertility & Vitality",
+      "themes": [
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-noam-sobel-how-smells-influence-our-hormones-health-and-behavior",
+      "title": "Dr. Noam Sobel: How Smells Influence Our Hormones, Health & Behavior",
+      "themes": [
+        "breath-meditation-nsdr",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-nolan-williams-psychedelics-and-neurostimulation-for-brain-rewiring",
+      "title": "Dr. Nolan Williams: Psychedelics & Neurostimulation for Brain Rewiring",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-oded-rechavi-genes-and-the-inheritance-of-memories-across-generations",
+      "title": "Dr. Oded Rechavi: Genes & the Inheritance of Memories Across Generations",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-paul-conti-therapy-treating-trauma-and-other-life-challenges",
+      "title": "Dr. Paul Conti: Therapy, Treating Trauma & Other Life Challenges",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-peter-attia-exercise-nutrition-hormones-for-vitality-and-longevity",
+      "title": "Dr. Peter Attia: Exercise, Nutrition, Hormones for Vitality & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-peter-attia-improve-vitality-emotional-and-physical-health-and-lifespan",
+      "title": "Dr. Peter Attia: Improve Vitality, Emotional & Physical Health & Lifespan",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-peter-attia-supplements-for-longevity-their-efficacy",
+      "title": "Dr. Peter Attia: Supplements for Longevity & Their Efficacy",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-rena-improving-sexual-and-urological-health-in-males-and-females",
+      "title": "Dr. Rena Malik: Improving Sexual & Urological Health in Males and Females",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-rhonda-patrick-micronutrients-for-health-and-longevity",
+      "title": "Dr. Rhonda Patrick: Micronutrients for Health & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-robert-lustig-how-sugar-processed-foods-impact-your-health",
+      "title": "Dr. Robert Lustig: How Sugar & Processed Foods Impact Your Health",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-robert-malenka-how-your-brains-reward-circuits-drive-your-choices",
+      "title": "Dr. Robert Malenka: How Your Brain's Reward Circuits Drive Your Choices",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-robert-sapolsky-science-of-stress-testosterone-and-free-will",
+      "title": "Dr. Robert Sapolsky: Science of Stress, Testosterone & Free Will",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-robin-carhart-harris-the-science-of-psychedelics-for-mental-health",
+      "title": "Dr. Robin Carhart-Harris: The Science of Psychedelics for Mental Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-sam-harris-using-meditation-to-focus-view-consciousness-and-expand-your-mind",
+      "title": "Dr. Sam Harris: Using Meditation to Focus, View Consciousness & Expand Your Mind",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-samer-hattar-timing-light-food-exercise-for-better-sleep-energy-mood",
+      "title": "Dr. Samer Hattar: Timing Light, Food, & Exercise for Better Sleep, Energy & Mood",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "dr-sara-gottfried-how-to-optimize-female-hormone-health-for-vitality-and-longevity",
+      "title": "Dr. Sara Gottfried: How to Optimize Female Hormone Health for Vitality & Longevity",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-satchin-panda-intermittent-fasting-to-improve-health-cognition-and-longevity",
+      "title": "Dr. Satchin Panda: Intermittent Fasting to Improve Health, Cognition & Longevity",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-sean-mackey-tools-to-reduce-manage-pain",
+      "title": "Dr. Sean Mackey: Tools to Reduce & Manage Pain",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-shanna-swan-how-to-safeguard-your-hormone-health-fertility",
+      "title": "Dr. Shanna Swan: How to Safeguard Your Hormone Health & Fertility",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-stacy-sims-female-specific-exercise-nutrition-for-health-performance-longevity",
+      "title": "Dr. Stacy Sims: Female-Specific Exercise & Nutrition for Health, Performance & Longevity",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-stuart-mcgill-build-a-strong-pain-proof-back",
+      "title": "Dr. Stuart McGill: Build a Strong, Pain-Proof Back",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-susanna-soberg-how-to-use-cold-and-heat-exposure-to-improve-your-health",
+      "title": "Dr. Susanna Søberg: How to Use Cold & Heat Exposure to Improve Your Health",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-teo-soleymani-how-to-improve-protect-your-skin-health-appearance",
+      "title": "Dr. Teo Soleymani: How to Improve & Protect Your Skin Health & Appearance",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-terry-sejnowski-how-to-improve-at-learning-using-neuroscience-ai",
+      "title": "Dr. Terry Sejnowski: How to Improve at Learning Using Neuroscience & AI",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-victor-carrion-how-to-heal-from-post-traumatic-stress-disorder",
+      "title": "Dr. Victor Carrión: How to Heal From Post-Traumatic Stress Disorder (PTSD)",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-wendy-suzuki-boost-attention-and-memory-with-science-based-tools",
+      "title": "Dr. Wendy Suzuki: Boost Attention & Memory with Science-Based Tools",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "dr-zachary-knight-the-science-of-hunger-medications-to-combat-obesity",
+      "title": "Dr. Zachary Knight: The Science of Hunger & Medications to Combat Obesity",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "eating-for-better-sleep-and-foods-that-improve-metabolic-health-marie-pierre-st-onge",
+      "title": "Eating for Better Sleep & Foods that Improve Metabolic Health | Dr. Marie-Pierre St-Onge",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "effects-of-fasting-and-time-restricted-eating-on-fat-loss-and-health",
+      "title": "Effects of Fasting & Time Restricted Eating on Fat Loss & Health",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "enhance-learning-speed-neuroscience-poppy-crum",
+      "title": "Enhance Your Learning Speed & Health Using Neuroscience Based Protocols | Dr. Poppy Crum",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "erasing-fears-and-traumas-based-on-the-modern-neuroscience-of-fear",
+      "title": "Erasing Fears & Traumas Based on the Modern Neuroscience of Fear",
+      "themes": [
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-adhd-how-anyone-can-improve-their-focus",
+      "title": "Essentials: ADHD & How Anyone Can Improve Their Focus",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-benefits-of-sauna-and-deliberate-heat-exposure",
+      "title": "Essentials: Benefits of Sauna & Deliberate Heat Exposure",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-biology-slowing-reversing-aging-dr-david-sinclair",
+      "title": "Essentials: The Biology of Slowing & Reversing Aging | Dr. David Sinclair",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-boost-your-energy-immune-system-with-cortisol-adrenaline",
+      "title": "Essentials: Boost Your Energy & Immune System with Cortisol & Adrenaline",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-brain-functions-interprets-the-world-dr-david-berson",
+      "title": "Essentials: How Your Brain Functions & Interprets the World | Dr. David Berson",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-breathing-mental-physical-health-performance-jack-feldman",
+      "title": "Essentials: Breathing for Mental & Physical Health & Performance | Dr. Jack Feldman",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-build-maintain-repair-gut-health-justin-sonnenburg",
+      "title": "Essentials: How to Build, Maintain & Repair Gut Health | Dr. Justin Sonnenburg",
+      "themes": [
+        "learning-memory",
+        "nutrition-metabolism"
+      ]
+    },
+    {
+      "episode_id": "essentials-build-muscle-size-increase-strength-improve-recovery",
+      "title": "Essentials: Build Muscle Size, Increase Strength & Improve Recovery",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-compulsive-behaviors-deep-brain-stimulation-casey-halpern",
+      "title": "Essentials: Compulsive Behaviors & Deep Brain Stimulation | Dr. Casey Halpern",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-control-brain-chemistry-for-focus-motivation-and-well-being",
+      "title": "Essentials: Control Your Brain Chemistry for Focus, Motivation & Well-Being ",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-control-pain-heal-faster-with-your-brain",
+      "title": "Essentials: Control Pain & Heal Faster With Your Brain",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-control-sugar-cravings-and-metabolism-with-science-based-tools",
+      "title": "Essentials: Control Sugar Cravings & Metabolism with Science-Based Tools",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-controlling-your-dopamine-for-motivation-focus-satisfaction",
+      "title": "Essentials: Controlling Your Dopamine for Motivation, Focus & Satisfaction",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-diet-and-nutrition-for-mental-health-chris-palmer",
+      "title": "Essentials: Diet & Nutrition for Mental Health | Dr. Chris Palmer",
+      "themes": [
+        "nutrition-metabolism",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-effects-of-fasting-and-time-restricted-eating-on-fat-loss-and-health",
+      "title": "Essentials: Effects of Fasting & Time Restricted Eating on Fat Loss & Health",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-erasing-fears-traumas-using-modern-neuroscience",
+      "title": "Essentials: Erasing Fears & Traumas Using Modern Neuroscience",
+      "themes": [
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-exercise-strength-gains-hormone-optimization-duncan-french",
+      "title": "Essentials: How to Exercise for Strength Gains & Hormone Optimization | Dr. Duncan French",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-food-supplements-brain-health-cognitive-performance",
+      "title": "Essentials: Food & Supplements for Brain Health & Cognitive Performance",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-healthy-eating-and-eating-disorders-anorexia-bulimia-binging",
+      "title": "Essentials: Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-foods-nutrients-control-our-moods",
+      "title": "Essentials: How Foods & Nutrients Control Our Moods",
+      "themes": [
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-hearing-balance-enhance-focus-learning",
+      "title": "Essentials: How Hearing & Balance Enhance Focus & Learning",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-hormones-shape-sexual-development",
+      "title": "Essentials: How Hormones Shape Sexual Development",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-smell-taste-pheromones-shape-behavior",
+      "title": "Essentials: How Smell, Taste & Pheromones Shape Behavior",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-access-your-creativity-rick-rubin",
+      "title": "Essentials: How to Access Your Creativity | Rick Rubin",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-become-resilient-forge-your-identity-and-lead-others-jocko-willink",
+      "title": "Essentials: How to Become Resilient, Forge Your Identity & Lead Others | Jocko Willink",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-build-endurance",
+      "title": "Essentials: How to Build Endurance",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-build-strength-muscle-size-and-endurance-andy-galpin",
+      "title": "Essentials: How to Build Strength, Muscle Size & Endurance | Dr. Andy Galpin",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-control-hunger-eating-satiety",
+      "title": "Essentials: How to Control Hunger, Eating & Satiety",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-control-your-metabolism-by-thyroid-growth-hormone",
+      "title": "Essentials: How to Control Your Metabolism by Thyroid & Growth Hormone",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-control-your-sense-of-pain-pleasure",
+      "title": "Essentials: How to Control Your Sense of Pain & Pleasure",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-defeat-jet-lag-shift-work-sleeplessness",
+      "title": "Essentials: How to Defeat Jet Lag, Shift Work & Sleeplessness",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-focus-to-change-your-brain",
+      "title": "Essentials: How to Focus to Change Your Brain",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-increase-motivation-drive",
+      "title": "Essentials: How to Increase Motivation & Drive",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-learn-faster-by-using-failures-movement-balance",
+      "title": "Essentials: How to Learn Faster by Using Failures, Movement & Balance",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-learn-skills-faster",
+      "title": "Essentials: How to Learn Skills Faster",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-optimize-female-hormone-health-for-vitality-and-longevity-sara-gottfried",
+      "title": "Essentials: How to Optimize Female Hormone Health for Vitality & Longevity | Dr. Sara Gottfried",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-optimize-testosterone-estrogen",
+      "title": "Essentials: How to Optimize Testosterone & Estrogen",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-optimize-your-hormones-for-health-and-vitality-kyle-gillett",
+      "title": "Essentials: How to Optimize Your Hormones for Health & Vitality | Dr. Kyle Gillett",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-to-set-and-achieve-goals",
+      "title": "Essentials: How to Set & Achieve Goals",
+      "themes": [
+        "focus-attention",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-how-your-nervous-system-works-changes",
+      "title": "Essentials: How Your Brain Works & Changes",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-human-romantic-partner-selection-keep-david-buss",
+      "title": "Essentials: How Humans Select & Keep Romantic Partners in the Short & Long Term | Dr. David Buss",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-hypnosis-enhance-mental-physical-health-performance-david-spiegel",
+      "title": "Essentials: Using Hypnosis to Enhance Mental & Physical Health & Performance | Dr. David Spiegel",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-improve-flexibility-with-research-supported-stretching-protocols",
+      "title": "Essentials: Improve Flexibility with Research-Supported Stretching Protocols",
+      "themes": [
+        "exercise-recovery"
+      ]
+    },
+    {
+      "episode_id": "essentials-improving-health-with-stronger-brain-body-connection",
+      "title": "Essentials: Improving Health With Stronger Brain-Body Connection",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-increase-strength-endurance-with-cooling-protocols-dr-craig-heller",
+      "title": "Essentials: Increase Strength & Endurance with Cooling Protocols | Dr. Craig Heller",
+      "themes": [
+        "exercise-recovery",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-lose-fat-with-science-based-tools",
+      "title": "Essentials: Lose Fat With Science-Based Tools",
+      "themes": [
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-machines-creativity-love-dr-lex-fridman",
+      "title": "Essentials: Machines, Creativity & Love | Dr. Lex Fridman",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-master-your-sleep-be-more-alert-when-awake",
+      "title": "Essentials: Master Your Sleep & Be More Alert When Awake",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-maximize-productivity-physical-mental-health-with-daily-tools",
+      "title": "Essentials: Maximize Productivity, Physical & Mental Health With Daily Tools",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-micronutrients-for-health-and-longevity-rhonda-patrick",
+      "title": "Essentials: Micronutrients for Health & Longevity | Dr. Rhonda Patrick",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-nervous-system-immune-system",
+      "title": "Essentials: Using Your Nervous System to Enhance Your Immune System",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-optimize-your-exercise-program-with-science-based-tools-jeff-cavaliere",
+      "title": "Essentials: Optimize Your Exercise Program with Science-Based Tools | Jeff Cavaliere",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-optimize-your-learning-creativity-with-science-based-tools",
+      "title": "Essentials: Optimize Your Learning & Creativity With Science-Based Tools",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-optimizing-workspace-for-productivity-focus-and-creativity",
+      "title": "Essentials: Optimizing Workspace for Productivity, Focus & Creativity",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-protocols-to-improve-vision-eyesight",
+      "title": "Essentials: Protocols to Improve Vision & Eyesight",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-psychedelics-for-treating-mental-disorders-matthew-johnson",
+      "title": "Essentials: Psychedelics for Treating Mental Disorders | Dr. Matthew Johnson",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-psychedelics-neurostimulation-for-brain-rewiring-nolan-williams",
+      "title": "Essentials: Psychedelics & Neurostimulation for Brain Rewiring | Dr. Nolan Williams",
+      "themes": [
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-science-building-strong-social-bonds-family-friends-romantic-partners",
+      "title": "Essentials: Science of Building Strong Social Bonds with Family, Friends & Romantic Partners",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-science-mindsets-health-performance-alia-crum",
+      "title": "Essentials: Science of Mindsets for Health & Performance | Dr. Alia Crum",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-science-of-gratitude-practice",
+      "title": "Essentials: The Science of Gratitude & How to Build a Gratitude Practice",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-science-of-making-breaking-habits",
+      "title": "Essentials: The Science of Making & Breaking Habits",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-science-of-stress-testosterone-aggression-motivation-robert-sapolsky",
+      "title": "Essentials: Science of Stress, Testosterone, Aggression & Motivation | Dr. Robert Sapolsky",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-sleep-toolkit-for-optimizing-sleep-and-sleep-wake-timing",
+      "title": "Essentials: Sleep Toolkit for Optimizing Sleep & Sleep-Wake Timing",
+      "themes": [
+        "exercise-recovery",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-supercharge-exercise-performance-recovery-with-cooling",
+      "title": "Essentials: Supercharge Exercise Performance & Recovery with Cooling",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-biology-of-aggression-mating-and-arousal-david-anderson",
+      "title": "Essentials: The Biology of Aggression, Mating & Arousal | Dr. David Anderson",
+      "themes": [
+        "hormones-sexual-health",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-biology-of-taste-perception-and-sugar-craving-charles-zuker",
+      "title": "Essentials: The Biology of Taste Perception & Sugar Craving | Dr. Charles Zuker",
+      "themes": [
+        "nutrition-metabolism",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-neuroscience-of-speech-language-and-music-erich-jarvis",
+      "title": "Essentials: The Neuroscience of Speech, Language & Music | Dr. Erich Jarvis",
+      "themes": [
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-and-practice-of-movement-ido-portal",
+      "title": "Essentials: The Science & Practice of Movement | Ido Portal",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-and-process-of-healing-from-grief",
+      "title": "Essentials: The Science & Process of Healing from Grief",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-and-treatment-of-bipolar-disorder",
+      "title": "Essentials: The Science & Treatment of Bipolar Disorder",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-and-treatment-of-obsessive-compulsive-disorder",
+      "title": "Essentials: The Science & Treatment of Obsessive Compulsive Disorder (OCD)",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-of-eating-for-health-fat-loss-and-lean-muscle-layne-norton",
+      "title": "Essentials: The Science of Eating for Health, Fat Loss & Lean Muscle | Dr. Layne Norton",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-of-emotions-relationships",
+      "title": "Essentials: The Science of Emotions & Relationships",
+      "themes": [
+        "focus-attention",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-of-learning-and-speaking-languages-eddie-chang",
+      "title": "Essentials: The Science of Learning & Speaking Languages | Dr. Eddie Chang",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-of-love-desire-and-attachment",
+      "title": "Essentials: The Science of Love, Desire & Attachment",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-the-science-practice-of-perfecting-your-sleep",
+      "title": "Essentials: The Science & Practice of Perfecting Your Sleep",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "sleep-circadian",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-therapy-treating-trauma-and-other-life-challenges-paul-conti",
+      "title": "Essentials: Therapy, Treating Trauma & Other Life Challenges | Dr. Paul Conti",
+      "themes": [
+        "exercise-recovery",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-time-perception-memory-focus",
+      "title": "Essentials: Time Perception, Memory & Focus",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-timing-light-for-better-sleep-energy-and-mood-dr-samer-hattar",
+      "title": "Essentials: Timing Light for Better Sleep, Energy & Mood | Dr. Samer Hattar",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-tools-for-hormone-optimization-in-males-kyle-gillett",
+      "title": "Essentials: Tools for Hormone Optimization in Males | Dr. Kyle Gillett",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-tools-for-managing-stress-anxiety",
+      "title": "Essentials: Tools for Managing Stress & Anxiety",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-tools-for-setting-and-achieving-goals-emily-balcetis",
+      "title": "Essentials: Tools for Setting & Achieving Goals | Dr. Emily Balcetis",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-tools-to-boost-attention-and-memory-wendy-suzuki",
+      "title": "Essentials: Tools to Boost Attention & Memory | Dr. Wendy Suzuki",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-understand-and-mprove-memory-using-science-based-tools",
+      "title": "Essentials: Understand & Improve Memory Using Science-Based Tools",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-understanding-and-controlling-aggression",
+      "title": "Essentials: Understanding & Controlling Aggression",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-understanding-and-using-dreams-to-learn-and-to-forget",
+      "title": "Essentials: Understand and Use Dreams to Learn and Forget",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-understanding-conquering-depression",
+      "title": "Essentials: Understanding & Conquering Depression",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "essentials-understanding-healing-the-mind-dr-karl-deisseroth",
+      "title": "Essentials: Understanding & Healing the Mind | Dr. Karl Deisseroth",
+      "themes": [
+        "focus-attention",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-understanding-treating-addiction-dr-anna-lembke",
+      "title": "Essentials: Understanding & Treating Addiction | Dr. Anna Lembke",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals"
+      ]
+    },
+    {
+      "episode_id": "essentials-using-light-to-optimize-health",
+      "title": "Essentials: Using Light to Optimize Health",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-using-meditation-to-focus-view-consciousness-and-expand-your-mind-sam-harris",
+      "title": "Essentials: Using Meditation to Focus, View Consciousness & Expand Your Mind | Dr. Sam Harris",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "essentials-using-play-to-rewire-and-improve-your-brain",
+      "title": "Essentials: Using Play to Rewire & Improve Your Brain",
+      "themes": [
+        "learning-memory",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-using-salt-to-optimize-mental-and-physical-performance",
+      "title": "Essentials: Using Salt to Optimize Mental & Physical Performance",
+      "themes": [
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "essentials-using-science-to-optimize-sleep-learning-metabolism",
+      "title": "Essentials: Using Science to Optimize Sleep, Learning & Metabolism",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "esther-perel-how-to-find-build-maintain-healthy-romantic-relationships",
+      "title": "Esther Perel: How to Find, Build & Maintain Healthy Romantic Relationships",
+      "themes": [
+        "hormones-sexual-health",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "expand-consciousness-dr-christof-koch",
+      "title": "How to Expand Your Consciousness | Dr. Christof Koch",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "female-hormone-health-pcos-endometriosis-fertility-breast-cancer-thais-aliabadi",
+      "title": "Female Hormone Health, PCOS, Endometriosis, Fertility & Breast Cancer | Dr. Thaïs Aliabadi",
+      "themes": [
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "find-your-temperature-minimum-to-defeat-jetlag-shift-work-and-sleeplessness",
+      "title": "How to Defeat Jet Lag, Shift Work & Sleeplessness",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "fitness-toolkit-protocol-and-tools-to-optimize-physical-health",
+      "title": "Fitness Toolkit: Protocol & Tools to Optimize Physical Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "focus-toolkit-tools-to-improve-your-focus-and-concentration",
+      "title": "Focus Toolkit: Tools to Improve Your Focus & Concentration",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "goals-toolkit-how-to-set-achieve-your-goals",
+      "title": "Goals Toolkit: How to Set & Achieve Your Goals",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-andy-galpin-maximize-recovery-to-achieve-fitness-and-performance-goals",
+      "title": "Guest Series | Dr. Andy Galpin: Maximize Recovery to Achieve Fitness & Performance Goals",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matt-walker-how-to-structure-your-sleep-use-naps-time-caffeine",
+      "title": "Guest Series | Dr. Matt Walker: How to Structure Your Sleep, Use Naps & Time Caffeine",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matt-walker-improve-sleep-to-boost-mood-emotional-regulation",
+      "title": "Guest Series | Dr. Matt Walker: Improve Sleep to Boost Mood & Emotional Regulation",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matt-walker-the-science-of-dreams-nightmares-lucid-dreaming",
+      "title": "Guest Series | Dr. Matt Walker: The Science of Dreams, Nightmares & Lucid Dreaming",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matt-walker-using-sleep-to-improve-learning-creativity-memory",
+      "title": "Guest Series | Dr. Matt Walker: Using Sleep to Improve Learning, Creativity & Memory",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matthew-walker-protocols-to-improve-your-sleep",
+      "title": "Guest Series | Dr. Matthew Walker: Protocols to Improve Your Sleep",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-matthew-walker-the-biology-of-sleep-your-unique-sleep-needs",
+      "title": "Guest Series | Dr. Matt Walker: The Biology of Sleep & Your Unique Sleep Needs",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-paul-conti-how-to-build-and-maintain-healthy-relationships",
+      "title": "Guest Series | Dr. Paul Conti: How to Build and Maintain Healthy Relationships",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-paul-conti-how-to-improve-your-mental-health",
+      "title": "Guest Series | Dr. Paul Conti: How to Improve Your Mental Health",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-paul-conti-how-to-understand-and-assess-your-mental-health",
+      "title": "Guest Series | Dr. Paul Conti: How to Understand & Assess Your Mental Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "guest-series-dr-paul-conti-tools-and-protocols-for-mental-health",
+      "title": "Guest Series | Dr. Paul Conti: Tools and Protocols for Mental Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "healing-from-grief-loss-dr-mary-frances-oconnor",
+      "title": "Healing From Grief & Loss | Dr. Mary-Frances O’Connor",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "health-effects-and-risks-of-kratom-opioids-and-other-natural-occurring-medicines-dr-chris-mccurdy",
+      "title": "Health Effects & Risks of Kratom, Opioids & Other Natural Occurring Medicines | Dr. Chris McCurdy",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "healthy-eating-and-eating-disorders-anorexia-bulimia-binging",
+      "title": "Healthy Eating & Eating Disorders - Anorexia, Bulimia, Binging",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-different-diets-impact-your-health-dr-christopher-gardner",
+      "title": "How Different Diets Impact Your Health | Dr. Christopher Gardner",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-dopamine-serotonin-shape-decisions-motivation-and-learning-read-montague",
+      "title": "How Dopamine & Serotonin Shape Decisions, Motivation & Learning | Dr. Read Montague",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-foods-and-nutrients-control-our-moods",
+      "title": "How Foods and Nutrients Control Our Moods",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-genes-shape-your-risk-taking-and-morals-kathryn-paige-harden",
+      "title": "How Genes Shape Your Risk Taking & Morals | Dr. Kathryn Paige Harden",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-hormones-shape-sexual-orientation-and-behavior-marc-breedlove",
+      "title": "How Hormones Shape Sexual Orientation & Behavior | Dr. Marc Breedlove",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-hormones-status-shape-our-values-decisions-dr-michael-platt",
+      "title": "How Hormones & Status Shape Our Values & Decisions | Dr. Michael Platt",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-meditation-works-and-science-based-effective-meditations",
+      "title": "How Meditation Works & Science-Based Effective Meditations",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-nature-other-physical-environments-impact-your-focus-cognition-health-marc-berman",
+      "title": "How Nature & Other Physical Environments Impact Your Focus, Cognition & Health | Dr. Marc Berman",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-our-hormones-control-our-hunger-eating-and-satiety",
+      "title": "How Our Hormones Control Our Hunger, Eating & Satiety",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-placebo-effects-work-to-change-our-biology-psychology",
+      "title": "How Placebo Effects Work to Change Our Biology & Psychology",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-psilocybin-can-rewire-our-brain-its-therapeutic-benefits-and-its-risks",
+      "title": "How Psilocybin Can Rewire Our Brain, Its Therapeutic Benefits & Its Risks",
+      "themes": [
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-smell-taste-and-pheromone-like-chemicals-control-you",
+      "title": "How Smell, Taste & Pheromone-Like Chemicals Control You",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-achieve-inner-peace-healing-dr-richard-schwartz",
+      "title": "How to Achieve Inner Peace & Healing | Dr. Richard Schwartz",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-better-regulate-your-emotions-marc-brackett",
+      "title": "How to Better Regulate Your Emotions | Dr. Marc Brackett",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-breathe-correctly-for-optimal-health-mood-learning-and-performance",
+      "title": "How to Breathe Correctly for Optimal Health, Mood, Learning & Performance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-build-endurance-in-your-brain-and-body",
+      "title": "How to Build Endurance in Your Brain & Body",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-control-your-cortisol-overcome-burnout",
+      "title": "How to Control Your Cortisol & Overcome Burnout",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-control-your-metabolism-by-thyroid-and-growth-hormone",
+      "title": "How to Control Your Metabolism by Thyroid & Growth Hormone",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-control-your-sense-of-pain-and-pleasure",
+      "title": "How to Control Your Sense of Pain & Pleasure",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-enhance-performance-and-learning-by-applying-a-growth-mindset",
+      "title": "How to Enhance Performance & Learning by Applying a Growth Mindset",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-enhance-your-gut-microbiome-for-brain-and-overall-health",
+      "title": "How to Enhance Your Gut Microbiome for Brain & Overall Health",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-enhance-your-immune-system-dr-roger-seheult",
+      "title": "How to Enhance Your Immune System | Dr. Roger Seheult",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-find-be-a-great-romantic-partner-lori-gottlieb",
+      "title": "How to Find & Be a Great Romantic Partner | Lori Gottlieb",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-focus-to-change-your-brain",
+      "title": "How to Focus to Change Your Brain",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-grow-from-doing-hard-things-michael-easter",
+      "title": "How to Grow From Doing Hard Things | Michael Easter",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-motivation-and-overcome-procrastination-masud-husain",
+      "title": "How to Improve Motivation & Overcome Procrastination | Dr. Masud Husain",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-oral-health-its-critical-role-in-brain-body-health",
+      "title": "How to Improve Oral Health & Its Critical Role in Brain & Body Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-skin-health-appearance",
+      "title": "How to Improve Skin Health & Appearance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-your-memory-and-cognitive-function-at-any-age-alan-castel",
+      "title": "How to Improve Your Memory & Cognitive Function at Any Age | Dr. Alan Castel",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-your-teeth-oral-microbiome-for-brain-body-health-dr-staci-whitman",
+      "title": "How to Improve Your Teeth & Oral Microbiome for Brain & Body Health | Dr. Staci Whitman",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-improve-your-vitality-heal-from-disease-dr-mark-hyman",
+      "title": "How to Improve Your Vitality & Heal From Disease | Dr. Mark Hyman",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-increase-motivation-and-drive",
+      "title": "How to Increase Motivation & Drive",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-increase-your-speed-mobility-longevity-with-plyometrics-sprinting-stuart-mcmillan",
+      "title": "How to Increase Your Speed, Mobility & Longevity with Plyometrics & Sprinting | Stuart McMillan",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-increase-your-willpower-and-tenacity",
+      "title": "How to Increase Your Willpower & Tenacity",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-learn-skills-faster",
+      "title": "How to Learn Skills Faster",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-lose-fat-gain-muscle-with-nutrition-alan-aragon",
+      "title": "How to Lose Fat & Gain Muscle With Nutrition | Alan Aragon",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-lose-fat-with-science-based-tools",
+      "title": "How to Lose Fat with Science-Based Tools",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-optimize-fertility-in-males-and-females",
+      "title": "How to Optimize Fertility in Males & Females",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-optimize-your-brain-body-function-and-health",
+      "title": "How to Optimize Your Brain-Body Function & Health",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-optimize-your-hormones-for-health-and-vitality",
+      "title": "Dr. Kyle Gillett: How to Optimize Your Hormones for Health & Vitality",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-optimize-your-water-quality-and-intake-for-health",
+      "title": "How to Optimize Your Water Quality & Intake for Health",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-overcome-addiction-to-substances-or-behaviors-keith-humphreys",
+      "title": "How to Overcome Addiction to Substances or Behaviors | Dr. Keith Humphreys",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-overcome-social-anxiety-nick-epley",
+      "title": "How to Overcome Social Anxiety | Dr. Nick Epley",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-prevent-treat-colds-flu",
+      "title": "How to Prevent & Treat Colds & Flu",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-rewire-your-brain-and-learn-faster-dr-michael-kilgard",
+      "title": "How to Rewire Your Brain & Learn Faster | Dr. Michael Kilgard",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-set-and-achieve-massive-goals-alex-honnold",
+      "title": "How to Set & Achieve Massive Goals | Alex Honnold",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-stop-headaches-using-science-based-approaches",
+      "title": "How to Stop Headaches Using Science-Based Approaches",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-use-exercise-to-improve-your-brains-health-longevity-performance",
+      "title": "How to Use Exercise to Improve Your Brain’s Health, Longevity & Performance",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-to-use-music-to-boost-motivation-mood-and-improve-learning",
+      "title": "How to Use Music to Boost Motivation, Mood & Improve Learning",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-women-can-improve-their-fertility-and-hormone-health-natalie-crawford",
+      "title": "How Women Can Improve Their Fertility & Hormone Health | Dr. Natalie Crawford",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-your-immune-system-works-and-how-to-improve-it-max-krummel",
+      "title": "How Your Immune System Works & How to Improve It | Dr. Max Krummel",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-your-nervous-system-works-and-changes",
+      "title": "How Your Brain Works & Changes",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "how-your-thoughts-are-built-shape-them-jennifer-groh",
+      "title": "How Your Thoughts Are Built & How You Can Shape Them | Dr. Jennifer Groh",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ido-portal-the-science-and-practice-of-movement",
+      "title": "Ido Portal: The Science & Practice of Movement",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "improve-energy-longevity-by-optimizing-mitochondria-martin-picard",
+      "title": "Improve Energy & Longevity by Optimizing Mitochondria | Dr. Martin Picard",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "improve-flexibility-with-research-supported-stretching-protocols",
+      "title": "Improve Flexibility with Research-Supported Stretching Protocols",
+      "themes": [
+        "exercise-recovery",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "improve-focus-with-behavioral-tools-medication-for-adhd-john-kruse",
+      "title": "Improve Focus with Behavioral Tools & Medication for ADHD | Dr. John Kruse",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "improve-lymphatic-system-health-appearance",
+      "title": "Improve Your Lymphatic System for Overall Health & Appearance",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "improving-science-restoring-trust-in-public-health-dr-jay-bhattacharya",
+      "title": "Improving Science & Restoring Trust in Public Health | Dr. Jay Bhattacharya",
+      "themes": [
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "jeff-cavaliere-optimize-your-exercise-program-with-science-based-tools",
+      "title": "Jeff Cavaliere: Optimize Your Exercise Program with Science-Based Tools",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "jocko-willink-how-to-become-resilient-forge-your-identity-and-lead-others",
+      "title": "Jocko Willink: How to Become Resilient, Forge Your Identity & Lead Others",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "josh-waitzkin-the-art-of-learning-living-life",
+      "title": "Josh Waitzkin: The Art of Learning & Living Life",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "journal-club-with-dr-peter-attia-effects-of-light-dark-on-mental-health-treatments-for-cancer",
+      "title": "Journal Club with Dr. Peter Attia | Effects of Light & Dark on Mental Health & Treatments for Cancer",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "journal-club-with-dr-peter-attia-metformin-for-longevity-and-the-power-of-belief-effects",
+      "title": "Journal Club with Dr. Peter Attia | Metformin for Longevity & The Power of Belief Effects",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "karl-deisseroth-understanding-and-healing-the-mind",
+      "title": "Dr. Karl Deisseroth: Understanding & Healing the Mind",
+      "themes": [
+        "focus-attention",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "ketamine-benefits-and-risks-for-depression-ptsd-and-neuroplasticity",
+      "title": "Ketamine: Benefits and Risks for Depression, PTSD & Neuroplasticity",
+      "themes": [
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "leverage-dopamine-to-overcome-procrastination-and-optimize-effort",
+      "title": "Leverage Dopamine to Overcome Procrastination & Optimize Effort",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "make-yourself-unbreakable-dj-shipley",
+      "title": "How to Make Yourself Unbreakable | DJ Shipley",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "male-roles-obligations-and-options-for-building-a-fulfilling-life-scott-galloway",
+      "title": "Male Roles, Obligations and Options for Building a Fulfilling Life | Scott Galloway",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "male-vs-female-brain-differences-how-they-arise-from-genes-hormones-dr-nirao-shah",
+      "title": "Male vs. Female Brain Differences & How They Arise From Genes & Hormones | Dr. Nirao Shah",
+      "themes": [
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "marc-andreessen-how-risk-taking-innovation-and-artificial-intelligence-transform-human-experience",
+      "title": "Marc Andreessen: How Risk Taking, Innovation & Artificial Intelligence Transform Human Experience",
+      "themes": [
+        "motivation-goals",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "mark-zuckerberg-dr-priscilla-chan-curing-all-human-diseases-future-of-health-technology",
+      "title": "Mark Zuckerberg & Dr. Priscilla Chan: Curing All Human Diseases & the Future of Health & Technology",
+      "themes": [
+        "exercise-recovery",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "master-self-control-overcome-procrastination-kentaro-fujita",
+      "title": "Master Self Control & Overcome Procrastination | Dr. Kentaro Fujita",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "master-the-creative-process-twyla-tharp",
+      "title": "Master the Creative Process | Twyla Tharp",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "master-your-sleep-and-be-more-alert-when-awake",
+      "title": "Master Your Sleep & Be More Alert When Awake",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "maximizing-productivity-physical-and-mental-health-with-daily-tools",
+      "title": "Maximizing Productivity, Physical & Mental Health with Daily Tools",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "mental-health-toolkit-tools-to-bolster-your-mood-mental-health",
+      "title": "Mental Health Toolkit: Tools to Bolster Your Mood & Mental Health",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "morgan-housel-understand-apply-the-psychology-of-money-to-gain-greater-happiness",
+      "title": "Morgan Housel: Understand & Apply the Psychology of Money to Gain Greater Happiness",
+      "themes": [
+        "focus-attention",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "movement-practice-to-strengthen-your-mind-body-connection-ido-portal",
+      "title": "Movement Practice to Strengthen Your Mind-Body Connection | Ido Portal",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "neuroscience-of-emotions-and-tools-for-improving-emotion-regulation-ralph-adolphs",
+      "title": "Neuroscience of Emotions & Tools for Improving Emotion Regulation | Dr. Ralph Adolphs",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "nicotines-effects-on-the-brain-and-body-and-how-to-quit-smoking-or-vaping",
+      "title": "Nicotine's Effects on the Brain & Body & How to Quit Smoking or Vaping",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "nutrients-for-brain-health-and-performance",
+      "title": "Nutrients For Brain Health & Performance",
+      "themes": [
+        "learning-memory",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "optimal-protocols-for-studying-learning",
+      "title": "Optimal Protocols for Studying & Learning",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "optimize-and-control-your-brain-chemistry-to-improve-health-and-performance",
+      "title": "Optimize & Control Your Brain Chemistry to Improve Health & Performance",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "optimize-your-learning-and-creativity-with-science-based-tools",
+      "title": "Optimize Your Learning & Creativity with Science-Based Tools",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "optimizing-workspace-for-productivity-focus-and-creativity",
+      "title": "Optimizing Workspace for Productivity, Focus, & Creativity",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "overcome-inner-resistance-steven-pressfield",
+      "title": "How to Overcome Inner Resistance | Steven Pressfield",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "pavel-tsatsouline-build-strength-endurance-flexibility-at-any-age",
+      "title": "Pavel Tsatsouline: The Correct Way to Build Strength, Endurance & Flexibility at Any Age",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "peptides-the-science-uses-and-safety-abud-bakri",
+      "title": "Peptides: The Science, Uses & Safety | Dr. Abud Bakri",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "protect-improve-your-hearing-brain-health-konstantina-stankovic",
+      "title": "Protect & Improve Your Hearing & Brain Health | Dr. Konstantina Stankovic",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "protocols-to-strengthen-pain-proof-your-back",
+      "title": "Protocols to Strengthen & Pain Proof Your Back",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "raising-a-dog-and-mastering-calm-assertive-energy-cesar-millan",
+      "title": "Raising a Dog & Mastering Calm Assertive Energy | Cesar Millan",
+      "themes": [
+        "exercise-recovery",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "red-light-to-improve-metabolism-and-harmful-effects-of-led-glen-jeffery",
+      "title": "Using Red Light to Improve Metabolism & the Harmful Effects of LEDs | Dr. Glen Jeffery",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "restore-youthfulness-and-vitality-to-the-aging-brain-and-body-tony-wyss-coray",
+      "title": "Restore Youthfulness & Vitality to the Aging Brain & Body | Dr. Tony Wyss-Coray",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "rick-rubin-how-to-access-your-creativity",
+      "title": "Rick Rubin: How to Access Your Creativity",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "rick-rubin-protocols-to-access-creative-energy-and-process",
+      "title": "Rick Rubin: Protocols to Access Creative Energy and Process",
+      "themes": [
+        "breath-meditation-nsdr",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "robert-greene-a-process-for-finding-achieving-your-unique-purpose",
+      "title": "Robert Greene: A Process for Finding & Achieving Your Unique Purpose",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-and-health-benefits-of-belief-in-god-and-religion-dr-david-desteno",
+      "title": "Science & Health Benefits of Belief in God & Religion | Dr. David DeSteno",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-and-tools-of-learning-and-memory-david-eagleman",
+      "title": "Science & Tools of Learning & Memory | Dr. David Eagleman",
+      "themes": [
+        "breath-meditation-nsdr",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-based-meditation-tools-to-improve-your-brain-and-health-richard-davidson",
+      "title": "Science-Based Meditation Tools to Improve Your Brain & Health | Dr. Richard Davidson",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-based-mental-training-and-visualization-for-improved-learning",
+      "title": "Science-Based Mental Training & Visualization for Improved Learning",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-based-tools-for-increasing-happiness",
+      "title": "Science-Based Tools for Increasing Happiness",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-of-attraction-compatibility-and-romance-dr-paul-eastwick",
+      "title": "Science of Attraction, Compatibility & Romance | Dr. Paul Eastwick",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-of-muscle-growth-increasing-strength-and-muscular-recovery",
+      "title": "Science of Muscle Growth, Increasing Strength & Muscular Recovery",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-of-social-bonding-in-family-friendship-and-romantic-love",
+      "title": "Science of Social Bonding in Family, Friendship & Romantic Love",
+      "themes": [
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "science-supported-tools-to-accelerate-your-fitness-goals",
+      "title": "Science-Supported Tools to Accelerate Your Fitness Goals",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing",
+      "title": "Sleep Toolkit: Tools for Optimizing Sleep & Sleep-Wake Timing",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "speak-clearly-with-confidence-matt-abrahams",
+      "title": "How to Speak Clearly & With Confidence | Matt Abrahams",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "supercharge-exercise-performance-and-recovery-with-cooling",
+      "title": "Supercharge Exercise Performance & Recovery with Cooling",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs"
+      ]
+    },
+    {
+      "episode_id": "the-best-vitality-and-health-protocols-rhonda-patrick",
+      "title": "The Best Vitality & Health Protocols | Dr. Rhonda Patrick",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-chemistry-of-food-taste-dr-harold-mcgee",
+      "title": "The Chemistry of Food & Taste | Dr. Harold McGee",
+      "themes": [
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-effects-of-cannabis-marijuana-on-the-brain-and-body",
+      "title": "The Effects of Cannabis (Marijuana) on the Brain & Body",
+      "themes": [
+        "breath-meditation-nsdr",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-effects-of-microplastics-on-your-health-how-to-reduce-them",
+      "title": "The Effects of Microplastics on Your Health & How to Reduce Them",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-mental-frame-and-specific-daily-actions-to-succeed-andy-stumpf",
+      "title": "The Mental Frame & Specific Daily Actions to Succeed | Andy Stumpf",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-most-effective-weight-training-cardio-and-nutrition-for-women-lauren-colenso-semple",
+      "title": "The Most Effective Weight Training, Cardio & Nutrition for Women | Dr. Lauren Colenso-Semple",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-and-health-benefits-of-deliberate-heat-exposure",
+      "title": "The Science & Health Benefits of Deliberate Heat Exposure",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-and-process-of-healing-from-grief",
+      "title": "The Science & Process of Healing from Grief",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-and-treatment-of-bipolar-disorder",
+      "title": "The Science & Treatment of Bipolar Disorder",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-and-treatment-of-obsessive-compulsive-disorder",
+      "title": "The Science & Treatment of Obsessive Compulsive Disorder (OCD)",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-art-of-comedy-creativity-tom-segura",
+      "title": "The Science & Art of Comedy & Creativity | Tom Segura",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-creativity-and-how-to-enhance-creative-innovation",
+      "title": "The Science of Creativity & How to Enhance Creative Innovation",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-emotions-relationships",
+      "title": "The Science of Emotions & Relationships",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-gratitude-and-how-to-build-a-gratitude-practice",
+      "title": "The Science of Gratitude & How to Build a Gratitude Practice",
+      "themes": [
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-healthy-hair-hair-loss-and-how-to-regrow-hair",
+      "title": "The Science of Healthy Hair, Hair Loss and How to Regrow Hair",
+      "themes": [
+        "hormones-sexual-health",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-hearing-balance-and-accelerated-learning",
+      "title": "The Science of Hearing, Balance & Accelerated Learning",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-how-to-optimize-testosterone-and-estrogen",
+      "title": "The Science of How to Optimize Testosterone & Estrogen",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-love-desire-and-attachment",
+      "title": "The Science of Love, Desire and Attachment",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-making-and-breaking-habits",
+      "title": "The Science of Making & Breaking Habits",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-mdma-and-its-therapeutic-applications",
+      "title": "The Science of MDMA & Its Therapeutic Uses: Benefits & Risks",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-setting-and-achieving-goals",
+      "title": "The Science of Setting & Achieving Goals",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "the-science-of-vision-eye-health-and-seeing-better",
+      "title": "The Science of Vision, Eye Health & Seeing Better",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tim-ferriss-how-to-learn-better-and-create-your-best-future",
+      "title": "Tim Ferriss: How to Learn Better & Create Your Best Future",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "time-perception-and-entrainment-by-dopamine-serotonin-and-hormones",
+      "title": "Time Perception & Entrainment by Dopamine, Serotonin & Hormones",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tony-hawk-harnessing-passion-drive-and-persistence-for-lifelong-success",
+      "title": "Tony Hawk: Harnessing Passion, Drive & Persistence for Lifelong Success",
+      "themes": [
+        "exercise-recovery",
+        "motivation-goals",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tools-for-managing-stress-and-anxiety",
+      "title": "Tools for Managing Stress & Anxiety",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tools-for-overcoming-substance-behavioral-addictions-ryan-soave",
+      "title": "Tools for Overcoming Substance & Behavioral Addictions | Ryan Soave",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tools-to-bolster-your-mental-health-and-confidence-paul-conti",
+      "title": "Tools to Bolster Your Mental Health & Confidence | Dr. Paul Conti",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "tools-to-enhance-working-memory-attention",
+      "title": "Tools to Enhance Working Memory & Attention",
+      "themes": [
+        "breath-meditation-nsdr",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "transform-metabolic-health-longevity-unique-biology-michael-snyder",
+      "title": "Transform Your Metabolic Health & Longevity by Knowing Your Unique Biology | Dr. Michael Snyder",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "transform-pain-and-trauma-into-creative-expression-david-choe",
+      "title": "Transform Pain & Trauma Into Creative Expression | David Choe",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "transform-your-mental-health-with-diet-lifestyle-dr-chris-palmer",
+      "title": "Transform Your Mental Health With Diet & Lifestyle | Dr. Chris Palmer",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "understand-and-improve-memory-using-science-based-tools",
+      "title": "Understand & Improve Memory Using Science-Based Tools",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "understand-what-pets-actually-want-need-dr-karolina-westlund",
+      "title": "What Pets Actually Want & Need | Dr. Karolina Westlund",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "understanding-and-conquering-depression",
+      "title": "Understanding & Conquering Depression",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "understanding-and-controlling-aggression",
+      "title": "Understanding & Controlling Aggression",
+      "themes": [
+        "focus-attention",
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "understanding-and-using-dreams-to-learn-and-to-forget",
+      "title": "Understand and Use Dreams to Learn and Forget",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions"
+      ]
+    },
+    {
+      "episode_id": "unlearn-negative-thoughts-and-behaviors-patterns-alok-kanojia",
+      "title": "Unlearn Negative Thoughts & Behaviors Patterns | Dr. Alok Kanojia",
+      "themes": [
+        "breath-meditation-nsdr",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "us-surgeon-general-dr-vivek-murthy-efforts-challenges-in-promoting-public-health",
+      "title": "U.S. Surgeon General Dr. Vivek Murthy: Efforts & Challenges in Promoting Public Health",
+      "themes": [
+        "nutrition-metabolism",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-ai-to-increase-your-intelligence-and-enrich-humanity-fei-fei-li",
+      "title": "Using AI to Increase Your Intelligence & Enrich Humanity | Dr. Fei-Fei Li",
+      "themes": [
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-caffeine-to-optimize-mental-and-physical-performance",
+      "title": "Using Caffeine to Optimize Mental & Physical Performance",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-cortisol-and-adrenaline-to-boost-our-energy-and-immune-system",
+      "title": "Using Cortisol & Adrenaline to Boost Our Energy & Immune System",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-deliberate-cold-exposure-for-health-and-performance",
+      "title": "Using Deliberate Cold Exposure for Health and Performance",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-failures-movement-and-balance-to-learn-faster",
+      "title": "Using Failures, Movement & Balance to Learn Faster",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-light-sunlight-blue-light-and-red-light-to-optimize-health",
+      "title": "Using Light (Sunlight, Blue Light & Red Light) to Optimize Health",
+      "themes": [
+        "hormones-sexual-health",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-play-to-rewire-and-improve-your-brain",
+      "title": "Using Play to Rewire & Improve Your Brain",
+      "themes": [
+        "exercise-recovery",
+        "learning-memory",
+        "sleep-circadian",
+        "stress-emotions",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-salt-to-optimize-mental-and-physical-performance",
+      "title": "Using Salt to Optimize Mental & Physical Performance",
+      "themes": [
+        "hormones-sexual-health",
+        "nutrition-metabolism",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-science-to-optimize-sleep-learning-and-metabolism",
+      "title": "Using Science to Optimize Sleep, Learning & Metabolism",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-stem-cells-to-cure-autism-epilepsy-and-schizophrenia-dr-sergiu-pasca",
+      "title": "Using Stem Cells to Cure Autism, Epilepsy & Schizophrenia | Dr. Sergiu Pașca",
+      "themes": [
+        "hormones-sexual-health",
+        "learning-memory",
+        "sleep-circadian",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "using-your-nervous-system-to-enhance-your-immune-system",
+      "title": "Using Your Nervous System to Enhance Your Immune System",
+      "themes": [
+        "breath-meditation-nsdr",
+        "exercise-recovery",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "welcome-to-the-huberman-lab-podcast",
+      "title": "Welcome to the Huberman Lab Podcast",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "what-alcohol-does-to-your-body-brain-health",
+      "title": "What Alcohol Does to Your Body, Brain & Health",
+      "themes": [
+        "exercise-recovery",
+        "hormones-sexual-health",
+        "learning-memory",
+        "motivation-goals",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    },
+    {
+      "episode_id": "your-top-health-questions-answered",
+      "title": "Your Top Health Questions Answered",
+      "themes": [
+        "exercise-recovery",
+        "focus-attention",
+        "hormones-sexual-health",
+        "learning-memory",
+        "nutrition-metabolism",
+        "sleep-circadian",
+        "stress-emotions",
+        "supplements-drugs",
+        "vision-neuroscience"
+      ]
+    }
+  ],
+  "method_note": "Keyword candidate extraction from official titles, public Show Notes and timestamps; candidates require source-level review before entering SKILL.md."
+}
