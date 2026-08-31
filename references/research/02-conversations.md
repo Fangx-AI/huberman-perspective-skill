@@ -15,7 +15,7 @@ YouTube `@hubermanlab` 是原始长视频主库；官方站点提供 Episode、�
 - 425/425 个官方 Episode 页面成功采集。
 - 425/425 有公开 Show Notes；415/425 有公开时间戳；424/425 有 YouTube 回链。
 - 425 个 Episode 形成 29 个主题节点和 1,180 条 Episode—主题—YouTube 关系；图谱文件位于 `references/catalog/knowledge-graph.json`。
-- 加入 Show Notes、B站、课程/讲座、主张和结构化研究卡后，claim-study-v4 图谱包含 425 个 Episode、29 个主题、424 个 canonical YouTube 视频、34 个 B站节点、8 个课程/讲座节点、40 个主张节点、4 个研究卡、15 个研究结果/阴性发现、20 个局限、16 个证据主题、6,020 个去重资源节点和 8,412 条关系。主张索引只保留批次分析摘要与来源定位，不复制完整字幕；研究卡节点保留人工改写的结果与边界，不含论文全文。
+- 加入 Show Notes、B站、课程/讲座、主张和结构化研究卡后，claim-study-v4 图谱包含 425 个 Episode、29 个主题、424 个 canonical YouTube 视频、34 个 B站节点、8 个课程/讲座节点、40 个主张节点、5 个研究卡、18 个研究结果/阴性发现、25 个局限、20 个证据主题、6,020 个去重资源节点和 8,426 条关系。主张索引只保留批次分析摘要与来源定位，不复制完整字幕；研究卡节点保留人工改写的结果与边界，不含论文全文。
 
 ## B站发现层
 
@@ -30,7 +30,7 @@ YouTube `@hubermanlab` 是原始长视频主库；官方站点提供 Episode、�
 
 ## 第二批主张级复核（2026-08-31）
 
-- 423 集可用官方 YouTube 视频已在维护者本地字幕缓存中完成章节级/主张级初审；公开仓库只发布 `references/catalog/claim-index.jsonl` 中的中性主题、来源 URL 和时间戳定位，不分发详细字幕分析。另有 1 集当前 unavailable，未计入已分析量。
+- 423 集可用官方 YouTube 视频已进入外部字幕缓存并完成章节级/主张级初审；公开版仅保留 `references/catalog/claim-index.jsonl` 中的脱敏定位记录，详细批次字幕分析留在维护者本地缓存。另有 1 集当前 unavailable，未计入已分析量。
 - 字幕 provenance：177 集人工字幕、215 集自动字幕（按已下载并选用的字幕记录）；自动字幕只用于发现和定位，不作为精确引文的唯一依据。
 - 本批新增主题覆盖 growth mindset、healthy skepticism、fear/trauma、cannabis、meditation、hormones、lymphatic/glymphatic、vision 和 neuroplasticity。
 - 这些主题均已与官方 Episode/YouTube URL、视频 ID 和时间戳绑定；药物、激素、创伤、视力、癌症/淋巴水肿和补剂相关主张继续保持“播客主张/待原始研究核查”状态。

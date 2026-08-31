@@ -41922,6 +41922,76 @@
     },
     {
       "relation": "has_evidence_topic",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "evidence-topic:epa"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "evidence-topic:fluoxetine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "evidence-topic:major-depressive-disorder"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "evidence-topic:omega-3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-limitation:408ac1085baa6e47"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-limitation:4818b03f24eb5746"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-limitation:69a14d6cd9cff47b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-limitation:7b5126c479b31ef3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-limitation:7bc59ae43b6e61ab"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-finding:2609490ffa8ea8d4"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-finding:bf9cb75a86f96b8b"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "study-finding:f9e97d3ca2f9a621"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "target": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_topic",
       "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
       "target": "evidence-topic:attention"
     },
@@ -42061,7 +42131,7 @@
       "target": "resource:https://www.nature.com/articles/tp201546"
     }
   ],
-  "generated_at": "2026-08-31T02:38:09.076402+00:00",
+  "generated_at": "2026-08-31T02:43:28.749049+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47321,6 +47391,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:epa",
+      "label": "epa",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:fluoxetine",
+      "label": "fluoxetine",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:fmri",
       "label": "fmri",
       "type": "evidence-topic"
@@ -47341,6 +47421,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:major-depressive-disorder",
+      "label": "major-depressive-disorder",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:meditation",
       "label": "meditation",
       "type": "evidence-topic"
@@ -47353,6 +47438,11 @@
     {
       "id": "evidence-topic:mood",
       "label": "mood",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:omega-3",
+      "label": "omega-3",
       "type": "evidence-topic"
     },
     {
@@ -54193,23 +54283,23 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1080/00048670701827275；《Comparison of Therapeutic Effects of Omega-3 Fatty Acid Eicosapentaenoic Acid and Fluoxetine, Separately and in Combination, in Major Depressive Disorder》；Australian &amp; New Zealand Journal of Psychiatry；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：60 名重性抑郁障碍门诊成人随机接受 EPA 1000 mg/日、氟西汀 20 mg/日或联合治疗 8 周；48 人进入主要分析，联合组应答率较高，EPA 与氟西汀单药未显示差异。无纯安慰剂、样本小、LOCF 与短随访限制结论，不能据此自行替代或叠加抗抑郁治疗。证据卡：academic-study-cards.jsonl#jazayeri-2008-epa-fluoxetine-mdd。",
       "id": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1080/00048670701827275",
       "type": "resource",
       "url": "https://journals.sagepub.com/doi/10.1080/00048670701827275",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：10.1080/00048670701827275；《Comparison of Therapeutic Effects of Omega-3 Fatty Acid Eicosapentaenoic Acid and Fluoxetine, Separately and in Combination, in Major Depressive Disorder》；Australian &amp; New Zealand Journal of Psychiatry；2008。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：60 名重性抑郁障碍门诊成人随机接受 EPA 1000 mg/日、氟西汀 20 mg/日或联合治疗 8 周；48 人进入主要分析，联合组应答率较高，EPA 与氟西汀单药未显示差异。无纯安慰剂、样本小、LOCF 与短随访限制结论，不能据此自行替代或叠加抗抑郁治疗。证据卡：academic-study-cards.jsonl#jazayeri-2008-epa-fluoxetine-mdd。",
       "id": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
       "type": "resource",
       "url": "https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -91811,6 +91901,31 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "EPA 单药、氟西汀单药与联合治疗三组相互比较；没有纯安慰剂组",
+      "doi": "10.1080/00048670701827275",
+      "evidence_level": "A-Direct（小样本双盲双模拟人体 RCT）",
+      "id": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
+      "intervention_exposure": "每日 1000 mg EPA、每日 20 mg 氟西汀，或两者联合，持续 8 周",
+      "label": "Comparison of therapeutic effects of omega-3 fatty acid eicosapentaenoic acid and fluoxetine, separately and in combination, in major depressive disorder",
+      "outcomes": [
+        "17 项 Hamilton 抑郁量表变化",
+        "至少较基线下降 50% 的应答率"
+      ],
+      "population": "符合 DSM-IV 重性抑郁障碍且 17 项 HDRS 评分不低于 15 的门诊成人",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/18247193/",
+        "https://doi.org/10.1080/00048670701827275"
+      ],
+      "result_summary": "48 名至少完成 4 周者进入带末次观测结转的第 8 周分析；联合组自第 4 周起优于两种单药，应答率分别为氟西汀 50%、EPA 56%、联合 81%。",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这是一项早期小样本临床信号，不能据此自行用 EPA 替代、叠加或停用抗抑郁药；重性抑郁、用药相互作用、躁狂或自伤风险必须由临床专业人员评估。",
+      "sample_size": 60,
+      "study_design": "8 周、三组随机、双盲双模拟比较试验，每两周评估一次",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "同一参与者的另一节拍频率、随机顺序组以及第三日无声条件",
       "doi": "10.1038/s41598-020-63980-y",
       "evidence_level": "A-Direct（小样本人体随机顺序/交叉实验）",
@@ -91877,6 +91992,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:2609490ffa8ea8d4",
+      "label": "EPA 与氟西汀单药之间未显示疗效差异",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:2e3bd3c22183538e",
       "label": "结果不支持咖啡因增加纹状体多巴胺释放",
       "review_id": "volkow-2015-caffeine-pet",
@@ -91915,6 +92037,13 @@
       "id": "study-finding:b0e1aac5f99e1088",
       "label": "感恩组与对照组在感恩或威胁任务的腹侧纹状体、隔区或杏仁核反应上无显著组间差异；全样本中支持给予增加、杏仁核反应下降与刺激性炎症指标下降之间存在相关和统计中介关系。",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:bf9cb75a86f96b8b",
+      "label": "没有纯安慰剂组，无法从该试验估计两种单药相对安慰剂的绝对效应",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
       "type": "study-finding"
     },
     {
@@ -91967,6 +92096,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:f9e97d3ca2f9a621",
+      "label": "48 名至少完成 4 周者进入带末次观测结转的第 8 周分析；联合组自第 4 周起优于两种单药，应答率分别为氟西汀 50%、EPA 56%、联合 81%。",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-finding"
+    },
+    {
       "id": "study-limitation:1ea7f1818b3ca7c5",
       "label": "睡眠巩固是作者推断，研究未直接操纵或测量睡眠",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
@@ -91991,6 +92127,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:408ac1085baa6e47",
+      "label": "随访仅 8 周，不能判断复发预防或长期安全性",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:4818b03f24eb5746",
+      "label": "主要分析仅纳入 48 名至少完成 4 周者并使用末次观测结转",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:53cfc911e6729a25",
       "label": "[11C]raclopride 不能区分 D2 与 D3，也不能单独区分受体数量、亲和力和其他结合因素",
       "review_id": "volkow-2015-caffeine-pet",
@@ -92006,6 +92154,24 @@
       "id": "study-limitation:5814248ca29832b2",
       "label": "研究未询问参与者是否识别出咖啡因或安慰剂",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:69a14d6cd9cff47b",
+      "label": "总样本仅 60 人，约每组 20 人",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7b5126c479b31ef3",
+      "label": "单一门诊研究不能确立 EPA 可替代标准抗抑郁治疗",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7bc59ae43b6e61ab",
+      "label": "没有纯安慰剂组",
+      "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
       "type": "study-limitation"
     },
     {
@@ -94811,13 +94977,13 @@
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8412,
+    "edges": 8426,
     "episode_nodes": 425,
-    "evidence_topic_nodes": 16,
+    "evidence_topic_nodes": 20,
     "resource_nodes": 6020,
-    "study_card_nodes": 4,
-    "study_finding_nodes": 15,
-    "study_limitation_nodes": 20,
+    "study_card_nodes": 5,
+    "study_finding_nodes": 18,
+    "study_limitation_nodes": 25,
     "top_topics": [
       {
         "count": 58,

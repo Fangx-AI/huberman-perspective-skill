@@ -7,6 +7,18 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.3.1] - 2026-08-31
+
+### Added
+
+- Added a structured clinical evidence card for the eight-week EPA/fluoxetine major-depression trial, including its absent pure-placebo arm, 48-person analysis set, LOCF limitation and explicit no-self-medication boundary.
+
+### Changed
+
+- Promoted two duplicate URL records for the trial to `verified-study`, yielding 113 study-level and 508 bibliographic-only verified records.
+- Expanded the graph to five study cards, 18 findings, 25 limitations, 20 evidence topics and 8,426 relations.
+- Replaced fixed study-card graph counts in release validation with invariants derived directly from the committed cards.
+
 ## [0.3.0] - 2026-08-31
 
 ### Added

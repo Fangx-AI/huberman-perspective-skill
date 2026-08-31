@@ -28,8 +28,8 @@ class PublicSnapshotTests(unittest.TestCase):
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
         self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
-        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 111)
-        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 510)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 113)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 508)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -57,12 +57,16 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
         self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 673)
-        self.assertEqual(graph["stats"]["study_card_nodes"], 4)
-        self.assertEqual(graph["stats"]["study_finding_nodes"], 15)
-        self.assertEqual(graph["stats"]["study_limitation_nodes"], 20)
+        cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
+        cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
+        expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
+        expected_limitations = sum(len(card["limitations"]) for card in cards)
+        self.assertEqual(graph["stats"]["study_card_nodes"], len(cards))
+        self.assertEqual(graph["stats"]["study_finding_nodes"], expected_findings)
+        self.assertEqual(graph["stats"]["study_limitation_nodes"], expected_limitations)
         relations = [edge["relation"] for edge in graph["edges"]]
-        self.assertEqual(relations.count("reports_null_finding"), 11)
-        self.assertEqual(relations.count("has_limitation"), 20)
+        self.assertEqual(relations.count("reports_null_finding"), sum(len(card["null_findings"]) for card in cards))
+        self.assertEqual(relations.count("has_limitation"), expected_limitations)
 
     def test_repair_queue_matches_pending_urls(self) -> None:
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
@@ -79,7 +83,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertEqual(len(cards), 4)
+        self.assertGreaterEqual(len(cards), 5)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])

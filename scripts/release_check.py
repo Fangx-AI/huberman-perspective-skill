@@ -123,6 +123,7 @@ def check() -> list[str]:
         if repair_urls != pending_urls:
             errors.append("academic repair queue does not match pending verification URLs")
 
+    study_cards: list[dict] = []
     study_cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
     if academic_path.is_file() and study_cards_path.is_file():
         with academic_path.open(encoding="utf-8-sig", newline="") as handle:
@@ -135,6 +136,7 @@ def check() -> list[str]:
                     continue
                 card_count += 1
                 card = json.loads(line)
+                study_cards.append(card)
                 review_id = card.get("review_id", "")
                 if not review_id or review_id in review_ids:
                     errors.append(f"empty or duplicate study-card review_id at line {line_number}")
@@ -147,8 +149,8 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count != 4:
-            errors.append(f"unexpected study-card count: {card_count}")
+        if card_count < 5:
+            errors.append(f"too few study cards: {card_count}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():
@@ -178,15 +180,26 @@ def check() -> list[str]:
             if node.get("type") == "claim" and ("http" in node.get("label", "") or len(node.get("label", "")) > 180):
                 errors.append(f"unsanitized claim label: {node.get('id')}")
         stats = graph.get("stats", {})
-        if stats.get("study_card_nodes") != 4 or stats.get("study_finding_nodes") != 15:
+        expected_findings = sum(1 + len(card.get("null_findings", [])) for card in study_cards)
+        expected_limitations = sum(len(card.get("limitations", [])) for card in study_cards)
+        expected_topics = len(
+            {
+                re.sub(r"[^a-z0-9-]+", "-", tag.lower()).strip("-")
+                for card in study_cards
+                for tag in card.get("topic_tags", [])
+                if re.sub(r"[^a-z0-9-]+", "-", tag.lower()).strip("-")
+            }
+        )
+        expected_null_findings = sum(len(card.get("null_findings", [])) for card in study_cards)
+        if stats.get("study_card_nodes") != len(study_cards) or stats.get("study_finding_nodes") != expected_findings:
             errors.append("public graph study-card or finding count is stale")
-        if stats.get("study_limitation_nodes") != 20 or stats.get("evidence_topic_nodes") != 16:
+        if stats.get("study_limitation_nodes") != expected_limitations or stats.get("evidence_topic_nodes") != expected_topics:
             errors.append("public graph limitation or evidence-topic count is stale")
         relations = {}
         for edge in graph.get("edges", []):
             relation = edge.get("relation", "")
             relations[relation] = relations.get(relation, 0) + 1
-        if relations.get("reports_null_finding") != 11 or relations.get("has_limitation") != 20:
+        if relations.get("reports_null_finding") != expected_null_findings or relations.get("has_limitation") != expected_limitations:
             errors.append("public graph lost null-finding or limitation relations")
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         if academic_path.is_file():

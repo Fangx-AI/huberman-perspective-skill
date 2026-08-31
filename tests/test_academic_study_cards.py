@@ -19,7 +19,7 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertEqual(len(self.cards), 4)
+        self.assertGreaterEqual(len(self.cards), 5)
 
     def test_application_is_idempotent(self) -> None:
         rows = [
@@ -27,7 +27,8 @@ class AcademicStudyCardTests(unittest.TestCase):
             for card in self.cards
             for url in card["source_urls"]
         ]
-        self.assertEqual(MODULE.apply_cards(rows, self.cards), 5)
+        expected_changes = sum(len(card["source_urls"]) for card in self.cards)
+        self.assertEqual(MODULE.apply_cards(rows, self.cards), expected_changes)
         self.assertEqual(MODULE.apply_cards(rows, self.cards), 0)
 
     def test_pending_record_cannot_be_promoted(self) -> None:
