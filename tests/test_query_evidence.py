@@ -97,6 +97,23 @@ class EvidenceQueryTests(unittest.TestCase):
         self.assertIn("反馈", review["safe_interpretation"])
         self.assertIn("固定", review["safe_interpretation"])
 
+    def test_habit_query_rejects_fixed_twenty_one_or_sixty_six_day_rule(self) -> None:
+        results = MODULE.query_cards(self.cards, "习惯形成 21天 66天 自动化 情境线索")
+        self.assertEqual(
+            [item["review_id"] for item in results[:3]],
+            [
+                "fritz-2020-habit-interventions-scoping-review",
+                "singh-2024-health-habit-formation-systematic-review",
+                "lally-2010-real-world-habit-formation",
+            ],
+        )
+        review = MODULE.concise_record(results[1], self.cards, self.relations)
+        self.assertEqual({item["relation"] for item in review["related_evidence"]}, {"supports", "qualifies"})
+        self.assertTrue(any("不是独立复制" in item["boundary"] for item in review["related_evidence"]))
+        self.assertIn("不能证明", review["safe_interpretation"])
+        observational = MODULE.concise_record(results[2], self.cards, self.relations)
+        self.assertIn("不要把 66 天", observational["safe_interpretation"])
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

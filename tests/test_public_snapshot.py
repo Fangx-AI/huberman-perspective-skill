@@ -17,21 +17,21 @@ class PublicSnapshotTests(unittest.TestCase):
 
     def test_skill_keeps_identity_and_medical_boundaries(self) -> None:
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for phrase in ("不冒充", "不能诊断", "证据阶梯", "不把受版权保护的完整转录"):
+        for phrase in ("不冒充", "不能诊断", "证据阶梯", "用户结果优先", "默认只给 1–3 个", "不把受版权保护的完整转录"):
             self.assertIn(phrase, skill)
 
     def test_academic_statuses_are_typed(self) -> None:
         path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         with path.open(encoding="utf-8-sig", newline="") as handle:
             rows = list(csv.DictReader(handle))
-        self.assertEqual(len(rows), 749)
+        self.assertEqual(len(rows), 1736)
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
-        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
-        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 116)
-        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 33)
+        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 673)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 115)
+        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 34)
         self.assertEqual(sum(row["verification_status"] == "verified-observational" for row in rows), 21)
-        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 504)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 503)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
@@ -58,7 +58,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 676)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 677)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
@@ -96,7 +96,7 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 13)
+        self.assertGreaterEqual(len(cards), 16)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])
@@ -107,7 +107,7 @@ class PublicSnapshotTests(unittest.TestCase):
                 self.assertEqual(by_url[url]["verification_status"], card["verification_status"])
                 self.assertEqual(by_url[url]["evidence_notes"], card["queue_note"])
         external = [card for card in cards if card.get("source_scope") == "external-context"]
-        self.assertGreaterEqual(len(external), 3)
+        self.assertGreaterEqual(len(external), 5)
         self.assertTrue(all(card.get("queue_urls") == [] for card in external))
 
 

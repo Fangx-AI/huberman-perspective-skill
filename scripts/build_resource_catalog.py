@@ -6,21 +6,14 @@ import argparse
 import csv
 import json
 from pathlib import Path
-from urllib.parse import urlparse
-
-
-LITERATURE_HOSTS = {"doi.org", "pubmed.ncbi.nlm.nih.gov", "nature.com", "sciencedirect.com", "cell.com", "journals.sagepub.com", "ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov"}
+try:
+    from resource_classification import classify_resource
+except ModuleNotFoundError:  # pragma: no cover - import path used by module-based tests
+    from scripts.resource_classification import classify_resource
 
 
 def kind(url: str) -> str:
-    host = urlparse(url).netloc.lower().removeprefix("www.")
-    if host in LITERATURE_HOSTS or host.endswith(".nature.com") or host.endswith(".sciencedirect.com"):
-        return "academic-or-medical"
-    if "hubermanlab.com" in host or "stanford.edu" in host:
-        return "official-or-institutional"
-    if "youtube.com" in host or "youtu.be" in host:
-        return "video"
-    return "other-resource"
+    return classify_resource(url)
 
 
 def main() -> int:

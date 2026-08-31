@@ -48,6 +48,11 @@ def identifiers(url: str, overrides: dict[str, dict[str, str]] | None = None) ->
     doi_match = DOI_RE.search(decoded)
     pii_match = PII_RE.search(decoded)
     doi = doi_match.group(0).rstrip(".,;)") if doi_match else ""
+    # Some publisher URLs append a path-parameter session token directly to
+    # the DOI (for example ``.../annurev-psych-...;jsessionid=...``).  It is
+    # transport metadata, not part of the scholarly identifier.
+    if ";jsessionid" in doi.lower():
+        doi = re.split(r";jsessionid", doi, maxsplit=1, flags=re.IGNORECASE)[0]
     pii = pii_match.group(0).upper() if pii_match else ""
     if not pii and host == "sciencedirect.com":
         path_pii_match = SCIENCEDIRECT_PATH_PII_RE.search(decoded) or ELSEVIER_EID_RE.search(decoded)

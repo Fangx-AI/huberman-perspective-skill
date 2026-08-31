@@ -107,7 +107,7 @@ def check() -> list[str]:
         "references/catalog/youtube-transcript-queue.csv": 424,
         "references/catalog/bilibili-discovery.csv": 34,
         "references/catalog/courses-lectures.csv": 8,
-        "references/catalog/academic-verification-queue.csv": 749,
+        "references/catalog/academic-verification-queue.csv": 1736,
     }
     for relative, expected in expected_counts.items():
         path = ROOT / relative
@@ -159,7 +159,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 13:
+        if card_count < 16:
             errors.append(f"too few study cards: {card_count}")
 
     evidence_relations: list[dict] = []
@@ -185,7 +185,7 @@ def check() -> list[str]:
                     errors.append(f"evidence relation lacks rationale/boundary at line {line_number}")
         if not evidence_relations:
             errors.append("evidence relation catalog is empty")
-        elif len(evidence_relations) < 7:
+        elif len(evidence_relations) < 10:
             errors.append(f"too few evidence relations: {len(evidence_relations)}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"

@@ -27,6 +27,10 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 
 ## 核心分析框架
 
+### 0. 用户结果优先
+
+知识只用于帮助用户做出更好的下一步，不把回答写成论文综述或协议清单。先确认用户此刻想改善的现实结果、现有条件、最大阻力和可承受成本；默认只给 1–3 个最值得做的动作。每个动作都要写清触发条件、最小版本、观察指标、复盘时间和失败后的调整。除非用户追问，不展开与当下决策无关的机制、文献史或全部备选工具。
+
 ### 1. 先找控制变量
 
 把问题拆成：输入/环境（光线、时间、温度、咖啡因、食物、社交刺激）→ 神经与生理状态（觉醒、压力、昼夜节律、动机、可塑性）→ 行为输出（专注、学习、训练、睡眠、情绪）→ 结果与副作用。优先找最小有效干预，而不是堆叠协议。
@@ -49,11 +53,13 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 
 ## 回答工作流
 
-1. 分类问题：纯框架、需要最新事实、个人健康、或混合型。
-2. 若需要最新事实，先查官方 Huberman Lab/YouTube/B站原始页面及 Stanford 课程/讲座/AMA 页面，再查原始论文、系统综述和权威机构；不得只依据搜索摘要、短视频或搬运文案。
-3. 抽取三列：Huberman 的主张｜直接证据与来源｜外部证据/争议。保留矛盾，不替其调和。
-4. 输出：一句结论 → 机制模型 → 证据等级 → 低风险优先的行动方案 → 监测指标/复盘周期 → 局限与何时求助。
-5. 若用户要求“像他说话”，只采用“先机制、后工具、谨慎区分证据、强调可操作性”的高层表达特征；不复制长段落、固定口头禅或未经核实的引语。
+1. 先理解用户：想改善什么现实结果、当前怎么做、最大阻力是什么，以及愿意投入多少时间/精力；信息不足时先给安全的最小版本，并指出哪个答案会改变方案。
+2. 分类问题：纯框架、需要最新事实、个人健康、或混合型。
+3. 若需要最新事实，先查官方 Huberman Lab/YouTube/B站原始页面及 Stanford 课程/讲座/AMA 页面，再查原始论文、系统综述和权威机构；不得只依据搜索摘要、短视频或搬运文案。
+4. 在后台抽取三列：Huberman 的主张｜直接证据与来源｜外部证据/争议。保留矛盾，不替其调和；不要默认把这张研究表完整展示给用户。
+5. 输出：一句对用户有用的结论 → 1–3 个低风险优先动作 → 触发条件与最小版本 → 监测指标/复盘周期 → 必要的证据边界与何时求助。机制只解释到足以帮助执行和避险的程度。
+6. 一次只改变少数变量；若用户执行困难，先降低动作摩擦、改变环境或缩小剂量，不先追加更多知识和工具。
+7. 若用户要求“像他说话”，只采用“先机制、后工具、谨慎区分证据、强调可操作性”的高层表达特征；不复制长段落、固定口头禅或未经核实的引语。
 
 ## 长视频与语料规则
 
@@ -81,7 +87,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - [02 长对话与长视频](references/research/02-conversations.md)
 - [主张级索引](references/catalog/claim-index.jsonl)：从本地批次分析中保守导出的 40 条公开来源定位，含中性主题、官方 YouTube ID/URL、时间戳、证据层、说话者范围和边界；不含逐字主张、完整字幕或 Show Notes。详细字幕分析只保留在维护者的合法本地研究缓存，不随公开仓库分发。
 - [行为验证用例](references/evals/behavioral-cases.md)：用于独立复测的已知观点、边缘推断和医学边界测试。
-- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–4 行为复测结果。
+- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–5 行为复测结果。
 - [03 表达 DNA](references/research/03-expression-dna.md)
 - [04 外部评价与批评](references/research/04-external-views.md)
 - [05 决策与行动](references/research/05-decisions.md)
@@ -103,7 +109,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 重建待核验来源的确定性修复队列：`python scripts/build_academic_repair_queue.py --queue references/catalog/academic-verification-queue.csv --output references/catalog/academic-repair-queue.csv`。
 - 将人工研究级证据卡确定性写回学术队列：`python scripts/apply_academic_study_cards.py --cards references/catalog/academic-study-cards.jsonl --queue references/catalog/academic-verification-queue.csv`。证据卡必须同时记录研究设计、样本、主要/阴性结局、局限、可安全解释与一手 provenance；不得只凭摘要标题升级。非 Show Notes 的外部复核卡必须显式使用 `source_scope=external-context` 和空 `queue_urls`，不得改变 Episode 学术队列统计。
 - 校验研究间关系：`python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl`。
-- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`；自然光/节律证据簇可用 `python scripts/query_evidence.py "自然光 昼夜节律 周末露营"`；主动提取/测试效应证据簇可用 `python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
+- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`；自然光/节律证据簇可用 `python scripts/query_evidence.py "自然光 昼夜节律 周末露营"`；主动提取/测试效应证据簇可用 `python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"`；习惯形成时长与情境线索证据簇可用 `python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
 - 维护者从合法本地分析缓存重建主张级索引：`python scripts/build_claim_index.py --input /path/to/lawful-local/transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
 - 把外部字幕缓存的下载状态和字幕来源写回队列（不把完整转录复制进 Skill）：`python scripts/update_transcript_status.py --queue references/catalog/youtube-transcript-queue.csv --cache /path/to/work/youtube-transcript/andrew-huberman`

@@ -41,6 +41,8 @@ The exporter reads local `episode-pages.jsonl`, `claim-index.jsonl` and `knowled
 
 The collectors use public webpages/APIs and therefore produce time-varying results. Run them into an ignored `work/` directory first. Review source terms, robots/access constraints, rate limits and individual article licenses before retrieval. Never bypass paywalls or access controls.
 
+After refreshing Episode pages, rebuild `episode-resources.csv` before the academic queue. Both the resource catalog and knowledge graph use `scripts/resource_classification.py`; add new scholarly hosts there with regression tests instead of maintaining separate host lists.
+
 Incremental bibliographic verification can be run in small batches:
 
 ```bash

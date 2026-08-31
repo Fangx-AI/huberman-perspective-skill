@@ -30,6 +30,8 @@ Discovery-only Bilibili records. `source_level=C` or `mirror-only` cannot indepe
 
 ## `academic-verification-queue.csv`
 
+The queue is generated only from resources classified by the shared `scripts/resource_classification.py` rules. The catalog builder and graph builder import the same classifier so a publisher cannot silently be academic in one artifact and nonacademic in another. Host inclusion means “needs scholarly verification,” not “is a high-quality study.”
+
 | Field | Meaning |
 |---|---|
 | `url` | Source URL extracted from public Episode resources |

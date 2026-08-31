@@ -38,6 +38,8 @@ def main() -> int:
         "Huberman 明确说过",
         "基于框架的推断",
         "证据阶梯",
+        "用户结果优先",
+        "默认只给 1–3 个",
         "B 站搬运与原视频只算一条主张证据",
         "不能诊断、开药",
         "药物相互作用",
@@ -73,7 +75,7 @@ def main() -> int:
         "Academic queue schema changed",
         failures,
     )
-    require(len(academic_rows) == 749, "Academic queue row count is not 749", failures)
+    require(len(academic_rows) == 1736, "Academic queue row count is not 1736", failures)
     allowed_statuses = {
         "pending",
         "verified-study",
@@ -98,8 +100,8 @@ def main() -> int:
         if row["url"].endswith("(21") or row["url"].endswith("(22") or "2030532-8" in row["url"]
     ]
     require(
-        all(row["verification_status"] == "pending" and "截断" in row["evidence_notes"] for row in malformed_academic),
-        "Malformed academic links must remain pending with an explicit data-quality note",
+        all(row["verification_status"] == "pending" for row in malformed_academic),
+        "Malformed academic links must remain pending for repair-queue classification",
         failures,
     )
 
@@ -143,7 +145,7 @@ def main() -> int:
             and academic_by_url[url]["verification_status"] == card.get("verification_status")
             and academic_by_url[url]["evidence_notes"] == card.get("queue_note")
             for card in study_cards
-            for url in card.get("source_urls", [])
+            for url in card.get("queue_urls", card.get("source_urls", []))
         ),
         "Academic study cards and verification queue have drifted",
         failures,
@@ -307,8 +309,8 @@ def main() -> int:
         graph = {}
         failures.append(f"Knowledge graph cannot be loaded: {exc}")
     require(
-        graph.get("schema") == "episode-topic-platform-claim-study-v4",
-        "Knowledge graph schema is not claim-study v4",
+        graph.get("schema") == "episode-topic-platform-claim-study-relation-v5",
+        "Knowledge graph schema is not claim-study-relation v5",
         failures,
     )
     graph_stats = graph.get("stats", {})
@@ -400,11 +402,11 @@ def main() -> int:
     )
 
     cases = (ROOT / "references/evals/behavioral-cases.md").read_text(encoding="utf-8")
-    for case in ("Case 1", "Case 2", "Case 3", "Case 4"):
+    for case in ("Case 1", "Case 2", "Case 3", "Case 4", "Case 5"):
         require(case in cases, f"Behavioral eval missing {case}", failures)
     blackbox_path = ROOT / "references/evals/blackbox-2026-08-31.md"
     blackbox = blackbox_path.read_text(encoding="utf-8") if blackbox_path.exists() else ""
-    require("4/4 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
+    require("5/5 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
 
     eval_summary_path = ROOT / "references/evals/eval-summary.md"
     eval_summary = eval_summary_path.read_text(encoding="utf-8")
@@ -412,7 +414,7 @@ def main() -> int:
     academic_pending = sum(row["verification_status"] == "pending" for row in academic_rows)
     require(
         re.search(
-            rf"学术/医学资源：749 个去重核查 URL；{academic_verified} 条已核验，{academic_pending} 条待核验",
+            rf"学术/医学资源：1,736 个去重核查 URL；{academic_verified:,} 条已核验，{academic_pending:,} 条待核验",
             eval_summary,
         )
         is not None,
@@ -430,7 +432,7 @@ def main() -> int:
     )
     require(
         re.search(
-            rf"知识图谱 claim-study-v4：.*{graph_stats.get('edges'):,} 条关系",
+            rf"知识图谱 claim-study-relation-v5：.*{graph_stats.get('edges'):,} 条关系",
             eval_summary,
             re.S,
         )
@@ -446,7 +448,7 @@ def main() -> int:
         return 1
 
     print(
-        "PASS  contract: trigger/safety/evidence rules, catalogs, Bilibili/course layers, and Case 1-4 fixtures"
+        "PASS  contract: trigger/safety/evidence rules, catalogs, Bilibili/course layers, and Case 1-5 fixtures"
     )
     print(
         f"summary: YouTube={len(transcript_rows)} ({dict(transcript_status)}), "

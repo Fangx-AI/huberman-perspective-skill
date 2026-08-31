@@ -7,6 +7,22 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.7.0] - 2026-08-31
+
+### Added
+
+- Added an outcome-first interaction contract and a fifth behavioral case: the Skill must turn evidence into one to three low-friction actions with triggers, minimum versions, observable measures and adjustment rules instead of defaulting to knowledge dumps.
+- Added Fritz et al. (2020), Lally et al. (2010), and Singh et al. (2024) as a habit-formation evidence cluster, preserving self-report, model-selection, heterogeneity, source-overlap, null-outcome and causal-inference boundaries.
+- Added three directional relations showing that habit timing varies widely, that 66 days is not a universal deadline, and that a heterogeneous pre/post effect cannot validate a single 21-day protocol.
+- Added one shared resource classifier and regression coverage for Annual Reviews, Wiley, Springer, OUP, PNAS, JAMA, BMJ, Lancet and other previously omitted scholarly hosts.
+- Added DOI normalization coverage for publisher URLs that append `;jsessionid` path parameters.
+
+### Changed
+
+- Reclassified the full 7,262-row Episode resource catalog with one shared rule set, expanding the deduplicated academic/medical queue from 749 to 1,736 URLs while preserving matching review states.
+- The current queue contains 673 verified records and 1,063 pending records: 115 studies, 34 reviews, 21 observational studies and 503 bibliographic-only records. One previously verified Cell URL is no longer present in the refreshed official resource snapshot and remains recoverable from repository history.
+- Expanded the graph to 16 study cards, 79 findings, 107 limitations, 69 evidence topics, 10 evidence relations, 6,024 resource nodes and 8,679 edges.
+
 ## [0.6.0] - 2026-08-31
 
 ### Added

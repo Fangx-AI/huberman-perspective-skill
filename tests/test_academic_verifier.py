@@ -25,6 +25,16 @@ class AcademicVerifierTests(unittest.TestCase):
         url = "https://www.nature.com/articles/s41598-020-63980-y"
         self.assertEqual(identifiers(url)["doi"], "10.1038/s41598-020-63980-y")
 
+    def test_strips_publisher_session_parameter_from_doi(self) -> None:
+        url = (
+            "https://www.annualreviews.org/content/journals/"
+            "10.1146/annurev-psych-122414-033417;jsessionid=temporary-session"
+        )
+        self.assertEqual(
+            identifiers(url)["doi"],
+            "10.1146/annurev-psych-122414-033417",
+        )
+
     def test_derives_doi_from_legacy_nature_and_figure_urls(self) -> None:
         self.assertEqual(
             identifiers("https://www.nature.com/articles/1301376")["doi"],

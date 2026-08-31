@@ -12,8 +12,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlsplit, urlunsplit
 
+try:
+    from resource_classification import classify_resource
+except ModuleNotFoundError:  # pragma: no cover - import path used by module-based tests
+    from scripts.resource_classification import classify_resource
 
-ACADEMIC_HOSTS = {"doi.org", "pubmed.ncbi.nlm.nih.gov", "nature.com", "sciencedirect.com", "cell.com", "journals.sagepub.com", "ncbi.nlm.nih.gov", "pmc.ncbi.nlm.nih.gov"}
+
 TRACKING_QUERY_KEYS = {"_returnURL", "rfr_dat", "rfr_id", "url_ver", "via"}
 
 
@@ -29,14 +33,7 @@ def topic_label(url: str) -> str:
 
 
 def resource_kind(url: str) -> str:
-    host = urlparse(url).netloc.lower().removeprefix("www.")
-    if host in ACADEMIC_HOSTS or host.endswith(".nature.com") or host.endswith(".sciencedirect.com"):
-        return "academic-or-medical"
-    if "hubermanlab.com" in host or "stanford.edu" in host:
-        return "official-or-institutional"
-    if "youtube.com" in host or "youtu.be" in host:
-        return "video"
-    return "other-resource"
+    return classify_resource(url)
 
 
 def youtube_id(url: str) -> str:
