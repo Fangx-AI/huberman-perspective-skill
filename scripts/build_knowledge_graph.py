@@ -59,6 +59,7 @@ def main() -> int:
     parser.add_argument("--claims", type=Path)
     parser.add_argument("--academic", type=Path)
     parser.add_argument("--study-cards", type=Path)
+    parser.add_argument("--evidence-relations", type=Path)
     args = parser.parse_args()
     records = [json.loads(line) for line in args.input.read_text(encoding="utf-8").splitlines() if line.strip()]
     academic_by_key: dict[str, dict[str, str]] = {}
@@ -196,6 +197,7 @@ def main() -> int:
     study_finding_count = 0
     study_limitation_count = 0
     evidence_topic_count = 0
+    evidence_relation_count = 0
     if args.study_cards and args.study_cards.exists():
         evidence_topics: set[str] = set()
         with args.study_cards.open(encoding="utf-8") as handle:
@@ -212,6 +214,7 @@ def main() -> int:
                     "type": "study-card",
                     "label": card.get("title", review_id),
                     "review_id": review_id,
+                    "source_scope": card.get("source_scope", "episode-linked"),
                     "doi": card.get("doi", ""),
                     "verification_status": card.get("verification_status", ""),
                     "evidence_level": card.get("evidence_level", ""),
@@ -228,7 +231,24 @@ def main() -> int:
                 }
                 study_card_count += 1
                 for source_url in card.get("source_urls", []):
-                    for resource_node_id in resources_by_academic_key.get(academic_key(source_url), set()):
+                    source_key = academic_key(source_url)
+                    resource_node_ids = resources_by_academic_key.get(source_key, set())
+                    if not resource_node_ids:
+                        resource_node_id = f"resource:{source_url}"
+                        nodes[resource_node_id] = {
+                            "id": resource_node_id,
+                            "type": "resource",
+                            "label": source_url,
+                            "url": source_url,
+                            "kind": resource_kind(source_url),
+                            "verification_status": card.get("verification_status", ""),
+                            "evidence_notes": card.get("queue_note", ""),
+                            "academic_episode_count": "0",
+                            "source_scope": card.get("source_scope", "external-context"),
+                        }
+                        resources_by_academic_key.setdefault(source_key, set()).add(resource_node_id)
+                        resource_node_ids = {resource_node_id}
+                    for resource_node_id in resource_node_ids:
                         edges.add((nid, "reviews_resource", resource_node_id))
                 for tag in card.get("topic_tags", []):
                     normalized_tag = re.sub(r"[^a-z0-9-]+", "-", tag.lower()).strip("-")
@@ -271,10 +291,41 @@ def main() -> int:
                     study_limitation_count += 1
                     edges.add((nid, "has_limitation", limitation_id))
         evidence_topic_count = len(evidence_topics)
+    if args.evidence_relations and args.evidence_relations.exists():
+        with args.evidence_relations.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                relation = json.loads(line)
+                relation_id = relation.get("relation_id", "").strip()
+                source_id = f"study-card:{relation.get('source_review_id', '').strip()}"
+                target_id = f"study-card:{relation.get('target_review_id', '').strip()}"
+                relation_kind = relation.get("relation", "").strip()
+                if not relation_id or source_id not in nodes or target_id not in nodes or not relation_kind:
+                    raise ValueError(f"invalid evidence relation: {relation_id or '<missing>'}")
+                nid = f"evidence-relation:{relation_id}"
+                nodes[nid] = {
+                    "id": nid,
+                    "type": "evidence-relation",
+                    "label": relation.get("claim_scope", relation_id),
+                    "relation_id": relation_id,
+                    "relation": relation_kind,
+                    "source_review_id": relation.get("source_review_id", ""),
+                    "target_review_id": relation.get("target_review_id", ""),
+                    "rationale": relation.get("rationale", ""),
+                    "boundary": relation.get("boundary", ""),
+                    "provenance_urls": relation.get("provenance_urls", []),
+                    "reviewed_at": relation.get("reviewed_at", ""),
+                }
+                evidence_relation_count += 1
+                edges.add((source_id, "has_evidence_relation", nid))
+                edges.add((nid, relation_kind, target_id))
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "schema": (
-            "episode-topic-platform-claim-study-v4"
+            "episode-topic-platform-claim-study-relation-v5"
+            if args.evidence_relations
+            else "episode-topic-platform-claim-study-v4"
             if args.study_cards
             else "episode-topic-platform-claim-v3"
             if args.claims
@@ -291,6 +342,7 @@ def main() -> int:
             "study_finding_nodes": study_finding_count,
             "study_limitation_nodes": study_limitation_count,
             "evidence_topic_nodes": evidence_topic_count,
+            "evidence_relation_nodes": evidence_relation_count,
             "resource_nodes": sum(n["type"] == "resource" for n in nodes.values()),
             "academic_resource_nodes": sum(
                 n["type"] == "resource" and "verification_status" in n for n in nodes.values()

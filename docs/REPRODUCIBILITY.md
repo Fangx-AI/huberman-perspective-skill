@@ -7,6 +7,7 @@ From a clean clone:
 ```bash
 python -m pip install -r requirements.lock
 python scripts/release_check.py
+python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/quality_check.py SKILL.md
 python -m unittest discover -s tests -v
 python -m compileall -q scripts tests
@@ -75,7 +76,15 @@ python scripts/apply_academic_study_cards.py \
   --queue references/catalog/academic-verification-queue.csv
 ```
 
-The command refuses to promote a `pending` record, verifies exact URL alignment and is idempotent. Use `--check-only` to validate cards without writing.
+The command refuses to promote a `pending` record, verifies exact URL alignment and is idempotent. Use `--check-only` to validate cards without writing. External replication/counter-study cards must set `source_scope=external-context` and `queue_urls=[]`; they are validated but do not mutate the Episode queue.
+
+Validate typed study-to-study relations separately:
+
+```bash
+python scripts/validate_evidence_relations.py \
+  --cards references/catalog/academic-study-cards.jsonl \
+  --relations references/catalog/evidence-relations.jsonl
+```
 
 Rebuild the full local graph with structured findings and limitations before exporting the public snapshot:
 
@@ -87,9 +96,10 @@ python scripts/build_knowledge_graph.py \
   --courses references/catalog/courses-lectures.csv \
   --claims references/catalog/claim-index.jsonl \
   --academic references/catalog/academic-verification-queue.csv \
-  --study-cards references/catalog/academic-study-cards.jsonl
+  --study-cards references/catalog/academic-study-cards.jsonl \
+  --evidence-relations references/catalog/evidence-relations.jsonl
 ```
 
-The committed public graph must preserve all card, null-finding and limitation counts while continuing to omit raw transcripts and Show Notes.
+The committed public graph must preserve all card, null-finding, limitation and evidence-relation counts while continuing to omit raw transcripts, Show Notes and paper full text.
 
 After review, promote only the safe derived fields through `export_public_snapshot.py`. The full private contract check is available as `scripts/contract_check_full.py` when all local raw catalogs exist.

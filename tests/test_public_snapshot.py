@@ -56,14 +56,20 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 673)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 674)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
         expected_limitations = sum(len(card["limitations"]) for card in cards)
+        evidence_relations = [
+            json.loads(line)
+            for line in (ROOT / "references" / "catalog" / "evidence-relations.jsonl").read_text(encoding="utf-8").splitlines()
+            if line
+        ]
         self.assertEqual(graph["stats"]["study_card_nodes"], len(cards))
         self.assertEqual(graph["stats"]["study_finding_nodes"], expected_findings)
         self.assertEqual(graph["stats"]["study_limitation_nodes"], expected_limitations)
+        self.assertEqual(graph["stats"]["evidence_relation_nodes"], len(evidence_relations))
         relations = [edge["relation"] for edge in graph["edges"]]
         self.assertEqual(relations.count("reports_null_finding"), sum(len(card["null_findings"]) for card in cards))
         self.assertEqual(relations.count("has_limitation"), expected_limitations)
@@ -83,15 +89,19 @@ class PublicSnapshotTests(unittest.TestCase):
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         with queue_path.open(encoding="utf-8-sig", newline="") as handle:
             by_url = {row["url"]: row for row in csv.DictReader(handle)}
-        self.assertGreaterEqual(len(cards), 5)
+        self.assertGreaterEqual(len(cards), 7)
         for card in cards:
             self.assertTrue(card["null_findings"])
             self.assertTrue(card["limitations"])
             self.assertTrue(card["safe_interpretation"])
             self.assertTrue(all(url.startswith("https://") for url in card["provenance_urls"]))
-            for url in card["source_urls"]:
+            queue_urls = card.get("queue_urls", card["source_urls"])
+            for url in queue_urls:
                 self.assertEqual(by_url[url]["verification_status"], card["verification_status"])
                 self.assertEqual(by_url[url]["evidence_notes"], card["queue_note"])
+        external = [card for card in cards if card.get("source_scope") == "external-context"]
+        self.assertTrue(external)
+        self.assertTrue(all(card.get("queue_urls") == [] for card in external))
 
 
 if __name__ == "__main__":

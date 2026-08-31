@@ -76,6 +76,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - [学术标识覆盖表](references/catalog/academic-identifier-overrides.csv)：只用于无法由旧式 URL 安全推导的少数标识修复；每条必须带官方 provenance，且仍需书目 API 二次确认。
 - [学术修复队列](references/catalog/academic-repair-queue.csv)：把仍为 `pending` 的来源按 PII 未解析、非具体检索页、参考工具书、截断 URL 等原因分流；用于维护与贡献，不计为证据。
 - [结构化研究证据卡](references/catalog/academic-study-cards.jsonl)：人工逐篇核查的设计、样本、主要与阴性结局、局限、安全解释和一手 provenance；与学术队列状态保持确定性一致。
+- [研究间证据关系](references/catalog/evidence-relations.jsonl)：记录复制、支持、限定、挑战或矛盾关系的具体主张范围、理由、关系边界和来源；外部反证研究可用 `source_scope=external-context` 进入证据卡，但不得伪装成 Episode Show Notes 队列来源。
 - [01 著作与系统思考](references/research/01-writings.md)
 - [02 长对话与长视频](references/research/02-conversations.md)
 - [主张级索引](references/catalog/claim-index.jsonl)：从本地批次分析中保守导出的 40 条公开来源定位，含中性主题、官方 YouTube ID/URL、时间戳、证据层、说话者范围和边界；不含逐字主张、完整字幕或 Show Notes。详细字幕分析只保留在维护者的合法本地研究缓存，不随公开仓库分发。
@@ -93,15 +94,16 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 
 - 更新官方 Episode 目录：`python scripts/update_catalog.py --output references/catalog/official-episodes.csv`
 - 采集公开 Episode 元数据、Show Notes 和时间戳（不采集 Transcript Tab）：`python scripts/collect_episode_pages.py --catalog references/catalog/official-episodes.csv --output references/catalog/episode-pages.jsonl`
-- 构建 Episode—主题—平台—课程讲座—主张—学术核验—研究结局知识图谱：`python scripts/build_knowledge_graph.py --input references/catalog/episode-pages.jsonl --output references/catalog/knowledge-graph.json --bilibili references/catalog/bilibili-discovery.csv --courses references/catalog/courses-lectures.csv --claims references/catalog/claim-index.jsonl --academic references/catalog/academic-verification-queue.csv --study-cards references/catalog/academic-study-cards.jsonl`
+- 构建 Episode—主题—平台—课程讲座—主张—学术核验—研究结局—研究间关系知识图谱：`python scripts/build_knowledge_graph.py --input references/catalog/episode-pages.jsonl --output references/catalog/knowledge-graph.json --bilibili references/catalog/bilibili-discovery.csv --courses references/catalog/courses-lectures.csv --claims references/catalog/claim-index.jsonl --academic references/catalog/academic-verification-queue.csv --study-cards references/catalog/academic-study-cards.jsonl --evidence-relations references/catalog/evidence-relations.jsonl`
 - 生成主题候选与共现统计（只用于候选筛选，不直接等同于证据）：`python scripts/derive_theme_summary.py --input references/catalog/episode-pages.jsonl --output references/catalog/theme-summary.json`
 - 采集 Stanford Huberman Lab 公开出版物分页目录：`python scripts/collect_publications.py --output references/catalog/publications.csv`
 - 展平所有公开 Show Notes 中的资源/论文链接：`python scripts/build_resource_catalog.py --input references/catalog/episode-pages.jsonl --output references/catalog/episode-resources.csv`
 - 建立去重的学术/医学证据核查队列：`python scripts/build_academic_queue.py --input references/catalog/episode-resources.csv --output references/catalog/academic-verification-queue.csv`
 - 增量核对 PMC/PMID/DOI/PII 书目信息（默认只把明确命中的来源升级为 `verified-bibliographic`，不自动推断疗效）：`python scripts/verify_academic_batch.py --queue references/catalog/academic-verification-queue.csv --limit 20`。脚本会跳过无标准标识的查询页，读取带 provenance 的旧标识覆盖表，在 Europe PMC 未命中 PMCID 时回退到 NCBI ID Converter，并在同一提供方连续报错后熔断；若 Elsevier 被限流，可用 `--providers europe-pmc crossref` 继续处理其他公开来源。
 - 重建待核验来源的确定性修复队列：`python scripts/build_academic_repair_queue.py --queue references/catalog/academic-verification-queue.csv --output references/catalog/academic-repair-queue.csv`。
-- 将人工研究级证据卡确定性写回学术队列：`python scripts/apply_academic_study_cards.py --cards references/catalog/academic-study-cards.jsonl --queue references/catalog/academic-verification-queue.csv`。证据卡必须同时记录研究设计、样本、主要/阴性结局、局限、可安全解释与一手 provenance；不得只凭摘要标题升级。
-- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`。输出必须同时保留阴性结果、边界和一手 provenance；关键词命中只用于定位，不能替代研究解释。
+- 将人工研究级证据卡确定性写回学术队列：`python scripts/apply_academic_study_cards.py --cards references/catalog/academic-study-cards.jsonl --queue references/catalog/academic-verification-queue.csv`。证据卡必须同时记录研究设计、样本、主要/阴性结局、局限、可安全解释与一手 provenance；不得只凭摘要标题升级。非 Show Notes 的外部复核卡必须显式使用 `source_scope=external-context` 和空 `queue_urls`，不得改变 Episode 学术队列统计。
+- 校验研究间关系：`python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl`。
+- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
 - 维护者从合法本地分析缓存重建主张级索引：`python scripts/build_claim_index.py --input /path/to/lawful-local/transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
 - 把外部字幕缓存的下载状态和字幕来源写回队列（不把完整转录复制进 Skill）：`python scripts/update_transcript_status.py --queue references/catalog/youtube-transcript-queue.csv --cache /path/to/work/youtube-transcript/andrew-huberman`

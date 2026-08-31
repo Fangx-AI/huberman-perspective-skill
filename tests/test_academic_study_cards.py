@@ -19,15 +19,15 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertGreaterEqual(len(self.cards), 6)
+        self.assertGreaterEqual(len(self.cards), 7)
 
     def test_application_is_idempotent(self) -> None:
         rows = [
             {"url": url, "verification_status": "verified-bibliographic", "evidence_notes": ""}
             for card in self.cards
-            for url in card["source_urls"]
+            for url in MODULE.queue_urls(card)
         ]
-        expected_changes = sum(len(card["source_urls"]) for card in self.cards)
+        expected_changes = sum(len(MODULE.queue_urls(card)) for card in self.cards)
         self.assertEqual(MODULE.apply_cards(rows, self.cards), expected_changes)
         self.assertEqual(MODULE.apply_cards(rows, self.cards), 0)
 
@@ -36,6 +36,11 @@ class AcademicStudyCardTests(unittest.TestCase):
         rows = [{"url": url, "verification_status": "pending", "evidence_notes": ""} for url in card["source_urls"]]
         with self.assertRaisesRegex(ValueError, "bibliographic verification is required"):
             MODULE.apply_cards(rows, [card])
+
+    def test_external_context_card_does_not_require_queue_mutation(self) -> None:
+        card = next(item for item in self.cards if item.get("source_scope") == "external-context")
+        self.assertEqual(MODULE.queue_urls(card), [])
+        self.assertEqual(MODULE.apply_cards([], [card]), 0)
 
 
 if __name__ == "__main__":

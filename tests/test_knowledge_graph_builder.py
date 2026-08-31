@@ -108,6 +108,99 @@ class KnowledgeGraphBuilderTests(unittest.TestCase):
             for relation in ("reviews_resource", "reports_result", "reports_null_finding", "has_limitation"):
                 self.assertIn(relation, relations)
 
+    def test_external_counterevidence_becomes_a_bounded_relation_node(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory)
+            episode_path = work / "episodes.jsonl"
+            cards_path = work / "cards.jsonl"
+            relations_path = work / "relations.jsonl"
+            output_path = work / "graph.json"
+            episode_path.write_text(
+                json.dumps(
+                    {
+                        "fetch_ok": True,
+                        "episode_id": "demo",
+                        "url": "https://www.hubermanlab.com/episode/demo",
+                        "title": "Demo",
+                        "resource_urls": [],
+                        "topics": [],
+                        "youtube_urls": [],
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+            base = {
+                "doi": "10.0000/demo",
+                "provenance_urls": ["https://example.org/source"],
+                "verification_status": "verified-study",
+                "evidence_level": "A-Direct",
+                "topic_tags": ["sleep"],
+                "study_design": "experiment",
+                "sample_size": 10,
+                "population": "adults",
+                "intervention_exposure": "training",
+                "comparator": "control",
+                "outcomes": ["performance"],
+                "result_summary": "result",
+                "null_findings": ["null"],
+                "limitations": ["bounded"],
+                "safe_interpretation": "bounded",
+                "queue_note": "reviewed",
+                "reviewed_at": "2026-08-31",
+            }
+            target = {**base, "review_id": "target", "title": "Target", "source_urls": ["https://example.org/target"]}
+            source = {
+                **base,
+                "review_id": "source",
+                "title": "Source",
+                "source_urls": ["https://example.org/external"],
+                "source_scope": "external-context",
+                "queue_urls": [],
+            }
+            cards_path.write_text(
+                json.dumps(target) + "\n" + json.dumps(source) + "\n",
+                encoding="utf-8",
+            )
+            evidence_relation = {
+                "relation_id": "source-challenges-target",
+                "source_review_id": "source",
+                "relation": "challenges",
+                "target_review_id": "target",
+                "claim_scope": "enhancement",
+                "rationale": "controlled analysis",
+                "boundary": "does not reject stabilization",
+                "provenance_urls": ["https://example.org/external"],
+                "reviewed_at": "2026-08-31",
+            }
+            relations_path.write_text(json.dumps(evidence_relation) + "\n", encoding="utf-8")
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(ROOT / "scripts" / "build_knowledge_graph.py"),
+                    "--input",
+                    str(episode_path),
+                    "--output",
+                    str(output_path),
+                    "--study-cards",
+                    str(cards_path),
+                    "--evidence-relations",
+                    str(relations_path),
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+            graph = json.loads(output_path.read_text(encoding="utf-8"))
+            self.assertEqual(graph["schema"], "episode-topic-platform-claim-study-relation-v5")
+            self.assertEqual(graph["stats"]["evidence_relation_nodes"], 1)
+            external_resource = next(
+                node for node in graph["nodes"] if node.get("url") == "https://example.org/external"
+            )
+            self.assertEqual(external_resource["source_scope"], "external-context")
+            edge_relations = {edge["relation"] for edge in graph["edges"]}
+            self.assertTrue({"has_evidence_relation", "challenges"} <= edge_relations)
+
 
 if __name__ == "__main__":
     unittest.main()

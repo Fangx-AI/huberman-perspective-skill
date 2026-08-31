@@ -30,6 +30,13 @@ def load_cards(path: Path) -> list[dict]:
         return [json.loads(line) for line in handle if line.strip()]
 
 
+def load_relations(path: Path) -> list[dict]:
+    if not path.is_file():
+        return []
+    with path.open(encoding="utf-8") as handle:
+        return [json.loads(line) for line in handle if line.strip()]
+
+
 def searchable_text(card: dict) -> str:
     values = [str(card.get(field, "")) for field in SEARCH_FIELDS]
     values.extend(str(value) for field in LIST_FIELDS for value in card.get(field, []))
@@ -60,7 +67,33 @@ def query_cards(cards: list[dict], query: str, limit: int = 10) -> list[dict]:
     return [card for _, _, card in scored[:limit]]
 
 
-def concise_record(card: dict) -> dict:
+def related_evidence(card: dict, cards: list[dict], relations: list[dict]) -> list[dict]:
+    titles = {item.get("review_id", ""): item.get("title", "") for item in cards}
+    review_id = card.get("review_id", "")
+    related = []
+    for relation in relations:
+        source = relation.get("source_review_id", "")
+        target = relation.get("target_review_id", "")
+        if review_id not in {source, target}:
+            continue
+        counterpart = target if review_id == source else source
+        related.append(
+            {
+                "relation_id": relation.get("relation_id", ""),
+                "relation": relation.get("relation", ""),
+                "direction": "outgoing" if review_id == source else "incoming",
+                "counterpart_review_id": counterpart,
+                "counterpart_title": titles.get(counterpart, counterpart),
+                "claim_scope": relation.get("claim_scope", ""),
+                "rationale": relation.get("rationale", ""),
+                "boundary": relation.get("boundary", ""),
+                "provenance_urls": relation.get("provenance_urls", []),
+            }
+        )
+    return sorted(related, key=lambda item: item["relation_id"])
+
+
+def concise_record(card: dict, cards: list[dict] | None = None, relations: list[dict] | None = None) -> dict:
     return {
         "review_id": card.get("review_id", ""),
         "title": card.get("title", ""),
@@ -74,6 +107,7 @@ def concise_record(card: dict) -> dict:
         "limitations": card.get("limitations", []),
         "safe_interpretation": card.get("safe_interpretation", ""),
         "provenance_urls": card.get("provenance_urls", []),
+        "related_evidence": related_evidence(card, cards or [], relations or []),
     }
 
 
@@ -88,11 +122,18 @@ def main() -> int:
         default=Path(__file__).parents[1] / "references/catalog/academic-study-cards.jsonl",
     )
     parser.add_argument("--limit", type=int, default=10)
+    parser.add_argument(
+        "--relations",
+        type=Path,
+        default=Path(__file__).parents[1] / "references/catalog/evidence-relations.jsonl",
+    )
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     if args.limit <= 0:
         raise SystemExit("--limit must be positive")
-    results = [concise_record(card) for card in query_cards(load_cards(args.cards), args.query, args.limit)]
+    cards = load_cards(args.cards)
+    relations = load_relations(args.relations)
+    results = [concise_record(card, cards, relations) for card in query_cards(cards, args.query, args.limit)]
     if args.json:
         print(json.dumps(results, ensure_ascii=False, indent=2))
     else:
@@ -102,6 +143,11 @@ def main() -> int:
             print(f"结果：{result['result_summary']}")
             print(f"阴性结果：{'；'.join(result['null_findings'])}")
             print(f"边界：{result['safe_interpretation']}")
+            for relation in result["related_evidence"]:
+                print(
+                    f"关联证据：{relation['relation']} → {relation['counterpart_title']}；"
+                    f"{relation['rationale']}；关系边界：{relation['boundary']}"
+                )
             print(f"来源：{'；'.join(result['provenance_urls'])}")
     return 0
 

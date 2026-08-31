@@ -41776,6 +41776,11 @@
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
     },
     {
+      "relation": "challenges",
+      "source": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement",
+      "target": "study-card:walker-2003-sleep-motor-learning"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:basso-2019-brief-daily-meditation",
       "target": "evidence-topic:attention"
@@ -41989,6 +41994,96 @@
       "relation": "reviews_resource",
       "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
       "target": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-topic:distributed-practice"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-topic:memory-consolidation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-topic:motor-learning"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-topic:reactive-inhibition"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:41e33d303c374310"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:5570216a6ea24884"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:748514f613e64a46"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:d032e716a38c1240"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:e1996d5c0ec64733"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-limitation:f707a217439e7afb"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-finding:196f990b8e110c07"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-finding:1972e4ed98154ae5"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-finding:4eea6082addd75e6"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-finding:59b12abd01d7a914"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "study-finding:7957a6968eabdbff"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:rickard-2008-sleep-motor-sequence",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/18605872/"
     },
     {
       "relation": "has_evidence_topic",
@@ -42216,7 +42311,7 @@
       "target": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/"
     }
   ],
-  "generated_at": "2026-08-31T02:56:04.173196+00:00",
+  "generated_at": "2026-08-31T03:10:36.240546+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47446,6 +47541,22 @@
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
     },
     {
+      "boundary": "该关系只挑战 enhancement，不否定睡眠可能稳定记忆、防止遗忘，也不裁决其他运动任务、陈述性学习或睡眠不足的广泛影响。",
+      "id": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement",
+      "label": "跨夜睡眠是否会让显式手指序列技能提升到训练阶段已达到水平之上",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/18605872/",
+        "https://doi.org/10.1037/0278-7393.34.4.834"
+      ],
+      "rationale": "Rickard 等在传统 30 秒集中练习和平均方法下复现表观提升，但在控制反应性抑制、测试热身、时段混杂和集中练习疲劳后未见额外睡眠增强跃升，因此挑战 Walker 研究对离线增益机制的强解释。",
+      "relation": "challenges",
+      "relation_id": "rickard-2008-challenges-walker-2003-enhancement",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "rickard-2008-sleep-motor-sequence",
+      "target_review_id": "walker-2003-sleep-motor-learning",
+      "type": "evidence-relation"
+    },
+    {
       "id": "evidence-topic:alertness",
       "label": "alertness",
       "type": "evidence-topic"
@@ -47468,6 +47579,11 @@
     {
       "id": "evidence-topic:caffeine",
       "label": "caffeine",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:distributed-practice",
+      "label": "distributed-practice",
       "type": "evidence-topic"
     },
     {
@@ -47548,6 +47664,11 @@
     {
       "id": "evidence-topic:procedural-memory",
       "label": "procedural-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:reactive-inhibition",
+      "label": "reactive-inhibition",
       "type": "evidence-topic"
     },
     {
@@ -61310,6 +61431,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18276894/",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部反证研究级核验：该来源不是当前 Episode Show Notes 队列项，因此不回写队列。两个实验显示传统集中练习和平均方法可产生表观睡眠后提升；控制反应性抑制、时段和疲劳后没有额外增强信号，但仍保留睡眠稳定/防遗忘的可能。证据卡：academic-study-cards.jsonl#rickard-2008-sleep-motor-sequence。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/18605872/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/18605872/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18605872/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -91975,6 +92107,7 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "支持特定健康成人样本中 8 周短时日练的部分行为信号，不证明 13 分钟是普遍最低有效剂量，也不能替代失眠、焦虑或其他精神疾病治疗。",
       "sample_size": 42,
+      "source_scope": "episode-linked",
       "study_design": "8 周平行组随机主动对照研究，在基线、第 4 周和第 8 周评估",
       "type": "study-card",
       "verification_status": "verified-study"
@@ -92001,6 +92134,7 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "可以描述为探索性机制关系，但必须先报告随机组间神经结局为阴性；不能声称感恩练习已经证实降低炎症或治疗疾病。",
       "sample_size": 61,
+      "source_scope": "episode-linked",
       "study_design": "六周线上感恩写作对控制写作的平行组随机对照研究，干预前后采血，干预后完成 fMRI 任务",
       "type": "study-card",
       "verification_status": "verified-study"
@@ -92026,7 +92160,37 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "这是一项早期小样本临床信号，不能据此自行用 EPA 替代、叠加或停用抗抑郁药；重性抑郁、用药相互作用、躁狂或自伤风险必须由临床专业人员评估。",
       "sample_size": 60,
+      "source_scope": "episode-linked",
       "study_design": "8 周、三组随机、双盲双模拟比较试验，每两周评估一次",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "实验 1 比较清醒与睡眠间隔；实验 2 比较集中与分散练习，但所有人均跨一晚睡眠且没有独立清醒对照",
+      "doi": "10.1037/0278-7393.34.4.834",
+      "evidence_level": "A-Direct（两项人体实验与方法学重分析）",
+      "id": "study-card:rickard-2008-sleep-motor-sequence",
+      "intervention_exposure": "以非优势手反复完成 4-1-3-2-4 显式序列敲击；比较传统集中训练、分散训练及 12/24 小时延迟",
+      "label": "Sleep does not enhance motor sequence learning",
+      "outcomes": [
+        "正确按键反应时",
+        "序列准确率",
+        "训练末段到复测初段的表观离线提升",
+        "反应性抑制、练习疲劳与学习曲线外推"
+      ],
+      "population": "共招募 217 名年轻、右利手成人；排除期间自行练习、清醒组午睡或睡眠不足者后，实验 1 分析 32 人，实验 2 分析 109 人",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/18605872/",
+        "https://doi.org/10.1037/0278-7393.34.4.834",
+        "https://labs.neuroscience.mssm.edu/wp-content/uploads/2020/08/sleep-and-motor-learning.pdf"
+      ],
+      "result_summary": "传统 30 秒区块与通常平均方法仍产生约 13.3% 的表观反应时提升；改用 10 秒分散练习并按学习曲线校正后仅余 3.5%，落在正常试次学习外推线上，未出现支持额外睡眠增强机制的离散跃升。",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "直接挑战“睡眠会把该手指序列技能提升到训练时从未达到的更高水平”这一强主张，但不证明睡眠对记忆稳定毫无作用，也不能外推为减少睡眠不会损害学习。",
+      "sample_size": 217,
+      "source_scope": "external-context",
+      "study_design": "实验 1 将 53 名年轻成人随机分到 12 小时清醒或跨夜睡眠组，重分析传统 30 秒集中敲击区块；实验 2 将 164 人随机分到等总练习量的 30 秒集中或 10 秒分散练习，并在 24 小时后复测",
       "type": "study-card",
       "verification_status": "verified-study"
     },
@@ -92051,6 +92215,7 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "只能作为特定注意瞬脱训练范式中的探索性跨日信号；不能据此声称双耳节拍即时提高专注、对所有学习任务有效或可用于治疗。",
       "sample_size": 27,
+      "source_scope": "episode-linked",
       "study_design": "随机分配刺激顺序的三日实验；前两日以 40 Hz 与 16.3 Hz 双耳节拍交叉训练，第三日无声音；另有 5 人 MEG 控制实验",
       "type": "study-card",
       "verification_status": "verified-study"
@@ -92077,6 +92242,7 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "支持急性咖啡因与纹状体受体可用性/警觉度的特定 PET 信号，不等于‘咖啡因提升多巴胺’，也不能推出人人适用的剂量、饮用时间或长期获益。",
       "sample_size": 20,
+      "source_scope": "episode-linked",
       "study_design": "20 名参与者内自身对照的急性 PET 研究；安慰剂扫描固定在咖啡因扫描前 2 小时",
       "type": "study-card",
       "verification_status": "verified-study"
@@ -92104,6 +92270,7 @@
       "reviewed_at": "2026-08-31",
       "safe_interpretation": "支持特定年轻健康成人在手指序列任务上出现睡眠相关的离线巩固信号；不能简化为所有学习都只在睡眠中发生，也不能据此规定人人适用的睡眠时长、学习时间或治疗方案。",
       "sample_size": 40,
+      "source_scope": "episode-linked",
       "study_design": "40 名新参与者分为四个各 10 人的训练/复测日程组，完成非优势手五键序列敲击任务；论文另引用作者 2002 年研究的 30 人两组数据作睡眠先行与清醒先行比较",
       "type": "study-card",
       "verification_status": "verified-study"
@@ -92113,6 +92280,20 @@
       "id": "study-finding:03e31485275ed2ef",
       "label": "尾状核受体可用性未显著改变",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:196f990b8e110c07",
+      "label": "控制集中练习疲劳后，训练末点与测试起点的组间差异不显著（p=0.40）",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:1972e4ed98154ae5",
+      "label": "实验 2 分散练习组准确率从训练到测试无显著改善（p=0.78）",
+      "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-finding"
     },
     {
@@ -92159,9 +92340,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4eea6082addd75e6",
+      "label": "实验 2 未设置清醒对照，不能单独估计睡眠相对等长清醒的稳定作用",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:59b12abd01d7a914",
+      "label": "实验 1 在避开训练末段反应性抑制和测试初段热身变化的选定序列分析中，没有睡眠特异的反应时或准确率增强",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:5c06d8a51682ca4d",
       "label": "双倍初始训练没有显著改变随后一晚的速度或错误率增益",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:7957a6968eabdbff",
+      "label": "传统 30 秒区块与通常平均方法仍产生约 13.3% 的表观反应时提升；改用 10 秒分散练习并按学习曲线校正后仅余 3.5%，落在正常试次学习外推线上，未出现支持额外睡眠增强机制的离散跃升。",
+      "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-finding"
     },
     {
@@ -92306,6 +92508,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:41e33d303c374310",
+      "label": "仅研究年轻右利手成人和单一显式手指序列任务",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:41fbc0f90beccb99",
       "label": "分组分配是否随机未在方法中明确，不应称为随机对照试验",
       "review_id": "walker-2003-sleep-motor-learning",
@@ -92327,6 +92535,12 @@
       "id": "study-limitation:5540014cb6d3c2ed",
       "label": "任务高度专门且总训练效应小",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5570216a6ea24884",
+      "label": "睡眠时长、午睡和期间练习主要依赖自报，未使用多导睡眠监测",
+      "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-limitation"
     },
     {
@@ -92357,6 +92571,12 @@
       "id": "study-limitation:747418975081c238",
       "label": "仅研究 18–28 岁健康右利手成人和单一显式手指序列任务",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:748514f613e64a46",
+      "label": "两项实验共排除 76 人，最终分析 141 人，按期间行为排除可能影响样本代表性",
+      "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-limitation"
     },
     {
@@ -92432,6 +92652,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:d032e716a38c1240",
+      "label": "实验 2 所有人均跨夜睡眠，没有独立清醒对照",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e1996d5c0ec64733",
+      "label": "结论依赖对反应性抑制、选定序列和学习曲线外推的分析框架",
+      "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e3b28d2b870d0eda",
       "label": "同一段冥想和特定主动对照限制外推",
       "review_id": "basso-2019-brief-daily-meditation",
@@ -92453,6 +92685,12 @@
       "id": "study-limitation:f521c567f8492786",
       "label": "样本小且仅为健康成人",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f707a217439e7afb",
+      "label": "不能排除睡眠防止遗忘、稳定记忆或对其他程序性/陈述性任务的作用",
+      "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-limitation"
     },
     {
@@ -95182,17 +95420,18 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 748,
+    "academic_resource_nodes": 749,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8443,
+    "edges": 8462,
     "episode_nodes": 425,
-    "evidence_topic_nodes": 24,
-    "resource_nodes": 6020,
-    "study_card_nodes": 6,
-    "study_finding_nodes": 23,
-    "study_limitation_nodes": 32,
+    "evidence_relation_nodes": 1,
+    "evidence_topic_nodes": 26,
+    "resource_nodes": 6021,
+    "study_card_nodes": 7,
+    "study_finding_nodes": 28,
+    "study_limitation_nodes": 38,
     "top_topics": [
       {
         "count": 58,
@@ -95296,7 +95535,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 673,
+    "verified_academic_resource_nodes": 674,
     "youtube_nodes": 424
   }
 }

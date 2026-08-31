@@ -32,6 +32,11 @@ REQUIRED_FIELDS = {
 }
 ALLOWED_STATUSES = {"verified-study", "verified-review", "verified-observational"}
 PROMOTABLE_STATUSES = {"verified-bibliographic", *ALLOWED_STATUSES}
+ALLOWED_SOURCE_SCOPES = {"episode-linked", "external-context"}
+
+
+def queue_urls(card: dict) -> list[str]:
+    return card.get("queue_urls", card["source_urls"])
 
 
 def load_cards(path: Path) -> list[dict]:
@@ -61,6 +66,13 @@ def validate_cards(cards: list[dict]) -> None:
         review_ids.add(review_id)
         if card["verification_status"] not in ALLOWED_STATUSES:
             raise ValueError(f"unsupported verification_status for {review_id}: {card['verification_status']}")
+        source_scope = card.get("source_scope", "episode-linked")
+        if source_scope not in ALLOWED_SOURCE_SCOPES:
+            raise ValueError(f"unsupported source_scope for {review_id}: {source_scope}")
+        if "queue_urls" in card and not isinstance(card["queue_urls"], list):
+            raise ValueError(f"queue_urls must be a list for {review_id}")
+        if source_scope == "external-context" and ("queue_urls" not in card or card["queue_urls"]):
+            raise ValueError(f"external-context cards must declare an empty queue_urls list for {review_id}")
         if not isinstance(card["sample_size"], int) or card["sample_size"] <= 0:
             raise ValueError(f"sample_size must be a positive integer for {review_id}")
         for field in ("source_urls", "provenance_urls", "topic_tags", "outcomes", "null_findings", "limitations"):
@@ -72,6 +84,8 @@ def validate_cards(cards: list[dict]) -> None:
             if source_url in source_urls:
                 raise ValueError(f"source URL appears in more than one card: {source_url}")
             source_urls.add(source_url)
+        if not set(queue_urls(card)) <= set(card["source_urls"]):
+            raise ValueError(f"queue_urls must be a subset of source_urls for {review_id}")
         for field in (
             "title",
             "doi",
@@ -91,14 +105,14 @@ def validate_cards(cards: list[dict]) -> None:
 
 def apply_cards(queue_rows: list[dict[str, str]], cards: list[dict]) -> int:
     by_url = {row["url"]: row for row in queue_rows}
-    requested_urls = {url for card in cards for url in card["source_urls"]}
+    requested_urls = {url for card in cards for url in queue_urls(card)}
     missing = sorted(requested_urls - set(by_url))
     if missing:
         raise ValueError(f"study-card URLs missing from academic queue: {missing}")
 
     changed = 0
     for card in cards:
-        for url in card["source_urls"]:
+        for url in queue_urls(card):
             row = by_url[url]
             current = row.get("verification_status", "pending")
             if current not in PROMOTABLE_STATUSES:

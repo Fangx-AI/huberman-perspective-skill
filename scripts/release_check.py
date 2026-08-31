@@ -32,6 +32,7 @@ REQUIRED = [
     "references/catalog/academic-identifier-overrides.csv",
     "references/catalog/academic-repair-queue.csv",
     "references/catalog/academic-study-cards.jsonl",
+    "references/catalog/evidence-relations.jsonl",
     "references/catalog/knowledge-graph.json",
     "references/catalog/release-manifest.json",
 ]
@@ -145,12 +146,39 @@ def check() -> list[str]:
                     errors.append(f"study card lacks negative findings/boundaries at line {line_number}")
                 if not all(url.startswith("https://") for url in card.get("provenance_urls", [])):
                     errors.append(f"study card lacks HTTPS provenance at line {line_number}")
-                for url in card.get("source_urls", []):
+                queue_urls = card.get("queue_urls", card.get("source_urls", []))
+                if card.get("source_scope") == "external-context" and queue_urls:
+                    errors.append(f"external-context card must not mutate the episode queue at line {line_number}")
+                for url in queue_urls:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 6:
+        if card_count < 7:
             errors.append(f"too few study cards: {card_count}")
+
+    evidence_relations: list[dict] = []
+    evidence_relations_path = ROOT / "references" / "catalog" / "evidence-relations.jsonl"
+    if evidence_relations_path.is_file():
+        review_ids = {card.get("review_id", "") for card in study_cards}
+        relation_ids = set()
+        with evidence_relations_path.open(encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, 1):
+                if not line.strip():
+                    continue
+                relation = json.loads(line)
+                evidence_relations.append(relation)
+                relation_id = relation.get("relation_id", "")
+                if not relation_id or relation_id in relation_ids:
+                    errors.append(f"empty or duplicate evidence relation at line {line_number}")
+                relation_ids.add(relation_id)
+                if relation.get("source_review_id") not in review_ids or relation.get("target_review_id") not in review_ids:
+                    errors.append(f"evidence relation references unknown study card at line {line_number}")
+                if relation.get("relation") not in {"replicates", "supports", "qualifies", "challenges", "contradicts"}:
+                    errors.append(f"unsupported evidence relation at line {line_number}")
+                if not relation.get("rationale") or not relation.get("boundary"):
+                    errors.append(f"evidence relation lacks rationale/boundary at line {line_number}")
+        if not evidence_relations:
+            errors.append("evidence relation catalog is empty")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():
@@ -195,6 +223,8 @@ def check() -> list[str]:
             errors.append("public graph study-card or finding count is stale")
         if stats.get("study_limitation_nodes") != expected_limitations or stats.get("evidence_topic_nodes") != expected_topics:
             errors.append("public graph limitation or evidence-topic count is stale")
+        if stats.get("evidence_relation_nodes") != len(evidence_relations):
+            errors.append("public graph evidence-relation count is stale")
         relations = {}
         for edge in graph.get("edges", []):
             relation = edge.get("relation", "")
@@ -210,7 +240,13 @@ def check() -> list[str]:
                 node.get("url") for node in graph.get("nodes", []) if node.get("type") == "resource" and node.get("url")
             }
             linked_verified = len(verified_urls & graph_resource_urls)
-            if graph.get("stats", {}).get("verified_academic_resource_nodes") != linked_verified:
+            external_verified = sum(
+                node.get("type") == "resource"
+                and node.get("source_scope") == "external-context"
+                and node.get("verification_status") != "pending"
+                for node in graph.get("nodes", [])
+            )
+            if graph.get("stats", {}).get("verified_academic_resource_nodes") != linked_verified + external_verified:
                 errors.append("knowledge graph verified academic count is stale")
 
     manifest_path = ROOT / "references" / "catalog" / "release-manifest.json"

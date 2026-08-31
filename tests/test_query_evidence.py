@@ -16,6 +16,7 @@ class EvidenceQueryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.cards = MODULE.load_cards(ROOT / "references" / "catalog" / "academic-study-cards.jsonl")
+        cls.relations = MODULE.load_relations(ROOT / "references" / "catalog" / "evidence-relations.jsonl")
 
     def test_chinese_query_returns_bounded_caffeine_card(self) -> None:
         results = MODULE.query_cards(self.cards, "咖啡因 多巴胺")
@@ -38,6 +39,16 @@ class EvidenceQueryTests(unittest.TestCase):
         self.assertIn("所有学习", concise["safe_interpretation"])
         self.assertTrue(any("三晚" in finding for finding in concise["null_findings"]))
         self.assertTrue(any("随机" in limitation for limitation in concise["limitations"]))
+
+    def test_sleep_card_surfaces_bounded_counterevidence(self) -> None:
+        card = next(item for item in self.cards if item["review_id"] == "walker-2003-sleep-motor-learning")
+        concise = MODULE.concise_record(card, self.cards, self.relations)
+        self.assertEqual(concise["related_evidence"][0]["relation"], "challenges")
+        self.assertEqual(
+            concise["related_evidence"][0]["counterpart_review_id"],
+            "rickard-2008-sleep-motor-sequence",
+        )
+        self.assertIn("不否定", concise["related_evidence"][0]["boundary"])
 
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])

@@ -9,9 +9,10 @@
 - 425 个官方 Episode 元数据记录
 - 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
 - 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
-- 749 个去重学术/医学来源，674 个已核验、75 个待核验；其中 114 条已完成原始研究级核查，待核验来源已按修复原因分流
-- 6 张结构化高关联研究证据卡，显式记录设计、样本、阴性/反向结果、局限与安全解释，并确定性回写 8 条来源记录
-- 研究证据图谱包含 6 个研究卡、23 个结果/阴性发现、32 个局限及 24 个证据主题节点，共 8,443 条可追溯关系
+- 749 个 Show Notes 学术/医学来源，674 个已核验、75 个待核验；其中 114 条已完成原始研究级核查，待核验来源已按修复原因分流
+- 7 张结构化高关联研究证据卡：6 张回写 8 条 Show Notes 来源记录，1 张为不改变队列统计的外部反证卡
+- 首条机器可读的研究间 `challenges` 关系，显式区分“挑战睡眠增强”与“不否定记忆稳定”
+- 研究证据图谱包含 7 个研究卡、28 个结果/阴性发现、38 个局限、26 个证据主题及 1 个研究关系节点，共 8,462 条可追溯关系
 - 40 个脱敏的主张定位记录
 - 8 个课程、讲座、AMA 或机构访谈入口
 
@@ -63,7 +64,7 @@ Use $huberman-perspective to analyze whether morning sunlight is a robust sleep 
 
 输出应区分：Huberman 的公开主张、跨 Episode 归纳、框架推断、外部研究，以及证据争议。
 
-也可直接检索已人工核查的结构化研究卡；命令会连同阴性结果、局限、安全解释和一手来源一起输出：
+也可直接检索已人工核查的结构化研究卡；命令会连同阴性结果、局限、安全解释、一手来源及已登记的复制/反证关系一起输出：
 
 ```bash
 python scripts/query_evidence.py "咖啡因 多巴胺"
@@ -77,6 +78,7 @@ python scripts/query_evidence.py "gratitude inflammation" --json
 
 ```bash
 python scripts/release_check.py
+python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/quality_check.py SKILL.md
 python -m unittest discover -s tests -v
 python -m compileall -q scripts tests
@@ -102,4 +104,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.3.2`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。
+当前版本：`0.4.0`，研究预览版。公开发布前仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是仓库命名、人物名称的描述性使用，以及任何商业化场景。

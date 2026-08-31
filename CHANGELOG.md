@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.4.0] - 2026-08-31
+
+### Added
+
+- Added a structured external-context card for Rickard et al. (2008), preserving the two-experiment design, large between-session exclusion count, reactive-inhibition/fatigue analysis, absent wake control in Experiment 2 and stabilization boundary.
+- Added `evidence-relations.jsonl` and a validator for typed `replicates`, `supports`, `qualifies`, `challenges` and `contradicts` links between study cards.
+- Added first-class evidence-relation graph nodes and query output that surfaces bounded counterevidence next to the matched study.
+
+### Changed
+
+- Advanced the full graph to `episode-topic-platform-claim-study-relation-v5` with seven study cards, 28 findings, 38 limitations, 26 evidence topics, one evidence relation, 6,021 resource nodes and 8,462 edges.
+- Allowed manually reviewed external-context cards to remain outside the Episode Show Notes queue through explicit empty `queue_urls`, preserving all queue counts.
+- Added regression coverage for external cards, relation validation, graph relations and counterevidence-aware Chinese querying.
+
 ## [0.3.2] - 2026-08-31
 
 ### Added

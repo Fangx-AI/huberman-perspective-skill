@@ -49,7 +49,11 @@ One row for every `pending` academic verification record. It preserves Episode l
 
 ## `academic-study-cards.jsonl`
 
-One JSON object per manually reviewed high-priority paper. A card records the exact queue URLs, primary-source provenance, study design, sample, intervention/exposure, comparator, outcomes, result summary, negative findings, limitations and a bounded safe interpretation. `apply_academic_study_cards.py` is the only supported path for promoting these records from bibliographic-only to research-level status; release validation requires every card URL, status and queue note to remain aligned.
+One JSON object per manually reviewed high-priority paper. A card records source URLs, primary-source provenance, study design, sample, intervention/exposure, comparator, outcomes, result summary, negative findings, limitations and a bounded safe interpretation. Episode-linked cards default to `source_scope=episode-linked`; their `queue_urls` default to `source_urls` and must remain aligned with the Show Notes queue. An independently selected replication or counter-study uses `source_scope=external-context` plus an explicit empty `queue_urls` list, so it cannot mutate or inflate Episode queue statistics. `apply_academic_study_cards.py` is the only supported path for promoting queue-linked records.
+
+## `evidence-relations.jsonl`
+
+One JSON object per manually reviewed relationship between two study cards. Required fields are stable `relation_id`, source and target `review_id`, typed `relation` (`replicates`, `supports`, `qualifies`, `challenges`, or `contradicts`), exact `claim_scope`, `rationale`, relationship `boundary`, HTTPS provenance and review date. A relation is directional and claim-scoped: `challenges` must not be interpreted as rejecting every result in the target paper.
 
 ## `claim-index.jsonl`
 
@@ -57,7 +61,7 @@ One JSON object per source locator. Public records contain `claim_id`, neutral `
 
 ## `knowledge-graph.json`
 
-JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, `resource`, `study-card`, `study-finding`, `study-limitation`, and `evidence-topic`. Study cards connect to exact Episode resource nodes through `reviews_resource`; positive summaries, null findings and limitations use `reports_result`, `reports_null_finding`, and `has_limitation`. Public claim labels remain neutral topic names; detailed transcript-derived prose is absent.
+JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, `resource`, `study-card`, `study-finding`, `study-limitation`, `evidence-topic`, and `evidence-relation`. Study cards connect to reviewed resources through `reviews_resource`; external resources retain `source_scope=external-context` and zero Episode links. Positive summaries, null findings and limitations use `reports_result`, `reports_null_finding`, and `has_limitation`. A source card connects to an evidence-relation node with `has_evidence_relation`; that node connects to the target card with its typed relation. Public claim labels remain neutral topic names; detailed transcript-derived prose is absent.
 
 ## Evidence levels
 

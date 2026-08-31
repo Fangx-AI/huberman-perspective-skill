@@ -9,6 +9,7 @@ Contributions are welcome when they improve traceability, evidence quality, safe
 3. Distinguish the speaker: Huberman, guest, mixed discussion, or external research.
 4. Do not present mechanism, animal evidence or a single study as settled human efficacy.
 5. Health changes must state population, design, primary outcome, uncertainty, contraindications and when professional care is needed.
+6. Replication or counterevidence not cited in Episode Show Notes must use `source_scope=external-context` and `queue_urls=[]`; never add it to the Episode queue merely to satisfy card validation.
 
 ## Evidence contribution template
 
@@ -24,6 +25,7 @@ Include the following in the pull request description:
 - Population and external-validity limits
 - Medical safety boundary
 - Copyright statement confirming no restricted payload was added
+- For study-to-study claims: relation type, exact claim scope, rationale, boundary and both card IDs
 
 ## Status vocabulary
 
@@ -37,6 +39,7 @@ Include the following in the pull request description:
 
 ```bash
 python scripts/release_check.py
+python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
 python scripts/quality_check.py SKILL.md
 python -m unittest discover -s tests -v
 python -m compileall -q scripts tests
