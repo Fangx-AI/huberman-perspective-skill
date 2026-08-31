@@ -41774,9 +41774,294 @@
       "relation": "has_video",
       "source": "episode:your-top-health-questions-answered",
       "target": "youtube:https://www.youtube.com/watch?v=ssP31IenzYA"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "evidence-topic:attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "evidence-topic:meditation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "evidence-topic:memory"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "evidence-topic:mood"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "evidence-topic:stress"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-limitation:27322864e4c850d0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-limitation:7c8c9802e6127016"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-limitation:b1e423740f9f1339"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-limitation:e3b28d2b870d0eda"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-limitation:f521c567f8492786"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-finding:1b46e6b8b5d7c77f"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-finding:4cd7a198865e2cc4"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-finding:87b3034ff7abb267"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "study-finding:cf77c7e94c636bbc"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:basso-2019-brief-daily-meditation",
+      "target": "resource:https://www.sciencedirect.com/science/article/abs/pii/S016643281830322X?via%3Dihub"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "evidence-topic:fmri"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "evidence-topic:gratitude"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "evidence-topic:inflammation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "evidence-topic:support-giving"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-limitation:2de2dbf99a4062ae"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-limitation:ae539d4152d4c484"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-limitation:b9c2110776139c68"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-limitation:c01490a083d710f5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-limitation:f34a70294d8da45e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-finding:e111ad450123ea42"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-finding:e486febfd6c6afc5"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "study-finding:b0e1aac5f99e1088"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hazlett-2021-gratitude-rct",
+      "target": "resource:https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "evidence-topic:attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "evidence-topic:auditory-entrainment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "evidence-topic:binaural-beats"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "evidence-topic:learning"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-limitation:1ea7f1818b3ca7c5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-limitation:35c87356bf562f23"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-limitation:5540014cb6d3c2ed"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-limitation:a5db46ff565edf36"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-limitation:bf62766d04830fc0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-finding:c352330e6e8819b3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-finding:ef5c1411fac50cad"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-finding:f187c68b9b558f83"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "study-finding:ae645d37efec32c1"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "target": "resource:https://www.nature.com/articles/s41598-020-63980-y"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "evidence-topic:alertness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "evidence-topic:caffeine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "evidence-topic:dopamine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "evidence-topic:pet"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-limitation:53cfc911e6729a25"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-limitation:5814248ca29832b2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-limitation:b3dbd6ee0bbb2733"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-limitation:e83471f8ad4a0c64"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-limitation:f85138fd27c59b5c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-finding:03e31485275ed2ef"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-finding:2e3bd3c22183538e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-finding:d0fa780e20970252"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "study-finding:9f806e762c0a0f09"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:volkow-2015-caffeine-pet",
+      "target": "resource:https://www.nature.com/articles/tp201546"
     }
   ],
-  "generated_at": "2026-08-31T02:26:33.813812+00:00",
+  "generated_at": "2026-08-31T02:38:09.076402+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47004,6 +47289,86 @@
       "label": "Your Top Health Questions Answered",
       "type": "episode",
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
+    },
+    {
+      "id": "evidence-topic:alertness",
+      "label": "alertness",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:attention",
+      "label": "attention",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:auditory-entrainment",
+      "label": "auditory-entrainment",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:binaural-beats",
+      "label": "binaural-beats",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:caffeine",
+      "label": "caffeine",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:dopamine",
+      "label": "dopamine",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:fmri",
+      "label": "fmri",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:gratitude",
+      "label": "gratitude",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:inflammation",
+      "label": "inflammation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:learning",
+      "label": "learning",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:meditation",
+      "label": "meditation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:memory",
+      "label": "memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:mood",
+      "label": "mood",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:pet",
+      "label": "pet",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:stress",
+      "label": "stress",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:support-giving",
+      "label": "support-giving",
+      "type": "evidence-topic"
     },
     {
       "id": "resource:http://Computers in Human Behavior",
@@ -91390,6 +91755,338 @@
       "url": "https://zuckermaninstitute.columbia.edu/richard-axel-md"
     },
     {
+      "comparator": "每日约 13 分钟不同的 Radiolab 科学播客，持续 8 周",
+      "doi": "10.1016/j.bbr.2018.08.023",
+      "evidence_level": "A-Direct（小样本人体随机主动对照研究）",
+      "id": "study-card:basso-2019-brief-daily-meditation",
+      "intervention_exposure": "每日 13 分钟同一段引导冥想，持续 8 周",
+      "label": "Brief, daily meditation enhances attention, memory, mood, and emotional regulation in non-experienced meditators",
+      "outcomes": [
+        "情绪与焦虑量表",
+        "Stroop 注意任务",
+        "N-back 工作记忆",
+        "Mnemonic Similarity Task 识别记忆",
+        "TSST 应激反应",
+        "唾液皮质醇",
+        "PSQI 睡眠质量"
+      ],
+      "population": "18–45 岁、健康、不吸烟、无神经或精神疾病且缺乏冥想经验的成人",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/30153464/",
+        "https://www.sciencedirect.com/science/article/pii/S016643281830322X"
+      ],
+      "result_summary": "第 4 周未见显著改善；第 8 周相对主动对照在部分负性情绪、注意、工作记忆、识别记忆和 TSST 状态焦虑指标上更好。",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持特定健康成人样本中 8 周短时日练的部分行为信号，不证明 13 分钟是普遍最低有效剂量，也不能替代失眠、焦虑或其他精神疾病治疗。",
+      "sample_size": 42,
+      "study_design": "8 周平行组随机主动对照研究，在基线、第 4 周和第 8 周评估",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "六周线上控制写作干预",
+      "doi": "10.1016/j.bbi.2021.04.019",
+      "evidence_level": "A-Direct（小样本人体平行组 RCT）",
+      "id": "study-card:hazlett-2021-gratitude-rct",
+      "intervention_exposure": "六周线上感恩写作干预",
+      "label": "Exploring neural mechanisms of the health benefits of gratitude in women: A randomized controlled trial",
+      "outcomes": [
+        "支持给予自评",
+        "血浆及刺激性单核细胞 TNF-α 与 IL-6",
+        "感恩任务和威胁反应任务的 fMRI 神经活动"
+      ],
+      "population": "35–50 岁健康女性；感恩组 n=31，对照组 n=30",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33932527/",
+        "https://doi.org/10.1016/j.bbi.2021.04.019"
+      ],
+      "result_summary": "感恩组与对照组在感恩或威胁任务的腹侧纹状体、隔区或杏仁核反应上无显著组间差异；全样本中支持给予增加、杏仁核反应下降与刺激性炎症指标下降之间存在相关和统计中介关系。",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "可以描述为探索性机制关系，但必须先报告随机组间神经结局为阴性；不能声称感恩练习已经证实降低炎症或治疗疾病。",
+      "sample_size": 61,
+      "study_design": "六周线上感恩写作对控制写作的平行组随机对照研究，干预前后采血，干预后完成 fMRI 任务",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "同一参与者的另一节拍频率、随机顺序组以及第三日无声条件",
+      "doi": "10.1038/s41598-020-63980-y",
+      "evidence_level": "A-Direct（小样本人体随机顺序/交叉实验）",
+      "id": "study-card:ross-lopez-2020-binaural-attentional-blink",
+      "intervention_exposure": "在特定 RSVP 注意瞬脱任务训练期间连续播放 40 Hz 或 16.3 Hz 双耳节拍",
+      "label": "40-Hz Binaural beats enhance training to mitigate the attentional blink",
+      "outcomes": [
+        "注意瞬脱任务准确率及跨日变化",
+        "40 Hz 对 16.3 Hz 后的训练增益",
+        "独立 5 人 MEG 的听觉/视觉振荡同步"
+      ],
+      "population": "29 名健康年轻成人完成研究，2 人排除后行为分析 n=27；平均约 22 岁",
+      "provenance_urls": [
+        "https://www.nature.com/articles/s41598-020-63980-y"
+      ],
+      "result_summary": "两组从首日至末日均改善；即时/单次会话内无训练增益，40 Hz 与 16.3 Hz 会话当下也无平均表现差异，但刺激频率与下一时段变化存在交互，40 Hz 后跨日增益显著而 16.3 Hz 后不显著。",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "只能作为特定注意瞬脱训练范式中的探索性跨日信号；不能据此声称双耳节拍即时提高专注、对所有学习任务有效或可用于治疗。",
+      "sample_size": 27,
+      "study_design": "随机分配刺激顺序的三日实验；前两日以 40 Hz 与 16.3 Hz 双耳节拍交叉训练，第三日无声音；另有 5 人 MEG 控制实验",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "同日较早给予糖片安慰剂；固定顺序而非随机平衡",
+      "doi": "10.1038/tp.2015.46",
+      "evidence_level": "A-Direct（小样本人体急性药理 PET 研究）",
+      "id": "study-card:volkow-2015-caffeine-pet",
+      "intervention_exposure": "口服 300 mg 咖啡因，60 分钟后以 [11C]raclopride PET 测量",
+      "label": "Caffeine increases striatal dopamine D2/D3 receptor availability in the human brain",
+      "outcomes": [
+        "尾状核、壳核和腹侧纹状体 D2/D3 受体非置换结合潜能",
+        "主观警觉、困倦、疲劳与心血管指标",
+        "血浆咖啡因"
+      ],
+      "population": "平均 38±8 岁、低日常咖啡因摄入的健康男性",
+      "provenance_urls": [
+        "https://www.nature.com/articles/tp201546",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4462609/"
+      ],
+      "result_summary": "壳核与腹侧纹状体 D2/D3 受体可用性出现小幅增加（ROI 均 P=0.05），尾状核无显著变化；腹侧纹状体变化与警觉度变化相关（r=0.56，P=0.01）。",
+      "review_id": "volkow-2015-caffeine-pet",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持急性咖啡因与纹状体受体可用性/警觉度的特定 PET 信号，不等于‘咖啡因提升多巴胺’，也不能推出人人适用的剂量、饮用时间或长期获益。",
+      "sample_size": 20,
+      "study_design": "20 名参与者内自身对照的急性 PET 研究；安慰剂扫描固定在咖啡因扫描前 2 小时",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:03e31485275ed2ef",
+      "label": "尾状核受体可用性未显著改变",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:1b46e6b8b5d7c77f",
+      "label": "PSQI 结果反而提示冥想组睡眠质量变差，且该组更多在睡前时段练习",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:2e3bd3c22183538e",
+      "label": "结果不支持咖啡因增加纹状体多巴胺释放",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4cd7a198865e2cc4",
+      "label": "并非所有情绪、认知或生理指标均改善",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:87b3034ff7abb267",
+      "label": "4 周时所检指标无显著组间效果",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:9f806e762c0a0f09",
+      "label": "壳核与腹侧纹状体 D2/D3 受体可用性出现小幅增加（ROI 均 P=0.05），尾状核无显著变化；腹侧纹状体变化与警觉度变化相关（r=0.56，P=0.01）。",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:ae645d37efec32c1",
+      "label": "两组从首日至末日均改善；即时/单次会话内无训练增益，40 Hz 与 16.3 Hz 会话当下也无平均表现差异，但刺激频率与下一时段变化存在交互，40 Hz 后跨日增益显著而 16.3 Hz 后不显著。",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:b0e1aac5f99e1088",
+      "label": "感恩组与对照组在感恩或威胁任务的腹侧纹状体、隔区或杏仁核反应上无显著组间差异；全样本中支持给予增加、杏仁核反应下降与刺激性炎症指标下降之间存在相关和统计中介关系。",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:c352330e6e8819b3",
+      "label": "会话内没有表现增益",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:cf77c7e94c636bbc",
+      "label": "第 4 周未见显著改善；第 8 周相对主动对照在部分负性情绪、注意、工作记忆、识别记忆和 TSST 状态焦虑指标上更好。",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:d0fa780e20970252",
+      "label": "受体变化与血浆咖啡因浓度无显著相关",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e111ad450123ea42",
+      "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e486febfd6c6afc5",
+      "label": "关键机制链条主要来自跨全样本的相关与统计中介，而非随机组间效应",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ef5c1411fac50cad",
+      "label": "MEG 未发现明确的听觉—视觉交互调制",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:f187c68b9b558f83",
+      "label": "刺激期间 40 Hz 与 16.3 Hz 的行为表现没有平均差异",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:1ea7f1818b3ca7c5",
+      "label": "睡眠巩固是作者推断，研究未直接操纵或测量睡眠",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:27322864e4c850d0",
+      "label": "冥想组平均每周完成 5.5 次，对照组 6.4 次，依从性不同",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:2de2dbf99a4062ae",
+      "label": "仅纳入 35–50 岁健康女性",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:35c87356bf562f23",
+      "label": "未证明一般专注、生产力、临床康复或其他频率的效果",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:53cfc911e6729a25",
+      "label": "[11C]raclopride 不能区分 D2 与 D3，也不能单独区分受体数量、亲和力和其他结合因素",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5540014cb6d3c2ed",
+      "label": "任务高度专门且总训练效应小",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5814248ca29832b2",
+      "label": "研究未询问参与者是否识别出咖啡因或安慰剂",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7c8c9802e6127016",
+      "label": "8 周随访不能确定长期保持或临床疗效",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a5db46ff565edf36",
+      "label": "MEG 来自独立的 5 人控制样本",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:ae539d4152d4c484",
+      "label": "不能外推到临床炎症、焦虑或其他疾病",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b1e423740f9f1339",
+      "label": "干预与对照无法对参与者盲法",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b3dbd6ee0bbb2733",
+      "label": "仅 20 名低咖啡因摄入健康男性",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b9c2110776139c68",
+      "label": "统计中介不能把阴性的组间神经结局转化为已证实的治疗效应",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bf62766d04830fc0",
+      "label": "行为分析仅 27 名健康年轻成人",
+      "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:c01490a083d710f5",
+      "label": "自报支持给予与生物标志物关系不能单独证明因果机制",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e3b28d2b870d0eda",
+      "label": "同一段冥想和特定主动对照限制外推",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e83471f8ad4a0c64",
+      "label": "安慰剂始终先于咖啡因，存在固定顺序混杂",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f34a70294d8da45e",
+      "label": "样本小且干预仅六周",
+      "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f521c567f8492786",
+      "label": "样本小且仅为健康成人",
+      "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f85138fd27c59b5c",
+      "label": "单次 300 mg 急性暴露",
+      "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
       "id": "topic:https://www.hubermanlab.com/topics/aging-and-longevity",
       "label": "Aging And Longevity",
       "type": "topic",
@@ -94108,15 +94805,19 @@
       "url": "https://www.youtube.com/watch?v=zqANjUGarAw"
     }
   ],
-  "schema": "public-claim-v1",
+  "schema": "public-evidence-v2",
   "stats": {
     "academic_resource_nodes": 748,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8355,
+    "edges": 8412,
     "episode_nodes": 425,
+    "evidence_topic_nodes": 16,
     "resource_nodes": 6020,
+    "study_card_nodes": 4,
+    "study_finding_nodes": 15,
+    "study_limitation_nodes": 20,
     "top_topics": [
       {
         "count": 58,

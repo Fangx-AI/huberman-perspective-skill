@@ -5,7 +5,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 ## [Unreleased]
 
 - Continue expanding structured study cards beyond the first high-priority batch.
-- Add periodic drift checks for official Episode and platform metadata.
+- Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
+
+## [0.3.0] - 2026-08-31
+
+### Added
+
+- Added first-class `study-card`, `study-finding`, `study-limitation` and `evidence-topic` graph nodes with auditable resource, result, null-finding and limitation relations.
+- Added a bilingual evidence-card query command that always returns negative findings, limitations, safe interpretation and primary-source provenance alongside matching results.
+- Added graph-builder integration tests and evidence-query regression tests.
+
+### Changed
+
+- Advanced the full graph to `episode-topic-platform-claim-study-v4` and the sanitized public graph to `public-evidence-v2`.
+- Expanded the graph from 8,355 to 8,412 relations while keeping all prior Episode, platform, claim and academic-resource counts stable.
 
 ## [0.2.0] - 2026-08-31
 

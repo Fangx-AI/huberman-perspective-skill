@@ -172,11 +172,22 @@ def check() -> list[str]:
         if re.search(r'"show_notes"\s*:', raw):
             errors.append("show_notes payload leaked into public graph")
         graph = json.loads(raw)
-        if graph.get("schema") != "public-claim-v1":
-            errors.append("public graph schema must be public-claim-v1")
+        if graph.get("schema") != "public-evidence-v2":
+            errors.append("public graph schema must be public-evidence-v2")
         for node in graph.get("nodes", []):
             if node.get("type") == "claim" and ("http" in node.get("label", "") or len(node.get("label", "")) > 180):
                 errors.append(f"unsanitized claim label: {node.get('id')}")
+        stats = graph.get("stats", {})
+        if stats.get("study_card_nodes") != 4 or stats.get("study_finding_nodes") != 15:
+            errors.append("public graph study-card or finding count is stale")
+        if stats.get("study_limitation_nodes") != 20 or stats.get("evidence_topic_nodes") != 16:
+            errors.append("public graph limitation or evidence-topic count is stale")
+        relations = {}
+        for edge in graph.get("edges", []):
+            relation = edge.get("relation", "")
+            relations[relation] = relations.get(relation, 0) + 1
+        if relations.get("reports_null_finding") != 11 or relations.get("has_limitation") != 20:
+            errors.append("public graph lost null-finding or limitation relations")
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         if academic_path.is_file():
             with academic_path.open(encoding="utf-8-sig", newline="") as handle:

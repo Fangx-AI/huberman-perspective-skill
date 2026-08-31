@@ -103,6 +103,63 @@ def main() -> int:
         failures,
     )
 
+    study_cards_path = ROOT / "references/catalog/academic-study-cards.jsonl"
+    try:
+        with study_cards_path.open(encoding="utf-8") as handle:
+            study_cards = [json.loads(line) for line in handle if line.strip()]
+    except (OSError, json.JSONDecodeError) as exc:
+        study_cards = []
+        failures.append(f"Academic study cards cannot be loaded: {exc}")
+    required_study_card_fields = {
+        "review_id",
+        "source_urls",
+        "provenance_urls",
+        "verification_status",
+        "study_design",
+        "sample_size",
+        "population",
+        "outcomes",
+        "result_summary",
+        "null_findings",
+        "limitations",
+        "safe_interpretation",
+        "queue_note",
+    }
+    require(len(study_cards) >= 4, "Academic study-card catalog has too few records", failures)
+    require(
+        all(required_study_card_fields <= set(card) for card in study_cards),
+        "Academic study cards have an incomplete schema",
+        failures,
+    )
+    require(
+        len({card.get("review_id") for card in study_cards}) == len(study_cards),
+        "Academic study-card review IDs are duplicated",
+        failures,
+    )
+    academic_by_url = {row["url"]: row for row in academic_rows}
+    require(
+        all(
+            url in academic_by_url
+            and academic_by_url[url]["verification_status"] == card.get("verification_status")
+            and academic_by_url[url]["evidence_notes"] == card.get("queue_note")
+            for card in study_cards
+            for url in card.get("source_urls", [])
+        ),
+        "Academic study cards and verification queue have drifted",
+        failures,
+    )
+    require(
+        all(
+            card.get("null_findings")
+            and card.get("limitations")
+            and card.get("safe_interpretation")
+            and all(url.startswith("https://") for url in card.get("provenance_urls", []))
+            for card in study_cards
+        ),
+        "Academic study cards lack negative findings, limitations, safe interpretation, or HTTPS provenance",
+        failures,
+    )
+
     bilibili_path = ROOT / "references/catalog/bilibili-discovery.csv"
     with bilibili_path.open(encoding="utf-8-sig", newline="") as handle:
         bilibili_reader = csv.DictReader(handle)
@@ -249,7 +306,11 @@ def main() -> int:
     except (OSError, json.JSONDecodeError) as exc:
         graph = {}
         failures.append(f"Knowledge graph cannot be loaded: {exc}")
-    require(graph.get("schema") == "episode-topic-platform-claim-v3", "Knowledge graph schema is not claim v3", failures)
+    require(
+        graph.get("schema") == "episode-topic-platform-claim-study-v4",
+        "Knowledge graph schema is not claim-study v4",
+        failures,
+    )
     graph_stats = graph.get("stats", {})
     require(graph_stats.get("bilibili_nodes") == len(bilibili_rows), "Knowledge graph Bilibili count is stale", failures)
     require(
@@ -287,6 +348,41 @@ def main() -> int:
     require(
         claim_video_edges >= source_grounded_claims,
         "Knowledge graph is missing claim-to-video provenance edges",
+        failures,
+    )
+    require(
+        graph_stats.get("study_card_nodes") == len(study_cards),
+        "Knowledge graph study-card count is stale",
+        failures,
+    )
+    require(
+        graph_stats.get("study_finding_nodes")
+        == sum(1 + len(card.get("null_findings", [])) for card in study_cards),
+        "Knowledge graph study-finding count is stale",
+        failures,
+    )
+    require(
+        graph_stats.get("study_limitation_nodes")
+        == sum(len(card.get("limitations", [])) for card in study_cards),
+        "Knowledge graph study-limitation count is stale",
+        failures,
+    )
+    graph_relations = Counter(edge.get("relation") for edge in graph.get("edges", []))
+    require(
+        graph_relations["reviews_resource"] >= len(study_cards),
+        "Knowledge graph is missing study-card-to-resource provenance edges",
+        failures,
+    )
+    require(
+        graph_relations["reports_null_finding"]
+        == sum(len(card.get("null_findings", [])) for card in study_cards),
+        "Knowledge graph does not preserve every structured null finding",
+        failures,
+    )
+    require(
+        graph_relations["has_limitation"]
+        == sum(len(card.get("limitations", [])) for card in study_cards),
+        "Knowledge graph does not preserve every structured limitation",
         failures,
     )
 
@@ -334,7 +430,7 @@ def main() -> int:
     )
     require(
         re.search(
-            rf"知识图谱 claim-v3：.*{graph_stats.get('edges'):,} 条关系",
+            rf"知识图谱 claim-study-v4：.*{graph_stats.get('edges'):,} 条关系",
             eval_summary,
             re.S,
         )

@@ -53,10 +53,16 @@ class PublicSnapshotTests(unittest.TestCase):
         raw = path.read_text(encoding="utf-8")
         self.assertIsNone(re.search(r'"show_notes"\s*:', raw))
         graph = json.loads(raw)
-        self.assertEqual(graph["schema"], "public-claim-v1")
+        self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
         self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 673)
+        self.assertEqual(graph["stats"]["study_card_nodes"], 4)
+        self.assertEqual(graph["stats"]["study_finding_nodes"], 15)
+        self.assertEqual(graph["stats"]["study_limitation_nodes"], 20)
+        relations = [edge["relation"] for edge in graph["edges"]]
+        self.assertEqual(relations.count("reports_null_finding"), 11)
+        self.assertEqual(relations.count("has_limitation"), 20)
 
     def test_repair_queue_matches_pending_urls(self) -> None:
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"

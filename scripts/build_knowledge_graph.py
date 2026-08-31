@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an auditable Episode-topic-platform-claim knowledge graph from JSONL."""
+"""Build an auditable Episode-topic-platform-claim-study knowledge graph from JSONL."""
 from __future__ import annotations
 
 import argparse
@@ -58,6 +58,7 @@ def main() -> int:
     parser.add_argument("--courses", type=Path)
     parser.add_argument("--claims", type=Path)
     parser.add_argument("--academic", type=Path)
+    parser.add_argument("--study-cards", type=Path)
     args = parser.parse_args()
     records = [json.loads(line) for line in args.input.read_text(encoding="utf-8").splitlines() if line.strip()]
     academic_by_key: dict[str, dict[str, str]] = {}
@@ -69,6 +70,7 @@ def main() -> int:
                     academic_by_key[academic_key(url)] = row
     nodes: dict[str, dict] = {}
     edges: set[tuple[str, str, str]] = set()
+    resources_by_academic_key: dict[str, set[str]] = {}
     topic_counts: Counter[str] = Counter()
     episode_by_url: dict[str, str] = {}
     youtube_by_id: dict[str, str] = {}
@@ -107,6 +109,7 @@ def main() -> int:
                 resource_node["verification_status"] = verification.get("verification_status", "pending")
                 resource_node["evidence_notes"] = verification.get("evidence_notes", "")
                 resource_node["academic_episode_count"] = verification.get("episode_count", "")
+            resources_by_academic_key.setdefault(academic_key(resource), set()).add(rid)
             edges.add((eid, "cites_resource", rid))
 
     bilibili_count = 0
@@ -189,9 +192,94 @@ def main() -> int:
                     video_node = youtube_by_id.get(video_id)
                     if video_node:
                         edges.add((nid, "located_in_video", video_node))
+    study_card_count = 0
+    study_finding_count = 0
+    study_limitation_count = 0
+    evidence_topic_count = 0
+    if args.study_cards and args.study_cards.exists():
+        evidence_topics: set[str] = set()
+        with args.study_cards.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                card = json.loads(line)
+                review_id = card.get("review_id", "").strip()
+                if not review_id:
+                    continue
+                nid = f"study-card:{review_id}"
+                nodes[nid] = {
+                    "id": nid,
+                    "type": "study-card",
+                    "label": card.get("title", review_id),
+                    "review_id": review_id,
+                    "doi": card.get("doi", ""),
+                    "verification_status": card.get("verification_status", ""),
+                    "evidence_level": card.get("evidence_level", ""),
+                    "study_design": card.get("study_design", ""),
+                    "sample_size": card.get("sample_size", ""),
+                    "population": card.get("population", ""),
+                    "intervention_exposure": card.get("intervention_exposure", ""),
+                    "comparator": card.get("comparator", ""),
+                    "outcomes": card.get("outcomes", []),
+                    "result_summary": card.get("result_summary", ""),
+                    "safe_interpretation": card.get("safe_interpretation", ""),
+                    "provenance_urls": card.get("provenance_urls", []),
+                    "reviewed_at": card.get("reviewed_at", ""),
+                }
+                study_card_count += 1
+                for source_url in card.get("source_urls", []):
+                    for resource_node_id in resources_by_academic_key.get(academic_key(source_url), set()):
+                        edges.add((nid, "reviews_resource", resource_node_id))
+                for tag in card.get("topic_tags", []):
+                    normalized_tag = re.sub(r"[^a-z0-9-]+", "-", tag.lower()).strip("-")
+                    if not normalized_tag:
+                        continue
+                    topic_id = f"evidence-topic:{normalized_tag}"
+                    nodes.setdefault(topic_id, {"id": topic_id, "type": "evidence-topic", "label": tag})
+                    evidence_topics.add(topic_id)
+                    edges.add((nid, "has_evidence_topic", topic_id))
+                finding_groups = [
+                    ("result", [card.get("result_summary", "")], "reports_result"),
+                    ("null", card.get("null_findings", []), "reports_null_finding"),
+                ]
+                for finding_kind, findings, relation in finding_groups:
+                    for finding in findings:
+                        if not finding:
+                            continue
+                        digest = hashlib.sha1(f"{review_id}|{finding_kind}|{finding}".encode("utf-8")).hexdigest()[:16]
+                        finding_id = f"study-finding:{digest}"
+                        nodes[finding_id] = {
+                            "id": finding_id,
+                            "type": "study-finding",
+                            "label": finding,
+                            "finding_kind": finding_kind,
+                            "review_id": review_id,
+                        }
+                        study_finding_count += 1
+                        edges.add((nid, relation, finding_id))
+                for limitation in card.get("limitations", []):
+                    if not limitation:
+                        continue
+                    digest = hashlib.sha1(f"{review_id}|limitation|{limitation}".encode("utf-8")).hexdigest()[:16]
+                    limitation_id = f"study-limitation:{digest}"
+                    nodes[limitation_id] = {
+                        "id": limitation_id,
+                        "type": "study-limitation",
+                        "label": limitation,
+                        "review_id": review_id,
+                    }
+                    study_limitation_count += 1
+                    edges.add((nid, "has_limitation", limitation_id))
+        evidence_topic_count = len(evidence_topics)
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "schema": "episode-topic-platform-claim-v3" if args.claims else "episode-topic-platform-v2",
+        "schema": (
+            "episode-topic-platform-claim-study-v4"
+            if args.study_cards
+            else "episode-topic-platform-claim-v3"
+            if args.claims
+            else "episode-topic-platform-v2"
+        ),
         "stats": {
             "episode_nodes": sum(n["type"] == "episode" for n in nodes.values()),
             "topic_nodes": sum(n["type"] == "topic" for n in nodes.values()),
@@ -199,9 +287,19 @@ def main() -> int:
             "bilibili_nodes": sum(n["type"] == "bilibili" for n in nodes.values()),
             "course_lecture_nodes": sum(n["type"] == "course-lecture" for n in nodes.values()),
             "claim_nodes": sum(n["type"] == "claim" for n in nodes.values()),
+            "study_card_nodes": study_card_count,
+            "study_finding_nodes": study_finding_count,
+            "study_limitation_nodes": study_limitation_count,
+            "evidence_topic_nodes": evidence_topic_count,
             "resource_nodes": sum(n["type"] == "resource" for n in nodes.values()),
-            "academic_resource_nodes": sum("verification_status" in n for n in nodes.values()),
-            "verified_academic_resource_nodes": sum(n.get("verification_status") != "pending" for n in nodes.values() if "verification_status" in n),
+            "academic_resource_nodes": sum(
+                n["type"] == "resource" and "verification_status" in n for n in nodes.values()
+            ),
+            "verified_academic_resource_nodes": sum(
+                n.get("verification_status") != "pending"
+                for n in nodes.values()
+                if n["type"] == "resource" and "verification_status" in n
+            ),
             "edges": len(edges),
             "top_topics": [{"url": u, "count": c, "label": topic_label(u)} for u, c in topic_counts.most_common(20)],
         },

@@ -15,7 +15,7 @@ YouTube `@hubermanlab` 是原始长视频主库；官方站点提供 Episode、�
 - 425/425 个官方 Episode 页面成功采集。
 - 425/425 有公开 Show Notes；415/425 有公开时间戳；424/425 有 YouTube 回链。
 - 425 个 Episode 形成 29 个主题节点和 1,180 条 Episode—主题—YouTube 关系；图谱文件位于 `references/catalog/knowledge-graph.json`。
-- 加入 Show Notes、B站、课程/讲座和主张节点后，claim-v3 图谱包含 425 个 Episode、29 个主题、424 个 canonical YouTube 视频、34 个 B站节点、8 个课程/讲座节点、40 个主张节点、6,020 个去重资源节点和 8,355 条关系。主张索引见 `references/catalog/claim-index.jsonl`，仅保留批次分析摘要与来源定位，不复制完整字幕。
+- 加入 Show Notes、B站、课程/讲座、主张和结构化研究卡后，claim-study-v4 图谱包含 425 个 Episode、29 个主题、424 个 canonical YouTube 视频、34 个 B站节点、8 个课程/讲座节点、40 个主张节点、4 个研究卡、15 个研究结果/阴性发现、20 个局限、16 个证据主题、6,020 个去重资源节点和 8,412 条关系。主张索引只保留批次分析摘要与来源定位，不复制完整字幕；研究卡节点保留人工改写的结果与边界，不含论文全文。
 
 ## B站发现层
 

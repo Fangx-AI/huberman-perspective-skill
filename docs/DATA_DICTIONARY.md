@@ -57,7 +57,7 @@ One JSON object per source locator. Public records contain `claim_id`, neutral `
 
 ## `knowledge-graph.json`
 
-JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, and `resource`. Public claim labels are neutral topic names; detailed transcript-derived prose is absent.
+JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, `resource`, `study-card`, `study-finding`, `study-limitation`, and `evidence-topic`. Study cards connect to exact Episode resource nodes through `reviews_resource`; positive summaries, null findings and limitations use `reports_result`, `reports_null_finding`, and `has_limitation`. Public claim labels remain neutral topic names; detailed transcript-derived prose is absent.
 
 ## Evidence levels
 

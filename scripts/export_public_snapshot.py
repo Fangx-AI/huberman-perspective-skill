@@ -131,7 +131,7 @@ def export_graph(source: Path, output: Path) -> dict:
         "edges": graph.get("edges", []),
         "generated_at": graph.get("generated_at"),
         "nodes": nodes,
-        "schema": "public-claim-v1",
+        "schema": "public-evidence-v2",
         "stats": graph.get("stats", {}),
     }
     output.write_text(
