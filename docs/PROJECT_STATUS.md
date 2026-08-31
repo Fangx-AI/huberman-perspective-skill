@@ -9,8 +9,8 @@ Status date: 2026-08-31.
 | Catalog public long-form material across official pages, YouTube, Bilibili and courses | `episodes.csv`, `youtube-transcript-queue.csv`, `bilibili-discovery.csv`, `courses-lectures.csv` | Current official catalog captured; drift monitoring remains ongoing |
 | Preserve traceable claims without redistributing transcripts | `claim-index.jsonl`, `source-registry.md`, `release_check.py` | Implemented for the current public snapshot |
 | Connect claims, studies, limitations and contradictions | `academic-study-cards.jsonl`, `evidence-relations.jsonl`, `knowledge-graph.json` | Implemented, but research-level coverage remains partial |
-| Produce a callable Chinese Huberman-perspective Skill | `SKILL.md`, `agents/openai.yaml`, `action-playbooks.jsonl` | Implemented and installed locally |
-| Put user outcomes ahead of knowledge accumulation | Eleven outcome-first playbooks and Cases 5–15 | Implemented for eleven high-frequency scenarios; more scenarios remain |
+| Help ordinary users improve health-related daily life | `SKILL.md`, `coaching-guide.md`, `USAGE_EXAMPLES.md` | Automatic lifestyle guidance now starts from the user's real outcome, constraints and safest next step |
+| Turn evidence into action without knowledge overload | Eleven outcome-first playbooks, natural-language routing and user-guidance contract tests | Implemented for eleven high-frequency scenarios; more scenarios remain |
 | State evidence levels, medical boundaries and uncertainty | `SKILL.md`, `evidence-ledger.md`, structured card limitations and stop/escalation fields | Implemented and regression tested |
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
 | Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | Implemented for a public clone |
@@ -18,6 +18,8 @@ Status date: 2026-08-31.
 | Publish as a public GitHub repository | <https://github.com/Fangx-AI/huberman-perspective-skill> and verified public `origin` metadata | Repository published; every tag still requires release and CI verification per `PUBLISHING.md` |
 
 ## Current research gap
+
+The product goal is not to expose the largest possible research archive. The user-facing measure is whether a person can describe an ordinary problem in their own words and receive a small, safe, observable next step with a workable failure adjustment. Evidence coverage matters because it improves those decisions and boundaries; it is not the default conversation.
 
 The public academic queue contains 1,736 deduplicated Show Notes URLs. Only 684 have bibliographic or stronger verification, and only 47 high-priority papers currently have full structured study cards. `verified-bibliographic` confirms identity only; it cannot support efficacy. The remaining queue and future episodes keep the long-term Goal active.
 

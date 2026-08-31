@@ -54,4 +54,4 @@ python -m unittest discover -s tests -v
 python -m compileall -q scripts tests
 ```
 
-Changes to schemas must update `docs/DATA_DICTIONARY.md`, the exporter, tests and changelog together. Changes to invocation policy must remain explicit-only unless maintainers intentionally make and document a different product decision.
+Changes to schemas must update `docs/DATA_DICTIONARY.md`, the exporter, tests and changelog together. The intentional product policy is automatic invocation for practical lifestyle guidance, while diagnosis, treatment changes and unrelated educational questions remain outside scope; invocation changes must update the Skill description, UI metadata, safety tests and changelog together.

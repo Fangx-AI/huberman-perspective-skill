@@ -7,6 +7,26 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.16.0] - 2026-08-31
+
+### Changed
+
+- Reframed the product as `Huberman Health Guide`: ordinary users can describe sleep, energy, focus, stress, exercise, food or habit problems and receive a practical next step without first naming Huberman.
+- Enabled automatic invocation for lifestyle guidance while retaining medical triage, medication and emergency boundaries.
+- Replaced the research-heavy entrypoint with five help modes and a default answer contract: one priority, a minimum version, a real-world measure, a failure adjustment and a relevant stop/escalation rule.
+- Rewrote the README and usage examples around user situations; research counts, evidence infrastructure and maintainer commands now sit behind the user journey.
+
+### Added
+
+- Added a progressive-disclosure coaching guide for first responses, short lifestyle experiments, real-world measures and multi-turn adjustment.
+- Added natural-language routing for common phrases such as sleeping later, being unable to get up, losing daytime energy and being interrupted by a phone.
+- Added regression tests that keep the Skill concise, automatic, user-first and free of maintenance-pipeline clutter.
+
+### Evaluated
+
+- Added ordinary prompts that do not mention Huberman to the deterministic routing suite.
+- Re-ran the public unit, release, readiness, copyright-payload and installation gates after the product pivot.
+
 ## [0.15.0] - 2026-08-31
 
 ### Added

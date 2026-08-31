@@ -40,6 +40,9 @@ class ActionPlaybookTests(unittest.TestCase):
 
     def test_queries_route_to_the_expected_single_playbook(self) -> None:
         cases = {
+            "最近越睡越晚，早上起不来，白天没精神": "stabilize-sleep-wake-timing",
+            "我收藏了很多健康建议但执行不下去": "start-and-sustain-one-habit",
+            "工作时总被手机打断": "protect-one-focus-block",
             "收藏很多协议 执行不下去 习惯": "start-and-sustain-one-habit",
             "看完就忘 主动回忆 复习": "retain-what-you-learn",
             "作息漂移 晨光 睡眠": "stabilize-sleep-wake-timing",
@@ -102,9 +105,9 @@ class ActionPlaybookTests(unittest.TestCase):
         )
         self.assertTrue(all("剂量" not in action["action"] for action in decision["actions"]))
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        self.assertIn("先过医学安全门", skill)
-        self.assertIn("不得让个人实验延迟照护", skill)
-        self.assertIn("不改写成四步以上检查清单", skill)
+        self.assertIn("药物相互作用", skill)
+        self.assertIn("个人尝试只能帮助判断一个低风险行为是否值得保留", skill)
+        self.assertIn("默认不超过三个动作", skill)
 
     def test_cold_exposure_decision_separates_goals_nulls_adaptation_and_safety(self) -> None:
         by_id = {item["playbook_id"]: item for item in self.playbooks}
@@ -115,8 +118,9 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("患病天数未改善", cold["actions"][2]["why"])
         self.assertIn("不规定温度或时长", cold["actions"][2]["minimum_version"])
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for phrase in ("冷暴露决策", "外周儿茶酚胺不等于脑内", "不得进入个人实验"):
-            self.assertIn(phrase, skill)
+        self.assertIn("冷水", skill)
+        self.assertIn("不得发明固定剂量、温度、时长", skill)
+        self.assertIn("不能证明疾病疗效或长期安全", skill)
 
     def test_sauna_decision_rejects_observational_dose_and_hormone_optimization(self) -> None:
         by_id = {item["playbook_id"]: item for item in self.playbooks}
@@ -132,8 +136,8 @@ class ActionPlaybookTests(unittest.TestCase):
             "kaiser-2023-sauna-injury-series",
         } <= evidence_ids)
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for phrase in ("桑拿/热暴露决策", "5名出现暂时性闭经", "热适应、流汗", "禁止酒后"):
-            self.assertIn(phrase, skill)
+        self.assertIn("桑拿/热暴露", skill)
+        self.assertIn("停止条件", skill)
 
     def test_acute_stress_breathing_decision_preserves_nulls_and_triage(self) -> None:
         by_id = {item["playbook_id"]: item for item in self.playbooks}
@@ -157,8 +161,8 @@ class ActionPlaybookTests(unittest.TestCase):
             "chin-2024-brief-state-anxiety-review",
         })
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for phrase in ("非紧急压力与呼吸决策", "回顾注册", "主动改变呼吸和注意呼吸均高度异质", "不得在驾驶"):
-            self.assertIn(phrase, skill)
+        self.assertIn("非紧急压力与呼吸", skill)
+        self.assertIn("先排除危险", skill)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)
@@ -176,7 +180,7 @@ class ActionPlaybookTests(unittest.TestCase):
 
     def test_skill_forbids_invented_protocol_numbers_after_routing(self) -> None:
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for rule in ("不得拆成更多步骤", "固定时长", "复测日程", "正确率阈值", "不是最佳处方", "替代部分重读", "可调整检查点", "即时感觉不等于长期结果", "即时成绩较低不等于长期保持更差"):
+        for rule in ("不得把动作拆成更多协议", "不得发明固定剂量、温度、时长、频率、阈值或保证", "一次只调整一个变量", "机制只有在帮助选择、执行或避险时才解释"):
             self.assertIn(rule, skill)
 
     def test_renderer_labels_review_days_as_adjustable_not_optimal(self) -> None:

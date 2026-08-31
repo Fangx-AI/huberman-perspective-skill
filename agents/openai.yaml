@@ -1,7 +1,7 @@
 interface:
-  display_name: "Huberman Perspective"
-  short_description: "用可追溯证据分析 Huberman Lab 相关健康与行为问题"
-  default_prompt: "Use $huberman-perspective to analyze this question with source levels, practical boundaries, and medical safety caveats."
+  display_name: "Huberman Health Guide"
+  short_description: "把睡眠、压力、专注、运动和饮食困扰变成可执行的健康下一步"
+  default_prompt: "帮我从当前生活中最想改善的一个健康问题开始，给出今天能做的最小行动、观察方法和失败后的调整。"
 
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true

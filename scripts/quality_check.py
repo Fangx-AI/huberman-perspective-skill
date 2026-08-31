@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight structural QA for the Huberman perspective Skill."""
+"""Lightweight structural QA for the Huberman Health Guide entrypoint."""
 from __future__ import annotations
 
 import re
@@ -8,13 +8,15 @@ from pathlib import Path
 
 
 REQUIRED = [
-    "## 定位",
-    "## 角色规则",
-    "## 核心分析框架",
-    "## 回答工作流",
-    "## 长视频与语料规则",
+    "## 使命",
+    "## 何时使用",
+    "## 每次回答先完成的判断",
+    "## 五种帮助模式",
+    "## 默认回答契约",
+    "## 指导原则",
+    "## 行动路由",
     "## 医学与安全边界",
-    "## 诚实边界",
+    "## 来源与诚实边界",
 ]
 
 
@@ -30,19 +32,15 @@ def check(skill_file: Path) -> list[tuple[str, bool, str]]:
     results.append(("no scaffold placeholders", not any(token in text for token in forbidden), "finished entrypoint"))
     skill_dir = skill_file.parent
     refs = [
-        "references/source-registry.md",
-        "references/evidence-ledger.md",
-        "references/update-protocol.md",
-        "references/research/01-writings.md",
-        "references/research/02-conversations.md",
-        "references/research/03-expression-dna.md",
-        "references/research/04-external-views.md",
-        "references/research/05-decisions.md",
-        "references/research/06-timeline.md",
-        "references/research/07-courses-lectures.md",
-        "references/catalog/courses-lectures.csv",
+        "references/coaching-guide.md",
+        "references/catalog/action-playbooks.jsonl",
+        "references/catalog/academic-study-cards.jsonl",
+        "references/catalog/evidence-relations.jsonl",
     ]
-    results.append(("research references exist", all((skill_dir / ref).exists() for ref in refs), "self-contained references"))
+    results.append(("progressive references exist", all((skill_dir / ref).exists() for ref in refs), "action, coaching and evidence layers available"))
+    results.append(("concise entrypoint", len(text.splitlines()) < 180, "progressive-disclosure entrypoint"))
+    maintenance_commands = ("collect_episode_pages.py", "build_knowledge_graph.py", "release_check.py")
+    results.append(("no maintenance workflow", not any(command in text for command in maintenance_commands), "user journey stays in the entrypoint"))
     return results
 
 

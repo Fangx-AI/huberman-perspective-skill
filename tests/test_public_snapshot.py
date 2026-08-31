@@ -15,13 +15,13 @@ ROOT = Path(__file__).resolve().parents[1]
     "public snapshot assertions do not apply to the maintainer's full local cache",
 )
 class PublicSnapshotTests(unittest.TestCase):
-    def test_explicit_only_policy(self) -> None:
+    def test_automatic_lifestyle_invocation_policy(self) -> None:
         policy = (ROOT / "agents" / "openai.yaml").read_text(encoding="utf-8")
-        self.assertRegex(policy, r"allow_implicit_invocation:\s*false")
+        self.assertRegex(policy, r"allow_implicit_invocation:\s*true")
 
     def test_skill_keeps_identity_and_medical_boundaries(self) -> None:
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        for phrase in ("不冒充", "不能诊断", "证据阶梯", "用户结果优先", "默认只给 1–3 个", "不把受版权保护的完整转录"):
+        for phrase in ("帮助用户过得更好", "即使用户没有提到 Huberman", "不冒充", "不能诊断", "默认不超过三个动作", "付费转录内容不绕过访问控制"):
             self.assertIn(phrase, skill)
 
     def test_academic_statuses_are_typed(self) -> None:

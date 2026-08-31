@@ -1,143 +1,133 @@
-# Huberman Perspective Skill
+# Huberman Health Guide
 
-一个非官方、可追溯、中文优先的 Codex Skill，用于在用户**明确要求**时，以 Andrew Huberman / Huberman Lab 公开材料中可验证的分析框架审视神经科学、睡眠、专注、学习、行为改变、运动、营养和健康决策。
+> 把 Huberman 的长视频和相关研究，变成你今天能做、之后能复盘的健康行动。
 
-本项目不是 Andrew Huberman、Huberman Lab、Scicomm Media 或 Stanford 的官方产品，也不代表任何上述主体。它不提供医疗诊断、处方或个体化治疗建议。
+你不需要先看完几百期播客、理解神经科学，或从几十套协议里挑一个。这个 Skill 面向真实生活：当你睡不好、压力大、没精神、容易分心、久坐、饮食失控，或收藏了很多健康建议却执行不下去时，它会帮你找到一个现实的下一步。
 
-## 当前快照
+## 你可以直接这样说
 
-- 425 个官方 Episode 元数据记录
-- 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
-- 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
-- 1,736 个 Show Notes 学术/医学来源，684 个已核验、1,052 个待核验；其中 122 条原始研究、37 条综述、23 条观察研究和 502 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
-- 47 张结构化高关联研究证据卡：27 张连接 41 条 Show Notes 来源记录，20 张为不改变队列统计的外部反证/限定卡
-- 30 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应、习惯形成、冷暴露、红光设备、桑拿/热暴露与呼吸减压决策证据簇
-- 11 个结果优先行动剧本、33 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步、饮食环境、健康协议、冷暴露、红光设备、桑拿/热暴露与非紧急压力呼吸决策；每步区分证据支持、有限个人实验与框架推断
-- 研究—行动图谱包含 47 个研究卡、223 个结果/阴性发现、290 个局限、218 个证据主题、30 个研究关系节点、11 个行动剧本和 33 个动作节点，共 9,529 条可追溯关系
-- 41 个脱敏的主张定位记录
-- 8 个课程、讲座、AMA 或机构访谈入口
+- “我最近越睡越晚，早上完全起不来，先帮我做最小调整。”
+- “我现在压力很大，先帮我恢复到能继续工作的状态。”
+- “我收藏了很多健康协议，但一个也坚持不住。”
+- “我久坐又没体力，不想一上来就执行复杂训练计划。”
+- “红光、冷水澡、桑拿和补剂太多了，帮我判断哪个根本不值得做。”
 
-数字是研究快照，不代表已穷尽所有材料，也不代表每条来源具有同等证据强度。
+即使你没有提到 Huberman，Skill 也可以在这些生活问题上自动提供帮助。一次回答通常会告诉你：
+
+1. 今天先做什么；
+2. 状态差时的最小版本；
+3. 用哪个现实结果判断有没有帮助；
+4. 没做到或没效果时怎样调整；
+5. 哪些情况应该停止尝试或寻求专业帮助。
+
+默认不超过三个动作，不用论文、术语和完整协议淹没用户。
+
+## 它怎样帮助你
+
+1. 先理解你真正想改善的生活结果，以及时间、精力、预算、症状和环境限制。
+2. 从“立即稳定、改善一个环节、判断协议、复盘调整、深入证据”中选择一种帮助模式。
+3. 给出一个低摩擦、可逆、能观察结果的行动；需要时只问一个会真正改变建议的问题。
+4. 根据你的实际结果继续缩小、替换或停止方案，而不是把执行失败解释成自律不足。
+5. 只在证据会改变选择或安全边界时，把 Huberman 原始内容、独立研究和指南带到前台。
+
+## 支持的生活场景
+
+| 场景 | Skill 优先解决的问题 |
+| --- | --- |
+| 睡眠与作息 | 今晚或本周先稳定哪个线索，怎样看现实效果 |
+| 精力与恢复 | 区分睡眠不足、安排过载、运动恢复和需要就医的信号 |
+| 压力与情绪稳定 | 在非紧急情况下先恢复一个现实功能 |
+| 专注与拖延 | 保护一个能完成的专注区块，减少环境摩擦 |
+| 学习与记忆 | 把“看懂了”转成之后还能提取和使用 |
+| 习惯 | 把目标缩到能开始，失败后调整线索和摩擦 |
+| 运动 | 从当前能力出发开始，不一次塞入完整训练协议 |
+| 饮食环境 | 先改变容易失控的情境，不先制造羞耻和禁令 |
+| 协议、补剂与设备 | 判断是否值得、风险多大、是否有更便宜安全的替代 |
+
+## 自动触发与显式调用
+
+安装后，普通健康生活问题可以自动触发，无需写 Skill 名称。你也可以显式调用：
+
+```text
+$huberman-perspective 我最近每天凌晨两点才睡，别给完整协议，先帮我从今天开始。
+```
+
+概念解释会保持简洁；个人诊断、药物调整、治疗替代和急症处理不会被包装成“生活实验”。
 
 ## 安装
 
-要求：Codex、Python 3.11+；只有重新采集 Stanford publications 时需要 `lxml`。
-
-最简单的方式是直接从公开仓库克隆到 Codex Skills 目录：
+从 GitHub 安装：
 
 ```bash
-git clone https://github.com/Fangx-AI/huberman-perspective-skill.git ~/.codex/skills/huberman-perspective
-cd ~/.codex/skills/huberman-perspective
-python -m pip install -r requirements.lock
-python scripts/release_check.py
-python scripts/release_readiness.py
+git clone https://github.com/Fangx-AI/huberman-perspective-skill.git
+cp -R huberman-perspective-skill ~/.codex/skills/huberman-perspective
 ```
 
-PowerShell：
-
-```powershell
-$SkillPath = Join-Path $env:USERPROFILE ".codex\skills\huberman-perspective"
-git clone https://github.com/Fangx-AI/huberman-perspective-skill.git $SkillPath
-Set-Location -LiteralPath $SkillPath
-python -m pip install -r requirements.lock
-python scripts/release_check.py
-python scripts/release_readiness.py
-```
-
-也可以从任意本地克隆目录安全安装；安装器在目标已存在时会拒绝覆盖：
-
-```bash
-python scripts/install_skill.py --dry-run
-python scripts/install_skill.py
-```
-
-安装器默认目标为 `~/.codex/skills/huberman-perspective`；Windows 上对应 `%USERPROFILE%\.codex\skills\huberman-perspective`。
-
-## 使用
-
-该 Skill 是 explicit-only，不会自动接管普通健康问题：
+也可以下载 Release 压缩包并解压到：
 
 ```text
-Use $huberman-perspective to analyze whether morning sunlight is a robust sleep intervention.
+~/.codex/skills/huberman-perspective/
 ```
 
-推荐请求包含：问题、人群、目标、已知疾病/用药边界，以及是否需要最新资料核验。
+安装后重新打开 Codex，或开启一个新任务。
 
-输出应区分：Huberman 的公开主张、跨 Episode 归纳、框架推断、外部研究，以及证据争议。
+## 为什么保留一套大型证据后台
 
-如果用户不是在追问更多知识，而是想今天开始行动，先检索一个最匹配的行动剧本：
+用户体验应当简单，但建议不能只靠一个人的记忆或一段机制故事。后台证据层用于发现可用杠杆、标记不确定性、处理冲突、限制过度承诺，并支持需要来源的深入追问。
+
+当前公开快照包括：
+
+- 425 期官方节目索引，其中 424 期映射到官方 YouTube；
+- 47 张结构化研究证据卡和 30 条研究间关系；
+- 11 个行动剧本、33 个带停止条件和调整规则的动作；
+- 41 个论文定位器、9,529 条引用图边；
+- 1,736 个来源记录，其中 684 个已验证来源。
+
+公开仓库只保留可复现的结构化索引、摘要、定位器和生成脚本，不分发大段第三方转录文本。
+
+### 按问题查询后台
 
 ```bash
-python scripts/query_action_playbooks.py "收藏很多协议 执行不下去 习惯"
-python scripts/query_action_playbooks.py "看完就忘 主动回忆 复习"
-python scripts/query_action_playbooks.py "作息漂移 晨光 睡眠"
-python scripts/query_action_playbooks.py "总被手机和网页打断 专注"
-python scripts/query_action_playbooks.py "久坐很久 运动协议太多 不知怎么开始"
-python scripts/query_action_playbooks.py "总点外卖 吃零食 不想算卡路里"
-python scripts/query_action_playbooks.py "补剂和健康协议太多 怎么判断一个值不值得试"
-python scripts/query_action_playbooks.py "冷水澡提高多巴胺和免疫 要不要每天冰浴"
-python scripts/query_action_playbooks.py "红光改善血糖视力皮肤 值不值得买面板或面罩"
-python scripts/query_action_playbooks.py "桑拿提高生长激素帮助长寿 值不值得买或每周硬凑"
+python scripts/query_action_playbooks.py "总是睡得越来越晚，早上起不来" --json
+python scripts/query_study_cards.py "sleep timing" --json
+python scripts/query_evidence_relations.py "light circadian" --json
+python scripts/query_knowledge_graph.py "stress breathing" --verified-only --limit 8
 ```
 
-每次只返回一个剧本、最多三个动作；每步带触发条件、最低版本、记录指标、复盘与失败后的调整。`evidence-supported`、`bounded-experiment` 和 `framework-inference` 必须分开，不把节目协议包装成已验证处方。
+这些命令用于维护、审计和深入研究；普通用户不需要先运行它们才能获得帮助。
 
-也可直接检索已人工核查的结构化研究卡；命令会连同阴性结果、局限、安全解释、一手来源及已登记的复制/反证关系一起输出：
+## 安全边界
 
-```bash
-python scripts/query_evidence.py "咖啡因 多巴胺"
-python scripts/query_evidence.py "睡眠 运动学习 巩固"
-python scripts/query_evidence.py "睡眠 稳定 运动学习"
-python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
-python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
-python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"
-python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"
-python scripts/query_evidence.py "红光 面板 面罩 血糖 视力 皮肤 设备等效"
-python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 恢复 安全"
-python scripts/query_evidence.py "gratitude inflammation" --json
-```
+- 这是教育与生活方式支持，不是医疗诊断或治疗。
+- 不建议自行停药、改药，也不把补剂替代专业照护。
+- 胸痛、严重或新发气促、晕厥、意识或神经异常、自伤/他伤风险等情况，应先联系当地急救或危机支持。
+- 呼吸、冷水、高热、禁食等做法必须遵守情境禁忌与停止条件。
+- 对新产品、现行指南和可能变化的健康信息，应重新核查当前来源。
 
-关键词命中只用于定位研究卡，不代表研究支持查询中的完整主张。
-
-## 验证
+## 验证与贡献
 
 ```bash
+python -m unittest discover -s tests -v
+python scripts/quick_validate.py
 python scripts/release_check.py
 python scripts/release_readiness.py
-python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
-python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl
-python scripts/quality_check.py SKILL.md
-python -m unittest discover -s tests -v
-python -m compileall -q scripts tests
 ```
 
-`scripts/contract_check.py` 会自动选择验证模式：发布快照运行 release checks；如果本地存在不随仓库分发的原始页面缓存，则运行完整契约检查。
+进一步文档：
 
-## 项目导航
+- [项目状态](docs/PROJECT_STATUS.md)
+- [复现说明](docs/REPRODUCIBILITY.md)
+- [维护手册](docs/MAINTENANCE.md)
+- [发布流程](docs/PUBLISHING.md)
+- [版权与数据政策](docs/COPYRIGHT_AND_DATA_POLICY.md)
+- [数据字典](docs/DATA_DICTIONARY.md)
+- [使用示例](docs/USAGE_EXAMPLES.md)
+- [用户优先前向测试](references/evals/user-forward-tests-2026-08-31.md)
 
-- [使用示例](docs/USAGE_EXAMPLES.md)：从真实问题出发，说明应当怎样回答、哪些边界不能丢。
-- [项目状态](docs/PROJECT_STATUS.md)：把长期目标映射到仓库证据，并公开尚未完成的研究缺口。
-- [可复现构建](docs/REPRODUCIBILITY.md)：验证、重建公开快照和维护者工作流。
-- [维护路线图](docs/MAINTENANCE.md)：发布门槛、更新节奏和 1.0 退出条件。
-- [发布流程](docs/PUBLISHING.md)：GitHub 预检、打标和发布步骤。
-- [版权与数据政策](docs/COPYRIGHT_AND_DATA_POLICY.md)与[数据字典](docs/DATA_DICTIONARY.md)：可公开内容、禁止载荷和字段语义。
+贡献前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 和 [SECURITY.md](SECURITY.md)。
 
-## 数据与版权边界
+## 数据、版权与许可
 
-仓库不包含：完整字幕、完整转录、音视频、图片、付费 AMA 内容、论文全文或抓取的完整 Show Notes。公开目录只保存必要的来源标识、URL、时间戳、事实型元数据和独立证据评价。
+代码和本项目原创结构化内容按 [MIT License](LICENSE) 发布。第三方节目、视频、论文、网页和转录文本仍归各自权利人所有；仓库中的链接、事实性元数据和短摘要不代表版权或商标归属，也不代表 Andrew Huberman 或 Huberman Lab 的认可。
 
-原始页面缓存只能由研究者在本地、遵守来源网站条款的前提下重建，并已被 `.gitignore` 与发布检查排除。详见 [版权与数据政策](docs/COPYRIGHT_AND_DATA_POLICY.md) 和 [数据字典](docs/DATA_DICTIONARY.md)。
-
-## 许可证
-
-- `scripts/`、`tests/` 和 CI 配置：MIT License。
-- 原创研究笔记与人工证据注释：CC BY-NC 4.0，详见 `DATA-LICENSE.md`。
-- 第三方名称、标题、URL、DOI、PMID、平台 ID 和其他来源元数据不因进入本仓库而被重新许可。
-
-## 贡献
-
-提交来源或修改证据等级前，请阅读 `CONTRIBUTING.md`。每个健康主张都必须给出来源定位、研究设计、适用人群、主要结局、外推边界和医学安全说明。
-
-## 发布状态
-
-当前版本：`0.15.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。
+当前版本：`0.16.0`

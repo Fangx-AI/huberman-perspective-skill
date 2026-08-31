@@ -10,7 +10,7 @@ Report privately when possible if you find:
 
 - secret, credential or private-data exposure;
 - unsafe filesystem or network behavior in a script;
-- a path that bypasses the explicit-only invocation policy;
+- unsafe over-triggering into diagnosis, treatment changes or unrelated questions;
 - medical output that encourages diagnosis, medication changes, dangerous dosing, extreme exposure or delayed urgent care;
 - copyrighted or paywalled payloads accidentally included in a release.
 

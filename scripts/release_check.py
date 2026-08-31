@@ -103,8 +103,8 @@ def check() -> list[str]:
                     errors.append(f"possible {label} in {path.relative_to(ROOT)}")
 
     policy = (ROOT / "agents" / "openai.yaml").read_text(encoding="utf-8")
-    if not re.search(r"allow_implicit_invocation:\s*false", policy):
-        errors.append("agents/openai.yaml must enforce explicit-only invocation")
+    if not re.search(r"allow_implicit_invocation:\s*true", policy):
+        errors.append("agents/openai.yaml must allow automatic lifestyle-guidance invocation")
 
     version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     version_sources = {
@@ -325,7 +325,7 @@ def main() -> int:
         for error in errors:
             print(f"FAIL  {error}")
         return 1
-    print("PASS  public release structure, counts, explicit-only policy, and copyright payload guards")
+    print("PASS  public release structure, counts, automatic lifestyle invocation, and copyright payload guards")
     return 0
 
 

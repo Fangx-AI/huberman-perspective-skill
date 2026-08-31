@@ -38,13 +38,13 @@ def main() -> int:
     skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
 
     for phrase in (
-        "仅在用户明确要求",
+        "帮助用户过得更好",
+        "即使用户没有提到 Huberman",
         "不冒充 Andrew Huberman",
         "Huberman 明确说过",
         "基于框架的推断",
-        "证据阶梯",
-        "用户结果优先",
-        "默认只给 1–3 个",
+        "一次只问一个问题",
+        "默认不超过三个动作",
         "B 站搬运与原视频只算一条主张证据",
         "不能诊断、开药",
         "药物相互作用",

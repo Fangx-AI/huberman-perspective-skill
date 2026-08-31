@@ -31,7 +31,7 @@ The repository may publish original code, independent evidence classifications, 
 2. The public claim index removes transcript-derived prose and keeps neutral topic labels, source URLs and timestamps.
 3. The public graph removes detailed claim labels and course notes that could reproduce source expression.
 4. No logos, photos, audio or video are included.
-5. The project is clearly marked unofficial and explicit-only.
+5. The project is clearly marked unofficial; automatic lifestyle-guidance activation does not imply Huberman, Huberman Lab, Scicomm Media or Stanford endorsement.
 6. Licenses explicitly exclude third-party material and identifiers.
 
 ## Residual risks before broad publication

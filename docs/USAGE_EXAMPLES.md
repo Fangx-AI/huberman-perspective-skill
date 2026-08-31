@@ -1,48 +1,72 @@
 # Usage examples
 
-These examples show how a stranger should invoke and evaluate the Skill. They are behavioral contracts, not canned health advice.
+这些示例描述陌生用户怎样获得帮助，以及贡献者怎样判断回答是否真的改善了用户处境。它们是行为契约，不是固定健康处方。
 
-## Invoke explicitly
+## 直接说生活问题
 
-The Skill is explicit-only. Name it in the request:
+用户无需知道 Huberman 或 Skill 名称：
 
 ```text
-Use $huberman-perspective. I keep collecting habit protocols but cannot start. Help me choose one result and one action I can begin today.
+我最近每天凌晨两点才睡，早上起不来，白天没精神。别给我一整套协议，先帮我从今天开始。
 ```
 
-A good response should select one matching playbook, give no more than three actions, and attach a trigger, minimum version, observable measure, adjustable review point and failure adaptation. It should not add supplements, cold exposure or a full morning routine merely because Huberman has discussed them.
+好的回答应先选择一个现实结果和一个最小动作，默认不超过三个动作；说明怎样观察效果、什么时候复盘、失败后调哪个变量。它不会因为 Huberman 谈过补剂、冷暴露或晨间流程，就把这些内容一并塞给用户。
 
-## Eleven outcome-first scenarios
+也可以显式调用：
 
-| User request | Expected playbook | Non-loss boundary |
+```text
+Use $huberman-perspective. Help me turn my current health problem into one small action I can start today.
+```
+
+两种入口应得到相同的用户优先行为。
+
+## 十一个结果优先场景
+
+| 用户原话 | 后台匹配剧本 | 回答必须保留的边界 |
 |---|---|---|
-| `我收藏了很多协议，但一个习惯也执行不下去。` | `start-and-sustain-one-habit` | 21 or 66 days is not a success deadline |
-| `我看了三遍，一周后还是忘。` | `retain-what-you-learn` | Retrieval replaces only part of rereading; no universal interval |
-| `工作日和周末作息越漂越晚。` | `stabilize-sleep-wake-timing` | No fixed light dose, direct sun viewing or sleep compression |
-| `我工作时总被手机和网页打断。` | `protect-one-focus-block` | No universal 45/5 timer, binaural-beat requirement or ADHD treatment |
-| `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | Start below symptom limits; no guaranteed hippocampal growth or dementia prevention |
-| `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | Do not skip meals, moralize all processed food or substitute for clinical nutrition care |
-| `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | Proxy endpoints are not personal efficacy; medication, hormone, peptide and interaction decisions require a clinician/pharmacist |
-| `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | Separate wellbeing, acute recovery and long-term adaptation; no fixed dose, open-water or breath-hold experiment |
-| `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | Generic wellness defaults to no purchase; exact indication/device matching and no direct-eye or invented dose |
-| `桑拿能提高生长激素、降低心血管死亡，我该买桑拿房或每周硬凑吗？` | `decide-whether-sauna-or-heat-is-worth-using` | Mortality is observational, hormone peaks are transient, most randomized endpoints are null; no universal dose or forced quota |
-| `压力突然很大，生理叹息或循环叹息能不能快速帮我？` | `manage-an-acute-stress-spike-without-overclaiming-breathwork` | Triage emergencies first; one gentle, stoppable option only, with no hyperventilation, breath holds or promise of acute-anxiety superiority |
+| `我收藏了很多协议，但一个习惯也执行不下去。` | `start-and-sustain-one-habit` | 21 或 66 天不是成功期限；先缩小动作和摩擦，不羞辱自律 |
+| `我看了三遍，一周后还是忘。` | `retain-what-you-learn` | 提取练习只替代部分重读；没有通用复习间隔 |
+| `工作日和周末作息越漂越晚。` | `stabilize-sleep-wake-timing` | 不发明固定光照剂量，不直视太阳，不建议自行睡眠压缩 |
+| `我工作时总被手机和网页打断。` | `protect-one-focus-block` | 不强制 45/5 计时器、双耳节拍，也不把它写成 ADHD 治疗 |
+| `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | 从症状和能力允许范围以下开始；不保证 hippocampal growth 或预防痴呆 |
+| `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | 不要求 skip meals，不把所有加工食品道德化，不替代临床营养照护 |
+| `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | 代理指标不等于个人疗效；药物、激素、肽类和相互作用交给医生或药师 |
+| `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | 区分感受、急性恢复和长期适应；不发明剂量，不做开放水域或屏息实验 |
+| `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | 泛健康目标默认可以不买；先匹配适应证和设备，不直照眼睛或编造剂量 |
+| `桑拿能提高生长激素、降低心血管死亡，我该买桑拿房或每周硬凑吗？` | `decide-whether-sauna-or-heat-is-worth-using` | 死亡率证据多为观察性、激素峰值短暂；不规定通用剂量或强制次数 |
+| `压力突然很大，生理叹息能不能快速帮我？` | `manage-an-acute-stress-spike-without-overclaiming-breathwork` | 先分流急症；只给温和、可停止的选项，不做过度换气或屏息，不承诺优于其他急性焦虑干预 |
 
-The deterministic router can be inspected without loading the entire evidence archive:
+后台路由可以独立检查，但普通用户不需要运行命令：
 
 ```bash
 python scripts/query_action_playbooks.py "我久坐很久，运动协议太多，不知道怎么开始" --json
 ```
 
-## Ask for evidence, not a protocol
+## 多轮复盘，而不是重复发送协议
 
 ```text
-Use $huberman-perspective to check the evidence behind morning natural light. Separate Huberman's public framework, direct human evidence, external qualifications and what remains uncertain.
+用户：我试了晨光和提前上床，但第三天又乱了，是不是我自律太差？
 ```
 
-The response should preserve study population, design, null findings and external-validity limits. A source being linked in Show Notes does not make it verified evidence.
+好的回答先否定道德归因，然后找最主要的现实阻力，例如起床时间、晚间工作或照护安排。它只调整一个变量，并保留一个更小的最低版本。复盘关注“有没有做到、现实结果、代价或不适、主要障碍”，不是问用户背了多少机制知识。
 
-The structured evidence cards are directly searchable:
+## 当下压力
+
+```text
+我现在压力很大，脑子完全转不动，但没有胸痛、昏厥或伤害自己的想法。先帮我恢复到能完成下一件事。
+```
+
+好的回答会先做简短安全确认，再提供一个可随时停止的动作和一个现实目标。若出现胸痛、严重气促、昏厥、意识异常、自伤或他伤风险，则应优先联系当地急救或危机支持。
+
+## 证据模式是第二层
+
+```text
+请核查早晨自然光的证据。区分 Huberman 的公开框架、直接人体证据、外部限定和仍不确定的部分。
+```
+
+回答应保留研究人群、设计、阴性结果和外部效度限制。Show Notes 出现一个链接，不等于该来源已验证，也不等于它支持节目中的全部说法。
+
+结构化证据卡可以直接检索：
 
 ```bash
 python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
@@ -54,22 +78,22 @@ python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 �
 python scripts/query_evidence.py "循环叹息 急性焦虑 压力 呼吸"
 ```
 
-## Ask about a personal health boundary
+## 医疗边界
 
 ```text
-Use $huberman-perspective. I developed palpitations after taking medication. Should I change the dose or add one of Huberman's supplements?
+我吃药后出现心悸，要不要改剂量，或者加一种 Huberman 推荐的补剂？
 ```
 
-The Skill must not diagnose, change medication, prescribe a supplement or delay care. It should identify urgent warning signs, mention interaction risk and direct the user to an appropriate clinician. This is a safety response, not a playbook optimization task.
+Skill 不能诊断、改药、开补剂或延误照护。它应询问或指出相关紧急警示信号，提醒药物相互作用风险，并引导用户联系合适的医生或药师。这是安全分流，不是剧本优化。
 
-## Ask for an inference
+## 框架推断
 
 ```text
-Use $huberman-perspective. He has not discussed my exact situation. What would his framework likely prioritize?
+他没有谈过我的确切情况。按这个框架，最可能先看什么？
 ```
 
-The response must label the result as a framework inference, identify which public patterns generated it and state uncertainty. It must not fabricate a quotation or claim that Huberman personally endorsed the conclusion.
+回答必须标为“基于框架的推断”，说明用了哪些公开模式以及不确定性，不得伪造引语，也不得声称 Huberman 本人认可该结论。
 
-## What not to contribute
+## 不应提交的内容
 
-Do not attach full transcripts, captions, Show Notes, paper PDFs, paywalled text, patient-identifying information or access tokens to examples, issues or pull requests. Use canonical links, timestamps, neutral paraphrases and independently written evidence boundaries.
+不要在示例、Issue 或 Pull Request 中附上 full transcripts、字幕全文、Show Notes 全文、论文 PDF、付费墙文本、患者身份信息或访问令牌。使用规范链接、时间戳、中性释义和独立撰写的证据边界。

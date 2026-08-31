@@ -16,6 +16,14 @@ except ModuleNotFoundError:  # pragma: no cover
 SEARCH_FIELDS = ("playbook_id", "title", "user_goal", "scope", "safe_summary")
 LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
 
+# Natural-language phrases observed in user requests. Keep these separate from the
+# evidence catalog: they improve routing without changing any evidence claim.
+COMMON_ROUTING_ALIASES = {
+    "stabilize-sleep-wake-timing": ("越睡越晚", "早上起不来", "白天没精神", "睡不着", "作息越来越乱"),
+    "start-and-sustain-one-habit": ("健康建议执行不下去", "一个也坚持不住", "总是坚持不住"),
+    "protect-one-focus-block": ("工作时被手机打断", "总被手机打断", "脑子转不动"),
+}
+
 
 def lexical_units(value: str) -> set[str]:
     """Split Latin text and add 2–4 character CJK n-grams for phrase routing."""
@@ -44,9 +52,10 @@ def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
         return []
     scored = []
     for playbook in playbooks:
+        aliases = list(playbook.get("aliases", [])) + list(COMMON_ROUTING_ALIASES.get(playbook["playbook_id"], ()))
         routing_text = "\n".join(
             [playbook.get("playbook_id", ""), playbook.get("title", ""), playbook.get("user_goal", "")]
-            + playbook.get("aliases", [])
+            + aliases
         )
         routing_units = lexical_units(routing_text)
         body_units = lexical_units(searchable_text(playbook))
@@ -56,7 +65,7 @@ def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
         score += sum(1 for unit in body_overlap - routing_overlap)
         score += sum(
             20
-            for alias in playbook.get("aliases", [])
+            for alias in aliases
             if alias.casefold() in normalized or normalized in alias.casefold()
         )
         if score:

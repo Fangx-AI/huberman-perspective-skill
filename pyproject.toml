@@ -1,7 +1,7 @@
 [project]
 name = "huberman-perspective-skill"
-version = "0.15.0"
-description = "Independent, source-aware Chinese Codex Skill for Huberman Lab related evidence analysis"
+version = "0.16.0"
+description = "Chinese health-guidance Skill that turns Huberman Lab frameworks and independent evidence into practical lifestyle actions"
 requires-python = ">=3.11"
 dependencies = [
   "lxml==6.0.2",
@@ -12,4 +12,4 @@ start-directory = "tests"
 
 [tool.release]
 raw-cache-policy = "local-only"
-invocation-policy = "explicit-only"
+invocation-policy = "automatic-for-lifestyle-guidance"
