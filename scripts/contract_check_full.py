@@ -9,6 +9,11 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
+try:
+    from validate_action_playbooks import load_jsonl, validate_playbooks
+except ModuleNotFoundError:  # pragma: no cover
+    from scripts.validate_action_playbooks import load_jsonl, validate_playbooks
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -302,6 +307,15 @@ def main() -> int:
         failures,
     )
 
+    action_playbooks_path = ROOT / "references/catalog/action-playbooks.jsonl"
+    try:
+        action_playbooks = load_jsonl(action_playbooks_path)
+        validate_playbooks(action_playbooks, study_cards, claim_rows)
+    except (OSError, ValueError) as exc:
+        action_playbooks = []
+        failures.append(f"Action playbooks cannot be loaded or validated: {exc}")
+    require(len(action_playbooks) == 3, "Action playbook catalog must contain three reviewed playbooks", failures)
+
     graph_path = ROOT / "references/catalog/knowledge-graph.json"
     try:
         graph = json.loads(graph_path.read_text(encoding="utf-8"))
@@ -309,8 +323,8 @@ def main() -> int:
         graph = {}
         failures.append(f"Knowledge graph cannot be loaded: {exc}")
     require(
-        graph.get("schema") == "episode-topic-platform-claim-study-relation-v5",
-        "Knowledge graph schema is not claim-study-relation v5",
+        graph.get("schema") == "episode-topic-platform-claim-study-relation-action-v6",
+        "Knowledge graph schema is not claim-study-relation-action v6",
         failures,
     )
     graph_stats = graph.get("stats", {})
@@ -370,6 +384,26 @@ def main() -> int:
         failures,
     )
     graph_relations = Counter(edge.get("relation") for edge in graph.get("edges", []))
+    action_steps = sum(len(playbook.get("actions", [])) for playbook in action_playbooks)
+    require(graph_stats.get("action_playbook_nodes") == len(action_playbooks), "Knowledge graph action-playbook count is stale", failures)
+    require(graph_stats.get("action_step_nodes") == action_steps, "Knowledge graph action-step count is stale", failures)
+    require(graph_relations["has_action"] == action_steps, "Knowledge graph action-step links are stale", failures)
+    require(
+        graph_relations["uses_study_evidence"] == sum(len(item.get("evidence_links", [])) for item in action_playbooks),
+        "Knowledge graph action-to-study links are stale",
+        failures,
+    )
+    require(
+        graph_relations["uses_claim_context"] == sum(len(item.get("claim_links", [])) for item in action_playbooks),
+        "Knowledge graph action-to-claim links are stale",
+        failures,
+    )
+    require(
+        graph_relations["grounded_in"]
+        == sum(len(action.get("evidence_refs", [])) for item in action_playbooks for action in item.get("actions", [])),
+        "Knowledge graph action grounding links are stale",
+        failures,
+    )
     require(
         graph_relations["reviews_resource"] >= len(study_cards),
         "Knowledge graph is missing study-card-to-resource provenance edges",
@@ -402,11 +436,11 @@ def main() -> int:
     )
 
     cases = (ROOT / "references/evals/behavioral-cases.md").read_text(encoding="utf-8")
-    for case in ("Case 1", "Case 2", "Case 3", "Case 4", "Case 5"):
+    for case in ("Case 1", "Case 2", "Case 3", "Case 4", "Case 5", "Case 6", "Case 7"):
         require(case in cases, f"Behavioral eval missing {case}", failures)
     blackbox_path = ROOT / "references/evals/blackbox-2026-08-31.md"
     blackbox = blackbox_path.read_text(encoding="utf-8") if blackbox_path.exists() else ""
-    require("5/5 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
+    require("7/7 用例通过" in blackbox, "Independent black-box evaluation record is missing or not passing", failures)
 
     eval_summary_path = ROOT / "references/evals/eval-summary.md"
     eval_summary = eval_summary_path.read_text(encoding="utf-8")
@@ -432,7 +466,7 @@ def main() -> int:
     )
     require(
         re.search(
-            rf"知识图谱 claim-study-relation-v5：.*{graph_stats.get('edges'):,} 条关系",
+            rf"知识图谱 claim-study-relation-action-v6：.*{graph_stats.get('edges'):,} 条关系",
             eval_summary,
             re.S,
         )
@@ -448,13 +482,13 @@ def main() -> int:
         return 1
 
     print(
-        "PASS  contract: trigger/safety/evidence rules, catalogs, Bilibili/course layers, and Case 1-5 fixtures"
+        "PASS  contract: trigger/safety/evidence/action rules, catalogs, Bilibili/course layers, and Case 1-7 fixtures"
     )
     print(
         f"summary: YouTube={len(transcript_rows)} ({dict(transcript_status)}), "
         f"academic={len(academic_rows)} ({sum(row['verification_status'] != 'pending' for row in academic_rows)} verified), "
         f"bilibili={len(bilibili_rows)} ({sum(bool(row['youtube_id'] and row['official_episode_url']) for row in bilibili_rows)} mapped), "
-        f"courses_lectures={len(course_rows)}, claims={len(claim_rows)}"
+        f"courses_lectures={len(course_rows)}, claims={len(claim_rows)}, action_playbooks={len(action_playbooks)}"
     )
     return 0
 

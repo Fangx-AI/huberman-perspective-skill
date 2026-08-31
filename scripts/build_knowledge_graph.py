@@ -57,6 +57,7 @@ def main() -> int:
     parser.add_argument("--academic", type=Path)
     parser.add_argument("--study-cards", type=Path)
     parser.add_argument("--evidence-relations", type=Path)
+    parser.add_argument("--action-playbooks", type=Path)
     args = parser.parse_args()
     records = [json.loads(line) for line in args.input.read_text(encoding="utf-8").splitlines() if line.strip()]
     academic_by_key: dict[str, dict[str, str]] = {}
@@ -195,6 +196,8 @@ def main() -> int:
     study_limitation_count = 0
     evidence_topic_count = 0
     evidence_relation_count = 0
+    action_playbook_count = 0
+    action_step_count = 0
     if args.study_cards and args.study_cards.exists():
         evidence_topics: set[str] = set()
         with args.study_cards.open(encoding="utf-8") as handle:
@@ -317,10 +320,80 @@ def main() -> int:
                 evidence_relation_count += 1
                 edges.add((source_id, "has_evidence_relation", nid))
                 edges.add((nid, relation_kind, target_id))
+    if args.action_playbooks and args.action_playbooks.exists():
+        with args.action_playbooks.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                playbook = json.loads(line)
+                playbook_id = playbook.get("playbook_id", "").strip()
+                if not playbook_id:
+                    raise ValueError("action playbook is missing playbook_id")
+                nid = f"action-playbook:{playbook_id}"
+                if nid in nodes:
+                    raise ValueError(f"duplicate action playbook: {playbook_id}")
+                nodes[nid] = {
+                    "id": nid,
+                    "type": "action-playbook",
+                    "label": playbook.get("title", playbook_id),
+                    "user_goal": playbook.get("user_goal", ""),
+                    "aliases": playbook.get("aliases", []),
+                    "scope": playbook.get("scope", ""),
+                    "first_questions": playbook.get("first_questions", []),
+                    "baseline_checks": playbook.get("baseline_checks", []),
+                    "safe_summary": playbook.get("safe_summary", ""),
+                    "not_for": playbook.get("not_for", []),
+                    "escalation": playbook.get("escalation", []),
+                    "last_reviewed": playbook.get("last_reviewed", ""),
+                }
+                action_playbook_count += 1
+                for evidence in playbook.get("evidence_links", []):
+                    target = f"study-card:{evidence.get('review_id', '').strip()}"
+                    if target not in nodes:
+                        raise ValueError(f"action playbook {playbook_id} references unknown study card")
+                    edges.add((nid, "uses_study_evidence", target))
+                for claim in playbook.get("claim_links", []):
+                    target = f"claim:{claim.get('claim_id', '').strip()}"
+                    if target not in nodes:
+                        raise ValueError(f"action playbook {playbook_id} references unknown claim")
+                    edges.add((nid, "uses_claim_context", target))
+                for action in playbook.get("actions", []):
+                    action_id = action.get("action_id", "").strip()
+                    step_id = f"action-step:{playbook_id}:{action_id}"
+                    if not action_id or step_id in nodes:
+                        raise ValueError(f"invalid or duplicate action step in {playbook_id}")
+                    nodes[step_id] = {
+                        "id": step_id,
+                        "type": "action-step",
+                        "label": action.get("action", action_id),
+                        "playbook_id": playbook_id,
+                        "priority": action.get("priority"),
+                        "classification": action.get("classification", ""),
+                        "why": action.get("why", ""),
+                        "trigger": action.get("trigger", ""),
+                        "minimum_version": action.get("minimum_version", ""),
+                        "metric": action.get("metric", ""),
+                        "review_after_days": action.get("review_after_days"),
+                        "adaptation": action.get("adaptation", ""),
+                        "stop_conditions": action.get("stop_conditions", []),
+                    }
+                    action_step_count += 1
+                    edges.add((nid, "has_action", step_id))
+                    for reference in action.get("evidence_refs", []):
+                        study_target = f"study-card:{reference}"
+                        claim_target = f"claim:{reference}"
+                        if study_target in nodes:
+                            edges.add((step_id, "grounded_in", study_target))
+                        elif claim_target in nodes:
+                            edges.add((step_id, "grounded_in", claim_target))
+                        else:
+                            raise ValueError(f"action step {step_id} references unknown evidence: {reference}")
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "schema": (
-            "episode-topic-platform-claim-study-relation-v5"
+            "episode-topic-platform-claim-study-relation-action-v6"
+            if args.action_playbooks
+            else "episode-topic-platform-claim-study-relation-v5"
             if args.evidence_relations
             else "episode-topic-platform-claim-study-v4"
             if args.study_cards
@@ -340,6 +413,8 @@ def main() -> int:
             "study_limitation_nodes": study_limitation_count,
             "evidence_topic_nodes": evidence_topic_count,
             "evidence_relation_nodes": evidence_relation_count,
+            "action_playbook_nodes": action_playbook_count,
+            "action_step_nodes": action_step_count,
             "resource_nodes": sum(n["type"] == "resource" for n in nodes.values()),
             "academic_resource_nodes": sum(
                 n["type"] == "resource" and "verification_status" in n for n in nodes.values()

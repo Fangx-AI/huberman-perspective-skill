@@ -155,12 +155,17 @@ def main() -> int:
 
     episode_count = export_episodes(source_catalog / "episode-pages.jsonl", output_catalog / "episodes.csv")
     claim_count = export_claims(source_catalog / "claim-index.jsonl", output_catalog / "claim-index.jsonl")
+    action_playbooks = sorted(
+        load_jsonl(source_catalog / "action-playbooks.jsonl"),
+        key=lambda item: item["playbook_id"],
+    )
+    write_jsonl(output_catalog / "action-playbooks.jsonl", action_playbooks)
     video_url_count = export_video_urls(source_catalog / "video-urls.csv", output_catalog / "video-urls.csv")
     stats = export_graph(source_catalog / "knowledge-graph.json", output_catalog / "knowledge-graph.json")
 
-    exported = ["episodes.csv", "claim-index.jsonl", "knowledge-graph.json", "video-urls.csv"]
+    exported = ["episodes.csv", "claim-index.jsonl", "action-playbooks.jsonl", "knowledge-graph.json", "video-urls.csv"]
     manifest = {
-        "counts": {"claims": claim_count, "episodes": episode_count, "video_urls": video_url_count, **stats},
+        "counts": {"action_playbooks": len(action_playbooks), "claims": claim_count, "episodes": episode_count, "video_urls": video_url_count, **stats},
         "generated_at": json.loads((output_catalog / "knowledge-graph.json").read_text(encoding="utf-8"))["generated_at"],
         "raw_payloads_included": False,
         "schema": "public-release-manifest-v1",

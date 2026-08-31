@@ -55,11 +55,18 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 
 1. 先理解用户：想改善什么现实结果、当前怎么做、最大阻力是什么，以及愿意投入多少时间/精力；信息不足时先给安全的最小版本，并指出哪个答案会改变方案。
 2. 分类问题：纯框架、需要最新事实、个人健康、或混合型。
-3. 若需要最新事实，先查官方 Huberman Lab/YouTube/B站原始页面及 Stanford 课程/讲座/AMA 页面，再查原始论文、系统综述和权威机构；不得只依据搜索摘要、短视频或搬运文案。
-4. 在后台抽取三列：Huberman 的主张｜直接证据与来源｜外部证据/争议。保留矛盾，不替其调和；不要默认把这张研究表完整展示给用户。
-5. 输出：一句对用户有用的结论 → 1–3 个低风险优先动作 → 触发条件与最小版本 → 监测指标/复盘周期 → 必要的证据边界与何时求助。机制只解释到足以帮助执行和避险的程度。
-6. 一次只改变少数变量；若用户执行困难，先降低动作摩擦、改变环境或缩小剂量，不先追加更多知识和工具。
-7. 若用户要求“像他说话”，只采用“先机制、后工具、谨慎区分证据、强调可操作性”的高层表达特征；不复制长段落、固定口头禅或未经核实的引语。
+3. 若目标匹配已提交的行动剧本，先运行 `python scripts/query_action_playbooks.py "用户目标与主要阻力"`，只选命中最高的一个剧本。最终 1–3 个动作必须与该剧本动作一一对应，可以删减和个性化，但不得拆成更多步骤，也不得自行发明剧本没有支持的固定时长、复测日程、正确率阈值、剂量或截止日。保留剧本中的限定词，不把“替代部分重读”强化成“停止重读”，也不把“可以尝试”强化成“应该执行”。`minimum_version` 中的数字只是可调整的低摩擦示例，不是最佳处方；`review_after_days` 是一次个人实验的可调整检查点，不是证据验证的最佳间隔或固定日程。`first_questions` 只问真正会改变方案的部分。
+4. 若需要最新事实，先查官方 Huberman Lab/YouTube/B站原始页面及 Stanford 课程/讲座/AMA 页面，再查原始论文、系统综述和权威机构；不得只依据搜索摘要、短视频或搬运文案。
+5. 在后台抽取三列：Huberman 的主张｜直接证据与来源｜外部证据/争议。保留矛盾，不替其调和；不要默认把这张研究表完整展示给用户。
+6. 输出：一句对用户有用的结论 → 1–3 个低风险优先动作 → 触发条件与最小版本 → 监测指标/复盘周期 → 必要的证据边界与何时求助。使用行动剧本时，结论必须保留 `safe_summary` 中会改变用户判断的限定，不能因为用户要求简短就删掉“不是固定剂量/期限、即时感觉不等于长期结果”等关键边界。机制只解释到足以帮助执行和避险的程度。
+7. 一次只改变少数变量；若用户执行困难，先降低动作摩擦、改变环境或缩小剂量，不先追加更多知识和工具。
+8. 若用户要求“像他说话”，只采用“先机制、后工具、谨慎区分证据、强调可操作性”的高层表达特征；不复制长段落、固定口头禅或未经核实的引语。
+
+### 行动剧本不可丢失边界
+
+- 习惯：21 天不是形成定律，66 天不是统一期限；重复、自动化和现实结果要分开看。
+- 学习：只用少量主动提取替代部分重读；即时更费力或即时成绩较低不等于长期保持更差，复测间隔必须随目标和实际遗忘调整。
+- 睡眠节律：不承诺固定光照分钟数，不直视太阳，不用强行早起压缩必要睡眠；危险困倦、打鼾窒息或躁狂信号必须升级评估。
 
 ## 长视频与语料规则
 
@@ -83,11 +90,12 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - [学术修复队列](references/catalog/academic-repair-queue.csv)：把仍为 `pending` 的来源按 PII 未解析、非具体检索页、参考工具书、截断 URL 等原因分流；用于维护与贡献，不计为证据。
 - [结构化研究证据卡](references/catalog/academic-study-cards.jsonl)：人工逐篇核查的设计、样本、主要与阴性结局、局限、安全解释和一手 provenance；与学术队列状态保持确定性一致。
 - [研究间证据关系](references/catalog/evidence-relations.jsonl)：记录复制、支持、限定、挑战或矛盾关系的具体主张范围、理由、关系边界和来源；外部反证研究可用 `source_scope=external-context` 进入证据卡，但不得伪装成 Episode Show Notes 队列来源。
+- [行动剧本](references/catalog/action-playbooks.jsonl)：把已核查研究和公开主张语境转成至多三个动作；每步包含证据分类、触发条件、最小版本、指标、复盘、调整与停止条件。只选一个匹配剧本，不把剧本当成医疗处方。
 - [01 著作与系统思考](references/research/01-writings.md)
 - [02 长对话与长视频](references/research/02-conversations.md)
 - [主张级索引](references/catalog/claim-index.jsonl)：从本地批次分析中保守导出的 40 条公开来源定位，含中性主题、官方 YouTube ID/URL、时间戳、证据层、说话者范围和边界；不含逐字主张、完整字幕或 Show Notes。详细字幕分析只保留在维护者的合法本地研究缓存，不随公开仓库分发。
 - [行为验证用例](references/evals/behavioral-cases.md)：用于独立复测的已知观点、边缘推断和医学边界测试。
-- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–5 行为复测结果。
+- [独立黑盒评测记录](references/evals/blackbox-2026-08-31.md)：2026-08-31 由独立只读 Codex 上下文完成的 Case 1–7 行为复测结果，包括行动剧本退化发现与修复。
 - [03 表达 DNA](references/research/03-expression-dna.md)
 - [04 外部评价与批评](references/research/04-external-views.md)
 - [05 决策与行动](references/research/05-decisions.md)
@@ -100,7 +108,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 
 - 更新官方 Episode 目录：`python scripts/update_catalog.py --output references/catalog/official-episodes.csv`
 - 采集公开 Episode 元数据、Show Notes 和时间戳（不采集 Transcript Tab）：`python scripts/collect_episode_pages.py --catalog references/catalog/official-episodes.csv --output references/catalog/episode-pages.jsonl`
-- 构建 Episode—主题—平台—课程讲座—主张—学术核验—研究结局—研究间关系知识图谱：`python scripts/build_knowledge_graph.py --input references/catalog/episode-pages.jsonl --output references/catalog/knowledge-graph.json --bilibili references/catalog/bilibili-discovery.csv --courses references/catalog/courses-lectures.csv --claims references/catalog/claim-index.jsonl --academic references/catalog/academic-verification-queue.csv --study-cards references/catalog/academic-study-cards.jsonl --evidence-relations references/catalog/evidence-relations.jsonl`
+- 构建 Episode—主题—平台—课程讲座—主张—学术核验—研究结局—研究间关系—行动剧本知识图谱：`python scripts/build_knowledge_graph.py --input references/catalog/episode-pages.jsonl --output references/catalog/knowledge-graph.json --bilibili references/catalog/bilibili-discovery.csv --courses references/catalog/courses-lectures.csv --claims references/catalog/claim-index.jsonl --academic references/catalog/academic-verification-queue.csv --study-cards references/catalog/academic-study-cards.jsonl --evidence-relations references/catalog/evidence-relations.jsonl --action-playbooks references/catalog/action-playbooks.jsonl`
 - 生成主题候选与共现统计（只用于候选筛选，不直接等同于证据）：`python scripts/derive_theme_summary.py --input references/catalog/episode-pages.jsonl --output references/catalog/theme-summary.json`
 - 采集 Stanford Huberman Lab 公开出版物分页目录：`python scripts/collect_publications.py --output references/catalog/publications.csv`
 - 展平所有公开 Show Notes 中的资源/论文链接：`python scripts/build_resource_catalog.py --input references/catalog/episode-pages.jsonl --output references/catalog/episode-resources.csv`
@@ -109,6 +117,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 重建待核验来源的确定性修复队列：`python scripts/build_academic_repair_queue.py --queue references/catalog/academic-verification-queue.csv --output references/catalog/academic-repair-queue.csv`。
 - 将人工研究级证据卡确定性写回学术队列：`python scripts/apply_academic_study_cards.py --cards references/catalog/academic-study-cards.jsonl --queue references/catalog/academic-verification-queue.csv`。证据卡必须同时记录研究设计、样本、主要/阴性结局、局限、可安全解释与一手 provenance；不得只凭摘要标题升级。非 Show Notes 的外部复核卡必须显式使用 `source_scope=external-context` 和空 `queue_urls`，不得改变 Episode 学术队列统计。
 - 校验研究间关系：`python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl`。
+- 校验并检索行动剧本：`python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl`；随后可用 `python scripts/query_action_playbooks.py "看完就忘 主动回忆"`。检索只返回一个最匹配剧本，默认不倾倒完整证据卡。
 - 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`；自然光/节律证据簇可用 `python scripts/query_evidence.py "自然光 昼夜节律 周末露营"`；主动提取/测试效应证据簇可用 `python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"`；习惯形成时长与情境线索证据簇可用 `python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
 - 维护者从合法本地分析缓存重建主张级索引：`python scripts/build_claim_index.py --input /path/to/lawful-local/transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`

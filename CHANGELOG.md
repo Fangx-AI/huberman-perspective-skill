@@ -7,6 +7,20 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.8.0] - 2026-08-31
+
+### Added
+
+- Added three outcome-first action playbooks for starting one habit, retaining learned material and stabilizing sleep-wake timing, with nine actions linked to reviewed studies and public claim context.
+- Added deterministic playbook validation, Chinese query routing and graph nodes/edges for playbooks, steps, study evidence and claim context.
+- Added behavioral Cases 6–7 and independent read-only black-box checks for learning retention and sleep timing.
+
+### Changed
+
+- Tightened the Skill contract so a matched playbook yields no more than three corresponding actions and cannot silently invent or intensify fixed schedules, thresholds, doses or deadlines.
+- Labeled numerical minimum versions and review horizons as adjustable experiment checkpoints rather than optimal prescriptions.
+- Advanced the full graph to `episode-topic-platform-claim-study-relation-action-v6`, with three action-playbook nodes, nine action-step nodes and 8,728 total edges.
+
 ## [0.7.0] - 2026-08-31
 
 ### Added

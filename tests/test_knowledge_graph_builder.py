@@ -201,6 +201,52 @@ class KnowledgeGraphBuilderTests(unittest.TestCase):
             edge_relations = {edge["relation"] for edge in graph["edges"]}
             self.assertTrue({"has_evidence_relation", "challenges"} <= edge_relations)
 
+    def test_action_playbook_becomes_executable_graph_nodes(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory)
+            episode_path = work / "episodes.jsonl"
+            cards_path = work / "cards.jsonl"
+            claims_path = work / "claims.jsonl"
+            playbooks_path = work / "playbooks.jsonl"
+            output_path = work / "graph.json"
+            episode_path.write_text(
+                json.dumps({"fetch_ok": True, "episode_id": "demo", "url": "https://example.org/episode", "topics": [], "youtube_urls": [], "resource_urls": []}) + "\n",
+                encoding="utf-8",
+            )
+            card = {
+                "review_id": "demo-study", "title": "Demo", "source_urls": [], "provenance_urls": [],
+                "verification_status": "verified-study", "evidence_level": "A-Direct", "topic_tags": [],
+                "study_design": "experiment", "sample_size": 10, "population": "adults",
+                "intervention_exposure": "practice", "comparator": "control", "outcomes": ["outcome"],
+                "result_summary": "result", "null_findings": ["null"], "limitations": ["limit"],
+                "safe_interpretation": "bounded", "reviewed_at": "2026-08-31",
+            }
+            cards_path.write_text(json.dumps(card) + "\n", encoding="utf-8")
+            claims_path.write_text(json.dumps({"claim_id": "demo-claim", "claim_text": "context"}) + "\n", encoding="utf-8")
+            playbook = {
+                "playbook_id": "demo-plan", "title": "Demo plan", "user_goal": "act", "aliases": [],
+                "scope": "low risk", "first_questions": [], "baseline_checks": [], "safe_summary": "start",
+                "not_for": [], "escalation": [], "last_reviewed": "2026-08-31",
+                "evidence_links": [{"review_id": "demo-study"}], "claim_links": [{"claim_id": "demo-claim"}],
+                "actions": [{"action_id": "do-one", "priority": 1, "classification": "bounded-experiment",
+                             "action": "Do one", "why": "test", "trigger": "after cue", "minimum_version": "one",
+                             "metric": "done", "review_after_days": 7, "adaptation": "adjust", "stop_conditions": ["stop"],
+                             "evidence_refs": ["demo-study", "demo-claim"]}],
+            }
+            playbooks_path.write_text(json.dumps(playbook) + "\n", encoding="utf-8")
+            subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "build_knowledge_graph.py"), "--input", str(episode_path),
+                 "--output", str(output_path), "--claims", str(claims_path), "--study-cards", str(cards_path),
+                 "--action-playbooks", str(playbooks_path)],
+                check=True, capture_output=True, text=True,
+            )
+            graph = json.loads(output_path.read_text(encoding="utf-8"))
+            self.assertEqual(graph["schema"], "episode-topic-platform-claim-study-relation-action-v6")
+            self.assertEqual(graph["stats"]["action_playbook_nodes"], 1)
+            self.assertEqual(graph["stats"]["action_step_nodes"], 1)
+            relations = {edge["relation"] for edge in graph["edges"]}
+            self.assertTrue({"has_action", "uses_study_evidence", "uses_claim_context", "grounded_in"} <= relations)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -8,6 +8,7 @@ From a clean clone:
 python -m pip install -r requirements.lock
 python scripts/release_check.py
 python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl
+python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl
 python scripts/quality_check.py SKILL.md
 python -m unittest discover -s tests -v
 python -m compileall -q scripts tests
@@ -99,9 +100,10 @@ python scripts/build_knowledge_graph.py \
   --claims references/catalog/claim-index.jsonl \
   --academic references/catalog/academic-verification-queue.csv \
   --study-cards references/catalog/academic-study-cards.jsonl \
-  --evidence-relations references/catalog/evidence-relations.jsonl
+  --evidence-relations references/catalog/evidence-relations.jsonl \
+  --action-playbooks references/catalog/action-playbooks.jsonl
 ```
 
-The committed public graph must preserve all card, null-finding, limitation and evidence-relation counts while continuing to omit raw transcripts, Show Notes and paper full text.
+The committed public graph must preserve all card, null-finding, limitation, evidence-relation, action-playbook and action-step counts while continuing to omit raw transcripts, Show Notes and paper full text. Validate a playbook before rebuilding the graph; the validator rejects more than three actions, unresolved evidence IDs, missing stop conditions and undeclared evidence use.
 
 After review, promote only the safe derived fields through `export_public_snapshot.py`. The full private contract check is available as `scripts/contract_check_full.py` when all local raw catalogs exist.

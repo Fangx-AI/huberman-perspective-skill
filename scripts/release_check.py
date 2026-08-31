@@ -7,6 +7,11 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    from validate_action_playbooks import load_jsonl, validate_playbooks
+except ModuleNotFoundError:  # pragma: no cover - module-based test import
+    from scripts.validate_action_playbooks import load_jsonl, validate_playbooks
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -33,6 +38,7 @@ REQUIRED = [
     "references/catalog/academic-repair-queue.csv",
     "references/catalog/academic-study-cards.jsonl",
     "references/catalog/evidence-relations.jsonl",
+    "references/catalog/action-playbooks.jsonl",
     "references/catalog/knowledge-graph.json",
     "references/catalog/release-manifest.json",
 ]
@@ -188,6 +194,7 @@ def check() -> list[str]:
         elif len(evidence_relations) < 10:
             errors.append(f"too few evidence relations: {len(evidence_relations)}")
 
+    claims: list[dict] = []
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
     if claims_path.is_file():
         claim_count = 0
@@ -197,12 +204,24 @@ def check() -> list[str]:
                     continue
                 claim_count += 1
                 record = json.loads(line)
+                claims.append(record)
                 if "claim_text" in record:
                     errors.append(f"claim_text leaked at claim-index line {line_number}")
                 if not record.get("source_urls") or not record.get("youtube_ids"):
                     errors.append(f"claim locator incomplete at line {line_number}")
         if claim_count != 40:
             errors.append(f"unexpected public claim count: {claim_count}")
+
+    action_playbooks: list[dict] = []
+    action_playbooks_path = ROOT / "references" / "catalog" / "action-playbooks.jsonl"
+    if action_playbooks_path.is_file():
+        try:
+            action_playbooks = load_jsonl(action_playbooks_path)
+            validate_playbooks(action_playbooks, study_cards, claims)
+        except (OSError, ValueError) as exc:
+            errors.append(f"invalid action playbook catalog: {exc}")
+        if len(action_playbooks) != 3:
+            errors.append(f"unexpected action playbook count: {len(action_playbooks)}")
 
     graph_path = ROOT / "references" / "catalog" / "knowledge-graph.json"
     if graph_path.is_file():
@@ -233,6 +252,9 @@ def check() -> list[str]:
             errors.append("public graph limitation or evidence-topic count is stale")
         if stats.get("evidence_relation_nodes") != len(evidence_relations):
             errors.append("public graph evidence-relation count is stale")
+        expected_action_steps = sum(len(playbook.get("actions", [])) for playbook in action_playbooks)
+        if stats.get("action_playbook_nodes") != len(action_playbooks) or stats.get("action_step_nodes") != expected_action_steps:
+            errors.append("public graph action-playbook or action-step count is stale")
         relations = {}
         for edge in graph.get("edges", []):
             relation = edge.get("relation", "")
@@ -242,6 +264,20 @@ def check() -> list[str]:
         typed_relation_edges = sum(relations.get(kind, 0) for kind in {"replicates", "supports", "qualifies", "challenges", "contradicts"})
         if relations.get("has_evidence_relation") != len(evidence_relations) or typed_relation_edges != len(evidence_relations):
             errors.append("public graph lost or duplicated typed evidence-relation edges")
+        expected_study_links = sum(len(playbook.get("evidence_links", [])) for playbook in action_playbooks)
+        expected_claim_links = sum(len(playbook.get("claim_links", [])) for playbook in action_playbooks)
+        expected_groundings = sum(
+            len(action.get("evidence_refs", []))
+            for playbook in action_playbooks
+            for action in playbook.get("actions", [])
+        )
+        if (
+            relations.get("has_action") != expected_action_steps
+            or relations.get("uses_study_evidence") != expected_study_links
+            or relations.get("uses_claim_context") != expected_claim_links
+            or relations.get("grounded_in") != expected_groundings
+        ):
+            errors.append("public graph lost or duplicated action-playbook relations")
         academic_path = ROOT / "references" / "catalog" / "academic-verification-queue.csv"
         if academic_path.is_file():
             with academic_path.open(encoding="utf-8-sig", newline="") as handle:

@@ -61,9 +61,21 @@ One JSON object per manually reviewed relationship between two study cards. Requ
 
 One JSON object per source locator. Public records contain `claim_id`, neutral `topic`, YouTube IDs/URLs, timestamps, speaker scope, evidence layer, boundary and parse quality. The private `claim_text` field is deliberately omitted.
 
+## `action-playbooks.jsonl`
+
+One JSON object per outcome-first user playbook. Each playbook defines a concrete `user_goal`, aliases, scope, selective first questions, baseline checks, one to three actions, study links, public-claim context, exclusions, escalation rules and a bounded summary. Every action records `classification`, trigger, minimum version, observable metric, review interval, adaptation rule, stop conditions and declared evidence references.
+
+Action classifications are deliberately narrower than evidence levels:
+
+- `evidence-supported`: the action direction is reasonably supported by the linked human evidence, within the recorded boundary.
+- `bounded-experiment`: a low-risk personal experiment consistent with evidence, but not a validated universal dose or protocol.
+- `framework-inference`: an implementation choice synthesized from Huberman's public framework; it must not be presented as a tested prescription.
+
+`support_type` records `direct-support`, `bounded-support`, or `framework-context`. Every playbook must link at least one reviewed study and one public claim locator. This catalog is decision support, not medical diagnosis or treatment.
+
 ## `knowledge-graph.json`
 
-JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, `resource`, `study-card`, `study-finding`, `study-limitation`, `evidence-topic`, and `evidence-relation`. Study cards connect to reviewed resources through `reviews_resource`; external resources retain `source_scope=external-context` and zero Episode links. Positive summaries, null findings and limitations use `reports_result`, `reports_null_finding`, and `has_limitation`. A source card connects to an evidence-relation node with `has_evidence_relation`; that node connects to the target card with its typed relation. Public claim labels remain neutral topic names; detailed transcript-derived prose is absent.
+JSON object with `schema`, `generated_at`, `stats`, `nodes` and `edges`. Node types are `episode`, `topic`, `youtube`, `bilibili`, `course-lecture`, `claim`, `resource`, `study-card`, `study-finding`, `study-limitation`, `evidence-topic`, `evidence-relation`, `action-playbook`, and `action-step`. Study cards connect to reviewed resources through `reviews_resource`; external resources retain `source_scope=external-context` and zero Episode links. Positive summaries, null findings and limitations use `reports_result`, `reports_null_finding`, and `has_limitation`. A source card connects to an evidence-relation node with `has_evidence_relation`; that node connects to the target card with its typed relation. Playbooks connect to steps with `has_action`, to reviewed studies with `uses_study_evidence`, and to public claim context with `uses_claim_context`; each step uses `grounded_in` for its declared references. Public claim labels remain neutral topic names; detailed transcript-derived prose is absent.
 
 ## Evidence levels
 
