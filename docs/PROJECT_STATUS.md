@@ -10,7 +10,7 @@ Status date: 2026-08-31.
 | Preserve traceable claims without redistributing transcripts | `claim-index.jsonl`, `source-registry.md`, `release_check.py` | Implemented for the current public snapshot |
 | Connect claims, studies, limitations and contradictions | `academic-study-cards.jsonl`, `evidence-relations.jsonl`, `knowledge-graph.json` | Implemented, but research-level coverage remains partial |
 | Produce a callable Chinese Huberman-perspective Skill | `SKILL.md`, `agents/openai.yaml`, `action-playbooks.jsonl` | Implemented and installed locally |
-| Put user outcomes ahead of knowledge accumulation | Nine outcome-first playbooks and Cases 5–13 | Implemented for nine high-frequency scenarios; more scenarios remain |
+| Put user outcomes ahead of knowledge accumulation | Ten outcome-first playbooks and Cases 5–14 | Implemented for ten high-frequency scenarios; more scenarios remain |
 | State evidence levels, medical boundaries and uncertainty | `SKILL.md`, `evidence-ledger.md`, structured card limitations and stop/escalation fields | Implemented and regression tested |
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
 | Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | Implemented for a public clone |
@@ -19,7 +19,7 @@ Status date: 2026-08-31.
 
 ## Current research gap
 
-The public academic queue contains 1,736 deduplicated Show Notes URLs. Only 681 have bibliographic or stronger verification, and only 35 high-priority papers currently have full structured study cards. `verified-bibliographic` confirms identity only; it cannot support efficacy. The remaining queue and future episodes keep the long-term Goal active.
+The public academic queue contains 1,736 deduplicated Show Notes URLs. Only 684 have bibliographic or stronger verification, and only 44 high-priority papers currently have full structured study cards. `verified-bibliographic` confirms identity only; it cannot support efficacy. The remaining queue and future episodes keep the long-term Goal active.
 
 The private maintainer cache records batch-level analysis for 423 available canonical YouTube videos, while the public claim locator intentionally exposes only a small, copyright-minimized set of neutral claim records. This protects source expression but means public users cannot independently reproduce every transcript-level judgment from repository payloads alone.
 

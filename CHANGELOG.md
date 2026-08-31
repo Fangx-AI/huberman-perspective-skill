@@ -7,6 +7,25 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.14.0] - 2026-08-31
+
+### Added
+
+- Added a nine-card sauna and deliberate-heat decision cluster spanning repeated endocrine exposure, sauna–cold hormone responses, two Finnish mortality cohorts, two meta-analyses, a stable-coronary-disease RCT, an injury series and a post-exercise heat review.
+- Added seven claim-scoped `qualifies` relations that keep observational mortality associations, transient hormone peaks, randomized null findings, heat acclimation, sport recovery and safety signals from collapsing into one universal protocol.
+- Added a tenth outcome-first playbook and behavioral Case 14 that give a direct buy/no-buy/optional-preference/professional-review decision without inventing temperature, duration, frequency or mandatory cold pairing.
+
+### Changed
+
+- Promoted three repeated Show Notes URLs after provenance-bearing PMID/PMCID verification and applied five study-card updates, yielding 684 verified and 1,052 pending queue records; the repair queue now contains 546 DOI-unresolved rows.
+- Expanded structured coverage to 44 study cards: 25 cards connect 35 Show Notes URL records and 19 are explicit external-context qualifications.
+- Expanded the graph to 44 study cards, 206 findings, 274 limitations, 209 evidence topics, 27 evidence relations, ten playbooks, 30 action steps and 9,446 traceable edges.
+- Made hormone, longevity, weight-loss and generic cardiometabolic reasons default to no purchase/no forced quota, while keeping enjoyable use optional only after a complete medical and environmental safety gate.
+
+### Evaluated
+
+- Ran independent read-only forward tests without exposing scoring criteria. Early answers were rejected for dropping renal/infection screening and mixed post-exercise evidence; the final passing run preserved all six decision-level evidence boundaries and the full safety gate.
+
 ## [0.13.0] - 2026-08-31
 
 ### Added

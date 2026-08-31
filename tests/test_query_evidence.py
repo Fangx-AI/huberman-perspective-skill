@@ -166,6 +166,22 @@ class EvidenceQueryTests(unittest.TestCase):
         device = next(item for item in results if item["review_id"] == "baeza-moyano-2026-commercial-led-mask-spectra")
         self.assertIn("默认视为证据不匹配", device["safe_interpretation"])
 
+    def test_sauna_query_preserves_association_randomized_null_and_safety_cluster(self) -> None:
+        results = MODULE.query_cards(self.cards, "桑拿 热暴露 长寿 生长激素 血压 恢复 安全")
+        ids = {item["review_id"] for item in results}
+        self.assertTrue({
+            "leppaluoto-1986-repeated-sauna-endocrine",
+            "laukkanen-2018-sauna-cvd-mortality-cohort",
+            "hamaya-2025-passive-heating-rct-meta-analysis",
+            "debray-2023-sauna-stable-cad-rct",
+            "kaiser-2023-sauna-injury-series",
+            "ahokas-2025-postexercise-heat-review",
+        } <= ids)
+        cohort = next(item for item in results if item["review_id"] == "laukkanen-2018-sauna-cvd-mortality-cohort")
+        concise = MODULE.concise_record(cohort, self.cards, self.relations)
+        self.assertTrue(any(item["relation_id"] == "hamaya-2025-qualifies-laukkanen-2018-causality" for item in concise["related_evidence"]))
+        self.assertIn("频率类别不是处方剂量", concise["safe_interpretation"])
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

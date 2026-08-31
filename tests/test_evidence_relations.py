@@ -69,6 +69,25 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertTrue(all(item["relation"] == "qualifies" for item in relations))
         self.assertTrue(any("不是荟萃分析" in item["boundary"] for item in relations))
 
+    def test_sauna_relations_keep_cohort_association_hormone_spikes_and_rct_nulls_separate(self) -> None:
+        causality = next(
+            item for item in self.relations
+            if item["relation_id"] == "hamaya-2025-qualifies-laukkanen-2018-causality"
+        )
+        self.assertEqual(causality["relation"], "qualifies")
+        self.assertIn("不能把关联梯度当成因果剂量", causality["rationale"])
+        hormones = next(
+            item for item in self.relations
+            if item["relation_id"] == "podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization"
+        )
+        self.assertIn("睾酮", hormones["rationale"])
+        self.assertIn("不构成严格复制", hormones["boundary"])
+        safety = next(
+            item for item in self.relations
+            if item["relation_id"] == "kaiser-2023-qualifies-laukkanen-2018-sauna-safety"
+        )
+        self.assertIn("没有总暴露分母", safety["boundary"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

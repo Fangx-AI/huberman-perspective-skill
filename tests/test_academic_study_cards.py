@@ -39,6 +39,32 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(by_id[review_id]["source_scope"], "external-context")
             self.assertEqual(by_id[review_id]["queue_urls"], [])
 
+    def test_sauna_cluster_separates_association_hormone_spikes_nulls_and_safety(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "leppaluoto-1986-repeated-sauna-endocrine",
+            "podstawski-2021-sauna-cold-endocrine",
+            "laukkanen-2018-sauna-cvd-mortality-cohort",
+            "laukkanen-2015-sauna-mortality-cohort",
+            "pizzey-2021-heat-vascular-meta-analysis",
+            "hamaya-2025-passive-heating-rct-meta-analysis",
+            "debray-2023-sauna-stable-cad-rct",
+            "kaiser-2023-sauna-injury-series",
+            "ahokas-2025-postexercise-heat-review",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("睾酮", " ".join(by_id["leppaluoto-1986-repeated-sauna-endocrine"]["null_findings"]))
+        self.assertIn("HbA1c", " ".join(by_id["hamaya-2025-passive-heating-rct-meta-analysis"]["null_findings"]))
+        self.assertIn("热适应指标变化不等于", " ".join(by_id["debray-2023-sauna-stable-cad-rct"]["null_findings"]))
+        self.assertIn("总使用人次分母", " ".join(by_id["kaiser-2023-sauna-injury-series"]["null_findings"]))
+        for review_id in expected - {
+            "leppaluoto-1986-repeated-sauna-endocrine",
+            "podstawski-2021-sauna-cold-endocrine",
+            "laukkanen-2018-sauna-cvd-mortality-cohort",
+        }:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

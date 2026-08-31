@@ -9,11 +9,11 @@
 - 425 个官方 Episode 元数据记录
 - 424 个 canonical YouTube 视频，其中 423 个已完成批次级分析
 - 34 个 B 站发现线索，其中 19 个已回链官方 Episode/YouTube
-- 1,736 个 Show Notes 学术/医学来源，681 个已核验、1,055 个待核验；其中 121 条原始研究、36 条综述、21 条观察研究和 503 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
-- 35 张结构化高关联研究证据卡：22 张连接 30 条 Show Notes 来源记录，13 张为不改变队列统计的外部反证/限定卡
-- 20 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应、习惯形成、冷暴露与红光设备购买证据簇
-- 9 个结果优先行动剧本、27 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步、饮食环境、健康协议、冷暴露和红光设备购买决策；每步区分证据支持、有限个人实验与框架推断
-- 研究—行动图谱包含 35 个研究卡、160 个结果/阴性发现、220 个局限、176 个证据主题、20 个研究关系节点、9 个行动剧本和 27 个动作节点，共 9,233 条可追溯关系
+- 1,736 个 Show Notes 学术/医学来源，684 个已核验、1,052 个待核验；其中 122 条原始研究、36 条综述、23 条观察研究和 503 条仅书目确认。分母扩展来自对主流学术出版平台的分类补全，不代表证据质量下降
+- 44 张结构化高关联研究证据卡：25 张连接 35 条 Show Notes 来源记录，19 张为不改变队列统计的外部反证/限定卡
+- 27 条机器可读的 `challenges / qualifies / supports` 关系，覆盖睡眠—运动学习、自然明暗周期、主动提取/测试效应、习惯形成、冷暴露、红光设备与桑拿/热暴露决策证据簇
+- 10 个结果优先行动剧本、30 个动作，覆盖习惯执行、学习保持、睡眠节律、专注、运动起步、饮食环境、健康协议、冷暴露、红光设备与桑拿/热暴露决策；每步区分证据支持、有限个人实验与框架推断
+- 研究—行动图谱包含 44 个研究卡、206 个结果/阴性发现、274 个局限、209 个证据主题、27 个研究关系节点、10 个行动剧本和 30 个动作节点，共 9,446 条可追溯关系
 - 40 个脱敏的主张定位记录
 - 8 个课程、讲座、AMA 或机构访谈入口
 
@@ -77,6 +77,7 @@ python scripts/query_action_playbooks.py "总点外卖 吃零食 不想算卡路
 python scripts/query_action_playbooks.py "补剂和健康协议太多 怎么判断一个值不值得试"
 python scripts/query_action_playbooks.py "冷水澡提高多巴胺和免疫 要不要每天冰浴"
 python scripts/query_action_playbooks.py "红光改善血糖视力皮肤 值不值得买面板或面罩"
+python scripts/query_action_playbooks.py "桑拿提高生长激素帮助长寿 值不值得买或每周硬凑"
 ```
 
 每次只返回一个剧本、最多三个动作；每步带触发条件、最低版本、记录指标、复盘与失败后的调整。`evidence-supported`、`bounded-experiment` 和 `framework-inference` 必须分开，不把节目协议包装成已验证处方。
@@ -91,6 +92,8 @@ python scripts/query_evidence.py "自然光 昼夜节律 周末露营"
 python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
 python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"
 python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"
+python scripts/query_evidence.py "红光 面板 面罩 血糖 视力 皮肤 设备等效"
+python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 恢复 安全"
 python scripts/query_evidence.py "gratitude inflammation" --json
 ```
 
@@ -137,4 +140,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.13.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。
+当前版本：`0.14.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。

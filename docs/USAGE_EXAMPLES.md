@@ -12,7 +12,7 @@ Use $huberman-perspective. I keep collecting habit protocols but cannot start. H
 
 A good response should select one matching playbook, give no more than three actions, and attach a trigger, minimum version, observable measure, adjustable review point and failure adaptation. It should not add supplements, cold exposure or a full morning routine merely because Huberman has discussed them.
 
-## Nine outcome-first scenarios
+## Ten outcome-first scenarios
 
 | User request | Expected playbook | Non-loss boundary |
 |---|---|---|
@@ -25,6 +25,7 @@ A good response should select one matching playbook, give no more than three act
 | `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | Proxy endpoints are not personal efficacy; medication, hormone, peptide and interaction decisions require a clinician/pharmacist |
 | `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | Separate wellbeing, acute recovery and long-term adaptation; no fixed dose, open-water or breath-hold experiment |
 | `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | Generic wellness defaults to no purchase; exact indication/device matching and no direct-eye or invented dose |
+| `桑拿能提高生长激素、降低心血管死亡，我该买桑拿房或每周硬凑吗？` | `decide-whether-sauna-or-heat-is-worth-using` | Mortality is observational, hormone peaks are transient, most randomized endpoints are null; no universal dose or forced quota |
 
 The deterministic router can be inspected without loading the entire evidence archive:
 
@@ -48,6 +49,7 @@ python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"
 python scripts/query_evidence.py "超加工食品 饮食环境"
 python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"
 python scripts/query_evidence.py "红光 面板 面罩 血糖 视力 皮肤 设备等效"
+python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 恢复 安全"
 ```
 
 ## Ask about a personal health boundary

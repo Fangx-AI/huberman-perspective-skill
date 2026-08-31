@@ -127,6 +127,76 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "claim:batch02-claim-0006"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:ahokas-2025-postexercise-heat-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:debray-2023-sauna-stable-cad-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:hamaya-2025-passive-heating-rct-meta-analysis"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:kaiser-2023-sauna-injury-series"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:laukkanen-2015-sauna-mortality-cohort"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:pizzey-2021-heat-vascular-meta-analysis"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "target": "study-card:podstawski-2021-sauna-cold-endocrine"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:decide-whether-to-try-one-health-protocol",
       "target": "action-step:decide-whether-to-try-one-health-protocol:define-one-outcome-and-decision-card"
     },
@@ -529,6 +599,86 @@
       "relation": "grounded_in",
       "source": "action-step:decide-whether-and-when-to-use-cold-exposure:name-the-outcome-and-pass-the-cold-safety-gate",
       "target": "study-card:tipton-2017-cold-water-risks-benefits-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate",
+      "target": "study-card:debray-2023-sauna-stable-cad-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate",
+      "target": "study-card:kaiser-2023-sauna-injury-series"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate",
+      "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide",
+      "target": "claim:batch02-claim-0006"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide",
+      "target": "study-card:hamaya-2025-passive-heating-rct-meta-analysis"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide",
+      "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "claim:batch02-claim-0019"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:ahokas-2025-postexercise-heat-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:debray-2023-sauna-stable-cad-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:hamaya-2025-passive-heating-rct-meta-analysis"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:laukkanen-2015-sauna-mortality-cohort"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:pizzey-2021-heat-vascular-meta-analysis"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "target": "study-card:podstawski-2021-sauna-cold-endocrine"
     },
     {
       "relation": "grounded_in",
@@ -42662,6 +42812,16 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:debray-2023-qualifies-laukkanen-2018-vascular-causality",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:debray-2023-qualifies-pizzey-2021-cad-transfer",
+      "target": "study-card:pizzey-2021-heat-vascular-meta-analysis"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval",
       "target": "study-card:karpicke-roediger-2008-repeated-retrieval"
     },
@@ -42679,6 +42839,26 @@
       "relation": "qualifies",
       "source": "evidence-relation:godaert-2024-qualifies-shinhmar-2021-aging-vision",
       "target": "study-card:shinhmar-2021-red-light-colour-contrast"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:hamaya-2025-qualifies-laukkanen-2015-causality",
+      "target": "study-card:laukkanen-2015-sauna-mortality-cohort"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:hamaya-2025-qualifies-laukkanen-2018-causality",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:hamaya-2025-qualifies-pizzey-2021-vascular-effects",
+      "target": "study-card:pizzey-2021-heat-vascular-meta-analysis"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:kaiser-2023-qualifies-laukkanen-2018-sauna-safety",
+      "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
     },
     {
       "relation": "supports",
@@ -42704,6 +42884,11 @@
       "relation": "supports",
       "source": "evidence-relation:nettersheim-2015-supports-rickard-2008-no-enhancement",
       "target": "study-card:rickard-2008-sleep-motor-sequence"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
+      "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
     },
     {
       "relation": "challenges",
@@ -42739,6 +42924,96 @@
       "relation": "qualifies",
       "source": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
       "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:endurance"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:postexercise-heat"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:recovery"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "evidence-topic:training-adaptation"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:6ee8cb3aa097b036"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:77a3ef126a05d4e1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:a18ae9ed7bd90e50"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:cfe102b912fb41db"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:f59ea00aaa71bf22"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-limitation:fb90a2ee41396af1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-finding:741868c3ee57758f"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-finding:7ecd8b2fb6cf857a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-finding:a4757add3f995dcd"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-finding:e15c825d83a58588"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "study-finding:e7d55aa5e2103f75"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:ahokas-2025-postexercise-heat-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/41032138/"
     },
     {
       "relation": "has_evidence_relation",
@@ -43427,6 +43702,111 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-relation:debray-2023-qualifies-laukkanen-2018-vascular-causality"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-relation:debray-2023-qualifies-pizzey-2021-cad-transfer"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:blood-pressure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:coronary-artery-disease"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:heat-acclimation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:randomized-controlled-trial"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "evidence-topic:vascular-function"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:5f56e4fea2f00388"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:848854de7ea5494e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:8b47ad692d1e02da"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:bcedeb4a4fb2710d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:d2b45a00a10a2b13"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-limitation:efee7238491bf81b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:4d705fdcea8a8f0a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:7825165c6dce1aa1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:ac5d560f0dfb31ef"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:de5831c0ef2557eb"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:df09bb219c58d527"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "study-finding:aa506045e2f9a2c0"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:debray-2023-sauna-stable-cad-rct",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/37650138/"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:dunlosky-2013-effective-learning-techniques-review",
       "target": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval"
     },
@@ -43946,6 +44326,121 @@
       "target": "resource:https://www.cell.com/cell-metabolism/fulltext/S1550-4131(19)30248-7?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1550413119302487%3Fshowall%3Dtrue"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-relation:hamaya-2025-qualifies-laukkanen-2015-causality"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-relation:hamaya-2025-qualifies-laukkanen-2018-causality"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-relation:hamaya-2025-qualifies-pizzey-2021-vascular-effects"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:cardiovascular"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:glycaemic-control"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:hot-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:passive-heating"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:randomized-controlled-trials"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:117de49968f3dc92"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:397be63fcf4ce64a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:588e40e51846e890"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:a0c9de56f474c15c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:cd956a59af6edd58"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-limitation:d1ac50de940275f8"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:20ebd6228ca122ea"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:4ebbfa901dc615b2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:5fc8ed88e92533a1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:816afb5188b1d214"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:e8d5a5bc2f848c93"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "study-finding:93526f42a93eb45a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/41049507/"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:hazlett-2021-gratitude-rct",
       "target": "evidence-topic:fmri"
@@ -44177,6 +44672,106 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-relation:kaiser-2023-qualifies-laukkanen-2018-sauna-safety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:alcohol"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:burns"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:falls"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:injury"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:safety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "evidence-topic:syncope"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:02e4b82f33fd0b73"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:1d6014da0af28dc7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:55bac2e931965888"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:b9264b38cc80dd31"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:e83c87aec3718a4c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-limitation:f2ecc0c9f46d1695"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-finding:1e9258a1e58a3611"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-finding:65e050cfe836f512"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-finding:940d42cd5f5942af"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-finding:a8b428abcbcb38fb"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "study-finding:19272453803be007"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:kaiser-2023-sauna-injury-series",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/37211472/"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:karpicke-roediger-2008-repeated-retrieval",
       "target": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval"
     },
@@ -44394,6 +44989,281 @@
       "relation": "reviews_resource",
       "source": "study-card:lally-2010-real-world-habit-formation",
       "target": "resource:https://onlinelibrary.wiley.com/doi/10.1002/ejsp.674"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:all-cause-mortality"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:cardiovascular-mortality"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:finland"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:prospective-cohort"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "evidence-topic:sudden-cardiac-death"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:051ac6f42cd7f97f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:3ef5f2b5b67ee968"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:513c6dbeb04c2a13"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:7c632a54b6dc29a0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:cec9f26b8300004e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-limitation:e51ddc0420ecef77"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-finding:06a81cd3b08ddd9e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-finding:a09d778041633461"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-finding:b69df4f752d5a24e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-finding:d60bfe565c898abe"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "study-finding:06b1398be4497f4a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/25705824/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:all-cause-mortality"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:cardiovascular-mortality"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:dose-response-association"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:finland"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:prospective-cohort"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:078b5ced8b47fd58"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:17965be89b7741cc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:281d680b86d36a79"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:b4840735d0da36e5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:bf472e9ff4731b0b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-limitation:dda337e770829a6c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-finding:2417a246623427b3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-finding:820bd889580c33ea"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-finding:85bc5e2e09abb9f6"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-finding:b0ff7119e81058f4"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "study-finding:2b96203b14dfa821"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "resource:https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1198-0"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "target": "resource:https://link.springer.com/article/10.1186/s12916-018-1198-0"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:acute-endocrine-response"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:amenorrhea"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:growth-hormone"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:heat-exposure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:prolactin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "evidence-topic:testosterone"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:739c4439e53ba621"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:9ade31ceb4803315"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:a1bc8ccf332c1c1a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:a73695ed3db3d33f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:cef4f42d9e47c8f9"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-limitation:e48c94383fa83bab"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-finding:8814213e8500a8bc"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-finding:a18050c88a185106"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-finding:d37ccba220c37afe"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "study-finding:406e164b4435cab3"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "target": "resource:https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1986.tb08000.x"
     },
     {
       "relation": "has_evidence_relation",
@@ -44804,6 +45674,201 @@
       "relation": "reviews_resource",
       "source": "study-card:nettersheim-2015-sleep-stabilization",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:blood-pressure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:flow-mediated-dilation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:heat-therapy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:meta-analysis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "evidence-topic:vascular-function"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:066f76b01e5b673c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:07e59638448d9a70"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:0a3effa9b038b8a0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:0b7f7ebde5db4c7c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:37bd3356972a5103"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-limitation:59ef1aa84f3cec5d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-finding:9b16160c9ec0e5b6"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-finding:b25504d93f86945e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-finding:c2a33f98ab9cb799"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-finding:e8d564d71d24d9e6"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "study-finding:6cdba2731aa8c7fe"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/33866630/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:acute-endocrine-response"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:cold-water-immersion"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:cortisol"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:dhea-s"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:prolactin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:sauna"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "evidence-topic:testosterone"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:31fb9aa432908623"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:a6dfb6f4eca92da7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:ad0b008d38cf74a3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:b365efde5cb7a3a4"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:f1c30dc6cb28c594"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-limitation:f2db0882c0111406"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-finding:2717f35cdc4157cc"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-finding:41b27025a88dc60b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-finding:c41b5c8e3c04cc74"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-finding:fb5ab4832745d4d4"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "study-finding:0799abe948b7136b"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "resource:https://journals.sagepub.com/doi/10.1177/15579883211008339"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "target": "resource:https://journals.sagepub.com/doi/10.1177/15579883211008339?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
     },
     {
       "relation": "has_evidence_topic",
@@ -46166,7 +47231,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T08:11:03.606350+00:00",
+  "generated_at": "2026-08-31T08:40:53.996547+00:00",
   "nodes": [
     {
       "aliases": [
@@ -46250,6 +47315,48 @@
       "scope": "适用于一般健康成人在非开放水域、非医疗治疗场景中判断是否采用可立即停止的居家冷水淋浴；运动员的比赛恢复可用于整理目标权衡，但具体浸泡方案应由合格专业人员结合项目和健康状态决定",
       "type": "action-playbook",
       "user_goal": "在不照搬冰浴或冷水澡协议的前提下，判断冷暴露是否值得做、适合什么情境，以及何时反而会妨碍目标"
+    },
+    {
+      "aliases": [
+        "桑拿房 值得买吗",
+        "桑拿 长寿",
+        "桑拿 生长激素",
+        "热暴露 固定次数",
+        "桑拿 减脂",
+        "桑拿 训练恢复",
+        "sauna worth buying",
+        "sauna longevity",
+        "heat exposure hormones",
+        "每周桑拿"
+      ],
+      "baseline_checks": [
+        "只保留一个现实结果：享受/放松、运动恢复、疾病目标，或泛健康/长寿/激素；不能同时用多个机制作购买理由",
+        "先问是否有晕厥/低血压、心血管或肾脏疾病、发热/感染、孕期、影响体温/血压/体液的药物或医生限制",
+        "确认场所可随时离开、防滑、可冷却并可获得帮助；酒后或独自高热挑战直接不进入实验"
+      ],
+      "escalation": [
+        "晕厥、胸痛、严重呼吸困难、持续意识混乱或其他急症信号立即离开热源并寻求急救",
+        "已知心血管/肾脏疾病、低血压或晕厥史、孕期、发热/急性感染，或使用影响血压、体温调节、出汗与体液电解质的药物时先咨询医生/药师",
+        "以治疗、康复、血压、血糖或激素为目标时由相应临床团队决定，不依据播客自行制定热疗"
+      ],
+      "first_questions": [
+        "你想改善的一个现实结果是什么：只是喜欢/放松、运动恢复，还是长寿、激素、减脂、血压/血糖？",
+        "你是否已有可安全使用的场所，还是准备为这些主张购买设备或强行凑次数？",
+        "是否有晕厥/低血压、心血管或肾脏疾病、孕期、发热/感染、相关用药，或酒后/独处使用情境？"
+      ],
+      "id": "action-playbook:decide-whether-sauna-or-heat-is-worth-using",
+      "label": "判断桑拿或刻意热暴露是否值得使用",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "晕厥、胸痛、严重气促、意识改变、热病或烧伤等急症的自助处理",
+        "心血管/肾脏疾病、孕期、发热/感染、复杂慢病或影响体温/体液药物下的远程热暴露方案",
+        "用桑拿替代降压、糖尿病、激素、康复或其他医疗管理",
+        "推荐桑拿品牌、温度、时长、频率、轮数或冷热交替剂量"
+      ],
+      "safe_summary": "如果主要理由是提高生长激素/睾酮、减脂、长寿或泛心血管/代谢优化，当前证据不足以支持购买桑拿房或硬凑固定次数：死亡率结果是观察关联，急性激素峰值不是长期优化，更新RCT综述对多数结局总体阴性。一般健康成人若只是喜欢且已通过安全门，可把它保留为非必需的可选行为；不给固定温度、时长或频率，不与酒精、独处高热挑战或强制冷水组合。",
+      "scope": "适用于一般成人评估桑拿、蒸汽房或刻意热暴露是否值得购买、固定执行或作为运动恢复工具的非紧急决定；不提供个人热疗剂量或疾病治疗",
+      "type": "action-playbook",
+      "user_goal": "把长寿关联、激素峰值和节目协议转成一个不误花钱、不硬凑频率且先处理安全的使用决定"
     },
     {
       "aliases": [
@@ -46632,6 +47739,60 @@
       "trigger": "购买设备、安排冰浴、进入冷水或把冷水澡加入日程之前",
       "type": "action-step",
       "why": "同一种冷刺激在一般 wellbeing、即时生理反应、比赛恢复和长期训练适应中回答的是不同问题；冷休克、喘气、心律和低体温风险必须早于潜在收益"
+    },
+    {
+      "adaptation": "任何头晕、恢复变差或目标无改善都取消必需化并减少/停止；若有疾病、孕期、药物或反复症状，不继续个人实验而转专业评估",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-sauna-or-heat-is-worth-using:apply-heat-safety-and-optionality-gate",
+      "label": "只有一般健康成人仍因享受或放松选择使用时，才采用可立即离开的熟悉环境并预先写停止条件；不叠加酒精、强制冷水或极端挑战",
+      "metric": "是否始终能安全离开和冷却；有无头晕、近乎晕厥、心悸、胸部不适、异常气促、严重头痛、混乱或次日功能恶化",
+      "minimum_version": "只在熟悉、可随时离开并可获得帮助的环境中按个人耐受使用；不喝酒、不独自做高热挑战、不把冷水冲击绑成必需组合，不规定温度、时长或频率",
+      "playbook_id": "decide-whether-sauna-or-heat-is-worth-using",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "头晕、近乎晕厥或晕厥、胸痛、异常呼吸困难、心悸伴不适、混乱、严重头痛、无法冷却或明显虚弱",
+        "烧伤、水疱、跌倒、月经明显变化、脱水迹象或次日功能持续变差"
+      ],
+      "trigger": "已经通过医学与环境安全筛查，且决定不是由治疗、激素或长寿承诺驱动时",
+      "type": "action-step",
+      "why": "创伤病例系列不能估计绝对风险，但明确显示滑倒/跌倒、头晕/晕厥和酒精相关严重烧伤；旧式高强度实验也出现5/7女性暂时性闭经信号"
+    },
+    {
+      "adaptation": "若目标仍写成多个机制，退回只选一个直接结果；若没有可观察结果或只能靠长期死亡率故事解释，保留不买/不强制决定",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-sauna-or-heat-is-worth-using:route-one-heat-goal-and-decide",
+      "label": "先按一个现实目标给出默认决定：为激素、长寿、减脂或泛健康而买设备/硬凑频率，当前不买也不强制；只是喜欢且已有安全入口，才进入可选行为路径",
+      "metric": "是否能用一句话写出目标，以及不买/可选使用/专业评估三者中的一个决定",
+      "minimum_version": "激素、长寿、减脂、血糖或泛健康→不为此购买或追固定次数；放松、享受且已有合适场所→先过安全门；疾病治疗、康复或心血管目标→交给临床团队",
+      "playbook_id": "decide-whether-sauna-or-heat-is-worth-using",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "购买或执行计划会挤压睡眠、运动、饮食、处方治疗或必要复诊",
+        "需要用汗后体重下降、发热感或短暂激素峰值证明长期有效"
+      ],
+      "trigger": "出现‘Huberman说桑拿能长寿/提高生长激素，所以我该买或每周硬凑’的想法时",
+      "type": "action-step",
+      "why": "芬兰队列是习惯关联，旧式激素实验是小样本极端暴露；这些都不能把消费购买或固定频率变成必需行为"
+    },
+    {
+      "adaptation": "若证据只剩观察关联、急性代理指标或不匹配人群，就降级为可选偏好而不是健康投资；若有明确疾病目标，改由专业人员评估完整证据",
+      "classification": "evidence-supported",
+      "id": "action-step:decide-whether-sauna-or-heat-is-worth-using:separate-association-spikes-and-direct-outcomes",
+      "label": "做一次会改变决定的证据核对：先看直接结果、研究设计和主要阴性发现，不用机制或队列频率覆盖随机证据",
+      "metric": "是否主动写出至少一个主要阴性结果，并区分关联、急性代理指标和直接功能/临床结局",
+      "minimum_version": "核对四件事：死亡率是否随机、激素变化是否长期、更新RCT汇总是否总体阳性、目标人群/加热方式是否匹配；不据研究组别发明温度、时长或每周次数",
+      "playbook_id": "decide-whether-sauna-or-heat-is-worth-using",
+      "priority": 2,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "把队列中的每周组别称为因果剂量",
+        "把生长激素或出汗的短暂变化称为增肌、减脂、治疗或长寿证明"
+      ],
+      "trigger": "节目、商家或帖子引用‘研究显示频率越高越长寿’或‘桑拿提高激素’时",
+      "type": "action-step",
+      "why": "20项随机试验综述对多数心血管、血糖、血脂和炎症结局总体无显著改善；41人冠心病RCT只有热适应而无血压/血管改善，运动后热暴露的恢复和适应结果也混合"
     },
     {
       "adaptation": "若仍列出多个目标或协议，只保留当前最重要且最可观察的一个；若无法说出直接结果，先不购买、不叠加",
@@ -52307,6 +53468,40 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "小型8周RCT不能否定长期死亡率关联，也不能外推到不稳定疾病；它只限定相应代理结局和临床自用。",
+      "id": "evidence-relation:debray-2023-qualifies-laukkanen-2018-vascular-causality",
+      "label": "观察到的心血管死亡率关联是否意味着受监测冠心病成人做数周桑拿会改善血压或血管功能",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37650138/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6262976/",
+        "https://doi.org/10.1152/japplphysiol.00322.2023"
+      ],
+      "rationale": "在41名稳定冠心病成人的8周随机试验中，桑拿组虽有热适应变化，却未改善FMD、反应性充血、动脉僵硬或血压。该直接阴性结果阻止把队列死亡率关联改写成短期血管改善机制或临床方案。",
+      "relation": "qualifies",
+      "relation_id": "debray-2023-qualifies-laukkanen-2018-vascular-causality",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "debray-2023-sauna-stable-cad-rct",
+      "target_review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "41人试验样本小、仅8周，不能否定其他人群或其他加热方式；它只反对用跨情境均值给冠心病患者远程处方。",
+      "id": "evidence-relation:debray-2023-qualifies-pizzey-2021-cad-transfer",
+      "label": "跨人群、跨加热方式汇总的血管代理指标改善，能否直接迁移到稳定冠心病成人的芬兰桑拿",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37650138/",
+        "https://pubmed.ncbi.nlm.nih.gov/33866630/",
+        "https://doi.org/10.1152/japplphysiol.00322.2023"
+      ],
+      "rationale": "Pizzey 2021合并多种全身/局部热疗和健康/临床人群；Debray 2023在稳定冠心病成人的具体随机桑拿试验中未见FMD、反应性充血、动脉僵硬或血压改善。适应证和具体干预必须匹配。",
+      "relation": "qualifies",
+      "relation_id": "debray-2023-qualifies-pizzey-2021-cad-transfer",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "debray-2023-sauna-stable-cad-rct",
+      "target_review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "这一定性限定不否定 2008 年词对实验结果；它要求把 80% 对 33%–36% 留在小样本、单一材料和同形式终测语境中，不能当作任意课程的保证值或固定刷题次数。",
       "id": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval",
       "label": "词对实验中答对后继续提取的巨大一周保持优势，能否直接转化为通用刷题协议与预期效果大小",
@@ -52375,6 +53570,74 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "godaert-2024-pbm-older-adults-review",
       "target_review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "RCT较短且没有死亡率事件，不能称为推翻队列；队列也不能用来覆盖随机试验中的主要阴性结果或生成固定温度、时长和频率。",
+      "id": "evidence-relation:hamaya-2025-qualifies-laukkanen-2015-causality",
+      "label": "芬兰男性中较高桑拿频率与较低死亡率的关联，能否证明购买桑拿或增加频率会改善个人心血管、代谢和长寿结局",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41049507/",
+        "https://pubmed.ncbi.nlm.nih.gov/25705824/",
+        "https://doi.org/10.1016/j.ajpc.2025.101082"
+      ],
+      "rationale": "Laukkanen 2015是基线自报习惯的观察队列；Hamaya 2025汇总20项2–15周随机被动加热试验后，多数心血管、血糖、血脂和炎症结局总体无显著改善。随机代理结局并不直接否定长期死亡率关联，但显著降低把队列频率解释成已证实因果方案的信心。",
+      "relation": "qualifies",
+      "relation_id": "hamaya-2025-qualifies-laukkanen-2015-causality",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "target_review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "短期RCT不能检验15年死亡率，观察队列也不能给购买决定、个体收益概率或通用频率。",
+      "id": "evidence-relation:hamaya-2025-qualifies-laukkanen-2018-causality",
+      "label": "芬兰男女中桑拿频率与较低心血管死亡率的关联，能否直接转成心血管优化或每周次数处方",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41049507/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6262976/",
+        "https://doi.org/10.1186/s12916-018-1198-0"
+      ],
+      "rationale": "Laukkanen 2018是1,688人的观察队列，2–3次/周的多变量区间还跨过1；Hamaya 2025的20项RCT汇总对FMD、脉搏波速度、静息心率、HRV、总体收缩压和多项代谢指标大多无显著总体改善。两类证据必须分开，不能把关联梯度当成因果剂量。",
+      "relation": "qualifies",
+      "relation_id": "hamaya-2025-qualifies-laukkanen-2018-causality",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "target_review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "纳入标准、干预和分析不同，不能简单宣布前一综述错误；当前证据仍不支持通用桑拿协议或长期临床结论。",
+      "id": "evidence-relation:hamaya-2025-qualifies-pizzey-2021-vascular-effects",
+      "label": "较早热疗综述中的血压和FMD改善，能否概括为被动加热普遍改善心血管与代谢健康",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41049507/",
+        "https://pubmed.ncbi.nlm.nih.gov/33866630/",
+        "https://doi.org/10.1016/j.ajpc.2025.101082"
+      ],
+      "rationale": "Pizzey 2021在15项异质研究中报告部分血压和FMD改善；范围更聚焦RCT且更新的Hamaya 2025在20项试验中发现多数心血管和代谢总体结局无显著改善，包括FMD、脉搏波速度和总体收缩压。应展示两者而不是只选正向汇总。",
+      "relation": "qualifies",
+      "relation_id": "hamaya-2025-qualifies-pizzey-2021-vascular-effects",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "target_review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "病例系列没有总暴露分母，不能估计伤害率或证明桑拿整体净危害；它只支持防滑、禁酒、避免独处和症状即停等边界。",
+      "id": "evidence-relation:kaiser-2023-qualifies-laukkanen-2018-sauna-safety",
+      "label": "观察性死亡率关联能否被表述成桑拿对一般用户安全且越频繁越好",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37211472/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6262976/",
+        "https://doi.org/10.1016/j.injury.2023.05.056"
+      ],
+      "rationale": "队列关注长期关联而不是使用过程伤害；Kaiser 2023的209名就诊者病例系列显示滑倒/跌倒、头晕/晕厥和酒后失去意识后的严重烧伤是具体风险。收益叙述必须同时给安全门。",
+      "relation": "qualifies",
+      "relation_id": "kaiser-2023-qualifies-laukkanen-2018-sauna-safety",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "kaiser-2023-sauna-injury-series",
+      "target_review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "evidence-relation"
     },
     {
@@ -52461,6 +53724,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "nettersheim-2015-sleep-stabilization",
       "target_review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "两项实验方案、年代和人群不同，不构成严格复制；Podstawski含冷水且无平行对照，也不能证明桑拿本身无任何急性内分泌反应。",
+      "id": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
+      "label": "旧式极端重复桑拿中的急性生长激素和催乳素峰值，能否支持桑拿或冷热交替普遍提高睾酮并长期优化激素",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8047510/",
+        "https://pubmed.ncbi.nlm.nih.gov/3788622/",
+        "https://doi.org/10.1177/15579883211008339"
+      ],
+      "rationale": "Leppäluoto 1986在极端无对照方案中观察到短暂生长激素/催乳素峰值，同时睾酮等多项阴性且5/7女性出现暂时性闭经；Podstawski 2021在30名年轻男性的桑拿—冷水复合实验中同样未见睾酮、DHEA-S或催乳素显著变化。两个小型方案都不支持长期激素优化。",
+      "relation": "qualifies",
+      "relation_id": "podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "podstawski-2021-sauna-cold-endocrine",
+      "target_review_id": "leppaluoto-1986-repeated-sauna-endocrine",
       "type": "evidence-relation"
     },
     {
@@ -52609,6 +53889,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-endocrine-response",
+      "label": "acute-endocrine-response",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:acute-exercise",
       "label": "acute-exercise",
       "type": "evidence-topic"
@@ -52644,8 +53929,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:alcohol",
+      "label": "alcohol",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:alertness",
       "label": "alertness",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:all-cause-mortality",
+      "label": "all-cause-mortality",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:amenorrhea",
+      "label": "amenorrhea",
       "type": "evidence-topic"
     },
     {
@@ -52694,8 +53994,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:blood-pressure",
+      "label": "blood-pressure",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:brain-volume",
       "label": "brain-volume",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:burns",
+      "label": "burns",
       "type": "evidence-topic"
     },
     {
@@ -52711,6 +54021,16 @@
     {
       "id": "evidence-topic:cardiorespiratory-fitness",
       "label": "cardiorespiratory-fitness",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cardiovascular",
+      "label": "cardiovascular",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cardiovascular-mortality",
+      "label": "cardiovascular-mortality",
       "type": "evidence-topic"
     },
     {
@@ -52779,6 +54099,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:coronary-artery-disease",
+      "label": "coronary-artery-disease",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cortisol",
+      "label": "cortisol",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:creatine-kinase",
       "label": "creatine-kinase",
       "type": "evidence-topic"
@@ -52799,6 +54129,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:dhea-s",
+      "label": "dhea-s",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:diabetes",
       "label": "diabetes",
       "type": "evidence-topic"
@@ -52816,6 +54151,11 @@
     {
       "id": "evidence-topic:dopamine",
       "label": "dopamine",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:dose-response-association",
+      "label": "dose-response-association",
       "type": "evidence-topic"
     },
     {
@@ -52841,6 +54181,11 @@
     {
       "id": "evidence-topic:education",
       "label": "education",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:endurance",
+      "label": "endurance",
       "type": "evidence-topic"
     },
     {
@@ -52884,6 +54229,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:falls",
+      "label": "falls",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:fasting-glucose",
       "label": "fasting-glucose",
       "type": "evidence-topic"
@@ -52891,6 +54241,16 @@
     {
       "id": "evidence-topic:feedback",
       "label": "feedback",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:finland",
+      "label": "finland",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:flow-mediated-dilation",
+      "label": "flow-mediated-dilation",
       "type": "evidence-topic"
     },
     {
@@ -52919,6 +54279,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:glycaemic-control",
+      "label": "glycaemic-control",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:glycemic-control",
       "label": "glycemic-control",
       "type": "evidence-topic"
@@ -52926,6 +54291,11 @@
     {
       "id": "evidence-topic:gratitude",
       "label": "gratitude",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:growth-hormone",
+      "label": "growth-hormone",
       "type": "evidence-topic"
     },
     {
@@ -52959,6 +54329,21 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:heat-acclimation",
+      "label": "heat-acclimation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:heat-exposure",
+      "label": "heat-exposure",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:heat-therapy",
+      "label": "heat-therapy",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:herpes",
       "label": "herpes",
       "type": "evidence-topic"
@@ -52971,6 +54356,11 @@
     {
       "id": "evidence-topic:home-device",
       "label": "home-device",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:hot-water-immersion",
+      "label": "hot-water-immersion",
       "type": "evidence-topic"
     },
     {
@@ -53001,6 +54391,11 @@
     {
       "id": "evidence-topic:inflammation",
       "label": "inflammation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:injury",
+      "label": "injury",
       "type": "evidence-topic"
     },
     {
@@ -53199,6 +54594,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:passive-heating",
+      "label": "passive-heating",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:pet",
       "label": "pet",
       "type": "evidence-topic"
@@ -53214,6 +54614,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:postexercise-heat",
+      "label": "postexercise-heat",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:postprandial-glucose",
       "label": "postprandial-glucose",
       "type": "evidence-topic"
@@ -53226,6 +54631,16 @@
     {
       "id": "evidence-topic:procedural-memory",
       "label": "procedural-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:prolactin",
+      "label": "prolactin",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:prospective-cohort",
+      "label": "prospective-cohort",
       "type": "evidence-topic"
     },
     {
@@ -53256,6 +54671,11 @@
     {
       "id": "evidence-topic:reactive-inhibition",
       "label": "reactive-inhibition",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:recovery",
+      "label": "recovery",
       "type": "evidence-topic"
     },
     {
@@ -53301,6 +54721,11 @@
     {
       "id": "evidence-topic:safety",
       "label": "safety",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sauna",
+      "label": "sauna",
       "type": "evidence-topic"
     },
     {
@@ -53379,8 +54804,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:sudden-cardiac-death",
+      "label": "sudden-cardiac-death",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:support-giving",
       "label": "support-giving",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:syncope",
+      "label": "syncope",
       "type": "evidence-topic"
     },
     {
@@ -53391,6 +54826,11 @@
     {
       "id": "evidence-topic:testing-effect",
       "label": "testing-effect",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:testosterone",
+      "label": "testosterone",
       "type": "evidence-topic"
     },
     {
@@ -53416,6 +54856,11 @@
     {
       "id": "evidence-topic:ultraviolet-b",
       "label": "ultraviolet-b",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:vascular-function",
+      "label": "vascular-function",
       "type": "evidence-topic"
     },
     {
@@ -55694,13 +57139,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "观察研究级核验：1,688名芬兰中老年男女随访约15年，高频桑拿与较低心血管死亡率相关；2–3次/周的多变量区间跨1。非随机、基线自报、文化与残余混杂限制因果解释，不能把频率类别转成个人长寿处方。证据卡：academic-study-cards.jsonl#laukkanen-2018-sauna-cvd-mortality-cohort。",
       "id": "resource:https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1198-0",
       "kind": "academic-or-medical",
       "label": "https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1198-0",
       "type": "resource",
       "url": "https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1198-0",
-      "verification_status": "pending"
+      "verification_status": "verified-observational"
     },
     {
       "academic_episode_count": "1",
@@ -61483,7 +62928,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "30 名年轻男性、4 次桑拿、每次 1 分钟冷水；不支持激素优化或人人适用的冷热协议（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "研究级核验：30名年轻男性完成4轮90–91°C桑拿并配1分钟冷水浸泡；皮质醇下降，但睾酮、DHEA-S和催乳素无显著变化。单组复合暴露无法分离组件，也不支持激素优化或人人适用的冷热协议。证据卡：academic-study-cards.jsonl#podstawski-2021-sauna-cold-endocrine。",
       "id": "resource:https://journals.sagepub.com/doi/10.1177/15579883211008339",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1177/15579883211008339",
@@ -61493,7 +62938,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "30 名年轻男性、4 次桑拿、每次 1 分钟冷水；不支持激素优化或人人适用的冷热协议（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "研究级核验：30名年轻男性完成4轮90–91°C桑拿并配1分钟冷水浸泡；皮质醇下降，但睾酮、DHEA-S和催乳素无显著变化。单组复合暴露无法分离组件，也不支持激素优化或人人适用的冷热协议。证据卡：academic-study-cards.jsonl#podstawski-2021-sauna-cold-endocrine。",
       "id": "resource:https://journals.sagepub.com/doi/10.1177/15579883211008339?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
       "kind": "academic-or-medical",
       "label": "https://journals.sagepub.com/doi/10.1177/15579883211008339?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed",
@@ -62661,13 +64106,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "",
+      "evidence_notes": "观察研究级核验：1,688名芬兰中老年男女随访约15年，高频桑拿与较低心血管死亡率相关；2–3次/周的多变量区间跨1。非随机、基线自报、文化与残余混杂限制因果解释，不能把频率类别转成个人长寿处方。证据卡：academic-study-cards.jsonl#laukkanen-2018-sauna-cvd-mortality-cohort。",
       "id": "resource:https://link.springer.com/article/10.1186/s12916-018-1198-0",
       "kind": "academic-or-medical",
       "label": "https://link.springer.com/article/10.1186/s12916-018-1198-0",
       "type": "resource",
       "url": "https://link.springer.com/article/10.1186/s12916-018-1198-0",
-      "verification_status": "pending"
+      "verification_status": "verified-observational"
     },
     {
       "academic_episode_count": "1",
@@ -64941,13 +66386,13 @@
     },
     {
       "academic_episode_count": "3",
-      "evidence_notes": "",
+      "evidence_notes": "研究级核验：17名健康志愿者接受80°C、每次1小时、每天2次、连续7天的无对照实验；男性急性生长激素/催乳素升高，但睾酮、甲状腺激素、FSH和LH无显著变化，7名女性中5名出现暂时性闭经。不能把短暂峰值或极端研究方案转成日常激素优化协议。证据卡：academic-study-cards.jsonl#leppaluoto-1986-repeated-sauna-endocrine。",
       "id": "resource:https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1986.tb08000.x",
       "kind": "academic-or-medical",
       "label": "https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1986.tb08000.x",
       "type": "resource",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1748-1716.1986.tb08000.x",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -68843,6 +70288,17 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部观察研究级核验：2,315名芬兰男性中，较高基线桑拿频率与较低心血管及全因死亡风险相关；非随机、男性单一地区、基线自报和残余混杂限制因果。不能把队列频率当成个人处方或购买理由。证据卡：academic-study-cards.jsonl#laukkanen-2015-sauna-mortality-cohort。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/25705824/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/25705824/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25705824/",
+      "verification_status": "verified-observational"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部限定研究级核验：该来源不是当前 Episode Show Notes 队列项，因此不回写队列。61 人实验显示 30 分钟早期提升在 4 小时清醒中衰减，睡眠维持或恢复到早期水平但未超过睡前最佳表现；睡前水平来自另一条件估计且无等长 12 小时清醒对照。证据卡：academic-study-cards.jsonl#nettersheim-2015-sleep-stabilization。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/",
       "kind": "academic-or-medical",
@@ -68906,6 +70362,17 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：15项研究的荟萃显示部分血压和FMD改善，静息心率无显著变化；证据确定性中等到低且热疗方式、人群、方案异质。不能转成桑拿购买、长寿承诺或统一温度/频率。证据卡：academic-study-cards.jsonl#pizzey-2021-heat-vascular-meta-analysis。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/33866630/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/33866630/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33866630/",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部综述级核验：37项家用皮肤设备试验共1,871人，但仅19项RCT，另有16项病例系列；部分特定适应证有信号，长期疗效/安全和设备等效性不足。与Jagdeo综述作者重叠，不算独立复制。证据卡：academic-study-cards.jsonl#cohen-2021-home-dermatology-devices-review。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/33938981/",
       "kind": "academic-or-medical",
@@ -68916,6 +70383,17 @@
       "verification_status": "verified-review"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部安全信号核验：单一创伤中心209名桑拿伤害患者中，滑倒/跌倒和头晕/晕厥常见，少数需手术，并有酒后失去意识导致严重烧伤。无总暴露分母，不能估计发生率，但支持具体安全门。证据卡：academic-study-cards.jsonl#kaiser-2023-sauna-injury-series。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37211472/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/37211472/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37211472/",
+      "verification_status": "verified-observational"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "自动书目核验：PMC10332648；《The Relationship of Prolonged Grief Disorder Symptoms With Hemodynamic Response to Grief Recall Among Bereaved Adults.》；期刊未返回；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37260255/",
@@ -68924,6 +70402,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37260255/",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部RCT级核验：41名稳定冠心病成人随机8周桑拿或生活方式对照，FMD、反应性充血、动脉僵硬和血压均无组间改善，只有热适应指标改变。热适应不等于血管获益，具体方案不能自用。证据卡：academic-study-cards.jsonl#debray-2023-sauna-stable-cad-rct。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37650138/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/37650138/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37650138/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "0",
@@ -68945,6 +70434,28 @@
       "source_scope": "external-context",
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39685110/",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：14项研究、194名参与者中，运动后热暴露的急性恢复有4项无效、4项有益、1项不利；慢性结果可能帮助高温跑步，但未改善骑行或VO2max。低到中等质量与高度异质不支持固定协议。证据卡：academic-study-cards.jsonl#ahokas-2025-postexercise-heat-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/41032138/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/41032138/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41032138/",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：20项、2–15周被动加热RCT中，多数心血管、血糖、血脂和炎症结局总体无显著改善；部分亚组血压信号需谨慎。不能用观察性长寿关联或亚组结果覆盖这些阴性结果。证据卡：academic-study-cards.jsonl#hamaya-2025-passive-heating-rct-meta-analysis。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/41049507/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/41049507/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41049507/",
       "verification_status": "verified-review"
     },
     {
@@ -100944,6 +102455,33 @@
       "url": "https://zuckermaninstitute.columbia.edu/richard-axel-md"
     },
     {
+      "comparator": "被动恢复、常温条件或无运动后热暴露，随研究而异",
+      "doi": "10.1186/s40798-025-00910-0",
+      "evidence_level": "A-Synthesis（14项研究、194名参与者的系统综述）",
+      "id": "study-card:ahokas-2025-postexercise-heat-review",
+      "intervention_exposure": "运动后桑拿、热水浸泡或其他热暴露，分为一次急性使用与多次训练期使用",
+      "label": "The Effects of Post-Exercise Heat Exposure on Recovery and Training Adaptation: A Systematic Review",
+      "outcomes": [
+        "急性恢复与次日表现",
+        "热适应和高温环境表现",
+        "跑步、骑行与最大摄氧量训练适应"
+      ],
+      "population": "主要为健康、经常运动的成人；项目、训练水平、性别和热环境代表性有限",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41032138/",
+        "https://doi.org/10.1186/s40798-025-00910-0"
+      ],
+      "result_summary": "急性恢复结果混合：4项无效、4项有益、1项不利；重复热暴露可能改善高温环境中的跑步表现，但对骑行和最大摄氧量未见明确效果。研究质量低到中等，无法作确定结论。",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "若目标是运动恢复或适应，现有证据混合且依赖项目和环境；不要把桑拿固定成每次训练后的必需步骤，也不要把高温跑步信号外推到增肌、骑行或一般健康。",
+      "sample_size": "14项研究、共194名参与者；9项评估急性恢复，5项评估慢性训练适应",
+      "source_scope": "external-context",
+      "study_design": "系统综述，纳入运动后急性或重复热暴露对恢复、热适应和训练适应影响的研究；因方案和结局异质未进行荟萃分析",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "设备之间、标称颜色与实测输出之间、厂商说明与物理测量之间比较",
       "doi": "10.1007/s43630-026-00908-x",
       "evidence_level": "B-Engineering（4款消费级LED面罩的光谱实测）",
@@ -101148,6 +102686,34 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "维持通常生活方式的对照组",
+      "doi": "10.1152/japplphysiol.00322.2023",
+      "evidence_level": "A-Direct（41名稳定冠心病成人的8周随机对照试验）",
+      "id": "study-card:debray-2023-sauna-stable-cad-rct",
+      "intervention_exposure": "8周、每周4次、每次20–30分钟，约79°C、相对湿度13%的芬兰桑拿；研究在稳定疾病和研究监测情境中进行",
+      "label": "Eight weeks of Finnish sauna bathing does not improve blood pressure or vascular function in adults with stable coronary artery disease",
+      "outcomes": [
+        "肱动脉FMD与反应性充血",
+        "颈股动脉脉搏波速度",
+        "静息收缩压与舒张压",
+        "静息核心体温和出汗率等热适应指标"
+      ],
+      "population": "稳定冠心病成人，33名男性、8名女性；桑拿组21人、对照组20人",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37650138/",
+        "https://doi.org/10.1152/japplphysiol.00322.2023"
+      ],
+      "result_summary": "8周后两组在FMD、反应性充血、动脉僵硬及收缩/舒张压方面无显著差异；桑拿组出现较低静息核心体温和较高出汗率等热适应变化。",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "即使在受监测的稳定冠心病样本中，8周桑拿也只显示热适应、未改善血压或血管功能；有心血管病者不能据观察性队列自行照搬方案，应由临床团队判断。",
+      "sample_size": 41,
+      "source_scope": "external-context",
+      "study_design": "41名稳定冠心病成人随机分配至8周桑拿加通常生活或仅维持通常生活；评估血管功能、血压和热适应",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "各技术相对不练习、重复阅读/复习或其他学习策略；同时比较练习测试的格式、次数、间隔与是否提供正确答案反馈",
       "doi": "10.1177/1529100612453266",
       "evidence_level": "A-Synthesis（十种学习技术的结构化叙述性综述）",
@@ -101298,6 +102864,34 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "非热对照、通常生活方式或其他对照，随试验而异",
+      "doi": "10.1016/j.ajpc.2025.101082",
+      "evidence_level": "A-Synthesis（20项、2–15周被动加热RCT的系统综述与荟萃分析）",
+      "id": "study-card:hamaya-2025-passive-heating-rct-meta-analysis",
+      "intervention_exposure": "持续2–15周的系统或局部被动加热，包括热水浸泡、桑拿、热瑜伽和局部热疗",
+      "label": "The effects of passive heating on cardiovascular and glycaemic regulation: A systematic review and meta-analysis of randomized controlled trials",
+      "outcomes": [
+        "FMD、脉搏波速度、静息心率与心率变异性",
+        "收缩压与舒张压",
+        "空腹血糖、HbA1c和血脂",
+        "CRP等炎症指标"
+      ],
+      "population": "健康成人及心血管/代谢风险或疾病人群；研究规模、基线风险和加热方式不同",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41049507/",
+        "https://doi.org/10.1016/j.ajpc.2025.101082"
+      ],
+      "result_summary": "多数汇总结局没有显著总体改善，包括FMD、脉搏波速度、静息心率、心率变异性、空腹血糖、HbA1c、总胆固醇、HDL、LDL、甘油三酯和CRP；总体收缩压也未显著下降。部分系统加热或心血管风险亚组出现血压信号，但需谨慎解释。",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "当前随机试验汇总不支持为了普遍心血管、血糖或长寿优化而购买桑拿房或强制固定次数；少数亚组信号不足以覆盖大多数总体阴性结果。",
+      "sample_size": "20项随机对照试验；不同结局可用研究数不同，干预持续2–15周，未报告可跨结局使用的单一总样本量",
+      "source_scope": "external-context",
+      "study_design": "系统综述与荟萃分析，纳入2–15周随机对照试验；干预包括热水浴、桑拿、热瑜伽与局部加热，并进行总体和亚组分析",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "六周线上控制写作干预",
       "doi": "10.1016/j.bbi.2021.04.019",
       "evidence_level": "A-Direct（小样本人体平行组 RCT）",
@@ -101380,6 +102974,33 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "无未受伤桑拿使用者对照，也没有总暴露人次分母",
+      "doi": "10.1016/j.injury.2023.05.056",
+      "evidence_level": "C-Safety signal（单一创伤中心209名就诊者的回顾性病例系列）",
+      "id": "study-card:kaiser-2023-sauna-injury-series",
+      "intervention_exposure": "桑拿环境中的热暴露及相关活动；记录包含跌倒、晕厥、烧伤和酒精相关情境",
+      "label": "Sauna-related injuries: A retrospective analysis of 209 patients",
+      "outcomes": [
+        "伤害原因与诊断",
+        "手术需要",
+        "严重烧伤及酒精相关事件"
+      ],
+      "population": "因桑拿相关伤害到创伤中心就诊的患者；这是选择后的受伤者，不代表所有桑拿使用者",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37211472/",
+        "https://doi.org/10.1016/j.injury.2023.05.056"
+      ],
+      "result_summary": "209名患者共274项诊断；约57.5%的原因是滑倒/跌倒，约30%涉及头晕或晕厥，约4.3%需要手术。报告一例酒精中毒失去意识后的严重烧伤。",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "它不能告诉你桑拿有多危险，但足以把防滑、避免独处、禁止酒后使用和出现头晕/晕厥立即停止放进安全门；不要用‘总体伤害率未知’删掉这些具体风险。",
+      "sample_size": 209,
+      "source_scope": "external-context",
+      "study_design": "回顾性检索2005–2021年单一创伤中心的桑拿相关受伤就诊记录，描述病因、诊断、处置与严重事件",
+      "type": "study-card",
+      "verification_status": "verified-observational"
+    },
+    {
       "comparator": "反复提取与答对一次后停止提取；同时正交比较答对后继续学习全部词对或只学习尚未答对词对",
       "doi": "10.1126/science.1152408",
       "evidence_level": "A-Direct（40 名本科生、四条件词对学习实验）",
@@ -101437,6 +103058,88 @@
       "study_design": "96 名志愿者自选一个新的饮食、饮水或运动相关行为，并选择每天相同的情境线索，连续 84 天在线报告是否执行及行为自动化；研究用渐近非线性模型估计个体达到最终自动化水平 95% 所需时间",
       "type": "study-card",
       "verification_status": "verified-observational"
+    },
+    {
+      "comparator": "每周1次桑拿组",
+      "doi": "10.1001/jamainternmed.2014.8187",
+      "evidence_level": "B-Observational（2,315名芬兰男性、最长约20年的前瞻队列）",
+      "id": "study-card:laukkanen-2015-sauna-mortality-cohort",
+      "intervention_exposure": "基线自报习惯性桑拿频率，主要分为每周1次、2–3次、4–7次",
+      "label": "Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events",
+      "outcomes": [
+        "心源性猝死",
+        "致死性冠心病与心血管事件",
+        "全因死亡"
+      ],
+      "population": "42–60岁芬兰东部男性；不能代表女性、年轻人、非芬兰文化或高风险临床人群",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/25705824/",
+        "https://doi.org/10.1001/jamainternmed.2014.8187"
+      ],
+      "result_summary": "中位随访20.7年，较高桑拿频率与较低心源性猝死、冠心病、心血管及全因死亡风险相关，并呈频率梯度；研究没有随机操纵桑拿使用。",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项队列支持继续研究，不支持把每周频率当作因果处方或用死亡率关联推销桑拿房；不享受桑拿的人没有证据必须开始。",
+      "sample_size": 2315,
+      "source_scope": "external-context",
+      "study_design": "2,315名芬兰男性的前瞻队列；基线问卷记录桑拿频率和时长，随访致死性心血管及全因死亡事件",
+      "type": "study-card",
+      "verification_status": "verified-observational"
+    },
+    {
+      "comparator": "每周1次桑拿组",
+      "doi": "10.1186/s12916-018-1198-0",
+      "evidence_level": "B-Observational（1,688名芬兰男女、约15年随访的前瞻队列）",
+      "id": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort",
+      "intervention_exposure": "自报基线习惯性桑拿频率，主要分为每周1次、2–3次、4–7次",
+      "label": "Sauna bathing is associated with reduced cardiovascular mortality and improves risk prediction in men and women: a prospective cohort study",
+      "outcomes": [
+        "致死性心血管事件",
+        "不同桑拿频率组的风险比",
+        "桑拿频率加入传统风险因子后的预测表现"
+      ],
+      "population": "芬兰东部、平均63岁（范围53–74岁）的社区成人，女性约51.4%；桑拿文化和基线风险可能不同于其他地区",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6262976/",
+        "https://pubmed.ncbi.nlm.nih.gov/30486813/",
+        "https://doi.org/10.1186/s12916-018-1198-0"
+      ],
+      "result_summary": "中位随访约15年发生181例致死性心血管事件；与每周1次相比，多变量模型中每周2–3次HR约0.75（95%CI 0.52–1.08），每周4–7次HR约0.23（0.08–0.65）。这是关联，不能证明提高频率会降低个人死亡风险。",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "可把它视为习惯性桑拿与较低心血管死亡率的假设生成证据，不应据此购买设备、强迫凑每周次数或承诺长寿；频率类别不是处方剂量。",
+      "sample_size": 1688,
+      "source_scope": "episode-linked",
+      "study_design": "1,688名芬兰中老年男女的前瞻队列；基线记录习惯性桑拿频率，链接死亡登记并进行多变量风险模型",
+      "type": "study-card",
+      "verification_status": "verified-observational"
+    },
+    {
+      "comparator": "同一受试者暴露前及重复暴露不同日期；没有随机、假暴露或平行对照组",
+      "doi": "10.1111/j.1748-1716.1986.tb08000.x",
+      "evidence_level": "B-Direct（17名健康志愿者的高强度无对照重复暴露实验）",
+      "id": "study-card:leppaluoto-1986-repeated-sauna-endocrine",
+      "intervention_exposure": "80°C干式芬兰桑拿，每次1小时、每天2次、连续7天；属于高强度研究暴露，不是已验证的消费健康方案",
+      "label": "Endocrine effects of repeated sauna bathing",
+      "outcomes": [
+        "生长激素、催乳素、睾酮、甲状腺激素、FSH与LH",
+        "皮质醇、ACTH及尿儿茶酚胺",
+        "女性月经变化"
+      ],
+      "population": "健康成人志愿者，男性10人、女性7人；样本极小，女性仅参与部分测量",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/3788622/",
+        "https://doi.org/10.1111/j.1748-1716.1986.tb08000.x"
+      ],
+      "result_summary": "男性单次暴露后的生长激素和催乳素约升高16倍与2.3倍，女性催乳素超过4倍；生长激素反应在第3天后减弱。实验后7名女性中5名出现暂时性闭经，作者认为可能与热和脱水有关。",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项研究不能支持为了提高生长激素或睾酮而购买桑拿、照搬80°C一小时或每天两次；短暂生长激素峰值不是长期激素优化，而睾酮等多项结果为阴性。高强度热暴露及脱水可能带来伤害。",
+      "sample_size": 17,
+      "source_scope": "episode-linked",
+      "study_design": "10名男性和7名女性接受7天重复干式桑拿的无平行对照生理实验；在基线和第1、3、7天测量激素，女性只进入催乳素部分",
+      "type": "study-card",
+      "verification_status": "verified-study"
     },
     {
       "comparator": "同一训练计划中的非冷水恢复对照",
@@ -101551,6 +103254,61 @@
       "sample_size": 61,
       "source_scope": "external-context",
       "study_design": "主实验纳入 31 人，随机分到训练后清醒 30 分钟或 4 小时再睡的两组；每人以至少两周间隔、平衡顺序完成短清醒条件和跨夜睡眠条件。另有 30 人在早晨完成 30 分钟或 4 小时清醒控制，以检验昼夜节律混杂",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "研究内基线、非热对照或通常照护，随纳入研究而异",
+      "doi": "10.1113/EP089424",
+      "evidence_level": "A-Synthesis（15项研究的系统综述与荟萃分析）",
+      "id": "study-card:pizzey-2021-heat-vascular-meta-analysis",
+      "intervention_exposure": "10–36次、每次约30–90分钟的不同被动热疗，包括全身与局部加热",
+      "label": "The effect of heat therapy on blood pressure and peripheral vascular function: A systematic review and meta-analysis",
+      "outcomes": [
+        "平均动脉压、收缩压和舒张压",
+        "肱动脉血流介导扩张",
+        "静息心率"
+      ],
+      "population": "健康成人及部分心血管/代谢风险或疾病人群；人群、热疗方式和基线状态异质",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33866630/",
+        "https://doi.org/10.1113/EP089424"
+      ],
+      "result_summary": "合并结果显示平均、收缩及舒张压下降，血流介导扩张改善；静息心率无显著变化。作者将血压和心率证据评为中等确定性，平均动脉压与FMD为低确定性。",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "重复被动热疗可能影响部分血压与血管代理指标，但不能据此承诺长寿、推荐购买桑拿或复制任一研究方案；需要结合更新的随机试验证据和个体医疗风险。",
+      "sample_size": "15项研究；热暴露30–90分钟、10–36次，健康与临床人群及加热方式不同，摘要未给统一总样本量",
+      "source_scope": "external-context",
+      "study_design": "系统综述与随机效应荟萃，纳入重复全身或局部热疗对血压和外周血管功能影响的研究",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "同一受试者暴露前基线；无只桑拿、只冷水、假暴露或平行对照组",
+      "doi": "10.1177/15579883211008339",
+      "evidence_level": "B-Direct（30名年轻男性的单组急性桑拿—冷水组合实验）",
+      "id": "study-card:podstawski-2021-sauna-cold-endocrine",
+      "intervention_exposure": "4轮12分钟、90–91°C且相对湿度14–16%的桑拿；每轮后6分钟休息，其中1分钟在10–11°C冷水中浸泡",
+      "label": "Endocrine Effects of Repeated Hot Thermal Stress and Cold Water Immersion in Young Adult Men",
+      "outcomes": [
+        "皮质醇",
+        "睾酮、DHEA-S、催乳素",
+        "复合冷热暴露后的急性内分泌变化"
+      ],
+      "population": "19–26岁健康年轻男性；不能代表女性、老年人、慢病人群或长期使用者",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8047510/",
+        "https://pubmed.ncbi.nlm.nih.gov/33845653/",
+        "https://doi.org/10.1177/15579883211008339"
+      ],
+      "result_summary": "复合冷热暴露后皮质醇由约13.61降至9.67 µg/ml；睾酮、DHEA-S和催乳素没有显著变化。结果不能区分桑拿、休息和冷水各自作用。",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项研究不支持用桑拿—冷水组合提高睾酮或普遍‘优化激素’；皮质醇一次下降也不是长期减压或治疗证据。不要照搬其高温、轮数或冷水组合。",
+      "sample_size": 30,
+      "source_scope": "episode-linked",
+      "study_design": "30名年轻男性完成一次单组前后测实验：4轮桑拿，每轮后休息并短暂冷水浸泡；比较暴露前后血清激素",
       "type": "study-card",
       "verification_status": "verified-study"
     },
@@ -101995,6 +103753,27 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:06a81cd3b08ddd9e",
+      "label": "频率与时长分类不能确定最佳或最低有效剂量",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:06b1398be4497f4a",
+      "label": "中位随访20.7年，较高桑拿频率与较低心源性猝死、冠心病、心血管及全因死亡风险相关，并呈频率梯度；研究没有随机操纵桑拿使用。",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:0799abe948b7136b",
+      "label": "复合冷热暴露后皮质醇由约13.61降至9.67 µg/ml；睾酮、DHEA-S和催乳素没有显著变化。结果不能区分桑拿、休息和冷水各自作用。",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:091ae2adb1b31b9e",
       "label": "下午暴露的6人探索组没有显示同样改善",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
@@ -102064,6 +103843,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:19272453803be007",
+      "label": "209名患者共274项诊断；约57.5%的原因是滑倒/跌倒，约30%涉及头晕或晕厥，约4.3%需要手术。报告一例酒精中毒失去意识后的严重烧伤。",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:196f990b8e110c07",
       "label": "控制集中练习疲劳后，训练末点与测试起点的组间差异不显著（p=0.40）",
@@ -102100,9 +103886,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:1e9258a1e58a3611",
+      "label": "没有桑拿总使用人次分母，不能估计发生率或相对风险",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:1f574871b96550dc",
       "label": "四项神经退行性疾病研究中有两项未见显著获益",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:20ebd6228ca122ea",
+      "label": "多数结局没有支持普遍心血管或代谢优化",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -102135,9 +103935,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:2417a246623427b3",
+      "label": "没有排除健康行为、社会经济、体能及医疗照护等残余混杂",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:2609490ffa8ea8d4",
       "label": "EPA 与氟西汀单药之间未显示疗效差异",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:2717f35cdc4157cc",
+      "label": "睾酮没有显著变化",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
       "type": "study-finding"
     },
     {
@@ -102159,6 +103973,13 @@
       "id": "study-finding:2b1b075b2b1d04fc",
       "label": "立即与 1 小时免疫功能没有显著效果",
       "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:2b96203b14dfa821",
+      "label": "中位随访约15年发生181例致死性心血管事件；与每周1次相比，多变量模型中每周2–3次HR约0.75（95%CI 0.52–1.08），每周4–7次HR约0.23（0.08–0.65）。这是关联，不能证明提高频率会降低个人死亡风险。",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-finding"
     },
     {
@@ -102232,6 +104053,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:406e164b4435cab3",
+      "label": "男性单次暴露后的生长激素和催乳素约升高16倍与2.3倍，女性催乳素超过4倍；生长激素反应在第3天后减弱。实验后7名女性中5名出现暂时性闭经，作者认为可能与热和脱水有关。",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:41b27025a88dc60b",
+      "label": "DHEA-S和催乳素没有显著变化",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:426f5d09770ca58d",
       "label": "按估计睡前水平计算，30 分钟入睡组睡前至睡后无显著变化（p=0.33）",
@@ -102296,9 +104131,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4d705fdcea8a8f0a",
+      "label": "反应性充血没有改善",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:4eae3b89a01e1f35",
       "label": "饮食、饮水与运动行为达到平台期的时间差异未达到统计显著（p=.328），研究可能不足以检验类别差异",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4ebbfa901dc615b2",
+      "label": "静息心率和心率变异性没有显著总体改善",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -102407,6 +104256,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:5fc8ed88e92533a1",
+      "label": "总体收缩压没有显著下降",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:5fd1618b55a8479d",
       "label": "训练后清醒 30 分钟出现 21.22% 的早期表现提升，至清醒 4 小时降为 6.26%。训练后 30 分钟入睡者在约 12 小时测试时提升 15.39%，与 30 分钟早期提升无显著差异；延迟 4 小时入睡者睡后提升 15.16%，高于 4 小时清醒结果且恢复到早期提升水平。睡后表现从未超过睡前已经达到的最高水平，支持稳定或恢复而非额外增强。",
@@ -102425,6 +104281,13 @@
       "id": "study-finding:641333c4fa2c5cc5",
       "label": "6 项自动化提高的研究中只有 2 项伴随统计显著的主要健康或行为结局",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:65e050cfe836f512",
+      "label": "不能判断哪些温度、时长或人群造成更高风险",
+      "review_id": "kaiser-2023-sauna-injury-series",
       "type": "study-finding"
     },
     {
@@ -102456,6 +104319,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:6cdba2731aa8c7fe",
+      "label": "合并结果显示平均、收缩及舒张压下降，血流介导扩张改善；静息心率无显著变化。作者将血压和心率证据评为中等确定性，平均动脉压与FMD为低确定性。",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:705fbf36475eedb3",
       "label": "并非所有认知领域或单项研究都显示急性运动优势，部分结果无效或不利",
@@ -102471,6 +104341,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:741868c3ee57758f",
+      "label": "慢性研究未显示骑行表现或最大摄氧量明确改善",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7470c7c94360bd7e",
       "label": "褪黑素结束与睡眠开始的相关不显著（p=0.11），与醒来时间的相关趋势未通过多重比较阈值（p=0.0133；要求 p<0.0125）",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -102481,6 +104358,13 @@
       "id": "study-finding:756592e82a209bda",
       "label": "没有糖尿病患者、HbA1c、长期血糖、体重或临床并发症结局",
       "review_id": "powner-2024-red-light-glucose",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:7825165c6dce1aa1",
+      "label": "静息收缩压和舒张压没有改善",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-finding"
     },
     {
@@ -102520,9 +104404,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:7ecd8b2fb6cf857a",
+      "label": "不能证明每次训练后桑拿都改善恢复或长期适应",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7fbc8ddc4d6c7ebb",
       "label": "研究没有测量客观行为维持、健康结局或打破既有坏习惯",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:816afb5188b1d214",
+      "label": "FMD和脉搏波速度没有显著总体改善",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:820bd889580c33ea",
+      "label": "没有证明固定温度、时长、频率或冷热组合是因果剂量",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-finding"
     },
     {
@@ -102530,6 +104435,13 @@
       "id": "study-finding:84cb28a987cd7847",
       "label": "实验 1 中，额外复习在 5 分钟后优于一次测试（81% 对 75%），但一次测试在 2 天（68% 对 54%）和 1 周（56% 对 42%）后优于复习。实验 2 中，5 分钟成绩随复习次数增加（SSSS 83%、SSST 78%、STTT 71%），一周后则随先前测试次数增加（STTT 61%、SSST 56%、SSSS 40%）；重复复习组对未来记忆更自信，却遗忘更多。",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:85bc5e2e09abb9f6",
+      "label": "研究没有随机分配桑拿频率，也未检验购买桑拿房的效果",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-finding"
     },
     {
@@ -102544,6 +104456,13 @@
       "id": "study-finding:87b3034ff7abb267",
       "label": "4 周时所检指标无显著组间效果",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:8814213e8500a8bc",
+      "label": "甲状腺激素、睾酮、FSH和LH没有显著变化",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
       "type": "study-finding"
     },
     {
@@ -102597,6 +104516,20 @@
     },
     {
       "finding_kind": "result",
+      "id": "study-finding:93526f42a93eb45a",
+      "label": "多数汇总结局没有显著总体改善，包括FMD、脉搏波速度、静息心率、心率变异性、空腹血糖、HbA1c、总胆固醇、HDL、LDL、甘油三酯和CRP；总体收缩压也未显著下降。部分系统加热或心血管风险亚组出现血压信号，但需谨慎解释。",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:940d42cd5f5942af",
+      "label": "不能用就诊病例系列衡量健康收益",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
       "id": "study-finding:980aee41406cb3ae",
       "label": "两项实验中，自然条件后部分定向注意指标优于城市条件；实验 1 的倒背数字表现约提高 20%，实验 2 的倒背数字和注意网络任务执行成分出现自然条件优势。结果支持短时环境暴露与特定注意任务表现相关，而不是证明一般生产力或临床疗效。",
       "review_id": "berman-2008-nature-directed-attention",
@@ -102614,6 +104547,13 @@
       "id": "study-finding:9a64e1b2a1c04df0",
       "label": "相同颜色标签下的波长、剂量和疗程不统一，不能得出统一消费设备效果",
       "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9b16160c9ec0e5b6",
+      "label": "静息心率没有显著总体变化",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -102681,6 +104621,20 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:a09d778041633461",
+      "label": "没有比较购买设备与不购买设备的成本、依从性或安全",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a18050c88a185106",
+      "label": "没有比较不同温度、时长或频率，也没有证明该极端暴露适合日常使用",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:a40a7b59c2408b05",
       "label": "没有人体感染、免疫增强、临床症状或长期健康结局",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
@@ -102688,9 +104642,37 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:a4757add3f995dcd",
+      "label": "没有证据确定统一温度、时长、频率或与力量训练的最佳安排",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a8b428abcbcb38fb",
+      "label": "没有随机或前瞻对照",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:a8c7d0fc2c9fbda4",
       "label": "研究没有测量眼病治疗、阅读功能、视力表长期改变或全身代谢",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:aa506045e2f9a2c0",
+      "label": "8周后两组在FMD、反应性充血、动脉僵硬及收缩/舒张压方面无显著差异；桑拿组出现较低静息核心体温和较高出汗率等热适应变化。",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ac5d560f0dfb31ef",
+      "label": "FMD没有改善",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-finding"
     },
     {
@@ -102716,6 +104698,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:b0ff7119e81058f4",
+      "label": "每周2–3次相对1次的多变量置信区间跨过1，不能称为明确显著获益",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:b22a2f353b6f151c",
       "label": "立即、1 小时、24 小时和 48 小时的压力结局没有显著改善",
       "review_id": "cain-2025-cold-water-wellbeing-review",
@@ -102733,6 +104722,20 @@
       "id": "study-finding:b2493b7f10c20899",
       "label": "冬季露营后褪黑素起始约提前 2.6 小时，睡眠开始约提前 2.5 小时；夏季周末露营组褪黑素起始和中点相对工作日分别提前约 1.4 和 1.0 小时，而现代环境周末组分别延后约 0.98 和 1.0 小时。结果支持完整自然明暗周期组合暴露与较早昼夜相位相关。",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b25504d93f86945e",
+      "label": "不同加热方式、人群和方案不能证明桑拿房本身是必要组件",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b69df4f752d5a24e",
+      "label": "没有证明桑拿导致死亡风险下降",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
       "type": "study-finding"
     },
     {
@@ -102800,6 +104803,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:c2a33f98ab9cb799",
+      "label": "没有死亡率、长寿或长期重大临床事件结局",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:c352330e6e8819b3",
       "label": "会话内没有表现增益",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
@@ -102817,6 +104827,13 @@
       "id": "study-finding:c4033784cb72fa44",
       "label": "综述将痤疮、单纯疱疹和急性伤口愈合评为B级证据，其余多数用途为C或D级；结果支持按具体适应证和具体设备解释，而不是‘红光对皮肤普遍有效’。",
       "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:c41b5c8e3c04cc74",
+      "label": "没有证明冷热交替优于单独热暴露或普通恢复",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
       "type": "study-finding"
     },
     {
@@ -102890,6 +104907,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:d37ccba220c37afe",
+      "label": "短暂激素峰值没有证明长期激素水平、肌肉增长、恢复、寿命或临床获益",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:d60bfe565c898abe",
+      "label": "没有证明对女性、非芬兰人或已有疾病者效果相同",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:db1c9163842459ee",
       "label": "新研究的一次训练组在跨一晚后的 24 小时复测中速度提高 17.0%、错误率下降 34.5%；双倍训练组的夜间增益相近。三晚组相对一晚组的额外改善仅为趋势，未达传统显著性阈值。",
@@ -102905,6 +104936,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:de5831c0ef2557eb",
+      "label": "热适应指标变化不等于血管临床获益",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:deca05469cf122bf",
       "label": "摘要未提供足够信息估计统一总效应或长期并发症获益",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
@@ -102912,9 +104950,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:df09bb219c58d527",
+      "label": "脉搏波速度没有改善",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:e111ad450123ea42",
       "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e15c825d83a58588",
+      "label": "4项急性恢复研究没有发现获益，1项发现不利结果",
+      "review_id": "ahokas-2025-postexercise-heat-review",
       "type": "study-finding"
     },
     {
@@ -102960,10 +105012,31 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:e7d55aa5e2103f75",
+      "label": "急性恢复结果混合：4项无效、4项有益、1项不利；重复热暴露可能改善高温环境中的跑步表现，但对骑行和最大摄氧量未见明确效果。研究质量低到中等，无法作确定结论。",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:e7e38dff0c2dbbf4",
       "label": "单次漏做后的自动化增量与连续执行两天相比没有显著差异，但没有检验反复或每周漏做",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e8d564d71d24d9e6",
+      "label": "不能确定统一最佳温度、时长和频率",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e8d5a5bc2f848c93",
+      "label": "空腹血糖、HbA1c、主要血脂和CRP没有显著总体改善",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
       "type": "study-finding"
     },
     {
@@ -103072,6 +105145,19 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:fb5ab4832745d4d4",
+      "label": "没有长期激素、肌肉、恢复、情绪、疾病或安全结局",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:02e4b82f33fd0b73",
+      "label": "缺少桑拿使用次数分母",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:04c6245cf74a2aa2",
       "label": "后续试验可能改变各适应证结论",
       "review_id": "godaert-2024-pbm-older-adults-review",
@@ -103084,15 +105170,51 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:051ac6f42cd7f97f",
+      "label": "高频组较小",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:066f76b01e5b673c",
+      "label": "生理代理指标不等于疾病事件或寿命",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:06bd82b312d1a3ef",
       "label": "所有干预都是多组分，无法识别提示、重复、环境重构或奖励中哪一项是有效成分",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:078b5ced8b47fd58",
+      "label": "观察性队列不能建立因果关系",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:07e59638448d9a70",
+      "label": "全身与局部热疗、健康与临床人群及对照异质",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:09bab5a1ff2df484",
       "label": "14°C 头部露出浸泡持续 1 小时，与短暂冷水淋浴、冰浴或开放水域不同",
       "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0a3effa9b038b8a0",
+      "label": "部分结局证据确定性低",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0b7f7ebde5db4c7c",
+      "label": "后续更大RCT综述可能改变总体估计",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
       "type": "study-limitation"
     },
     {
@@ -103132,6 +105254,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:117de49968f3dc92",
+      "label": "安全性报告不足以给个人阈值",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:12215050ab9dccd3",
       "label": "自动化主要靠自报且阈值不统一，未必对应客观长期行为或健康获益",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -103147,6 +105275,12 @@
       "id": "study-limitation:13e008298c41312c",
       "label": "I²=87% 表明研究、人群、行为、量表与干预高度异质，统一 SMD 的可推广性有限",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:17965be89b7741cc",
+      "label": "残余混杂与反向因果不能排除",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -103171,6 +105305,12 @@
       "id": "study-limitation:1b82b4129b257767",
       "label": "一项早晨伸展研究不能证明所有习惯都应安排在早晨",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:1d6014da0af28dc7",
+      "label": "不能做因果或风险排序",
+      "review_id": "kaiser-2023-sauna-injury-series",
       "type": "study-limitation"
     },
     {
@@ -103201,6 +105341,12 @@
       "id": "study-limitation:27322864e4c850d0",
       "label": "冥想组平均每周完成 5.5 次，对照组 6.4 次，依从性不同",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:281d680b86d36a79",
+      "label": "高频组较小，估计不确定性较大",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -103258,6 +105404,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:31fb9aa432908623",
+      "label": "只测急性激素，不能推断长期健康或表现",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:33fe90a0b84f4c30",
       "label": "练习测试效果依赖题型、成功率、次数、间隔、反馈与终测匹配，综述不提供人人适用的固定参数",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -103300,6 +105452,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:37bd3356972a5103",
+      "label": "仅15项研究且样本通常较小",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:397be63fcf4ce64a",
+      "label": "亚组结果容易受小样本、多重比较和研究质量影响",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:3a1025d8f1f8fddf",
       "label": "许多研究样本小，且可能受体适能、期待、练习效应和发表偏倚影响",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
@@ -103333,6 +105497,12 @@
       "id": "study-limitation:3ecee488385346e7",
       "label": "两套菜单虽然按所提供营养指标匹配，实际摄入的能量密度、进食速度、质地和具体食物仍不同，不能分离‘加工’的单一机制",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3ef5f2b5b67ee968",
+      "label": "仅纳入中年芬兰男性",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -103444,6 +105614,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:513c6dbeb04c2a13",
+      "label": "死亡率结果不能告诉个体温度、时长和耐受边界",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:51623b11ab9413f8",
       "label": "证据确定性极低至低，偏倚和不精确性限制信心",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
@@ -103498,6 +105674,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:55bac2e931965888",
+      "label": "单中心回顾性病例系列，选择偏倚显著",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:56fb63c63196830c",
       "label": "露营同时增加全天和早晨光照、减少夜间电灯、改变活动、社交、设备使用和环境，不能分离单一成分",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -103516,6 +105698,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:588e40e51846e890",
+      "label": "加热方式、温度、时长、频率和人群高度异质",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:59279b36098de978",
       "label": "短期实验指标不能直接量化长期疾病风险",
       "review_id": "mason-2022-light-during-sleep",
@@ -103528,6 +105716,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:59ef1aa84f3cec5d",
+      "label": "方案范围很宽，无法提取通用消费协议",
+      "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:5e6b61273837babf",
       "label": "新纳入样本仅 40 人且每个日程组只有 10 人",
       "review_id": "walker-2003-sleep-motor-learning",
@@ -103537,6 +105731,12 @@
       "id": "study-limitation:5f0f313a3b8241cc",
       "label": "健康年轻成人不能代表糖尿病、老年人或长期夜间照明",
       "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5f56e4fea2f00388",
+      "label": "生活方式对照无法盲法",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-limitation"
     },
     {
@@ -103648,6 +105848,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:6ee8cb3aa097b036",
+      "label": "暴露方式、训练项目、环境和结局高度异质，无法荟萃",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:6f6532551c421d62",
       "label": "无法据此确定安全的精确等待时间或通用频率",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
@@ -103681,6 +105887,12 @@
       "id": "study-limitation:724a4d59d68ccae1",
       "label": "所有练习测试均无反馈，无法评估错误纠正、低正确率或不同反馈时机",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:739c4439e53ba621",
+      "label": "5/7女性暂时性闭经是重要安全信号，但小样本无法估计发生率或确定因果",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
       "type": "study-limitation"
     },
     {
@@ -103720,6 +105932,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:77a3ef126a05d4e1",
+      "label": "多数研究质量低到中等",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:7a806d142bd04e3a",
       "label": "百分比变化来自小样本实验，不能当作个人可感知的脑内多巴胺读数",
       "review_id": "sramek-2000-cold-water-physiology",
@@ -103741,6 +105959,12 @@
       "id": "study-limitation:7c398c7b7ee9ad99",
       "label": "动物机制结果不能直接外推到人类生活方式建议",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7c632a54b6dc29a0",
+      "label": "观察性研究存在健康使用者偏差、残余混杂和反向因果",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -103774,6 +105998,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:848854de7ea5494e",
+      "label": "具体研究方案不是个人处方",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:86cfa0197dab90c5",
       "label": "缺勤受工作文化、是否居家和行为选择影响，不是纯医学结局",
       "review_id": "buijze-2016-cold-shower-rct",
@@ -103795,6 +106025,12 @@
       "id": "study-limitation:89caccd93cdfc9c4",
       "label": "荟萃主要合并单组干预前后差值，易受时间趋势、回归均值、期待和共同干预影响，不能解释为随机对照效应",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:8b47ad692d1e02da",
+      "label": "8周随访无法评估重大事件或长期安全",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-limitation"
     },
     {
@@ -103876,6 +106112,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:9ade31ceb4803315",
+      "label": "研究年代早，监测与报告标准有限",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:9b3c1e2981c7ac9b",
       "label": "结局主要是褪黑素相位与作息时间，没有测量失眠缓解、情绪、认知或长期健康结局",
       "review_id": "wright-2013-natural-light-entrainment",
@@ -103909,6 +106151,24 @@
       "id": "study-limitation:a06b6b0ea071411b",
       "label": "研究未确定需要多少天自然光暴露，也未测试固定晨间分钟数、隔窗光照或消费级灯具剂量",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a0c9de56f474c15c",
+      "label": "没有长期死亡率或重大心血管事件试验",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a18ae9ed7bd90e50",
+      "label": "运动员性别和训练水平代表性有限",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a1bc8ccf332c1c1a",
+      "label": "总样本仅17人且没有平行对照或盲法",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
       "type": "study-limitation"
     },
     {
@@ -103951,6 +106211,18 @@
       "id": "study-limitation:a5e06898b27f07c9",
       "label": "样本普遍有限，研究设计和偏倚风险不一",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a6dfb6f4eca92da7",
+      "label": "同时加入桑拿与冷水，无法归因单一组件",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a73695ed3db3d33f",
+      "label": "每天两次、每次1小时、连续7天的80°C暴露强度很高",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
       "type": "study-limitation"
     },
     {
@@ -104002,6 +106274,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:ad0b008d38cf74a3",
+      "label": "仅30名年轻男性",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ad827fe58cc47690",
       "label": "研究设计、行为、时长、样本与结局高度异质，未做荟萃分析或正式风险偏倚综合",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -104044,9 +106322,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b365efde5cb7a3a4",
+      "label": "研究条件高度具体，不能给通用温度、轮数或时长",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b3dbd6ee0bbb2733",
       "label": "仅 20 名低咖啡因摄入健康男性",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b4840735d0da36e5",
+      "label": "死亡率关联不能替代随机生理或临床试验",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -104065,6 +106355,12 @@
       "id": "study-limitation:b79ae8066bf12f58",
       "label": "使用单次高剂量UVB、麻醉、剃毛和背部照射，与普通日光或红光设备不同",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b9264b38cc80dd31",
+      "label": "结果不等于一般健康成人的绝对风险",
+      "review_id": "kaiser-2023-sauna-injury-series",
       "type": "study-limitation"
     },
     {
@@ -104098,9 +106394,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:bcedeb4a4fb2710d",
+      "label": "热适应指标是生理反应而非疾病改善",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:bef724f8acc89b65",
       "label": "参与者自选行为、无随机对照且接受完成研究报酬，日记本身可能改变行为",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bf472e9ff4731b0b",
+      "label": "芬兰中老年人及当地桑拿文化限制外推",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -104158,6 +106466,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:cd956a59af6edd58",
+      "label": "不能从系统加热亚组推断任意桑拿设备等效",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ce547aee2496c490",
       "label": "冬季露营睡眠更长且活动更高，温度和行为变化可能影响睡眠结局",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -104170,6 +106484,24 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:cec9f26b8300004e",
+      "label": "使用场景与芬兰文化、环境和社会行为相连",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:cef4f42d9e47c8f9",
+      "label": "激素为急性实验室结局，不是长期功能或临床结局",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:cfe102b912fb41db",
+      "label": "总计仅194名参与者、研究数少",
+      "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d032e716a38c1240",
       "label": "实验 2 所有人均跨夜睡眠，没有独立清醒对照",
       "review_id": "rickard-2008-sleep-motor-sequence",
@@ -104179,6 +106511,18 @@
       "id": "study-limitation:d0a4de909f72f4aa",
       "label": "仅10项研究且分散在多个不相干适应证",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:d1ac50de940275f8",
+      "label": "仅20项RCT且单项研究普遍较小、干预2–15周",
+      "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:d2b45a00a10a2b13",
+      "label": "不能外推到不稳定心血管疾病、一般健康人或不同桑拿方案",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-limitation"
     },
     {
@@ -104197,6 +106541,12 @@
       "id": "study-limitation:d977b17ad3dad029",
       "label": "主动招募的志愿者可能有较高期待和健康行为动机",
       "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:dda337e770829a6c",
+      "label": "桑拿习惯主要在基线自报，随访中可能变化",
+      "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
       "type": "study-limitation"
     },
     {
@@ -104242,6 +106592,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e48c94383fa83bab",
+      "label": "女性只参加催乳素测量，性别比较不完整",
+      "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e51ddc0420ecef77",
+      "label": "桑拿习惯主要在基线自报且可能随时间改变",
+      "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e6b0d1bcf8e647f7",
       "label": "仅 8 篇研究，结局分组后证据更少",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
@@ -104272,6 +106634,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e83c87aec3718a4c",
+      "label": "病因和暴露信息依赖病历",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:eb229dcc8c853604",
       "label": "参与者和研究团队无法对淋浴分组盲法，主要结局依赖自报",
       "review_id": "buijze-2016-cold-shower-rct",
@@ -104281,6 +106649,12 @@
       "id": "study-limitation:edafae38e5c081b0",
       "label": "表现适应不等同于肌肉体积、伤病、主观恢复或一般健康结局",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:efee7238491bf81b",
+      "label": "仅41名稳定冠心病成人，统计能力有限",
+      "review_id": "debray-2023-sauna-stable-cad-rct",
       "type": "study-limitation"
     },
     {
@@ -104296,6 +106670,24 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:f1c30dc6cb28c594",
+      "label": "单组前后测、没有随机对照",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f2db0882c0111406",
+      "label": "没有足够样本评估罕见不良事件",
+      "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f2ecc0c9f46d1695",
+      "label": "只捕捉到医疗就诊伤害，轻伤和院外死亡可能漏报",
+      "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:f34a70294d8da45e",
       "label": "样本小且干预仅六周",
       "review_id": "hazlett-2021-gratitude-rct",
@@ -104305,6 +106697,12 @@
       "id": "study-limitation:f521c567f8492786",
       "label": "样本小且仅为健康成人",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f59ea00aaa71bf22",
+      "label": "表现结果不能外推到伤病、心血管疾病或一般长寿",
+      "review_id": "ahokas-2025-postexercise-heat-review",
       "type": "study-limitation"
     },
     {
@@ -104341,6 +106739,12 @@
       "id": "study-limitation:f85d960aa4754b3b",
       "label": "无法从物理输出单独定义安全或最佳剂量",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fb90a2ee41396af1",
+      "label": "安全性和依从性报告有限",
+      "review_id": "ahokas-2025-postexercise-heat-review",
       "type": "study-limitation"
     },
     {
@@ -107112,20 +109516,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1748,
-    "action_playbook_nodes": 9,
-    "action_step_nodes": 27,
+    "academic_resource_nodes": 1754,
+    "action_playbook_nodes": 10,
+    "action_step_nodes": 30,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 9233,
+    "edges": 9446,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 20,
-    "evidence_topic_nodes": 176,
-    "resource_nodes": 6032,
-    "study_card_nodes": 35,
-    "study_finding_nodes": 160,
-    "study_limitation_nodes": 220,
+    "evidence_relation_nodes": 27,
+    "evidence_topic_nodes": 209,
+    "resource_nodes": 6038,
+    "study_card_nodes": 44,
+    "study_finding_nodes": 206,
+    "study_limitation_nodes": 274,
     "top_topics": [
       {
         "count": 58,
@@ -107229,7 +109633,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 693,
+    "verified_academic_resource_nodes": 702,
     "youtube_nodes": 424
   }
 }

@@ -49,6 +49,7 @@ class ActionPlaybookTests(unittest.TestCase):
             "Huberman讲了很多补剂和健康协议，我怎么判断一个值不值得试？": "decide-whether-to-try-one-health-protocol",
             "Huberman说冷水澡提高多巴胺和免疫，我要不要每天冰浴？": "decide-whether-and-when-to-use-cold-exposure",
             "我力量训练后冰浴会不会影响增肌？": "decide-whether-and-when-to-use-cold-exposure",
+            "Huberman说每周桑拿能提高生长激素、帮助长寿，我要不要买桑拿房？": "decide-whether-sauna-or-heat-is-worth-using",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -114,6 +115,23 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("不规定温度或时长", cold["actions"][2]["minimum_version"])
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         for phrase in ("冷暴露决策", "外周儿茶酚胺不等于脑内", "不得进入个人实验"):
+            self.assertIn(phrase, skill)
+
+    def test_sauna_decision_rejects_observational_dose_and_hormone_optimization(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        sauna = by_id["decide-whether-sauna-or-heat-is-worth-using"]
+        self.assertEqual(len(sauna["actions"]), 3)
+        for phrase in ("不足以支持购买桑拿房", "观察关联", "急性激素峰值", "多数结局总体阴性", "不给固定温度"):
+            self.assertIn(phrase, sauna["safe_summary"])
+        evidence_ids = {link["review_id"] for link in sauna["evidence_links"]}
+        self.assertTrue({
+            "leppaluoto-1986-repeated-sauna-endocrine",
+            "hamaya-2025-passive-heating-rct-meta-analysis",
+            "debray-2023-sauna-stable-cad-rct",
+            "kaiser-2023-sauna-injury-series",
+        } <= evidence_ids)
+        skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+        for phrase in ("桑拿/热暴露决策", "5名出现暂时性闭经", "热适应、流汗", "禁止酒后"):
             self.assertIn(phrase, skill)
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
