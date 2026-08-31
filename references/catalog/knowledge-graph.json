@@ -42129,9 +42129,94 @@
       "relation": "reviews_resource",
       "source": "study-card:volkow-2015-caffeine-pet",
       "target": "resource:https://www.nature.com/articles/tp201546"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "evidence-topic:memory-consolidation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "evidence-topic:motor-learning"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "evidence-topic:procedural-memory"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:41e1816cee009e0a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:41fbc0f90beccb99"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:5e6b61273837babf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:6b6ebf0452a5b8d7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:747418975081c238"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:7dbbc6b4678fbfaa"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-limitation:a5b03d353937c465"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-finding:1b03b9671112f8f0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-finding:3a956291329ee85b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-finding:5c06d8a51682ca4d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-finding:f0c8b99f09c0911c"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "study-finding:db1c9163842459ee"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:walker-2003-sleep-motor-learning",
+      "target": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/"
     }
   ],
-  "generated_at": "2026-08-31T02:43:28.749049+00:00",
+  "generated_at": "2026-08-31T02:56:04.173196+00:00",
   "nodes": [
     {
       "bv_id": "BV14dkGBQEWR",
@@ -47436,8 +47521,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:memory-consolidation",
+      "label": "memory-consolidation",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:mood",
       "label": "mood",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:motor-learning",
+      "label": "motor-learning",
       "type": "evidence-topic"
     },
     {
@@ -47448,6 +47543,16 @@
     {
       "id": "evidence-topic:pet",
       "label": "pet",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:procedural-memory",
+      "label": "procedural-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep",
+      "label": "sleep",
       "type": "evidence-topic"
     },
     {
@@ -81317,13 +81422,13 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "自动书目核验：PMC202318；《Sleep and the time course of motor skill learning.》；期刊未返回；2003。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
+      "evidence_notes": "人工研究级核验：40 名 18–28 岁健康右利手成人分为四个各 10 人的序列敲击训练/复测日程组；一次训练组跨一晚后速度提高 17.0%、错误率下降 34.5%，双倍训练未增加夜间增益，三晚相对一晚仅呈非显著趋势。论文另用 30 人旧数据比较睡眠/清醒顺序；分组随机性未说明、任务单一且仅用睡眠日志，不能外推为所有学习或通用睡眠协议。证据卡：academic-study-cards.jsonl#walker-2003-sleep-motor-learning。",
       "id": "resource:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/",
       "kind": "academic-or-medical",
       "label": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/",
       "type": "resource",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC202318/",
-      "verification_status": "verified-bibliographic"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -91977,10 +92082,44 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "不同训练量、复测间隔与睡眠/清醒顺序；部分睡眠—清醒对照来自已发表的 30 人旧数据",
+      "doi": "10.1101/lm.58503",
+      "evidence_level": "A-Direct（小样本人体实验与跨时点比较）",
+      "id": "study-card:walker-2003-sleep-motor-learning",
+      "intervention_exposure": "一次或两次各 12 分钟的左手序列敲击训练，随后在 24–72 小时内、跨一至三晚睡眠复测",
+      "label": "Sleep and the time course of motor skill learning",
+      "outcomes": [
+        "30 秒内正确完整序列数所代表的速度",
+        "每序列错误率",
+        "训练内增益、睡眠后离线增益及多夜变化"
+      ],
+      "population": "18–28 岁、右利手、无神经精神或睡眠障碍的健康成人；23 名女性",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/12888546/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC202318/",
+        "https://doi.org/10.1101/lm.58503"
+      ],
+      "result_summary": "新研究的一次训练组在跨一晚后的 24 小时复测中速度提高 17.0%、错误率下降 34.5%；双倍训练组的夜间增益相近。三晚组相对一晚组的额外改善仅为趋势，未达传统显著性阈值。",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "支持特定年轻健康成人在手指序列任务上出现睡眠相关的离线巩固信号；不能简化为所有学习都只在睡眠中发生，也不能据此规定人人适用的睡眠时长、学习时间或治疗方案。",
+      "sample_size": 40,
+      "study_design": "40 名新参与者分为四个各 10 人的训练/复测日程组，完成非优势手五键序列敲击任务；论文另引用作者 2002 年研究的 30 人两组数据作睡眠先行与清醒先行比较",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:03e31485275ed2ef",
       "label": "尾状核受体可用性未显著改变",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:1b03b9671112f8f0",
+      "label": "训练内学习幅度与随后夜间增益无显著相关",
+      "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-finding"
     },
     {
@@ -92006,9 +92145,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:3a956291329ee85b",
+      "label": "作者此前 30 人数据中，12 小时清醒未出现与睡眠后相同的离线增益",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:4cd7a198865e2cc4",
       "label": "并非所有情绪、认知或生理指标均改善",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:5c06d8a51682ca4d",
+      "label": "双倍初始训练没有显著改变随后一晚的速度或错误率增益",
+      "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-finding"
     },
     {
@@ -92068,6 +92221,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:db1c9163842459ee",
+      "label": "新研究的一次训练组在跨一晚后的 24 小时复测中速度提高 17.0%、错误率下降 34.5%；双倍训练组的夜间增益相近。三晚组相对一晚组的额外改善仅为趋势，未达传统显著性阈值。",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:e111ad450123ea42",
       "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
@@ -92086,6 +92246,13 @@
       "id": "study-finding:ef5c1411fac50cad",
       "label": "MEG 未发现明确的听觉—视觉交互调制",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:f0c8b99f09c0911c",
+      "label": "三晚与一晚睡眠后的速度和错误率差异仅呈趋势，组间 P 值分别为 0.07 和 0.10",
+      "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-finding"
     },
     {
@@ -92133,6 +92300,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:41e1816cee009e0a",
+      "label": "复测本身带来额外练习，且日程设计不能完全替代严格的昼夜节律操纵",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:41fbc0f90beccb99",
+      "label": "分组分配是否随机未在方法中明确，不应称为随机对照试验",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:4818b03f24eb5746",
       "label": "主要分析仅纳入 48 名至少完成 4 周者并使用末次观测结转",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
@@ -92157,9 +92336,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:5e6b61273837babf",
+      "label": "新纳入样本仅 40 人且每个日程组只有 10 人",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:69a14d6cd9cff47b",
       "label": "总样本仅 60 人，约每组 20 人",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6b6ebf0452a5b8d7",
+      "label": "不能外推到陈述性知识、复杂技能、临床人群、最少睡眠时长或通用学习协议",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:747418975081c238",
+      "label": "仅研究 18–28 岁健康右利手成人和单一显式手指序列任务",
+      "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-limitation"
     },
     {
@@ -92178,6 +92375,18 @@
       "id": "study-limitation:7c8c9802e6127016",
       "label": "8 周随访不能确定长期保持或临床疗效",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7dbbc6b4678fbfaa",
+      "label": "本研究以睡眠日志和主观警觉度记录睡眠，而非对全部参与者进行多导睡眠监测",
+      "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a5b03d353937c465",
+      "label": "关键睡眠先行与清醒先行比较包含作者 2002 年已发表的 30 人数据，并非全部 70 人均为本研究新队列",
+      "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-limitation"
     },
     {
@@ -94977,13 +95186,13 @@
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 8426,
+    "edges": 8443,
     "episode_nodes": 425,
-    "evidence_topic_nodes": 20,
+    "evidence_topic_nodes": 24,
     "resource_nodes": 6020,
-    "study_card_nodes": 5,
-    "study_finding_nodes": 18,
-    "study_limitation_nodes": 25,
+    "study_card_nodes": 6,
+    "study_finding_nodes": 23,
+    "study_limitation_nodes": 32,
     "top_topics": [
       {
         "count": 58,

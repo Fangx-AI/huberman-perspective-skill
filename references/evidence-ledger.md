@@ -15,6 +15,7 @@
 | B 站有 ADHD/专注力、学习、压力与睡眠等完整中文长视频样本 | B站发现层 | https://www.bilibili.com/video/BV1SfPCziEeM/；https://www.bilibili.com/video/BV1eePpeXEMc/；https://www.bilibili.com/video/BV1XRtjzoEo4/ | C（翻译/转载元数据） | 回到原视频和论文逐条核查 | 已登记 |
 | 跨 5 个原创长视频样本，稳定出现“机制→工具→时间/顺序→个体差异/复盘”的内容结构 | YouTube 人工/自动字幕样本 | `references/catalog/claim-index.jsonl`；视频 ID: yb5zpo5WDG4、nm1TxQj9IsQ、ddq8JIMhz7c、t1F7EEGPQwo、ntfcfJ28eiU；详细字幕分析仅保留在维护者本地缓存 | A-Synthesis（表达/结构） | 仍需扩展至更多 Solo、AMA、Journal Club 与 Guest 节目 | 初步确认 |
 | 85%/15% 训练难度规则在一类学习算法、人工神经网络和计算神经科学模型中得到约 85% 最佳准确率/15.87% 错误率 | 原始论文 | https://www.nature.com/articles/s41467-019-12552-4 | A-Direct（计算/模型） | 不能直接当作所有人类学习任务的精确处方 | 已核查，限度明确 |
+| 年轻健康成人在特定手指序列任务中出现跨夜的离线速度和准确性改善 | 原始人体实验 | https://pubmed.ncbi.nlm.nih.gov/12888546/；https://pmc.ncbi.nlm.nih.gov/articles/PMC202318/；DOI: 10.1101/lm.58503 | A-Direct（小样本人体跨时点实验） | 新样本 40 人、每组 10 人，另复用 30 人旧数据；任务单一、随机分组未说明、睡眠主要靠日志，三晚相对一晚仅呈非显著趋势；不能外推为所有学习或通用睡眠时长/时序协议 | 已核查，限度明确 |
 | 测试/提取练习在实验室与教育证据中通常比单纯追加学习更有利于后续保持 | 综述论文 | https://journals.sagepub.com/doi/10.1111/j.1745-6916.2006.00012.x | A-Direct（综述） | 结果受材料、反馈、测试形式与情境影响；支持主动提取这一工具方向，不等于固定学习日程或对所有人群同效 | 已核查，限度明确 |
 | 一年中等强度有氧训练在一项 120 名老年成人随机研究中增加前部海马体积并改善空间记忆 | 原始人体 RCT | https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/ | A-Direct（人体 RCT） | 具体人群、运动方案和空间记忆结局；不等于所有运动方案都能产生同样结构或临床效果，也不等于预防痴呆 | 已核查，限度明确 |
 | 受控住院交叉研究中，短睡眠改变了男性/女性不同的食欲相关激素信号，但没有在该受控能量条件下显示统一的血糖/胰岛素效应 | 原始人体交叉研究 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3466797/ | A-Direct（短期人体研究） | 27 名健康、正常体重成人；4 小时与 9 小时在床、短期且受控；不能直接替代长期睡眠或营养管理建议 | 已核查，限度明确 |

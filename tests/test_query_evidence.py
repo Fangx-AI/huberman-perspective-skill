@@ -30,6 +30,15 @@ class EvidenceQueryTests(unittest.TestCase):
         results = MODULE.query_cards(self.cards, "gratitude inflammation")
         self.assertEqual(results[0]["review_id"], "hazlett-2021-gratitude-rct")
 
+    def test_chinese_sleep_query_includes_motor_learning_boundaries(self) -> None:
+        results = MODULE.query_cards(self.cards, "睡眠 运动学习 巩固")
+        self.assertEqual(results[0]["review_id"], "walker-2003-sleep-motor-learning")
+        card = next(item for item in results if item["review_id"] == "walker-2003-sleep-motor-learning")
+        concise = MODULE.concise_record(card)
+        self.assertIn("所有学习", concise["safe_interpretation"])
+        self.assertTrue(any("三晚" in finding for finding in concise["null_findings"]))
+        self.assertTrue(any("随机" in limitation for limitation in concise["limitations"]))
+
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 

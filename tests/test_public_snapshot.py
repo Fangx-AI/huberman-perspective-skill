@@ -28,8 +28,8 @@ class PublicSnapshotTests(unittest.TestCase):
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
         self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 674)
-        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 113)
-        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 508)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 114)
+        self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 507)
 
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"

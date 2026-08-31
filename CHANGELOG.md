@@ -7,6 +7,19 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.3.2] - 2026-08-31
+
+### Added
+
+- Added a structured evidence card for Walker et al. (2003) on sleep and sequential finger-tapping performance, preserving the 40-person new cohort, reused 30-person comparison data, non-significant three-night trends and task-specific interpretation.
+- Added a Chinese sleep/motor-learning evidence-query regression.
+
+### Changed
+
+- Promoted the linked PMC record to `verified-study`, yielding 114 study-level and 507 bibliographic-only verified records.
+- Expanded the graph to six study cards, 23 findings, 32 limitations, 24 evidence topics and 8,443 relations.
+- Weighted evidence-query matches in study design, results and safe interpretation above incidental matches found only in limitations.
+
 ## [0.3.1] - 2026-08-31
 
 ### Added

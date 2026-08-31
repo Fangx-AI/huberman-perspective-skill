@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this research skill, cite the software and the underlying primary sources for substantive claims."
 title: "Huberman Perspective Skill"
-version: "0.3.1"
+version: "0.3.2"
 date-released: 2026-08-31
 type: software
 license: MIT

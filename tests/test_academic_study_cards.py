@@ -19,7 +19,7 @@ class AcademicStudyCardTests(unittest.TestCase):
 
     def test_cards_validate(self) -> None:
         MODULE.validate_cards(self.cards)
-        self.assertGreaterEqual(len(self.cards), 5)
+        self.assertGreaterEqual(len(self.cards), 6)
 
     def test_application_is_idempotent(self) -> None:
         rows = [

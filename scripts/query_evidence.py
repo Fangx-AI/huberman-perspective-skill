@@ -22,6 +22,7 @@ SEARCH_FIELDS = (
     "safe_interpretation",
 )
 LIST_FIELDS = ("topic_tags", "outcomes", "null_findings", "limitations")
+CORE_FIELDS = ("study_design", "intervention_exposure", "result_summary", "safe_interpretation")
 
 
 def load_cards(path: Path) -> list[dict]:
@@ -47,7 +48,13 @@ def query_cards(cards: list[dict], query: str, limit: int = 10) -> list[dict]:
             continue
         title = str(card.get("title", "")).casefold()
         tags = " ".join(card.get("topic_tags", [])).casefold()
-        score = len(matched) + 2 * sum(term in title for term in matched) + 2 * sum(term in tags for term in matched)
+        core = "\n".join(str(card.get(field, "")) for field in CORE_FIELDS).casefold()
+        score = (
+            len(matched)
+            + 3 * sum(term in title for term in matched)
+            + 3 * sum(term in tags for term in matched)
+            + 2 * sum(term in core for term in matched)
+        )
         scored.append((score, card.get("review_id", ""), card))
     scored.sort(key=lambda item: (-item[0], item[1]))
     return [card for _, _, card in scored[:limit]]

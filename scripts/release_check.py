@@ -149,7 +149,7 @@ def check() -> list[str]:
                     row = academic_by_url.get(url)
                     if not row or row.get("verification_status") != card.get("verification_status") or row.get("evidence_notes") != card.get("queue_note"):
                         errors.append(f"study card and academic queue drifted for {url}")
-        if card_count < 5:
+        if card_count < 6:
             errors.append(f"too few study cards: {card_count}")
 
     claims_path = ROOT / "references" / "catalog" / "claim-index.jsonl"
