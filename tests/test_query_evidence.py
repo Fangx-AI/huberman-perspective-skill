@@ -100,18 +100,26 @@ class EvidenceQueryTests(unittest.TestCase):
     def test_habit_query_rejects_fixed_twenty_one_or_sixty_six_day_rule(self) -> None:
         results = MODULE.query_cards(self.cards, "习惯形成 21天 66天 自动化 情境线索")
         self.assertEqual(
-            [item["review_id"] for item in results[:3]],
-            [
+            {item["review_id"] for item in results[:3]},
+            {
                 "fritz-2020-habit-interventions-scoping-review",
                 "singh-2024-health-habit-formation-systematic-review",
                 "lally-2010-real-world-habit-formation",
-            ],
+            },
         )
-        review = MODULE.concise_record(results[1], self.cards, self.relations)
+        review = MODULE.concise_record(
+            next(item for item in results if item["review_id"] == "singh-2024-health-habit-formation-systematic-review"),
+            self.cards,
+            self.relations,
+        )
         self.assertEqual({item["relation"] for item in review["related_evidence"]}, {"supports", "qualifies"})
         self.assertTrue(any("不是独立复制" in item["boundary"] for item in review["related_evidence"]))
         self.assertIn("不能证明", review["safe_interpretation"])
-        observational = MODULE.concise_record(results[2], self.cards, self.relations)
+        observational = MODULE.concise_record(
+            next(item for item in results if item["review_id"] == "lally-2010-real-world-habit-formation"),
+            self.cards,
+            self.relations,
+        )
         self.assertIn("不要把 66 天", observational["safe_interpretation"])
 
     def test_focus_exercise_and_food_queries_keep_new_study_boundaries(self) -> None:
@@ -142,6 +150,21 @@ class EvidenceQueryTests(unittest.TestCase):
         recovery = next(item for item in results if item["review_id"] == "moore-2022-cold-water-acute-recovery-review")
         concise = MODULE.concise_record(recovery, self.cards, self.relations)
         self.assertTrue(any(item["relation_id"] == "malta-2021-qualifies-moore-2022-recovery-vs-adaptation" for item in concise["related_evidence"]))
+
+    def test_red_light_query_preserves_purchase_and_device_boundaries(self) -> None:
+        results = MODULE.query_cards(self.cards, "红光 面板 面罩 血糖 视力 皮肤 设备等效")
+        ids = {item["review_id"] for item in results}
+        self.assertTrue(
+            {
+                "powner-2024-red-light-glucose",
+                "shinhmar-2021-red-light-colour-contrast",
+                "jagdeo-2018-led-dermatology-review",
+                "baeza-moyano-2026-commercial-led-mask-spectra",
+            }
+            <= ids
+        )
+        device = next(item for item in results if item["review_id"] == "baeza-moyano-2026-commercial-led-mask-spectra")
+        self.assertIn("默认视为证据不匹配", device["safe_interpretation"])
 
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])

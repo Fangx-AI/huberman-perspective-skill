@@ -73,6 +73,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 饮食：只改变一个重复饮食环境，不直接跳过进食或妖魔化所有加工食品；短期住院组均值不是个人减重保证，也不能替代进食障碍或疾病饮食管理。
 - 健康协议决策：最终回答必须严格对应“决策卡 → 证据/风险分层 → 仅低风险行为试验”至多三个动作，不改写成四步以上检查清单。必须主动报告主要阴性结果；代理指标、机制相关性和单项小研究不能授权个人处方。不推荐购买或给补剂剂量，补剂、药物、精神科治疗、激素、肽类和注射转介医生/药师；个人试验只能决定是否保留一个低风险、可逆、不延误照护的行为，不能证明疾病疗效或长期安全。
 - 冷暴露决策：先区分一般 wellbeing、短期运动恢复和长期力量/增肌目标，再过环境与医学安全门。必须主动说明一般健康证据的主要阴性结果、外周儿茶酚胺不等于脑内“优化”、缺勤下降不等于少生病，以及短期恢复可能与长期训练适应权衡；不发明固定温度、时长、频率或等待时间。只有一般健康成人通过安全门后，才可讨论可立即停止且保持正常呼吸的普通淋浴温度变化；开放水域、独处浸泡、浸头、屏气或高强度呼吸组合不得进入个人实验。
+- 红光设备购买决策：先把目标分为睡眠/昼夜节律、明确皮肤或眼科适应证、泛健康/长寿/血糖/脑功能。泛健康目标默认不买；睡眠目标先处理真实光暗环境，不在睡眠期用面板替代黑暗。回答必须主动报告四个决策级边界：血糖信号来自30名健康成人的一次急性OGTT代理指标；视觉信号来自20名健康成人、未做假照射盲法的短期色彩对比实验，且下午小组无同样结果；糖尿病PBM系统综述的总体证据确定性仍为极低至低；老年人系统综述的10项方案全部不同，神经退行研究中有2项无效。只有适应证、人群、波长、辐照度、距离/几何和直接临床结局与具体设备匹配，并经相关专业人员确认时才继续；4款商业面罩实测已显示相同颜色名称不等于光谱、辐照度或空间输出等效。不得从动物机制或代理指标发明通用照射协议，不自行直射眼睛，不推荐品牌、波长、剂量、时长或频率。
 
 ## 长视频与语料规则
 
@@ -124,7 +125,7 @@ description: 用 Andrew Huberman / Huberman Lab 的神经科学与行为改变�
 - 将人工研究级证据卡确定性写回学术队列：`python scripts/apply_academic_study_cards.py --cards references/catalog/academic-study-cards.jsonl --queue references/catalog/academic-verification-queue.csv`。证据卡必须同时记录研究设计、样本、主要/阴性结局、局限、可安全解释与一手 provenance；不得只凭摘要标题升级。非 Show Notes 的外部复核卡必须显式使用 `source_scope=external-context` 和空 `queue_urls`，不得改变 Episode 学术队列统计。
 - 校验研究间关系：`python scripts/validate_evidence_relations.py --cards references/catalog/academic-study-cards.jsonl --relations references/catalog/evidence-relations.jsonl`。
 - 校验并检索行动剧本：`python scripts/validate_action_playbooks.py --playbooks references/catalog/action-playbooks.jsonl --study-cards references/catalog/academic-study-cards.jsonl --claims references/catalog/claim-index.jsonl`；随后可用 `python scripts/query_action_playbooks.py "看完就忘 主动回忆"`。检索只返回一个最匹配剧本，默认不倾倒完整证据卡。
-- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`；自然光/节律证据簇可用 `python scripts/query_evidence.py "自然光 昼夜节律 周末露营"`；主动提取/测试效应证据簇可用 `python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"`；习惯形成时长与情境线索证据簇可用 `python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"`；冷暴露的急性机制、一般 wellbeing、运动恢复、长期适应与安全权衡可用 `python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
+- 按中英文关键词检索研究卡：`python scripts/query_evidence.py "咖啡因 多巴胺"`；自然光/节律证据簇可用 `python scripts/query_evidence.py "自然光 昼夜节律 周末露营"`；主动提取/测试效应证据簇可用 `python scripts/query_evidence.py "主动提取 测试效应 长期保持 反馈"`；习惯形成时长与情境线索证据簇可用 `python scripts/query_evidence.py "习惯形成 21天 66天 自动化 情境线索"`；冷暴露的急性机制、一般 wellbeing、运动恢复、长期适应与安全权衡可用 `python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全"`；红光购买决策证据簇可用 `python scripts/query_evidence.py "红光 面板 面罩 血糖 视力 皮肤 设备等效"`。输出必须同时保留阴性结果、边界、一手 provenance 和已登记的复制/反证关系；关键词命中只用于定位，不能替代研究解释。
 - 建立可断点续跑的 YouTube 字幕分析队列：`python scripts/build_transcript_queue.py --input references/catalog/episode-pages.jsonl --output references/catalog/youtube-transcript-queue.csv`
 - 维护者从合法本地分析缓存重建主张级索引：`python scripts/build_claim_index.py --input /path/to/lawful-local/transcript-analysis.md --queue references/catalog/youtube-transcript-queue.csv --output references/catalog/claim-index.jsonl`
 - 把外部字幕缓存的下载状态和字幕来源写回队列（不把完整转录复制进 Skill）：`python scripts/update_transcript_status.py --queue references/catalog/youtube-transcript-queue.csv --cache /path/to/work/youtube-transcript/andrew-huberman`

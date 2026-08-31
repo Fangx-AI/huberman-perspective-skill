@@ -2,6 +2,71 @@
   "edges": [
     {
       "relation": "has_action",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "action-step:decide-whether-a-red-light-device-is-worth-buying:route-one-outcome-before-shopping"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "claim:batch02-claim-0030"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:baeza-moyano-2026-commercial-led-mask-spectra"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:cohen-2021-home-dermatology-devices-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:godaert-2024-pbm-older-adults-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:jagdeo-2018-led-dermatology-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:mason-2022-light-during-sleep"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:powner-2024-red-light-glucose"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:rocha-2026-pbm-glycemic-control-review"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "target": "study-card:shinhmar-2021-red-light-colour-contrast"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:decide-whether-and-when-to-use-cold-exposure",
       "target": "action-step:decide-whether-and-when-to-use-cold-exposure:choose-no-use-optional-use-or-event-specific-use"
     },
@@ -334,6 +399,66 @@
       "relation": "uses_study_evidence",
       "source": "action-playbook:start-exercise-without-protocol-overload",
       "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
+      "target": "study-card:cohen-2021-home-dermatology-devices-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
+      "target": "study-card:godaert-2024-pbm-older-adults-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
+      "target": "study-card:shinhmar-2021-red-light-colour-contrast"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "target": "study-card:baeza-moyano-2026-commercial-led-mask-spectra"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "target": "study-card:cohen-2021-home-dermatology-devices-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "target": "study-card:jagdeo-2018-led-dermatology-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "target": "study-card:rocha-2026-pbm-glycemic-control-review"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:route-one-outcome-before-shopping",
+      "target": "claim:batch02-claim-0030"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:route-one-outcome-before-shopping",
+      "target": "study-card:mason-2022-light-during-sleep"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:route-one-outcome-before-shopping",
+      "target": "study-card:powner-2024-red-light-glucose"
     },
     {
       "relation": "grounded_in",
@@ -42517,6 +42642,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:baeza-2026-qualifies-jagdeo-2018-device-equivalence",
+      "target": "study-card:jagdeo-2018-led-dermatology-review"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:buijze-2016-qualifies-cain-2025-immunity",
       "target": "study-card:cain-2025-cold-water-wellbeing-review"
     },
@@ -42524,6 +42654,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:cain-2025-qualifies-sramek-2000-wellbeing",
       "target": "study-card:sramek-2000-cold-water-physiology"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer",
+      "target": "study-card:jagdeo-2018-led-dermatology-review"
     },
     {
       "relation": "qualifies",
@@ -42541,6 +42676,11 @@
       "target": "study-card:singh-2024-health-habit-formation-systematic-review"
     },
     {
+      "relation": "qualifies",
+      "source": "evidence-relation:godaert-2024-qualifies-shinhmar-2021-aging-vision",
+      "target": "study-card:shinhmar-2021-red-light-colour-contrast"
+    },
+    {
       "relation": "supports",
       "source": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval",
       "target": "study-card:roediger-karpicke-2006-test-enhanced-learning"
@@ -42549,6 +42689,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:malta-2021-qualifies-moore-2022-recovery-vs-adaptation",
       "target": "study-card:moore-2022-cold-water-acute-recovery-review"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:mason-2022-qualifies-powner-2024-light-context",
+      "target": "study-card:powner-2024-red-light-glucose"
     },
     {
       "relation": "qualifies",
@@ -42567,6 +42712,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:rocha-2026-qualifies-powner-2024-glycemia",
+      "target": "study-card:powner-2024-red-light-glucose"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:singh-2024-qualifies-lally-2010-sixty-six-day-estimate",
       "target": "study-card:lally-2010-real-world-habit-formation"
     },
@@ -42574,6 +42724,11 @@
       "relation": "supports",
       "source": "evidence-relation:singh-2024-supports-lally-2010-variable-habit-timing",
       "target": "study-card:lally-2010-real-world-habit-formation"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:skobowiat-2017-qualifies-powner-2024-light-spectrum-generalization",
+      "target": "study-card:powner-2024-red-light-glucose"
     },
     {
       "relation": "supports",
@@ -42584,6 +42739,106 @@
       "relation": "qualifies",
       "source": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
       "target": "study-card:cain-2025-cold-water-wellbeing-review"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-relation:baeza-2026-qualifies-jagdeo-2018-device-equivalence"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:consumer-device"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:device-equivalence"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:engineering-measurement"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:irradiance"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:led-mask"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:spectral-output"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "evidence-topic:wavelength"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:3194f36fec93ae66"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:607880ba8719c324"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:9bfd9ebc1deda393"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:ae22507850478d9f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:cebbb6bcee6df80f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-limitation:f85d960aa4754b3b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-finding:0103ccc759a83958"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-finding:4f8ef71cc595ae9f"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-finding:525210097e1cc560"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-finding:90abe272ba85faf5"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "study-finding:671a72235b243ec9"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/42080982/"
     },
     {
       "relation": "has_evidence_topic",
@@ -43067,6 +43322,111 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:consumer-device"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:dermatology"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:home-device"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:laser"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:led"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:safety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:skin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:1861a20f95be6880"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:30a7b8bc5ba00cc7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:36743caee19193b3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:4f08fe02318fda02"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:53c686f5ddbcfd5a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-limitation:d900e1bd9864b55e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-finding:03201172b6a501ed"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-finding:21a0c56ffec98cac"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-finding:727dfe8ff9f466f5"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-finding:9873420a5192f797"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "study-finding:56fe6334fcad96a1"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:cohen-2021-home-dermatology-devices-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/33938981/"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:dunlosky-2013-effective-learning-techniques-review",
       "target": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval"
     },
@@ -43391,6 +43751,101 @@
       "target": "resource:https://journals.sagepub.com/doi/full/10.1177/1539449219876877"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-relation:godaert-2024-qualifies-shinhmar-2021-aging-vision"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:age-related-macular-degeneration"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:neurodegenerative-disease"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:older-adults"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:photobiomodulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:protocol-heterogeneity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "evidence-topic:wound-healing"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:04c6245cf74a2aa2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:136980093857f677"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:8832f0a6e08e1160"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:a2427da3e4e75dbb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:a5e06898b27f07c9"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-limitation:d0a4de909f72f4aa"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-finding:1f574871b96550dc"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-finding:521c02ec2b5615bf"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-finding:5d0e98f8724e371d"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "study-finding:9cccf897e6eb08c2"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:godaert-2024-pbm-older-adults-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/39061982/"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:hall-2019-ultra-processed-diet-rct",
       "target": "evidence-topic:ad-libitum-feeding"
@@ -43554,6 +44009,101 @@
       "relation": "reviews_resource",
       "source": "study-card:hazlett-2021-gratitude-rct",
       "target": "resource:https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:acne"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:dermatology"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:herpes"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:led"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:randomized-controlled-trials"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:skin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "evidence-topic:wound-healing"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:0df9c65f1672153e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:1fbd722378bd10d5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:3aa47d6bff75cb21"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:47b1bc3190ff3a03"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:8beab17970ca9618"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-limitation:e7e51d32317dec56"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-finding:303b8adc9a5d9774"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-finding:58960193d3104f3d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-finding:9a64e1b2a1c04df0"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "study-finding:c4033784cb72fa44"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:jagdeo-2018-led-dermatology-review",
+      "target": "resource:https://onlinelibrary.wiley.com/doi/10.1002/lsm.22791"
     },
     {
       "relation": "has_evidence_topic",
@@ -43941,6 +44491,96 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/33146851/"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-relation:mason-2022-qualifies-powner-2024-light-context"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:controlled-laboratory-study"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:heart-rate"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:heart-rate-variability"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:insulin-resistance"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:light-during-sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:room-light"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "evidence-topic:sleep-environment"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-limitation:59279b36098de978"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-limitation:5f0f313a3b8241cc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-limitation:635bbab46da804a7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-limitation:fbf575c88f9a0ba2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-limitation:fc79d41aafb24e42"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-finding:9fe95892efb59fa9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-finding:beef214d3f9f0667"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-finding:f4c855d8e1e1d883"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "study-finding:62054d63176a317e"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:mason-2022-light-during-sleep",
+      "target": "resource:https://www.pnas.org/doi/10.1073/pnas.2113290119"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:moore-2022-cold-water-acute-recovery-review",
       "target": "evidence-topic:cold-water-immersion"
@@ -44166,6 +44806,101 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:670-nm"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:acute-surrogate"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:blood-glucose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:mitochondria"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:oral-glucose-tolerance"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:photobiomodulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "evidence-topic:red-light"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:04e5d5019cbd4058"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:435756488e1eb1b2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:593951f808493eff"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:60cf66bb01b7c2ae"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:64f6661dbc232a4b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-limitation:bc835d82f3afcda1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-finding:0bfe0b1ab4324956"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-finding:236cec15da91f78d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-finding:756592e82a209bda"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-finding:f51a2054fd04bac8"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "study-finding:0f4d5562440e470d"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:powner-2024-red-light-glucose",
+      "target": "resource:https://onlinelibrary.wiley.com/doi/10.1002/jbio.202300521"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:rickard-2008-sleep-motor-sequence",
       "target": "evidence-relation:rickard-2008-challenges-walker-2003-enhancement"
@@ -44254,6 +44989,111 @@
       "relation": "reviews_resource",
       "source": "study-card:rickard-2008-sleep-motor-sequence",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/18605872/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-relation:rocha-2026-qualifies-powner-2024-glycemia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:diabetes"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:fasting-glucose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:glycemic-control"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:hba1c"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:low-certainty"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:photobiomodulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:postprandial-glucose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "evidence-topic:systematic-review"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:35cc329d934c71b3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:51623b11ab9413f8"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:765c13a6605ac677"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:9ef9deb7458ee5bd"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:b486c2b64905bcd1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-limitation:fcb94e106ea0f262"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-finding:31f20343c5d188e3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-finding:7d1088e7864b7274"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-finding:deca05469cf122bf"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-finding:e7a9ec1a8671a53e"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "study-finding:e57e7f0cc8c6f291"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/41858223/"
     },
     {
       "relation": "has_evidence_topic",
@@ -44426,6 +45266,106 @@
       "target": "resource:https://www.nature.com/articles/s41598-020-63980-y"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:670-nm"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:acute-experiment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:colour-contrast-sensitivity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:morning-light"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:red-light"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:retina"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "evidence-topic:vision"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:6444b84fc52799a0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:694704f831fdb350"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:7e866733b594321f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:874e7e525d88f8e3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:a41f5440e4d73b1d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-limitation:ba8a9e4bf8f4b6f1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-finding:091ae2adb1b31b9e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-finding:9c5d170b1ad3f8cb"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-finding:a8c7d0fc2c9fbda4"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-finding:f600ea2a19e5328b"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "study-finding:f67c8bc0a6c39b2a"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "resource:https://www.nature.com/articles/s41598-021-02311-1"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "target": "resource:https://www.nature.com/articles/s41598-021-02311-1#citeas"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:singh-2024-health-habit-formation-systematic-review",
       "target": "evidence-relation:singh-2024-qualifies-lally-2010-sixty-six-day-estimate"
@@ -44549,6 +45489,101 @@
       "relation": "reviews_resource",
       "source": "study-card:singh-2024-health-habit-formation-systematic-review",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/39685110/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-relation:skobowiat-2017-qualifies-powner-2024-light-spectrum-generalization"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:hpa-axis"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:immunosuppression"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:mouse-study"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:neuroendocrine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:skin"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:spectrum-mismatch"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "evidence-topic:ultraviolet-b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:719d971971accf98"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:7c398c7b7ee9ad99"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:9bf9fdb05cec67fc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:b79ae8066bf12f58"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:c58c46c1cad4246c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-limitation:e78057991500c4f2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-finding:3cd044b3d4041121"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-finding:a40a7b59c2408b05"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-finding:f044fb8cb968f678"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "study-finding:6674680b78f01086"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "target": "resource:https://onlinelibrary.wiley.com/doi/10.1111/php.12642"
     },
     {
       "relation": "has_evidence_topic",
@@ -45131,8 +46166,48 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T07:21:58.101328+00:00",
+  "generated_at": "2026-08-31T08:11:03.606350+00:00",
   "nodes": [
+    {
+      "aliases": [
+        "红光面板 值得买吗",
+        "红光面罩 要不要买",
+        "红光 线粒体 血糖",
+        "红光 抗衰",
+        "红光 视力",
+        "red light panel worth buying",
+        "led mask evidence",
+        "photobiomodulation device"
+      ],
+      "baseline_checks": [
+        "只保留一个直接结果，不把线粒体、循环或炎症等机制当作目标",
+        "把具体商品规格与支持同一适应证的研究设备逐项对照；缺少关键参数即判为不匹配",
+        "若目标是睡眠，先检查夜间环境光与作息，不把睡眠期加一台灯当作解决方案"
+      ],
+      "escalation": [
+        "视力骤变、眼痛、严重灼伤或急性神经症状立即寻求急诊/眼科评估",
+        "确诊眼病由眼科、皮肤适应证由皮肤科、血糖异常由相应临床团队评估",
+        "正在使用可能光敏的药物或有相关疾病时，先由医生/药师确认风险"
+      ],
+      "first_questions": [
+        "你真正想改善的一个现实结果是什么：睡眠、确诊皮肤/眼科问题，还是泛健康/血糖/抗衰/表现？",
+        "你考虑的具体设备是否公开波长、辐照度、测量距离、照射面积和监管 intended use？",
+        "是否有眼病、光敏性皮肤问题、糖尿病、正在使用光敏药物，或医生已经给出治疗计划？"
+      ],
+      "id": "action-playbook:decide-whether-a-red-light-device-is-worth-buying",
+      "label": "判断红光面板或LED面罩是否值得买",
+      "last_reviewed": "2026-08-31",
+      "not_for": [
+        "视力骤变、眼痛、严重灼伤或其他急症的自助处理",
+        "用红光替代糖尿病、眼病、皮肤病、癌症或其他疾病的诊断与治疗",
+        "儿童、孕期、光敏性疾病、光敏药物或复杂慢病的远程照射方案",
+        "推荐具体品牌、波长、辐照度、距离、时长或频率"
+      ],
+      "safe_summary": "如果目标是泛健康、长寿、血糖、脑功能或‘优化线粒体’，当前证据不足以支持购买红光设备；若目标是睡眠，先处理真实光暗环境。只有明确临床适应证、研究与具体设备物理输出匹配，并经相关专业人员确认时才继续；不要自行直射眼睛，也不要发明通用照射协议。",
+      "scope": "适用于一般成人评估红光、近红外面板或LED面罩的非紧急购买决定；先区分睡眠光环境、特定皮肤/眼科临床适应证和泛健康诉求，不提供个人照射剂量",
+      "type": "action-playbook",
+      "user_goal": "把红光的机制和名人协议转成一个不会误花钱、误伤眼睛或延误治疗的明确购买决定"
+    },
     {
       "aliases": [
         "冷暴露",
@@ -45449,6 +46524,60 @@
       "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
       "type": "action-playbook",
       "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "adaptation": "专业意见或设备匹配不足时不购买；即使购买，也只按获确认的具体方案复诊，不用主观发热或刺痛判断有效",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
+      "label": "只有明确临床适应证且设备匹配时，才与相关专业人员确认具体型号、监管用途、药物/眼皮肤风险、成本与退出条件",
+      "metric": "专业建议是否明确对应同一适应证和具体型号；设备是否有可验证参数、退货/停用条件和可观察临床目标",
+      "minimum_version": "带上疾病目标、完整研究、设备说明和当前药物向皮肤科/眼科等专业人员提问；不自行直射眼睛、不在睡眠期用面板替代黑暗、不改变糖尿病或其他治疗",
+      "playbook_id": "decide-whether-a-red-light-device-is-worth-buying",
+      "priority": 3,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "任何眼痛、视力变化、灼伤、水疱、明显红肿或症状恶化",
+        "需要停药、改药、跳过复诊或直视高强度设备才能执行"
+      ],
+      "trigger": "前两步没有得出明确不买，且目标涉及已诊断皮肤或眼科问题时",
+      "type": "action-step",
+      "why": "直接眼照研究样本小、未盲法且长期安全未知；老年与多疾病综述方案异质，不能远程发明通用波长、时长或频率"
+    },
+    {
+      "adaptation": "若找不到独立规格或同适应证人体结局，停止比较品牌并保留不买决定；若存在匹配，带论文和型号进入专业评估",
+      "classification": "evidence-supported",
+      "id": "action-step:decide-whether-a-red-light-device-is-worth-buying:require-exact-evidence-device-match",
+      "label": "要求适应证、人群、波长、辐照度、几何和现实结局与研究逐项匹配；任一关键项不明即不把论文当作购买证据",
+      "metric": "六项匹配中有几项可由一手论文与独立规格实测确认；不是用营销页自行补齐",
+      "minimum_version": "核对研究是不是同一种疾病/目标、同一类人、同一物理输出和同一直接结局；只有颜色相同、机制相似或一次代理指标改善均算不匹配",
+      "playbook_id": "decide-whether-a-red-light-device-is-worth-buying",
+      "priority": 2,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "需要自行猜测辐照度、距离、照射面积、眼部暴露或剂量",
+        "证据只来自动物、机制、单项急性代理指标、品牌赞助或无对照前后照"
+      ],
+      "trigger": "卖家、节目或帖子引用‘研究证明红光有效’时",
+      "type": "action-step",
+      "why": "小型急性研究和皮肤适应证综述使用高度特定设备，而消费面罩实测显示相同颜色标签也可能有不同光谱和辐照度"
+    },
+    {
+      "adaptation": "若仍同时追求多个结果，继续拆分并按最重要结果判断；不要因某一机制同时覆盖多个器官就合并目标",
+      "classification": "framework-inference",
+      "id": "action-step:decide-whether-a-red-light-device-is-worth-buying:route-one-outcome-before-shopping",
+      "label": "先把购买理由归入一个非损失路径，并立即给出默认决定",
+      "metric": "是否能用一句话写出一个直接结果和对应的买/不买/待专业评估决定",
+      "minimum_version": "只写一个目标：睡眠/昼夜节律→先不买、处理真实光暗环境；泛健康/长寿/血糖/脑功能→当前证据下不买；明确皮肤或眼科适应证→进入专业与设备匹配",
+      "playbook_id": "decide-whether-a-red-light-device-is-worth-buying",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "出现视力骤变、眼痛、严重皮肤反应或其他急症信号",
+        "购买计划会延误确诊、复诊、处方治疗或必要监测"
+      ],
+      "trigger": "出现‘红光能改善很多东西，所以是否该买’的冲动时",
+      "type": "action-step",
+      "why": "睡眠期环境光、局部PBM和不同波段不是同一种干预；不先定义结果，就会把机制、颜色和商品文案混成万能疗效"
     },
     {
       "adaptation": "若没有清楚的现实收益或代价更大，回到不做；若是竞技恢复需求，把具体安排交给熟悉项目的运动医学/训练专业人员，不从一般健康研究推剂量",
@@ -51110,6 +52239,23 @@
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
     },
     {
+      "boundary": "设备实测没有临床疗效结局且只有4款，不能据此给品牌排名或宣布所有产品无效；它只否定颜色名称等于物理和临床等效的假设。",
+      "id": "evidence-relation:baeza-2026-qualifies-jagdeo-2018-device-equivalence",
+      "label": "研究中某一LED波段和方案的皮肤结果，能否仅凭相同颜色标签外推到消费面罩",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42080982/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6099480/",
+        "https://doi.org/10.1007/s43630-026-00908-x"
+      ],
+      "rationale": "Baeza-Moyano等实测4款商业面罩发现，相同颜色标签仍对应不同峰值、辐照度和空间分布，厂商资料也常缺少剂量与风险参数。因此，Jagdeo综述中的具体设备结果不能靠‘都是红光’迁移到任意商品。",
+      "relation": "qualifies",
+      "relation_id": "baeza-2026-qualifies-jagdeo-2018-device-equivalence",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "target_review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "该关系保留冷水淋浴可能改变缺勤行为或某些生活结果的信号；它不裁决机制，也不表示参与者应该带病工作。",
       "id": "evidence-relation:buijze-2016-qualifies-cain-2025-immunity",
       "label": "冷水淋浴降低缺勤是否证明免疫增强、感染减少或患病时间缩短",
@@ -51141,6 +52287,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "cain-2025-cold-water-wellbeing-review",
       "target_review_id": "sramek-2000-cold-water-physiology",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "两篇综述存在作者重叠，不能称为独立复制；该关系也不表示所有家用设备无效，只要求疾病、型号、参数和临床结局匹配。",
+      "id": "evidence-relation:cohen-2021-qualifies-jagdeo-2018-home-device-transfer",
+      "label": "临床皮肤科LED试验的适应证级证据，能否直接迁移到任意家庭面罩或家用设备",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8918178/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6099480/",
+        "https://doi.org/10.1007/s00403-021-02231-0"
+      ],
+      "rationale": "Jagdeo等按具体皮肤适应证总结31项LED RCT；Cohen等的37项家庭设备研究中只有19项RCT，长期疗效、安全和设备参数仍不足。临床LED类别证据不能自动覆盖不同输出的家用产品。",
+      "relation": "qualifies",
+      "relation_id": "cohen-2021-qualifies-jagdeo-2018-home-device-transfer",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "cohen-2021-home-dermatology-devices-review",
+      "target_review_id": "jagdeo-2018-led-dermatology-review",
       "type": "evidence-relation"
     },
     {
@@ -51198,6 +52361,23 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "该关系不否定特定眼科或老年适应证值得继续研究；它不授权直接眼照，也不能给出个人波长、剂量或设备建议。",
+      "id": "evidence-relation:godaert-2024-qualifies-shinhmar-2021-aging-vision",
+      "label": "健康成人短期色彩对比变化，能否支持老年人视觉、神经退行或一般抗衰用途",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11274037/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8613193/",
+        "https://doi.org/10.3390/biomedicines12071409"
+      ],
+      "rationale": "Shinhmar等仅测试20名健康成人的一次直眼暴露和短期色彩对比代理指标；Godaert等对65岁以上人群的10项研究发现方案全部不同，神经退行性疾病结果一半阳性一半无效。因此，视觉代理指标不能承担老年健康或抗衰购买结论。",
+      "relation": "qualifies",
+      "relation_id": "godaert-2024-qualifies-shinhmar-2021-aging-vision",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "godaert-2024-pbm-older-adults-review",
+      "target_review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "这不是独立复制：两篇研究作者完全重叠，样本都来自大学本科生实验室；材料与设计虽不同，但终测仍与练习提取形式接近，不能据此保证跨题型迁移或真实课程中的同等效应。",
       "id": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval",
       "label": "在首次学习或首次答对后继续练习提取，是否比继续阅读材料更有利于一周后的记忆保持",
@@ -51230,6 +52410,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "malta-2021-regular-cold-water-training-adaptation-review",
       "target_review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "该关系不比较两项研究的净疗效，也不给卧室照度或红光剂量；它要求把昼夜时机和设备物理参数放回决策。",
+      "id": "evidence-relation:mason-2022-qualifies-powner-2024-light-context",
+      "label": "一种时间和环境中的光照结果，能否支持‘更多光普遍有益’或用红光设备替代暗夜环境",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8944904/",
+        "https://pubmed.ncbi.nlm.nih.gov/38378043/",
+        "https://doi.org/10.1073/pnas.2113290119"
+      ],
+      "rationale": "Mason等发现睡眠期间100 lx房间光增加自主神经活动和次晨胰岛素抵抗指标；Powner等研究的是白天特定部位670 nm短时照射。时间、光谱、强度、暴露面积和结局都改变了干预含义，不能汇总为‘光越多越好’。",
+      "relation": "qualifies",
+      "relation_id": "mason-2022-qualifies-powner-2024-light-context",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "mason-2022-light-during-sleep",
+      "target_review_id": "powner-2024-red-light-glucose",
       "type": "evidence-relation"
     },
     {
@@ -51283,6 +52480,23 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "该关系不否定特定PBM方案可能影响部分血糖指标，也不裁决未来高质量试验；它反对停药、改药、治疗承诺和跨设备外推。",
+      "id": "evidence-relation:rocha-2026-qualifies-powner-2024-glycemia",
+      "label": "30名健康成人一次670 nm照射后的急性OGTT变化，能否支持糖尿病治疗或泛健康设备购买",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41858223/",
+        "https://pubmed.ncbi.nlm.nih.gov/38378043/",
+        "https://doi.org/10.1177/25785478261433321"
+      ],
+      "rationale": "Powner等提供小型健康人急性代理指标信号；Rocha等在糖尿病人群系统综述中仍把总体证据确定性评为极低至低，并要求标准化方案和更严格试验。因此，单次OGTT信号不能升级为糖尿病临床收益或消费级设备购买依据。",
+      "relation": "qualifies",
+      "relation_id": "rocha-2026-qualifies-powner-2024-glycemia",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "rocha-2026-pbm-glycemic-control-review",
+      "target_review_id": "powner-2024-red-light-glucose",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "综述中的 Lally 数据并非新样本，其他研究也存在高偏倚、自报和阈值不一；该限定推翻的是固定期限叙事，不是否认一些人可能在约两个月达到较稳定自动化。",
       "id": "evidence-relation:singh-2024-qualifies-lally-2010-sixty-six-day-estimate",
       "label": "Lally 研究的 66 天估计能否作为一般人的习惯形成期限或平均规律",
@@ -51315,6 +52529,23 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "singh-2024-health-habit-formation-systematic-review",
       "target_review_id": "lally-2010-real-world-habit-formation",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "该关系不是两项研究的效果矛盾比较，也不表示UVB结果能预测红光效果；它专门阻止光谱、物种和结局错配。",
+      "id": "evidence-relation:skobowiat-2017-qualifies-powner-2024-light-spectrum-generalization",
+      "label": "不同波段的光引发机制或代理指标变化，能否被合并成‘光疗能优化全身免疫和代谢’",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5366283/",
+        "https://pubmed.ncbi.nlm.nih.gov/38378043/",
+        "https://doi.org/10.1111/php.12642"
+      ],
+      "rationale": "Skobowiat等使用290–320 nm UVB在小鼠中观察到神经内分泌和免疫抑制，而Powner等使用670 nm红光在健康人中观察一次OGTT变化。光谱、物种、组织和结局均不同，证明‘光’不是可直接合并的单一干预类别。",
+      "relation": "qualifies",
+      "relation_id": "skobowiat-2017-qualifies-powner-2024-light-spectrum-generalization",
+      "reviewed_at": "2026-08-31",
+      "source_review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "target_review_id": "powner-2024-red-light-glucose",
       "type": "evidence-relation"
     },
     {
@@ -51363,6 +52594,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:670-nm",
+      "label": "670-nm",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:acne",
+      "label": "acne",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:actigraphy",
       "label": "actigraphy",
       "type": "evidence-topic"
@@ -51373,8 +52614,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-experiment",
+      "label": "acute-experiment",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:acute-physiology",
       "label": "acute-physiology",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:acute-surrogate",
+      "label": "acute-surrogate",
       "type": "evidence-topic"
     },
     {
@@ -51385,6 +52636,11 @@
     {
       "id": "evidence-topic:aerobic-exercise",
       "label": "aerobic-exercise",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:age-related-macular-degeneration",
+      "label": "age-related-macular-degeneration",
       "type": "evidence-topic"
     },
     {
@@ -51430,6 +52686,11 @@
     {
       "id": "evidence-topic:binaural-beats",
       "label": "binaural-beats",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:blood-glucose",
+      "label": "blood-glucose",
       "type": "evidence-topic"
     },
     {
@@ -51498,8 +52759,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:colour-contrast-sensitivity",
+      "label": "colour-contrast-sensitivity",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:consumer-device",
+      "label": "consumer-device",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:context-cues",
       "label": "context-cues",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:controlled-laboratory-study",
+      "label": "controlled-laboratory-study",
       "type": "evidence-topic"
     },
     {
@@ -51510,6 +52786,21 @@
     {
       "id": "evidence-topic:cued-recall",
       "label": "cued-recall",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:dermatology",
+      "label": "dermatology",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:device-equivalence",
+      "label": "device-equivalence",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:diabetes",
+      "label": "diabetes",
       "type": "evidence-topic"
     },
     {
@@ -51563,6 +52854,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:engineering-measurement",
+      "label": "engineering-measurement",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:environment",
       "label": "environment",
       "type": "evidence-topic"
@@ -51585,6 +52881,11 @@
     {
       "id": "evidence-topic:exercise-recovery",
       "label": "exercise-recovery",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:fasting-glucose",
+      "label": "fasting-glucose",
       "type": "evidence-topic"
     },
     {
@@ -51618,6 +52919,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:glycemic-control",
+      "label": "glycemic-control",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:gratitude",
       "label": "gratitude",
       "type": "evidence-topic"
@@ -51633,13 +52939,43 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:hba1c",
+      "label": "hba1c",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:health-behavior",
       "label": "health-behavior",
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:heart-rate",
+      "label": "heart-rate",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:heart-rate-variability",
+      "label": "heart-rate-variability",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:herpes",
+      "label": "herpes",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:hippocampus",
       "label": "hippocampus",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:home-device",
+      "label": "home-device",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:hpa-axis",
+      "label": "hpa-axis",
       "type": "evidence-topic"
     },
     {
@@ -51658,8 +52994,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:immunosuppression",
+      "label": "immunosuppression",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:inflammation",
       "label": "inflammation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:insulin-resistance",
+      "label": "insulin-resistance",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:irradiance",
+      "label": "irradiance",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:laser",
+      "label": "laser",
       "type": "evidence-topic"
     },
     {
@@ -51670,6 +53026,21 @@
     {
       "id": "evidence-topic:learning-techniques",
       "label": "learning-techniques",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:led",
+      "label": "led",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:led-mask",
+      "label": "led-mask",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:light-during-sleep",
+      "label": "light-during-sleep",
       "type": "evidence-topic"
     },
     {
@@ -51685,6 +53056,11 @@
     {
       "id": "evidence-topic:long-term-retention",
       "label": "long-term-retention",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:low-certainty",
+      "label": "low-certainty",
       "type": "evidence-topic"
     },
     {
@@ -51728,13 +53104,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:mitochondria",
+      "label": "mitochondria",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:mood",
       "label": "mood",
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:morning-light",
+      "label": "morning-light",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:motor-learning",
       "label": "motor-learning",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:mouse-study",
+      "label": "mouse-study",
       "type": "evidence-topic"
     },
     {
@@ -51760,6 +53151,16 @@
     {
       "id": "evidence-topic:nature-exposure",
       "label": "nature-exposure",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:neurodegenerative-disease",
+      "label": "neurodegenerative-disease",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:neuroendocrine",
+      "label": "neuroendocrine",
       "type": "evidence-topic"
     },
     {
@@ -51793,13 +53194,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:oral-glucose-tolerance",
+      "label": "oral-glucose-tolerance",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:pet",
       "label": "pet",
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:photobiomodulation",
+      "label": "photobiomodulation",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:polysomnography",
       "label": "polysomnography",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:postprandial-glucose",
+      "label": "postprandial-glucose",
       "type": "evidence-topic"
     },
     {
@@ -51813,6 +53229,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:protocol-heterogeneity",
+      "label": "protocol-heterogeneity",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:quality-of-life",
       "label": "quality-of-life",
       "type": "evidence-topic"
@@ -51820,6 +53241,11 @@
     {
       "id": "evidence-topic:randomized-controlled-trial",
       "label": "randomized-controlled-trial",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:randomized-controlled-trials",
+      "label": "randomized-controlled-trials",
       "type": "evidence-topic"
     },
     {
@@ -51833,6 +53259,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:red-light",
+      "label": "red-light",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:resistance-training",
       "label": "resistance-training",
       "type": "evidence-topic"
@@ -51840,6 +53271,11 @@
     {
       "id": "evidence-topic:restudy",
       "label": "restudy",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:retina",
+      "label": "retina",
       "type": "evidence-topic"
     },
     {
@@ -51855,6 +53291,11 @@
     {
       "id": "evidence-topic:risk-review",
       "label": "risk-review",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:room-light",
+      "label": "room-light",
       "type": "evidence-topic"
     },
     {
@@ -51878,8 +53319,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:skin",
+      "label": "skin",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sleep",
       "label": "sleep",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-environment",
+      "label": "sleep-environment",
       "type": "evidence-topic"
     },
     {
@@ -51895,6 +53346,16 @@
     {
       "id": "evidence-topic:spatial-memory",
       "label": "spatial-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:spectral-output",
+      "label": "spectral-output",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:spectrum-mismatch",
+      "label": "spectrum-mismatch",
       "type": "evidence-topic"
     },
     {
@@ -51953,8 +53414,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:ultraviolet-b",
+      "label": "ultraviolet-b",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:vision",
+      "label": "vision",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:vocabulary",
       "label": "vocabulary",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:wavelength",
+      "label": "wavelength",
       "type": "evidence-topic"
     },
     {
@@ -51980,6 +53456,11 @@
     {
       "id": "evidence-topic:working-memory",
       "label": "working-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:wound-healing",
+      "label": "wound-healing",
       "type": "evidence-topic"
     },
     {
@@ -63170,13 +64651,13 @@
     },
     {
       "academic_episode_count": "3",
-      "evidence_notes": "",
+      "evidence_notes": "研究级核验：30名健康成人的小型随机急性实验中，特定670 nm上背照射与第二次OGTT血糖曲线下降相关；无糖尿病、HbA1c、长期体重或临床结局，且设备参数高度特定。不能据此购买消费设备、治疗糖尿病或发明通用剂量。证据卡：academic-study-cards.jsonl#powner-2024-red-light-glucose。",
       "id": "resource:https://onlinelibrary.wiley.com/doi/10.1002/jbio.202300521",
       "kind": "academic-or-medical",
       "label": "https://onlinelibrary.wiley.com/doi/10.1002/jbio.202300521",
       "type": "resource",
       "url": "https://onlinelibrary.wiley.com/doi/10.1002/jbio.202300521",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -63220,13 +64701,13 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "",
+      "evidence_notes": "综述级核验：31项皮肤科LED RCT中，痤疮、单纯疱疹和急性伤口愈合为B级，其余多为C/D级；小样本、盲法不足、参数异质和作者设备行业利益关系限制外推。只支持适应证—设备匹配，不支持任意红光面罩或泛健康购买。证据卡：academic-study-cards.jsonl#jagdeo-2018-led-dermatology-review。",
       "id": "resource:https://onlinelibrary.wiley.com/doi/10.1002/lsm.22791",
       "kind": "academic-or-medical",
       "label": "https://onlinelibrary.wiley.com/doi/10.1002/lsm.22791",
       "type": "resource",
       "url": "https://onlinelibrary.wiley.com/doi/10.1002/lsm.22791",
-      "verification_status": "pending"
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "1",
@@ -63520,13 +65001,13 @@
     },
     {
       "academic_episode_count": "2",
-      "evidence_notes": "",
+      "evidence_notes": "研究级核验：48只雌性小鼠的单次UVB实验显示神经内分泌激活及免疫抑制信号；较低剂量和15分钟早期实验未见目标反应。它是UVB动物机制，不是红/NIR人体疗效，不能支持免疫增强、日晒或消费设备协议。证据卡：academic-study-cards.jsonl#skobowiat-2017-uvb-mouse-neuroimmune。",
       "id": "resource:https://onlinelibrary.wiley.com/doi/10.1111/php.12642",
       "kind": "academic-or-medical",
       "label": "https://onlinelibrary.wiley.com/doi/10.1111/php.12642",
       "type": "resource",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/php.12642",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -67424,6 +68905,17 @@
       "verification_status": "verified-review"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：37项家用皮肤设备试验共1,871人，但仅19项RCT，另有16项病例系列；部分特定适应证有信号，长期疗效/安全和设备等效性不足。与Jagdeo综述作者重叠，不算独立复制。证据卡：academic-study-cards.jsonl#cohen-2021-home-dermatology-devices-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/33938981/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/33938981/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33938981/",
+      "verification_status": "verified-review"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "自动书目核验：PMC10332648；《The Relationship of Prolonged Grief Disorder Symptoms With Hemodynamic Response to Grief Recall Among Bereaved Adults.》；期刊未返回；2023。仅确认公开来源身份，不自动证明研究设计、疗效、安全性或与 Episode 主张匹配；研究类型与外推边界需人工核验。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37260255/",
@@ -67435,6 +68927,17 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：老年人PBM系统综述仅纳入10项且所有方案不同，神经退行性疾病研究2项无效、2项阳性；结果分散于伤口、黄斑变性和口干等适应证。不能支持一般抗衰、长寿或通用设备购买。证据卡：academic-study-cards.jsonl#godaert-2024-pbm-older-adults-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/39061982/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/39061982/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39061982/",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部系统综述级核验：20 项研究、2,601 人；仅 4 项报告形成时长，个体范围 4–335 天，未合并统一时长。前后自动化合并 SMD 0.69（95% CI 0.49–0.88）且 I²=87%，不是受控因果效应；多项研究高偏倚、自报且异质。证据卡：academic-study-cards.jsonl#singh-2024-health-habit-formation-systematic-review。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/39685110/",
       "kind": "academic-or-medical",
@@ -67443,6 +68946,28 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39685110/",
       "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部综述级核验：糖尿病PBM系统综述报告部分血糖/HbA1c改善信号，但总体证据确定性极低至低且方案异质，摘要未给统一纳入数。不能替代糖尿病治疗、支持停药或把健康人急性研究变成消费设备购买依据。证据卡：academic-study-cards.jsonl#rocha-2026-pbm-glycemic-control-review。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/41858223/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/41858223/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41858223/",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部工程核验：4款消费LED面罩在相同颜色标签下仍有不同光谱峰值、辐照度和空间分布，厂商文件缺少关键剂量/风险参数。研究无临床结局且样本仅4款，但足以否定‘同色即等效’的购买假设。证据卡：academic-study-cards.jsonl#baeza-moyano-2026-commercial-led-mask-spectra。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/42080982/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/42080982/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42080982/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -87796,7 +89321,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "结果是视觉特定、探索性和短期的；不等于全身代谢、认知或疾病治疗，设备剂量与眼部安全必须单独评估（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "研究级核验：20名健康成人的上午单次3分钟670 nm直达眼部实验报告短期色彩对比阈值改善，但下午小组无同样结果，且无假照射盲法、样本小、结局视觉特定。不能外推为一般视力治疗、全身健康或消费设备直眼协议。证据卡：academic-study-cards.jsonl#shinhmar-2021-red-light-colour-contrast。",
       "id": "resource:https://www.nature.com/articles/s41598-021-02311-1",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41598-021-02311-1",
@@ -87806,7 +89331,7 @@
     },
     {
       "academic_episode_count": "1",
-      "evidence_notes": "结果是视觉特定、探索性和短期的；不等于全身代谢、认知或疾病治疗，设备剂量与眼部安全必须单独评估（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
+      "evidence_notes": "研究级核验：20名健康成人的上午单次3分钟670 nm直达眼部实验报告短期色彩对比阈值改善，但下午小组无同样结果，且无假照射盲法、样本小、结局视觉特定。不能外推为一般视力治疗、全身健康或消费设备直眼协议。证据卡：academic-study-cards.jsonl#shinhmar-2021-red-light-colour-contrast。",
       "id": "resource:https://www.nature.com/articles/s41598-021-02311-1#citeas",
       "kind": "academic-or-medical",
       "label": "https://www.nature.com/articles/s41598-021-02311-1#citeas",
@@ -90513,13 +92038,13 @@
     },
     {
       "academic_episode_count": "4",
-      "evidence_notes": "",
+      "evidence_notes": "研究级核验：20名健康成人的一夜实验显示，睡眠期100 lx房间光提高夜间心率并增加次晨胰岛素抵抗指标，但葡萄糖水平无显著组间差异。它是普通夜间环境光，不是红光/PBM，不能支持购买红光设备或长期疾病结论。证据卡：academic-study-cards.jsonl#mason-2022-light-during-sleep。",
       "id": "resource:https://www.pnas.org/doi/10.1073/pnas.2113290119",
       "kind": "academic-or-medical",
       "label": "https://www.pnas.org/doi/10.1073/pnas.2113290119",
       "type": "resource",
       "url": "https://www.pnas.org/doi/10.1073/pnas.2113290119",
-      "verification_status": "pending"
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -99419,6 +100944,34 @@
       "url": "https://zuckermaninstitute.columbia.edu/richard-axel-md"
     },
     {
+      "comparator": "设备之间、标称颜色与实测输出之间、厂商说明与物理测量之间比较",
+      "doi": "10.1007/s43630-026-00908-x",
+      "evidence_level": "B-Engineering（4款消费级LED面罩的光谱实测）",
+      "id": "study-card:baeza-moyano-2026-commercial-led-mask-spectra",
+      "intervention_exposure": "在不同标称颜色/模式下测量光谱峰值、辐照度和空间分布",
+      "label": "Spectral emission variability in commercial led masks for cosmetic use",
+      "outcomes": [
+        "光谱峰值与波段",
+        "辐照度和空间均匀性",
+        "厂商安全/剂量文档完整性",
+        "标称颜色与真实物理输出的一致性"
+      ],
+      "population": "4款价格约13–200欧元的消费级LED面罩；研究对象是设备而非人体参与者",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42080982/",
+        "https://doi.org/10.1007/s43630-026-00908-x"
+      ],
+      "result_summary": "4款面罩即使使用相同颜色标签，实测峰值、辐照度和空间分布也明显不同；厂商资料普遍缺少光谱辐照度、能量、吸收和风险信息，并出现物理上可疑的波长标注。研究证明设备不可仅凭颜色名称视为等效，但不评价临床疗效。",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "购买前必须看到可核实的波长、辐照度、距离、照射面积和 intended use，并与同一适应证研究匹配；只有‘红色’或‘七色’标签时，默认视为证据不匹配。",
+      "sample_size": 4,
+      "source_scope": "external-context",
+      "study_design": "对4款市场销售的美容LED面罩进行实验室光谱与辐照度测量，并与厂商文件、标称颜色和价格信息比较；不是临床疗效试验",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "每日约 13 分钟不同的 Radiolab 科学播客，持续 8 周",
       "doi": "10.1016/j.bbr.2018.08.023",
       "evidence_level": "A-Direct（小样本人体随机主动对照研究）",
@@ -99566,6 +101119,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "假设备、标准治疗、基线或无对照，随试验设计而异",
+      "doi": "10.1007/s00403-021-02231-0",
+      "evidence_level": "A-Synthesis（37项家庭皮肤设备试验的系统综述）",
+      "id": "study-card:cohen-2021-home-dermatology-devices-review",
+      "intervention_exposure": "家庭使用的LED、激光、强脉冲光、射频和其他皮肤设备，参数及培训不同",
+      "label": "Home-based devices in dermatology: a systematic review of safety and efficacy",
+      "outcomes": [
+        "具体皮肤适应证的有效性",
+        "短期不良反应与耐受性",
+        "依从性和家庭可用性",
+        "长期疗效与安全证据的完整性"
+      ],
+      "population": "痤疮、脱发、光老化、银屑病及其他皮肤问题的家庭设备使用者",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8918178/",
+        "https://pubmed.ncbi.nlm.nih.gov/33938981/",
+        "https://doi.org/10.1007/s00403-021-02231-0"
+      ],
+      "result_summary": "部分家庭设备在特定适应证中显示可能有效且短期耐受，但证据由有限RCT和大量病例系列构成；综述强调长期疗效、安全性及更严格试验仍不足。",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "家用设备应按‘具体疾病—具体型号—具体参数—具体临床结局’判断；看起来都是红光或LED不代表等效，泛美容和泛健康购买默认不成立。",
+      "sample_size": "37项试验、合计1,871名参与者；包括19项RCT、16项病例系列和2项非随机对照研究，设备与适应证不同",
+      "source_scope": "external-context",
+      "study_design": "系统综述家庭使用皮肤科设备的临床试验，共纳入37项：19项RCT、16项病例系列和2项非随机对照研究",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "各技术相对不练习、重复阅读/复习或其他学习策略；同时比较练习测试的格式、次数、间隔与是否提供正确答案反馈",
       "doi": "10.1177/1529100612453266",
       "evidence_level": "A-Synthesis（十种学习技术的结构化叙述性综述）",
@@ -99655,6 +101237,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "假照射、标准治疗、基线或其他对照，随研究而异",
+      "doi": "10.3390/biomedicines12071409",
+      "evidence_level": "A-Synthesis（老年人PBM的10项研究系统综述）",
+      "id": "study-card:godaert-2024-pbm-older-adults-review",
+      "intervention_exposure": "不同波长、功率、剂量、部位、频率和疗程的光生物调节",
+      "label": "Efficacy of Photobiomodulation Therapy in Older Adults: A Systematic Review",
+      "outcomes": [
+        "神经退行性疾病的认知或功能结局",
+        "伤口愈合",
+        "年龄相关性黄斑变性相关结局",
+        "口干与其他特定临床结局"
+      ],
+      "population": "65岁以上、涉及神经退行性疾病、伤口、年龄相关性黄斑变性和口干等不同临床问题的成人",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11274037/",
+        "https://pubmed.ncbi.nlm.nih.gov/39061982/",
+        "https://doi.org/10.3390/biomedicines12071409"
+      ],
+      "result_summary": "10项研究的方案全部不同；神经退行性疾病研究2项无效、2项阳性，伤口研究3项中2项阳性，另有黄斑变性和口干研究报告阳性。综述认为有潜力作为补充治疗，但必须统一参数、适应证和人群后再判断。",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "老年或‘抗衰’不是一个适应证；只有明确疾病目标、匹配研究设备和专业监督时才讨论PBM，不能因若干不同疾病的小研究购买泛用面板。",
+      "sample_size": "10项老年人PBM研究；所有方案不同，适应证和样本量分散，不能形成单一总效应",
+      "source_scope": "external-context",
+      "study_design": "系统检索成人65岁以上PBM研究；406条记录筛选后纳入10项研究，按适应证、设备参数与临床结果叙述整合",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "同一参与者的未加工菜单阶段，所提供饮食按多项营养指标设计匹配",
       "doi": "10.1016/j.cmet.2019.05.008",
       "evidence_level": "A-Direct（20 名成人、NIH 住院随机交叉喂养试验）",
@@ -99712,6 +101323,35 @@
       "study_design": "六周线上感恩写作对控制写作的平行组随机对照研究，干预前后采血，干预后完成 fMRI 任务",
       "type": "study-card",
       "verification_status": "verified-study"
+    },
+    {
+      "comparator": "安慰/假照射、标准治疗、基线或其他光疗，随试验而异",
+      "doi": "10.1002/lsm.22791",
+      "evidence_level": "A-Synthesis（31项皮肤科LED随机对照试验的系统综述）",
+      "id": "study-card:jagdeo-2018-led-dermatology-review",
+      "intervention_exposure": "不同颜色、波长、能量密度、功率密度、照射时间和疗程的LED治疗",
+      "label": "Light-emitting diodes in dermatology: A systematic review of randomized controlled trials",
+      "outcomes": [
+        "痤疮病变与严重度",
+        "单纯疱疹复发或愈合",
+        "急性伤口愈合",
+        "炎症、红斑、皱纹、瘢痕及其他皮肤结局"
+      ],
+      "population": "痤疮、单纯疱疹、急性伤口及多种其他皮肤状况的临床参与者；人群和适应证高度异质",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6099480/",
+        "https://pubmed.ncbi.nlm.nih.gov/29356026/",
+        "https://doi.org/10.1002/lsm.22791"
+      ],
+      "result_summary": "综述将痤疮、单纯疱疹和急性伤口愈合评为B级证据，其余多数用途为C或D级；结果支持按具体适应证和具体设备解释，而不是‘红光对皮肤普遍有效’。",
+      "review_id": "jagdeo-2018-led-dermatology-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "只在明确皮肤适应证下查相同设备参数与临床结局；一般美容或泛健康诉求不能把综述的B级适应证改写成任意LED面罩值得购买。",
+      "sample_size": "31项皮肤科LED随机对照试验；各适应证样本与方案不同，综述没有可合并的单一总样本量",
+      "source_scope": "episode-linked",
+      "study_design": "系统检索皮肤科LED随机对照试验并按疾病、设备参数和证据等级归类；共纳入31项RCT",
+      "type": "study-card",
+      "verification_status": "verified-review"
     },
     {
       "comparator": "EPA 单药、氟西汀单药与联合治疗三组相互比较；没有纯安慰剂组",
@@ -99826,6 +101466,34 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "两个实验夜均处于<3 lx暗光",
+      "doi": "10.1073/pnas.2113290119",
+      "evidence_level": "A-Direct（20 名健康成人的一夜受控实验）",
+      "id": "study-card:mason-2022-light-during-sleep",
+      "intervention_exposure": "第二个实验夜在睡眠期间暴露于100 lx房间光",
+      "label": "Light exposure during sleep impairs cardiometabolic function",
+      "outcomes": [
+        "夜间心率和心率变异性",
+        "睡眠结构与主观睡眠",
+        "次晨口服葡萄糖耐量中的葡萄糖、胰岛素及胰岛素抵抗指标"
+      ],
+      "population": "年龄约19–36岁的健康成人；每组10人，排除睡眠、心代谢及相关用药问题",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8944904/",
+        "https://pubmed.ncbi.nlm.nih.gov/35286195/",
+        "https://doi.org/10.1073/pnas.2113290119"
+      ],
+      "result_summary": "一夜100 lx睡眠期房间光提高夜间心率、降低部分心率变异性指标，并使次晨胰岛素水平和胰岛素抵抗指标更高；它检验的是夜间环境光，不是局部红光或近红外光生物调节。",
+      "review_id": "mason-2022-light-during-sleep",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "若目标是睡眠和昼夜节律，先减少睡眠期不必要环境光，而不是购买红光设备；这项研究不支持把任何颜色的光都当作同一种干预，也不能据此治疗代谢疾病。",
+      "sample_size": 20,
+      "source_scope": "episode-linked",
+      "study_design": "20 名健康成人先在暗环境睡一夜，第二夜随机继续处于<3 lx暗光或暴露于100 lx房间光；实验室测量睡眠、自主神经和次晨口服葡萄糖耐量",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "被动恢复，不合并主动恢复、压缩、营养补充等复合干预",
       "doi": "10.1007/s40279-022-01644-9",
       "evidence_level": "A-Synthesis（52 项运动后冷水浸泡试验的系统综述、荟萃与元回归）",
@@ -99887,6 +101555,33 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "同样访视流程但不接受光照，并参考每人的首次对照口服葡萄糖耐量试验",
+      "doi": "10.1002/jbio.202300521",
+      "evidence_level": "A-Direct（30 名健康成人的小型随机急性实验）",
+      "id": "study-card:powner-2024-red-light-glucose",
+      "intervention_exposure": "第二次葡萄糖负荷前45分钟，对上背部约800 cm²区域进行15分钟670 nm照射，报告辐照度40 mW/cm²",
+      "label": "Light stimulation of mitochondria reduces blood glucose levels",
+      "outcomes": [
+        "口服葡萄糖耐量试验期间血糖曲线下面积",
+        "相对基线的葡萄糖升幅",
+        "最大血糖峰值"
+      ],
+      "population": "健康成人；光照组15人、无光组15人，无代谢疾病或相关药物；未收集BMI或身体脂肪指标",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38378043/",
+        "https://doi.org/10.1002/jbio.202300521"
+      ],
+      "result_summary": "与无光组相比，670 nm组第二次试验的总血糖曲线下面积约低7.3%，基线校正后的血糖升幅约低27.7%，最大血糖峰值约低7.5%。这是一次健康人急性代理指标实验，不是糖尿病疗效、长期代谢或消费设备试验。",
+      "review_id": "powner-2024-red-light-glucose",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这项小实验只提供健康人一次特定670 nm照射后急性血糖曲线变化的初步信号；泛健康、减重、长寿或糖尿病目标不应据此购买设备、停药或自定照射协议。",
+      "sample_size": 30,
+      "source_scope": "episode-linked",
+      "study_design": "30名健康成人先完成一次对照口服葡萄糖耐量试验，第二次访视随机分到670 nm光照或无光安慰对照；因作者预期效应持续5–7天而未采用交叉设计",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "实验 1 比较清醒与睡眠间隔；实验 2 比较集中与分散练习，但所有人均跨一晚睡眠且没有独立清醒对照",
       "doi": "10.1037/0278-7393.34.4.834",
       "evidence_level": "A-Direct（两项人体实验与方法学重分析）",
@@ -99914,6 +101609,34 @@
       "study_design": "实验 1 将 53 名年轻成人随机分到 12 小时清醒或跨夜睡眠组，重分析传统 30 秒集中敲击区块；实验 2 将 164 人随机分到等总练习量的 30 秒集中或 10 秒分散练习，并在 24 小时后复测",
       "type": "study-card",
       "verification_status": "verified-study"
+    },
+    {
+      "comparator": "假照射、常规治疗或其他对照，随纳入研究而异",
+      "doi": "10.1177/25785478261433321",
+      "evidence_level": "A-Synthesis（糖尿病PBM系统综述；摘要报告证据确定性极低至低）",
+      "id": "study-card:rocha-2026-pbm-glycemic-control-review",
+      "intervention_exposure": "不同设备、波长、部位、剂量、频率和疗程的光生物调节",
+      "label": "Photobiomodulation Therapy to Improve Glycemic Control in People with Diabetes Mellitus: A Systematic Review",
+      "outcomes": [
+        "空腹血糖",
+        "餐后血糖",
+        "糖化血红蛋白HbA1c",
+        "证据确定性和方案一致性"
+      ],
+      "population": "糖尿病患者；具体类型、病程、药物与合并症随纳入研究而异",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41858223/",
+        "https://doi.org/10.1177/25785478261433321"
+      ],
+      "result_summary": "摘要报告PBM与部分空腹、餐后血糖和HbA1c改善相关，但总体证据确定性为极低至低，并明确要求更严格试验和标准化方案。综述不能把小型急性健康人实验升级为可靠糖尿病治疗。",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "糖尿病或血糖异常者不应据此购买红光设备、停药或改剂量；若作为临床补充治疗讨论，应由医生基于完整综述、具体设备和监测计划判断。",
+      "sample_size": "系统综述；PubMed摘要未报告统一纳入研究数或总样本量，不能据此虚构分母",
+      "source_scope": "external-context",
+      "study_design": "糖尿病人群PBM干预的系统综述，评估空腹、餐后血糖与HbA1c等结局并对证据确定性分级；PubMed摘要未报告统一纳入研究数或总样本量",
+      "type": "study-card",
+      "verification_status": "verified-review"
     },
     {
       "comparator": "时间匹配或机会数匹配的额外复习条件；实验 2 比较 SSSS、SSST 与 STTT 三种学习—测试序列",
@@ -99971,6 +101694,35 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "每人的暴露前基线、独立无光时间对照，以及下午暴露时段探索",
+      "doi": "10.1038/s41598-021-02311-1",
+      "evidence_level": "A-Direct（20名健康成人的小型未盲法视觉实验）",
+      "id": "study-card:shinhmar-2021-red-light-colour-contrast",
+      "intervention_exposure": "上午单次3分钟670 nm光直接进入双眼；另有下午暴露探索",
+      "label": "Weeklong improved colour contrasts sensitivity after single 670 nm exposures associated with enhanced mitochondrial function",
+      "outcomes": [
+        "锥体介导的tritan和protan色彩对比阈值",
+        "暴露后3小时变化",
+        "部分参与者1周后的持续变化",
+        "上午与下午时段差异"
+      ],
+      "population": "38–70岁、无已知眼病的健康成人；主要分析20人，附加无光对照10人和下午探索组6人",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8613193/",
+        "https://pubmed.ncbi.nlm.nih.gov/34819619/",
+        "https://doi.org/10.1038/s41598-021-02311-1"
+      ],
+      "result_summary": "主要样本在上午暴露后3小时tritan阈值约改善17%、protan约改善12%，部分小样本一周后仍有信号；下午6人探索未见同样改善。结果是视觉特定、短期且未盲法，不能外推为一般视力治疗或直接眼照安全协议。",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "不要据此自行把消费级红光设备直射眼睛，也不要发明波长、距离或时长；若存在眼病或想改善视力，应由眼科专业人员基于具体适应证和设备评估。",
+      "sample_size": 20,
+      "source_scope": "episode-linked",
+      "study_design": "主要样本20名38–70岁健康成人在上午接受单次3分钟670 nm直达眼部暴露，采用同体前后测；另设10名无光时间对照和6名下午暴露探索组，未采用假照射或盲法",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "随机对照、非随机对照及单组前后设计并存；荟萃的主要值是同一干预条件的前后自动化变化，不是统一的对照组间效应",
       "doi": "10.3390/healthcare12232488",
       "evidence_level": "A-Synthesis（20 项健康习惯研究、2,601 名参与者的系统综述与异质性荟萃）",
@@ -99999,6 +101751,34 @@
       "study_design": "注册于 PROSPERO（CRD42023424694）的 PRISMA 系统综述，检索 6 个数据库至 2023-10-18，纳入 20 项健康行为习惯形成研究、2,601 名参与者；对 12 项研究的 19 个干预条件进行干预前后随机效应荟萃，但因资料稀少未对形成时长合并",
       "type": "study-card",
       "verification_status": "verified-review"
+    },
+    {
+      "comparator": "未照射小鼠，以及普通与垂体切除状态比较",
+      "doi": "10.1111/php.12642",
+      "evidence_level": "B-Mechanistic（48只小鼠的单次UVB实验）",
+      "id": "study-card:skobowiat-2017-uvb-mouse-neuroimmune",
+      "intervention_exposure": "背部皮肤单次400 mJ/cm²、290–320 nm UVB照射；初步实验也探索较低剂量和更早时间点",
+      "label": "Skin Exposure to Ultraviolet B Rapidly Activates Systemic Neuroendocrine and Immunosuppressive Responses",
+      "outcomes": [
+        "血液和组织中的HPA轴/神经内分泌信号",
+        "皮肤与脑部相关分子变化",
+        "脾细胞免疫功能和免疫抑制指标"
+      ],
+      "population": "普通与垂体切除的雌性C57BL/6小鼠，不是人类",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5366283/",
+        "https://pubmed.ncbi.nlm.nih.gov/27716949/",
+        "https://doi.org/10.1111/php.12642"
+      ],
+      "result_summary": "单次高剂量UVB皮肤暴露在小鼠中快速激活部分系统性神经内分泌反应，并在脾细胞实验中表现出免疫抑制；这是UVB动物机制研究，不是红光或近红外人体健康研究。",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "reviewed_at": "2026-08-31",
+      "safe_interpretation": "这张卡用于阻止‘只要是光就能增强免疫’的光谱与物种错配；UVB小鼠结果既不能支持红光面板，也不能成为个人UV暴露协议。",
+      "sample_size": 48,
+      "source_scope": "episode-linked",
+      "study_design": "普通和垂体切除雌性C57BL/6小鼠各24只，麻醉、剃除背部毛发并遮盖眼睛后接受单次UVB；在不同时间点测量血液、皮肤、脑和脾细胞指标，子实验每组/时点通常5–7只",
+      "type": "study-card",
+      "verification_status": "verified-study"
     },
     {
       "comparator": "同一参与者的不同水温条件及恒温空气静息对照",
@@ -100179,10 +101959,24 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:0103ccc759a83958",
+      "label": "不能由4款设备估计整个市场的质量分布",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:01c1538cdc11355a",
       "label": "自然光露营时醒时平均照度提高四倍以上，日落后照度由约 21 降至 8 lux；一周后褪黑素起始、中点和结束等昼夜标记均约提前 2 小时，睡眠开始与醒来约提前 1.2 小时，晚型参与者的相位提前更大。",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:03201172b6a501ed",
+      "label": "皮肤结局不能外推到全身代谢、认知或长寿",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
       "type": "study-finding"
     },
     {
@@ -100201,6 +101995,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:091ae2adb1b31b9e",
+      "label": "下午暴露的6人探索组没有显示同样改善",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:093620565a4c9714",
       "label": "参与者对两类餐食的熟悉度和愉悦度总体相近，不能简单解释为更喜欢某一组菜单",
       "review_id": "hall-2019-ultra-processed-diet-rct",
@@ -100215,6 +102016,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:0bfe0b1ab4324956",
+      "label": "没有证明任何红色LED、面罩或全身面板具有等效输出和效果",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:0ceb886f82ead0ef",
       "label": "基线海马体积没有因随机分组而存在显著差异",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
@@ -100225,6 +102033,13 @@
       "id": "study-finding:0eaad8c7cd4755a7",
       "label": "14°C 浸泡降低核心体温并使代谢率、心率和血压上升；血浆去甲肾上腺素和多巴胺相对基线明显升高。结果证明特定长时间全身冷水浸泡能触发急性交感与代谢反应，但没有测量工作效率、动机、情绪改善或长期健康结局。",
       "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:0f4d5562440e470d",
+      "label": "与无光组相比，670 nm组第二次试验的总血糖曲线下面积约低7.3%，基线校正后的血糖升幅约低27.7%，最大血糖峰值约低7.5%。这是一次健康人急性代理指标实验，不是糖尿病疗效、长期代谢或消费设备试验。",
+      "review_id": "powner-2024-red-light-glucose",
       "type": "study-finding"
     },
     {
@@ -100284,10 +102099,31 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:1f574871b96550dc",
+      "label": "四项神经退行性疾病研究中有两项未见显著获益",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:2163ad927925de33",
       "label": "冷水既可能在特定运动恢复或临床情境中有用，也能在入水早期触发危及生命的呼吸和心血管反应，并在持续暴露中导致低体温。收益与风险都依赖情境，不能把‘生理刺激强’等同于‘适合个人使用’。",
       "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:21a0c56ffec98cac",
+      "label": "长期疗效和长期安全性没有得到充分建立",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:236cec15da91f78d",
+      "label": "研究没有评估重复长期使用的收益与安全",
+      "review_id": "powner-2024-red-light-glucose",
       "type": "study-finding"
     },
     {
@@ -100334,9 +102170,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:303b8adc9a5d9774",
+      "label": "多数被审查的皮肤用途没有达到一致的高等级证据",
+      "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:317dc3b5e692c5b1",
       "label": "四组对一周后表现的预测没有显著差异（F<1），均未预见反复提取优势",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:31f20343c5d188e3",
+      "label": "没有达到中高确定性的统一糖尿病疗效证据",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-finding"
     },
     {
@@ -100372,6 +102222,13 @@
       "id": "study-finding:3aa6fb180ec4312a",
       "label": "尾状核和丘脑体积没有显示同样的组间运动效应",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:3cd044b3d4041121",
+      "label": "研究没有测试红光、近红外或消费LED设备",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
       "type": "study-finding"
     },
     {
@@ -100453,6 +102310,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4f8ef71cc595ae9f",
+      "label": "光谱差异本身不裁决某一具体适应证的临床价值",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:50cfb4e3b5b665a8",
       "label": "夏季周末的总睡眠时长与夜间睡眠效率在组内和组间均相近",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -100467,9 +102331,37 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:521c02ec2b5615bf",
+      "label": "所有纳入方案不同，无法证明一个通用PBM协议",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:525210097e1cc560",
+      "label": "没有人体皮肤、眼部、代谢或长期安全结局",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:56fe6334fcad96a1",
+      "label": "部分家庭设备在特定适应证中显示可能有效且短期耐受，但证据由有限RCT和大量病例系列构成；综述强调长期疗效、安全性及更严格试验仍不足。",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:57f43221df988584",
       "label": "久坐行为亚组的前后变化不显著（SMD 0.24，95% CI -0.18–0.66）",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:58960193d3104f3d",
+      "label": "研究没有证明皮肤局部结果能外推到代谢、认知、长寿或全身免疫",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-finding"
     },
     {
@@ -100484,6 +102376,13 @@
       "id": "study-finding:5c06d8a51682ca4d",
       "label": "双倍初始训练没有显著改变随后一晚的速度或错误率增益",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:5d0e98f8724e371d",
+      "label": "没有建立一般老年健康、长寿或无病人群购买设备的效益",
+      "review_id": "godaert-2024-pbm-older-adults-review",
       "type": "study-finding"
     },
     {
@@ -100515,10 +102414,31 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:62054d63176a317e",
+      "label": "一夜100 lx睡眠期房间光提高夜间心率、降低部分心率变异性指标，并使次晨胰岛素水平和胰岛素抵抗指标更高；它检验的是夜间环境光，不是局部红光或近红外光生物调节。",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:641333c4fa2c5cc5",
       "label": "6 项自动化提高的研究中只有 2 项伴随统计显著的主要健康或行为结局",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:6674680b78f01086",
+      "label": "单次高剂量UVB皮肤暴露在小鼠中快速激活部分系统性神经内分泌反应，并在脾细胞实验中表现出免疫抑制；这是UVB动物机制研究，不是红光或近红外人体健康研究。",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:671a72235b243ec9",
+      "label": "4款面罩即使使用相同颜色标签，实测峰值、辐照度和空间分布也明显不同；厂商资料普遍缺少光谱辐照度、能量、吸收和风险信息，并出现物理上可疑的波长标注。研究证明设备不可仅凭颜色名称视为等效，但不评价临床疗效。",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
       "type": "study-finding"
     },
     {
@@ -100544,9 +102464,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:727dfe8ff9f466f5",
+      "label": "没有证明所有家用LED或红光设备可互换",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7470c7c94360bd7e",
       "label": "褪黑素结束与睡眠开始的相关不显著（p=0.11），与醒来时间的相关趋势未通过多重比较阈值（p=0.0133；要求 p<0.0125）",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:756592e82a209bda",
+      "label": "没有糖尿病患者、HbA1c、长期血糖、体重或临床并发症结局",
+      "review_id": "powner-2024-red-light-glucose",
       "type": "study-finding"
     },
     {
@@ -100575,6 +102509,13 @@
       "id": "study-finding:7b40a1dc9a2e0a66",
       "label": "夏季周末露营组的褪黑素结束变化不显著（p=0.11）",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:7d1088e7864b7274",
+      "label": "没有建立可跨设备使用的标准波长、剂量、部位或疗程",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-finding"
     },
     {
@@ -100634,6 +102575,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:90abe272ba85faf5",
+      "label": "没有证明更高辐照度、更多颜色或更高价格意味着更有效",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:91491b29935c847d",
       "label": "一年后有氧组左右海马体积约增加 2.12% 和 1.97%，对照组约下降 1.40% 和 1.43%；较高体适能改善与较大海马体积变化相关，空间记忆也改善。该结果来自特定老年人群和一年监督方案，不能当作个人可保证的结构变化。",
@@ -100655,6 +102603,20 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:9873420a5192f797",
+      "label": "许多设备—适应证组合缺乏高质量随机证据",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9a64e1b2a1c04df0",
+      "label": "相同颜色标签下的波长、剂量和疗程不统一，不能得出统一消费设备效果",
+      "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:9beeac3b5eb51c4a",
       "label": "证据显示效果强烈依赖时点：立即和 1 小时炎症指标上升，12 小时压力指标下降，但立即、1、24 和 48 小时压力无显著效果；即时和 1 小时免疫指标无显著变化。睡眠、生活质量及缺勤信号主要来自少数或单项研究，情绪未见一致改善。",
@@ -100663,9 +102625,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:9c5d170b1ad3f8cb",
+      "label": "无光对照没有显示对应时间变化，但并非假照射盲法对照",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:9cc9f5e0b05edf6a",
       "label": "耐力计时赛平均功率和完成时间没有显著差异",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:9cccf897e6eb08c2",
+      "label": "10项研究的方案全部不同；神经退行性疾病研究2项无效、2项阳性，伤口研究3项中2项阳性，另有黄斑变性和口干研究报告阳性。综述认为有潜力作为补充治疗，但必须统一参数、适应证和人群后再判断。",
+      "review_id": "godaert-2024-pbm-older-adults-review",
       "type": "study-finding"
     },
     {
@@ -100694,6 +102670,27 @@
       "id": "study-finding:9f806e762c0a0f09",
       "label": "壳核与腹侧纹状体 D2/D3 受体可用性出现小幅增加（ROI 均 P=0.05），尾状核无显著变化；腹侧纹状体变化与警觉度变化相关（r=0.56，P=0.01）。",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9fe95892efb59fa9",
+      "label": "两组宏观睡眠结构和主观睡眠质量差异有限，不能把代谢结果解释成单纯少睡",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a40a7b59c2408b05",
+      "label": "没有人体感染、免疫增强、临床症状或长期健康结局",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a8c7d0fc2c9fbda4",
+      "label": "研究没有测量眼病治疗、阅读功能、视力表长期改变或全身代谢",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
       "type": "study-finding"
     },
     {
@@ -100768,6 +102765,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:beef214d3f9f0667",
+      "label": "口服葡萄糖耐量试验中的葡萄糖水平没有显著组间差异",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:bf5e926d208e0b8d",
       "label": "冬季露营的睡眠效率下降仅呈趋势（89.4% 对 91.9%，p=0.064）",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -100806,6 +102810,13 @@
       "id": "study-finding:c3765afa5f73f6bd",
       "label": "在停止继续测试的 STN 与 SNTN 条件中，增加约 80 次学习试次几乎没有带来保持增益",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:c4033784cb72fa44",
+      "label": "综述将痤疮、单纯疱疹和急性伤口愈合评为B级证据，其余多数用途为C或D级；结果支持按具体适应证和具体设备解释，而不是‘红光对皮肤普遍有效’。",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-finding"
     },
     {
@@ -100894,6 +102905,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:deca05469cf122bf",
+      "label": "摘要未提供足够信息估计统一总效应或长期并发症获益",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:e111ad450123ea42",
       "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
       "review_id": "hazlett-2021-gratitude-rct",
@@ -100921,10 +102939,24 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:e57e7f0cc8c6f291",
+      "label": "摘要报告PBM与部分空腹、餐后血糖和HbA1c改善相关，但总体证据确定性为极低至低，并明确要求更严格试验和标准化方案。综述不能把小型急性健康人实验升级为可靠糖尿病治疗。",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:e66c39efa3a424f3",
       "label": "睡眠效率无显著差异（87.6±5.6% 对 87.0±4.6%，p=0.49）",
       "review_id": "wright-2013-natural-light-entrainment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e7a9ec1a8671a53e",
+      "label": "没有证明PBM可以替代药物、饮食、运动或临床监测",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-finding"
     },
     {
@@ -100964,6 +102996,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:f044fb8cb968f678",
+      "label": "较低UVB剂量和15分钟早期时间点在初步实验中未显示目标反应",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:f0c8b99f09c0911c",
       "label": "三晚与一晚睡眠后的速度和错误率差异仅呈趋势，组间 P 值分别为 0.07 和 0.10",
       "review_id": "walker-2003-sleep-motor-learning",
@@ -100981,6 +103020,34 @@
       "id": "study-finding:f36846551c64f6a7",
       "label": "离心运动后的大多数结局没有一致收益，除 24 小时爆发力外证据有限",
       "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:f4c855d8e1e1d883",
+      "label": "研究没有检验红光面板、LED面罩或白天局部照射",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:f51a2054fd04bac8",
+      "label": "未收集BMI或脂肪量，无法判断这些基线因素如何影响结果",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:f600ea2a19e5328b",
+      "label": "未证明其他波长、辐照度、距离或消费设备等效",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:f67c8bc0a6c39b2a",
+      "label": "主要样本在上午暴露后3小时tritan阈值约改善17%、protan约改善12%，部分小样本一周后仍有信号；下午6人探索未见同样改善。结果是视觉特定、短期且未盲法，不能外推为一般视力治疗或直接眼照安全协议。",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
       "type": "study-finding"
     },
     {
@@ -101005,6 +103072,18 @@
       "type": "study-finding"
     },
     {
+      "id": "study-limitation:04c6245cf74a2aa2",
+      "label": "后续试验可能改变各适应证结论",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:04e5d5019cbd4058",
+      "label": "作者团队与红光视觉研究重叠，不能把相关论文当成独立复制",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:06bd82b312d1a3ef",
       "label": "所有干预都是多组分，无法识别提示、重复、环境重构或奖励中哪一项是有效成分",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -101026,6 +103105,12 @@
       "id": "study-limitation:0ddf212ce6b59c95",
       "label": "即时表现与延迟保持出现反转，不能把学习当下的困难感直接解释为无效，也不能把延迟优势改写成所有时间尺度都更好",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:0df9c65f1672153e",
+      "label": "许多试验样本少于20人",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101053,9 +103138,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:136980093857f677",
+      "label": "特定临床补充治疗不能外推到家庭泛健康使用",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:13e008298c41312c",
       "label": "I²=87% 表明研究、人群、行为、量表与干预高度异质，统一 SMD 的可推广性有限",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:1861a20f95be6880",
+      "label": "家庭依从性、培训和实际输出可能不同于试验环境",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
       "type": "study-limitation"
     },
     {
@@ -101086,6 +103183,12 @@
       "id": "study-limitation:1ea7f1818b3ca7c5",
       "label": "睡眠巩固是作者推断，研究未直接操纵或测量睡眠",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:1fbd722378bd10d5",
+      "label": "不少研究缺少充分盲法或可信假照射",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101143,6 +103246,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:30a7b8bc5ba00cc7",
+      "label": "16项为病例系列，因果推断弱于随机试验",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3194f36fec93ae66",
+      "label": "只测量4款按特定价格范围选择的面罩",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:33fe90a0b84f4c30",
       "label": "练习测试效果依赖题型、成功率、次数、间隔、反馈与终测匹配，综述不提供人人适用的固定参数",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -101155,9 +103270,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:35cc329d934c71b3",
+      "label": "2026年新综述仍需由后续独立高质量试验复核",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:362a4d2ba2d88d3e",
       "label": "海马体积和空间记忆是结构/认知结局，不是痴呆发病、生活独立性或长期临床结局",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:36743caee19193b3",
+      "label": "设备类型、参数、适应证、对照和结局高度异质",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
       "type": "study-limitation"
     },
     {
@@ -101182,6 +103309,12 @@
       "id": "study-limitation:3a92461f7d25e53c",
       "label": "自身对照但没有盲法，且只观察急性生理反应",
       "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3aa47d6bff75cb21",
+      "label": "作者披露与设备行业相关的顾问委员会/酬金关系，需考虑利益冲突",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101239,9 +103372,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:435756488e1eb1b2",
+      "label": "急性代理指标不能授权糖尿病治疗、长期健康声明或购买决定",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:43faaa6ee93f9b08",
       "label": "参与者为身体活跃成人，不能直接外推到慢病、伤病或一般健康用途",
       "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:47b1bc3190ff3a03",
+      "label": "证据截止较早，后续设备与试验可能更新结论",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101287,9 +103432,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4f08fe02318fda02",
+      "label": "与Jagdeo 2018综述存在作者重叠，不能视作完全独立复制",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:51143d01f0026b3e",
       "label": "实验 2 仅 12 人，多项注意指标增加偶然发现风险",
       "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:51623b11ab9413f8",
+      "label": "证据确定性极低至低，偏倚和不精确性限制信心",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-limitation"
     },
     {
@@ -101302,6 +103459,12 @@
       "id": "study-limitation:5313c0b4db5e44f6",
       "label": "睡眠条件为避免再次练习而未直接测量睡前表现；睡前水平由同一受试者另一清醒条件估计",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:53c686f5ddbcfd5a",
+      "label": "设备快速迭代使旧型号证据难以迁移到新产品",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
       "type": "study-limitation"
     },
     {
@@ -101353,15 +103516,45 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:59279b36098de978",
+      "label": "短期实验指标不能直接量化长期疾病风险",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:593951f808493eff",
+      "label": "特定波长、辐照度、面积、距离与几何不能转移到规格不明的消费设备",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:5e6b61273837babf",
       "label": "新纳入样本仅 40 人且每个日程组只有 10 人",
       "review_id": "walker-2003-sleep-motor-learning",
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:5f0f313a3b8241cc",
+      "label": "健康年轻成人不能代表糖尿病、老年人或长期夜间照明",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:5fe7e18add7411fd",
       "label": "研究发表前未预注册，分配程序与盲法信息有限",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:607880ba8719c324",
+      "label": "实验室测量不包含长期衰减、佩戴距离和真实使用依从性全部变化",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:60cf66bb01b7c2ae",
+      "label": "每组15人且只评估一次急性葡萄糖负荷",
+      "review_id": "powner-2024-red-light-glucose",
       "type": "study-limitation"
     },
     {
@@ -101383,6 +103576,24 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:635bbab46da804a7",
+      "label": "不能据此给出个人卧室绝对照度阈值或治疗方案",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6444b84fc52799a0",
+      "label": "短期观察不足以建立长期眼部安全",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:64f6661dbc232a4b",
+      "label": "第二次访视为平行分组而非交叉，首次对照与第二次测试存在顺序和时间效应可能",
+      "review_id": "powner-2024-red-light-glucose",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:6700e49e965abe97",
       "label": "文献截止约 2012 年，不能代表此后十余年的全部复制、课堂研究和争议",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -101392,6 +103603,12 @@
       "id": "study-limitation:68f01f467a11323d",
       "label": "仅 10 名健康、年轻、体适能较高的男性",
       "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:694704f831fdb350",
+      "label": "健康成人、色彩对比代理指标不能代表视网膜疾病治疗或日常视力获益",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
       "type": "study-limitation"
     },
     {
@@ -101449,6 +103666,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:719d971971accf98",
+      "label": "只研究雌性小鼠且环境高度受控",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:71c10af1214062c2",
       "label": "没有研究 ADHD、抑郁、焦虑或其他临床人群，也没有评估治疗效果",
       "review_id": "berman-2008-nature-directed-attention",
@@ -101476,6 +103699,12 @@
       "id": "study-limitation:748514f613e64a46",
       "label": "两项实验共排除 76 人，最终分析 141 人，按期间行为排除可能影响样本代表性",
       "review_id": "rickard-2008-sleep-motor-sequence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:765c13a6605ac677",
+      "label": "PubMed摘要未给出完整纳入数、逐研究样本和风险偏倚细节",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-limitation"
     },
     {
@@ -101509,6 +103738,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:7c398c7b7ee9ad99",
+      "label": "动物机制结果不能直接外推到人类生活方式建议",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:7c8c9802e6127016",
       "label": "8 周随访不能确定长期保持或临床疗效",
       "review_id": "basso-2019-brief-daily-meditation",
@@ -101518,6 +103753,12 @@
       "id": "study-limitation:7dbbc6b4678fbfaa",
       "label": "本研究以睡眠日志和主观警觉度记录睡眠，而非对全部参与者进行多导睡眠监测",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:7e866733b594321f",
+      "label": "无随机假照射、参与者和评估者盲法，期待和学习效应不能充分排除",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
       "type": "study-limitation"
     },
     {
@@ -101539,9 +103780,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:874e7e525d88f8e3",
+      "label": "直接眼部暴露的设备、光束几何和输出高度特定，不能迁移到面罩或面板",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:8832f0a6e08e1160",
+      "label": "波长、剂量、照射部位、频率和疗程全部异质",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:89caccd93cdfc9c4",
       "label": "荟萃主要合并单组干预前后差值，易受时间趋势、回归均值、期待和共同干预影响，不能解释为随机对照效应",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:8beab17970ca9618",
+      "label": "波长、能量密度、功率、照射次数、疗程与结局高度异质，无法给出通用协议",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101623,9 +103882,27 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:9bf9fdb05cec67fc",
+      "label": "子实验每组/时点仅5–7只，指标多且时间点多",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9bfd9ebc1deda393",
+      "label": "研究不是监管抽样，不能概括所有品牌",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:9d426bca929e8362",
       "label": "高/中/低效用等级是作者基于广度、推广性和实施性的综合判断，不等同于确定的效果大小",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9ef9deb7458ee5bd",
+      "label": "血糖或HbA1c变化不等于并发症、住院或死亡等长期临床获益",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-limitation"
     },
     {
@@ -101635,9 +103912,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:a2427da3e4e75dbb",
+      "label": "叙述整合不能给出统一效应量或设备选择规则",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:a26a3702ed0fb10d",
       "label": "被动恢复比较不能说明冷水优于睡眠、营养、主动恢复或其他现实方案",
       "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a41f5440e4d73b1d",
+      "label": "作者团队与其他670 nm研究重叠，不能视为独立复制",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
       "type": "study-limitation"
     },
     {
@@ -101656,6 +103945,12 @@
       "id": "study-limitation:a5db46ff565edf36",
       "label": "MEG 来自独立的 5 人控制样本",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a5e06898b27f07c9",
+      "label": "样本普遍有限，研究设计和偏倚风险不一",
+      "review_id": "godaert-2024-pbm-older-adults-review",
       "type": "study-limitation"
     },
     {
@@ -101713,6 +104008,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:ae22507850478d9f",
+      "label": "厂商和产品可能快速更新",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:ae539d4152d4c484",
       "label": "不能外推到临床炎症、焦虑或其他疾病",
       "review_id": "hazlett-2021-gratitude-rct",
@@ -101749,9 +104050,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b486c2b64905bcd1",
+      "label": "设备、参数、照射部位、糖尿病人群和结局异质",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b51145267c9b5a51",
       "label": "一次漏做的结果不能改写成任意中断都无影响，也不能证明连续性不重要",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:b79ae8066bf12f58",
+      "label": "使用单次高剂量UVB、麻醉、剃毛和背部照射，与普通日光或红光设备不同",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
       "type": "study-limitation"
     },
     {
@@ -101764,6 +104077,18 @@
       "id": "study-limitation:b9cf04d24695f3c0",
       "label": "NOVA 分类内部异质，结果不能证明每一种加工食品都有同样效应或应被完全排除",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:ba8a9e4bf8f4b6f1",
+      "label": "主要样本20人，持续一周分析和下午分析样本更小",
+      "review_id": "shinhmar-2021-red-light-colour-contrast",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bc835d82f3afcda1",
+      "label": "无光对照无法完整盲法，参与者期待可能影响行为或生理状态",
+      "review_id": "powner-2024-red-light-glucose",
       "type": "study-limitation"
     },
     {
@@ -101809,6 +104134,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:c58c46c1cad4246c",
+      "label": "免疫抑制的细胞指标不等于人体免疫疾病或感染结局",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:cbd7482742eb0035",
       "label": "没有直接测量晨光单独效应、最低有效分钟数、隔窗光照或特定照度处方",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -101833,15 +104164,33 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:cebbb6bcee6df80f",
+      "label": "没有随机临床对照或疗效结局",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d032e716a38c1240",
       "label": "实验 2 所有人均跨夜睡眠，没有独立清醒对照",
       "review_id": "rickard-2008-sleep-motor-sequence",
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:d0a4de909f72f4aa",
+      "label": "仅10项研究且分散在多个不相干适应证",
+      "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d6ff7c2b49eb8722",
       "label": "多个亚组参与者少于 100 人或统计异质性高，GRADE 被降级",
       "review_id": "moore-2022-cold-water-acute-recovery-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:d900e1bd9864b55e",
+      "label": "长期随访和罕见不良事件资料有限",
+      "review_id": "cohen-2021-home-dermatology-devices-review",
       "type": "study-limitation"
     },
     {
@@ -101896,6 +104245,18 @@
       "id": "study-limitation:e6b0d1bcf8e647f7",
       "label": "仅 8 篇研究，结局分组后证据更少",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e78057991500c4f2",
+      "label": "UVB有已知皮肤和眼部风险，不能把生理反应当作健康收益",
+      "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e7e51d32317dec56",
+      "label": "部分适应证只有单项或少量试验",
+      "review_id": "jagdeo-2018-led-dermatology-review",
       "type": "study-limitation"
     },
     {
@@ -101977,6 +104338,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:f85d960aa4754b3b",
+      "label": "无法从物理输出单独定义安全或最佳剂量",
+      "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fbf575c88f9a0ba2",
+      "label": "100 lx房间光与消费级红光设备在光谱、位置、时间和暴露面积上不同",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:fc394855a99f5f75",
       "label": "研究对象是科罗拉多身体活跃健康成人，纬度、季节、文化和健康状态限制外推",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -101986,6 +104359,18 @@
       "id": "study-limitation:fc44139ee1a42673",
       "label": "没有检验失眠、冬季抑郁、昼夜节律障碍治疗或长期健康获益；作者明确要求在临床人群进一步研究",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fc79d41aafb24e42",
+      "label": "每组仅10人且只观察一夜",
+      "review_id": "mason-2022-light-during-sleep",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fcb94e106ea0f262",
+      "label": "不能用于停药、减药或远程制定设备剂量",
+      "review_id": "rocha-2026-pbm-glycemic-control-review",
       "type": "study-limitation"
     },
     {
@@ -104727,20 +107112,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1744,
-    "action_playbook_nodes": 8,
-    "action_step_nodes": 24,
+    "academic_resource_nodes": 1748,
+    "action_playbook_nodes": 9,
+    "action_step_nodes": 27,
     "bilibili_nodes": 34,
     "claim_nodes": 40,
     "course_lecture_nodes": 8,
-    "edges": 9026,
+    "edges": 9233,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 14,
-    "evidence_topic_nodes": 126,
-    "resource_nodes": 6028,
-    "study_card_nodes": 26,
-    "study_finding_nodes": 119,
-    "study_limitation_nodes": 167,
+    "evidence_relation_nodes": 20,
+    "evidence_topic_nodes": 176,
+    "resource_nodes": 6032,
+    "study_card_nodes": 35,
+    "study_finding_nodes": 160,
+    "study_limitation_nodes": 220,
     "top_topics": [
       {
         "count": 58,
@@ -104844,7 +107229,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 685,
+    "verified_academic_resource_nodes": 693,
     "youtube_nodes": 424
   }
 }

@@ -55,11 +55,14 @@ def query_cards(cards: list[dict], query: str, limit: int = 10) -> list[dict]:
             continue
         title = str(card.get("title", "")).casefold()
         tags = " ".join(card.get("topic_tags", [])).casefold()
+        aliases = " ".join(card.get("search_aliases", [])).casefold()
         core = "\n".join(str(card.get(field, "")) for field in CORE_FIELDS).casefold()
+        alias_hits = sum(term in aliases for term in matched)
         score = (
             len(matched)
             + 3 * sum(term in title for term in matched)
             + 3 * sum(term in tags for term in matched)
+            + (2 * alias_hits if alias_hits >= 2 else 0)
             + 2 * sum(term in core for term in matched)
         )
         scored.append((score, card.get("review_id", ""), card))

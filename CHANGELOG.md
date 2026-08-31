@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.13.0] - 2026-08-31
+
+### Added
+
+- Added a nine-card red-light purchase-decision cluster spanning nocturnal environment light, acute 670 nm glucose and visual studies, dermatology reviews, older-adult and diabetes syntheses, UVB spectrum mismatch, and commercial LED-mask spectral measurements.
+- Added six claim-scoped `qualifies` relations that prevent acute proxies, animal mechanisms, clinical indication evidence and nominal device colors from being collapsed into a universal red-light protocol.
+- Added a ninth outcome-first playbook and behavioral Case 13 that produce a direct buy/no-buy/professional-review decision without inventing wavelength, dose, duration or direct-eye use.
+
+### Changed
+
+- Promoted four repeated Show Notes URLs after provenance-bearing identifier verification, yielding 681 verified and 1,055 pending queue records; the repair queue now contains 549 DOI-unresolved rows.
+- Expanded structured coverage to 35 study cards: 22 cards connect 30 Show Notes URL records and 13 are explicit external-context qualifications.
+- Expanded the graph to 35 study cards, 160 findings, 220 limitations, 176 evidence topics, 20 evidence relations, nine playbooks, 27 action steps and 9,233 traceable edges.
+- Made generic wellness, longevity, glucose and cognitive claims default to no purchase; sleep goals route to real light-dark environment changes, while condition-specific use requires exact indication/device matching and professional review.
+
 ## [0.12.0] - 2026-08-31
 
 ### Added

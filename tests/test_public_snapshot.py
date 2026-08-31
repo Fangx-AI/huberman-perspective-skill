@@ -31,9 +31,9 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(len(rows), 1736)
         statuses = {row["verification_status"] for row in rows}
         self.assertTrue({"pending", "verified-study", "verified-review", "verified-observational", "verified-bibliographic"} <= statuses)
-        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 677)
-        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 118)
-        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 35)
+        self.assertEqual(sum(row["verification_status"] != "pending" for row in rows), 681)
+        self.assertEqual(sum(row["verification_status"] == "verified-study" for row in rows), 121)
+        self.assertEqual(sum(row["verification_status"] == "verified-review" for row in rows), 36)
         self.assertEqual(sum(row["verification_status"] == "verified-observational" for row in rows), 21)
         self.assertEqual(sum(row["verification_status"] == "verified-bibliographic" for row in rows), 503)
 
@@ -62,7 +62,7 @@ class PublicSnapshotTests(unittest.TestCase):
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
         self.assertEqual(graph["stats"]["claim_nodes"], 40)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 685)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 693)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
