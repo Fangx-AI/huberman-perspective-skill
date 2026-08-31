@@ -15,7 +15,7 @@ Status date: 2026-08-31.
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
 | Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | Implemented for a public clone |
 | Provide versioning, citation and maintenance roadmap | `VERSION`, `CHANGELOG.md`, `CITATION.cff`, `MAINTENANCE.md` | Implemented |
-| Publish as a public GitHub repository | Repository origin and GitHub release | Must be verified from GitHub, not inferred from local tags |
+| Publish as a public GitHub repository | <https://github.com/Fangx-AI/huberman-perspective-skill> and verified public `origin` metadata | Repository published; every tag still requires release and CI verification per `PUBLISHING.md` |
 
 ## Current research gap
 

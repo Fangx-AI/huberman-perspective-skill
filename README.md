@@ -23,11 +23,10 @@
 
 要求：Codex、Python 3.11+；只有重新采集 Stanford publications 时需要 `lxml`。
 
-最简单的方式是从 GitHub 页面的 **Code** 按钮复制仓库 URL，并直接克隆到 Codex Skills 目录：
+最简单的方式是直接从公开仓库克隆到 Codex Skills 目录：
 
 ```bash
-read -r -p "Repository URL from GitHub Code button: " REPOSITORY_URL
-git clone "$REPOSITORY_URL" ~/.codex/skills/huberman-perspective
+git clone https://github.com/Fangx-AI/huberman-perspective-skill.git ~/.codex/skills/huberman-perspective
 cd ~/.codex/skills/huberman-perspective
 python -m pip install -r requirements.lock
 python scripts/release_check.py
@@ -37,9 +36,8 @@ python scripts/release_readiness.py
 PowerShell：
 
 ```powershell
-$RepositoryUrl = Read-Host "Repository URL from GitHub Code button"
 $SkillPath = Join-Path $env:USERPROFILE ".codex\skills\huberman-perspective"
-git clone $RepositoryUrl $SkillPath
+git clone https://github.com/Fangx-AI/huberman-perspective-skill.git $SkillPath
 Set-Location -LiteralPath $SkillPath
 python -m pip install -r requirements.lock
 python scripts/release_check.py
@@ -135,4 +133,4 @@ python -m compileall -q scripts tests
 
 ## 发布状态
 
-当前版本：`0.10.0`，研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。
+当前版本：`0.10.0`，已在 GitHub 公开发布的研究预览版。公开发布不等于法律许可；仍建议由熟悉版权、商标和平台条款的专业人士复核，尤其是人物名称的描述性使用和任何商业化场景。
