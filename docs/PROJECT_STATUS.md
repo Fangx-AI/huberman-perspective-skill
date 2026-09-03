@@ -10,7 +10,7 @@ Status date: 2026-09-03.
 | Preserve traceable claims without redistributing transcripts | `claim-index.jsonl`, `source-registry.md`, `release_check.py` | Implemented for the current public snapshot |
 | Connect claims, studies, limitations and contradictions | `academic-study-cards.jsonl`, `evidence-relations.jsonl`, `knowledge-graph.json` | Implemented, but research-level coverage remains partial |
 | Help ordinary users improve health-related daily life | `SKILL.md`, `coaching-guide.md`, `USAGE_EXAMPLES.md` | Automatic lifestyle guidance now starts from the user's real outcome, constraints and safest next step |
-| Turn evidence into action without knowledge overload | Eleven outcome-first playbooks, a durable ordinary-language routing corpus and user-guidance contract tests | Implemented for eleven high-frequency scenarios; 33 first-use routing cases are regression tested and more scenarios remain |
+| Turn evidence into action without knowledge overload | Twelve outcome-first playbooks, a durable ordinary-language routing corpus and user-guidance contract tests | Implemented for twelve high-frequency scenarios; 38 first-use routing cases are regression tested and more scenarios remain |
 | Keep deep research backstage and independently test user value | `ARCHITECTURE.md`, `extraction-framework.md`, `huberman-operating-model.md`, `fidelity-scorecard.md`, `research_checkpoint.py` | Nuwa-inspired maintenance structure implemented; health-specific user-outcome and safety gates added |
 | State evidence levels, medical boundaries and uncertainty | `SKILL.md`, `evidence-ledger.md`, structured card limitations and stop/escalation fields | Implemented and regression tested |
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
@@ -22,7 +22,7 @@ Status date: 2026-09-03.
 
 The product goal is not to expose the largest possible research archive. The user-facing measure is whether a person can describe an ordinary problem in their own words and receive a small, safe, observable next step with a workable failure adjustment. Evidence coverage matters because it improves those decisions and boundaries; it is not the default conversation.
 
-The public academic queue contains 1,736 deduplicated Show Notes URLs. Only 684 have bibliographic or stronger verification, and only 47 high-priority papers currently have full structured study cards. `verified-bibliographic` confirms identity only; it cannot support efficacy. The remaining queue and future episodes keep the long-term Goal active.
+The public academic queue contains 1,736 deduplicated Show Notes URLs. Only 684 have bibliographic or stronger verification, and only 50 high-priority papers or guidelines currently have full structured evidence cards. `verified-bibliographic` confirms identity only; it cannot support efficacy. The remaining queue and future episodes keep the long-term Goal active.
 
 The private maintainer cache records batch-level analysis for 423 available canonical YouTube videos, while the public claim locator intentionally exposes only a small, copyright-minimized set of neutral claim records. This protects source expression but means public users cannot independently reproduce every transcript-level judgment from repository payloads alone.
 

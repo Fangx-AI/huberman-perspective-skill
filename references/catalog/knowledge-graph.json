@@ -357,6 +357,41 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "action-step:restore-daytime-energy-without-stimulant-stacking:separate-slump-sleepiness-and-persistent-fatigue"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "action-step:restore-daytime-energy-without-stimulant-stacking:test-one-comfortable-movement-break"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "claim:batch02-claim-0042"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "study-card:dempsey-2016-walking-breaks-fatigue"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "study-card:kapur-2017-osa-diagnostic-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "target": "study-card:stanyer-2024-caffeine-dose-timing-sleep"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:retain-what-you-learn",
       "target": "action-step:retain-what-you-learn:correct-uncertain-and-wrong-answers"
     },
@@ -914,6 +949,36 @@
       "relation": "grounded_in",
       "source": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
       "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating",
+      "target": "claim:batch02-claim-0042"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating",
+      "target": "study-card:stanyer-2024-caffeine-dose-timing-sleep"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:separate-slump-sleepiness-and-persistent-fatigue",
+      "target": "claim:batch02-claim-0042"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:separate-slump-sleepiness-and-persistent-fatigue",
+      "target": "study-card:kapur-2017-osa-diagnostic-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:test-one-comfortable-movement-break",
+      "target": "study-card:dempsey-2016-walking-breaks-fatigue"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:restore-daytime-energy-without-stimulant-stacking:test-one-comfortable-movement-break",
+      "target": "study-card:kapur-2017-osa-diagnostic-guideline"
     },
     {
       "relation": "grounded_in",
@@ -1594,6 +1659,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0041",
       "target": "youtube:https://www.youtube.com/watch?v=x4m_PdFbu-s"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0042",
+      "target": "youtube:https://www.youtube.com/watch?v=iw97uvIge7c"
     },
     {
       "relation": "cites_resource",
@@ -42966,6 +43036,11 @@
       "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
     },
     {
+      "relation": "qualifies",
+      "source": "evidence-relation:kapur-2017-qualifies-dempsey-2016-fatigue-self-management",
+      "target": "study-card:dempsey-2016-walking-breaks-fatigue"
+    },
+    {
       "relation": "supports",
       "source": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval",
       "target": "study-card:roediger-karpicke-2006-test-enhanced-learning"
@@ -44126,6 +44201,76 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/37650138/"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "evidence-topic:acute-state"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "evidence-topic:cognition"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "evidence-topic:daytime-fatigue"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "evidence-topic:sedentary-behavior"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "evidence-topic:walking-breaks"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-limitation:2faa8a463df497a3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-limitation:5e1fc41ee9016b1c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-limitation:6228e312e532a561"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-limitation:8a71ae10c4abfcc4"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-finding:33fccd3add43d3c7"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-finding:9eea1b526b2d06cd"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-finding:ed10319835b1ddb1"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "study-finding:f18c66b1eccf8e4f"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/26920441/"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:dunlosky-2013-effective-learning-techniques-review",
       "target": "evidence-relation:dunlosky-2013-qualifies-karpicke-roediger-2008-repeated-retrieval"
@@ -45184,6 +45329,81 @@
       "relation": "reviews_resource",
       "source": "study-card:kaiser-2023-sauna-injury-series",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/37211472/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-relation:kapur-2017-qualifies-dempsey-2016-fatigue-self-management"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-topic:daytime-sleepiness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-topic:fatigue"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-topic:sleep-apnea"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "evidence-topic:unrefreshing-sleep"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-limitation:015ee7481943f7bf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-limitation:3ab324f90322dae7"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-limitation:7408ad07e812fb8d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-limitation:9abcb3056d35ed30"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-finding:7751deebf31d2c81"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-finding:8e275c8ab270f103"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-finding:df69a4549d24de04"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "study-finding:f9d7cb07fc59612d"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "target": "resource:https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf"
     },
     {
       "relation": "has_evidence_relation",
@@ -47166,6 +47386,81 @@
       "target": "resource:https://link.springer.com/article/10.1007/s004210050065?noAccess=true#article-info"
     },
     {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "evidence-topic:caffeine"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "evidence-topic:daytime-energy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "evidence-topic:dose-timing"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "evidence-topic:sleep-architecture"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-limitation:4b9191b6cf2e881d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-limitation:53aca2576892cbb2"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-limitation:567825a2a035485c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-limitation:5efd8095815f751e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-limitation:aaf2c376256f4df6"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-finding:009cabedc2a071e2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-finding:c2a2b7ed6959a9f6"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-finding:ca31cd6a601f9533"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "study-finding:f0669926c6219a99"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "target": "resource:https://academic.oup.com/sleep/article/48/4/zsae230/7815486"
+    },
+    {
       "relation": "has_evidence_relation",
       "source": "study-card:stothard-2017-natural-light-seasons-weekend",
       "target": "evidence-relation:stothard-2017-supports-wright-2013-natural-light-entrainment"
@@ -47646,7 +47941,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-08-31T11:37:44.934701+00:00",
+  "generated_at": "2026-09-03T08:03:44.757220+00:00",
   "nodes": [
     {
       "aliases": [
@@ -47936,6 +48231,53 @@
       "scope": "适用于一般成人对低风险学习、写作或办公任务的环境调整与个人观察；不是 ADHD、焦虑、抑郁、睡眠障碍或认知疾病的诊断和治疗",
       "type": "action-playbook",
       "user_goal": "在容易分心或脑力下降时，完成一个可见的小结果，而不是继续收藏提神工具"
+    },
+    {
+      "aliases": [
+        "下午没精神",
+        "下午三点没精神",
+        "午后崩掉",
+        "午后犯困",
+        "下午犯困",
+        "靠咖啡硬撑",
+        "越喝咖啡越没精神",
+        "睡够还是很累",
+        "睡够仍然疲劳",
+        "白天总想睡",
+        "daytime energy slump",
+        "afternoon crash",
+        "caffeine crash",
+        "unrefreshing sleep"
+      ],
+      "baseline_checks": [
+        "先区分主观没劲、真正困倦/意外入睡和持续原因不明疲劳；危险困倦不进入自助实验",
+        "只记录最近几天真实睡眠机会、最晚咖啡因、久坐情境和一个现实功能，不要求用户先填完整健康问卷",
+        "确认没有胸痛、严重/新发气促、晕厥、意识/神经异常、快速恶化、明显药物反应或其他急症信号"
+      ],
+      "escalation": [
+        "困倦影响驾驶或危险操作时立即停止相关活动，到安全地点休息并尽快接受专业评估，不用咖啡因证明自己能继续",
+        "睡够仍反复疲劳或白天困倦，尤其伴响亮打鼾、喘醒/窒息、目击呼吸暂停、晨起头痛、意外入睡或明显功能受损时，寻求医疗或睡眠专业评估",
+        "胸痛、严重或新发气促、晕厥、意识混乱、单侧无力/言语异常或其他急症信号立即联系当地急救",
+        "症状出现在开始/改变药物后、日常咖啡因摄入很高或减少会明显不适时，联系开药医生或药师，不自行改药或突然停用"
+      ],
+      "first_questions": [
+        "你现在只是觉得没劲，还是会控制不住打瞌睡，甚至影响驾驶或危险操作？",
+        "这种情况是偶发的久坐后低谷，还是在有足够睡眠机会时仍反复出现并影响功能？",
+        "你最晚一次咖啡因通常是什么时候、什么来源；是否伴打鼾窒息、晨起头痛、药物变化、胸痛、气促、晕厥或其他新症状？"
+      ],
+      "id": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
+      "label": "恢复白天精力，不靠继续叠加兴奋剂",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "危险困倦、意外入睡、胸痛、严重气促、晕厥或神经症状的自助提神",
+        "持续或原因不明疲劳、睡眠呼吸暂停、发作性睡病、贫血、感染、内分泌/精神健康问题或药物不良反应的诊断和治疗",
+        "孕期、儿童、心律失常、复杂慢病、处方兴奋剂或高咖啡因摄入者的个人咖啡因剂量与停用方案",
+        "用咖啡因、能量饮料、尼古丁、补剂、冷水或强运动代替必要睡眠和专业评估"
+      ],
+      "safe_summary": "先区分普通午后低能量、危险困倦和持续疲劳。普通久坐低谷时，先不叠加提神协议，做一次舒适可停止的轻松走动，用能否安全完成下一小段任务判断；反复靠咖啡救场时，只观察最晚一次咖啡因与当晚睡眠/次日精力，不加量、不突然停用，也不套统一截止时间。睡够仍反复累、打鼾窒息、意外入睡或影响驾驶时，停止生活实验和危险操作并尽快接受专业评估。",
+      "scope": "适用于一般成人处理偶发久坐后低能量、午后低谷，或复盘反复依赖咖啡因的非紧急生活问题；不是持续疲劳、睡眠疾病、药物反应或急症的诊断与治疗",
+      "type": "action-playbook",
+      "user_goal": "在不把疲劳道德化、不用更多咖啡因掩盖风险的前提下，安全恢复下一小段现实功能，并识别何时需要查原因"
     },
     {
       "aliases": [
@@ -48470,6 +48812,60 @@
       "trigger": "完成环境准备并开始第一步工作后",
       "type": "action-step",
       "why": "节目中的时间结构适合当作个人参数，但现有公开主张和研究没有验证人人相同的最佳专注分钟数"
+    },
+    {
+      "adaptation": "调整后睡眠或次日状态改善才保留；无变化就恢复基线并检查其他原因，不继续加码或叠加兴奋剂。日常总量不清、摄入高、停用会头痛/恶心或正在用药时，不自行选择直接停还是逐步减，先问医生/药师如何安全调整",
+      "classification": "bounded-experiment",
+      "id": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating",
+      "label": "若反复靠下午咖啡因救场，先保持不增加并记录完整摄入；只有日常总量和停用反应已清楚时，才把最晚一次咖啡因的时间或用量作为唯一调整变量",
+      "metric": "最晚一次咖啡因时间和大致来源、当晚入睡/夜醒、次日清醒度与真实任务完成情况",
+      "minimum_version": "今天先不增加，也不突然取消原有摄入；记下全部咖啡因来源、总量、时间、预计就寝和次日状态。总量与停用反应不清时只记录，不自行决定直接停或减量；不套统一截止时间或个人剂量",
+      "playbook_id": "restore-daytime-energy-without-stimulant-stacking",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "出现心悸伴不适、胸痛、明显焦虑/震颤、呕吐、意识异常或其他严重反应",
+        "需要靠越来越多咖啡因、能量饮料、尼古丁、处方兴奋剂或补剂才能维持日常功能"
+      ],
+      "trigger": "同一时段反复出现低谷，且习惯性用咖啡、茶、能量饮料、预训练产品或含咖啡因药品继续硬撑时",
+      "type": "action-step",
+      "why": "23名男性随机交叉试验显示随后睡眠受咖啡因剂量和时间影响，而且主观感觉可能漏掉客观碎片化；它支持观察自己的最晚一次摄入，不支持统一截止点或个人剂量"
+    },
+    {
+      "adaptation": "如果只是偶发低能量，进入一次低风险状态实验；如果反复、原因不明或即使有足够睡眠机会仍未恢复，停止继续找提神技巧并预约专业评估",
+      "classification": "framework-inference",
+      "id": "action-step:restore-daytime-energy-without-stimulant-stacking:separate-slump-sleepiness-and-persistent-fatigue",
+      "label": "先区分普通低能量、会打瞌睡的危险困倦，以及反复或原因不明的疲劳；把今天目标缩成安全完成下一小段现实任务",
+      "metric": "是否出现意外打瞌睡、驾驶/操作风险、持续天数、对工作生活的影响，以及是否伴打鼾窒息或晨起头痛",
+      "minimum_version": "只回答一个分流问题：我只是觉得没劲，还是已经会控制不住打瞌睡？后者立即停止驾驶和危险操作；胸痛、严重或新发气促、晕厥、意识/神经异常则联系急救",
+      "playbook_id": "restore-daytime-energy-without-stimulant-stacking",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "驾驶、骑行、高处、用火、照护或机械操作中出现困倦、走神或意外入睡",
+        "胸痛、严重或新发气促、晕厥、意识混乱、单侧无力/言语异常或症状快速恶化"
+      ],
+      "trigger": "下午崩掉、睡够仍累、准备继续用咖啡因硬撑，或低能量已经影响现实功能时",
+      "type": "action-step",
+      "why": "‘疲劳’与‘困倦’不是同一问题；未恢复睡眠、白天困倦/疲劳若与打鼾窒息等表现并存需要专业睡眠评估，不能靠提神行为自行诊断或覆盖"
+    },
+    {
+      "adaptation": "若走动后更清醒且能安全完成下一小段任务，可在类似久坐情境保留；没有改善就不延长、不加大强度，转而检查睡眠机会、进食、药物、症状和任务安排",
+      "classification": "bounded-experiment",
+      "id": "action-step:restore-daytime-energy-without-stimulant-stacking:test-one-comfortable-movement-break",
+      "label": "若是久坐后的普通低能量且环境安全，先离座做一次舒适、可立即停止的轻松走动，再决定是否需要其他支持",
+      "metric": "走动前后主观清醒度，以及能否安全完成下一小段具体任务；同时记录头晕、疼痛、异常气促或心悸",
+      "minimum_version": "离开座位，在安全平坦的地方按舒服速度走一小段，感觉够了就停；不追研究中的固定分钟或间隔，也不把户外光、冷水、呼吸法和补剂一起叠加",
+      "playbook_id": "restore-daytime-energy-without-stimulant-stacking",
+      "priority": 2,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "走动时出现胸痛、晕厥感、异常气促、心悸伴不适、明显头晕、锐痛或神经症状",
+        "必须靠提高强度、忽略疾病/伤病限制或进入不安全环境才能感觉清醒"
+      ],
+      "trigger": "确认没有危险困倦或急症，并且低能量出现在一段久坐之后",
+      "type": "action-step",
+      "why": "19人随机交叉先导试验支持频繁轻步行相较连续坐姿降低短时自报疲劳，但未改善认知等其他结局；因此这里只保留不复制固定剂量的一次可撤销实验"
     },
     {
       "adaptation": "若同类错误反复出现，改变解释、例子或题型，而不是单纯增加同样的测试次数",
@@ -49604,6 +50000,20 @@
         "01:22:39",
         "01:33:56",
         "01:51:17"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "节目可以定位咖啡因与警觉、下午低谷和随后睡眠的框架，但不能仅凭节目生成统一延迟时长、截止时间、剂量或把咖啡因当作持续疲劳治疗",
+      "evidence_layer": "podcast-claim",
+      "id": "claim:batch02-claim-0042",
+      "label": "咖啡因、下午低谷与随后睡眠（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "Huberman",
+      "timestamps": [
+        "00:53:44",
+        "01:27:41",
+        "02:06:04"
       ],
       "type": "claim"
     },
@@ -54222,6 +54632,24 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "指南不表示每个疲劳用户都有OSA，也不否定普通久坐者可尝试低风险走动；该关系只要求在危险、持续或有睡眠呼吸症状时停止生活实验并转专业评估。",
+      "id": "evidence-relation:kapur-2017-qualifies-dempsey-2016-fatigue-self-management",
+      "label": "久坐后的短时疲劳改善信号能否覆盖睡够仍累、危险困倦或疑似睡眠呼吸暂停",
+      "provenance_urls": [
+        "https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/26920441/",
+        "https://doi.org/10.5664/jcsm.6506",
+        "https://doi.org/10.1136/bmjopen-2015-009630"
+      ],
+      "rationale": "Dempsey小型交叉试验只支持特定久坐实验中自报疲劳的急性变化；AASM指南指出未恢复睡眠、白天困倦/疲劳与打鼾、喘醒窒息或目击呼吸暂停的组合需要综合睡眠评估和客观检测。短暂走动不能充当这些症状的诊断或治疗。",
+      "relation": "qualifies",
+      "relation_id": "kapur-2017-qualifies-dempsey-2016-fatigue-self-management",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "kapur-2017-osa-diagnostic-guideline",
+      "target_review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "这不是独立复制：两篇研究作者完全重叠，样本都来自大学本科生实验室；材料与设计虽不同，但终测仍与练习提取形式接近，不能据此保证跨题型迁移或真实课程中的同等效应。",
       "id": "evidence-relation:karpicke-roediger-2008-supports-roediger-karpicke-2006-delayed-retrieval",
       "label": "在首次学习或首次答对后继续练习提取，是否比继续阅读材料更有利于一周后的记忆保持",
@@ -54490,6 +54918,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:acute-state",
+      "label": "acute-state",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:acute-stress",
       "label": "acute-stress",
       "type": "evidence-topic"
@@ -54655,6 +55088,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:clinical-triage",
+      "label": "clinical-triage",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:cognition",
       "label": "cognition",
       "type": "evidence-topic"
@@ -54720,6 +55158,21 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:daytime-energy",
+      "label": "daytime-energy",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:daytime-fatigue",
+      "label": "daytime-fatigue",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:daytime-sleepiness",
+      "label": "daytime-sleepiness",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:depression",
       "label": "depression",
       "type": "evidence-topic"
@@ -54762,6 +55215,11 @@
     {
       "id": "evidence-topic:dose-response-association",
       "label": "dose-response-association",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:dose-timing",
+      "label": "dose-timing",
       "type": "evidence-topic"
     },
     {
@@ -54842,6 +55300,11 @@
     {
       "id": "evidence-topic:fasting-glucose",
       "label": "fasting-glucose",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:fatigue",
+      "label": "fatigue",
       "type": "evidence-topic"
     },
     {
@@ -55360,6 +55823,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:sedentary-behavior",
+      "label": "sedentary-behavior",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sickness-absence",
       "label": "sickness-absence",
       "type": "evidence-topic"
@@ -55372,6 +55840,16 @@
     {
       "id": "evidence-topic:sleep",
       "label": "sleep",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-apnea",
+      "label": "sleep-apnea",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-architecture",
+      "label": "sleep-architecture",
       "type": "evidence-topic"
     },
     {
@@ -55485,6 +55963,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:unrefreshing-sleep",
+      "label": "unrefreshing-sleep",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:vascular-function",
       "label": "vascular-function",
       "type": "evidence-topic"
@@ -55497,6 +55980,11 @@
     {
       "id": "evidence-topic:vocabulary",
       "label": "vocabulary",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:walking-breaks",
+      "label": "walking-breaks",
       "type": "evidence-topic"
     },
     {
@@ -56671,6 +57159,17 @@
       "type": "resource",
       "url": "https://academic.oup.com/sleep/article/47/1/zsad253/7280269",
       "verification_status": "pending"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部研究级核验：23名年轻男性完成双盲随机七条件交叉试验；100 mg各时点无显著睡眠影响，单次400 mg在距就寝12小时内可影响入睡/睡眠结构且越接近就寝影响越明显，主观感觉可能漏掉客观碎片化。仅两个剂量、三个时点和男性小样本，不授权通用截止时间或个人剂量。证据卡：academic-study-cards.jsonl#stanyer-2024-caffeine-dose-timing-sleep。",
+      "id": "resource:https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "kind": "academic-or-medical",
+      "label": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -70978,6 +71477,17 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部研究级核验：19名45–75岁超重/肥胖成人在随机交叉实验室试验中，穿插轻强度步行相较连续坐姿降低4小时和7小时自报疲劳，但认知及其他变量无显著差异。小样本、特定人群与实验室高频方案不支持通用步行剂量或持续疲劳治疗。证据卡：academic-study-cards.jsonl#dempsey-2016-walking-breaks-fatigue。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/26920441/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/26920441/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26920441/",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部安全综述级核验：跨领域综述指出，冷水浸泡可在特定恢复情境中有用，但突然入水会触发冷休克、过度换气、心律失常与溺水风险，持续暴露还有低体温风险。不能把强烈生理反应当作安全或疗效证明，也不能从综述推出个人温度/时长。证据卡：academic-study-cards.jsonl#tipton-2017-cold-water-risks-benefits-review。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/28833689/",
       "kind": "academic-or-medical",
@@ -73895,6 +74405,17 @@
       "label": "https://www.aasect.org/",
       "type": "resource",
       "url": "https://www.aasect.org/"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部指南级核验：AASM成人OSA诊断指南将未恢复睡眠、白天困倦、疲劳、喘醒/窒息、响亮打鼾和目击呼吸暂停列为相关表现，要求综合睡眠评估和适当客观检测；症状/问卷本身不能诊断。该指南不覆盖所有疲劳原因，也不授权咖啡因或自助治疗。证据卡：academic-study-cards.jsonl#kapur-2017-osa-diagnostic-guideline。",
+      "id": "resource:https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf",
+      "kind": "other-resource",
+      "label": "https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf",
+      "verification_status": "verified-review"
     },
     {
       "id": "resource:https://www.absoluterest.com/",
@@ -103431,6 +103952,34 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "同一参与者在另一实验日连续坐5小时，不穿插步行",
+      "doi": "10.1136/bmjopen-2015-009630",
+      "evidence_level": "A-Direct（19人随机交叉实验室先导试验）",
+      "id": "study-card:dempsey-2016-walking-breaks-fatigue",
+      "intervention_exposure": "连续坐姿期间每30分钟进行3分钟轻强度步行，共持续5小时",
+      "label": "Acute effects of breaking up prolonged sitting on fatigue and cognition: a pilot study",
+      "outcomes": [
+        "0、4和7小时自报疲劳",
+        "执行功能与情景记忆",
+        "心率、血压、神经内分泌和心代谢指标"
+      ],
+      "population": "45–75岁、超重或肥胖成人；实验室情境",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/26920441/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4769400/",
+        "https://doi.org/10.1136/bmjopen-2015-009630"
+      ],
+      "result_summary": "与连续坐姿相比，穿插轻强度步行时4小时和7小时自报疲劳较低；心率略高。",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "支持把舒适、可停止的短暂离座走动作为久坐后普通低能量的一次低风险候选实验；不能把研究中的3分钟/30分钟写成通用剂量，也不能用走动覆盖危险困倦、持续疲劳或疾病症状。",
+      "sample_size": 19,
+      "source_scope": "external-context",
+      "study_design": "随机两条件交叉先导试验；两次实验日间隔6天，在先坐2小时后比较连续坐5小时与每30分钟穿插3分钟轻强度步行",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "各技术相对不练习、重复阅读/复习或其他学习策略；同时比较练习测试的格式、次数、间隔与是否提供正确答案反馈",
       "doi": "10.1177/1529100612453266",
       "evidence_level": "A-Synthesis（十种学习技术的结构化叙述性综述）",
@@ -103745,6 +104294,33 @@
       "study_design": "回顾性检索2005–2021年单一创伤中心的桑拿相关受伤就诊记录，描述病因、诊断、处置与严重事件",
       "type": "study-card",
       "verification_status": "verified-observational"
+    },
+    {
+      "comparator": "不同诊断路径、临床评估单独使用及在检测阴性/不确定时的后续策略",
+      "doi": "10.5664/jcsm.6506",
+      "evidence_level": "A-Guideline（AASM成人阻塞性睡眠呼吸暂停诊断临床实践指南）",
+      "id": "study-card:kapur-2017-osa-diagnostic-guideline",
+      "intervention_exposure": "临床综合睡眠评估后，根据适用情境使用多导睡眠监测或技术充分的居家睡眠呼吸暂停检测",
+      "label": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea",
+      "outcomes": [
+        "成人OSA诊断准确性与检测路径",
+        "未恢复睡眠、白天困倦、疲劳及打鼾/窒息等临床表现",
+        "对工作、驾驶、认知和生活质量的功能影响"
+      ],
+      "population": "疑似成人阻塞性睡眠呼吸暂停人群；具体检测路径按并存疾病与临床复杂性区分",
+      "provenance_urls": [
+        "https://www.aasm.org/resources/clinicalguidelines/diagnostic-testing-osa.pdf",
+        "https://doi.org/10.5664/jcsm.6506"
+      ],
+      "result_summary": "指南把未恢复睡眠、白天困倦、疲劳、夜间喘醒/窒息、响亮打鼾或目击呼吸暂停列为OSA相关表现，并建议有较高风险症状的成人接受综合睡眠评估及适当的客观诊断检测。",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "‘睡够仍累’若反复出现，尤其伴打鼾窒息、目击呼吸暂停、晨起头痛、意外入睡或明显功能受损，应停止把问题简化为咖啡因或意志力并寻求专业评估；症状不能由Skill诊断为OSA。",
+      "sample_size": "临床实践指南；整合诊断准确性、临床结局与适用场景证据，不以单一样本量表示",
+      "source_scope": "external-context",
+      "study_design": "美国睡眠医学会多学科工作组基于系统证据评估形成的成人OSA诊断临床实践指南",
+      "type": "study-card",
+      "verification_status": "verified-review"
     },
     {
       "comparator": "反复提取与答对一次后停止提取；同时正交比较答对后继续学习全部词对或只学习尚未答对词对",
@@ -104314,6 +104890,33 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "三个相同时间点均服安慰剂",
+      "doi": "10.1093/sleep/zsae230",
+      "evidence_level": "A-Direct（23名男性、双盲随机安慰剂交叉试验）",
+      "id": "study-card:stanyer-2024-caffeine-dose-timing-sleep",
+      "intervention_exposure": "单次100 mg或400 mg无水咖啡因，在个体习惯就寝前12、8或4小时服用",
+      "label": "Dose and timing effects of caffeine on subsequent sleep: a randomized clinical crossover trial",
+      "outcomes": [
+        "总睡眠时间、睡眠效率、入睡潜伏期、入睡后清醒",
+        "N1/N2、N3和REM睡眠结构",
+        "主观睡眠时长、入睡和睡眠质量"
+      ],
+      "population": "23名平均25.3岁、日常咖啡因摄入低于300 mg/日的男性",
+      "provenance_urls": [
+        "https://academic.oup.com/sleep/article/48/4/zsae230/7815486",
+        "https://doi.org/10.1093/sleep/zsae230"
+      ],
+      "result_summary": "100 mg各时点相对安慰剂未见显著客观或主观睡眠影响；400 mg在距就寝12小时内可延迟入睡并改变睡眠结构，在8小时内睡眠碎片化更明显，距就寝4小时时主观睡眠质量也下降。",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "支持咖啡因对随后睡眠具有明显的剂量与时间依赖，并且主观感觉可能漏掉客观干扰；适合把最晚一次咖啡因作为可观察变量，而不是套用一个万能截止点、突然停用或给个人剂量。",
+      "sample_size": 23,
+      "source_scope": "external-context",
+      "study_design": "安慰剂对照、双盲、随机七条件交叉试验；每个条件间洗脱48小时，在家用部分多导睡眠监测和睡眠日记评估",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "研究 1 为同一参与者此前现代电灯环境；研究 2 为各参与者工作日基线及自选留在现代环境的周末组",
       "doi": "10.1016/j.cub.2016.12.041",
       "evidence_level": "A-Direct（19 人两项非随机自然实验）",
@@ -104460,6 +105063,13 @@
       "id": "study-finding:007aedc5573be309",
       "label": "冬季露营后褪黑素结束时间无显著变化（p=0.57）",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:009cabedc2a071e2",
+      "label": "100 mg在本样本和测试时点未见显著客观或主观睡眠差异",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
       "type": "study-finding"
     },
     {
@@ -104768,6 +105378,13 @@
       "id": "study-finding:339b66169cd0f1e6",
       "label": "综述认为一次运动后情绪通常改善，认知总体呈小幅正向趋势，尤其常见于反应速度和部分执行功能；但单项研究从改善到无效甚至变差均有，结果依赖运动模式、强度、时长、测试时机、任务和人群。长期记忆和具体机制的证据相对有限。",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:33fccd3add43d3c7",
+      "label": "研究没有检验一次任意时长散步、户外光照或一般人群的长期精力改善",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
       "type": "study-finding"
     },
     {
@@ -105150,6 +105767,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:7751deebf31d2c81",
+      "label": "一次居家检测阴性、结果不明确或技术不充分时不能据此排除OSA，指南建议在适当情况下做多导睡眠监测",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7825165c6dce1aa1",
       "label": "静息收缩压和舒张压没有改善",
       "review_id": "debray-2023-sauna-stable-cad-rct",
@@ -105272,6 +105896,13 @@
       "id": "study-finding:89d2b04f9d9360ef",
       "label": "测试部分内容对相关但未测试内容的迁移并不总是出现",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:8e275c8ab270f103",
+      "label": "指南不把一般疲劳等同于OSA，也不提供自助提神或咖啡因治疗方案",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
       "type": "study-finding"
     },
     {
@@ -105405,6 +106036,13 @@
       "id": "study-finding:9de0b13a8bfed385",
       "label": "两种饮食间蛋白质摄入没有显著差异",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9eea1b526b2d06cd",
+      "label": "执行功能、情景记忆及其他测量变量未见显著条件×时间差异",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
       "type": "study-finding"
     },
     {
@@ -105633,6 +106271,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:c2a2b7ed6959a9f6",
+      "label": "参与者常未准确察觉客观睡眠碎片化",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:c2a33f98ab9cb799",
       "label": "没有死亡率、长寿或长期重大临床事件结局",
       "review_id": "pizzey-2021-heat-vascular-meta-analysis",
@@ -105671,6 +106316,13 @@
       "id": "study-finding:c697f12b8c159430",
       "label": "四种条件的学习阶段累计学习曲线没有显著差异",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ca31cd6a601f9533",
+      "label": "所测基因型对客观或主观睡眠结局未见显著主效应",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
       "type": "study-finding"
     },
     {
@@ -105801,6 +106453,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:df69a4549d24de04",
+      "label": "临床问卷、预测工具和症状本身不能在没有多导睡眠或居家睡眠呼吸暂停检测时直接诊断OSA",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:e111ad450123ea42",
       "label": "预设神经区域对感恩或威胁任务的组间差异不显著",
       "review_id": "hazlett-2021-gratitude-rct",
@@ -105892,6 +106551,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:ed10319835b1ddb1",
+      "label": "没有比较步行与咖啡因、午睡、进食或其他提神方法",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:ee81cf788c2b1a56",
       "label": "约一半有足够数据的参与者未表现出可由该模型良好描述的习惯形成轨迹",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -105926,6 +106592,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:f0669926c6219a99",
+      "label": "100 mg各时点相对安慰剂未见显著客观或主观睡眠影响；400 mg在距就寝12小时内可延迟入睡并改变睡眠结构，在8小时内睡眠碎片化更明显，距就寝4小时时主观睡眠质量也下降。",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:f0c8b99f09c0911c",
       "label": "三晚与一晚睡眠后的速度和错误率差异仅呈趋势，组间 P 值分别为 0.07 和 0.10",
@@ -105937,6 +106610,13 @@
       "id": "study-finding:f187c68b9b558f83",
       "label": "刺激期间 40 Hz 与 16.3 Hz 的行为表现没有平均差异",
       "review_id": "ross-lopez-2020-binaural-attentional-blink",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:f18c66b1eccf8e4f",
+      "label": "与连续坐姿相比，穿插轻强度步行时4小时和7小时自报疲劳较低；心率略高。",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
       "type": "study-finding"
     },
     {
@@ -105990,6 +106670,13 @@
     },
     {
       "finding_kind": "result",
+      "id": "study-finding:f9d7cb07fc59612d",
+      "label": "指南把未恢复睡眠、白天困倦、疲劳、夜间喘醒/窒息、响亮打鼾或目击呼吸暂停列为OSA相关表现，并建议有较高风险症状的成人接受综合睡眠评估及适当的客观诊断检测。",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
       "id": "study-finding:f9e97d3ca2f9a621",
       "label": "48 名至少完成 4 周者进入带末次观测结转的第 8 周分析；联合组自第 4 周起优于两种单药，应答率分别为氟西汀 50%、EPA 56%、联合 81%。",
       "review_id": "jazayeri-2008-epa-fluoxetine-mdd",
@@ -106015,6 +106702,12 @@
       "label": "综述没有证明循环叹息是急性焦虑的最佳或普遍有效工具",
       "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:015ee7481943f7bf",
+      "label": "指南聚焦成人OSA诊断，不是所有疲劳、嗜睡或睡眠障碍的完整鉴别诊断",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "type": "study-limitation"
     },
     {
       "id": "study-limitation:02beeedca9a15a4e",
@@ -106275,6 +106968,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:2faa8a463df497a3",
+      "label": "仅19人，属于先导试验",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:2fd54ff3096d16ea",
       "label": "短期方案与随访不能确定长期收益或安全",
       "review_id": "buijze-2016-cold-shower-rct",
@@ -106374,6 +107073,12 @@
       "id": "study-limitation:3aa47d6bff75cb21",
       "label": "作者披露与设备行业相关的顾问委员会/酬金关系，需考虑利益冲突",
       "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3ab324f90322dae7",
+      "label": "不提供持续疲劳、药物不良反应、贫血、感染、内分泌或精神健康等其他原因的诊断路径",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
       "type": "study-limitation"
     },
     {
@@ -106497,6 +107202,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4b9191b6cf2e881d",
+      "label": "结局是随后一晚睡眠，不直接证明减少下午咖啡因会改善个人次日精力",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:4cbf1207946ad0d0",
       "label": "叙述性跨领域综述，不是所有结局的预注册系统综述或荟萃分析",
       "review_id": "tipton-2017-cold-water-risks-benefits-review",
@@ -106545,6 +107256,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:53aca2576892cbb2",
+      "label": "只测试单次100 mg和400 mg胶囊及三个固定时点，不能产生适用于所有饮品、剂量与个体的截止时间",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:53c686f5ddbcfd5a",
       "label": "设备快速迭代使旧型号证据难以迁移到新产品",
       "review_id": "cohen-2021-home-dermatology-devices-review",
@@ -106584,6 +107301,12 @@
       "id": "study-limitation:55bac2e931965888",
       "label": "单中心回顾性病例系列，选择偏倚显著",
       "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:567825a2a035485c",
+      "label": "研究期间控制日常咖啡因并禁止午睡，与真实生活的混合饮品和累积摄入不同",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
       "type": "study-limitation"
     },
     {
@@ -106629,9 +107352,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:5e1fc41ee9016b1c",
+      "label": "实验室连续久坐、统一代餐和高频步行方案与日常午后低能量不完全相同",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:5e6b61273837babf",
       "label": "新纳入样本仅 40 人且每个日程组只有 10 人",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5efd8095815f751e",
+      "label": "仅23名年轻男性，样本小且不代表女性、老年人、孕期、疾病或高敏感人群",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
       "type": "study-limitation"
     },
     {
@@ -106680,6 +107415,12 @@
       "id": "study-limitation:61fc0ad25db64148",
       "label": "研究由与 2006 年论文重叠的同一作者团队完成，不是独立复制",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6228e312e532a561",
+      "label": "主要支持短时自报疲劳变化，不证明治疗持续疲劳或改善长期工作产出",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
       "type": "study-limitation"
     },
     {
@@ -106821,6 +107562,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:7408ad07e812fb8d",
+      "label": "症状组合提示需要评估但不能让远程助手判断个体是否患病",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:74231d565d506ed8",
       "label": "十种技术的证据量、研究质量和结局差异很大，技术之间的等级不能当作统一头对头排名",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -106959,6 +107706,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8a71ae10c4abfcc4",
+      "label": "参与者均为45–75岁且超重或肥胖，不能直接外推到所有年龄和健康状态",
+      "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:8b47ad692d1e02da",
       "label": "8周随访无法评估重大事件或长期安全",
       "review_id": "debray-2023-sauna-stable-cad-rct",
@@ -107046,6 +107799,12 @@
       "id": "study-limitation:99b9f044a4960324",
       "label": "不能据此给出个人安全温度、时长或频率阈值",
       "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9abcb3056d35ed30",
+      "label": "指南发表于2017年，具体检测可及性和后续照护需结合当前当地医疗系统",
+      "review_id": "kapur-2017-osa-diagnostic-guideline",
       "type": "study-limitation"
     },
     {
@@ -107184,6 +107943,12 @@
       "id": "study-limitation:a9cc812fee8f93f0",
       "label": "低效用不等于在任何人、任何材料上都无效；高效用也不等于替代教师指导、理解建构和学习动机",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:aaf2c376256f4df6",
+      "label": "未建立突然停用日常咖啡因的安全或最佳减量方式",
+      "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
       "type": "study-limitation"
     },
     {
@@ -110477,20 +111242,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1757,
-    "action_playbook_nodes": 11,
-    "action_step_nodes": 33,
+    "academic_resource_nodes": 1760,
+    "action_playbook_nodes": 12,
+    "action_step_nodes": 36,
     "bilibili_nodes": 34,
-    "claim_nodes": 41,
+    "claim_nodes": 42,
     "course_lecture_nodes": 8,
-    "edges": 9529,
+    "edges": 9588,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 30,
-    "evidence_topic_nodes": 218,
-    "resource_nodes": 6041,
-    "study_card_nodes": 47,
-    "study_finding_nodes": 223,
-    "study_limitation_nodes": 290,
+    "evidence_relation_nodes": 31,
+    "evidence_topic_nodes": 230,
+    "resource_nodes": 6044,
+    "study_card_nodes": 50,
+    "study_finding_nodes": 235,
+    "study_limitation_nodes": 303,
     "top_topics": [
       {
         "count": 58,
@@ -110594,7 +111359,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 705,
+    "verified_academic_resource_nodes": 708,
     "youtube_nodes": 424
   }
 }

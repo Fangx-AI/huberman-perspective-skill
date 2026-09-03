@@ -20,13 +20,14 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 
 两种入口应得到相同的用户优先行为。
 
-## 十一个结果优先场景
+## 十二个结果优先场景
 
 | 用户原话 | 后台匹配剧本 | 回答必须保留的边界 |
 |---|---|---|
 | `我收藏了很多协议，但一个习惯也执行不下去。` | `start-and-sustain-one-habit` | 21 或 66 天不是成功期限；先缩小动作和摩擦，不羞辱自律 |
 | `我看了三遍，一周后还是忘。` | `retain-what-you-learn` | 提取练习只替代部分重读；没有通用复习间隔 |
 | `工作日和周末作息越漂越晚。` | `stabilize-sleep-wake-timing` | 不发明固定光照剂量，不直视太阳，不建议自行睡眠压缩 |
+| `下午三点就没精神，只能靠咖啡；睡够了还是累。` | `restore-daytime-energy-without-stimulant-stacking` | 先分普通低谷、危险困倦和持续疲劳；不加码兴奋剂，不给统一咖啡因截止时间 |
 | `我工作时总被手机和网页打断。` | `protect-one-focus-block` | 不强制 45/5 计时器、双耳节拍，也不把它写成 ADHD 治疗 |
 | `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | 从症状和能力允许范围以下开始；不保证 hippocampal growth 或预防痴呆 |
 | `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | 不要求 skip meals，不把所有加工食品道德化，不替代临床营养照护 |
@@ -76,6 +77,7 @@ python scripts/query_evidence.py "冷暴露 冰浴 冷水澡 训练恢复 安全
 python scripts/query_evidence.py "红光 面板 面罩 血糖 视力 皮肤 设备等效"
 python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 恢复 安全"
 python scripts/query_evidence.py "循环叹息 急性焦虑 压力 呼吸"
+python scripts/query_evidence.py "下午 疲劳 久坐 咖啡因 睡眠"
 ```
 
 ## 医疗边界

@@ -86,6 +86,21 @@ class AcademicStudyCardTests(unittest.TestCase):
         self.assertEqual(chin["source_scope"], "external-context")
         self.assertEqual(chin["queue_urls"], [])
 
+    def test_daytime_energy_cluster_separates_short_term_state_sleep_and_clinical_triage(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "dempsey-2016-walking-breaks-fatigue",
+            "stanyer-2024-caffeine-dose-timing-sleep",
+            "kapur-2017-osa-diagnostic-guideline",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("执行功能", " ".join(by_id["dempsey-2016-walking-breaks-fatigue"]["null_findings"]))
+        self.assertIn("主观感觉可能漏掉", by_id["stanyer-2024-caffeine-dose-timing-sleep"]["safe_interpretation"])
+        self.assertIn("症状不能由Skill诊断", by_id["kapur-2017-osa-diagnostic-guideline"]["safe_interpretation"])
+        for review_id in expected:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

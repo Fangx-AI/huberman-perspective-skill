@@ -318,7 +318,7 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         action_playbooks = []
         failures.append(f"Action playbooks cannot be loaded or validated: {exc}")
-    require(len(action_playbooks) == 11, "Action playbook catalog must contain eleven reviewed playbooks", failures)
+    require(len(action_playbooks) == 12, "Action playbook catalog must contain twelve reviewed playbooks", failures)
 
     graph_path = ROOT / "references/catalog/knowledge-graph.json"
     try:

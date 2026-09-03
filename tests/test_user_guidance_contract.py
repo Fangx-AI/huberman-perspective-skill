@@ -25,6 +25,9 @@ class UserGuidanceContractTests(unittest.TestCase):
             "区分失败发生在忘记、没开始、中途被打断、动作太难",
             "在用户回答前不要让他列出或整理全部问题",
             "持续或原因不明的疲劳",
+            "最近的安全地点停车",
+            "不要让用户第二天自行猜",
+            "今天不额外加码，也不突然取消原有摄入",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)

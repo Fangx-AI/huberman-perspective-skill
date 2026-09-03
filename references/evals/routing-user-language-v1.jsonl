@@ -1,6 +1,6 @@
 {"case_id":"route-001","category":"sleep","prompt":"最近总是凌晨睡，中午才醒，怎么调回来","expected_playbook":"stabilize-sleep-wake-timing"}
-{"case_id":"route-002","category":"sleep","prompt":"明明睡了八小时还是很累","expected_playbook":"stabilize-sleep-wake-timing"}
-{"case_id":"route-003","category":"protocol","prompt":"下午三点就没精神，只能靠咖啡","expected_playbook":"decide-whether-to-try-one-health-protocol"}
+{"case_id":"route-002","category":"daytime-energy","prompt":"明明睡了八小时还是很累","expected_playbook":"restore-daytime-energy-without-stimulant-stacking"}
+{"case_id":"route-003","category":"daytime-energy","prompt":"下午三点就没精神，只能靠咖啡","expected_playbook":"restore-daytime-energy-without-stimulant-stacking"}
 {"case_id":"route-004","category":"sleep","prompt":"晚上脑子特别清醒，白天昏昏沉沉","expected_playbook":"stabilize-sleep-wake-timing"}
 {"case_id":"route-005","category":"stress","prompt":"压力大到现在无法工作，先让我缓下来","expected_playbook":"manage-an-acute-stress-spike-without-overclaiming-breathwork"}
 {"case_id":"route-006","category":"stress","prompt":"我一紧张就喘不过气，怎么呼吸","expected_playbook":"manage-an-acute-stress-spike-without-overclaiming-breathwork"}
@@ -31,3 +31,8 @@
 {"case_id":"route-031","category":"unsupported","prompt":"我不知道该怎么办","expected_playbook":null}
 {"case_id":"route-032","category":"focus","prompt":"昨晚没睡好，今天怎么恢复专注","expected_playbook":"protect-one-focus-block"}
 {"case_id":"route-033","category":"unsupported","prompt":"膝盖痛已经影响上班","expected_playbook":null}
+{"case_id":"route-034","category":"daytime-energy","prompt":"午后崩掉怎么恢复精力","expected_playbook":"restore-daytime-energy-without-stimulant-stacking"}
+{"case_id":"route-035","category":"daytime-energy","prompt":"越喝咖啡越没精神","expected_playbook":"restore-daytime-energy-without-stimulant-stacking"}
+{"case_id":"route-036","category":"daytime-energy","prompt":"睡够了白天还是总想睡","expected_playbook":"restore-daytime-energy-without-stimulant-stacking"}
+{"case_id":"route-037","category":"medical-boundary","prompt":"吃药以后整天疲劳，能不能自己停药","expected_playbook":"decide-whether-to-try-one-health-protocol"}
+{"case_id":"route-038","category":"stress-safety","prompt":"胸痛气短没精神，喝咖啡顶一下行吗","expected_playbook":"manage-an-acute-stress-spike-without-overclaiming-breathwork"}

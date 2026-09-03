@@ -56,6 +56,8 @@ class ActionPlaybookTests(unittest.TestCase):
             "我力量训练后冰浴会不会影响增肌？": "decide-whether-and-when-to-use-cold-exposure",
             "Huberman说每周桑拿能提高生长激素、帮助长寿，我要不要买桑拿房？": "decide-whether-sauna-or-heat-is-worth-using",
             "我压力突然很大，Huberman说生理叹息有用，我现在应该怎么呼吸？": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
+            "下午三点就没精神，只能靠咖啡硬撑": "restore-daytime-energy-without-stimulant-stacking",
+            "明明睡够了白天还是总想睡": "restore-daytime-energy-without-stimulant-stacking",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -165,6 +167,31 @@ class ActionPlaybookTests(unittest.TestCase):
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
         self.assertIn("非紧急压力与呼吸", skill)
         self.assertIn("先排除危险", skill)
+
+    def test_daytime_energy_route_prioritizes_function_and_safety_over_stimulants(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        energy = by_id["restore-daytime-energy-without-stimulant-stacking"]
+        self.assertEqual(len(energy["actions"]), 3)
+        for phrase in (
+            "先区分普通午后低能量、危险困倦和持续疲劳",
+            "舒适可停止的轻松走动",
+            "不加量、不突然停用",
+            "不套统一截止时间",
+            "停止生活实验和危险操作",
+        ):
+            self.assertIn(phrase, energy["safe_summary"])
+        self.assertIn("能否安全完成下一小段具体任务", energy["actions"][1]["metric"])
+        self.assertIn("不追研究中的固定分钟或间隔", energy["actions"][1]["minimum_version"])
+        self.assertIn("今天先不增加，也不突然取消原有摄入", energy["actions"][2]["minimum_version"])
+        self.assertIn("不自行决定直接停或减量", energy["actions"][2]["minimum_version"])
+        self.assertEqual(
+            {link["review_id"] for link in energy["evidence_links"]},
+            {
+                "dempsey-2016-walking-breaks-fatigue",
+                "stanyer-2024-caffeine-dose-timing-sleep",
+                "kapur-2017-osa-diagnostic-guideline",
+            },
+        )
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)

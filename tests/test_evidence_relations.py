@@ -107,6 +107,15 @@ class EvidenceRelationTests(unittest.TestCase):
         )
         self.assertIn("不构成直接矛盾", transfer["boundary"])
 
+    def test_daytime_energy_relation_blocks_self_treating_sleep_disorder_signals(self) -> None:
+        relation = next(
+            item for item in self.relations
+            if item["relation_id"] == "kapur-2017-qualifies-dempsey-2016-fatigue-self-management"
+        )
+        self.assertEqual(relation["relation"], "qualifies")
+        self.assertIn("短暂走动不能充当", relation["rationale"])
+        self.assertIn("停止生活实验", relation["boundary"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

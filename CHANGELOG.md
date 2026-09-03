@@ -7,6 +7,19 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.18.0] - 2026-09-03
+
+### Added
+
+- Added a user-first daytime-energy playbook for ordinary requests such as “下午没精神”“只能靠咖啡” and “睡够还是累”. It separates an ordinary slump from dangerous sleepiness and persistent fatigue before offering a small action.
+- Added structured evidence cards for a randomized walking-break fatigue pilot, a randomized caffeine dose/timing sleep trial, and the AASM adult obstructive sleep apnea diagnostic guideline, plus an explicit relation that prevents a short walking result from being used to cover sleep-disorder symptoms.
+- Expanded the ordinary-language routing regression set from 33 to 38 cases, including medication-related fatigue and chest-pain/dyspnea boundaries.
+
+### Changed
+
+- Daytime-energy answers now prioritize safe function, one comfortable movement test, and review of the latest caffeine exposure without stimulant stacking, abrupt cessation, universal cutoff times, or personal dosing.
+- Updated the research cutoff to 2026-09-03 and the public snapshot summary to 50 evidence cards, 31 relations, 12 playbooks and 36 actions.
+
 ## [0.17.1] - 2026-09-03
 
 ### Fixed

@@ -19,6 +19,18 @@ LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
 # Natural-language phrases observed in user requests. Keep these separate from the
 # evidence catalog: they improve routing without changing any evidence claim.
 COMMON_ROUTING_ALIASES = {
+    "restore-daytime-energy-without-stimulant-stacking": (
+        "下午三点就没精神",
+        "午后崩掉",
+        "午后犯困",
+        "下午犯困",
+        "靠咖啡硬撑",
+        "越喝咖啡越没精神",
+        "明明睡够了还是很累",
+        "睡够还是很累",
+        "睡够仍然疲劳",
+        "白天总想睡",
+    ),
     "stabilize-sleep-wake-timing": (
         "越睡越晚",
         "早上起不来",
@@ -27,7 +39,6 @@ COMMON_ROUTING_ALIASES = {
         "作息越来越乱",
         "凌晨睡",
         "中午才醒",
-        "睡了八小时还是很累",
         "白天昏昏沉沉",
         "轮班工作",
         "白天睡不着",
@@ -83,8 +94,8 @@ COMMON_ROUTING_ALIASES = {
         "鱼油",
         "镁能改善",
         "补剂",
-        "靠咖啡",
         "吃药后头晕",
+        "吃药以后整天疲劳",
         "自己减量",
     ),
     "decide-whether-a-red-light-device-is-worth-buying": ("红光面罩", "红光设备", "红光是不是智商税"),

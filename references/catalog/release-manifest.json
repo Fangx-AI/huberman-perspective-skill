@@ -1,22 +1,22 @@
 {
   "counts": {
-    "academic_resource_nodes": 1757,
-    "action_playbook_nodes": 11,
-    "action_playbooks": 11,
-    "action_step_nodes": 33,
+    "academic_resource_nodes": 1760,
+    "action_playbook_nodes": 12,
+    "action_playbooks": 12,
+    "action_step_nodes": 36,
     "bilibili_nodes": 34,
-    "claim_nodes": 41,
-    "claims": 41,
+    "claim_nodes": 42,
+    "claims": 42,
     "course_lecture_nodes": 8,
-    "edges": 9529,
+    "edges": 9588,
     "episode_nodes": 425,
     "episodes": 425,
-    "evidence_relation_nodes": 30,
-    "evidence_topic_nodes": 218,
-    "resource_nodes": 6041,
-    "study_card_nodes": 47,
-    "study_finding_nodes": 223,
-    "study_limitation_nodes": 290,
+    "evidence_relation_nodes": 31,
+    "evidence_topic_nodes": 230,
+    "resource_nodes": 6044,
+    "study_card_nodes": 50,
+    "study_finding_nodes": 235,
+    "study_limitation_nodes": 303,
     "top_topics": [
       {
         "count": 58,
@@ -120,18 +120,18 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 705,
+    "verified_academic_resource_nodes": 708,
     "video_urls": 8,
     "youtube_nodes": 424
   },
-  "generated_at": "2026-08-31T11:37:44.934701+00:00",
+  "generated_at": "2026-09-03T08:03:44.757220+00:00",
   "raw_payloads_included": false,
   "schema": "public-release-manifest-v1",
   "sha256": {
-    "action-playbooks.jsonl": "fc773ee95a0c21c3b658b37b7d9e6226d7a6b5c8dadd36702e3820fbc6a71f76",
-    "claim-index.jsonl": "3d83442c5d594f41c87ee96357c716947807642375ebba934db0d907247b324b",
+    "action-playbooks.jsonl": "824a3a36ed47cf8f7f8ab7850478496b9a90d63259ab5fd56d7ec9d8c35a216d",
+    "claim-index.jsonl": "bed95cdbbd93b5f0837008a4fa2ef1f34f18f57954560e979e7865f50945cdea",
     "episodes.csv": "1f0204093ca0080e46b01c117a8ab5f413e83fa837de59ce5d8f8f71184cd039",
-    "knowledge-graph.json": "f071ad5c4f6d55c8acdba55e91337e06681ab9ab7086c26abb47865435297417",
+    "knowledge-graph.json": "3b2ab84514e19421332d184aba0514d8e6a7183b6bc58965ce8804066db2c6b5",
     "video-urls.csv": "54d0f495f54e1af0bcb1ae22488eee73d7f784ce37d458d9d168193593aec0d9"
   }
 }
