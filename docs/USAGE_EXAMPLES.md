@@ -20,7 +20,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 
 两种入口应得到相同的用户优先行为。
 
-## 十三个结果优先场景
+## 十四个结果优先场景
 
 | 用户原话 | 后台匹配剧本 | 回答必须保留的边界 |
 |---|---|---|
@@ -37,6 +37,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 | `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | 泛健康目标默认可以不买；先匹配适应证和设备，不直照眼睛或编造剂量 |
 | `桑拿能提高生长激素、降低心血管死亡，我该买桑拿房或每周硬凑吗？` | `decide-whether-sauna-or-heat-is-worth-using` | 死亡率证据多为观察性、激素峰值短暂；不规定通用剂量或强制次数 |
 | `压力突然很大，生理叹息能不能快速帮我？` | `manage-an-acute-stress-spike-without-overclaiming-breathwork` | 先分流急症；只给温和、可停止的选项，不做过度换气或屏息，不承诺优于其他急性焦虑干预 |
+| `最近几个月一直紧绷，工作把我耗空了，呼吸法只能管一会儿。` | `support-ongoing-stress-worry-and-work-overload` | 不把持续问题当一次急性高峰；先改一个现实负荷或恢复一个功能，持续受损时当天准备专业支持，不诊断皮质醇或倦怠 |
 
 后台路由可以独立检查，但普通用户不需要运行命令：
 
@@ -60,6 +61,14 @@ python scripts/query_action_playbooks.py "我久坐很久，运动协议太多�
 
 好的回答会先做简短安全确认，再提供一个可随时停止的动作和一个现实目标。若出现胸痛、严重气促、昏厥、意识异常、自伤或他伤风险，则应优先联系当地急救或危机支持。
 
+## 持续压力与工作耗竭
+
+```text
+最近几个月一直紧绷，下班也放松不下来。工作堆了半年，我快撑不住了。
+```
+
+好的回答不会再塞一个更复杂的呼吸或“降皮质醇”协议。它先确认当前安全和基本照顾，再只选一个受损功能；若压力主要来自过量工作、低控制、霸凌或角色冲突，先帮助用户安全地减少、延期、移交一个需求，或找到职业健康、员工支持、可信任管理者等入口。持续、每天发生或影响功能时，用“症状—持续—功能”三句话帮助用户今天发出预约，不要求先忍固定天数。用户说“不想醒来”或“想消失”时，即使否认计划，也要继续做安全确认。
+
 ## 证据模式是第二层
 
 ```text
@@ -80,6 +89,7 @@ python scripts/query_evidence.py "桑拿 热暴露 长寿 生长激素 血压 �
 python scripts/query_evidence.py "循环叹息 急性焦虑 压力 呼吸"
 python scripts/query_evidence.py "下午 疲劳 久坐 咖啡因 睡眠"
 python scripts/query_evidence.py "失眠 CBT-I 刺激控制 睡眠卫生"
+python scripts/query_evidence.py "长期压力 工作负荷 反复担忧 功能受损"
 ```
 
 ## 医疗边界

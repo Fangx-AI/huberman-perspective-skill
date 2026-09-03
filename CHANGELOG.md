@@ -7,6 +7,22 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.20.0] - 2026-09-03
+
+### Added
+
+- Added a user-first path for persistent stress, repeated worry, rumination, low motivation and work overload. It starts with safety and one damaged real-life function, then changes one controllable demand or turns one thought into a next action.
+- Added WHO work-mental-health guidance, the WHO `Doing What Matters` toolkit and current NICE GAD/panic recommendations as three bounded external-context cards, plus two relations that prevent individual coping tools from replacing workplace change or clinical care.
+- Added one timestamped Huberman cortisol/burnout locator with explicit limits: symptoms cannot diagnose personal cortisol, endocrine disease, anxiety, depression or occupational burnout.
+- Expanded routing regressions from 50 to 66 cases, including persistent worry, negated sleep language, work burnout, passive death wishes, physical danger language and explicit habit goals.
+
+### Changed
+
+- Sleep routing now requires an actual sleep anchor and respects explicit negation, so generic rumination and low motivation no longer drift into insomnia.
+- Safety routing recognizes additional ordinary-language forms such as “不想醒来”“想消失”“胸口发紧”和“呼吸不顺”; explicit habit goals continue to outrank generic low-motivation language.
+- Work-related distress is no longer reduced to breathing or resilience: the guidance surfaces workload, control, conflict, harassment and safe organizational support.
+- Updated the public snapshot to 55 evidence cards, 34 relations, 14 playbooks, 42 actions and 44 public claim locators.
+
 ## [0.19.0] - 2026-09-03
 
 ### Added

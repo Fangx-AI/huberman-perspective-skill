@@ -114,6 +114,20 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(card["source_scope"], "external-context")
             self.assertEqual(card["queue_urls"], [])
 
+    def test_ongoing_stress_cards_separate_work_conditions_self_help_and_clinical_care(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        work = by_id["who-2022-mental-health-at-work-guideline"]
+        care = by_id["nice-2024-gad-panic-guideline"]
+        toolkit = by_id["who-2020-doing-what-matters-stress-guide"]
+        self.assertIn("过量工作", work["result_summary"])
+        self.assertIn("不能被缩减", work["queue_note"])
+        self.assertIn("功能损害", care["result_summary"])
+        self.assertIn("非处方药", " ".join(care["null_findings"]))
+        self.assertIn("过量工作", toolkit["safe_interpretation"] + " ".join(toolkit["null_findings"]))
+        for card in (work, care, toolkit):
+            self.assertEqual(card["source_scope"], "external-context")
+            self.assertEqual(card["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

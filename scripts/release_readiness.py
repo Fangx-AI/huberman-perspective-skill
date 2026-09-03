@@ -39,6 +39,7 @@ REQUIRED_FILES = (
     "references/fidelity-scorecard.md",
     "references/evals/user-value-blackbox-2026-09-03.md",
     "references/evals/insomnia-user-value-blackbox-2026-09-03.md",
+    "references/evals/ongoing-stress-user-value-blackbox-2026-09-03.md",
     "references/evals/routing-user-language-v1.jsonl",
     "references/evals/routing-blackbox-2026-09-03.md",
     "references/huberman-operating-model.md",
@@ -74,6 +75,7 @@ PLAYBOOK_IDS = (
     "start-and-sustain-one-habit",
     "start-exercise-without-protocol-overload",
     "support-trouble-falling-or-staying-asleep",
+    "support-ongoing-stress-worry-and-work-overload",
 )
 
 

@@ -198,6 +198,21 @@ class EvidenceQueryTests(unittest.TestCase):
     def test_empty_query_returns_no_results(self) -> None:
         self.assertEqual(MODULE.query_cards(self.cards, "---"), [])
 
+    def test_ongoing_stress_query_returns_work_self_help_and_care_boundaries(self) -> None:
+        results = MODULE.query_cards(
+            self.cards,
+            "长期压力 工作负荷 反复担忧 功能受损",
+            limit=3,
+        )
+        self.assertEqual(
+            {item["review_id"] for item in results},
+            {
+                "who-2022-mental-health-at-work-guideline",
+                "nice-2024-gad-panic-guideline",
+                "who-2020-doing-what-matters-stress-guide",
+            },
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

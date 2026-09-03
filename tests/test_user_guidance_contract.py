@@ -35,6 +35,10 @@ class UserGuidanceContractTests(unittest.TestCase):
             "当天联系医生或精神健康专业人员",
             "就按反复发生处理",
             "转向当地紧急医疗评估",
+            "持续几周或几个月的紧绷",
+            "不能说明个人皮质醇高低",
+            "不想醒来",
+            "不得据此直接断言“不需要急救”",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)

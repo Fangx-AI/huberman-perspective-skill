@@ -126,6 +126,20 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertIn("固定睡眠窗口", relation["boundary"])
         self.assertIn("双相障碍", relation["rationale"])
 
+    def test_ongoing_stress_relations_block_individualizing_work_and_clinical_problems(self) -> None:
+        work = next(
+            item for item in self.relations
+            if item["relation_id"] == "who-2022-qualifies-who-2020-individual-coping-at-work"
+        )
+        care = next(
+            item for item in self.relations
+            if item["relation_id"] == "nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety"
+        )
+        self.assertEqual(work["relation"], "qualifies")
+        self.assertIn("结构性问题", work["boundary"])
+        self.assertIn("固定天数", care["boundary"])
+        self.assertIn("功能", care["rationale"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

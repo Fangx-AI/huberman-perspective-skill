@@ -542,6 +542,41 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "action-step:support-ongoing-stress-worry-and-work-overload:change-one-demand-or-unhook-to-one-next-action"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "action-step:support-ongoing-stress-worry-and-work-overload:triage-persistent-distress-and-name-one-damaged-function"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "claim:batch02-claim-0044"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "study-card:nice-2024-gad-panic-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "study-card:who-2020-doing-what-matters-stress-guide"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "target": "study-card:who-2022-mental-health-at-work-guideline"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:support-trouble-falling-or-staying-asleep",
       "target": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene"
     },
@@ -1197,6 +1232,56 @@
     },
     {
       "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:change-one-demand-or-unhook-to-one-next-action",
+      "target": "claim:batch02-claim-0044"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:change-one-demand-or-unhook-to-one-next-action",
+      "target": "study-card:who-2020-doing-what-matters-stress-guide"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:change-one-demand-or-unhook-to-one-next-action",
+      "target": "study-card:who-2022-mental-health-at-work-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable",
+      "target": "claim:batch02-claim-0044"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable",
+      "target": "study-card:nice-2024-gad-panic-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable",
+      "target": "study-card:who-2020-doing-what-matters-stress-guide"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable",
+      "target": "study-card:who-2022-mental-health-at-work-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:triage-persistent-distress-and-name-one-damaged-function",
+      "target": "claim:batch02-claim-0044"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:triage-persistent-distress-and-name-one-damaged-function",
+      "target": "study-card:nice-2024-gad-panic-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-ongoing-stress-worry-and-work-overload:triage-persistent-distress-and-name-one-damaged-function",
+      "target": "study-card:who-2022-mental-health-at-work-guideline"
+    },
+    {
+      "relation": "grounded_in",
       "source": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene",
       "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
     },
@@ -1744,6 +1829,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0043",
       "target": "youtube:https://www.youtube.com/watch?v=hvPGfcAgk9Y"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0044",
+      "target": "youtube:https://www.youtube.com/watch?v=Ibj1k3IZTNU"
     },
     {
       "relation": "cites_resource",
@@ -43147,6 +43237,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety",
+      "target": "study-card:who-2020-doing-what-matters-stress-guide"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
       "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
     },
@@ -43189,6 +43284,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction",
       "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:who-2022-qualifies-who-2020-individual-coping-at-work",
+      "target": "study-card:who-2020-doing-what-matters-stress-guide"
     },
     {
       "relation": "has_evidence_topic",
@@ -46476,6 +46576,91 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/25926448/"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:cbt"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:functional-impairment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:persistent-anxiety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:stepped-care"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "evidence-topic:worry"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-limitation:31ff37a16fdbd090"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-limitation:968ddec44f7f6c49"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-limitation:b6d8077acf2e1135"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-limitation:fd09d643377f2560"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-finding:23d440a75c3bb441"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-finding:b3d29307d1244fe8"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-finding:f5ea3adf60c8b3c2"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "study-finding:4eb69c42f8fbd7c8"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2024-gad-panic-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:pizzey-2021-heat-vascular-meta-analysis",
       "target": "evidence-topic:blood-pressure"
@@ -48097,6 +48282,161 @@
     },
     {
       "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:grounding"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:low-burden-action"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:social-support"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:stress-self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:unhooking"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "evidence-topic:values"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-limitation:208d1cdbe4383566"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-limitation:25d6e77b3301aecc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-limitation:a536974d8cf06228"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-limitation:bd2c4fdaf7422167"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-finding:217a5aaf7acffa75"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-finding:4e267e428d33edf0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-finding:4e5240d2dabe389e"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "study-finding:61091cf1a48d62ce"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:who-2020-doing-what-matters-stress-guide",
+      "target": "resource:https://tdr.who.int/home/our-work/global-engagement/9789240003927"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-relation:who-2022-qualifies-who-2020-individual-coping-at-work"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:burnout"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:organizational-intervention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:psychosocial-risk"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:reasonable-accommodation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:work-stress"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "evidence-topic:workload"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-limitation:c4ca139ecb29cdc6"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-limitation:e5b6f52ee8ccad50"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-limitation:f1e39bc98da89230"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-limitation:f33c1e354769a29a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-finding:0f6a7db356ea1345"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-finding:3009b0af29081ca1"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-finding:88d1997593fdfb8b"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "study-finding:8df228dc7f4064bf"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:who-2022-mental-health-at-work-guideline",
+      "target": "resource:https://www.who.int/publications/i/item/9789240053052"
+    },
+    {
+      "relation": "has_evidence_topic",
       "source": "study-card:wright-2013-natural-light-entrainment",
       "target": "evidence-topic:actigraphy"
     },
@@ -48196,7 +48536,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-09-03T08:19:34.995029+00:00",
+  "generated_at": "2026-09-03T08:43:41.684416+00:00",
   "nodes": [
     {
       "aliases": [
@@ -48689,6 +49029,67 @@
       "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
       "type": "action-playbook",
       "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "aliases": [
+        "长期压力",
+        "持续焦虑",
+        "每天都焦虑",
+        "反复担心",
+        "总想最坏的事",
+        "脑子停不下来",
+        "反刍",
+        "内耗",
+        "长期紧绷",
+        "放松不下来",
+        "工作压力太大",
+        "工作堆了半年",
+        "快撑不住了",
+        "周日焦虑",
+        "上班就难受",
+        "工作耗竭",
+        "职业倦怠",
+        "burnout",
+        "没动力",
+        "什么都不想做",
+        "呼吸法只能管一会儿",
+        "ongoing stress",
+        "chronic stress",
+        "persistent worry",
+        "rumination"
+      ],
+      "baseline_checks": [
+        "先区分急症或安全风险、持续心理困扰、身体疾病/药物物质影响和现实工作风险；不能从一句‘累、紧绷、没动力’完成诊断",
+        "记录一个用户真正想恢复的功能和一个最主要的压力源，不把皮质醇、HRV、完成多少练习当结果",
+        "若工作中有霸凌、骚扰、暴力、歧视、非法要求或提出异议可能遭报复，先评估安全、收入和可获得支持，不要求用户直接对抗",
+        "确认是否有睡眠/食欲明显变化、兴趣显著下降、反复检查/仪式、创伤/解离、物质使用或新发身体症状，以决定是否应直接转专业评估"
+      ],
+      "escalation": [
+        "不想醒来、想消失、自伤/他伤想法即使没有计划也要进一步确认当前安全、意图、可获得陪伴和本地危机支持；无法保证安全时立即联系当地急救/危机服务并让可信任的人陪同",
+        "无法吃饭、饮水、洗澡、离床或完成基本照顾，数日明显少睡却异常兴奋/冲动/思维奔逸，出现幻觉妄想或快速恶化时，应当天联系医生或精神健康专业人员；无法保证安全时急救",
+        "胸痛、严重或新发呼吸困难、晕厥、意识混乱、单侧无力或言语异常等立即联系当地急救",
+        "持续担忧、兴趣下降、低动力、反复检查/仪式、创伤/解离、物质使用、睡眠食欲变化或功能受损，应联系基层医疗、心理/精神健康或现有治疗团队",
+        "持续疲劳伴体重/血压明显变化、色素沉着或其他新发身体症状，应做医学评估；不要凭感觉诊断皮质醇或肾上腺问题"
+      ],
+      "first_questions": [
+        "你现在能保证自己安全并完成基本照顾吗，还是已经有不想醒来/想消失、自伤想法、无法吃饭洗澡或明显失控？",
+        "最受影响的是睡眠、上班、吃饭、关系还是停不下来的担忧？一次只选一个。",
+        "主要压力来自可指出的工作量/冲突/不安全环境，还是即使没有明确诱因也反复出现？"
+      ],
+      "id": "action-playbook:support-ongoing-stress-worry-and-work-overload",
+      "label": "处理持续压力、反复担忧或工作耗竭",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "胸痛、严重/新发气促、晕厥、神经异常或其他急症的自助处理",
+        "自伤/他伤风险、无法保证安全、明显自我忽视、躁狂、精神病性症状、现实暴力或快速恶化",
+        "诊断或治疗 GAD、抑郁、OCD、PTSD、职业倦怠、慢性疲劳、Cushing/Addison 或其他身心疾病",
+        "以呼吸、NSDR、冷暴露、咖啡因、酒精、大麻、Ashwagandha、镁或其他补剂覆盖持续问题",
+        "要求处于霸凌、骚扰、歧视、暴力或报复风险中的用户直接对抗管理者"
+      ],
+      "safe_summary": "这不是一次短时紧张时，先别再堆呼吸法。先确认安全和基本照顾，再只选一个受损功能：能否睡、吃、上班、沟通或从反复担忧回到眼前。工作量、低控制、霸凌或角色冲突要尽量改变一个现实需求或联系组织支持，不能只让用户练韧性；暂时改不了时，才用‘事实—预测—下一步’把一个念头转成可做的小动作。持续、每天发生或影响功能时，当天准备专业评估，不要求先忍固定天数。‘职业倦怠’是工作情境中的职业现象，不等于一个可由 Skill 确诊的疾病；紧绷、疲劳或没动力也不能说明皮质醇高低。不要用补剂、咖啡因、冷暴露或更复杂协议覆盖问题。",
+      "scope": "适用于一般成人反复或持续的紧绷、担忧、反刍、工作超负荷或低动力，先做安全与功能分流，再尝试一个低风险的现实负荷调整或当下功能步骤；不诊断焦虑、抑郁、OCD、PTSD、职业倦怠或皮质醇异常，也不替代工作场所保护、医疗或心理治疗",
+      "type": "action-playbook",
+      "user_goal": "当紧绷、担忧、内耗、低动力或工作耗竭反复出现时，今天先恢复一个现实功能，并处理一个可改变的压力源，而不是继续堆放松协议"
     },
     {
       "aliases": [
@@ -49393,6 +49794,60 @@
       "trigger": "在一个可重复的低风险任务前，且运动本身不会挤压准备、睡眠或恢复时",
       "type": "action-step",
       "why": "急性运动综述显示情绪和部分认知可能短时改善，但结果异质，速度改善不一定伴随准确性；一年运动试验的结构变化也不能由一次提神推断"
+    },
+    {
+      "adaptation": "没有现实变化时，不叠加更多放松技巧；检查是权限不足、表达太模糊、环境不安全还是动作仍太大。权限不足就升级支持，动作太大就只保留基本照顾或一个必要任务",
+      "classification": "bounded-experiment",
+      "id": "action-step:support-ongoing-stress-worry-and-work-overload:change-one-demand-or-unhook-to-one-next-action",
+      "label": "今天只改变一个现实需求；暂时改不了时，把一个反复念头转成事实、预测和下一步",
+      "metric": "今天是否出现一个现实变化：任务减少/延期/移交、边界更清楚、联系到支持，或能从反复思考回到一个必要动作；不要求念头彻底消失",
+      "minimum_version": "若是工作负荷，暂停一个非必要任务，并发一句：‘目前___已持续影响___，今天需要一起决定延期、移交或取消哪一项。’若直接沟通不安全，先找可信任同事、员工支持、工会/职业健康或当地权益资源。若暂时没有可改需求，写三行：已发生的事实；我正在预测什么；今天可做的最小一步。低动力时最小一步可以只是吃饭、洗脸或联系一个人",
+      "playbook_id": "support-ongoing-stress-worry-and-work-overload",
+      "priority": 2,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "沟通引发或可能引发暴力、骚扰、报复、失去住所/收入等重大风险",
+        "写下念头或关注身体使惊恐、创伤闪回、解离、强迫检查或绝望明显加重"
+      ],
+      "trigger": "已经确认当前安全，并能指出主要压力源或最缠人的一个念头时",
+      "type": "action-step",
+      "why": "WHO 工作场所指南强调修改心理社会风险，不能只训练个人适应；WHO 压力指南可提供低负担的落地和松脱技能，但它们只帮助恢复选择，不能解决过量工作、霸凌或经济约束"
+    },
+    {
+      "adaptation": "入口不可及时换一个可获得渠道，不重复堆自助内容；正在治疗就把症状变化、功能损害、药物/补剂和练习反应如实告诉原团队，不自行改药",
+      "classification": "framework-inference",
+      "id": "action-step:support-ongoing-stress-worry-and-work-overload:make-professional-or-occupational-support-actionable",
+      "label": "持续、每天发生或影响功能时，今天联系一个专业或工作支持入口，并用症状—持续—功能三句话描述",
+      "metric": "是否发出一次预约/求助、得到下一步时间或让一个可信任的人知道真实情况；不以‘再忍一周看看’作为成功",
+      "minimum_version": "联系全科/基层医疗、心理或精神健康专业人员；若主要与工作相关且安全可行，也可联系职业健康、员工支持或可信任管理者。可直接说：‘近___以来，我几乎每天___，已经影响___；我想评估焦虑/低落/睡眠或身体原因，并了解可用治疗和工作支持。’约不到时，请可信任的人协助查本地公共服务、热线或候补渠道",
+      "playbook_id": "support-ongoing-stress-worry-and-work-overload",
+      "priority": 3,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "为继续自助而延迟急救、必要身体检查、心理治疗、处方复诊或工作场所安全处理",
+        "开始用酒精、大麻、兴奋剂、镇静剂、补剂、极端运动、冷暴露或睡眠剥夺压住症状"
+      ],
+      "trigger": "担忧、紧绷、低动力或耗竭持续反复，呼吸法只能短暂缓解，或已经影响睡眠、食欲、工作、关系和基本照顾时",
+      "type": "action-step",
+      "why": "NICE 的分级照护把功能损害、共病和风险用于决定支持强度，确诊后的有效路径包括基于 CBT 的自助、指导式自助、CBT、应用放松或药物等；泛化自助和补剂不能代替评估"
+    },
+    {
+      "adaptation": "若主要是一次突然高峰，转短时压力路径；若持续、原因不清或已经影响多个功能，直接准备专业评估，不要求先坚持固定天数；若是工作危险或报复风险，先找安全与权益支持",
+      "classification": "framework-inference",
+      "id": "action-step:support-ongoing-stress-worry-and-work-overload:triage-persistent-distress-and-name-one-damaged-function",
+      "label": "先判断是否需要紧急或专业支持，再只说清一个受损功能和一个主要压力源",
+      "metric": "是否完成安全分流；能否用一句话说出‘主要压力源是___，已经影响___’",
+      "minimum_version": "先回答两件事：‘我现在能否保证安全和基本照顾？’‘今天最想恢复的是哪一个具体功能？’有不想醒来/想消失、自伤他伤想法、无法保证安全、明显自我忽视、躁狂/精神病性表现，或胸痛、严重/新发气促、晕厥、神经异常时，不继续自助实验",
+      "playbook_id": "support-ongoing-stress-worry-and-work-overload",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "有自伤/他伤风险、不想醒来/想消失且无法保证安全、明显自我忽视、躁狂、精神病性症状、快速恶化或现实暴力威胁",
+        "胸痛、严重或新发呼吸困难、晕厥、意识/神经异常，或新发身体症状提示需要及时医疗评估"
+      ],
+      "trigger": "紧绷、担忧、内耗、低动力或工作耗竭已经反复出现，或用户说‘快撑不住’时",
+      "type": "action-step",
+      "why": "NICE 要求持续担忧按痛苦、功能、共病和风险评估；WHO 也把持续并影响日常功能的压力与可能需要照护的焦虑或抑郁区分开。先分流可避免把临床或现实危险误当成一次呼吸问题"
     },
     {
       "adaptation": "若当地暂时没有CBT-I资源，询问正规线上/团体/简短治疗或转介选项；不要把通用睡眠卫生清单、商业App、安眠补剂或自行限睡当作等价替代",
@@ -50394,6 +50849,20 @@
         "00:26:05",
         "01:24:11",
         "01:32:58"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "节目章节只能定位 Huberman 的皮质醇与倦怠框架；不能据此从主观症状诊断皮质醇异常、Cushing/Addison、焦虑、抑郁或职业倦怠，也不能生成补剂、咖啡因、光照、冷暴露或激素治疗处方",
+      "evidence_layer": "podcast-claim",
+      "id": "claim:batch02-claim-0044",
+      "label": "持续压力、工作耗竭与皮质醇边界（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "host",
+      "timestamps": [
+        "01:50:57",
+        "01:55:23",
+        "02:01:35"
       ],
       "type": "claim"
     },
@@ -55116,6 +55585,23 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "Skill 可以提供今天的功能步骤和求助准备，但不能诊断 GAD、抑郁、OCD 或 PTSD，也不能把短时自助的效果或无效当作诊断。持续或影响功能时不应要求用户先完成固定天数的自助试验。",
+      "id": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety",
+      "label": "通用压力自助技能能否替代持续担忧、显著痛苦或功能受损时的评估和分级照护",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+        "https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+        "https://www.who.int/en/news-room/questions-and-answers/item/stress"
+      ],
+      "rationale": "WHO 工具支持低风险、可撤销的压力应对；NICE 指南要求疑似持续焦虑同时评估痛苦、功能、抑郁/其他焦虑、物质使用、身体状况和风险，并按需要升级到基于 CBT 的自助、治疗或其他专业照护。",
+      "relation": "qualifies",
+      "relation_id": "nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "nice-2024-gad-panic-guideline",
+      "target_review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "两项实验方案、年代和人群不同，不构成严格复制；Podstawski含冷水且无平行对照，也不能证明桑拿本身无任何急性内分泌反应。",
       "id": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
       "label": "旧式极端重复桑拿中的急性生长激素和催乳素峰值，能否支持桑拿或冷热交替普遍提高睾酮并长期优化激素",
@@ -55267,6 +55753,23 @@
       "reviewed_at": "2026-09-03",
       "source_review_id": "va-dod-2025-insomnia-osa-guideline",
       "target_review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "面对工作耗竭，Skill 应先帮助用户找到一个安全可行的需求变化、取舍、边界或支持入口；不能把结构性问题改写成用户缺少韧性、呼吸练习或自律。若直接沟通可能带来报复或安全风险，不强迫对抗。",
+      "id": "evidence-relation:who-2022-qualifies-who-2020-individual-coping-at-work",
+      "label": "个人落地、松脱和价值行动能否单独解决由过量工作、低控制、角色冲突、霸凌或不安全条件造成的持续压力",
+      "provenance_urls": [
+        "https://www.who.int/publications/i/item/9789240053052",
+        "https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+        "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+      ],
+      "rationale": "WHO 自助指南提供低负担的个人应对技能；工作场所指南则要求识别并减轻心理社会风险，并把组织干预、合理调整和个体支持放在同一体系中。个人技能可以帮助恢复当下选择，但不能替代工作条件改变。",
+      "relation": "qualifies",
+      "relation_id": "who-2022-qualifies-who-2020-individual-coping-at-work",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "who-2022-mental-health-at-work-guideline",
+      "target_review_id": "who-2020-doing-what-matters-stress-guide",
       "type": "evidence-relation"
     },
     {
@@ -55435,6 +55938,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:burnout",
+      "label": "burnout",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:burns",
       "label": "burns",
       "type": "evidence-topic"
@@ -55472,6 +55980,11 @@
     {
       "id": "evidence-topic:catecholamines",
       "label": "catecholamines",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cbt",
+      "label": "CBT",
       "type": "evidence-topic"
     },
     {
@@ -55755,6 +56268,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:functional-impairment",
+      "label": "functional-impairment",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:glycaemic-control",
       "label": "glycaemic-control",
       "type": "evidence-topic"
@@ -55767,6 +56285,11 @@
     {
       "id": "evidence-topic:gratitude",
       "label": "gratitude",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:grounding",
+      "label": "grounding",
       "type": "evidence-topic"
     },
     {
@@ -55935,6 +56458,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:low-burden-action",
+      "label": "low-burden-action",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:low-certainty",
       "label": "low-certainty",
       "type": "evidence-topic"
@@ -56085,6 +56613,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:organizational-intervention",
+      "label": "organizational-intervention",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:osa",
       "label": "OSA",
       "type": "evidence-topic"
@@ -56092,6 +56625,11 @@
     {
       "id": "evidence-topic:passive-heating",
       "label": "passive-heating",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:persistent-anxiety",
+      "label": "persistent-anxiety",
       "type": "evidence-topic"
     },
     {
@@ -56145,6 +56683,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:psychosocial-risk",
+      "label": "psychosocial-risk",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:quality-of-life",
       "label": "quality-of-life",
       "type": "evidence-topic"
@@ -56167,6 +56710,11 @@
     {
       "id": "evidence-topic:reactive-inhibition",
       "label": "reactive-inhibition",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:reasonable-accommodation",
+      "label": "reasonable-accommodation",
       "type": "evidence-topic"
     },
     {
@@ -56245,6 +56793,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:self-help",
+      "label": "self-help",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sickness-absence",
       "label": "sickness-absence",
       "type": "evidence-topic"
@@ -56300,6 +56853,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:social-support",
+      "label": "social-support",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:spatial-memory",
       "label": "spatial-memory",
       "type": "evidence-topic"
@@ -56325,6 +56883,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:stepped-care",
+      "label": "stepped-care",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:stimulus-control",
       "label": "stimulus-control",
       "type": "evidence-topic"
@@ -56342,6 +56905,11 @@
     {
       "id": "evidence-topic:stress",
       "label": "stress",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:stress-self-help",
+      "label": "stress-self-help",
       "type": "evidence-topic"
     },
     {
@@ -56400,8 +56968,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:unhooking",
+      "label": "unhooking",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:unrefreshing-sleep",
       "label": "unrefreshing-sleep",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:values",
+      "label": "values",
       "type": "evidence-topic"
     },
     {
@@ -56450,8 +57028,23 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:work-stress",
+      "label": "work-stress",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:working-memory",
       "label": "working-memory",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:workload",
+      "label": "workload",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:worry",
+      "label": "worry",
       "type": "evidence-topic"
     },
     {
@@ -73516,6 +74109,17 @@
       "label": "https://t-nation.com/t/the-truth-about-bodybuilding-genetics/285342",
       "type": "resource",
       "url": "https://t-nation.com/t/the-truth-about-bodybuilding-genetics/285342"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 WHO 2020 工具级核验：落地、松脱和价值行动可作为低负担自助候选，但工具包不是统一疗效保证，也不能替代结构性改变或持续心理困扰的专业照护。证据卡：academic-study-cards.jsonl#who-2020-doing-what-matters-stress-guide。",
+      "id": "resource:https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+      "kind": "other-resource",
+      "label": "https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+      "verification_status": "verified-review"
     },
     {
       "id": "resource:https://teamrwb.org/coleman-ruiz",
@@ -93647,6 +94251,17 @@
       "url": "https://www.niaid.nih.gov/about/anthony-s-fauci-md"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE CG113 指南级核验：持续担忧需按痛苦、功能、共病和风险分级评估；专业路径包括基于 CBT 的自助与治疗，非处方制剂不能替代照护。证据卡：academic-study-cards.jsonl#nice-2024-gad-panic-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.nicholasepley.com",
       "kind": "other-resource",
       "label": "https://www.nicholasepley.com",
@@ -101483,6 +102098,17 @@
       "url": "https://www.whitehouse.gov/presidential-actions/2025/02/establishing-the-presidents-make-america-healthy-again-commission/"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 WHO 2022 指南级核验：工作相关心理健康风险需同时处理组织条件与个体支持；过量工作、低控制、霸凌等不能被缩减为个人呼吸或韧性问题。证据卡：academic-study-cards.jsonl#who-2022-mental-health-at-work-guideline。",
+      "id": "resource:https://www.who.int/publications/i/item/9789240053052",
+      "kind": "other-resource",
+      "label": "https://www.who.int/publications/i/item/9789240053052",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.who.int/publications/i/item/9789240053052",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.wicab.com/brainport-vision-pro",
       "kind": "other-resource",
       "label": "https://www.wicab.com/brainport-vision-pro",
@@ -105069,6 +105695,35 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "不同强度心理、药物、自助和常规照护；选择取决于诊断、功能损害、既往反应和个人偏好",
+      "doi": "无单一 DOI（NICE 临床指南 CG113，2024 年复核/更新信息）",
+      "evidence_level": "A-Guideline（NICE 成人 GAD/惊恐障碍分级照护指南）",
+      "id": "study-card:nice-2024-gad-panic-guideline",
+      "intervention_exposure": "从识别、教育和主动监测，到基于 CBT 原则的低强度自助、受训人员支持的治疗、药物或专科照护的分级路径",
+      "label": "NICE CG113: Generalised Anxiety Disorder and Panic Disorder in Adults — Recommendations",
+      "outcomes": [
+        "焦虑与反复担忧",
+        "痛苦和社会/职业功能",
+        "自伤、自我忽视与共病风险",
+        "治疗反应、不良反应和照护升级"
+      ],
+      "population": "有已知或疑似广泛性焦虑或惊恐障碍的成人；评估需考虑痛苦、功能、共病、物质使用、身体状况和既往治疗反应",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/cg113/chapter/Recommendations",
+        "https://www.nice.org.uk/guidance/cg113/",
+        "https://www.nice.org.uk/guidance/CG113/chapter/update-information"
+      ],
+      "result_summary": "指南强调疑似 GAD 的评估不能只看症状数量或持续时间，也要看痛苦和功能损害，并考虑抑郁、其他焦虑障碍、物质使用和身体疾病。确诊且未改善者可按分级照护获得 CBT 原则自助、指导式自助、CBT、应用放松或药物等专业路径。",
+      "review_id": "nice-2024-gad-panic-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "若担忧、紧绷或低动力反复出现并造成痛苦或功能受损，明确建议联系基层医疗或心理/精神健康专业人员；帮助用户用症状、持续情况和受损功能描述问题。等待支持时只给低风险、可撤销的功能步骤，不诊断、不改药、不用补剂覆盖。",
+      "sample_size": "临床实践指南；综合心理治疗、药物、自助和服务路径证据，不以单一总样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NICE 基于系统证据审查、临床与服务使用者考虑形成的成人广泛性焦虑和惊恐障碍分级照护建议；2024 年更新信息确认现行建议范围",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "研究内基线、非热对照或通常照护，随纳入研究而异",
       "doi": "10.1113/EP089424",
       "evidence_level": "A-Synthesis（15项研究的系统综述与荟萃分析）",
@@ -105548,6 +106203,63 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "指南未提供一个统一随机对照比较；内容用于低负担自助，不替代诊断或临床治疗",
+      "doi": "无单一 DOI（WHO 2020 实用自助指南，ISBN 9789240003927）",
+      "evidence_level": "B-Evidence-informed toolkit（WHO 2020 压力管理自助指南）",
+      "id": "study-card:who-2020-doing-what-matters-stress-guide",
+      "intervention_exposure": "短时练习注意当下感官、给困难想法命名并与之拉开距离、识别重要方向并完成一个小行动、联系支持",
+      "label": "WHO Doing What Matters in Times of Stress: An Illustrated Guide",
+      "outcomes": [
+        "主观压力与被压倒感",
+        "回到当下和恢复功能",
+        "与个人价值一致的小行动",
+        "社会连接和自我善待"
+      ],
+      "population": "来自不同文化与资源环境、正在经历日常压力或逆境的成年人；可单独使用或配合音频与支持",
+      "provenance_urls": [
+        "https://tdr.who.int/home/our-work/global-engagement/9789240003927",
+        "https://www.who.int/en/news-room/questions-and-answers/item/stress"
+      ],
+      "result_summary": "WHO 将该指南定位为帮助人们应对压力的实用技能工具。当前 WHO 压力问答建议在难以应对时寻求可信任的医疗或社区支持，并把持续、开始影响日常功能的压力与可能需要照护的焦虑或抑郁区分开。",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "可把“写出事实、正在预测什么、下一步是什么”或短暂感官落地作为一次可停止的功能试验；目标是帮助用户回到当前选择，不是消灭念头。若更恐慌、解离或无法恢复功能就停止，改用外部支持或专业评估。",
+      "sample_size": "实用指南与工具包；不是单一疗效试验，不以一个参与者总数表示",
+      "source_scope": "external-context",
+      "study_design": "WHO 面向经历逆境与压力的普通人制作的循证与现场测试实用指南，使用落地、从困难想法中松脱、按价值行动、善待自己和腾出空间等技能",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "常规工作条件、无干预或其他组织/个体干预；不同建议的证据确定性和可行性不同",
+      "doi": "无单一 DOI（WHO 2022 指南，ISBN 9789240053052）",
+      "evidence_level": "A-Guideline（WHO 2022 工作场所心理健康指南）",
+      "id": "study-card:who-2022-mental-health-at-work-guideline",
+      "intervention_exposure": "评估并减轻过量工作、低控制、歧视、骚扰、角色冲突等工作心理社会风险；配合个体支持、合理调整和需要时的临床照护",
+      "label": "WHO Guidelines on Mental Health at Work",
+      "outcomes": [
+        "心理健康症状与福祉",
+        "工作功能、缺勤和复工",
+        "组织风险、工作条件与合理调整",
+        "干预可接受性、公平性和可实施性"
+      ],
+      "population": "不同收入水平、行业和雇佣形态中的成年劳动者，包括有心理健康问题或面临工作心理社会风险的人群",
+      "provenance_urls": [
+        "https://www.who.int/publications/i/item/9789240053052",
+        "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work",
+        "https://www.who.int/standards/classifications/frequently-asked-questions/burn-out-an-occupational-phenomenon"
+      ],
+      "result_summary": "指南建议把工作相关心理健康问题同时放在组织条件与个人支持中处理。WHO 工作场所资料明确把过量工作、低工作控制、长时间或不灵活工时、霸凌和角色不清列为风险，并建议组织干预直接修改或移除这些风险。",
+      "review_id": "who-2022-mental-health-at-work-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "当压力主要来自长期工作量、低控制、冲突或不安全环境时，先帮助用户改变一个可控需求、明确一次取舍或寻求组织支持；不要只追加放松协议。若沟通可能带来报复、暴力或失业风险，先做安全与资源评估，不强迫用户直接对抗。",
+      "sample_size": "临床与公共卫生指南；综合多类研究与利益相关方意见，不以单一总样本量表示",
+      "source_scope": "external-context",
+      "study_design": "WHO 基于系统证据审查和 GRADE 等方法形成的工作场所心理健康指南，涵盖组织干预、管理者与员工培训、个体干预、复工和就业支持",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "同一参与者此前一周的工作、学习和社交日常环境，醒时平均照度 979±352 lux、醒后前两小时 934±867 lux，日落至睡前照度高于露营条件",
       "doi": "10.1016/j.cub.2013.06.039",
       "evidence_level": "A-Direct（8 人固定顺序同体自然实验）",
@@ -105704,6 +106416,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:0f6a7db356ea1345",
+      "label": "“职业倦怠”在 WHO ICD-11 中是工作情境下的职业现象，不是可由 Skill 确诊的医学疾病",
+      "review_id": "who-2022-mental-health-at-work-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:141dde45284957a2",
       "label": "部分研究主要改善反应速度而没有同步提高准确性",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
@@ -105795,6 +106514,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:217a5aaf7acffa75",
+      "label": "短时自助不能替代对持续焦虑、抑郁、OCD、PTSD、躁狂、精神病性症状或自伤风险的评估",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:21a0c56ffec98cac",
       "label": "长期疗效和长期安全性没有得到充分建立",
       "review_id": "cohen-2021-home-dermatology-devices-review",
@@ -105812,6 +106538,13 @@
       "id": "study-finding:2397167c6d128095",
       "label": "存在生理反应并不证明长期疾病预防或心理治疗效果",
       "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:23d440a75c3bb441",
+      "label": "一次呼吸练习的短时缓解或无效不能判断是否存在焦虑障碍",
+      "review_id": "nice-2024-gad-panic-guideline",
       "type": "study-finding"
     },
     {
@@ -105875,6 +106608,13 @@
       "id": "study-finding:2f6d1aa42a3cab02",
       "label": "指南强烈建议临床人员为成人慢性失眠使用多组分CBT-I；对简短失眠治疗、刺激控制、睡眠限制和放松给出条件性支持，并条件性反对把睡眠卫生单独作为慢性失眠治疗。",
       "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:3009b0af29081ca1",
+      "label": "指南不支持把持续工作压力只解释为个人韧性、呼吸技巧或皮质醇管理失败",
+      "review_id": "who-2022-mental-health-at-work-guideline",
       "type": "study-finding"
     },
     {
@@ -106040,9 +106780,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4e267e428d33edf0",
+      "label": "把念头写下或做落地练习不能解决过量工作、霸凌、经济压力或其他现实威胁",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:4e5240d2dabe389e",
+      "label": "指南本身不能证明某一个短动作对每位用户或每种临床状况都有效",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:4eae3b89a01e1f35",
       "label": "饮食、饮水与运动行为达到平台期的时间差异未达到统计显著（p=.328），研究可能不足以检验类别差异",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:4eb69c42f8fbd7c8",
+      "label": "指南强调疑似 GAD 的评估不能只看症状数量或持续时间，也要看痛苦和功能损害，并考虑抑郁、其他焦虑障碍、物质使用和身体疾病。确诊且未改善者可按分级照护获得 CBT 原则自助、指导式自助、CBT、应用放松或药物等专业路径。",
+      "review_id": "nice-2024-gad-panic-guideline",
       "type": "study-finding"
     },
     {
@@ -106183,6 +106944,13 @@
       "id": "study-finding:5fd1618b55a8479d",
       "label": "训练后清醒 30 分钟出现 21.22% 的早期表现提升，至清醒 4 小时降为 6.26%。训练后 30 分钟入睡者在约 12 小时测试时提升 15.39%，与 30 分钟早期提升无显著差异；延迟 4 小时入睡者睡后提升 15.16%，高于 4 小时清醒结果且恢复到早期提升水平。睡后表现从未超过睡前已经达到的最高水平，支持稳定或恢复而非额外增强。",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:61091cf1a48d62ce",
+      "label": "WHO 将该指南定位为帮助人们应对压力的实用技能工具。当前 WHO 压力问答建议在难以应对时寻求可信任的医疗或社区支持，并把持续、开始影响日常功能的压力与可能需要照护的焦虑或抑郁区分开。",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
       "type": "study-finding"
     },
     {
@@ -106432,6 +107200,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:88d1997593fdfb8b",
+      "label": "组织层建议不保证个体通过一次沟通就能改变岗位、管理或经济约束",
+      "review_id": "who-2022-mental-health-at-work-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:89d2b04f9d9360ef",
       "label": "测试部分内容对相关但未测试内容的迁移并不总是出现",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -106442,6 +107217,13 @@
       "id": "study-finding:8a1ab16d98877fa3",
       "label": "单独睡眠卫生教育不是慢性失眠的充分治疗路径",
       "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:8df228dc7f4064bf",
+      "label": "指南建议把工作相关心理健康问题同时放在组织条件与个人支持中处理。WHO 工作场所资料明确把过量工作、低工作控制、长时间或不灵活工时、霸凌和角色不清列为风险，并建议组织干预直接修改或移除这些风险。",
+      "review_id": "who-2022-mental-health-at-work-guideline",
       "type": "study-finding"
     },
     {
@@ -106750,6 +107532,13 @@
       "id": "study-finding:b25504d93f86945e",
       "label": "不同加热方式、人群和方案不能证明桑拿房本身是必要组件",
       "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b3d29307d1244fe8",
+      "label": "日常压力、反复担忧或低动力不能由 Skill 直接诊断为 GAD、抑郁、OCD、PTSD 或职业倦怠",
+      "review_id": "nice-2024-gad-panic-guideline",
       "type": "study-finding"
     },
     {
@@ -107216,6 +108005,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:f5ea3adf60c8b3c2",
+      "label": "非处方药和补充制剂存在相互作用且安全使用证据不足，指南不支持用补剂自行替代评估与治疗",
+      "review_id": "nice-2024-gad-panic-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:f600ea2a19e5328b",
       "label": "未证明其他波长、辐照度、距离或消费设备等效",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
@@ -107482,6 +108278,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:208d1cdbe4383566",
+      "label": "这是实用指南而非单一 RCT 或疗效荟萃分析，不能提供统一效应量",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:225e59761a2a14b1",
       "label": "全部远程执行，依从性主要依赖每日自报，无法确认每次动作质量",
       "review_id": "balban-2023-structured-respiration-rct",
@@ -107497,6 +108299,12 @@
       "id": "study-limitation:245d99a0841b5aeb",
       "label": "属于叙述性综述而非系统综述或新荟萃分析，没有完整检索、排除流程和风险偏倚综合",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:25d6e77b3301aecc",
+      "label": "严重或持续功能受损时需要可获得的专业与社会支持，单靠手册可能不足",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
       "type": "study-limitation"
     },
     {
@@ -107581,6 +108389,12 @@
       "id": "study-limitation:31fb9aa432908623",
       "label": "只测急性激素，不能推断长期健康或表现",
       "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:31ff37a16fdbd090",
+      "label": "多数具体治疗建议以完成专业评估和诊断为前提",
+      "review_id": "nice-2024-gad-panic-guideline",
       "type": "study-limitation"
     },
     {
@@ -108400,6 +109214,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:968ddec44f7f6c49",
+      "label": "指南面向成人临床管理，英国服务结构和可及性不一定适用于所有地区",
+      "review_id": "nice-2024-gad-panic-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:9829e83f4678f541",
       "label": "总样本量被一项大型冷水淋浴研究主导，多数单项研究样本小",
       "review_id": "cain-2025-cold-water-wellbeing-review",
@@ -108505,6 +109325,12 @@
       "id": "study-limitation:a45e97e5eb37a0b4",
       "label": "一年方案的频率和强度是研究暴露，不是人人适用的最低或最佳剂量",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a536974d8cf06228",
+      "label": "关注感官或内在体验可能使部分创伤、惊恐或解离用户更不适",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
       "type": "study-limitation"
     },
     {
@@ -108670,6 +109496,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b6d8077acf2e1135",
+      "label": "Skill 无法完成鉴别诊断、风险评估、处方选择或疗效监测",
+      "review_id": "nice-2024-gad-panic-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b79ae8066bf12f58",
       "label": "使用单次高剂量UVB、麻醉、剃毛和背部照射，与普通日光或红光设备不同",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
@@ -108730,6 +109562,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:bd2c4fdaf7422167",
+      "label": "文化、语言、识字水平、残障和当前安全环境会影响可用性",
+      "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:bef724f8acc89b65",
       "label": "参与者自选行为、无随机对照且接受完成研究报酬，日记本身可能改变行为",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -108769,6 +109607,12 @@
       "id": "study-limitation:c434fb8a54a1d7d0",
       "label": "6 项研究只考察单次暴露，无法判断持久效果",
       "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:c4ca139ecb29cdc6",
+      "label": "建议跨国家和行业，具体劳动法规、资源与申诉渠道需按当地情境确认",
+      "review_id": "who-2022-mental-health-at-work-guideline",
       "type": "study-limitation"
     },
     {
@@ -108946,6 +109790,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e5b6f52ee8ccad50",
+      "label": "员工个人往往无权单独修改结构性风险，提出调整可能涉及收入、身份或报复风险",
+      "review_id": "who-2022-mental-health-at-work-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e6b0d1bcf8e647f7",
       "label": "仅 8 篇研究，结局分组后证据更少",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
@@ -109024,6 +109874,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:f1e39bc98da89230",
+      "label": "证据质量和可实施性随干预类型与工作场所而异",
+      "review_id": "who-2022-mental-health-at-work-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:f2db0882c0111406",
       "label": "没有足够样本评估罕见不良事件",
       "review_id": "podstawski-2021-sauna-cold-endocrine",
@@ -109033,6 +109889,12 @@
       "id": "study-limitation:f2ecc0c9f46d1695",
       "label": "只捕捉到医疗就诊伤害，轻伤和院外死亡可能漏报",
       "review_id": "kaiser-2023-sauna-injury-series",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f33c1e354769a29a",
+      "label": "指南不能替代对焦虑、抑郁、创伤、睡眠问题、物质使用或身体疾病的临床评估",
+      "review_id": "who-2022-mental-health-at-work-guideline",
       "type": "study-limitation"
     },
     {
@@ -109135,6 +109997,12 @@
       "id": "study-limitation:fcb94e106ea0f262",
       "label": "不能用于停药、减药或远程制定设备剂量",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fd09d643377f2560",
+      "label": "规定疗程和接触次数来自服务与试验框架，不能变成所有用户的自助剂量",
+      "review_id": "nice-2024-gad-panic-guideline",
       "type": "study-limitation"
     },
     {
@@ -111876,20 +112744,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1762,
-    "action_playbook_nodes": 13,
-    "action_step_nodes": 39,
+    "academic_resource_nodes": 1765,
+    "action_playbook_nodes": 14,
+    "action_step_nodes": 42,
     "bilibili_nodes": 34,
-    "claim_nodes": 43,
+    "claim_nodes": 44,
     "course_lecture_nodes": 8,
-    "edges": 9639,
+    "edges": 9707,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 32,
-    "evidence_topic_nodes": 238,
-    "resource_nodes": 6046,
-    "study_card_nodes": 52,
-    "study_finding_nodes": 243,
-    "study_limitation_nodes": 313,
+    "evidence_relation_nodes": 34,
+    "evidence_topic_nodes": 256,
+    "resource_nodes": 6049,
+    "study_card_nodes": 55,
+    "study_finding_nodes": 255,
+    "study_limitation_nodes": 325,
     "top_topics": [
       {
         "count": 58,
@@ -111993,7 +112861,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 710,
+    "verified_academic_resource_nodes": 713,
     "youtube_nodes": 424
   }
 }

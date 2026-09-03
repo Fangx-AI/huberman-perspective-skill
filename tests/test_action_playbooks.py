@@ -60,6 +60,10 @@ class ActionPlaybookTests(unittest.TestCase):
             "明明睡够了白天还是总想睡": "restore-daytime-energy-without-stimulant-stacking",
             "作息挺规律，但常常躺一个多小时睡不着": "support-trouble-falling-or-staying-asleep",
             "半夜醒了以后很久睡不回去": "support-trouble-falling-or-staying-asleep",
+            "最近几个月一直紧绷，下班后也放松不下来": "support-ongoing-stress-worry-and-work-overload",
+            "我每天都焦虑，脑子一直想最坏的事": "support-ongoing-stress-worry-and-work-overload",
+            "我总是反复想一件事停不下来": "support-ongoing-stress-worry-and-work-overload",
+            "我被工作耗空了，是不是职业倦怠": "support-ongoing-stress-worry-and-work-overload",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -167,7 +171,7 @@ class ActionPlaybookTests(unittest.TestCase):
             "chin-2024-brief-state-anxiety-review",
         })
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
-        self.assertIn("非紧急压力与呼吸", skill)
+        self.assertIn("一次压力高峰", skill)
         self.assertIn("先排除危险", skill)
 
     def test_daytime_energy_route_prioritizes_function_and_safety_over_stimulants(self) -> None:
@@ -215,6 +219,30 @@ class ActionPlaybookTests(unittest.TestCase):
         emergency = QUERY.query_playbooks(self.playbooks, "半夜醒来胸痛、喘不上气，睡不回去怎么办？")
         self.assertEqual(medication[0]["playbook_id"], "decide-whether-to-try-one-health-protocol")
         self.assertEqual(emergency[0]["playbook_id"], "manage-an-acute-stress-spike-without-overclaiming-breathwork")
+        rumination = QUERY.query_playbooks(self.playbooks, "我不是睡不着，就是白天一直想同一件事停不下来。")
+        self.assertEqual(rumination[0]["playbook_id"], "support-ongoing-stress-worry-and-work-overload")
+
+    def test_ongoing_stress_route_changes_demands_before_stacking_protocols(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        stress = by_id["support-ongoing-stress-worry-and-work-overload"]
+        self.assertEqual(len(stress["actions"]), 3)
+        for phrase in ("工作量", "事实—预测—下一步", "不要求先忍固定天数", "不能说明皮质醇高低", "不要用补剂"):
+            self.assertIn(phrase, stress["safe_summary"])
+        self.assertIn("延期、移交或取消", stress["actions"][1]["minimum_version"])
+        self.assertIn("症状—持续—功能", stress["actions"][2]["action"])
+        self.assertEqual(
+            {link["review_id"] for link in stress["evidence_links"]},
+            {
+                "who-2022-mental-health-at-work-guideline",
+                "nice-2024-gad-panic-guideline",
+                "who-2020-doing-what-matters-stress-guide",
+            },
+        )
+        self.assertEqual({link["claim_id"] for link in stress["claim_links"]}, {"batch02-claim-0044"})
+        self.assertEqual(
+            QUERY.query_playbooks(self.playbooks, "我想养成下班后散步的习惯，但回家就没动力")[0]["playbook_id"],
+            "start-and-sustain-one-habit",
+        )
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)

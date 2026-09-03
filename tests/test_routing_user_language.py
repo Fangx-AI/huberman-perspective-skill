@@ -21,7 +21,7 @@ class UserLanguageRoutingTests(unittest.TestCase):
             if not item["passed"]
         ]
         self.assertEqual(failures, [])
-        self.assertEqual(report["total"], 50)
+        self.assertEqual(report["total"], 66)
 
     def test_unsupported_generic_request_fails_open_to_framework_help(self) -> None:
         report = MODULE.evaluate()
@@ -38,6 +38,9 @@ class UserLanguageRoutingTests(unittest.TestCase):
             "route-048": ("decide-whether-to-try-one-health-protocol", "药师"),
             "route-049": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "危机"),
             "route-050": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "急救"),
+            "route-053": ("support-ongoing-stress-worry-and-work-overload", "专业"),
+            "route-064": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "急救"),
+            "route-065": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "危机"),
         }
         report = MODULE.evaluate()
         cases = {item["case_id"]: item for item in report["results"]}
