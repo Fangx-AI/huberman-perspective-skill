@@ -7,6 +7,26 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.17.0] - 2026-09-03
+
+### Changed
+
+- Rebuilt the README around a 30-second first-use path: one install command, one natural-language request and one concrete answer preview before any project internals.
+- Replaced stale README commands with working query and validation commands, and added regression gates that keep research inventory out of the first screen.
+- Strengthened short action answers so they retain a compact observation, review and adjustment loop; tightened dangerous-drowsiness and unclear-purchase handling.
+- Fixed self-blame and failed-plan language such as “做了三天又乱了” so it routes to habit review instead of an unrelated exercise playbook.
+
+### Added
+
+- Added a Nuwa-inspired backstage architecture: seven durable research dimensions, a five-gate extraction framework, a bounded Huberman operating model and an independent user-value fidelity scorecard.
+- Added a deterministic research checkpoint and architecture regression tests without expanding the user-facing Skill into a methodology manual.
+- Added one-command discovery and installation through the cross-runtime `skills` CLI, while retaining manual installation.
+
+### Evaluated
+
+- Ran two independent six-scenario black-box rounds covering ordinary sleep, knowledge overload, self-blame, purchase decisions, a pure concept and medication-related symptoms.
+- Preserved the pre-fix evaluation and final post-fix fidelity result so usability claims remain auditable.
+
 ## [0.16.0] - 2026-08-31
 
 ### Changed

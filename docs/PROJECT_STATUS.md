@@ -2,7 +2,7 @@
 
 This file maps the long-term project objective to evidence in the repository. Passing the release checker proves the current snapshot is internally consistent; it does not prove that every Huberman episode or every cited paper has been fully distilled.
 
-Status date: 2026-08-31.
+Status date: 2026-09-03.
 
 | Objective requirement | Authoritative evidence | Status |
 |---|---|---|
@@ -11,9 +11,10 @@ Status date: 2026-08-31.
 | Connect claims, studies, limitations and contradictions | `academic-study-cards.jsonl`, `evidence-relations.jsonl`, `knowledge-graph.json` | Implemented, but research-level coverage remains partial |
 | Help ordinary users improve health-related daily life | `SKILL.md`, `coaching-guide.md`, `USAGE_EXAMPLES.md` | Automatic lifestyle guidance now starts from the user's real outcome, constraints and safest next step |
 | Turn evidence into action without knowledge overload | Eleven outcome-first playbooks, natural-language routing and user-guidance contract tests | Implemented for eleven high-frequency scenarios; more scenarios remain |
+| Keep deep research backstage and independently test user value | `ARCHITECTURE.md`, `extraction-framework.md`, `huberman-operating-model.md`, `fidelity-scorecard.md`, `research_checkpoint.py` | Nuwa-inspired maintenance structure implemented; health-specific user-outcome and safety gates added |
 | State evidence levels, medical boundaries and uncertainty | `SKILL.md`, `evidence-ledger.md`, structured card limitations and stop/escalation fields | Implemented and regression tested |
 | Respect copyright, platform terms and third-party ownership | `COPYRIGHT_AND_DATA_POLICY.md`, `DATA-LICENSE.md`, `THIRD_PARTY_NOTICES.md`, forbidden-payload release checks | Engineering controls implemented; not a substitute for legal clearance |
-| Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | Implemented for a public clone |
+| Provide installation, verification, contribution and reproducibility paths | `README.md`, `USAGE_EXAMPLES.md`, `CONTRIBUTING.md`, `REPRODUCIBILITY.md`, CI and clean-install test | One-command first use and manual fallback implemented for a public clone |
 | Provide versioning, citation and maintenance roadmap | `VERSION`, `CHANGELOG.md`, `CITATION.cff`, `MAINTENANCE.md` | Implemented |
 | Publish as a public GitHub repository | <https://github.com/Fangx-AI/huberman-perspective-skill> and verified public `origin` metadata | Repository published; every tag still requires release and CI verification per `PUBLISHING.md` |
 

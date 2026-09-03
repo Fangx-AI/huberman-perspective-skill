@@ -42,6 +42,8 @@ class ActionPlaybookTests(unittest.TestCase):
         cases = {
             "最近越睡越晚，早上起不来，白天没精神": "stabilize-sleep-wake-timing",
             "我收藏了很多健康建议但执行不下去": "start-and-sustain-one-habit",
+            "我做了三天又乱了，是不是我就是自律差": "start-and-sustain-one-habit",
+            "计划又乱了，我总是坚持不住": "start-and-sustain-one-habit",
             "工作时总被手机打断": "protect-one-focus-block",
             "收藏很多协议 执行不下去 习惯": "start-and-sustain-one-habit",
             "看完就忘 主动回忆 复习": "retain-what-you-learn",

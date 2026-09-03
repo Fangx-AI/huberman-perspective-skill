@@ -20,7 +20,16 @@ LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
 # evidence catalog: they improve routing without changing any evidence claim.
 COMMON_ROUTING_ALIASES = {
     "stabilize-sleep-wake-timing": ("越睡越晚", "早上起不来", "白天没精神", "睡不着", "作息越来越乱"),
-    "start-and-sustain-one-habit": ("健康建议执行不下去", "一个也坚持不住", "总是坚持不住"),
+    "start-and-sustain-one-habit": (
+        "健康建议执行不下去",
+        "一个也坚持不住",
+        "总是坚持不住",
+        "做了三天又乱了",
+        "计划又乱了",
+        "是不是自律差",
+        "我自律差",
+        "又没坚持住",
+    ),
     "protect-one-focus-block": ("工作时被手机打断", "总被手机打断", "脑子转不动"),
 }
 

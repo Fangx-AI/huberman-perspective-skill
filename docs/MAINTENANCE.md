@@ -10,7 +10,7 @@
 ## Release gates
 
 1. No raw transcript, Show Notes, media, paywalled text, secrets or local paths.
-2. Explicit-only invocation remains enabled.
+2. Automatic invocation remains enabled for ordinary lifestyle goals; medical diagnosis, medication changes and emergencies stay out of scope.
 3. Every new health claim has provenance, evidence level and boundary.
 4. Counts in README, manifest and evaluation summary agree.
 5. CI passes on Python 3.11 and the install smoke test succeeds.
@@ -18,6 +18,7 @@
 
 ## Roadmap
 
+- `0.17.x`: make first use possible in 30 seconds, keep research machinery backstage, and add Nuwa-inspired extraction checkpoints plus independent user-outcome scoring.
 - `0.10.x`: finish public-repository navigation, stranger-facing examples, machine-checkable release readiness and the first verified GitHub release.
 - `0.11.x`: add reviewed evidence clusters and outcome-first scenarios across every priority domain without inflating protocol count.
 - `0.12.x`: automate official-catalog, link, release-manifest and dependency drift reports with a documented maintainer response path.

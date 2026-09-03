@@ -18,6 +18,11 @@ class UserGuidanceContractTests(unittest.TestCase):
             "最小版本",
             "没用怎么办",
             "何时停止或求助",
+            "行动类快速回答也要用一两句压缩地保留闭环",
+            "目标不清楚时默认暂不购买",
+            "明确停止相关活动并尽快接受专业评估",
+            "不要替用户决定下一剂该继续、暂停还是改变",
+            "区分失败发生在忘记、没开始、中途被打断、动作太难",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)
@@ -35,9 +40,25 @@ class UserGuidanceContractTests(unittest.TestCase):
 
     def test_readme_leads_with_user_value_before_research_counts(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertLess(readme.index("## 你可以直接这样说"), readme.index("## 为什么保留一套大型证据后台"))
-        self.assertNotIn("## 当前快照", readme[:1500])
-        self.assertIn("普通健康生活问题可以自动触发", readme)
+        self.assertLess(readme.index("## 30 秒开始"), readme.index("## 给维护者：证据后台"))
+        self.assertLess(readme.index("## 回答会是什么样"), readme.index("## 给维护者：证据后台"))
+        self.assertIn("npx skills add Fangx-AI/huberman-perspective-skill", readme[:1800])
+        self.assertIn("最小版本", readme[:1800])
+        self.assertNotIn("当前公开快照包括", readme[:1800])
+        self.assertIn("普通睡眠、精力、压力、专注、习惯、运动和饮食问题也可以自动触发", readme)
+
+    def test_readme_does_not_send_users_to_missing_scripts(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        for stale_command in (
+            "query_study_cards.py",
+            "query_evidence_relations.py",
+            "query_knowledge_graph.py",
+            "quick_validate.py",
+        ):
+            self.assertNotIn(stale_command, readme)
+        for live_command in ("query_action_playbooks.py", "query_evidence.py", "quality_check.py"):
+            self.assertIn(live_command, readme)
+            self.assertTrue((ROOT / "scripts" / live_command).is_file())
 
     def test_ui_policy_allows_automatic_lifestyle_invocation(self) -> None:
         policy = (ROOT / "agents" / "openai.yaml").read_text(encoding="utf-8")

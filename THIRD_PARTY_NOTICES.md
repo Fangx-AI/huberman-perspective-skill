@@ -7,5 +7,6 @@ This repository is an independent research and evidence-indexing project.
 - YouTube and Bilibili video records contain identifiers and source links only. Media and full captions are not redistributed.
 - Europe PMC, PubMed, Crossref, publishers and authors may attach different licenses to individual records and articles. API accessibility does not itself grant redistribution rights to abstracts or full text.
 - Article titles, journal names, DOI/PMID/PMCID values and source URLs are retained for citation and verification. Papers and abstracts are not relicensed by this repository.
+- The research-layer structure and independent fidelity-evaluation approach are adapted from [Nuwa Skill](https://github.com/alchaincyf/nuwa-skill), distributed under the MIT License. This project does not copy Nuwa's persona-impersonation objective; it adds user-outcome, evidence and medical-safety gates for health guidance.
 
 If a rights holder believes a repository entry exceeds source identification, criticism, research indexing or applicable rights, open a rights issue or contact the maintainers. The disputed payload should be removed from release artifacts while the report is reviewed; the source locator may be retained only when legally appropriate.

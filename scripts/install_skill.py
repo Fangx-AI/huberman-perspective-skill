@@ -22,6 +22,7 @@ INSTALL_ITEMS = (
     "CONTRIBUTING.md",
     "SECURITY.md",
     "CHANGELOG.md",
+    "FIDELITY.md",
     "CITATION.cff",
     "VERSION",
     "pyproject.toml",

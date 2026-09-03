@@ -26,6 +26,7 @@ class CleanInstallationTests(unittest.TestCase):
             )
             for relative in (
                 "SKILL.md",
+                "FIDELITY.md",
                 ".github/ISSUE_TEMPLATE/evidence-correction.yml",
                 "docs/USAGE_EXAMPLES.md",
                 "references/catalog/action-playbooks.jsonl",

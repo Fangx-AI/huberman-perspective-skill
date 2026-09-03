@@ -18,6 +18,7 @@ REQUIRED_FILES = (
     "CONTRIBUTING.md",
     "SECURITY.md",
     "CHANGELOG.md",
+    "FIDELITY.md",
     "CITATION.cff",
     "VERSION",
     "requirements.lock",
@@ -27,23 +28,32 @@ REQUIRED_FILES = (
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/pull_request_template.md",
     "docs/COPYRIGHT_AND_DATA_POLICY.md",
+    "docs/ARCHITECTURE.md",
     "docs/DATA_DICTIONARY.md",
     "docs/MAINTENANCE.md",
     "docs/PROJECT_STATUS.md",
     "docs/PUBLISHING.md",
     "docs/REPRODUCIBILITY.md",
     "docs/USAGE_EXAMPLES.md",
+    "references/extraction-framework.md",
+    "references/fidelity-scorecard.md",
+    "references/evals/user-value-blackbox-2026-09-03.md",
+    "references/huberman-operating-model.md",
+    "scripts/research_checkpoint.py",
     "scripts/release_readiness.py",
 )
 
 README_LINKS = (
+    "FIDELITY.md",
     "docs/COPYRIGHT_AND_DATA_POLICY.md",
+    "docs/ARCHITECTURE.md",
     "docs/DATA_DICTIONARY.md",
     "docs/MAINTENANCE.md",
     "docs/PROJECT_STATUS.md",
     "docs/PUBLISHING.md",
     "docs/REPRODUCIBILITY.md",
     "docs/USAGE_EXAMPLES.md",
+    "references/fidelity-scorecard.md",
 )
 
 PLAYBOOK_IDS = (
@@ -104,6 +114,22 @@ def check(root: Path = ROOT, require_origin: bool = False) -> tuple[list[str], l
     for relative in README_LINKS:
         if relative not in readme:
             errors.append(f"README does not route readers to {relative}")
+
+    first_screen = readme[:1800]
+    for marker in ("## 30 秒开始", "## 回答会是什么样", "npx skills add"):
+        if marker not in first_screen:
+            errors.append(f"README first screen omits user-onboarding marker: {marker}")
+    if "当前公开快照包括" in first_screen:
+        errors.append("README puts research inventory before the user can understand first use")
+
+    for stale_command in (
+        "query_study_cards.py",
+        "query_evidence_relations.py",
+        "query_knowledge_graph.py",
+        "quick_validate.py",
+    ):
+        if stale_command in readme:
+            errors.append(f"README references missing command: {stale_command}")
 
     examples = (root / "docs/USAGE_EXAMPLES.md").read_text(encoding="utf-8")
     for playbook_id in PLAYBOOK_IDS:
