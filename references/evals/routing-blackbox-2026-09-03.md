@@ -4,11 +4,11 @@
 
 Users should not need to know a playbook name or use Huberman vocabulary. The routing layer must understand ordinary Chinese, and it must prefer no match over confidently loading an unrelated playbook.
 
-The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 84 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, weight/appetite, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep language, externally interrupted sleep, eating-disorder signals and medication risks.
+The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 99 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, weight/appetite, alcohol reduction/safety, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep/alcohol language, externally interrupted sleep, eating-disorder signals, withdrawal, overdose and medication risks.
 
 ## Deterministic result
 
-The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 84/84 after adding daytime-energy, insomnia-language, ongoing-distress and weight/appetite regressions:
+The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 99/99 after adding daytime-energy, insomnia-language, ongoing-distress, weight/appetite and alcohol regressions:
 
 | Router | Correct | Observed accuracy on this corpus |
 |---|---:|---:|
@@ -17,6 +17,7 @@ The original 33-case subset was run against the released `v0.17.0` router and it
 | Pre-ongoing-stress router, expanded known-failure corpus | 50/50 | 100.0% |
 | Current router, with ongoing-stress and negation cases | 66/66 | 100.0% |
 | Current router, with weight/appetite and medication safety cases | 84/84 | 100.0% |
+| Current router, with alcohol reduction, withdrawal, medication, pregnancy and overdose cases | 99/99 | 100.0% |
 
 This is regression-corpus accuracy, not a population estimate. The corpus was created after observing failures, so it protects known user language but cannot prove performance on unseen phrasing.
 

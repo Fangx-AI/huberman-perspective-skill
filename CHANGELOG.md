@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.22.0] - 2026-09-03
+
+### Added
+
+- Added a user-first alcohol path for ordinary reduction goals, repeated drinking cues and alcohol-for-sleep requests, with dedicated withdrawal, medication-interaction, pregnancy, driving and overdose safety gates.
+- Added five official external evidence cards from NIAAA, ASAM and CDC, four qualifying relations, and one timestamped official Huberman alcohol locator with explicit clinical limits.
+- Added 15 ordinary-language routing regressions, bringing the maintained first-use corpus to 99 cases.
+- Added an isolated eight-scenario user-value evaluation plus repeated fresh-agent stress tests for the alcohol-for-sleep path.
+
+### Changed
+
+- Ordinary reduction now respects users who do not want immediate abstinence and changes only one recurring context; it does not moralize, diagnose or provide a universal safe amount or taper.
+- Alcohol-for-sleep answers must proactively state that combining alcohol with sedatives or opioids can suppress breathing and cause coma or death, and must separate same-day withdrawal assessment from immediate emergency signs.
+- Updated the public snapshot to 65 evidence cards, 42 relations, 16 playbooks, 48 actions and 46 public claim locators.
+
 ## [0.21.0] - 2026-09-03
 
 ### Added

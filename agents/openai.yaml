@@ -1,6 +1,6 @@
 interface:
   display_name: "Huberman Health Guide"
-  short_description: "把睡眠、压力、专注、运动、饮食和体重困扰变成可执行的健康下一步"
+  short_description: "把睡眠、压力、专注、饮酒、运动和饮食困扰变成可执行的健康下一步"
   default_prompt: "帮我从当前生活中最想改善的一个健康问题开始，给出今天能做的最小行动、观察方法和失败后的调整。"
 
 policy:

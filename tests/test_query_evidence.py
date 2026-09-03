@@ -230,6 +230,24 @@ class EvidenceQueryTests(unittest.TestCase):
             <= ids
         )
 
+    def test_alcohol_query_surfaces_user_action_and_safety_evidence(self) -> None:
+        results = MODULE.query_cards(
+            self.cards,
+            "想少喝酒 停酒手抖 酒后叫不醒 酒和安眠药 怀孕喝酒",
+            limit=8,
+        )
+        ids = {item["review_id"] for item in results}
+        self.assertTrue(
+            {
+                "niaaa-rethinking-drinking-cut-down-or-quit",
+                "asam-2020-alcohol-withdrawal-management-guideline",
+                "niaaa-alcohol-overdose-danger-signs",
+                "niaaa-alcohol-medication-interactions",
+                "cdc-2026-alcohol-pregnancy",
+            }
+            <= ids
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

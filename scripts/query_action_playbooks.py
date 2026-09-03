@@ -120,6 +120,24 @@ COMMON_ROUTING_ALIASES = {
         "weight loss",
         "appetite control",
     ),
+    "reduce-alcohol-use-with-withdrawal-and-overdose-safety": (
+        "想少喝酒",
+        "不想完全戒酒",
+        "一下班就开一瓶",
+        "每天顺手开一罐啤酒",
+        "靠酒入睡",
+        "睡前喝酒才能睡",
+        "睡前喝一杯才能睡",
+        "停酒后手抖出汗",
+        "戒酒时抽搐",
+        "酒后叫不醒",
+        "喝酒后呼吸异常",
+        "酒和安眠药一起吃",
+        "怀孕喝酒",
+        "cut down drinking",
+        "alcohol withdrawal",
+        "alcohol overdose",
+    ),
     "manage-an-acute-stress-spike-without-overclaiming-breathwork": (
         "压力大到无法工作",
         "先让我缓下来",
@@ -169,6 +187,7 @@ MIN_LEXICAL_ROUTE_SCORE = 18
 INSOMNIA_PLAYBOOK = "support-trouble-falling-or-staying-asleep"
 ONGOING_STRESS_PLAYBOOK = "support-ongoing-stress-worry-and-work-overload"
 WEIGHT_PLAYBOOK = "support-weight-and-appetite-without-restrictive-protocols"
+ALCOHOL_PLAYBOOK = "reduce-alcohol-use-with-withdrawal-and-overdose-safety"
 ACUTE_STRESS_PLAYBOOK = "manage-an-acute-stress-spike-without-overclaiming-breathwork"
 PROTOCOL_PLAYBOOK = "decide-whether-to-try-one-health-protocol"
 SLEEP_PLAYBOOKS = {INSOMNIA_PLAYBOOK, "stabilize-sleep-wake-timing"}
@@ -190,12 +209,21 @@ WEIGHT_CONTEXT_TERMS = (
     "暴食", "吃很多", "吃到撑", "忍着不吃", "明明不饿", "疯狂点外卖", "催吐", "泻药", "补偿运动",
     "怕长胖", "瘦不下来", "代谢坏了", "胖了", "weight loss", "appetite control",
 )
+ALCOHOL_CONTEXT_TERMS = (
+    "喝酒", "喝了酒", "每天喝", "喝很多", "很多酒", "喝醉", "饮酒", "戒酒", "停酒", "减酒", "少喝", "酒精", "啤酒", "白酒", "红酒", "烈酒",
+    "宿醉", "醉酒", "酒后", "靠酒", "睡前喝一杯才能睡", "alcohol", "drinking", "withdrawal",
+)
+ALCOHOL_HIGH_RISK_TERMS = (
+    "手抖", "出汗", "心慌", "抽搐", "癫痫", "幻觉", "看到不存在", "意识混乱", "叫不醒", "呼吸慢",
+    "呼吸异常", "呼吸不规则", "嘴唇发青", "反复呕吐", "吐了几次", "安眠药", "阿普唑仑", "苯二氮卓",
+    "阿片", "强效止痛药", "怀孕", "孕期", "备孕", "未成年", "开车", "驾驶",
+)
 EMERGENCY_TERMS = (
     "胸痛", "胸口发紧", "喘不上气", "呼吸不顺", "严重气促", "晕厥", "意识混乱", "单侧无力",
     "活着没意思", "不想活", "不想醒来", "想消失", "消失算了", "自伤", "他伤", "无法保证安全",
 )
 MEDICATION_TERMS = ("安眠药", "处方药", "药物", "加量", "减量", "停药", "漏服", "下一剂")
-NEGATION_PREFIXES = ("没有", "没", "无", "否认", "不是", "并非")
+NEGATION_PREFIXES = ("没有", "没", "无", "否认", "不是", "并非", "不", "从不")
 HABIT_GOAL_TERMS = ("想养成", "建立习惯", "培养习惯", "养成习惯")
 
 
@@ -250,10 +278,17 @@ def blocked_by_context(playbook_id: str, normalized: str) -> bool:
         return not any(term in normalized for term in ONGOING_STRESS_TERMS)
     if playbook_id == WEIGHT_PLAYBOOK:
         return not any(term in normalized for term in WEIGHT_CONTEXT_TERMS)
+    if playbook_id == ALCOHOL_PLAYBOOK:
+        return not contains_unnegated_term(normalized, ALCOHOL_CONTEXT_TERMS)
     return False
 
 
 def context_bonus(playbook_id: str, normalized: str) -> int:
+    has_alcohol_context = contains_unnegated_term(normalized, ALCOHOL_CONTEXT_TERMS)
+    if playbook_id == ALCOHOL_PLAYBOOK and has_alcohol_context and any(
+        term in normalized for term in ALCOHOL_HIGH_RISK_TERMS
+    ):
+        return 6500
     if playbook_id == ACUTE_STRESS_PLAYBOOK and contains_unnegated_term(normalized, EMERGENCY_TERMS):
         return 5000
     if playbook_id == PROTOCOL_PLAYBOOK and any(
@@ -268,6 +303,8 @@ def context_bonus(playbook_id: str, normalized: str) -> int:
         return 1600
     if playbook_id == WEIGHT_PLAYBOOK and any(term in normalized for term in WEIGHT_CONTEXT_TERMS):
         return 2400
+    if playbook_id == ALCOHOL_PLAYBOOK and has_alcohol_context:
+        return 2600
     if playbook_id == INSOMNIA_PLAYBOOK and any(term in normalized for term in SELF_SLEEP_DIFFICULTY_TERMS):
         return 30
     return 0

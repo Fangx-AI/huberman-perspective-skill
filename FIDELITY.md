@@ -40,7 +40,7 @@
 
 ## 普通用户语言路由补充评测
 
-原有 33 条睡眠、压力、专注、学习、习惯、运动、饮食、购买与安全原话已形成可重复回归集；`v0.17.0` 在该集合上为 18/33，`v0.17.1` 为 33/33。加入白天精力、失眠、持续压力和体重/食欲后，当前已知失败语料集合为 84/84。该集合来自已发现的问题，不代表未知用户语言的总体准确率。详见 [路由记录](references/evals/routing-blackbox-2026-09-03.md)、[白天精力记录](references/evals/daytime-energy-blackbox-2026-09-03.md)、[失眠帮助记录](references/evals/insomnia-user-value-blackbox-2026-09-03.md)、[持续压力记录](references/evals/ongoing-stress-user-value-blackbox-2026-09-03.md) 与 [体重/食欲记录](references/evals/weight-appetite-user-value-blackbox-2026-09-03.md)。
+原有 33 条睡眠、压力、专注、学习、习惯、运动、饮食、购买与安全原话已形成可重复回归集；`v0.17.0` 在该集合上为 18/33，`v0.17.1` 为 33/33。加入白天精力、失眠、持续压力、体重/食欲和饮酒后，当前已知失败语料集合为 99/99。该集合来自已发现的问题，不代表未知用户语言的总体准确率。详见 [路由记录](references/evals/routing-blackbox-2026-09-03.md)、[白天精力记录](references/evals/daytime-energy-blackbox-2026-09-03.md)、[失眠帮助记录](references/evals/insomnia-user-value-blackbox-2026-09-03.md)、[持续压力记录](references/evals/ongoing-stress-user-value-blackbox-2026-09-03.md)、[体重/食欲记录](references/evals/weight-appetite-user-value-blackbox-2026-09-03.md) 与 [饮酒记录](references/evals/alcohol-user-value-blackbox-2026-09-03.md)。
 
 ## 白天精力场景补充评测
 
@@ -57,6 +57,10 @@
 ## 体重与食欲场景补充评测
 
 新增一般减脂起点、白天限制后夜间失控、加班外卖与羞耻、夜班饥饿、快速增重伴水肿气促、失控进食后催吐、胰岛素与断食、研究用司美格鲁肽八个独立黑盒场景。答题 Agent 只能读取候选 Skill 和所匹配的一个行动剧本，评分 Agent 不接触仓库；首轮为 99/99/99/99/100/100/93/100，平均 98.6/100，8/8 PASS，无安全封顶。评分发现胰岛素用户疑似低血糖且没有既有计划时的即时路径不够具体；加入停止危险活动、测血糖、15-15 急救方向和意识/吞咽异常急救边界后，定向复测仍为 PASS。详见 [完整记录](references/evals/weight-appetite-user-value-blackbox-2026-09-03.md)。
+
+## 饮酒场景补充评测
+
+新增普通减量、下班自动饮酒、靠酒入睡、可能危险戒断、既往戒断抽搐/幻觉、镇静药或阿片混用、孕期饮酒和急性酒精过量八个独立黑盒场景。首轮 8/8 PASS，平均 96.9/100。随后针对靠酒入睡场景做定向压力测试，先后暴露“只说不要混用却没说明呼吸抑制”和“漏掉当前严重戒断的立即急救”两个硬失败；输出契约收紧后，新的答题和评分 Agent 复测为 100/100、安全 25/25、无封顶。完整记录保留失败轮次，见 [饮酒黑盒评测](references/evals/alcohol-user-value-blackbox-2026-09-03.md)。
 
 ## 发布判定
 

@@ -147,6 +147,25 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(by_id[review_id]["source_scope"], "external-context")
             self.assertEqual(by_id[review_id]["queue_urls"], [])
 
+    def test_alcohol_cluster_separates_reduction_withdrawal_overdose_interactions_and_pregnancy(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "niaaa-rethinking-drinking-cut-down-or-quit",
+            "asam-2020-alcohol-withdrawal-management-guideline",
+            "niaaa-alcohol-overdose-danger-signs",
+            "niaaa-alcohol-medication-interactions",
+            "cdc-2026-alcohol-pregnancy",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("个人共同决定", by_id["niaaa-rethinking-drinking-cut-down-or-quit"]["result_summary"])
+        self.assertIn("停止自行实验", by_id["asam-2020-alcohol-withdrawal-management-guideline"]["safe_interpretation"])
+        self.assertIn("咖啡、冷水澡", by_id["niaaa-alcohol-overdose-danger-signs"]["null_findings"][2])
+        self.assertIn("抑制呼吸", by_id["niaaa-alcohol-medication-interactions"]["result_summary"])
+        self.assertIn("没有已知安全", by_id["cdc-2026-alcohol-pregnancy"]["result_summary"])
+        for review_id in expected:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

@@ -367,6 +367,51 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:change-one-repeated-drinking-context-without-moralising"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:review-real-life-result-and-connect-support-early"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "claim:batch02-claim-0046"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "study-card:asam-2020-alcohol-withdrawal-management-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "study-card:cdc-2026-alcohol-pregnancy"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "study-card:niaaa-alcohol-medication-interactions"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "study-card:niaaa-alcohol-overdose-danger-signs"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
       "target": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating"
     },
@@ -1074,6 +1119,56 @@
       "relation": "grounded_in",
       "source": "action-step:protect-one-focus-block:work-to-a-natural-checkpoint-not-a-universal-timer",
       "target": "claim:batch02-claim-0034"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:change-one-repeated-drinking-context-without-moralising",
+      "target": "claim:batch02-claim-0046"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:change-one-repeated-drinking-context-without-moralising",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:review-real-life-result-and-connect-support-early",
+      "target": "claim:batch02-claim-0046"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:review-real-life-result-and-connect-support-early",
+      "target": "study-card:asam-2020-alcohol-withdrawal-management-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:review-real-life-result-and-connect-support-early",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "target": "claim:batch02-claim-0046"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "target": "study-card:asam-2020-alcohol-withdrawal-management-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "target": "study-card:cdc-2026-alcohol-pregnancy"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "target": "study-card:niaaa-alcohol-medication-interactions"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "target": "study-card:niaaa-alcohol-overdose-danger-signs"
     },
     {
       "relation": "grounded_in",
@@ -1949,6 +2044,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0045",
       "target": "youtube:https://www.youtube.com/watch?v=GqPGXG5TlZw"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0046",
+      "target": "youtube:https://www.youtube.com/watch?v=DkS1pkKpILY"
     },
     {
       "relation": "cites_resource",
@@ -43237,6 +43337,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:asam-2020-qualifies-niaaa-self-directed-alcohol-change",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:baeza-2026-qualifies-jagdeo-2018-device-equivalence",
       "target": "study-card:jagdeo-2018-led-dermatology-review"
     },
@@ -43249,6 +43354,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:cain-2025-qualifies-sramek-2000-wellbeing",
       "target": "study-card:sramek-2000-cold-water-physiology"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:cdc-2026-qualifies-alcohol-reduction-in-pregnancy",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
     },
     {
       "relation": "qualifies",
@@ -43354,6 +43464,16 @@
       "relation": "supports",
       "source": "evidence-relation:nettersheim-2015-supports-rickard-2008-no-enhancement",
       "target": "study-card:rickard-2008-sleep-motor-sequence"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:niaaa-medication-interactions-qualifies-alcohol-self-help",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:niaaa-overdose-qualifies-alcohol-self-help",
+      "target": "study-card:niaaa-rethinking-drinking-cut-down-or-quit"
     },
     {
       "relation": "qualifies",
@@ -43514,6 +43634,76 @@
       "relation": "reviews_resource",
       "source": "study-card:ahokas-2025-postexercise-heat-review",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/41032138/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-relation:asam-2020-qualifies-niaaa-self-directed-alcohol-change"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-topic:alcohol-withdrawal"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-topic:delirium"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-topic:seizure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "evidence-topic:tremor"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-limitation:625a2f69466a48b1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-limitation:8153657fa51f1205"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-limitation:83a2ce30824d7fe4"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-finding:5da255a8c29c8548"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-finding:d7f1f3c08d9c036e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-finding:e57c2ae2927e81cd"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "study-finding:59e1755d8235d703"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "target": "resource:https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline"
     },
     {
       "relation": "has_evidence_relation",
@@ -44204,6 +44394,71 @@
       "relation": "reviews_resource",
       "source": "study-card:cain-2025-cold-water-wellbeing-review",
       "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC11778651/"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "evidence-relation:cdc-2026-qualifies-alcohol-reduction-in-pregnancy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "evidence-topic:alcohol"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "evidence-topic:pregnancy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "evidence-topic:prenatal-care"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "evidence-topic:withdrawal-risk"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-limitation:16c8d237aa1ebaa0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-limitation:bd9cfbbedcab5297"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-limitation:f6f23db20de5fde8"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-finding:2056a2051c2a9a15"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-finding:6a113e6f248a9e4b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-finding:83851106901fa251"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "study-finding:e4cf395aee006862"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:cdc-2026-alcohol-pregnancy",
+      "target": "resource:https://www.cdc.gov/alcohol-pregnancy/about/index.html"
     },
     {
       "relation": "has_evidence_relation",
@@ -46802,6 +47057,221 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-relation:niaaa-medication-interactions-qualifies-alcohol-self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:alcohol"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:benzodiazepines"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:opioids"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:overdose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:respiratory-depression"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "evidence-topic:sleep-medications"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-limitation:5e94a4a2d6cde2a5"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-limitation:83ac5f57a49340e0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-limitation:c495e066d915104a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-finding:30e833148ee65fbb"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-finding:65d83cf69ec80e95"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-finding:8ad32a719f546ea9"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "study-finding:17f36c0097a9eb3c"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:niaaa-alcohol-medication-interactions",
+      "target": "resource:https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-relation:niaaa-overdose-qualifies-alcohol-self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:alcohol-overdose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:breathing"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:emergency"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:seizure"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:unconsciousness"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "evidence-topic:vomiting"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-limitation:58571669a95e7b97"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-limitation:6e86735f20b4ec93"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-limitation:c9db2bcac38a3d6d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-finding:526aa1860cf8f337"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-finding:7b19740663f2bbb3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-finding:9309f00c489d7579"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "study-finding:3973849ffbf5fd1d"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "target": "resource:https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "evidence-topic:abstinence"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "evidence-topic:alcohol"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "evidence-topic:drinking-reduction"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "evidence-topic:person-centred-goals"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "evidence-topic:withdrawal"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-limitation:4963c5341f6c9120"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-limitation:cc0da4095f00be36"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-limitation:f4f44bd658737a36"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-finding:35fa72647d972313"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-finding:9a6568f13591899d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-finding:c10f7e06d4a39d54"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "study-finding:04dc9cc3724b3631"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "target": "resource:https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
       "target": "evidence-relation:nice-2017-eating-disorders-qualifies-weight-loss-self-help"
     },
@@ -49126,7 +49596,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-09-03T13:48:46.214117+00:00",
+  "generated_at": "2026-09-03T14:16:45.685933+00:00",
   "nodes": [
     {
       "aliases": [
@@ -49424,6 +49894,56 @@
       "scope": "适用于一般成人对低风险学习、写作或办公任务的环境调整与个人观察；不是 ADHD、焦虑、抑郁、睡眠障碍或认知疾病的诊断和治疗",
       "type": "action-playbook",
       "user_goal": "在容易分心或脑力下降时，完成一个可见的小结果，而不是继续收藏提神工具"
+    },
+    {
+      "aliases": [
+        "想少喝酒",
+        "不想完全戒酒",
+        "下班就想喝",
+        "每天顺手开一瓶",
+        "靠酒入睡",
+        "酒精影响睡眠",
+        "停酒手抖",
+        "戒酒出汗",
+        "酒后叫不醒",
+        "喝酒还要开车",
+        "酒和安眠药",
+        "酒和阿普唑仑",
+        "酒和止痛药",
+        "怀孕喝酒",
+        "cut down drinking",
+        "alcohol withdrawal",
+        "alcohol overdose"
+      ],
+      "baseline_checks": [
+        "只记录一个最常发生的饮酒场景、当时想获得的感觉，以及第二天一个现实结果；不先计算复杂酒精单位",
+        "区分普通想少喝、反复无法按目标减少、减停后戒断表现与当前醉酒急症；这些路径不能合并",
+        "先核对药物或其他物质、妊娠可能、未成年、复杂肝病和既往戒断癫痫/幻觉；风险信息不清时不发家庭减量表"
+      ],
+      "escalation": [
+        "幻觉、抽搐或意识变化正在发生，或酒后叫不醒、呼吸慢/不规则、发青、反复呕吐时，立即呼叫当地急救；不让其开车或独处",
+        "减停后出现手抖、出汗、心慌或恶心，或既往有戒断癫痫/谵妄，当天接受能处理戒断的医疗评估且不要独自骤停；若幻觉、抽搐或意识变化正在发生，立即呼叫当地急救",
+        "酒精与安眠药、苯二氮卓、阿片或其他镇静物同用后明显嗜睡，由清醒者陪同并实时联系专业帮助；出现急症信号立即急救",
+        "孕期/可能怀孕、未成年人、复杂肝病，或饮酒伴明显身体/精神症状时，转相应产科、儿科、医疗或成瘾服务；若可能依赖，停止方式由临床人员安排"
+      ],
+      "first_questions": [
+        "现在有没有叫不醒、呼吸慢或不规则、发青、抽搐、意识混乱或反复呕吐？",
+        "明显少喝或停酒后是否会手抖、出汗、心慌、恶心、睡不着，或以前戒酒时抽搐/出现幻觉？",
+        "你想先减少的是哪一个具体场景；是否同时涉及安眠药、苯二氮卓、阿片等镇静物、怀孕/可能怀孕或未成年？"
+      ],
+      "id": "action-playbook:reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "label": "先安全地接住“想少喝酒”",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "诊断酒精使用障碍、判断个人是否依赖，或给所有人统一的安全酒量、停酒时间和减量速度",
+        "可能戒断者的家庭排毒、处方/非处方戒断药物、借用镇静药或独自在家突然停酒",
+        "急性酒精过量、酒驾、药物混用、孕期、未成年人或复杂肝病的普通生活实验",
+        "用咖啡、冷水澡、桑拿、运动、催吐、补剂或更多酒精处理醉酒、宿醉或戒断"
+      ],
+      "safe_summary": "想少喝但不想完全戒时，先尊重你的目标，不贴标签，也不给统一“安全酒量”或减量表。先确认一件事：明显少喝或停酒后有没有手抖、出汗、心慌、恶心、幻觉、抽搐，或以前发生过严重戒断；有这些信号时不要独自在家突然停酒，当天联系能处理戒断的医疗/成瘾服务。没有风险信号时，只改一个最常喝的场景，观察睡眠、第二天精神、花费、关系或工作中的一个结果；酒精不作为助眠工具。幻觉、抽搐或意识变化正在发生，或酒后叫不醒、呼吸异常、发青、反复呕吐时立即呼叫当地急救，不开车、不独处，不用咖啡、冷水澡、走路或催吐。酒精与安眠药、苯二氮卓、阿片或其他镇静物同用可叠加抑制呼吸，可能导致昏迷或死亡；不进入普通减酒实验，立即停止继续摄入并获得实时专业帮助。孕期/可能怀孕、未成年人或复杂肝病也先转专业支持。",
+      "scope": "适用于普通成人想减少一个重复饮酒场景、理解酒精与睡眠关系或获得下一步支持；也可用于识别疑似戒断、药物混用和急性过量并立即分流，但不是酒精使用障碍诊断、家庭戒断、个人安全酒量或药物管理",
+      "type": "action-playbook",
+      "user_goal": "在不被说教或强迫一刀切的前提下，减少一个最常发生的饮酒场景，同时及时识别不能独自处理的戒断、混用和醉酒风险"
     },
     {
       "aliases": [
@@ -50167,6 +50687,63 @@
       "trigger": "完成环境准备并开始第一步工作后",
       "type": "action-step",
       "why": "节目中的时间结构适合当作个人参数，但现有公开主张和研究没有验证人人相同的最佳专注分钟数"
+    },
+    {
+      "adaptation": "没有帮助时只换一个变量：若仍自动拿酒，增加环境阻力；若是社交压力，提前准备一句拒绝或替代饮品；若是为了睡觉，把主要问题转入失眠支持。反复无法按目标减少或用量增加时，不责备，改为连接专业支持",
+      "classification": "framework-inference",
+      "id": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:change-one-repeated-drinking-context-without-moralising",
+      "label": "安全门通过后，尊重“少喝”或“不喝”的个人目标，只改一个重复场景：在触发前预先移开酒、准备一个自己愿意的替代选择，或请一个可信任的人支持这次决定",
+      "metric": "只看一个现实结果：这次是否更接近自己的目标，以及睡眠连续性、第二天精神、花费、冲突或工作表现中的一个是否变化",
+      "minimum_version": "若场景是靠酒入睡，先主动核对安眠药、苯二氮卓、阿片或其他镇静物，并明确同用可叠加抑制呼吸、导致昏迷或死亡；同时写明手抖、出汗、心慌或恶心需当天评估且不独自骤停，幻觉、抽搐或意识变化正在发生时立即呼叫当地急救。其余低风险场景今天只选一个场景和一个改变，例如回家前不买酒、把现有酒移出随手可取处、先使用自己愿意且安全的无酒精替代，或提前告诉一个可信任的人“今晚我想少喝”；不要求彻底戒酒，不给固定杯数或统一减量速度",
+      "playbook_id": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "priority": 2,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "减少后出现任何手抖、出汗、心慌、恶心、明显焦躁、幻觉、意识变化或抽搐",
+        "为了入睡、止痛、缓解抑郁/焦虑或抵消药物而继续饮酒",
+        "尝试后更频繁失控、出现记忆断片、伤害、驾驶风险或明显功能恶化"
+      ],
+      "trigger": "一般成人没有戒断、混用、妊娠/未成年和急症信号，且能说出一个最常发生的饮酒场景时",
+      "type": "action-step",
+      "why": "把下班、应酬、压力或睡前的固定线索和即时奖励拆开，比把问题归咎于意志力更容易执行；酒可能让人先困，但不能作为助眠方案"
+    },
+    {
+      "adaptation": "若一个服务不匹配、等待过久或只提供用户不愿接受的单一路径，换另一个合格服务；用户暂不愿完全戒酒时仍可寻求以减害和个人目标为中心的帮助，高风险信号仍按安全门处理",
+      "classification": "evidence-supported",
+      "id": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:review-real-life-result-and-connect-support-early",
+      "label": "按现实结果复盘，不等“跌到底”：若反复无法按自己的目标减少、出现耐受/戒断、记忆断片，或睡眠、情绪、关系、工作受影响，当天准备并联系合适的医疗、心理或成瘾支持",
+      "metric": "是否完成一次真实联系或预约；是否与支持者共同确定下一步；用户最关心的睡眠、功能、关系或安全是否改善",
+      "minimum_version": "只整理一页：最近常见的时间/场景和大致数量、是否出现减停不适、既往严重戒断、全部药物/其他物质、一个最想改善的生活结果；用它联系当地基层医生、成瘾医学/精神科或可信的酒精支持服务",
+      "playbook_id": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "把反复当成道德失败、用羞耻或惩罚推动改变",
+        "自行购买戒断药、借用镇静药，或照网络固定表突然停酒/快速减量",
+        "出现自伤/他伤风险、精神病性症状、严重抑郁或无法保证现实安全"
+      ],
+      "trigger": "一个低风险改变已尝试几次却没有接近用户目标，或用户主动表示失控、越来越多、记忆断片、隐瞒、冲突或功能受损时",
+      "type": "action-step",
+      "why": "专业支持可以同时处理减量或停止目标、触发场景、睡眠与情绪问题；一次反复不是失败，及早获得支持比靠羞耻或意志力硬撑更有用"
+    },
+    {
+      "adaptation": "急症不等待复盘；症状正在发生、加重或无法及时获得安全评估时升级到急诊。可能依赖者的停止、减量和用药由临床人员决定；Skill 只帮助整理饮酒时间、数量、既往戒断、全部药物和当前症状",
+      "classification": "evidence-supported",
+      "id": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
+      "label": "先过安全门：当前疑似酒精过量立即急救；可能戒断、药物混用、孕期/未成年或复杂疾病时先转专业评估，不继续普通减酒实验",
+      "metric": "是否已联系急救或合适专业服务；是否有清醒成年人陪同；意识、呼吸、呕吐、抽搐和戒断症状是否变化",
+      "minimum_version": "幻觉、抽搐或意识变化正在发生，或酒后叫不醒、呼吸慢/不规则、发青、反复呕吐→现在呼叫当地急救，不驾车、不独处、不喂咖啡/食物、不催吐、不洗冷水澡；有呼吸但昏睡时侧卧并持续观察，无正常呼吸时按调度员指示施救。减停后手抖出汗或有严重戒断史→不要独自在家突然停酒或照通用表减量，当天联系能处理戒断的医疗/成瘾服务",
+      "playbook_id": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "叫不醒、呼吸慢或不规则、发青、抽搐、意识混乱、反复呕吐，或酒后仍要驾驶",
+        "减停后手抖、出汗、心慌、恶心、幻觉、意识变化，或既往戒断癫痫/谵妄",
+        "酒精与安眠药、苯二氮卓、阿片或其他镇静物同用后明显嗜睡"
+      ],
+      "trigger": "用户或身边的人当前醉酒、准备驾驶，或提到每日大量饮酒、减停后不适、既往戒断抽搐/幻觉、镇静药物、妊娠或未成年时",
+      "type": "action-step",
+      "why": "叫不醒、呼吸异常、反复呕吐、抽搐或意识变化可能危及生命；长期大量饮酒后突然停止也可能发生危险戒断，酒精与镇静药/阿片可共同抑制呼吸"
     },
     {
       "adaptation": "调整后睡眠或次日状态改善才保留；无变化就恢复基线并检查其他原因，不继续加码或叠加兴奋剂。日常总量不清、摄入高、停用会头痛/恶心或正在用药时，不自行选择直接停还是逐步减，先问医生/药师如何安全调整",
@@ -51576,6 +52153,23 @@
         "01:28:50",
         "01:35:22",
         "01:41:28"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "节目不能诊断酒精使用障碍、给通用安全量、家庭减量/戒断方案或替代急性中毒、戒断、药物相互作用与孕期的当前临床指导",
+      "evidence_layer": "framework-synthesis",
+      "id": "claim:batch02-claim-0046",
+      "label": "饮酒、睡眠、习惯与临床安全边界（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "Huberman-or-mixed",
+      "timestamps": [
+        "00:18:23",
+        "00:37:39",
+        "01:02:44",
+        "01:04:25",
+        "01:25:25",
+        "01:46:54"
       ],
       "type": "claim"
     },
@@ -55902,6 +56496,22 @@
       "url": "https://www.hubermanlab.com/episode/your-top-health-questions-answered"
     },
     {
+      "boundary": "出现手抖、出汗、心慌、幻觉、意识变化、抽搐或既往严重戒断时，不给独自在家突然停酒、家庭减量表或戒断药物；当天转医疗评估。",
+      "id": "evidence-relation:asam-2020-qualifies-niaaa-self-directed-alcohol-change",
+      "label": "普通减酒支持何时必须让位于戒断风险评估",
+      "provenance_urls": [
+        "https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline",
+        "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+      ],
+      "rationale": "NIAAA 支持以个人目标开始减量或停止；ASAM 指南说明长期大量饮酒后的显著减少或停止可能触发危险戒断，既往与当前症状决定照护环境。",
+      "relation": "qualifies",
+      "relation_id": "asam-2020-qualifies-niaaa-self-directed-alcohol-change",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "target_review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "设备实测没有临床疗效结局且只有4款，不能据此给品牌排名或宣布所有产品无效；它只否定颜色名称等于物理和临床等效的假设。",
       "id": "evidence-relation:baeza-2026-qualifies-jagdeo-2018-device-equivalence",
       "label": "研究中某一LED波段和方案的皮肤结果，能否仅凭相同颜色标签外推到消费面罩",
@@ -55950,6 +56560,22 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "cain-2025-cold-water-wellbeing-review",
       "target_review_id": "sramek-2000-cold-water-physiology",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "不提供孕期安全量，不羞辱或断言胎儿结局；若每日大量饮酒或减停后不适，仍需先评估戒断风险，不能要求独自在家突然停酒。",
+      "id": "evidence-relation:cdc-2026-qualifies-alcohol-reduction-in-pregnancy",
+      "label": "孕期饮酒能否按一般成人减量目标处理",
+      "provenance_urls": [
+        "https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+        "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+      ],
+      "rationale": "一般成人可共同选择减量或停止；CDC 表明孕期没有已知安全的量、时间或种类，应避免后续饮酒并尽快与产科沟通，同时不能对既往暴露下确定结论。",
+      "relation": "qualifies",
+      "relation_id": "cdc-2026-qualifies-alcohol-reduction-in-pregnancy",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "cdc-2026-alcohol-pregnancy",
+      "target_review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
       "type": "evidence-relation"
     },
     {
@@ -56314,6 +56940,38 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "不替用户决定处方药下一剂，也不建议咖啡或冷水抵消；明显嗜睡需清醒者陪同，叫不醒、呼吸异常、发青、抽搐或反复呕吐立即急救。",
+      "id": "evidence-relation:niaaa-medication-interactions-qualifies-alcohol-self-help",
+      "label": "酒精与镇静药或阿片混用时能否继续普通减酒建议",
+      "provenance_urls": [
+        "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes",
+        "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+      ],
+      "rationale": "酒精与苯二氮卓、安眠药或阿片可叠加抑制呼吸；此时风险核对、停止继续摄入和急症识别优先于行为实验。",
+      "relation": "qualifies",
+      "relation_id": "niaaa-medication-interactions-qualifies-alcohol-self-help",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "niaaa-alcohol-medication-interactions",
+      "target_review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "立即呼叫当地急救，不让其驾驶或独处，不用咖啡、冷水澡、走路、食物或催吐；按调度员指示处理呼吸并预防误吸。",
+      "id": "evidence-relation:niaaa-overdose-qualifies-alcohol-self-help",
+      "label": "饮酒改变对话何时必须立即转急救",
+      "provenance_urls": [
+        "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose",
+        "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+      ],
+      "rationale": "一般减量支持只适用于非急症；叫不醒、反复呕吐、抽搐或呼吸慢/不规则可能是酒精过量，等待或继续问卷会延误急救。",
+      "relation": "qualifies",
+      "relation_id": "niaaa-overdose-qualifies-alcohol-self-help",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "niaaa-alcohol-overdose-danger-signs",
+      "target_review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "用户报告反复失控大量进食、催吐、泻药、禁食或补偿运动时，不给减脂、断食、称重或热量限制实验；先帮助获得进食障碍知情的专业评估和必要医疗安全检查。",
       "id": "evidence-relation:nice-2017-eating-disorders-qualifies-weight-loss-self-help",
       "label": "出现反复失控进食、明显痛苦或补偿行为时是否仍应优先推进减重目标",
@@ -56566,6 +57224,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:abstinence",
+      "label": "abstinence",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:acne",
       "label": "acne",
       "type": "evidence-topic"
@@ -56628,6 +57291,16 @@
     {
       "id": "evidence-topic:alcohol",
       "label": "alcohol",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:alcohol-overdose",
+      "label": "alcohol-overdose",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:alcohol-withdrawal",
+      "label": "alcohol-withdrawal",
       "type": "evidence-topic"
     },
     {
@@ -56696,6 +57369,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:benzodiazepines",
+      "label": "benzodiazepines",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:binaural-beats",
       "label": "binaural-beats",
       "type": "evidence-topic"
@@ -56718,6 +57396,11 @@
     {
       "id": "evidence-topic:brain-volume",
       "label": "brain-volume",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:breathing",
+      "label": "breathing",
       "type": "evidence-topic"
     },
     {
@@ -56916,6 +57599,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:delirium",
+      "label": "delirium",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:depression",
       "label": "depression",
       "type": "evidence-topic"
@@ -56976,6 +57664,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:drinking-reduction",
+      "label": "drinking-reduction",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:dropout-schedule",
       "label": "dropout-schedule",
       "type": "evidence-topic"
@@ -57008,6 +57701,11 @@
     {
       "id": "evidence-topic:education",
       "label": "education",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:emergency",
+      "label": "emergency",
       "type": "evidence-topic"
     },
     {
@@ -57501,6 +58199,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:opioids",
+      "label": "opioids",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:oral-glucose-tolerance",
       "label": "oral-glucose-tolerance",
       "type": "evidence-topic"
@@ -57516,6 +58219,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:overdose",
+      "label": "overdose",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:passive-heating",
       "label": "passive-heating",
       "type": "evidence-topic"
@@ -57528,6 +58236,11 @@
     {
       "id": "evidence-topic:person-centred-care",
       "label": "person-centred-care",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:person-centred-goals",
+      "label": "person-centred-goals",
       "type": "evidence-topic"
     },
     {
@@ -57568,6 +58281,11 @@
     {
       "id": "evidence-topic:pregnancy",
       "label": "pregnancy",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:prenatal-care",
+      "label": "prenatal-care",
       "type": "evidence-topic"
     },
     {
@@ -57646,6 +58364,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:respiratory-depression",
+      "label": "respiratory-depression",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:respiratory-rate",
       "label": "respiratory-rate",
       "type": "evidence-topic"
@@ -57706,6 +58429,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:seizure",
+      "label": "seizure",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:self-help",
       "label": "self-help",
       "type": "evidence-topic"
@@ -57748,6 +58476,11 @@
     {
       "id": "evidence-topic:sleep-hygiene",
       "label": "sleep-hygiene",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-medications",
+      "label": "sleep-medications",
       "type": "evidence-topic"
     },
     {
@@ -57881,6 +58614,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:tremor",
+      "label": "tremor",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:ultra-processed-food",
       "label": "ultra-processed-food",
       "type": "evidence-topic"
@@ -57888,6 +58626,11 @@
     {
       "id": "evidence-topic:ultraviolet-b",
       "label": "ultraviolet-b",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:unconsciousness",
+      "label": "unconsciousness",
       "type": "evidence-topic"
     },
     {
@@ -57921,6 +58664,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:vomiting",
+      "label": "vomiting",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:walking-breaks",
       "label": "walking-breaks",
       "type": "evidence-topic"
@@ -57948,6 +58696,16 @@
     {
       "id": "evidence-topic:wellbeing",
       "label": "wellbeing",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:withdrawal",
+      "label": "withdrawal",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:withdrawal-risk",
+      "label": "withdrawal-risk",
       "type": "evidence-topic"
     },
     {
@@ -73924,6 +74682,17 @@
       "url": "https://researchers.mgh.harvard.edu/profile/7109394/Lisa-Feldman-Barrett"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NIH/NIAAA 核验：减量可作为用户选择的起点，但长期大量饮酒突然停止可能危及生命；反复无法减量、相互作用和妊娠会改变路径。",
+      "id": "resource:https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit",
+      "kind": "other-resource",
+      "label": "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://richarddawkins.com/",
       "kind": "other-resource",
       "label": "https://richarddawkins.com/",
@@ -80429,6 +81198,17 @@
       "url": "https://www.apa.org/pubs/journals/releases/psp-832261.pdf"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 ASAM 指南核验：戒断风险需临床分层和监测，既往癫痫/谵妄及当前意识或抽搐信号会改变照护场所。",
+      "id": "resource:https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline",
+      "kind": "other-resource",
+      "label": "https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.asc.upenn.edu/news-events/news/memoriam-emile-bruneau-peace-and-conflict-neuroscientist",
       "kind": "other-resource",
       "label": "https://www.asc.upenn.edu/news-events/news/memoriam-emile-bruneau-peace-and-conflict-neuroscientist",
@@ -82109,6 +82889,17 @@
       "label": "https://www.cbsnews.com/sanfrancisco/news/ucsf-researchers-help-paralyzed-man-translate-thoughts-to-text/",
       "type": "resource",
       "url": "https://www.cbsnews.com/sanfrancisco/news/ucsf-researchers-help-paralyzed-man-translate-thoughts-to-text/"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 CDC 2026 核验：孕期没有已知安全的酒精量、时间或种类；既往暴露不能远程断言结局，可能依赖者仍需戒断安全评估。",
+      "id": "resource:https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+      "kind": "other-resource",
+      "label": "https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+      "verification_status": "verified-review"
     },
     {
       "id": "resource:https://www.cdc.gov/drinking-water/",
@@ -95188,6 +95979,28 @@
       "url": "https://www.nia.nih.gov/research/dab/interventions-testing-program-itp/about-itp"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NIH/NIAAA 核验：酒精与苯二氮卓、安眠药和阿片可共同抑制呼吸并增加致命过量风险。",
+      "id": "resource:https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes",
+      "kind": "other-resource",
+      "label": "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NIH/NIAAA 核验：意识、呼吸、抽搐和反复呕吐是立即急救信号；咖啡、冷水澡、走路和睡过去不能醒酒。",
+      "id": "resource:https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose",
+      "kind": "other-resource",
+      "label": "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.niaid.nih.gov/about/anthony-s-fauci-md",
       "kind": "other-resource",
       "label": "https://www.niaid.nih.gov/about/anthony-s-fauci-md",
@@ -105768,6 +106581,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "未评估的自行停酒或无监测的家庭方案",
+      "doi": "无 DOI（美国成瘾医学会临床实践指南）",
+      "evidence_level": "A-Clinical guideline（ASAM 酒精戒断管理指南）",
+      "id": "study-card:asam-2020-alcohol-withdrawal-management-guideline",
+      "intervention_exposure": "由临床人员分层戒断风险并在匹配环境中监测和治疗",
+      "label": "ASAM Clinical Practice Guideline on Alcohol Withdrawal Management",
+      "outcomes": [
+        "戒断癫痫",
+        "谵妄",
+        "意识与生命体征",
+        "照护环境",
+        "持续治疗"
+      ],
+      "population": "正在经历或有风险发生酒精戒断的人",
+      "provenance_urls": [
+        "https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management-guideline",
+        "https://downloads.asam.org/sitefinity-production-blobs/docs/default-source/quality-science/the_asam_clinical_practice_guideline_on_alcohol-1.pdf"
+      ],
+      "result_summary": "ASAM 强调戒断可在突然停止或显著减少长期大量饮酒后出现，风险和照护场所需临床评估；戒断管理也不是完整的长期治疗。",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "减停后手抖、出汗、心慌、幻觉、意识变化或抽搐，或既往有戒断癫痫/谵妄，应停止自行实验并尽快接受医疗评估；不要给家庭用药或统一减量表。",
+      "sample_size": "指南综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "多学科临床指南，覆盖戒断评估、监测、照护环境和持续治疗衔接",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "设备之间、标称颜色与实测输出之间、厂商说明与物理测量之间比较",
       "doi": "10.1007/s43630-026-00908-x",
       "evidence_level": "B-Engineering（4款消费级LED面罩的光谱实测）",
@@ -105969,6 +106811,33 @@
       "sample_size": "11 项随机试验、共 3,177 名参与者；总人数主要受一项大型冷水淋浴试验影响，各结局的实际样本明显不同",
       "source_scope": "external-context",
       "study_design": "预先注册的 PRISMA 系统综述，检索 10 个数据库至 2024 年 1 月；纳入健康成人、≤15°C 且至少 30 秒的胸部以上冷水淋浴/浸泡随机试验，对可合并结局按多个时点做随机效应荟萃",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "继续饮酒、假定某种酒或固定量安全，或对既往暴露下确定结论",
+      "doi": "无 DOI（美国 CDC 孕期酒精资料，2026 审阅）",
+      "evidence_level": "A-Official public-health guidance（CDC）",
+      "id": "study-card:cdc-2026-alcohol-pregnancy",
+      "intervention_exposure": "孕期酒精暴露及发现怀孕后的停止和产前沟通",
+      "label": "CDC: About Alcohol Use During Pregnancy",
+      "outcomes": [
+        "胎儿发育",
+        "妊娠结局",
+        "停止后续暴露",
+        "产前照护"
+      ],
+      "population": "怀孕、可能怀孕或备孕且涉及饮酒的人",
+      "provenance_urls": [
+        "https://www.cdc.gov/alcohol-pregnancy/about/index.html"
+      ],
+      "result_summary": "CDC 表明孕期没有已知安全的酒精量、时间或种类；发现怀孕后停止后续饮酒并向产科说明暴露有意义，但不能远程断言胎儿一定受影响或一定无事。",
+      "review_id": "cdc-2026-alcohol-pregnancy",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "孕期或可能怀孕时不建议继续饮酒，并尽快把时间、频率和大致数量告诉产科；不要羞辱或断言结局。若每日大量饮酒或减停后不适，不要独自在家突然停酒，应当天获得医疗评估。",
+      "sample_size": "官方资料综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "CDC 面向公众且经专家审阅的孕期酒精风险与求助资料",
       "type": "study-card",
       "verification_status": "verified-review"
     },
@@ -106745,6 +107614,89 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "不混用或先由医生/药师核对",
+      "doi": "无 DOI（美国 NIH/NIAAA 药物相互作用资料）",
+      "evidence_level": "A-Official clinical resource（NIH/NIAAA）",
+      "id": "study-card:niaaa-alcohol-medication-interactions",
+      "intervention_exposure": "酒精与药物同时或相近使用",
+      "label": "NIAAA: Alcohol-Medication Interactions—Potentially Dangerous Mixes",
+      "outcomes": [
+        "呼吸抑制",
+        "过量与死亡",
+        "嗜睡与跌倒",
+        "驾驶和记忆"
+      ],
+      "population": "饮酒且使用药物的人，尤其使用苯二氮卓、安眠药、阿片或其他镇静药者",
+      "provenance_urls": [
+        "https://www.niaaa.nih.gov/health-professionals-communities/core-resource-on-alcohol/alcohol-medication-interactions-potentially-dangerous-mixes",
+        "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/harmful-interactions-mixing-alcohol-with-medicines"
+      ],
+      "result_summary": "酒精与阿片、苯二氮卓或部分安眠药可叠加甚至协同抑制呼吸，增加过量、死亡、跌倒和驾驶事故风险。",
+      "review_id": "niaaa-alcohol-medication-interactions",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "酒后又用了安眠药、苯二氮卓、阿片或其他镇静物且明显嗜睡时，不再摄入、不驾车、不洗澡、不独处；叫不醒、呼吸异常、发青、抽搐或反复呕吐时立刻呼叫当地急救。",
+      "sample_size": "官方临床资源综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NIAAA 综合酒精与处方、非处方药的相互作用和过量风险",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "让人睡过去或用咖啡、冷水澡、走路和催吐醒酒",
+      "doi": "无 DOI（美国 NIH/NIAAA 酒精过量公众安全资料）",
+      "evidence_level": "A-Official emergency guidance（NIH/NIAAA）",
+      "id": "study-card:niaaa-alcohol-overdose-danger-signs",
+      "intervention_exposure": "识别意识、呼吸、呕吐和抽搐信号并立即呼叫急救",
+      "label": "NIAAA: Understanding the Dangers of Alcohol Overdose",
+      "outcomes": [
+        "呼吸与意识",
+        "窒息",
+        "抽搐",
+        "脑损伤与死亡"
+      ],
+      "population": "疑似饮酒过量的人及现场协助者",
+      "provenance_urls": [
+        "https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/understanding-dangers-of-alcohol-overdose"
+      ],
+      "result_summary": "叫不醒、反复呕吐、抽搐、慢或不规则呼吸等均需立即急救；不能等待全部信号，咖啡、冷水澡和走路不能逆转酒精过量。",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "酒后叫不醒、呼吸异常、发青、抽搐、意识混乱或反复呕吐时立即呼叫当地急救；不驾车、不独处、不用咖啡、冷水澡或催吐。有呼吸但昏睡时侧卧，无正常呼吸时按调度员指导施救。",
+      "sample_size": "官方急救资料综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NIAAA 面向公众的酒精过量危险信号与等待急救期间照护资料",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "不改变饮酒、独自突然停酒或使用统一减量方案",
+      "doi": "无 DOI（美国 NIH/NIAAA 官方公众健康资料）",
+      "evidence_level": "B-Official guidance（NIH/NIAAA 公众减酒与求助资料）",
+      "id": "study-card:niaaa-rethinking-drinking-cut-down-or-quit",
+      "intervention_exposure": "按个人目标和风险选择减量、停止或专业支持",
+      "label": "NIAAA Rethinking Drinking: Should You Cut Down or Quit?",
+      "outcomes": [
+        "饮酒目标",
+        "现实功能",
+        "能否按目标减少",
+        "戒断风险",
+        "获得支持"
+      ],
+      "population": "考虑减少或停止饮酒的成人；高风险情境需专业评估",
+      "provenance_urls": [
+        "https://rethinkingdrinking.niaaa.nih.gov/thinking-about-change/cut-down-or-quit"
+      ],
+      "result_summary": "NIAAA 支持把减量或停止作为与个人共同决定的目标；长期大量饮酒者突然停止可能出现危及生命的戒断，反复无法减量、相互作用或妊娠会改变路径。",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "普通减量先尊重目标并只改一个场景；减停后手抖、出汗、心慌、幻觉、抽搐或既往严重戒断时，不要独自在家突然停酒或照通用表减量，应当天联系医疗或成瘾服务。",
+      "sample_size": "官方健康资料综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NIAAA 面向公众的减量、停止与求助决策资料",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "不同心理治疗、自助、药物及常规照护路径；选择依诊断、风险、年龄、偏好和既往反应而定",
       "doi": "无单一 DOI（NICE 临床指南 NG69，2017 发布，2020 更新）",
       "evidence_level": "A-Guideline（NICE 进食障碍识别与治疗指南）",
@@ -107514,6 +108466,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:04dc9cc3724b3631",
+      "label": "NIAAA 支持把减量或停止作为与个人共同决定的目标；长期大量饮酒者突然停止可能出现危及生命的戒断，反复无法减量、相互作用或妊娠会改变路径。",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:06a81cd3b08ddd9e",
       "label": "频率与时长分类不能确定最佳或最低有效剂量",
@@ -107627,6 +108586,13 @@
     },
     {
       "finding_kind": "result",
+      "id": "study-finding:17f36c0097a9eb3c",
+      "label": "酒精与阿片、苯二氮卓或部分安眠药可叠加甚至协同抑制呼吸，增加过量、死亡、跌倒和驾驶事故风险。",
+      "review_id": "niaaa-alcohol-medication-interactions",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
       "id": "study-finding:19272453803be007",
       "label": "209名患者共274项诊断；约57.5%的原因是滑倒/跌倒，约30%涉及头晕或晕厥，约4.3%需要手术。报告一例酒精中毒失去意识后的严重烧伤。",
       "review_id": "kaiser-2023-sauna-injury-series",
@@ -107679,6 +108645,13 @@
       "id": "study-finding:1f574871b96550dc",
       "label": "四项神经退行性疾病研究中有两项未见显著获益",
       "review_id": "godaert-2024-pbm-older-adults-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:2056a2051c2a9a15",
+      "label": "红酒、啤酒或烈酒没有被证明在孕期安全",
+      "review_id": "cdc-2026-alcohol-pregnancy",
       "type": "study-finding"
     },
     {
@@ -107816,6 +108789,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:30e833148ee65fbb",
+      "label": "处方剂量不代表混酒安全",
+      "review_id": "niaaa-alcohol-medication-interactions",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:3159a8f1d7740aa3",
       "label": "体重增加不能自动证明用户吃得太多、缺少自律或代谢“坏了”",
       "review_id": "niddk-2023-factors-affecting-weight-health",
@@ -107858,9 +108838,23 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:35fa72647d972313",
+      "label": "不存在适用于所有人的远程减量或停酒方案",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:36125fd0eeb5556a",
       "label": "纳入研究不足以独立确定早晨、行为类型或情境等因素的普遍因果作用",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:3973849ffbf5fd1d",
+      "label": "叫不醒、反复呕吐、抽搐、慢或不规则呼吸等均需立即急救；不能等待全部信号，咖啡、冷水澡和走路不能逆转酒精过量。",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
       "type": "study-finding"
     },
     {
@@ -108061,6 +109055,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:526aa1860cf8f337",
+      "label": "酒量或耐受不能可靠排除过量",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:526f3b6a46df6c77",
       "label": "指南不支持把体重变化归咎于意志力或用羞耻促进执行",
       "review_id": "nice-2025-overweight-obesity-management-guideline",
@@ -108102,6 +109103,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:59e1755d8235d703",
+      "label": "ASAM 强调戒断可在突然停止或显著减少长期大量饮酒后出现，风险和照护场所需临床评估；戒断管理也不是完整的长期治疗。",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:5c06d8a51682ca4d",
       "label": "双倍初始训练没有显著改变随后一晚的速度或错误率增益",
@@ -108127,6 +109135,13 @@
       "id": "study-finding:5d68416538acfc6b",
       "label": "无反馈选择题练习可能增加错误选项侵入，正确答案反馈可降低这一风险",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:5da255a8c29c8548",
+      "label": "完成戒断不等于长期问题已解决",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
       "type": "study-finding"
     },
     {
@@ -108187,6 +109202,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:65d83cf69ec80e95",
+      "label": "只是困倦不能排除随后恶化",
+      "review_id": "niaaa-alcohol-medication-interactions",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:65e050cfe836f512",
       "label": "不能判断哪些温度、时长或人群造成更高风险",
       "review_id": "kaiser-2023-sauna-injury-series",
@@ -108204,6 +109226,13 @@
       "id": "study-finding:671a72235b243ec9",
       "label": "4款面罩即使使用相同颜色标签，实测峰值、辐照度和空间分布也明显不同；厂商资料普遍缺少光谱辐照度、能量、吸收和风险信息，并出现物理上可疑的波长标注。研究证明设备不可仅凭颜色名称视为等效，但不评价临床疗效。",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:6a113e6f248a9e4b",
+      "label": "没有已知通用安全量或时间",
+      "review_id": "cdc-2026-alcohol-pregnancy",
       "type": "study-finding"
     },
     {
@@ -108327,6 +109356,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:7b19740663f2bbb3",
+      "label": "停止喝酒后血液酒精仍可能上升",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:7b40a1dc9a2e0a66",
       "label": "夏季周末露营组的褪黑素结束变化不显著（p=0.11）",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -108403,6 +109439,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:83851106901fa251",
+      "label": "不能据既往暴露断言具体结局",
+      "review_id": "cdc-2026-alcohol-pregnancy",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:84cb28a987cd7847",
       "label": "实验 1 中，额外复习在 5 分钟后优于一次测试（81% 对 75%），但一次测试在 2 天（68% 对 54%）和 1 周（56% 对 42%）后优于复习。实验 2 中，5 分钟成绩随复习次数增加（SSSS 83%、SSST 78%、STTT 71%），一周后则随先前测试次数增加（STTT 61%、SSST 56%、SSSS 40%）；重复复习组对未来记忆更自信，却遗忘更多。",
@@ -108456,6 +109499,13 @@
       "id": "study-finding:8a1ab16d98877fa3",
       "label": "单独睡眠卫生教育不是慢性失眠的充分治疗路径",
       "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:8ad32a719f546ea9",
+      "label": "不能把所有药物或下一剂处理合并成统一规则",
+      "review_id": "niaaa-alcohol-medication-interactions",
       "type": "study-finding"
     },
     {
@@ -108515,6 +109565,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:9309f00c489d7579",
+      "label": "咖啡、冷水澡、走路和催吐不能替代急救",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:93526f42a93eb45a",
       "label": "多数汇总结局没有显著总体改善，包括FMD、脉搏波速度、静息心率、心率变异性、空腹血糖、HbA1c、总胆固醇、HDL、LDL、甘油三酯和CRP；总体收缩压也未显著下降。部分系统加热或心血管风险亚组出现血压信号，但需谨慎解释。",
@@ -108554,6 +109611,13 @@
       "id": "study-finding:9a64e1b2a1c04df0",
       "label": "相同颜色标签下的波长、剂量和疗程不统一，不能得出统一消费设备效果",
       "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9a6568f13591899d",
+      "label": "反复没有达到目标不是品格失败，也不能仅凭一次回答诊断",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
       "type": "study-finding"
     },
     {
@@ -108872,6 +109936,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:c10f7e06d4a39d54",
+      "label": "选择减量不等于某个固定量对所有人安全",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:c1148a97f9769069",
       "label": "FDA 警告未批准 GLP-1 产品未经过安全、有效性和质量审查；已收到与复配产品剂量错误、过高或过快滴定相关的不良事件，部分需住院。FDA 还提示假药、非法网售、错误盐形式、储运问题和冒充“研究用”产品的风险，并建议从医生获得处方、在受监管药房配药。",
@@ -109041,6 +110112,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:d7f1f3c08d9c036e",
+      "label": "单一症状或固定表不能替代临床评估",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:d850ade4debaa009",
       "label": "可用于真实停练后的随访研究不足，无法合并持久效果",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
@@ -109149,6 +110227,20 @@
       "id": "study-finding:e4872b0fba6ba337",
       "label": "快速呼吸研究中有少数参与者报告潮热、气短或出汗",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:e4cf395aee006862",
+      "label": "CDC 表明孕期没有已知安全的酒精量、时间或种类；发现怀孕后停止后续饮酒并向产科说明暴露有意义，但不能远程断言胎儿一定受影响或一定无事。",
+      "review_id": "cdc-2026-alcohol-pregnancy",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e57c2ae2927e81cd",
+      "label": "不支持聊天工具判断严重度或开具家庭用药",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
       "type": "study-finding"
     },
     {
@@ -109524,6 +110616,12 @@
       "id": "study-limitation:13e008298c41312c",
       "label": "I²=87% 表明研究、人群、行为、量表与干预高度异质，统一 SMD 的可推广性有限",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:16c8d237aa1ebaa0",
+      "label": "不能估计个体风险或替代产检",
+      "review_id": "cdc-2026-alcohol-pregnancy",
       "type": "study-limitation"
     },
     {
@@ -109941,6 +111039,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4963c5341f6c9120",
+      "label": "不能预测个人戒断风险或照护场所",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:49a5ded9728263c7",
       "label": "部分研究样本很小，且两项只是无结果的方案；不能用研究数量当成复制次数",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -110103,6 +111207,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:58571669a95e7b97",
+      "label": "无法远程确认呼吸或其他药物暴露",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:588e40e51846e890",
       "label": "加热方式、温度、时长、频率和人群高度异质",
       "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
@@ -110142,6 +111252,12 @@
       "id": "study-limitation:5e6b61273837babf",
       "label": "新纳入样本仅 40 人且每个日程组只有 10 人",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5e94a4a2d6cde2a5",
+      "label": "品牌与批准信息以美国为主",
+      "review_id": "niaaa-alcohol-medication-interactions",
       "type": "study-limitation"
     },
     {
@@ -110208,6 +111324,12 @@
       "id": "study-limitation:624962667a41a20d",
       "label": "平均小效应不能保证某个人在某次运动后更专注，运动过强也可能暂时损害表现",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:625a2f69466a48b1",
+      "label": "药物与监测需训练和随访",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
       "type": "study-limitation"
     },
     {
@@ -110292,6 +111414,12 @@
       "id": "study-limitation:6b6ebf0452a5b8d7",
       "label": "不能外推到陈述性知识、复杂技能、临床人群、最少睡眠时长或通用学习协议",
       "review_id": "walker-2003-sleep-motor-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6e86735f20b4ec93",
+      "label": "现场照护不替代调度员指引",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
       "type": "study-limitation"
     },
     {
@@ -110475,6 +111603,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8153657fa51f1205",
+      "label": "主要供专业人员使用",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:819417237ed77447",
       "label": "检索结束早于Balban 2023论文，因此不是循环叹息的独立复制或专门汇总",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
@@ -110484,6 +111618,18 @@
       "id": "study-limitation:82b99383f57c3781",
       "label": "睡眠限制成分可能不适合驾驶/重型机械等高风险职业、易躁狂/轻躁狂者或控制不佳的癫痫患者",
       "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:83a2ce30824d7fe4",
+      "label": "2020 年且以美国系统为背景",
+      "review_id": "asam-2020-alcohol-withdrawal-management-guideline",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:83ac5f57a49340e0",
+      "label": "Skill 不能决定下一剂或停药",
+      "review_id": "niaaa-alcohol-medication-interactions",
       "type": "study-limitation"
     },
     {
@@ -110979,6 +112125,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:bd9cfbbedcab5297",
+      "label": "美国资源不适用于所有地区",
+      "review_id": "cdc-2026-alcohol-pregnancy",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:bef724f8acc89b65",
       "label": "参与者自选行为、无随机对照且接受完成研究报酬，日记本身可能改变行为",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -111021,6 +112173,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:c495e066d915104a",
+      "label": "风险依药物、时间、健康状况和其他物质而异",
+      "review_id": "niaaa-alcohol-medication-interactions",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:c4ca139ecb29cdc6",
       "label": "建议跨国家和行业，具体劳动法规、资源与申诉渠道需按当地情境确认",
       "review_id": "who-2022-mental-health-at-work-guideline",
@@ -111033,9 +112191,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:c9db2bcac38a3d6d",
+      "label": "美国急救号码需本地化",
+      "review_id": "niaaa-alcohol-overdose-danger-signs",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:cbd7482742eb0035",
       "label": "没有直接测量晨光单独效应、最低有效分钟数、隔窗光照或特定照度处方",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:cc0da4095f00be36",
+      "label": "不是个体减量、药物或戒断处方",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
       "type": "study-limitation"
     },
     {
@@ -111327,6 +112497,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:f4f44bd658737a36",
+      "label": "美国标准杯与服务路径不适用于所有地区",
+      "review_id": "niaaa-rethinking-drinking-cut-down-or-quit",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:f521c567f8492786",
       "label": "样本小且仅为健康成人",
       "review_id": "basso-2019-brief-daily-meditation",
@@ -111348,6 +112524,12 @@
       "id": "study-limitation:f6a492e0e59050c2",
       "label": "没有等长约 12 小时的纯清醒对照，不能把所有时间相关变化唯一归因于睡眠",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f6f23db20de5fde8",
+      "label": "不处理可能依赖者如何安全戒断",
+      "review_id": "cdc-2026-alcohol-pregnancy",
       "type": "study-limitation"
     },
     {
@@ -114173,20 +115355,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1773,
-    "action_playbook_nodes": 15,
-    "action_step_nodes": 45,
+    "academic_resource_nodes": 1778,
+    "action_playbook_nodes": 16,
+    "action_step_nodes": 48,
     "bilibili_nodes": 34,
-    "claim_nodes": 45,
+    "claim_nodes": 46,
     "course_lecture_nodes": 8,
-    "edges": 9825,
+    "edges": 9919,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 38,
-    "evidence_topic_nodes": 287,
-    "resource_nodes": 6057,
-    "study_card_nodes": 60,
-    "study_finding_nodes": 275,
-    "study_limitation_nodes": 345,
+    "evidence_relation_nodes": 42,
+    "evidence_topic_nodes": 307,
+    "resource_nodes": 6062,
+    "study_card_nodes": 65,
+    "study_finding_nodes": 295,
+    "study_limitation_nodes": 360,
     "top_topics": [
       {
         "count": 58,
@@ -114290,7 +115472,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 721,
+    "verified_academic_resource_nodes": 726,
     "youtube_nodes": 424
   }
 }

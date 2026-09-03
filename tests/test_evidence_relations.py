@@ -154,6 +154,20 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertIn("不得羞辱用户", by_id["niddk-2023-qualifies-single-cause-weight-narratives"]["boundary"])
         self.assertIn("不得给复配浓度换算", by_id["fda-2026-qualifies-niddk-prescription-glp1-options"]["boundary"])
 
+    def test_alcohol_relations_put_emergency_and_withdrawal_gates_before_self_help(self) -> None:
+        by_id = {item["relation_id"]: item for item in self.relations}
+        expected = {
+            "asam-2020-qualifies-niaaa-self-directed-alcohol-change",
+            "niaaa-overdose-qualifies-alcohol-self-help",
+            "niaaa-medication-interactions-qualifies-alcohol-self-help",
+            "cdc-2026-qualifies-alcohol-reduction-in-pregnancy",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("当天转医疗评估", by_id["asam-2020-qualifies-niaaa-self-directed-alcohol-change"]["boundary"])
+        self.assertIn("立即呼叫当地急救", by_id["niaaa-overdose-qualifies-alcohol-self-help"]["boundary"])
+        self.assertIn("抑制呼吸", by_id["niaaa-medication-interactions-qualifies-alcohol-self-help"]["rationale"])
+        self.assertIn("不能要求独自在家突然停酒", by_id["cdc-2026-qualifies-alcohol-reduction-in-pregnancy"]["boundary"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

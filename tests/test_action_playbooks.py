@@ -68,6 +68,11 @@ class ActionPlaybookTests(unittest.TestCase):
             "我白天一直忍着不吃，晚上回家就停不下来，吃到撑": "support-weight-and-appetite-without-restrictive-protocols",
             "我体重已经很低了，但还是害怕长胖，想继续减肥": "support-weight-and-appetite-without-restrictive-protocols",
             "我想用司美格鲁肽减肥，能不能自己买来打": "decide-whether-to-try-one-health-protocol",
+            "我想少喝酒，但不想完全戒": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+            "睡前喝酒才能睡，要不要改": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+            "我每天都喝很多，停一天就手抖出汗": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+            "喝酒后又吃了阿普唑仑，现在特别困": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+            "朋友酒后叫不醒，呼吸也不规则": "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -293,6 +298,44 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertEqual(
             QUERY.query_playbooks(self.playbooks, "最近体重突然一直涨，不知道为什么")[0]["playbook_id"],
             "support-weight-and-appetite-without-restrictive-protocols",
+        )
+
+    def test_alcohol_route_respects_user_goals_and_hard_safety_gates(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        alcohol = by_id["reduce-alcohol-use-with-withdrawal-and-overdose-safety"]
+        self.assertEqual(len(alcohol["actions"]), 3)
+        for phrase in (
+            "不想完全戒",
+            "不给统一“安全酒量”或减量表",
+            "不要独自在家突然停酒",
+            "酒精不作为助眠工具",
+            "立即呼叫当地急救",
+            "不用咖啡、冷水澡、走路或催吐",
+        ):
+            self.assertIn(phrase, alcohol["safe_summary"])
+        self.assertIn("侧卧", alcohol["actions"][0]["minimum_version"])
+        self.assertIn("可信任的人", alcohol["actions"][1]["minimum_version"])
+        self.assertEqual(
+            {link["review_id"] for link in alcohol["evidence_links"]},
+            {
+                "niaaa-rethinking-drinking-cut-down-or-quit",
+                "asam-2020-alcohol-withdrawal-management-guideline",
+                "niaaa-alcohol-overdose-danger-signs",
+                "niaaa-alcohol-medication-interactions",
+                "cdc-2026-alcohol-pregnancy",
+            },
+        )
+        self.assertEqual({link["claim_id"] for link in alcohol["claim_links"]}, {"batch02-claim-0046"})
+
+    def test_alcohol_routing_preserves_negation_and_unrelated_habits(self) -> None:
+        self.assertEqual(
+            QUERY.query_playbooks(self.playbooks, "我不喝酒，只是躺下睡不着")[0]["playbook_id"],
+            "support-trouble-falling-or-staying-asleep",
+        )
+        self.assertEqual(QUERY.query_playbooks(self.playbooks, "做菜放一点料酒怎么去腥"), [])
+        self.assertEqual(
+            QUERY.query_playbooks(self.playbooks, "我想养成下班后散步的习惯")[0]["playbook_id"],
+            "start-and-sustain-one-habit",
         )
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:

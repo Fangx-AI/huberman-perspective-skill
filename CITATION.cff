@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this health-guidance skill, cite the software and the underlying primary sources for substantive claims."
 title: "Huberman Health Guide"
-version: "0.21.0"
+version: "0.22.0"
 date-released: 2026-09-03
 type: software
 license: MIT
