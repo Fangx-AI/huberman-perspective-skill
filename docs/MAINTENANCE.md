@@ -4,7 +4,7 @@
 
 - Monthly: check official Episode additions, broken canonical links and Bilibili/YouTube mapping drift.
 - Quarterly: upgrade high-priority academic records, sample behavior tests and review medical safety language.
-- Before every tag: run release checks from a clean clone, inspect the manifest diff and repeat the copyright audit.
+- Before every tag: run release checks and `python scripts/evaluate_routing.py` from a clean clone, inspect the manifest diff and repeat the copyright audit.
 - Annually: reassess source terms, trademark wording, dependencies and the research cutoff date.
 
 ## Release gates
@@ -15,6 +15,7 @@
 4. Counts in README, manifest and evaluation summary agree.
 5. CI passes on Python 3.11 and the install smoke test succeeds.
 6. Changelog, version and citation metadata agree.
+7. Durable ordinary-language routing cases all reach the intended playbook or deliberately return no match.
 
 ## Roadmap
 

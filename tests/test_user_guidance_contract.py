@@ -23,6 +23,8 @@ class UserGuidanceContractTests(unittest.TestCase):
             "明确停止相关活动并尽快接受专业评估",
             "不要替用户决定下一剂该继续、暂停还是改变",
             "区分失败发生在忘记、没开始、中途被打断、动作太难",
+            "在用户回答前不要让他列出或整理全部问题",
+            "持续或原因不明的疲劳",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)

@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.17.1] - 2026-09-03
+
+### Fixed
+
+- Replaced incidental CJK n-gram dominance with decisive, maintained ordinary-language phrase matches and a minimum confidence threshold.
+- Corrected known first-use misroutes across sleep, stress, focus, learning, exercise recovery, food behavior and supplement questions.
+- Made weak generic requests return no match instead of loading an unrelated playbook, allowing one-question framework triage.
+- Tightened vague-request burden, dangerous-drowsiness escalation and persistent unexplained-fatigue handling after independent answer review.
+
+### Added
+
+- Added a durable 33-case Chinese user-language routing corpus, a standalone evaluator and CI/release gates.
+- Added an auditable baseline comparison (`v0.17.0`: 18/33; updated: 33/33 on the same regression corpus).
+- Added a seven-prompt independent black-box answer test scoring 95.7/100 with 7/7 passing routes, plus three targeted post-score regressions.
+
 ## [0.17.0] - 2026-09-03
 
 ### Changed

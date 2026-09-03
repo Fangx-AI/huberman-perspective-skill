@@ -19,7 +19,20 @@ LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
 # Natural-language phrases observed in user requests. Keep these separate from the
 # evidence catalog: they improve routing without changing any evidence claim.
 COMMON_ROUTING_ALIASES = {
-    "stabilize-sleep-wake-timing": ("越睡越晚", "早上起不来", "白天没精神", "睡不着", "作息越来越乱"),
+    "stabilize-sleep-wake-timing": (
+        "越睡越晚",
+        "早上起不来",
+        "白天没精神",
+        "睡不着",
+        "作息越来越乱",
+        "凌晨睡",
+        "中午才醒",
+        "睡了八小时还是很累",
+        "白天昏昏沉沉",
+        "轮班工作",
+        "白天睡不着",
+        "睡眠都碎",
+    ),
     "start-and-sustain-one-habit": (
         "健康建议执行不下去",
         "一个也坚持不住",
@@ -29,9 +42,57 @@ COMMON_ROUTING_ALIASES = {
         "是不是自律差",
         "我自律差",
         "又没坚持住",
+        "计划三天就放弃",
+        "每天读书的习惯",
+        "晨间习惯",
+        "习惯都失败",
     ),
-    "protect-one-focus-block": ("工作时被手机打断", "总被手机打断", "脑子转不动"),
+    "protect-one-focus-block": (
+        "工作时被手机打断",
+        "总被手机打断",
+        "脑子转不动",
+        "打开电脑就摸手机",
+        "进入不了工作状态",
+        "注意力很差",
+        "恢复专注",
+        "ADHD",
+    ),
+    "retain-what-you-learn": ("背了就忘", "学得牢", "看了很多课", "什么都记不住"),
+    "start-exercise-without-protocol-overload": (
+        "几年没运动",
+        "从什么开始运动",
+        "膝盖痛还能不能跑步",
+        "训练后总是很累",
+    ),
+    "improve-food-environment-first": (
+        "忍不住点外卖",
+        "焦虑就暴食",
+        "不想算卡路里",
+        "饮食先改",
+    ),
+    "manage-an-acute-stress-spike-without-overclaiming-breathwork": (
+        "压力大到无法工作",
+        "先让我缓下来",
+        "一紧张就喘不过气",
+        "一直焦虑",
+        "焦虑得无法工作",
+        "胸痛气短",
+        "呼吸法",
+    ),
+    "decide-whether-to-try-one-health-protocol": (
+        "鱼油",
+        "镁能改善",
+        "补剂",
+        "靠咖啡",
+        "吃药后头晕",
+        "自己减量",
+    ),
+    "decide-whether-a-red-light-device-is-worth-buying": ("红光面罩", "红光设备", "红光是不是智商税"),
+    "decide-whether-and-when-to-use-cold-exposure": ("冷水澡", "冰浴", "冷水浴"),
+    "decide-whether-sauna-or-heat-is-worth-using": ("桑拿房", "蒸桑拿", "桑拿值不值"),
 }
+
+MIN_LEXICAL_ROUTE_SCORE = 18
 
 
 def lexical_units(value: str) -> set[str]:
@@ -72,12 +133,16 @@ def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
         body_overlap = query_units & body_units
         score = sum(max(1, min(len(unit), 4) - 1) * 3 for unit in routing_overlap)
         score += sum(1 for unit in body_overlap - routing_overlap)
-        score += sum(
-            20
+        exact_aliases = [
+            alias.casefold()
             for alias in aliases
             if alias.casefold() in normalized or normalized in alias.casefold()
-        )
-        if score:
+        ]
+        if exact_aliases:
+            # A phrase maintained from real user language should beat incidental
+            # 2–4 character overlap in a long playbook body.
+            score += 1000 + max(len(alias) for alias in exact_aliases) * 10
+        if exact_aliases or score >= MIN_LEXICAL_ROUTE_SCORE:
             scored.append((score, playbook["playbook_id"], playbook))
     return [item[2] for item in sorted(scored, key=lambda item: (-item[0], item[1]))]
 

@@ -23,6 +23,7 @@ jobs:
       - run: python scripts/release_check.py
       - run: python scripts/release_readiness.py
       - run: python scripts/quality_check.py SKILL.md
+      - run: python scripts/evaluate_routing.py
       - run: python -m unittest discover -s tests -v
       - run: python -m compileall -q scripts tests
       - run: python scripts/install_skill.py --destination .tmp-install/huberman-perspective

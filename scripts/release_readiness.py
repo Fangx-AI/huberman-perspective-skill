@@ -38,8 +38,11 @@ REQUIRED_FILES = (
     "references/extraction-framework.md",
     "references/fidelity-scorecard.md",
     "references/evals/user-value-blackbox-2026-09-03.md",
+    "references/evals/routing-user-language-v1.jsonl",
+    "references/evals/routing-blackbox-2026-09-03.md",
     "references/huberman-operating-model.md",
     "scripts/research_checkpoint.py",
+    "scripts/evaluate_routing.py",
     "scripts/release_readiness.py",
 )
 
@@ -148,6 +151,7 @@ def check(root: Path = ROOT, require_origin: bool = False) -> tuple[list[str], l
     for command in (
         "python scripts/release_check.py",
         "python scripts/release_readiness.py",
+        "python scripts/evaluate_routing.py",
         "python -m unittest discover -s tests -v",
         "python scripts/install_skill.py",
     ):
