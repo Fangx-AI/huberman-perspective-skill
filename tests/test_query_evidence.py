@@ -213,6 +213,23 @@ class EvidenceQueryTests(unittest.TestCase):
             },
         )
 
+    def test_weight_query_surfaces_user_support_and_glp1_safety_evidence(self) -> None:
+        results = MODULE.query_cards(
+            self.cards,
+            "减肥 体重管理 暴食 GLP-1 司美格鲁肽",
+            limit=8,
+        )
+        ids = {item["review_id"] for item in results}
+        self.assertTrue(
+            {
+                "nice-2025-overweight-obesity-management-guideline",
+                "nice-2017-eating-disorders-recognition-treatment-guideline",
+                "niddk-prescription-weight-management-medications",
+                "fda-2026-unapproved-glp1-weight-loss-warning",
+            }
+            <= ids
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

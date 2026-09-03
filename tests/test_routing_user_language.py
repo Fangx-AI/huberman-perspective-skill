@@ -21,7 +21,7 @@ class UserLanguageRoutingTests(unittest.TestCase):
             if not item["passed"]
         ]
         self.assertEqual(failures, [])
-        self.assertEqual(report["total"], 66)
+        self.assertEqual(report["total"], 84)
 
     def test_unsupported_generic_request_fails_open_to_framework_help(self) -> None:
         report = MODULE.evaluate()
@@ -41,6 +41,17 @@ class UserLanguageRoutingTests(unittest.TestCase):
             "route-053": ("support-ongoing-stress-worry-and-work-overload", "专业"),
             "route-064": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "急救"),
             "route-065": ("manage-an-acute-stress-spike-without-overclaiming-breathwork", "危机"),
+            "route-072": ("support-weight-and-appetite-without-restrictive-protocols", "急救"),
+            "route-073": ("support-weight-and-appetite-without-restrictive-protocols", "进食障碍"),
+            "route-074": ("decide-whether-to-try-one-health-protocol", "医生/药师"),
+            "route-075": ("decide-whether-to-try-one-health-protocol", "医生/药师"),
+            "route-078": ("support-weight-and-appetite-without-restrictive-protocols", "进食障碍"),
+            "route-079": ("support-weight-and-appetite-without-restrictive-protocols", "进食障碍"),
+            "route-080": ("support-weight-and-appetite-without-restrictive-protocols", "医生"),
+            "route-081": ("support-weight-and-appetite-without-restrictive-protocols", "妊娠"),
+            "route-082": ("support-weight-and-appetite-without-restrictive-protocols", "儿童"),
+            "route-083": ("support-weight-and-appetite-without-restrictive-protocols", "肾病"),
+            "route-084": ("decide-whether-to-try-one-health-protocol", "受监管药房"),
         }
         report = MODULE.evaluate()
         cases = {item["case_id"]: item for item in report["results"]}

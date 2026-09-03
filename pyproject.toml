@@ -1,6 +1,6 @@
 [project]
 name = "huberman-perspective-skill"
-version = "0.20.0"
+version = "0.21.0"
 description = "Chinese health-guidance Skill that turns Huberman Lab frameworks and independent evidence into practical lifestyle actions"
 requires-python = ">=3.11"
 dependencies = [

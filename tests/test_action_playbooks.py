@@ -64,6 +64,10 @@ class ActionPlaybookTests(unittest.TestCase):
             "我每天都焦虑，脑子一直想最坏的事": "support-ongoing-stress-worry-and-work-overload",
             "我总是反复想一件事停不下来": "support-ongoing-stress-worry-and-work-overload",
             "我被工作耗空了，是不是职业倦怠": "support-ongoing-stress-worry-and-work-overload",
+            "我想减肥，但晚上总忍不住吃零食": "support-weight-and-appetite-without-restrictive-protocols",
+            "我白天一直忍着不吃，晚上回家就停不下来，吃到撑": "support-weight-and-appetite-without-restrictive-protocols",
+            "我体重已经很低了，但还是害怕长胖，想继续减肥": "support-weight-and-appetite-without-restrictive-protocols",
+            "我想用司美格鲁肽减肥，能不能自己买来打": "decide-whether-to-try-one-health-protocol",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -111,7 +115,25 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertIn("不能证明疾病疗效或长期安全", decision["safe_summary"])
         self.assertEqual(
             {link["review_id"] for link in decision["evidence_links"]},
-            {"volkow-2015-caffeine-pet", "hazlett-2021-gratitude-rct", "jazayeri-2008-epa-fluoxetine-mdd"},
+            {
+                "volkow-2015-caffeine-pet",
+                "hazlett-2021-gratitude-rct",
+                "jazayeri-2008-epa-fluoxetine-mdd",
+                "niddk-prescription-weight-management-medications",
+                "fda-2026-unapproved-glp1-weight-loss-warning",
+            },
+        )
+        glp1_refs = {
+            ref
+            for action in decision["actions"]
+            for ref in action["evidence_refs"]
+        }
+        self.assertTrue(
+            {
+                "niddk-prescription-weight-management-medications",
+                "fda-2026-unapproved-glp1-weight-loss-warning",
+            }
+            <= glp1_refs
         )
         self.assertTrue(all("剂量" not in action["action"] for action in decision["actions"]))
         skill = (ROOT / "SKILL.md").read_text(encoding="utf-8")
@@ -242,6 +264,35 @@ class ActionPlaybookTests(unittest.TestCase):
         self.assertEqual(
             QUERY.query_playbooks(self.playbooks, "我想养成下班后散步的习惯，但回家就没动力")[0]["playbook_id"],
             "start-and-sustain-one-habit",
+        )
+
+    def test_weight_route_starts_with_safety_and_one_non_stigmatising_context(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        weight = by_id["support-weight-and-appetite-without-restrictive-protocols"]
+        self.assertEqual(len(weight["actions"]), 3)
+        for phrase in ("不把体重当品格", "快速/原因不明", "失控和补偿行为", "GLP-1", "不进入后续减重实验"):
+            self.assertIn(phrase, weight["safe_summary"])
+        self.assertIn("不跳餐、不空腹硬练", weight["actions"][1]["minimum_version"])
+        self.assertIn("变化时间线—伴随症状—已尝试与影响", weight["actions"][2]["adaptation"])
+        self.assertEqual(
+            {link["review_id"] for link in weight["evidence_links"]},
+            {
+                "nice-2025-overweight-obesity-management-guideline",
+                "nice-2017-eating-disorders-recognition-treatment-guideline",
+                "niddk-2023-factors-affecting-weight-health",
+                "hall-2019-ultra-processed-diet-rct",
+            },
+        )
+        self.assertEqual({link["claim_id"] for link in weight["claim_links"]}, {"batch02-claim-0045"})
+        medication = QUERY.query_playbooks(self.playbooks, "我打胰岛素，想直接断食减肥")
+        self.assertEqual(medication[0]["playbook_id"], "decide-whether-to-try-one-health-protocol")
+        self.assertEqual(
+            QUERY.query_playbooks(self.playbooks, "我吃东西时完全停不下来，之后会催吐")[0]["playbook_id"],
+            "support-weight-and-appetite-without-restrictive-protocols",
+        )
+        self.assertEqual(
+            QUERY.query_playbooks(self.playbooks, "最近体重突然一直涨，不知道为什么")[0]["playbook_id"],
+            "support-weight-and-appetite-without-restrictive-protocols",
         )
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:

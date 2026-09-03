@@ -11,6 +11,7 @@ from pathlib import Path
 
 YOUTUBE_ID_RE = re.compile(r"(?<![A-Za-z0-9_-])([A-Za-z0-9_-]{11})(?![A-Za-z0-9_-])")
 YOUTUBE_URL_RE = re.compile(r"https?://(?:www\.)?youtube\.com/watch\?v=([A-Za-z0-9_-]{11})")
+SOURCE_URL_RE = re.compile(r"https?://(?:www\.)?(?:youtube\.com|hubermanlab\.com)/[^\s)]+")
 TIMESTAMP_RE = re.compile(r"(?<![\w])\d{1,2}:\d{2}(?::\d{2})?(?![\w])")
 SECTION_RE = re.compile(r"^##\s+(?:(\d+)\.\s*)?(.*)$")
 
@@ -115,6 +116,10 @@ def main() -> int:
         for timestamp in TIMESTAMP_RE.findall(claim_text):
             if timestamp not in timestamps:
                 timestamps.append(timestamp)
+        source_urls = []
+        for source_url in SOURCE_URL_RE.findall(claim_text):
+            if source_url not in source_urls:
+                source_urls.append(source_url)
         if "不可访问视频处理" in claim_text:
             kind = "provenance-note"
         elif claim_text.startswith("视频："):
@@ -131,7 +136,7 @@ def main() -> int:
                 "claim_text": claim_text,
                 "youtube_ids": ids,
                 "youtube_statuses": {video_id: statuses.get(video_id, "unknown") for video_id in ids},
-                "source_urls": [f"https://www.youtube.com/watch?v={video_id}" for video_id in ids],
+                "source_urls": source_urls or [f"https://www.youtube.com/watch?v={video_id}" for video_id in ids],
                 "timestamps": timestamps,
                 "evidence_layer": evidence_layer(claim_text),
                 "speaker_scope": speaker_scope(claim_text),

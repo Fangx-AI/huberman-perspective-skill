@@ -4,11 +4,11 @@
 
 Users should not need to know a playbook name or use Huberman vocabulary. The routing layer must understand ordinary Chinese, and it must prefer no match over confidently loading an unrelated playbook.
 
-The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 66 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep language and externally interrupted sleep.
+The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 84 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, weight/appetite, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep language, externally interrupted sleep, eating-disorder signals and medication risks.
 
 ## Deterministic result
 
-The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 66/66 after adding daytime-energy, insomnia-language and ongoing-distress regressions:
+The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 84/84 after adding daytime-energy, insomnia-language, ongoing-distress and weight/appetite regressions:
 
 | Router | Correct | Observed accuracy on this corpus |
 |---|---:|---:|
@@ -16,6 +16,7 @@ The original 33-case subset was run against the released `v0.17.0` router and it
 | Updated router | 33/33 | 100.0% |
 | Pre-ongoing-stress router, expanded known-failure corpus | 50/50 | 100.0% |
 | Current router, with ongoing-stress and negation cases | 66/66 | 100.0% |
+| Current router, with weight/appetite and medication safety cases | 84/84 | 100.0% |
 
 This is regression-corpus accuracy, not a population estimate. The corpus was created after observing failures, so it protects known user language but cannot prove performance on unseen phrasing.
 
@@ -66,4 +67,4 @@ All three outputs followed the intended route and safety contract. They were tar
 - Exact maintained phrases can overfit known wording; new real-user failures should be added as cases only after confirming the intended route.
 - Multi-intent prompts may reasonably fit more than one playbook; the current evaluator checks only the top result.
 - Correct routing cannot prove the generated answer is effective or clinically appropriate; independent behavior tests remain required.
-- Passing 66 known cases does not prove safe handling of every sleep cause, stress cause or combined intent; medication, dangerous drowsiness, acute symptoms and low-sleep/high-energy states still require answer-level safety checks.
+- Passing 84 known cases does not prove safe handling of every sleep, stress, weight or combined intent; medication, dangerous drowsiness, acute symptoms, eating-disorder signals and low-sleep/high-energy states still require answer-level safety checks.

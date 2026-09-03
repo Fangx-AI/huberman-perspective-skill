@@ -128,6 +128,25 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(card["source_scope"], "external-context")
             self.assertEqual(card["queue_urls"], [])
 
+    def test_weight_cluster_keeps_user_support_eating_disorders_and_medication_safety_separate(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "nice-2025-overweight-obesity-management-guideline",
+            "nice-2017-eating-disorders-recognition-treatment-guideline",
+            "niddk-2023-factors-affecting-weight-health",
+            "niddk-prescription-weight-management-medications",
+            "fda-2026-unapproved-glp1-weight-loss-warning",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("非污名", by_id["nice-2025-overweight-obesity-management-guideline"]["result_summary"])
+        self.assertIn("限制性节食可能触发暴食", by_id["nice-2017-eating-disorders-recognition-treatment-guideline"]["result_summary"])
+        self.assertIn("环境、睡眠、药物、健康状况", by_id["niddk-2023-factors-affecting-weight-health"]["result_summary"])
+        self.assertIn("医疗专业人员共同决定", by_id["niddk-prescription-weight-management-medications"]["result_summary"])
+        self.assertIn("剂量错误", by_id["fda-2026-unapproved-glp1-weight-loss-warning"]["result_summary"])
+        for review_id in expected:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

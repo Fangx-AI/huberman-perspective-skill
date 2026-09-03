@@ -20,7 +20,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 
 两种入口应得到相同的用户优先行为。
 
-## 十四个结果优先场景
+## 十五个结果优先场景
 
 | 用户原话 | 后台匹配剧本 | 回答必须保留的边界 |
 |---|---|---|
@@ -32,6 +32,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 | `我工作时总被手机和网页打断。` | `protect-one-focus-block` | 不强制 45/5 计时器、双耳节拍，也不把它写成 ADHD 治疗 |
 | `我久坐很久，运动协议太多，不知道怎么开始。` | `start-exercise-without-protocol-overload` | 从症状和能力允许范围以下开始；不保证 hippocampal growth 或预防痴呆 |
 | `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | 不要求 skip meals，不把所有加工食品道德化，不替代临床营养照护 |
+| `我白天一直忍着不吃，晚上回家就停不下来，吃到撑。` | `support-weight-and-appetite-without-restrictive-protocols` | 先分普通追加进食、失控进食、快速/原因不明变化和药物/疾病风险；不加码节食，不羞辱用户 |
 | `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | 代理指标不等于个人疗效；药物、激素、肽类和相互作用交给医生或药师 |
 | `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | 区分感受、急性恢复和长期适应；不发明剂量，不做开放水域或屏息实验 |
 | `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | 泛健康目标默认可以不买；先匹配适应证和设备，不直照眼睛或编造剂量 |
@@ -69,6 +70,14 @@ python scripts/query_action_playbooks.py "我久坐很久，运动协议太多�
 
 好的回答不会再塞一个更复杂的呼吸或“降皮质醇”协议。它先确认当前安全和基本照顾，再只选一个受损功能；若压力主要来自过量工作、低控制、霸凌或角色冲突，先帮助用户安全地减少、延期、移交一个需求，或找到职业健康、员工支持、可信任管理者等入口。持续、每天发生或影响功能时，用“症状—持续—功能”三句话帮助用户今天发出预约，不要求先忍固定天数。用户说“不想醒来”或“想消失”时，即使否认计划，也要继续做安全确认。
 
+## 体重与食欲：先服务人，不先发协议
+
+```text
+我想减脂，但白天忍着不吃，晚上就停不下来；是不是我自制力太差？
+```
+
+好的回答不会把体重当品格，也不会先给热量、断食、空腹训练、冷水或补剂。它最多问一个会改变路径的问题：是否反复明显失控、是否有催吐/泻药/禁食/补偿运动，或体重是否快速、原因不明并伴随症状或用药变化。有风险时停止减重实验并帮助用户今天联系相应专业人员；一般低风险成人才只改变一个重复的饮食或久坐环境。夜班不套“晚上八点后不能吃”，GLP-1 不提供购买、换算、滴定或下一针决定。
+
 ## 证据模式是第二层
 
 ```text
@@ -90,6 +99,7 @@ python scripts/query_evidence.py "循环叹息 急性焦虑 压力 呼吸"
 python scripts/query_evidence.py "下午 疲劳 久坐 咖啡因 睡眠"
 python scripts/query_evidence.py "失眠 CBT-I 刺激控制 睡眠卫生"
 python scripts/query_evidence.py "长期压力 工作负荷 反复担忧 功能受损"
+python scripts/query_evidence.py "减肥 体重管理 暴食 GLP-1 司美格鲁肽"
 ```
 
 ## 医疗边界

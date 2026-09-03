@@ -140,6 +140,20 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertIn("固定天数", care["boundary"])
         self.assertIn("功能", care["rationale"])
 
+    def test_weight_relations_block_shame_restrictive_dieting_and_unapproved_glp1(self) -> None:
+        by_id = {item["relation_id"]: item for item in self.relations}
+        expected = {
+            "nice-2025-qualifies-hall-2019-food-environment-for-weight-management",
+            "nice-2017-eating-disorders-qualifies-weight-loss-self-help",
+            "niddk-2023-qualifies-single-cause-weight-narratives",
+            "fda-2026-qualifies-niddk-prescription-glp1-options",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("不是完整治疗", by_id["nice-2025-qualifies-hall-2019-food-environment-for-weight-management"]["rationale"])
+        self.assertIn("不给减脂、断食", by_id["nice-2017-eating-disorders-qualifies-weight-loss-self-help"]["boundary"])
+        self.assertIn("不得羞辱用户", by_id["niddk-2023-qualifies-single-cause-weight-narratives"]["boundary"])
+        self.assertIn("不得给复配浓度换算", by_id["fda-2026-qualifies-niddk-prescription-glp1-options"]["boundary"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

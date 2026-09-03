@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.21.0] - 2026-09-03
+
+### Added
+
+- Added a user-first weight and appetite path for ordinary requests about fat loss, evening overeating, shift-work hunger and unexplained weight change. It starts with one safety/context question and gives only one observable environment change when a lifestyle experiment is appropriate.
+- Added NICE weight-management and eating-disorder guidelines, NIDDK weight-factor and prescription-medication guidance, and the FDA unapproved GLP-1 warning as five bounded evidence cards with four relations.
+- Added 18 routing regressions for weight/appetite language, eating-disorder signals, rapid change, pregnancy, children, complex disease, insulin and unapproved GLP-1 products, bringing the maintained corpus to 84 cases.
+
+### Changed
+
+- Weight guidance no longer starts with calories, fasting, fasted training, cold exposure, caffeine or supplements, and never treats body weight as character or willpower.
+- Repeated loss-of-control eating, purging, low-weight fear, rapid or unexplained change, special populations, complex disease and medication use now act as hard gates before any weight-loss experiment.
+- GLP-1 questions now use medication-specific official safety evidence and never provide sourcing, compounded-product conversion, titration, next-dose or stop/start decisions.
+- Updated the public snapshot to 60 evidence cards, 38 relations, 15 playbooks, 45 actions and 45 public claim locators.
+
 ## [0.20.0] - 2026-09-03
 
 ### Added

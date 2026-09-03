@@ -228,12 +228,22 @@
     {
       "relation": "uses_study_evidence",
       "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "study-card:fda-2026-unapproved-glp1-weight-loss-warning"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
       "target": "study-card:hazlett-2021-gratitude-rct"
     },
     {
       "relation": "uses_study_evidence",
       "source": "action-playbook:decide-whether-to-try-one-health-protocol",
       "target": "study-card:jazayeri-2008-epa-fluoxetine-mdd"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:decide-whether-to-try-one-health-protocol",
+      "target": "study-card:niddk-prescription-weight-management-medications"
     },
     {
       "relation": "uses_study_evidence",
@@ -606,6 +616,46 @@
       "target": "study-card:va-dod-2025-insomnia-osa-guideline"
     },
     {
+      "relation": "has_action",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "action-step:support-weight-and-appetite-without-restrictive-protocols:change-one-repeatable-weight-related-context"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "action-step:support-weight-and-appetite-without-restrictive-protocols:review-weight-support-without-escalating-restriction"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "claim:batch02-claim-0045"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "study-card:nice-2025-overweight-obesity-management-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "target": "study-card:niddk-2023-factors-affecting-weight-health"
+    },
+    {
       "relation": "grounded_in",
       "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
       "target": "claim:batch02-claim-0034"
@@ -863,12 +913,22 @@
     {
       "relation": "grounded_in",
       "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "study-card:fda-2026-unapproved-glp1-weight-loss-warning"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
       "target": "study-card:hazlett-2021-gratitude-rct"
     },
     {
       "relation": "grounded_in",
       "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
       "target": "study-card:jazayeri-2008-epa-fluoxetine-mdd"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:decide-whether-to-try-one-health-protocol:separate-evidence-strength-from-risk",
+      "target": "study-card:niddk-prescription-weight-management-medications"
     },
     {
       "relation": "grounded_in",
@@ -1319,6 +1379,56 @@
       "relation": "grounded_in",
       "source": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction",
       "target": "study-card:va-dod-2025-insomnia-osa-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:change-one-repeatable-weight-related-context",
+      "target": "claim:batch02-claim-0045"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:change-one-repeatable-weight-related-context",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:change-one-repeatable-weight-related-context",
+      "target": "study-card:nice-2025-overweight-obesity-management-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:review-weight-support-without-escalating-restriction",
+      "target": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:review-weight-support-without-escalating-restriction",
+      "target": "study-card:nice-2025-overweight-obesity-management-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:review-weight-support-without-escalating-restriction",
+      "target": "study-card:niddk-2023-factors-affecting-weight-health"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome",
+      "target": "claim:batch02-claim-0045"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome",
+      "target": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome",
+      "target": "study-card:nice-2025-overweight-obesity-management-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome",
+      "target": "study-card:niddk-2023-factors-affecting-weight-health"
     },
     {
       "relation": "maps_to_episode",
@@ -1834,6 +1944,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0044",
       "target": "youtube:https://www.youtube.com/watch?v=Ibj1k3IZTNU"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0045",
+      "target": "youtube:https://www.youtube.com/watch?v=GqPGXG5TlZw"
     },
     {
       "relation": "cites_resource",
@@ -43171,6 +43286,11 @@
       "target": "study-card:roediger-karpicke-2006-test-enhanced-learning"
     },
     {
+      "relation": "qualifies",
+      "source": "evidence-relation:fda-2026-qualifies-niddk-prescription-glp1-options",
+      "target": "study-card:niddk-prescription-weight-management-medications"
+    },
+    {
       "relation": "supports",
       "source": "evidence-relation:fincham-2023-supports-balban-2023-broad-breathwork-context",
       "target": "study-card:balban-2023-structured-respiration-rct"
@@ -43237,8 +43357,23 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:nice-2017-eating-disorders-qualifies-weight-loss-self-help",
+      "target": "study-card:nice-2025-overweight-obesity-management-guideline"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety",
       "target": "study-card:who-2020-doing-what-matters-stress-guide"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:nice-2025-qualifies-hall-2019-food-environment-for-weight-management",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:niddk-2023-qualifies-single-cause-weight-narratives",
+      "target": "study-card:hall-2019-ultra-processed-diet-rct"
     },
     {
       "relation": "qualifies",
@@ -44749,6 +44884,96 @@
       "relation": "reviews_resource",
       "source": "study-card:erickson-2011-aerobic-exercise-hippocampus",
       "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC3041121/pdf/pnas.201015950.pdf"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-relation:fda-2026-qualifies-niddk-prescription-glp1-options"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:compounded-drugs"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:counterfeit-drugs"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:dosing-errors"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:glp-1"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:online-sales"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:regulatory-safety"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:semaglutide"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "evidence-topic:tirzepatide"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-limitation:221cc439275537ce"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-limitation:69ef637b1ca46dc8"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-limitation:960588b44051e682"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-limitation:f947ca32235925e0"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-finding:6336fab2582466f9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-finding:805d638fde86d482"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-finding:d8d2d7d4a4f144b1"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "study-finding:c1148a97f9769069"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "target": "resource:https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
     },
     {
       "relation": "has_evidence_relation",
@@ -46577,6 +46802,96 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-relation:nice-2017-eating-disorders-qualifies-weight-loss-self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:binge-eating"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:bulimia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:cbt-ed"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:compensatory-behaviour"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:eating-disorder-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:guided-self-help"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "evidence-topic:loss-of-control-eating"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-limitation:1f392f5c0b96d967"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-limitation:4b5b9144752586a1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-limitation:4f97e8f24f951412"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-limitation:dbb9959594019770"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-finding:ab8eb22bb688e073"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-finding:c235a175b4f26faf"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-finding:ec2a05de90a8bfb4"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "study-finding:2d61eeabbd8ac710"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/ng69/chapter/Recommendations"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/ng69/ifp/chapter/Binge-eating-disorder"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:nice-2024-gad-panic-guideline",
       "target": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety"
     },
@@ -46659,6 +46974,281 @@
       "relation": "reviews_resource",
       "source": "study-card:nice-2024-gad-panic-guideline",
       "target": "resource:https://www.nice.org.uk/guidance/cg113/chapter/Recommendations"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-relation:nice-2025-qualifies-hall-2019-food-environment-for-weight-management"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:behaviour-change"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:diet"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:multicomponent-support"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:non-stigmatising-language"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:obesity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:person-centred-care"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:physical-activity"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "evidence-topic:weight-management"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-limitation:28692602309fa5b3"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-limitation:511a6b48d1977efb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-limitation:5bd2d02c6c0200fa"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-limitation:bc1dfdfa3d5ed09b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-finding:12b2a41325c63677"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-finding:526f3b6a46df6c77"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-finding:70663377a1718d86"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "study-finding:cb68e16dd48b93e7"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/ng246/chapter/Behavioural-overweight-and-obesity-management-interventions"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "target": "resource:https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-relation:niddk-2023-qualifies-single-cause-weight-narratives"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:binge-eating"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:environment"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:genetics"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:health-conditions"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:medications"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "evidence-topic:weight-change"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-limitation:2de82379dc380a86"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-limitation:7cd44ead9728167d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-limitation:a7edad33c7d9ec5a"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-limitation:e3af3c2ff536216d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-finding:3159a8f1d7740aa3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-finding:4fafc9c9eeb3137d"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-finding:9bfcaeceae109cae"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "study-finding:be0086fd1268a4a6"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:niddk-2023-factors-affecting-weight-health",
+      "target": "resource:https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:children"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:clinical-decision"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:drug-interactions"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:glp-1"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:pregnancy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:semaglutide"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:tirzepatide"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "evidence-topic:weight-management-medications"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-limitation:28f6863774010187"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-limitation:3296bf3311a8611b"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-limitation:58568fc301db5869"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-limitation:9b282f5ba6a07b71"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-finding:098bc7899f884f88"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-finding:dee1695eb564fc62"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-finding:edcb2b105aee4bfe"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "study-finding:7bf2482e69a92ce3"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:niddk-prescription-weight-management-medications",
+      "target": "resource:https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"
     },
     {
       "relation": "has_evidence_topic",
@@ -48536,7 +49126,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-09-03T08:43:41.684416+00:00",
+  "generated_at": "2026-09-03T13:48:46.214117+00:00",
   "nodes": [
     {
       "aliases": [
@@ -48672,7 +49262,13 @@
         "想试Huberman协议",
         "评估一个健康协议",
         "health protocol decision",
-        "should I try a supplement"
+        "should I try a supplement",
+        "GLP-1",
+        "司美格鲁肽",
+        "替尔泊肽",
+        "Ozempic",
+        "Wegovy",
+        "复配减肥针"
       ],
       "baseline_checks": [
         "把节目主张、嘉宾观点、广告、研究结论和自己的推断分开记录",
@@ -48680,6 +49276,7 @@
         "检查协议是否要求购买、固定剂量、停药、极端暴露或延迟就医"
       ],
       "escalation": [
+        "GLP-1、司美格鲁肽、替尔泊肽或其他减重药只通过合格医生与受监管药房处理；不购买网售、研究用或来源不明复配产品，不自行换算剂量、加快滴定或决定下一针",
         "处方药、停药、精神科治疗、激素、肽类、注射、孕哺期、儿童或复杂慢病决策交给合格医生/药师",
         "不明成分、污染风险、禁药或声称替代正规治疗的产品不进入个人试验",
         "胸痛、晕厥、呼吸困难、严重过敏、自伤念头、躁狂或快速恶化立即寻求急救/紧急专业帮助"
@@ -48696,9 +49293,10 @@
         "推荐购买补剂、提供个体剂量或把补剂放入个人试验",
         "自行开始、停止、替换或调整处方药、精神科治疗、激素、肽类或注射",
         "把低风险个人实验当作疾病诊断、治疗证据或长期安全证明",
-        "有急症信号、严重精神症状、不明成分产品或需要延误正规照护的情况"
+        "有急症信号、严重精神症状、不明成分产品或需要延误正规照护的情况",
+        "推荐、购买、换算、滴定或管理 GLP-1 与其他处方减重药，尤其是网售、研究用或来源不明复配产品"
       ],
-      "safe_summary": "先定义一个现实结果，再把证据强度和干预风险分开。必须主动报告主要阴性结果；代理指标、机制相关性或一项小研究不能授权个人处方。本剧本不推荐购买或给补剂剂量，只有低风险、可逆且不延误照护的行为才进入单变量试验；药物、精神科治疗、激素、肽类、注射和补剂决策转给医生或药师。个人试验只能决定是否保留该行为，不能证明疾病疗效或长期安全。",
+      "safe_summary": "先定义一个现实结果，再把证据强度和干预风险分开。必须主动报告主要阴性结果；代理指标、机制相关性或一项小研究不能授权个人处方。本剧本不推荐购买或给补剂剂量，只有低风险、可逆且不延误照护的行为才进入单变量试验；药物、精神科治疗、激素、肽类、注射和补剂决策转给医生或药师。个人试验只能决定是否保留该行为，不能证明疾病疗效或长期安全。 GLP-1、司美格鲁肽和替尔泊肽只进入正规临床共同决策：不从网售、研究用或来源不明复配渠道购买，不自行换算剂量、加快滴定或决定下一针。",
       "scope": "适用于一般成人评估一个公开健康建议、低风险行为或准备向专业人员提出更好问题；不是补剂、药物、激素、肽类或疾病治疗的个体化许可",
       "type": "action-playbook",
       "user_goal": "不被机制、名人权威或协议清单带着走，安全判断一个健康建议是否值得采取下一步"
@@ -49146,6 +49744,51 @@
       "scope": "适用于一般成人在已有睡眠机会时出现想睡却睡不着、夜醒后难再睡、过早醒来或睡眠努力焦虑；不等同于整套作息后移，也不是失眠诊断或治疗处方",
       "type": "action-playbook",
       "user_goal": "今晚先减少‘越想睡越清醒’的循环，并在反复发生时走向真正有效的失眠帮助，而不是继续堆光照、补剂和睡眠技巧"
+    },
+    {
+      "aliases": [
+        "想减肥",
+        "想减脂",
+        "减重从哪开始",
+        "控制食欲",
+        "晚上忍不住吃",
+        "一到晚上就吃很多",
+        "最近体重一直涨",
+        "瘦不下来",
+        "代谢坏了",
+        "暴食",
+        "weight loss",
+        "appetite control"
+      ],
+      "baseline_checks": [
+        "先确认用户是否愿意讨论体重，并使用其偏好的、不污名化的词；可把目标放在精力、活动能力、睡眠、血压/血糖或生活参与，而不是只盯体重",
+        "区分缓慢趋势、短期波动和快速/原因不明变化；记录近期药物、妊娠可能、月经、睡眠、压力、饮食与活动变化，但不自行诊断",
+        "用户说“暴食”时，只问一个会改变路径的问题：是否反复出现明显失控的大量进食，或伴催吐、泻药、禁食、补偿运动和明显痛苦"
+      ],
+      "escalation": [
+        "严重或新发气促、胸痛、晕厥、意识异常、严重脱水/虚弱、无法保证安全或其他急症信号应立即联系当地急救",
+        "快速或原因不明的体重变化、明显水肿、极度口渴多尿、近期药物变化或其他身体症状应尽快由医生评估；不要自行停药或验激素后自疗",
+        "反复失控大量进食、催吐、泻药、禁食、补偿运动、明显体重/身体形象痛苦或营养不足，应联系进食障碍知情的医疗、心理或注册营养专业人员",
+        "儿童、妊娠/哺乳期、糖尿病、肾病、胃肠疾病、严重精神健康问题或正在使用减重药物者需要个体化专业支持"
+      ],
+      "first_questions": [
+        "你更想改善的是一个健康/生活结果，还是某个具体的失控进食场景？",
+        "变化是缓慢趋势还是近期快速、原因不明；是否伴水肿、气促、明显多饮多尿、月经或药物变化？",
+        "你说的“暴食”是普通吃多，还是反复出现明显失控的大量进食，或伴催吐、泻药、禁食、补偿运动？"
+      ],
+      "id": "action-playbook:support-weight-and-appetite-without-restrictive-protocols",
+      "label": "不靠极端协议开始管理体重和食欲",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "进食障碍、明显低体重、营养不良、自伤风险或快速恶化的自行减重",
+        "儿童、妊娠/哺乳期、糖尿病、肾病、复杂胃肠/内分泌疾病或药物相关体重变化的通用处方",
+        "自行使用或调整 GLP-1、二甲双胍、甲状腺激素、兴奋剂、利尿剂、泻药、咖啡因、冷暴露或补剂来减重",
+        "从体重或食欲症状诊断甲状腺、PCOS、Cushing、抑郁、暴食障碍或所谓“代谢损伤”"
+      ],
+      "safe_summary": "想减脂或控制食欲时，先别用更狠的节食、断食、冷水、咖啡因或补剂。先确认体重变化是否快速/原因不明、是否与药物或身体症状同步，以及“暴食”是否包含反复失控和补偿行为；这些情况优先专业评估。一般成人没有上述风险时，只改一个重复的饮食或久坐环境，同时看饱腹、精力、活动能力、成本和可持续性，不把体重当品格。GLP-1 等减重药物只与合格临床人员讨论，不自行开始、停用或调量。 未成年人、妊娠/备孕/哺乳期、糖尿病用药、肾病、复杂胃肠/内分泌疾病、进食障碍史或正在使用减重药物时，不进入后续减重实验，只做专业支持准备。",
+      "scope": "适用于一般成人想从低风险、非污名和可持续的第一步改善体重相关健康、食欲或一个重复进食/久坐场景；不是进食障碍治疗、快速减重协议、疾病诊断、热量/宏量营养素处方或减重药物管理",
+      "type": "action-playbook",
+      "user_goal": "把“想瘦却不知道从哪开始”或“食欲总失控”转成今天能做的一个安全改变，同时及时识别不该继续自行减重的情况"
     },
     {
       "adaptation": "专业意见或设备匹配不足时不购买；即使购买，也只按获确认的具体方案复诊，不用主观发热或刺痛判断有效",
@@ -49902,6 +50545,60 @@
       "trigger": "已经有合适睡眠机会，但在床上保持清醒并越来越挫败、用力放松或反复看钟时",
       "type": "action-step",
       "why": "AASM对刺激控制给出条件性支持，目标是减少床与清醒/挫败的联结；但完整治疗通常需要个体化，研究和指南不支持由Skill给所有人固定二十分钟、离床次数或保证当晚入睡"
+    },
+    {
+      "adaptation": "替换让你更饿、更焦虑、更贵或更难维持，就撤销并换同等便利的版本；若主要问题不是进食而是久坐，可改为当前能力允许的轻松活动起点，不同时改饮食和运动",
+      "classification": "bounded-experiment",
+      "id": "action-step:support-weight-and-appetite-without-restrictive-protocols:change-one-repeatable-weight-related-context",
+      "label": "若没有上述风险，只在最常重复的一顿、零食、外卖或久坐场景改变一个容易执行的环境默认项",
+      "metric": "目标场景一周出现次数、无计划追加或久坐中断是否改变，以及饱腹、精力、活动能力、成本和压力",
+      "minimum_version": "只改一个默认项：例如把一个高频零食/外卖换成仍方便、可负担且能吃够的选择，或在一个固定久坐节点做舒适可停止的轻松活动；不跳餐、不空腹硬练、不一次清空所有喜欢的食物",
+      "playbook_id": "support-weight-and-appetite-without-restrictive-protocols",
+      "priority": 2,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "改变触发越来越严格的食物规则、强迫称重、明显饥饿、暴食、补偿、头晕、月经变化或功能下降",
+        "活动引起胸痛、晕厥、异常气促、进行性疼痛或其他需要医疗评估的症状"
+      ],
+      "trigger": "已经排除急症、明显医学变化和进食障碍风险，并确认一个重复场景后",
+      "type": "action-step",
+      "why": "短期住院随机试验支持食物环境会影响平均自由摄入，但不能给个人长期减重保证；NICE 强调按个人条件选择可持续、可复盘的行为，而不是单一极端协议"
+    },
+    {
+      "adaptation": "执行困难时先解决预算、时间、家庭、轮班、压力或可获得性；持续困扰、共病或需要治疗时，准备“变化时间线—伴随症状—已尝试与影响”三句话联系医生或注册营养/体重管理专业人员",
+      "classification": "evidence-supported",
+      "id": "action-step:support-weight-and-appetite-without-restrictive-protocols:review-weight-support-without-escalating-restriction",
+      "label": "复盘一个行为结果和一个真实生活结果；无帮助时调整环境或寻求合适支持，不升级为更狠的协议",
+      "metric": "目标行为是否更容易、健康/功能目标是否改善、是否出现食物焦虑或补偿，以及是否获得所需专业支持",
+      "minimum_version": "只比较“目标场景有没有变”和“精力/活动/饱腹等一个结果有没有变”。没有帮助就撤销或换一个环境点；不要因此叠加断食、冷暴露、咖啡因、泻药、补剂或自行购买/调整减重药",
+      "playbook_id": "support-weight-and-appetite-without-restrictive-protocols",
+      "priority": 3,
+      "review_after_days": 14,
+      "stop_conditions": [
+        "为了追求更快体重变化而自行使用或调整 GLP-1、二甲双胍、甲状腺激素、兴奋剂、泻药、利尿剂或补剂",
+        "体重或进食困扰持续加重，明显影响情绪、社交、工作、睡眠或身体功能"
+      ],
+      "trigger": "同一最小改变已经发生若干次，或用户准备因为效果慢而加入更多协议时",
+      "type": "action-step",
+      "why": "体重管理通常需要长期、个体化和多方面支持；进食障碍风险会改变优先级。复盘应服务健康和功能，不把更快下降、短期波动或完美执行当成唯一成功"
+    },
+    {
+      "adaptation": "若用户不想称重，就用精力、活动能力、衣物舒适、血压/血糖等已由专业人员建议的指标或一个重复进食场景；不要强迫提供体型数据",
+      "classification": "evidence-supported",
+      "id": "action-step:support-weight-and-appetite-without-restrictive-protocols:triage-weight-change-and-name-one-health-outcome",
+      "label": "先判断这是不是适合生活实验的体重/食欲困扰，并只选一个真正想改善的健康或生活结果",
+      "metric": "是否明确一个健康/功能目标、一个重复场景，以及是否存在快速或原因不明变化、药物时间线、失控进食或补偿行为",
+      "minimum_version": "今天不称重也可以：写下“我想改善的是____，最常失控/最难的是____”。若是反复大量进食且明显失控，或伴催吐、泻药、禁食、补偿运动、晕厥/严重虚弱，就跳过减脂实验，今天联系进食障碍知情或医疗专业人员 未成年人、妊娠/备孕/哺乳期、糖尿病用药、肾病、复杂胃肠/内分泌疾病、进食障碍史或正在使用减重药物时，也停在这一步：只整理信息并联系相应专业人员，不继续后两步。",
+      "playbook_id": "support-weight-and-appetite-without-restrictive-protocols",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "体重在短期内快速或原因不明变化，伴明显水肿、严重/新发气促、胸痛、晕厥、意识异常、极度口渴多尿或快速恶化",
+        "反复失控大量进食、催吐、泻药、禁食、补偿运动、明显营养不足、自伤风险或无法保证安全"
+      ],
+      "trigger": "用户说想减肥、减脂、控制食欲、晚上吃很多、暴食、瘦不下来或体重上升时",
+      "type": "action-step",
+      "why": "NICE 要求体重讨论非污名、以人为中心并考虑共病、进食障碍和社会背景；NIDDK 提醒药物、睡眠和健康问题也会影响体重。先分流可避免把疾病或进食障碍误写成意志力问题"
     },
     {
       "bv_id": "BV14dkGBQEWR",
@@ -50809,12 +51506,12 @@
       "type": "claim"
     },
     {
-      "boundary": "节目把不同呼吸模式解释为可改变短期状态的工具，但不能仅凭节目表述证明循环叹息优于所有方法、治疗焦虑/惊恐/创伤，或授权心肺/神经高风险人群自行屏息与快速过度换气",
-      "evidence_layer": "podcast-claim",
+      "boundary": "不能仅凭节目表述证明循环叹息优于所有方法、治疗焦虑/惊恐/创伤，或授权心肺/神经高风险人群自行屏息与快速过度换气",
+      "evidence_layer": "framework-synthesis",
       "id": "claim:batch02-claim-0041",
-      "label": "batch02-claim-0041",
+      "label": "呼吸、短期状态与急性焦虑边界（2026-09-03）",
       "record_kind": "topic-synthesis",
-      "speaker_scope": "Huberman",
+      "speaker_scope": "Huberman-or-mixed",
       "timestamps": [
         "00:57:23",
         "01:22:39",
@@ -50824,12 +51521,12 @@
       "type": "claim"
     },
     {
-      "boundary": "节目可以定位咖啡因与警觉、下午低谷和随后睡眠的框架，但不能仅凭节目生成统一延迟时长、截止时间、剂量或把咖啡因当作持续疲劳治疗",
+      "boundary": "节目可以定位剂量、时间和个体差异等问题，但不能仅凭节目生成统一延迟时长、截止时间、剂量或把咖啡因当作持续疲劳治疗",
       "evidence_layer": "podcast-claim",
       "id": "claim:batch02-claim-0042",
       "label": "咖啡因、下午低谷与随后睡眠（2026-09-03）",
       "record_kind": "topic-synthesis",
-      "speaker_scope": "Huberman",
+      "speaker_scope": "Huberman-or-mixed",
       "timestamps": [
         "00:53:44",
         "01:27:41",
@@ -50838,12 +51535,12 @@
       "type": "claim"
     },
     {
-      "boundary": "节目可定位床上清醒、睡眠努力、补偿行为与失眠工具，但不能仅凭嘉宾表达诊断失眠、生成固定离床或限睡剂量、推荐补剂/药物，或覆盖躁狂、癫痫、危险困倦、睡眠呼吸和其他临床风险",
-      "evidence_layer": "podcast-claim",
+      "boundary": "嘉宾协议只能生成待核查候选，不能诊断失眠、生成固定离床或限睡剂量、推荐补剂/药物，或覆盖躁狂、癫痫、危险困倦、睡眠呼吸和其他临床风险",
+      "evidence_layer": "boundary-rule",
       "id": "claim:batch02-claim-0043",
       "label": "失眠症状、睡眠努力与临床边界（2026-09-03）",
       "record_kind": "topic-synthesis",
-      "speaker_scope": "guest-or-mixed",
+      "speaker_scope": "Huberman-or-mixed",
       "timestamps": [
         "00:14:49",
         "00:26:05",
@@ -50853,16 +51550,32 @@
       "type": "claim"
     },
     {
-      "boundary": "节目章节只能定位 Huberman 的皮质醇与倦怠框架；不能据此从主观症状诊断皮质醇异常、Cushing/Addison、焦虑、抑郁或职业倦怠，也不能生成补剂、咖啡因、光照、冷暴露或激素治疗处方",
-      "evidence_layer": "podcast-claim",
+      "boundary": "可复用的是先区分短时唤醒、长期工作负荷、睡眠/情绪/功能变化与需要医学评估的身体信号；不能凭紧绷、疲劳或没动力推断个人皮质醇高低，也不能把职业倦怠当医学诊断，或用 Ashwagandha、镁、冷暴露、咖啡因和光照协议覆盖持续焦虑、抑郁、工作风险或内分泌疾病",
+      "evidence_layer": "framework-synthesis",
       "id": "claim:batch02-claim-0044",
       "label": "持续压力、工作耗竭与皮质醇边界（2026-09-03）",
       "record_kind": "topic-synthesis",
-      "speaker_scope": "host",
+      "speaker_scope": "Huberman-or-mixed",
       "timestamps": [
         "01:50:57",
         "01:55:23",
         "02:01:35"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "不能从播客直接生成个人热量、断食、冷暴露、补剂或药物处方，药物与进食障碍风险必须转当前官方指南和专业评估",
+      "evidence_layer": "framework-synthesis",
+      "id": "claim:batch02-claim-0045",
+      "label": "减脂、食欲与协议边界（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "Huberman-or-mixed",
+      "timestamps": [
+        "00:08:44",
+        "00:50:25",
+        "01:28:50",
+        "01:35:22",
+        "01:41:28"
       ],
       "type": "claim"
     },
@@ -55361,6 +56074,22 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "Skill 只帮助用户准备正规临床讨论；不得推荐来源不明或研究用产品，不得给复配浓度换算、剂量、频率、滴定、下一针或停药决定。",
+      "id": "evidence-relation:fda-2026-qualifies-niddk-prescription-glp1-options",
+      "label": "处方体重管理药物的存在能否授权用户从复配、网购或研究用渠道自行购买并换算 GLP-1",
+      "provenance_urls": [
+        "https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity",
+        "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
+      ],
+      "rationale": "NIDDK 说明药物可作为部分人群的临床体重管理组成；FDA 则明确未批准与复配产品不等同于获批药物，并记录剂量错误、过快滴定、储运、假药和非法销售风险。",
+      "relation": "qualifies",
+      "relation_id": "fda-2026-qualifies-niddk-prescription-glp1-options",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "target_review_id": "niddk-prescription-weight-management-medications",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "Fincham检索结束早于Balban论文，未纳入循环叹息，也不能证明具体动作、5分钟或28天得到独立复制；多数结局自评且偏倚和异质性有限制。",
       "id": "evidence-relation:fincham-2023-supports-balban-2023-broad-breathwork-context",
       "label": "Balban单项循环叹息研究是否处在更广泛呼吸训练与主观压力改善的同向证据背景中",
@@ -55585,6 +56314,22 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "用户报告反复失控大量进食、催吐、泻药、禁食或补偿运动时，不给减脂、断食、称重或热量限制实验；先帮助获得进食障碍知情的专业评估和必要医疗安全检查。",
+      "id": "evidence-relation:nice-2017-eating-disorders-qualifies-weight-loss-self-help",
+      "label": "出现反复失控进食、明显痛苦或补偿行为时是否仍应优先推进减重目标",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+        "https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care"
+      ],
+      "rationale": "一般体重管理强调个体化和可持续支持；进食障碍指南则要求在暴食障碍路径中聚焦失控进食，限制性节食可能触发暴食，治疗不以减重本身为目标。进食障碍风险会改变行动优先级。",
+      "relation": "qualifies",
+      "relation_id": "nice-2017-eating-disorders-qualifies-weight-loss-self-help",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "target_review_id": "nice-2025-overweight-obesity-management-guideline",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "Skill 可以提供今天的功能步骤和求助准备，但不能诊断 GAD、抑郁、OCD 或 PTSD，也不能把短时自助的效果或无效当作诊断。持续或影响功能时不应要求用户先完成固定天数的自助试验。",
       "id": "evidence-relation:nice-2024-qualifies-who-2020-self-help-for-persistent-anxiety",
       "label": "通用压力自助技能能否替代持续担忧、显著痛苦或功能受损时的评估和分级照护",
@@ -55599,6 +56344,39 @@
       "reviewed_at": "2026-09-03",
       "source_review_id": "nice-2024-gad-panic-guideline",
       "target_review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "Skill 可帮助一般成人先改变一个重复进食场景，但不能把超加工食品试验改写成全食物禁令、固定热量目标、个人减重承诺或疾病治疗。",
+      "id": "evidence-relation:nice-2025-qualifies-hall-2019-food-environment-for-weight-management",
+      "label": "一个短期住院食物环境试验能否单独支持现实世界长期体重管理方案",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care",
+        "https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/"
+      ],
+      "rationale": "Hall 试验提供食物环境影响自由摄入的直接短期信号；NICE 指南要求以人为中心地评估社会、心理、医学和既往尝试，并按需要组合饮食、活动、行为改变和持续支持。单点替换可作为起步，但不是完整治疗。",
+      "relation": "qualifies",
+      "relation_id": "nice-2025-qualifies-hall-2019-food-environment-for-weight-management",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "nice-2025-overweight-obesity-management-guideline",
+      "target_review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "快速、原因不明或与药物/症状变化同步的体重增加应先整理时间线并寻求医疗评估；不得羞辱用户，也不得建议自行停药、验激素或服补剂。",
+      "id": "evidence-relation:niddk-2023-qualifies-single-cause-weight-narratives",
+      "label": "体重增加能否默认归因于超加工食物、热量记录不足或意志力",
+      "provenance_urls": [
+        "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/"
+      ],
+      "rationale": "Hall 试验说明受控环境中的菜单性质能改变平均摄入；NIDDK 官方资料同时列出环境、睡眠、药物、健康状况、心理、家族史和遗传等多种因素。单一饮食机制不能解释所有个人变化。",
+      "relation": "qualifies",
+      "relation_id": "niddk-2023-qualifies-single-cause-weight-narratives",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "niddk-2023-factors-affecting-weight-health",
+      "target_review_id": "hall-2019-ultra-processed-diet-rct",
       "type": "evidence-relation"
     },
     {
@@ -55913,8 +56691,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:behaviour-change",
+      "label": "behaviour-change",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:binaural-beats",
       "label": "binaural-beats",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:binge-eating",
+      "label": "binge-eating",
       "type": "evidence-topic"
     },
     {
@@ -55935,6 +56723,11 @@
     {
       "id": "evidence-topic:breathwork",
       "label": "breathwork",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:bulimia",
+      "label": "bulimia",
       "type": "evidence-topic"
     },
     {
@@ -55988,8 +56781,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:cbt-ed",
+      "label": "CBT-ED",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:cbt-i",
       "label": "CBT-I",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:children",
+      "label": "children",
       "type": "evidence-topic"
     },
     {
@@ -56005,6 +56808,11 @@
     {
       "id": "evidence-topic:circadian-entrainment",
       "label": "circadian-entrainment",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:clinical-decision",
+      "label": "clinical-decision",
       "type": "evidence-topic"
     },
     {
@@ -56038,6 +56846,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:compensatory-behaviour",
+      "label": "compensatory-behaviour",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:compounded-drugs",
+      "label": "compounded-drugs",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:consumer-device",
       "label": "consumer-device",
       "type": "evidence-topic"
@@ -56060,6 +56878,11 @@
     {
       "id": "evidence-topic:cortisol",
       "label": "cortisol",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:counterfeit-drugs",
+      "label": "counterfeit-drugs",
       "type": "evidence-topic"
     },
     {
@@ -56118,6 +56941,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:diet",
+      "label": "diet",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:directed-attention",
       "label": "directed-attention",
       "type": "evidence-topic"
@@ -56143,6 +56971,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:dosing-errors",
+      "label": "dosing-errors",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:dropout-schedule",
       "label": "dropout-schedule",
       "type": "evidence-topic"
@@ -56153,8 +56986,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:drug-interactions",
+      "label": "drug-interactions",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:early-boost",
       "label": "early-boost",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:eating-disorder-triage",
+      "label": "eating-disorder-triage",
       "type": "evidence-topic"
     },
     {
@@ -56273,6 +57116,16 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:genetics",
+      "label": "genetics",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:glp-1",
+      "label": "GLP-1",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:glycaemic-control",
       "label": "glycaemic-control",
       "type": "evidence-topic"
@@ -56298,6 +57151,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:guided-self-help",
+      "label": "guided-self-help",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:habit-formation",
       "label": "habit-formation",
       "type": "evidence-topic"
@@ -56315,6 +57173,11 @@
     {
       "id": "evidence-topic:health-behavior",
       "label": "health-behavior",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:health-conditions",
+      "label": "health-conditions",
       "type": "evidence-topic"
     },
     {
@@ -56458,6 +57321,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:loss-of-control-eating",
+      "label": "loss-of-control-eating",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:low-burden-action",
       "label": "low-burden-action",
       "type": "evidence-topic"
@@ -56470,6 +57338,11 @@
     {
       "id": "evidence-topic:major-depressive-disorder",
       "label": "major-depressive-disorder",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:medications",
+      "label": "medications",
       "type": "evidence-topic"
     },
     {
@@ -56543,6 +57416,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:multicomponent-support",
+      "label": "multicomponent-support",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:muscle-soreness",
       "label": "muscle-soreness",
       "type": "evidence-topic"
@@ -56583,6 +57461,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:non-stigmatising-language",
+      "label": "non-stigmatising-language",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:norepinephrine",
       "label": "norepinephrine",
       "type": "evidence-topic"
@@ -56590,6 +57473,11 @@
     {
       "id": "evidence-topic:nutrition",
       "label": "nutrition",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:obesity",
+      "label": "obesity",
       "type": "evidence-topic"
     },
     {
@@ -56605,6 +57493,11 @@
     {
       "id": "evidence-topic:omega-3",
       "label": "omega-3",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:online-sales",
+      "label": "online-sales",
       "type": "evidence-topic"
     },
     {
@@ -56633,6 +57526,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:person-centred-care",
+      "label": "person-centred-care",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:pet",
       "label": "pet",
       "type": "evidence-topic"
@@ -56640,6 +57538,11 @@
     {
       "id": "evidence-topic:photobiomodulation",
       "label": "photobiomodulation",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:physical-activity",
+      "label": "physical-activity",
       "type": "evidence-topic"
     },
     {
@@ -56660,6 +57563,11 @@
     {
       "id": "evidence-topic:practice-testing",
       "label": "practice-testing",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:pregnancy",
+      "label": "pregnancy",
       "type": "evidence-topic"
     },
     {
@@ -56725,6 +57633,11 @@
     {
       "id": "evidence-topic:red-light",
       "label": "red-light",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:regulatory-safety",
+      "label": "regulatory-safety",
       "type": "evidence-topic"
     },
     {
@@ -56795,6 +57708,11 @@
     {
       "id": "evidence-topic:self-help",
       "label": "self-help",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:semaglutide",
+      "label": "semaglutide",
       "type": "evidence-topic"
     },
     {
@@ -56953,6 +57871,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:tirzepatide",
+      "label": "tirzepatide",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:training-adaptation",
       "label": "training-adaptation",
       "type": "evidence-topic"
@@ -57010,6 +57933,16 @@
     {
       "id": "evidence-topic:weight-change",
       "label": "weight-change",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:weight-management",
+      "label": "weight-management",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:weight-management-medications",
+      "label": "weight-management-medications",
       "type": "evidence-topic"
     },
     {
@@ -83875,6 +84808,17 @@
       "url": "https://www.fda.gov/about-fda/fda-organization/martin-makary"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 FDA 2026 监管警示：未批准或复配 GLP-1 存在剂量、质量、储运、假药和非法网售风险，不能由 Skill 生成购买、换算或滴定方案。证据卡：academic-study-cards.jsonl#fda-2026-unapproved-glp1-weight-loss-warning。",
+      "id": "resource:https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss",
+      "kind": "other-resource",
+      "label": "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.fda.gov/tobacco-products/products-ingredients-components/chemicals-cigarettes-plant-product-puff",
       "kind": "other-resource",
       "label": "https://www.fda.gov/tobacco-products/products-ingredients-components/chemicals-cigarettes-plant-product-puff",
@@ -94262,6 +95206,61 @@
       "verification_status": "verified-review"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE NG246 指南级核验：体重管理应非污名、以人为中心、考虑社会/心理/医学因素，并使用个体化、多组分和可持续支持；不能从单一技巧生成通用减重处方。证据卡：academic-study-cards.jsonl#nice-2025-overweight-obesity-management-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/ng246/chapter/Behavioural-overweight-and-obesity-management-interventions",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/ng246/chapter/Behavioural-overweight-and-obesity-management-interventions",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Behavioural-overweight-and-obesity-management-interventions",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE NG246 指南级核验：体重管理应非污名、以人为中心、考虑社会/心理/医学因素，并使用个体化、多组分和可持续支持；不能从单一技巧生成通用减重处方。证据卡：academic-study-cards.jsonl#nice-2025-overweight-obesity-management-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE NG246 指南级核验：体重管理应非污名、以人为中心、考虑社会/心理/医学因素，并使用个体化、多组分和可持续支持；不能从单一技巧生成通用减重处方。证据卡：academic-study-cards.jsonl#nice-2025-overweight-obesity-management-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE NG69 指南级核验：反复失控暴食需走进食障碍聚焦评估和治疗，不以减重为治疗目标，也不把限制性节食当通用解决方案。证据卡：academic-study-cards.jsonl#nice-2017-eating-disorders-recognition-treatment-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NICE NG69 指南级核验：反复失控暴食需走进食障碍聚焦评估和治疗，不以减重为治疗目标，也不把限制性节食当通用解决方案。证据卡：academic-study-cards.jsonl#nice-2017-eating-disorders-recognition-treatment-guideline。",
+      "id": "resource:https://www.nice.org.uk/guidance/ng69/ifp/chapter/Binge-eating-disorder",
+      "kind": "other-resource",
+      "label": "https://www.nice.org.uk/guidance/ng69/ifp/chapter/Binge-eating-disorder",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.nice.org.uk/guidance/ng69/ifp/chapter/Binge-eating-disorder",
+      "verification_status": "verified-review"
+    },
+    {
       "id": "resource:https://www.nicholasepley.com",
       "kind": "other-resource",
       "label": "https://www.nicholasepley.com",
@@ -94281,6 +95280,28 @@
       "label": "https://www.niddk.nih.gov/about-niddk/staff-directory/biography/hall-kevin",
       "type": "resource",
       "url": "https://www.niddk.nih.gov/about-niddk/staff-directory/biography/hall-kevin"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NIH/NIDDK 官方背景核验：体重由环境、睡眠、药物、疾病、心理和遗传等多因素共同影响，不能把变化简化为意志力或单一饮食机制。证据卡：academic-study-cards.jsonl#niddk-2023-factors-affecting-weight-health。",
+      "id": "resource:https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health",
+      "kind": "other-resource",
+      "label": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health",
+      "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 NIH/NIDDK 官方药物背景核验：处方体重管理药物需由医疗专业人员结合共病、相互作用、妊娠和年龄共同决策，不能从节目或机制生成个人 GLP-1 方案。证据卡：academic-study-cards.jsonl#niddk-prescription-weight-management-medications。",
+      "id": "resource:https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity",
+      "kind": "other-resource",
+      "label": "https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity",
+      "verification_status": "verified-review"
     },
     {
       "id": "resource:https://www.nigms.nih.gov/Research/DRCB/IdeA/Pages/default",
@@ -105154,6 +106175,35 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "FDA 批准药物经正规处方与持牌药房供应；复配药物仅在特定医疗需要无法由已批准药物满足时考虑",
+      "doi": "无 DOI（美国 FDA 药品安全警示，2026 页面）",
+      "evidence_level": "A-Regulatory warning（美国 FDA 未批准/复配 GLP-1 药品安全警示）",
+      "id": "study-card:fda-2026-unapproved-glp1-weight-loss-warning",
+      "intervention_exposure": "使用未经过 FDA 安全、有效性和质量审查的 GLP-1 产品，或错误测量、过量、过快增加、储运不当和购买假冒/研究用产品",
+      "label": "FDA’s Concerns with Unapproved GLP-1 Drugs Used for Weight Loss",
+      "outcomes": [
+        "剂量错误和住院",
+        "胃肠道及其他不良反应",
+        "产品质量、成分和浓度",
+        "假药与非法销售",
+        "储运和药房真实性"
+      ],
+      "population": "考虑或使用未批准、复配、网购或来源不明 semaglutide、tirzepatide 等 GLP-1 产品的消费者与医疗专业人员",
+      "provenance_urls": [
+        "https://www.fda.gov/drugs/drug-alerts-and-statements/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss",
+        "https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-patients-dosing-errors-associated-compounded"
+      ],
+      "result_summary": "FDA 警告未批准 GLP-1 产品未经过安全、有效性和质量审查；已收到与复配产品剂量错误、过高或过快滴定相关的不良事件，部分需住院。FDA 还提示假药、非法网售、错误盐形式、储运问题和冒充“研究用”产品的风险，并建议从医生获得处方、在受监管药房配药。",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "不要从社交媒体、非正规网站或“研究用”渠道购买 GLP-1，也不要自行换算复配瓶剂、提高频率或加快滴定。用户已经使用且对剂量、来源、储运或症状有疑问时，联系开药医生/药师；严重持续呕吐、剧烈腹痛、脱水、晕厥或其他急症信号及时就医。",
+      "sample_size": "监管安全警示；不以单一临床试验样本量表示，不良事件报告也不能直接估计发生率或因果",
+      "source_scope": "external-context",
+      "study_design": "美国 FDA 基于监管审查、产品质量调查和不良事件报告发布的安全警示，覆盖未批准和复配 GLP-1 产品、剂量错误、过快滴定、储运、盐形式、假药与非法网络销售",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "不含呼吸练习的主动或非主动对照",
       "doi": "10.1038/s41598-022-27247-y",
       "evidence_level": "A-Direct（预注册系统综述/荟萃分析；压力12项RCT共785人，焦虑20项、抑郁18项）",
@@ -105695,6 +106745,36 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "不同心理治疗、自助、药物及常规照护路径；选择依诊断、风险、年龄、偏好和既往反应而定",
+      "doi": "无单一 DOI（NICE 临床指南 NG69，2017 发布，2020 更新）",
+      "evidence_level": "A-Guideline（NICE 进食障碍识别与治疗指南）",
+      "id": "study-card:nice-2017-eating-disorders-recognition-treatment-guideline",
+      "intervention_exposure": "识别失控进食、补偿行为、营养与身体风险；为暴食障碍提供聚焦暴食的指导式自助或 CBT-ED 等专业路径，而不是把减重本身当作治疗目标",
+      "label": "NICE NG69: Eating disorders — recognition and treatment",
+      "outcomes": [
+        "暴食频率与失控感",
+        "催吐、禁食、泻药或补偿运动",
+        "营养和身体稳定性",
+        "痛苦、身体意象与功能",
+        "治疗参与和复发"
+      ],
+      "population": "可能或已确诊进食障碍的儿童、青少年和成人；具体治疗和风险监测需由受训团队完成",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/ng69/",
+        "https://www.nice.org.uk/guidance/ng69/chapter/Recommendations",
+        "https://www.nice.org.uk/guidance/ng69/ifp/chapter/Binge-eating-disorder"
+      ],
+      "result_summary": "对暴食障碍，指南优先聚焦暴食本身，推荐有专业支持的指导式自助，必要时使用进食障碍聚焦 CBT；治疗中会识别诱因并建立规律进食。指南明确说明暴食治疗不以减重本身为目标，限制性节食可能触发暴食，药物不应作为唯一治疗。",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "用户说“暴食”时，先用一个问题区分普通追加进食与明显失控，并询问是否有催吐、泻药、禁食或补偿运动。若反复失控、明显痛苦或有补偿行为，不给减脂、断食或热量限制方案；帮助其联系进食障碍知情的医疗、心理或注册营养专业人员。",
+      "sample_size": "临床实践指南；综合多类心理治疗、医疗监测和服务路径研究，不以单一总样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NICE 基于系统证据审查、临床与服务使用者意见形成的厌食症、暴食症、神经性贪食症及其他进食障碍识别和治疗建议",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "不同强度心理、药物、自助和常规照护；选择取决于诊断、功能损害、既往反应和个人偏好",
       "doi": "无单一 DOI（NICE 临床指南 CG113，2024 年复核/更新信息）",
       "evidence_level": "A-Guideline（NICE 成人 GAD/惊恐障碍分级照护指南）",
@@ -105720,6 +106800,95 @@
       "sample_size": "临床实践指南；综合心理治疗、药物、自助和服务路径证据，不以单一总样本量表示",
       "source_scope": "external-context",
       "study_design": "NICE 基于系统证据审查、临床与服务使用者考虑形成的成人广泛性焦虑和惊恐障碍分级照护建议；2024 年更新信息确认现行建议范围",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "常规照护、单一成分或不同强度的生活方式与专业体重管理服务；具体比较随建议和证据审查而异",
+      "doi": "无单一 DOI（NICE 临床与公共卫生指南 NG246，2025 发布，2026 更新）",
+      "evidence_level": "A-Guideline（NICE 2025 成人超重与肥胖管理指南，2026 更新）",
+      "id": "study-card:nice-2025-overweight-obesity-management-guideline",
+      "intervention_exposure": "非污名、以人为中心地讨论体重和健康；识别社会、心理和医学驱动因素；共同设定现实健康目标，并在需要时使用饮食、活动、行为改变和持续支持组成的个体化路径",
+      "label": "NICE NG246: Overweight and obesity management",
+      "outcomes": [
+        "个人健康与功能目标",
+        "体重或中心性脂肪指标",
+        "饮食与身体活动行为",
+        "参与、维持和复发",
+        "心理福祉、污名与共病识别"
+      ],
+      "population": "儿童、青少年和成人；本卡只用于一般成人首步沟通与行为路径，复杂共病、儿童、孕期及药物/手术决策需相应专业服务",
+      "provenance_urls": [
+        "https://www.nice.org.uk/guidance/ng246/",
+        "https://www.nice.org.uk/guidance/ng246/chapter/General-principles-of-care",
+        "https://www.nice.org.uk/guidance/ng246/chapter/Discussing-results-and-referral",
+        "https://www.nice.org.uk/guidance/ng246/chapter/Planning-and-delivering-overweight-and-obesity-services-and-interventions"
+      ],
+      "result_summary": "指南要求先征得讨论体重的意愿并使用非污名语言，关注健康和福祉而非只谈体重；评估应考虑心理健康、社会环境、既往尝试、进食障碍和共病。成人支持应按个人需要定制，通常覆盖饮食、活动与行为改变，并设置可实现、可持续和可复盘的目标。",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "一般成人可从一个可重复的饮食或活动场景开始，选择一个不羞辱、可持续且可观察的改变，并同时关注精力、功能、饱腹或活动能力。若体重快速或原因不明变化、伴水肿/气促/明显多饮多尿、近期药物变化，或存在失控进食与补偿行为，应先寻求专业评估，不进入限制性自助协议。",
+      "sample_size": "临床与公共卫生指南；综合多类研究和利益相关方意见，不以单一总样本量表示",
+      "source_scope": "external-context",
+      "study_design": "NICE 基于系统证据审查、经济学分析、临床与服务使用者意见形成的超重与肥胖识别、沟通、行为干预、饮食、活动、药物和转介指南；2025 年发布并在 2026 年更新服务内容",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "不适用；该页面是因素与转介背景，不是干预效果试验",
+      "doi": "无 DOI（美国 NIH/NIDDK 官方健康信息，2023 审阅）",
+      "evidence_level": "B-Official guidance（NIH/NIDDK 专家审阅的公众健康资料）",
+      "id": "study-card:niddk-2023-factors-affecting-weight-health",
+      "intervention_exposure": "识别体重变化的多种可能驱动因素，并在生活方式之外考虑药物、内分泌或其他健康问题与进食障碍",
+      "label": "NIDDK: Factors Affecting Weight & Health",
+      "outcomes": [
+        "体重趋势",
+        "食欲和能量平衡",
+        "睡眠与活动环境",
+        "药物相关变化",
+        "内分泌、心理和进食障碍相关因素"
+      ],
+      "population": "一般成人；页面同时列出需要由医疗专业人员评估的药物和健康因素",
+      "provenance_urls": [
+        "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/factors-affecting-weight-health",
+        "https://www.niddk.nih.gov/health-information/weight-management"
+      ],
+      "result_summary": "NIDDK 明确指出体重受到饮食和活动以外的环境、睡眠、药物、健康状况、家族史和遗传共同影响；部分精神科、糖尿病、激素和心血管药物，以及 PCOS、甲状腺功能减退、Cushing 综合征、抑郁和进食障碍等都可能相关。",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "对快速、原因不明或与药物变化同步的体重变化，先整理时间线、伴随症状和功能影响并联系医生；不要自行停药或用补剂纠正。生活方式实验只适合无急症、无明显医学或进食障碍信号的一般成人。",
+      "sample_size": "官方健康信息综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "美国 NIH/NIDDK 面向公众的专家审阅健康资料，综合说明体重受生活方式、居住和工作环境、睡眠、药物、健康问题、家族史和遗传等多因素影响",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
+      "comparator": "生活方式支持、其他药物或不使用药物；具体比较因药物和个体情况而异",
+      "doi": "无 DOI（美国 NIH/NIDDK 官方健康信息）",
+      "evidence_level": "B-Official guidance（NIH/NIDDK 专家审阅的处方体重管理资料）",
+      "id": "study-card:niddk-prescription-weight-management-medications",
+      "intervention_exposure": "在生活方式支持基础上，由合格医疗专业人员评估是否使用处方体重管理药物，并监测获益、不良反应、相互作用和继续/停止决策",
+      "label": "NIDDK: Prescription Medications to Treat Overweight & Obesity",
+      "outcomes": [
+        "体重相关健康获益",
+        "不良反应和严重风险",
+        "药物相互作用",
+        "依从性与长期维持",
+        "妊娠、儿童和共病安全"
+      ],
+      "population": "考虑或正在使用处方体重管理药物的成人，以及由儿科专业人员管理的部分儿童和青少年；具体适应证依药物批准信息与个体临床情况",
+      "provenance_urls": [
+        "https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity",
+        "https://www.niddk.nih.gov/health-information/weight-management"
+      ],
+      "result_summary": "NIDDK 强调体重管理药物不是人人适用，选择应由用户与医疗专业人员共同决定，并考虑健康问题、其他药物、家族史、费用和副作用。药物需来自专业人员认可的正规药房；孕期或计划妊娠不应使用体重管理药物，儿童和青少年必须走年龄与适应证匹配的临床路径。",
+      "review_id": "niddk-prescription-weight-management-medications",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "用户问司美格鲁肽、替尔泊肽或其他减重药时，只帮助准备与医生/药师讨论的目标、既往尝试、健康状况、全部药物和费用问题；不判断适应证、不给剂量或滴定、不替用户决定下一针。药物应来自正规处方和受监管药房。",
+      "sample_size": "官方健康信息综合，不以单一研究样本量表示",
+      "source_scope": "external-context",
+      "study_design": "美国 NIH/NIDDK 面向公众的专家审阅资料，概述处方体重管理药物的适用决策、预期差异、副作用、相互作用、妊娠和儿童边界，并强调由医疗专业人员结合健康状况共同选择",
       "type": "study-card",
       "verification_status": "verified-review"
     },
@@ -106381,6 +107550,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:098bc7899f884f88",
+      "label": "生活方式支持、药物与疾病管理不能被一段节目或单个机制互相替代",
+      "review_id": "niddk-prescription-weight-management-medications",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:09bd3e63be6a4aae",
       "label": "只有 4 项研究报告形成时长，因异质性和资料不足没有对时长进行荟萃",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
@@ -106419,6 +107595,13 @@
       "id": "study-finding:0f6a7db356ea1345",
       "label": "“职业倦怠”在 WHO ICD-11 中是工作情境下的职业现象，不是可由 Skill 确诊的医学疾病",
       "review_id": "who-2022-mental-health-at-work-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:12b2a41325c63677",
+      "label": "一次体重数字不能诊断原因，也不能证明某个协议适合个人",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-finding"
     },
     {
@@ -106597,6 +107780,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:2d61eeabbd8ac710",
+      "label": "对暴食障碍，指南优先聚焦暴食本身，推荐有专业支持的指导式自助，必要时使用进食障碍聚焦 CBT；治疗中会识别诱因并建立规律进食。指南明确说明暴食治疗不以减重本身为目标，限制性节食可能触发暴食，药物不应作为唯一治疗。",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:2e3bd3c22183538e",
       "label": "结果不支持咖啡因增加纹状体多巴胺释放",
@@ -106622,6 +107812,13 @@
       "id": "study-finding:303b8adc9a5d9774",
       "label": "多数被审查的皮肤用途没有达到一致的高等级证据",
       "review_id": "jagdeo-2018-led-dermatology-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:3159a8f1d7740aa3",
+      "label": "体重增加不能自动证明用户吃得太多、缺少自律或代谢“坏了”",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
       "type": "study-finding"
     },
     {
@@ -106829,6 +108026,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:4fafc9c9eeb3137d",
+      "label": "官方资料不能仅凭体重或食欲变化诊断甲状腺、PCOS、Cushing、抑郁或进食障碍",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:50cfb4e3b5b665a8",
       "label": "夏季周末的总睡眠时长与夜间睡眠效率在组内和组间均相近",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
@@ -106853,6 +108057,13 @@
       "id": "study-finding:525210097e1cc560",
       "label": "没有人体皮肤、眼部、代谢或长期安全结局",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:526f3b6a46df6c77",
+      "label": "指南不支持把体重变化归咎于意志力或用羞耻促进执行",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-finding"
     },
     {
@@ -106962,6 +108173,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:6336fab2582466f9",
+      "label": "不良事件报告不能证明每个事件都由产品直接造成，也不能估计个人风险",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:641333c4fa2c5cc5",
       "label": "6 项自动化提高的研究中只有 2 项伴随统计显著的主要健康或行为结局",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -107021,6 +108239,13 @@
       "id": "study-finding:705fbf36475eedb3",
       "label": "并非所有认知领域或单项研究都显示急性运动优势，部分结果无效或不利",
       "review_id": "basso-suzuki-2017-acute-exercise-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:70663377a1718d86",
+      "label": "单一食物、进食时间、冷暴露、补剂或短期代谢指标不能替代完整体重管理路径",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-finding"
     },
     {
@@ -107115,6 +108340,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:7bf2482e69a92ce3",
+      "label": "NIDDK 强调体重管理药物不是人人适用，选择应由用户与医疗专业人员共同决定，并考虑健康问题、其他药物、家族史、费用和副作用。药物需来自专业人员认可的正规药房；孕期或计划妊娠不应使用体重管理药物，儿童和青少年必须走年龄与适应证匹配的临床路径。",
+      "review_id": "niddk-prescription-weight-management-medications",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:7cd8a3d508dc79d1",
       "label": "任何组的特质焦虑均无显著改变，组间也无差异",
@@ -107147,6 +108379,13 @@
       "id": "study-finding:7fbc8ddc4d6c7ebb",
       "label": "研究没有测量客观行为维持、健康结局或打破既有坏习惯",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:805d638fde86d482",
+      "label": "复配或网售产品不能被假定与获批药物等效",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
       "type": "study-finding"
     },
     {
@@ -107333,6 +108572,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:9bfcaeceae109cae",
+      "label": "列出可能因素不等于建议自行停药、改药或购买化验和补剂",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:9c5d170b1ad3f8cb",
       "label": "无光对照没有显示对应时间变化，但并非假照射盲法对照",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
@@ -107455,6 +108701,13 @@
       "id": "study-finding:aa506045e2f9a2c0",
       "label": "8周后两组在FMD、反应性充血、动脉僵硬及收缩/舒张压方面无显著差异；桑拿组出现较低静息核心体温和较高出汗率等热适应变化。",
       "review_id": "debray-2023-sauna-stable-cad-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ab8eb22bb688e073",
+      "label": "用户说“暴食”不能由 Skill 直接确诊暴食障碍或神经性贪食症",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
       "type": "study-finding"
     },
     {
@@ -107584,6 +108837,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:be0086fd1268a4a6",
+      "label": "NIDDK 明确指出体重受到饮食和活动以外的环境、睡眠、药物、健康状况、家族史和遗传共同影响；部分精神科、糖尿病、激素和心血管药物，以及 PCOS、甲状腺功能减退、Cushing 综合征、抑郁和进食障碍等都可能相关。",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:beef214d3f9f0667",
       "label": "口服葡萄糖耐量试验中的葡萄糖水平没有显著组间差异",
@@ -107609,6 +108869,20 @@
       "id": "study-finding:bfe43d2545f93629",
       "label": "综述不支持把冷水浸泡视为无风险的普遍健康工具",
       "review_id": "tipton-2017-cold-water-risks-benefits-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:c1148a97f9769069",
+      "label": "FDA 警告未批准 GLP-1 产品未经过安全、有效性和质量审查；已收到与复配产品剂量错误、过高或过快滴定相关的不良事件，部分需住院。FDA 还提示假药、非法网售、错误盐形式、储运问题和冒充“研究用”产品的风险，并建议从医生获得处方、在受监管药房配药。",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:c235a175b4f26faf",
+      "label": "减重、断食或更严格控制不是失控进食的通用自助治疗",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
       "type": "study-finding"
     },
     {
@@ -107686,6 +108960,13 @@
       "id": "study-finding:cb38927fad4d7be3",
       "label": "不同 30、60、90 秒冷水时长之间没有明确剂量优势可用于推荐",
       "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:cb68e16dd48b93e7",
+      "label": "指南要求先征得讨论体重的意愿并使用非污名语言，关注健康和福祉而非只谈体重；评估应考虑心理健康、社会环境、既往尝试、进食障碍和共病。成人支持应按个人需要定制，通常覆盖饮食、活动与行为改变，并设置可实现、可持续和可复盘的目标。",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-finding"
     },
     {
@@ -107767,6 +109048,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:d8d2d7d4a4f144b1",
+      "label": "“研究用”“非供人体使用”标签不提供消费者使用许可或质量保证",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:db19c2151ee58dec",
       "label": "HRV和静息心率在研究期间无显著改变",
       "review_id": "balban-2023-structured-respiration-rct",
@@ -107798,6 +109086,13 @@
       "id": "study-finding:deca05469cf122bf",
       "label": "摘要未提供足够信息估计统一总效应或长期并发症获益",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:dee1695eb564fc62",
+      "label": "平均试验结果不能预测个人获益、耐受或维持效果",
+      "review_id": "niddk-prescription-weight-management-medications",
       "type": "study-finding"
     },
     {
@@ -107907,6 +109202,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:ec2a05de90a8bfb4",
+      "label": "只靠药物、补剂、意志力或食物环境替换不能替代进食障碍评估和治疗",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:ed10319835b1ddb1",
       "label": "没有比较步行与咖啡因、午睡、进食或其他提神方法",
       "review_id": "dempsey-2016-walking-breaks-fatigue",
@@ -107917,6 +109219,13 @@
       "id": "study-finding:edb6f3914b708f86",
       "label": "症状描述不能替代对失眠、OSA、药物/物质影响及共病的专业评估",
       "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:edcb2b105aee4bfe",
+      "label": "列出获批药物不等于任何用户都适合使用，也不能由 Skill 判断适应证",
+      "review_id": "niddk-prescription-weight-management-medications",
       "type": "study-finding"
     },
     {
@@ -108272,6 +109581,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:1f392f5c0b96d967",
+      "label": "指南面向临床识别与治疗，Skill 不能完成诊断、医疗稳定性评估或治疗计划",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:1fbd722378bd10d5",
       "label": "不少研究缺少充分盲法或可信假照射",
       "review_id": "jagdeo-2018-led-dermatology-review",
@@ -108281,6 +109596,12 @@
       "id": "study-limitation:208d1cdbe4383566",
       "label": "这是实用指南而非单一 RCT 或疗效荟萃分析，不能提供统一效应量",
       "review_id": "who-2020-doing-what-matters-stress-guide",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:221cc439275537ce",
+      "label": "报告可能低报且缺少统一分母，不能计算发生率",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
       "type": "study-limitation"
     },
     {
@@ -108320,6 +109641,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:28692602309fa5b3",
+      "label": "英国服务结构、转介标准和药物可及性不适用于所有国家或地区",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:288ee2680fb93059",
       "label": "仅一项研究纳入女性，且排除了慢病和高水平运动员",
       "review_id": "cain-2025-cold-water-wellbeing-review",
@@ -108329,6 +109656,12 @@
       "id": "study-limitation:289ac06bc8359fb9",
       "label": "参与者全部来自同一所美国大学且年龄范围窄，不能直接外推到儿童、老年人或临床人群",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:28f6863774010187",
+      "label": "公众资料不能替代具体药品标签、当地批准信息、处方和随访",
+      "review_id": "niddk-prescription-weight-management-medications",
       "type": "study-limitation"
     },
     {
@@ -108353,6 +109686,12 @@
       "id": "study-limitation:2de2dbf99a4062ae",
       "label": "仅纳入 35–50 岁健康女性",
       "review_id": "hazlett-2021-gratitude-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:2de82379dc380a86",
+      "label": "公众健康资料不是系统综述或个体诊断算法",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
       "type": "study-limitation"
     },
     {
@@ -108395,6 +109734,12 @@
       "id": "study-limitation:31ff37a16fdbd090",
       "label": "多数具体治疗建议以完成专业评估和诊断为前提",
       "review_id": "nice-2024-gad-panic-guideline",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3296bf3311a8611b",
+      "label": "美国批准年龄和药房监管不适用于所有地区",
+      "review_id": "niddk-prescription-weight-management-medications",
       "type": "study-limitation"
     },
     {
@@ -108608,6 +109953,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4b5b9144752586a1",
+      "label": "“吃多了”与临床意义的暴食需结合失控感、食量、频率、痛苦和补偿行为评估",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:4b9191b6cf2e881d",
       "label": "结局是随后一晚睡眠，不直接证明减少下午咖啡因会改善个人次日精力",
       "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
@@ -108626,9 +109977,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:4f97e8f24f951412",
+      "label": "英国治疗服务与转介方式不一定适用于其他地区",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:51143d01f0026b3e",
       "label": "实验 2 仅 12 人，多项注意指标增加偶然发现风险",
       "review_id": "berman-2008-nature-directed-attention",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:511a6b48d1977efb",
+      "label": "指南中的多组分服务建议不能由 Skill 远程转换成个人热量、宏量营养素或运动剂量",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-limitation"
     },
     {
@@ -108734,6 +110097,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:58568fc301db5869",
+      "label": "Skill 不能决定下一针、停药、换药、滴定或不良反应处理",
+      "review_id": "niddk-prescription-weight-management-medications",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:588e40e51846e890",
       "label": "加热方式、温度、时长、频率和人群高度异质",
       "review_id": "hamaya-2025-passive-heating-rct-meta-analysis",
@@ -108755,6 +110124,12 @@
       "id": "study-limitation:59ef1aa84f3cec5d",
       "label": "方案范围很宽，无法提取通用消费协议",
       "review_id": "pizzey-2021-heat-vascular-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5bd2d02c6c0200fa",
+      "label": "体重不是唯一结局；个人目标、共病、药物、经济条件、文化和进食障碍风险会改变路径",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-limitation"
     },
     {
@@ -108887,6 +110262,12 @@
       "id": "study-limitation:69ee927ffcd67d00",
       "label": "两次重复测量使用不同序列且可能存在跨序列练习迁移，作者以平衡顺序减弱但不能完全消除",
       "review_id": "nettersheim-2015-sleep-stabilization",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:69ef637b1ca46dc8",
+      "label": "页面主要处理未批准与复配产品风险，不是完整获批 GLP-1 比较指南",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
       "type": "study-limitation"
     },
     {
@@ -109058,6 +110439,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:7cd44ead9728167d",
+      "label": "页面不能估计某个用户最可能的原因或给出个人治疗方案",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:7dbbc6b4678fbfaa",
       "label": "本研究以睡眠日志和主观警觉度记录睡眠，而非对全部参与者进行多导睡眠监测",
       "review_id": "walker-2003-sleep-motor-learning",
@@ -109208,6 +110595,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:960588b44051e682",
+      "label": "Skill 不能核验某一支产品真伪、储运或个人剂量",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:960cc0384f2d9326",
       "label": "睡眠与清醒条件的测试时点和保留间隔不同，虽然昼夜控制与警觉任务降低了部分混杂",
       "review_id": "nettersheim-2015-sleep-stabilization",
@@ -109247,6 +110640,12 @@
       "id": "study-limitation:9ade31ceb4803315",
       "label": "研究年代早，监测与报告标准有限",
       "review_id": "leppaluoto-1986-repeated-sauna-endocrine",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9b282f5ba6a07b71",
+      "label": "不同药物的禁忌证、剂量和监测差异很大，不能合并成通用 GLP-1 协议",
+      "review_id": "niddk-prescription-weight-management-medications",
       "type": "study-limitation"
     },
     {
@@ -109367,6 +110766,12 @@
       "id": "study-limitation:a784815f0a872ca1",
       "label": "观察期只有 84 天，却对部分个体外推到最高 254 天，尾部估计不稳定",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:a7edad33c7d9ec5a",
+      "label": "内容以美国医疗环境为背景",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
       "type": "study-limitation"
     },
     {
@@ -109541,6 +110946,12 @@
       "id": "study-limitation:bb8015e4bbfc1a14",
       "label": "焦虑与抑郁检索只纳入已发表资料，发表偏倚不能排除",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:bc1dfdfa3d5ed09b",
+      "label": "Skill 无法完成体格检查、实验室检查、诊断、处方或药物监测",
+      "review_id": "nice-2025-overweight-obesity-management-guideline",
       "type": "study-limitation"
     },
     {
@@ -109730,6 +111141,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:dbb9959594019770",
+      "label": "有晕厥、电解质风险、出血、严重脱水、自伤或快速恶化时需要紧急处理",
+      "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:dda337e770829a6c",
       "label": "桑拿习惯主要在基线自报，随访中可能变化",
       "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
@@ -109769,6 +111186,12 @@
       "id": "study-limitation:e3870556c85f4252",
       "label": "不包含进食障碍、儿童、孕妇或需疾病特异饮食的人群，不能替代个体化营养/医疗管理",
       "review_id": "hall-2019-ultra-processed-diet-rct",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:e3af3c2ff536216d",
+      "label": "药物和疾病关联需结合时间线、症状、检查和临床判断",
+      "review_id": "niddk-2023-factors-affecting-weight-health",
       "type": "study-limitation"
     },
     {
@@ -109955,6 +111378,12 @@
       "id": "study-limitation:f91a9b34f456c6d7",
       "label": "部分研究的变化值标准差需用假定相关系数估算，发表偏倚也可能影响结果",
       "review_id": "chin-2024-brief-state-anxiety-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f947ca32235925e0",
+      "label": "警示基于美国监管体系，其他地区需查询当地监管机构和持牌药房",
+      "review_id": "fda-2026-unapproved-glp1-weight-loss-warning",
       "type": "study-limitation"
     },
     {
@@ -112744,20 +114173,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1765,
-    "action_playbook_nodes": 14,
-    "action_step_nodes": 42,
+    "academic_resource_nodes": 1773,
+    "action_playbook_nodes": 15,
+    "action_step_nodes": 45,
     "bilibili_nodes": 34,
-    "claim_nodes": 44,
+    "claim_nodes": 45,
     "course_lecture_nodes": 8,
-    "edges": 9707,
+    "edges": 9825,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 34,
-    "evidence_topic_nodes": 256,
-    "resource_nodes": 6049,
-    "study_card_nodes": 55,
-    "study_finding_nodes": 255,
-    "study_limitation_nodes": 325,
+    "evidence_relation_nodes": 38,
+    "evidence_topic_nodes": 287,
+    "resource_nodes": 6057,
+    "study_card_nodes": 60,
+    "study_finding_nodes": 275,
+    "study_limitation_nodes": 345,
     "top_topics": [
       {
         "count": 58,
@@ -112861,7 +114290,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 713,
+    "verified_academic_resource_nodes": 721,
     "youtube_nodes": 424
   }
 }

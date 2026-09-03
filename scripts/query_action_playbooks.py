@@ -102,6 +102,24 @@ COMMON_ROUTING_ALIASES = {
         "不想算卡路里",
         "饮食先改",
     ),
+    "support-weight-and-appetite-without-restrictive-protocols": (
+        "想减肥但总失败",
+        "想减脂不知道从哪开始",
+        "晚上总忍不住吃零食",
+        "一到晚上就吃很多",
+        "控制不住食欲",
+        "最近体重一直涨",
+        "瘦不下来",
+        "是不是代谢坏了",
+        "白天一直忍着不吃",
+        "晚上吃到撑",
+        "夜班凌晨特别饿",
+        "疯狂点外卖",
+        "吃完就催吐",
+        "减重",
+        "weight loss",
+        "appetite control",
+    ),
     "manage-an-acute-stress-spike-without-overclaiming-breathwork": (
         "压力大到无法工作",
         "先让我缓下来",
@@ -150,6 +168,7 @@ COMMON_ROUTING_ALIASES = {
 MIN_LEXICAL_ROUTE_SCORE = 18
 INSOMNIA_PLAYBOOK = "support-trouble-falling-or-staying-asleep"
 ONGOING_STRESS_PLAYBOOK = "support-ongoing-stress-worry-and-work-overload"
+WEIGHT_PLAYBOOK = "support-weight-and-appetite-without-restrictive-protocols"
 ACUTE_STRESS_PLAYBOOK = "manage-an-acute-stress-spike-without-overclaiming-breathwork"
 PROTOCOL_PLAYBOOK = "decide-whether-to-try-one-health-protocol"
 SLEEP_PLAYBOOKS = {INSOMNIA_PLAYBOOK, "stabilize-sleep-wake-timing"}
@@ -165,6 +184,12 @@ ONGOING_STRESS_TERMS = (
 )
 ACUTE_STRESS_TERMS = ("突然", "现在", "刚刚", "马上", "先让我缓下来", "压力高峰", "惊恐", "喘不过气")
 CORTISOL_PROTOCOL_TERMS = ("皮质醇", "肾上腺疲劳", "降皮质醇", "补剂", "ashwagandha", "南非醉茄")
+WEIGHT_PROTOCOL_TERMS = ("glp-1", "semaglutide", "司美格鲁肽", "ozempic", "wegovy", "二甲双胍", "小檗碱", "berberine", "减肥药", "胰岛素", "糖尿病药")
+WEIGHT_CONTEXT_TERMS = (
+    "减肥", "减脂", "减重", "体重", "食欲", "总忍不住吃", "晚上总吃", "一到晚上就吃", "夜间吃",
+    "暴食", "吃很多", "吃到撑", "忍着不吃", "明明不饿", "疯狂点外卖", "催吐", "泻药", "补偿运动",
+    "怕长胖", "瘦不下来", "代谢坏了", "胖了", "weight loss", "appetite control",
+)
 EMERGENCY_TERMS = (
     "胸痛", "胸口发紧", "喘不上气", "呼吸不顺", "严重气促", "晕厥", "意识混乱", "单侧无力",
     "活着没意思", "不想活", "不想醒来", "想消失", "消失算了", "自伤", "他伤", "无法保证安全",
@@ -223,6 +248,8 @@ def blocked_by_context(playbook_id: str, normalized: str) -> bool:
         return externally_interrupted and not has_self_sleep_difficulty and not has_timing_shift
     if playbook_id == ONGOING_STRESS_PLAYBOOK:
         return not any(term in normalized for term in ONGOING_STRESS_TERMS)
+    if playbook_id == WEIGHT_PLAYBOOK:
+        return not any(term in normalized for term in WEIGHT_CONTEXT_TERMS)
     return False
 
 
@@ -230,7 +257,7 @@ def context_bonus(playbook_id: str, normalized: str) -> int:
     if playbook_id == ACUTE_STRESS_PLAYBOOK and contains_unnegated_term(normalized, EMERGENCY_TERMS):
         return 5000
     if playbook_id == PROTOCOL_PLAYBOOK and any(
-        term in normalized for term in MEDICATION_TERMS + CORTISOL_PROTOCOL_TERMS
+        term in normalized for term in MEDICATION_TERMS + CORTISOL_PROTOCOL_TERMS + WEIGHT_PROTOCOL_TERMS
     ):
         return 3000
     if playbook_id == ACUTE_STRESS_PLAYBOOK and any(term in normalized for term in ACUTE_STRESS_TERMS):
@@ -239,6 +266,8 @@ def context_bonus(playbook_id: str, normalized: str) -> int:
         return 2200
     if playbook_id == ONGOING_STRESS_PLAYBOOK and any(term in normalized for term in ONGOING_STRESS_TERMS):
         return 1600
+    if playbook_id == WEIGHT_PLAYBOOK and any(term in normalized for term in WEIGHT_CONTEXT_TERMS):
+        return 2400
     if playbook_id == INSOMNIA_PLAYBOOK and any(term in normalized for term in SELF_SLEEP_DIFFICULTY_TERMS):
         return 30
     return 0

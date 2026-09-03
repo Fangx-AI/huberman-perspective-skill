@@ -40,10 +40,10 @@ class PublicSnapshotTests(unittest.TestCase):
     def test_claim_index_is_locator_only(self) -> None:
         path = ROOT / "references" / "catalog" / "claim-index.jsonl"
         records = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
-        self.assertEqual(len(records), 44)
+        self.assertEqual(len(records), 45)
         self.assertTrue(all("claim_text" not in record for record in records))
         self.assertTrue(all(record.get("source_urls") and record.get("youtube_ids") for record in records))
-        self.assertEqual(sum(bool(record.get("timestamps")) for record in records), 23)
+        self.assertEqual(sum(bool(record.get("timestamps")) for record in records), 24)
 
     def test_identifier_overrides_are_traceable(self) -> None:
         path = ROOT / "references" / "catalog" / "academic-identifier-overrides.csv"
@@ -61,8 +61,8 @@ class PublicSnapshotTests(unittest.TestCase):
         graph = json.loads(raw)
         self.assertEqual(graph["schema"], "public-evidence-v2")
         self.assertEqual(graph["stats"]["episode_nodes"], 425)
-        self.assertEqual(graph["stats"]["claim_nodes"], 44)
-        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 713)
+        self.assertEqual(graph["stats"]["claim_nodes"], 45)
+        self.assertEqual(graph["stats"]["verified_academic_resource_nodes"], 721)
         cards_path = ROOT / "references" / "catalog" / "academic-study-cards.jsonl"
         cards = [json.loads(line) for line in cards_path.read_text(encoding="utf-8").splitlines() if line]
         expected_findings = sum(1 + len(card["null_findings"]) for card in cards)
