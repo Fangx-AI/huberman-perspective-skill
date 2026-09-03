@@ -38,6 +38,7 @@ REQUIRED_FILES = (
     "references/extraction-framework.md",
     "references/fidelity-scorecard.md",
     "references/evals/user-value-blackbox-2026-09-03.md",
+    "references/evals/insomnia-user-value-blackbox-2026-09-03.md",
     "references/evals/routing-user-language-v1.jsonl",
     "references/evals/routing-blackbox-2026-09-03.md",
     "references/huberman-operating-model.md",
@@ -60,13 +61,19 @@ README_LINKS = (
 )
 
 PLAYBOOK_IDS = (
+    "decide-whether-a-red-light-device-is-worth-buying",
+    "decide-whether-and-when-to-use-cold-exposure",
+    "decide-whether-sauna-or-heat-is-worth-using",
     "decide-whether-to-try-one-health-protocol",
-    "start-and-sustain-one-habit",
+    "improve-food-environment-first",
+    "manage-an-acute-stress-spike-without-overclaiming-breathwork",
+    "protect-one-focus-block",
+    "restore-daytime-energy-without-stimulant-stacking",
     "retain-what-you-learn",
     "stabilize-sleep-wake-timing",
-    "protect-one-focus-block",
+    "start-and-sustain-one-habit",
     "start-exercise-without-protocol-overload",
-    "improve-food-environment-first",
+    "support-trouble-falling-or-staying-asleep",
 )
 
 

@@ -7,6 +7,19 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.19.0] - 2026-09-03
+
+### Added
+
+- Added a user-first sleep-difficulty playbook for ordinary requests such as “躺下睡不着”, “半夜醒了睡不回去” and “总比闹钟早醒”. It gives one safe tonight action and routes recurrent or impairing problems toward CBT-I/brief behavioral treatment instead of another sleep-hygiene list.
+- Added structured evidence cards for the 2021 AASM behavioral insomnia guideline and the 2025 VA/DoD insomnia/OSA guideline, plus a relation that blocks universal fixed bed-exit timing and self-directed sleep restriction.
+- Expanded the ordinary-language routing regression set from 38 to 50 cases, including external sleep interruption, dangerous drowsiness, medication-dose requests, low-sleep/high-energy states, self-harm language and acute chest-pain/dyspnea boundaries.
+
+### Changed
+
+- “Cannot sleep” no longer automatically means circadian delay. Routing now separates insomnia-like difficulty, schedule shift, external interruption and urgent safety states; `not_for` exclusions no longer act as positive search terms.
+- Updated the public snapshot to 52 evidence cards, 32 relations, 13 playbooks, 39 actions and 43 public claim locators.
+
 ## [0.18.0] - 2026-09-03
 
 ### Added

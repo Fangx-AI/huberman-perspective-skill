@@ -28,6 +28,13 @@ class UserGuidanceContractTests(unittest.TestCase):
             "最近的安全地点停车",
             "不要让用户第二天自行猜",
             "今天不额外加码，也不突然取消原有摄入",
+            "“睡不着”不等于“作息后移”",
+            "只有在离床安全时",
+            "不要让用户自行执行睡眠限制",
+            "询问 CBT-I/简短行为治疗",
+            "当天联系医生或精神健康专业人员",
+            "就按反复发生处理",
+            "转向当地紧急医疗评估",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)

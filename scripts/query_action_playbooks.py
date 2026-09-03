@@ -14,7 +14,7 @@ except ModuleNotFoundError:  # pragma: no cover
 
 
 SEARCH_FIELDS = ("playbook_id", "title", "user_goal", "scope", "safe_summary")
-LIST_FIELDS = ("aliases", "first_questions", "baseline_checks", "not_for")
+LIST_FIELDS = ("aliases", "first_questions", "baseline_checks")
 
 # Natural-language phrases observed in user requests. Keep these separate from the
 # evidence catalog: they improve routing without changing any evidence claim.
@@ -30,19 +30,39 @@ COMMON_ROUTING_ALIASES = {
         "睡够还是很累",
         "睡够仍然疲劳",
         "白天总想睡",
+        "开车犯困",
+        "开车还会犯困",
+        "白天开车",
+    ),
+    "support-trouble-falling-or-staying-asleep": (
+        "躺下一个多小时都睡不着",
+        "躺下睡不着",
+        "翻来覆去睡不着",
+        "一上床就清醒",
+        "明明很困却睡不着",
+        "半夜醒了睡不回去",
+        "醒了以后睡不回去",
+        "每晚三四点醒",
+        "比闹钟早醒",
+        "天没亮就醒",
+        "越想睡越焦虑",
+        "一直看时间",
+        "睡前脑子停不下来",
+        "连续几周睡不好",
+        "少睡反而特别兴奋",
+        "不需要睡觉也很兴奋",
+        "失眠",
     ),
     "stabilize-sleep-wake-timing": (
         "越睡越晚",
         "早上起不来",
         "白天没精神",
-        "睡不着",
         "作息越来越乱",
         "凌晨睡",
         "中午才醒",
         "白天昏昏沉沉",
         "轮班工作",
         "白天睡不着",
-        "睡眠都碎",
     ),
     "start-and-sustain-one-habit": (
         "健康建议执行不下去",
@@ -88,6 +108,8 @@ COMMON_ROUTING_ALIASES = {
         "一直焦虑",
         "焦虑得无法工作",
         "胸痛气短",
+        "活着没意思",
+        "不想活",
         "呼吸法",
     ),
     "decide-whether-to-try-one-health-protocol": (
@@ -97,6 +119,9 @@ COMMON_ROUTING_ALIASES = {
         "吃药后头晕",
         "吃药以后整天疲劳",
         "自己减量",
+        "自己加量",
+        "安眠药",
+        "停药",
     ),
     "decide-whether-a-red-light-device-is-worth-buying": ("红光面罩", "红光设备", "红光是不是智商税"),
     "decide-whether-and-when-to-use-cold-exposure": ("冷水澡", "冰浴", "冷水浴"),
@@ -104,6 +129,13 @@ COMMON_ROUTING_ALIASES = {
 }
 
 MIN_LEXICAL_ROUTE_SCORE = 18
+INSOMNIA_PLAYBOOK = "support-trouble-falling-or-staying-asleep"
+SLEEP_PLAYBOOKS = {INSOMNIA_PLAYBOOK, "stabilize-sleep-wake-timing"}
+EXTERNAL_SLEEP_INTERRUPTION_TERMS = ("带娃", "孩子叫醒", "照护", "夜班照护", "噪音", "室友", "邻居")
+SELF_SLEEP_DIFFICULTY_TERMS = ("睡不着", "睡不回", "失眠", "早醒", "越想睡", "清醒", "不需要睡")
+SLEEP_TIMING_TERMS = ("作息", "越睡越晚", "凌晨睡", "中午醒", "轮班", "时差")
+EMERGENCY_TERMS = ("胸痛", "喘不上气", "严重气促", "晕厥", "意识混乱", "单侧无力", "活着没意思", "不想活", "自伤", "他伤")
+MEDICATION_TERMS = ("安眠药", "处方药", "药物", "加量", "减量", "停药", "漏服", "下一剂")
 
 
 def lexical_units(value: str) -> set[str]:
@@ -126,6 +158,29 @@ def searchable_text(playbook: dict) -> str:
     return "\n".join(values).casefold()
 
 
+def blocked_by_context(playbook_id: str, normalized: str) -> bool:
+    if playbook_id not in SLEEP_PLAYBOOKS:
+        return False
+    externally_interrupted = any(term in normalized for term in EXTERNAL_SLEEP_INTERRUPTION_TERMS)
+    has_self_sleep_difficulty = any(term in normalized for term in SELF_SLEEP_DIFFICULTY_TERMS)
+    has_timing_shift = any(term in normalized for term in SLEEP_TIMING_TERMS)
+    return externally_interrupted and not has_self_sleep_difficulty and not has_timing_shift
+
+
+def context_bonus(playbook_id: str, normalized: str) -> int:
+    if playbook_id == "manage-an-acute-stress-spike-without-overclaiming-breathwork" and any(
+        term in normalized for term in EMERGENCY_TERMS
+    ):
+        return 200
+    if playbook_id == "decide-whether-to-try-one-health-protocol" and any(
+        term in normalized for term in MEDICATION_TERMS
+    ):
+        return 100
+    if playbook_id == INSOMNIA_PLAYBOOK and any(term in normalized for term in SELF_SLEEP_DIFFICULTY_TERMS):
+        return 30
+    return 0
+
+
 def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
     normalized = query.casefold().strip()
     query_units = lexical_units(normalized)
@@ -133,6 +188,8 @@ def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
         return []
     scored = []
     for playbook in playbooks:
+        if blocked_by_context(playbook["playbook_id"], normalized):
+            continue
         aliases = list(playbook.get("aliases", [])) + list(COMMON_ROUTING_ALIASES.get(playbook["playbook_id"], ()))
         routing_text = "\n".join(
             [playbook.get("playbook_id", ""), playbook.get("title", ""), playbook.get("user_goal", "")]
@@ -144,6 +201,7 @@ def query_playbooks(playbooks: list[dict], query: str) -> list[dict]:
         body_overlap = query_units & body_units
         score = sum(max(1, min(len(unit), 4) - 1) * 3 for unit in routing_overlap)
         score += sum(1 for unit in body_overlap - routing_overlap)
+        score += context_bonus(playbook["playbook_id"], normalized)
         exact_aliases = [
             alias.casefold()
             for alias in aliases

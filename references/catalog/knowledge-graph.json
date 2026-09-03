@@ -541,6 +541,36 @@
       "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
     },
     {
+      "relation": "has_action",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "action-step:support-trouble-falling-or-staying-asleep:separate-insomnia-like-difficulty-from-timing-and-urgent-state"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "claim:batch02-claim-0043"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "target": "study-card:va-dod-2025-insomnia-osa-guideline"
+    },
+    {
       "relation": "grounded_in",
       "source": "action-step:decide-whether-a-red-light-device-is-worth-buying:apply-clinical-and-safety-purchase-gate",
       "target": "claim:batch02-claim-0034"
@@ -1166,6 +1196,46 @@
       "target": "study-card:erickson-2011-aerobic-exercise-hippocampus"
     },
     {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene",
+      "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene",
+      "target": "study-card:va-dod-2025-insomnia-osa-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:separate-insomnia-like-difficulty-from-timing-and-urgent-state",
+      "target": "claim:batch02-claim-0043"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:separate-insomnia-like-difficulty-from-timing-and-urgent-state",
+      "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:separate-insomnia-like-difficulty-from-timing-and-urgent-state",
+      "target": "study-card:va-dod-2025-insomnia-osa-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction",
+      "target": "claim:batch02-claim-0043"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction",
+      "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction",
+      "target": "study-card:va-dod-2025-insomnia-osa-guideline"
+    },
+    {
       "relation": "maps_to_episode",
       "source": "bilibili:BV16mXCB9Ejm",
       "target": "episode:using-light-sunlight-blue-light-and-red-light-to-optimize-health"
@@ -1664,6 +1734,16 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0042",
       "target": "youtube:https://www.youtube.com/watch?v=iw97uvIge7c"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0043",
+      "target": "youtube:https://www.youtube.com/watch?v=-OBCwiPPfEU"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0043",
+      "target": "youtube:https://www.youtube.com/watch?v=hvPGfcAgk9Y"
     },
     {
       "relation": "cites_resource",
@@ -43106,6 +43186,11 @@
       "target": "study-card:cain-2025-cold-water-wellbeing-review"
     },
     {
+      "relation": "qualifies",
+      "source": "evidence-relation:va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction",
+      "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:ahokas-2025-postexercise-heat-review",
       "target": "evidence-topic:endurance"
@@ -44389,6 +44474,86 @@
       "relation": "reviews_resource",
       "source": "study-card:dunlosky-2013-effective-learning-techniques-review",
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/26173288/"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:cbt-i"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:insomnia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:sleep-hygiene"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:sleep-restriction"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "evidence-topic:stimulus-control"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-limitation:1d345f9381047fc1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-limitation:78c26c9a9fd5b509"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-limitation:82b99383f57c3781"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-limitation:eb79a6c0bdff74b0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-limitation:fba781ef05eb58b2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-finding:71bf1fe7fb7a9823"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-finding:7b5c6151d2c4547e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-finding:afa74d30d1e01463"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "study-finding:2f6d1aa42a3cab02"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "target": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/"
     },
     {
       "relation": "has_evidence_topic",
@@ -47686,6 +47851,96 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/28833689/"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-relation:va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:bbt-i"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:cbt-i"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:clinical-triage"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:insomnia"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:osa"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:sleep-hygiene"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "evidence-topic:sleep-restriction-safety"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-limitation:2b5290a7d22aea68"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-limitation:4076daf490453585"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-limitation:80dcb77f4ddc2c15"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-limitation:91eb2c726055ff1e"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-limitation:d2a64ef72841c8df"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-finding:8a1ab16d98877fa3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-finding:b1463f1e0ab42669"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-finding:edb6f3914b708f86"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "study-finding:cae542ff1a3f5d24"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "target": "resource:https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:volkow-2015-caffeine-pet",
       "target": "evidence-topic:alertness"
@@ -47941,7 +48196,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-09-03T08:03:44.757220+00:00",
+  "generated_at": "2026-09-03T08:19:34.995029+00:00",
   "nodes": [
     {
       "aliases": [
@@ -48434,6 +48689,62 @@
       "scope": "适用于一般成人启动低风险日常身体活动的自我管理；不是心肺疾病、伤病、孕期、术后、进食障碍或其他临床状态的运动处方",
       "type": "action-playbook",
       "user_goal": "从当前能力出发建立一个安全、可重复的运动起点，并用功能和症状调整，而不是照搬名人训练表"
+    },
+    {
+      "aliases": [
+        "躺下睡不着",
+        "翻来覆去睡不着",
+        "一上床就清醒",
+        "明明很困却睡不着",
+        "半夜醒了睡不回去",
+        "醒后再也睡不着",
+        "每晚三四点醒",
+        "天没亮就醒",
+        "比闹钟早醒",
+        "早醒",
+        "失眠",
+        "越想睡越焦虑",
+        "一直看时间更焦虑",
+        "睡前脑子停不下来",
+        "少睡反而特别兴奋",
+        "不需要睡觉也很兴奋",
+        "连续几周睡不好",
+        "can't fall asleep",
+        "can't get back to sleep",
+        "wake up too early",
+        "insomnia"
+      ],
+      "baseline_checks": [
+        "先区分真正困倦却睡不着、睡眠时间整体后移、外界照护/噪音打断，以及睡眠机会本来不足",
+        "只确认最重要的安全信号和一个现实目标，不要求用户半夜填写完整问卷或追踪设备数据",
+        "若离床会增加跌倒、迷路、照护、创伤或现实安全风险，不执行离床动作；若用户正在驾驶或操作危险设备，先停止"
+      ],
+      "escalation": [
+        "少睡却异常兴奋、不觉得困，并伴话多、易怒、冲动、思维奔逸或行为明显变化时，今天联系医生或精神健康专业人员；无法保证安全、出现幻觉或自伤/他伤风险时立即联系当地急救/危机支持",
+        "困倦影响驾驶或危险操作时立即停止，到最近安全地点停车并改由清醒者接手或换交通方式",
+        "反复打鼾、喘醒/窒息、目击呼吸暂停、晨起头痛或危险日间困倦时寻求睡眠/医疗评估",
+        "失眠样困难反复、造成明显困扰或白天影响时，预约专业评估并询问CBT-I/简短行为治疗，不必等满某个期限",
+        "胸痛、严重或新发气促、晕厥、意识混乱、神经异常或无法保证现实安全时立即急救"
+      ],
+      "first_questions": [
+        "你是想睡却睡不着或醒后睡不回去，还是整套睡觉和起床时间都往后了？",
+        "这是偶发一晚，还是已经反复发生并造成困扰或白天功能变化？",
+        "是否伴危险困倦、打鼾憋醒、疼痛/腿部不适、药物或物质变化，或少睡却异常兴奋、冲动、思维奔逸？"
+      ],
+      "id": "action-playbook:support-trouble-falling-or-staying-asleep",
+      "label": "处理入睡困难、夜醒和早醒，不再追着睡意跑",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "整套睡眠与起床时间后移、轮班或时差的节律调整；这些应走睡眠时间路由",
+        "单纯被孩子、照护、噪音、疼痛或环境反复叫醒而本身能入睡的情境；先解决外部约束或对应原因",
+        "危险困倦、疑似睡眠呼吸暂停、躁狂/轻躁狂、癫痫、严重精神症状、急症、药物不良反应或物质戒断的自行治疗",
+        "儿童、妊娠、认知/行动障碍或高跌倒风险者照搬离床和睡眠限制规则",
+        "自行开始睡眠限制、压缩必要睡眠、改变安眠药或复制补剂剂量"
+      ],
+      "safe_summary": "‘睡不着’不等于‘作息后移’。今晚若越躺越清醒，先停止强迫入睡和看钟；安全时暂时离床做昏暗、安静、中性的事，有睡意再回床，不计固定分钟。反复发生或影响白天时，问专业人员是否适合CBT-I/简短行为治疗，不再只堆睡眠卫生、补剂或自行限睡。少睡却异常兴奋/冲动、危险困倦、憋醒或其他急症信号先转专业或紧急帮助。",
+      "scope": "适用于一般成人在已有睡眠机会时出现想睡却睡不着、夜醒后难再睡、过早醒来或睡眠努力焦虑；不等同于整套作息后移，也不是失眠诊断或治疗处方",
+      "type": "action-playbook",
+      "user_goal": "今晚先减少‘越想睡越清醒’的循环，并在反复发生时走向真正有效的失眠帮助，而不是继续堆光照、补剂和睡眠技巧"
     },
     {
       "adaptation": "专业意见或设备匹配不足时不购买；即使购买，也只按获确认的具体方案复诊，不用主观发热或刺痛判断有效",
@@ -49082,6 +49393,60 @@
       "trigger": "在一个可重复的低风险任务前，且运动本身不会挤压准备、睡眠或恢复时",
       "type": "action-step",
       "why": "急性运动综述显示情绪和部分认知可能短时改善，但结果异质，速度改善不一定伴随准确性；一年运动试验的结构变化也不能由一次提神推断"
+    },
+    {
+      "adaptation": "若当地暂时没有CBT-I资源，询问正规线上/团体/简短治疗或转介选项；不要把通用睡眠卫生清单、商业App、安眠补剂或自行限睡当作等价替代",
+      "classification": "evidence-supported",
+      "id": "action-step:support-trouble-falling-or-staying-asleep:move-recurrent-insomnia-toward-cbt-i-not-more-sleep-hygiene",
+      "label": "若入睡困难、夜醒或早醒反复出现并造成困扰或白天影响，简记最少信息，并向医生、睡眠专业人员或受训治疗者明确询问CBT-I或简短行为治疗",
+      "metric": "是否获得合适评估/转介；真正困扰的睡眠表现与白天功能是否改善；不以补剂数量、睡眠评分或是否完美执行为结果",
+      "minimum_version": "只记大致上床/入睡、夜醒或早醒、最终起床和一个白天影响；就诊时直接问‘我这种情况是否适合CBT-I或简短失眠行为治疗？’不要等满某个期限才求助，也不要自行缩短睡眠机会",
+      "playbook_id": "support-trouble-falling-or-staying-asleep",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "自行限睡后白天困倦、情绪、注意或驾驶/工作安全恶化",
+        "准备自行开始、加量、停用安眠药、褪黑素或其他会与疾病/药物相互作用的产品"
+      ],
+      "trigger": "问题不再是一晚偶发，已经反复、越来越担心睡眠、白天功能受影响，或用户已连续尝试多种睡眠技巧仍困扰时",
+      "type": "action-step",
+      "why": "AASM和2025 VA/DoD指南都把多组分CBT-I作为成人慢性失眠的首选方向，并反对只用睡眠卫生教育；完整CBT-I包含需要按日间困倦、职业、双相/癫痫和跌倒风险适配的成分"
+    },
+    {
+      "adaptation": "作息整体后移则改走睡眠时间路由；外界打断则解决照护/环境约束；反复失眠样困难或安全信号则停止叠加生活技巧并升级照护",
+      "classification": "framework-inference",
+      "id": "action-step:support-trouble-falling-or-staying-asleep:separate-insomnia-like-difficulty-from-timing-and-urgent-state",
+      "label": "先区分普通的一晚睡不着、反复的入睡/维持困难、作息整体后移，以及需要当天处理的异常少睡高能量状态",
+      "metric": "睡眠困难类型、是否反复、白天现实影响，以及危险困倦、异常精力/冲动、呼吸、疼痛和药物/物质变化",
+      "minimum_version": "只回答一个问题：我是想睡却睡不着，还是不需要睡也异常兴奋、话多、冲动或脑子飞快？后者不做睡眠实验，今天联系医生或精神健康专业人员；若无法保证安全、出现幻觉或自伤/他伤风险，立即求助",
+      "playbook_id": "support-trouble-falling-or-staying-asleep",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "少睡同时出现异常兴奋、易怒、话多、冲动冒险、思维奔逸、幻觉或现实安全下降",
+        "困倦影响驾驶/危险操作，或出现胸痛、严重/新发气促、晕厥、意识/神经异常、自伤/他伤风险"
+      ],
+      "trigger": "用户说躺下睡不着、夜醒后回不去、早醒、失眠，或少睡却不困时",
+      "type": "action-step",
+      "why": "Huberman与Matt Walker节目把时间型、床上清醒和失眠工具放在相邻讨论中，但临床指南按症状、睡眠机会、日间影响和风险决定路径；‘睡不着’不能自动等于昼夜节律后移"
+    },
+    {
+      "adaptation": "离床或安静活动让你更清醒、更焦虑或不安全就停止，换成更少刺激且更安全的休息方式；无效时不延长、不叠加更多技巧，反复发生则进入专业失眠帮助",
+      "classification": "bounded-experiment",
+      "id": "action-step:support-trouble-falling-or-staying-asleep:stop-forcing-sleep-and-use-a-safe-stimulus-control-direction",
+      "label": "今晚发现自己越躺越清醒或焦虑时，停止强迫入睡和反复看时间；环境安全且能稳定走动时，暂时离床做一件昏暗、安静、中性的事，有睡意再回床",
+      "metric": "是否减少反复看钟和强迫入睡；床上挫败是否下降；只观察现实安全与次日功能，不用可穿戴睡眠分数判定成败",
+      "minimum_version": "不计时，也不检查‘有没有成功放松’。若离床不安全，就留在安全位置、把时钟移出视线，改做低刺激的安静休息；不要工作、刷刺激内容或同时加呼吸法、补剂、酒精和新的睡眠设备",
+      "playbook_id": "support-trouble-falling-or-staying-asleep",
+      "priority": 2,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "起身时头晕、跌倒风险、行动/认知障碍、创伤反应、照护责任或环境使离床不安全",
+        "呼吸练习、冥想或身体扫描加重惊恐、解离、气短或失控感"
+      ],
+      "trigger": "已经有合适睡眠机会，但在床上保持清醒并越来越挫败、用力放松或反复看钟时",
+      "type": "action-step",
+      "why": "AASM对刺激控制给出条件性支持，目标是减少床与清醒/挫败的联结；但完整治疗通常需要个体化，研究和指南不支持由Skill给所有人固定二十分钟、离床次数或保证当晚入睡"
     },
     {
       "bv_id": "BV14dkGBQEWR",
@@ -50014,6 +50379,21 @@
         "00:53:44",
         "01:27:41",
         "02:06:04"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "节目可定位床上清醒、睡眠努力、补偿行为与失眠工具，但不能仅凭嘉宾表达诊断失眠、生成固定离床或限睡剂量、推荐补剂/药物，或覆盖躁狂、癫痫、危险困倦、睡眠呼吸和其他临床风险",
+      "evidence_layer": "podcast-claim",
+      "id": "claim:batch02-claim-0043",
+      "label": "失眠症状、睡眠努力与临床边界（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "guest-or-mixed",
+      "timestamps": [
+        "00:14:49",
+        "00:26:05",
+        "01:24:11",
+        "01:32:58"
       ],
       "type": "claim"
     },
@@ -54873,6 +55253,23 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "两份指南共同支持由专业人员实施或适配的CBT-I，不支持Skill给固定睡眠窗口、自行限睡或要求行动不便/高风险用户离床。单次低风险刺激控制方向只能作为可撤销支持，不能宣称治疗。",
+      "id": "evidence-relation:va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction",
+      "label": "CBT-I和刺激控制的指南支持能否被简化为任何用户都可自行执行固定离床时长或睡眠限制窗口",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/",
+        "https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf",
+        "https://doi.org/10.5664/jcsm.8986"
+      ],
+      "rationale": "AASM指南强烈支持多组分CBT-I，但同时说明睡眠限制早期可增加疲劳、困倦和注意困难，并对驾驶/重型机械、易躁狂/轻躁狂及控制不佳癫痫提出禁忌或谨慎边界；2025 VA/DoD指南进一步要求在过度日间困倦、夜间跌倒/转移风险、双相障碍、癫痫、活跃物质使用和医疗不稳定时适配或延后行为治疗组成。",
+      "relation": "qualifies",
+      "relation_id": "va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "va-dod-2025-insomnia-osa-guideline",
+      "target_review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "evidence-relation"
+    },
+    {
       "id": "evidence-topic:21-day-boundary",
       "label": "21-day-boundary",
       "type": "evidence-topic"
@@ -54998,6 +55395,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:bbt-i",
+      "label": "BBT-I",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:behavior-change",
       "label": "behavior-change",
       "type": "evidence-topic"
@@ -55070,6 +55472,11 @@
     {
       "id": "evidence-topic:catecholamines",
       "label": "catecholamines",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:cbt-i",
+      "label": "CBT-I",
       "type": "evidence-topic"
     },
     {
@@ -55468,6 +55875,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:insomnia",
+      "label": "insomnia",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:insulin-resistance",
       "label": "insulin-resistance",
       "type": "evidence-topic"
@@ -55673,6 +56085,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:osa",
+      "label": "OSA",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:passive-heating",
       "label": "passive-heating",
       "type": "evidence-topic"
@@ -55858,6 +56275,21 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:sleep-hygiene",
+      "label": "sleep-hygiene",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-restriction",
+      "label": "sleep-restriction",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:sleep-restriction-safety",
+      "label": "sleep-restriction-safety",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sleep-timing",
       "label": "sleep-timing",
       "type": "evidence-topic"
@@ -55890,6 +56322,11 @@
     {
       "id": "evidence-topic:state-anxiety",
       "label": "state-anxiety",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:stimulus-control",
+      "label": "stimulus-control",
       "type": "evidence-topic"
     },
     {
@@ -69266,6 +69703,17 @@
       "type": "resource",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7820009/pdf/41598_2021_Article_81419.pdf",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部AASM指南级核验：成人慢性失眠首选多组分CBT-I；刺激控制等单一成分仅为条件性建议，睡眠卫生不应单独作为治疗。睡眠限制有驾驶、高风险职业、躁狂/轻躁狂与癫痫边界，不能由Skill自行处方。证据卡：academic-study-cards.jsonl#edinger-2021-insomnia-behavioral-guideline。",
+      "id": "resource:https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/",
+      "kind": "academic-or-medical",
+      "label": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/",
+      "verification_status": "verified-review"
     },
     {
       "academic_episode_count": "2",
@@ -83745,6 +84193,17 @@
       "label": "https://www.hbs.edu/ris/Publication%20Files/Does%20Spending%20Money%20on%20Others%20Promote%20Happiness_acc24566-c7c9-4f03-b918-9d25628264c8.pdf",
       "type": "resource",
       "url": "https://www.hbs.edu/ris/Publication%20Files/Does%20Spending%20Money%20on%20Others%20Promote%20Happiness_acc24566-c7c9-4f03-b918-9d25628264c8.pdf"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部2025 VA/DoD指南级核验：慢性失眠优先CBT-I/简短行为治疗，不以睡眠卫生单独治疗；过度日间困倦、夜间跌倒风险、双相障碍、癫痫、活跃物质使用和医疗不稳定需要适配或延后部分行为成分。证据卡：academic-study-cards.jsonl#va-dod-2025-insomnia-osa-guideline。",
+      "id": "resource:https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf",
+      "kind": "other-resource",
+      "label": "https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf",
+      "verification_status": "verified-review"
     },
     {
       "id": "resource:https://www.healthygamer.gg",
@@ -104010,6 +104469,36 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "等候、最小干预、安慰/对照治疗；指南不比较所有实施方式，也不覆盖药物与行为治疗组合的完整选择",
+      "doi": "10.5664/jcsm.8986",
+      "evidence_level": "A-Guideline（AASM成人慢性失眠行为与心理治疗临床实践指南）",
+      "id": "study-card:edinger-2021-insomnia-behavioral-guideline",
+      "intervention_exposure": "多组分CBT-I通常结合睡眠调节教育、刺激控制、睡眠限制和认知策略，常见疗程为4–8次；另评估简短治疗、刺激控制、睡眠限制、放松及睡眠卫生",
+      "label": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline",
+      "outcomes": [
+        "失眠缓解与响应",
+        "自报睡眠质量",
+        "入睡潜伏期",
+        "入睡后清醒",
+        "治疗偏好、短期不良影响与资源使用"
+      ],
+      "population": "诊断为慢性失眠障碍的成人，包含无合并症及部分合并医疗或精神健康问题者；建议主要基于由受训专业人员实施的研究",
+      "provenance_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7853203/",
+        "https://pubmed.ncbi.nlm.nih.gov/33164742/",
+        "https://doi.org/10.5664/jcsm.8986"
+      ],
+      "result_summary": "指南强烈建议临床人员为成人慢性失眠使用多组分CBT-I；对简短失眠治疗、刺激控制、睡眠限制和放松给出条件性支持，并条件性反对把睡眠卫生单独作为慢性失眠治疗。",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "反复入睡困难、夜间醒后难再睡或早醒并造成困扰/日间影响时，优先引导用户寻求正规CBT-I或简短行为治疗，而不是只发睡眠卫生清单或购买补剂。今晚可借用刺激控制方向做低风险、可撤销的离床/回床实验，但不得给固定分钟数，也不得让用户自行执行睡眠限制。",
+      "sample_size": "指南识别66项成人慢性失眠CBT-I随机对照试验，并按可用结局完成多项荟萃分析；不同建议的研究数不同",
+      "source_scope": "external-context",
+      "study_design": "AASM工作组基于系统综述、荟萃分析和GRADE形成的成人慢性失眠行为与心理治疗指南；比较多组分CBT-I、简短失眠治疗及若干单一成分干预",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "频率和接触时间相近的伸展、塑形与肌张力练习组",
       "doi": "10.1073/pnas.1015950108",
       "evidence_level": "A-Direct（120 名无痴呆老年人的一年随机对照试验）",
@@ -104975,6 +105464,35 @@
       "verification_status": "verified-review"
     },
     {
+      "comparator": "其他行为、药物、补充或常规管理路径；不同建议证据强度与适用条件不同",
+      "doi": "无单一DOI（VA/DoD 2025临床实践指南）",
+      "evidence_level": "A-Guideline（2025 VA/DoD成人慢性失眠与OSA临床实践指南）",
+      "id": "study-card:va-dod-2025-insomnia-osa-guideline",
+      "intervention_exposure": "慢性失眠的CBT-I或简短行为治疗，包括刺激控制、睡眠效率/睡眠窗口安排、认知策略及可选睡眠卫生教育；并按风险调整或延后部分行为成分",
+      "label": "VA/DoD Clinical Practice Guideline for the Management of Chronic Insomnia Disorder and Obstructive Sleep Apnea",
+      "outcomes": [
+        "慢性失眠严重度与睡眠功能",
+        "日间困倦和安全",
+        "治疗获益、伤害与可行性",
+        "需要调整或延后CBT-I/BBT-I的临床情境",
+        "OSA筛查与管理衔接"
+      ],
+      "population": "接受VA、DoD或社区医疗的成人慢性失眠障碍和/或OSA患者；实施需结合临床判断、患者偏好与共病",
+      "provenance_urls": [
+        "https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf",
+        "https://www.healthquality.va.gov/guidelines/CD/insomnia/index.asp"
+      ],
+      "result_summary": "指南推荐CBT-I治疗成人慢性失眠，并把简短行为治疗作为可用路径；不支持只用睡眠卫生教育。它明确要求在医疗不稳定、活跃物质使用问题、过度日间困倦、夜间跌倒/转移风险、控制不佳癫痫及双相障碍等情境中调整或延后治疗组成。",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "面对反复失眠，用户可被清楚告知询问CBT-I或简短行为治疗，而不是只收到光照、屏幕和补剂清单。若有过度日间困倦、跌倒风险、双相症状、癫痫、活跃物质使用或医疗不稳定，不应自行执行离床或睡眠限制规则，应由专业人员适配。",
+      "sample_size": "临床实践指南；综合多类研究和既有证据，不以单一总样本量表示",
+      "source_scope": "external-context",
+      "study_design": "VA/DoD基于系统证据审查形成的成人慢性失眠障碍与阻塞性睡眠呼吸暂停管理指南，包含筛查、失眠管理和OSA管理算法及29条建议",
+      "type": "study-card",
+      "verification_status": "verified-review"
+    },
+    {
       "comparator": "同日较早给予糖片安慰剂；固定顺序而非随机平衡",
       "doi": "10.1038/tp.2015.46",
       "evidence_level": "A-Direct（小样本人体急性药理 PET 研究）",
@@ -105350,6 +105868,13 @@
       "id": "study-finding:2e3bd3c22183538e",
       "label": "结果不支持咖啡因增加纹状体多巴胺释放",
       "review_id": "volkow-2015-caffeine-pet",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:2f6d1aa42a3cab02",
+      "label": "指南强烈建议临床人员为成人慢性失眠使用多组分CBT-I；对简短失眠治疗、刺激控制、睡眠限制和放松给出条件性支持，并条件性反对把睡眠卫生单独作为慢性失眠治疗。",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
       "type": "study-finding"
     },
     {
@@ -105732,6 +106257,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:71bf1fe7fb7a9823",
+      "label": "该指南针对慢性失眠治疗，不能把一晚睡不好直接诊断为失眠障碍，也不提供个人补剂或药物方案",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:727dfe8ff9f466f5",
       "label": "没有证明所有家用LED或红光设备可互换",
       "review_id": "cohen-2021-home-dermatology-devices-review",
@@ -105805,6 +106337,13 @@
       "id": "study-finding:7b40a1dc9a2e0a66",
       "label": "夏季周末露营组的褪黑素结束变化不显著（p=0.11）",
       "review_id": "stothard-2017-natural-light-seasons-weekend",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:7b5c6151d2c4547e",
+      "label": "指南没有证明某一个单一成分、固定离床分钟数或统一睡眠窗口优于所有其他实施方式",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
       "type": "study-finding"
     },
     {
@@ -105896,6 +106435,13 @@
       "id": "study-finding:89d2b04f9d9360ef",
       "label": "测试部分内容对相关但未测试内容的迁移并不总是出现",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:8a1ab16d98877fa3",
+      "label": "单独睡眠卫生教育不是慢性失眠的充分治疗路径",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-finding"
     },
     {
@@ -106145,6 +106691,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:afa74d30d1e01463",
+      "label": "睡眠卫生单独使用的证据不足，不能把一组通用睡眠建议当作慢性失眠治疗",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:b05dd8e93f1525ca",
       "label": "实验 2 没有显示注意网络任务的警觉和定向成分同样改善",
       "review_id": "berman-2008-nature-directed-attention",
@@ -106162,6 +106715,13 @@
       "id": "study-finding:b0ff7119e81058f4",
       "label": "每周2–3次相对1次的多变量置信区间跨过1，不能称为明确显著获益",
       "review_id": "laukkanen-2018-sauna-cvd-mortality-cohort",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:b1463f1e0ab42669",
+      "label": "指南不授权远程助手给个人睡眠窗口、睡眠限制剂量、安眠药或补剂方案",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-finding"
     },
     {
@@ -106323,6 +106883,13 @@
       "id": "study-finding:ca31cd6a601f9533",
       "label": "所测基因型对客观或主观睡眠结局未见显著主效应",
       "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:cae542ff1a3f5d24",
+      "label": "指南推荐CBT-I治疗成人慢性失眠，并把简短行为治疗作为可用路径；不支持只用睡眠卫生教育。它明确要求在医疗不稳定、活跃物质使用问题、过度日间困倦、夜间跌倒/转移风险、控制不佳癫痫及双相障碍等情境中调整或延后治疗组成。",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-finding"
     },
     {
@@ -106554,6 +107121,13 @@
       "id": "study-finding:ed10319835b1ddb1",
       "label": "没有比较步行与咖啡因、午睡、进食或其他提神方法",
       "review_id": "dempsey-2016-walking-breaks-fatigue",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:edb6f3914b708f86",
+      "label": "症状描述不能替代对失眠、OSA、药物/物质影响及共病的专业评估",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-finding"
     },
     {
@@ -106878,6 +107452,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:1d345f9381047fc1",
+      "label": "不同治疗组成和交付方式存在异质性，指南未证明单一万能版本",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:1d6014da0af28dc7",
       "label": "不能做因果或风险排序",
       "review_id": "kaiser-2023-sauna-injury-series",
@@ -106947,6 +107527,12 @@
       "id": "study-limitation:2a33a0c2a97afbae",
       "label": "合并两类持续提取条件得到的巨大效应量来自小样本实验室范式，不能直接当作真实课程的预期效应大小",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:2b5290a7d22aea68",
+      "label": "指南面向成人临床管理，不是单晚睡不好时的自助处方",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-limitation"
     },
     {
@@ -107103,6 +107689,12 @@
       "id": "study-limitation:3ef5f2b5b67ee968",
       "label": "仅纳入中年芬兰男性",
       "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:4076daf490453585",
+      "label": "指南更新不能保证所有地区都能立即获得受训CBT-I提供者",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-limitation"
     },
     {
@@ -107610,6 +108202,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:78c26c9a9fd5b509",
+      "label": "建议用于临床决策且多组分CBT-I证据主要来自受训专业人员实施，远程Skill不能复制评估与个体化治疗",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:7a806d142bd04e3a",
       "label": "百分比变化来自小样本实验，不能当作个人可感知的脑内多巴胺读数",
       "review_id": "sramek-2000-cold-water-physiology",
@@ -107670,9 +108268,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:80dcb77f4ddc2c15",
+      "label": "算法仍依赖临床判断、病史、功能风险和患者偏好，Skill无法完成诊断",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:819417237ed77447",
       "label": "检索结束早于Balban 2023论文，因此不是循环叹息的独立复制或专门汇总",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:82b99383f57c3781",
+      "label": "睡眠限制成分可能不适合驾驶/重型机械等高风险职业、易躁狂/轻躁狂者或控制不佳的癫痫患者",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
       "type": "study-limitation"
     },
     {
@@ -107757,6 +108367,12 @@
       "id": "study-limitation:9108beec9de1ff0b",
       "label": "参与者无法对运动类型盲法，监督、社交接触与期待可能影响行为结局",
       "review_id": "erickson-2011-aerobic-exercise-hippocampus",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:91eb2c726055ff1e",
+      "label": "VA/DoD人群和医疗系统背景可能影响可及性与实施方式",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
       "type": "study-limitation"
     },
     {
@@ -108240,6 +108856,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:d2a64ef72841c8df",
+      "label": "具体药物选择、停药和共病治疗不属于生活方式建议",
+      "review_id": "va-dod-2025-insomnia-osa-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:d2b45a00a10a2b13",
       "label": "不能外推到不稳定心血管疾病、一般健康人或不同桑拿方案",
       "review_id": "debray-2023-sauna-stable-cad-rct",
@@ -108366,6 +108988,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:eb79a6c0bdff74b0",
+      "label": "CBT-I早期可出现白天疲劳、困倦、易怒或注意困难，需要结合职业和驾驶风险管理",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:edafae38e5c081b0",
       "label": "表现适应不等同于肌肉体积、伤病、主观恢复或一般健康结局",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
@@ -108471,6 +109099,12 @@
       "id": "study-limitation:fb90a2ee41396af1",
       "label": "安全性和依从性报告有限",
       "review_id": "ahokas-2025-postexercise-heat-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:fba781ef05eb58b2",
+      "label": "研究对象为成人慢性失眠，不能直接外推儿童、急性医疗状态、妊娠或所有合并症",
+      "review_id": "edinger-2021-insomnia-behavioral-guideline",
       "type": "study-limitation"
     },
     {
@@ -111242,20 +111876,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1760,
-    "action_playbook_nodes": 12,
-    "action_step_nodes": 36,
+    "academic_resource_nodes": 1762,
+    "action_playbook_nodes": 13,
+    "action_step_nodes": 39,
     "bilibili_nodes": 34,
-    "claim_nodes": 42,
+    "claim_nodes": 43,
     "course_lecture_nodes": 8,
-    "edges": 9588,
+    "edges": 9639,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 31,
-    "evidence_topic_nodes": 230,
-    "resource_nodes": 6044,
-    "study_card_nodes": 50,
-    "study_finding_nodes": 235,
-    "study_limitation_nodes": 303,
+    "evidence_relation_nodes": 32,
+    "evidence_topic_nodes": 238,
+    "resource_nodes": 6046,
+    "study_card_nodes": 52,
+    "study_finding_nodes": 243,
+    "study_limitation_nodes": 313,
     "top_topics": [
       {
         "count": 58,
@@ -111359,7 +111993,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 708,
+    "verified_academic_resource_nodes": 710,
     "youtube_nodes": 424
   }
 }

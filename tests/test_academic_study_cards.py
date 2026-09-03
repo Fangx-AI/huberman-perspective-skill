@@ -101,6 +101,19 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(by_id[review_id]["source_scope"], "external-context")
             self.assertEqual(by_id[review_id]["queue_urls"], [])
 
+    def test_insomnia_guidelines_support_cbt_i_without_universal_self_treatment(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        aasm = by_id["edinger-2021-insomnia-behavioral-guideline"]
+        va_dod = by_id["va-dod-2025-insomnia-osa-guideline"]
+        self.assertIn("CBT-I", aasm["result_summary"])
+        self.assertIn("睡眠卫生", " ".join(aasm["null_findings"]))
+        self.assertIn("驾驶", " ".join(aasm["limitations"]))
+        self.assertIn("双相", va_dod["safe_interpretation"])
+        self.assertIn("日间困倦", " ".join(va_dod["limitations"]) + va_dod["safe_interpretation"])
+        for card in (aasm, va_dod):
+            self.assertEqual(card["source_scope"], "external-context")
+            self.assertEqual(card["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

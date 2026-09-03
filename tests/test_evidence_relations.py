@@ -116,6 +116,16 @@ class EvidenceRelationTests(unittest.TestCase):
         self.assertIn("短暂走动不能充当", relation["rationale"])
         self.assertIn("停止生活实验", relation["boundary"])
 
+    def test_insomnia_relation_blocks_universal_sleep_restriction(self) -> None:
+        relation = next(
+            item
+            for item in self.relations
+            if item["relation_id"] == "va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction"
+        )
+        self.assertEqual(relation["relation"], "qualifies")
+        self.assertIn("固定睡眠窗口", relation["boundary"])
+        self.assertIn("双相障碍", relation["rationale"])
+
     def test_unknown_card_is_rejected(self) -> None:
         relation = dict(self.relations[0])
         relation["target_review_id"] = "missing"

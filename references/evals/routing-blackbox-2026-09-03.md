@@ -4,16 +4,17 @@
 
 Users should not need to know a playbook name or use Huberman vocabulary. The routing layer must understand ordinary Chinese, and it must prefer no match over confidently loading an unrelated playbook.
 
-The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It contains 33 prompts across sleep, stress, focus, learning, habits, exercise, food, protocol purchases and safety boundaries, including two deliberate no-match cases.
+The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 50 prompts across sleep, daytime energy, stress, focus, learning, habits, exercise, food, protocol purchases and safety boundaries, including deliberate no-match cases for unsupported requests and externally interrupted sleep.
 
 ## Deterministic result
 
-The same 33-case corpus was run against the released `v0.17.0` router and the updated router:
+The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 50/50 after adding daytime-energy and insomnia-language regressions:
 
 | Router | Correct | Observed accuracy on this corpus |
 |---|---:|---:|
 | `v0.17.0` (`7b8fc08`) | 18/33 | 54.5% |
 | Updated router | 33/33 | 100.0% |
+| Current router, expanded known-failure corpus | 50/50 | 100.0% |
 
 This is regression-corpus accuracy, not a population estimate. The corpus was created after observing failures, so it protects known user language but cannot prove performance on unseen phrasing.
 
@@ -64,4 +65,4 @@ All three outputs followed the intended route and safety contract. They were tar
 - Exact maintained phrases can overfit known wording; new real-user failures should be added as cases only after confirming the intended route.
 - Multi-intent prompts may reasonably fit more than one playbook; the current evaluator checks only the top result.
 - Correct routing cannot prove the generated answer is effective or clinically appropriate; independent behavior tests remain required.
-- Caffeine-related daytime fatigue currently routes to generic protocol evaluation because no dedicated daytime-energy playbook has yet passed evidence and behavior gates.
+- Passing 50 known cases does not prove safe handling of every sleep cause or every combined intent; medication, dangerous drowsiness, acute symptoms and low-sleep/high-energy states still require answer-level safety checks.

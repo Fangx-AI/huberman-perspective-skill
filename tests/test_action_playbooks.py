@@ -58,6 +58,8 @@ class ActionPlaybookTests(unittest.TestCase):
             "我压力突然很大，Huberman说生理叹息有用，我现在应该怎么呼吸？": "manage-an-acute-stress-spike-without-overclaiming-breathwork",
             "下午三点就没精神，只能靠咖啡硬撑": "restore-daytime-energy-without-stimulant-stacking",
             "明明睡够了白天还是总想睡": "restore-daytime-energy-without-stimulant-stacking",
+            "作息挺规律，但常常躺一个多小时睡不着": "support-trouble-falling-or-staying-asleep",
+            "半夜醒了以后很久睡不回去": "support-trouble-falling-or-staying-asleep",
         }
         for query, expected in cases.items():
             with self.subTest(query=query):
@@ -192,6 +194,27 @@ class ActionPlaybookTests(unittest.TestCase):
                 "kapur-2017-osa-diagnostic-guideline",
             },
         )
+
+    def test_insomnia_route_gives_tonight_help_without_self_directed_sleep_restriction(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        insomnia = by_id["support-trouble-falling-or-staying-asleep"]
+        self.assertEqual(len(insomnia["actions"]), 3)
+        for phrase in ("‘睡不着’不等于‘作息后移’", "不计固定分钟", "CBT-I", "自行限睡"):
+            self.assertIn(phrase, insomnia["safe_summary"])
+        self.assertIn("离床不安全", insomnia["actions"][1]["minimum_version"])
+        self.assertEqual(
+            {link["review_id"] for link in insomnia["evidence_links"]},
+            {"edinger-2021-insomnia-behavioral-guideline", "va-dod-2025-insomnia-osa-guideline"},
+        )
+        self.assertEqual({link["claim_id"] for link in insomnia["claim_links"]}, {"batch02-claim-0043"})
+
+    def test_sleep_routing_respects_context_and_safety_priority(self) -> None:
+        self.assertNotIn("not_for", QUERY.LIST_FIELDS)
+        self.assertEqual(QUERY.query_playbooks(self.playbooks, "带娃夜里被叫醒很多次，我能睡，只是总被打断。"), [])
+        medication = QUERY.query_playbooks(self.playbooks, "安眠药没用了，我今晚能不能自己加量？")
+        emergency = QUERY.query_playbooks(self.playbooks, "半夜醒来胸痛、喘不上气，睡不回去怎么办？")
+        self.assertEqual(medication[0]["playbook_id"], "decide-whether-to-try-one-health-protocol")
+        self.assertEqual(emergency[0]["playbook_id"], "manage-an-acute-stress-spike-without-overclaiming-breathwork")
 
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)
