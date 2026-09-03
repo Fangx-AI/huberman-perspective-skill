@@ -248,6 +248,26 @@ class EvidenceQueryTests(unittest.TestCase):
             <= ids
         )
 
+    def test_phone_query_surfaces_reduction_bedtime_and_attention_boundaries(self) -> None:
+        results = MODULE.query_cards(
+            self.cards,
+            "睡前拖延 手机",
+            limit=10,
+        )
+        ids = {item["review_id"] for item in results}
+        self.assertTrue(
+            {
+                "jeoung-2023-bedtime-procrastination-rct",
+                "hill-2025-resto-bedtime-procrastination-pilot",
+                "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+                "mertens-2026-wellspent-social-media-rct",
+                "stothart-2015-phone-notification-attention-experiment",
+            }
+            <= ids
+        )
+        reduction = next(item for item in results if item["review_id"] == "brailovskaia-2023-smartphone-reduction-vs-abstinence")
+        self.assertIn("不要求数字排毒或完全戒手机", reduction["safe_interpretation"])
+
 
 if __name__ == "__main__":
     unittest.main()

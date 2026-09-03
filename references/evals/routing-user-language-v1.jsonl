@@ -97,3 +97,18 @@
 {"case_id":"route-097","category":"alcohol-overdose","prompt":"朋友酒后一直吐，叫不醒，呼吸也怪怪的。","expected_playbook":"reduce-alcohol-use-with-withdrawal-and-overdose-safety"}
 {"case_id":"route-098","category":"alcohol-blackout-support","prompt":"我最近喝酒越来越多，还经常断片，想找办法。","expected_playbook":"reduce-alcohol-use-with-withdrawal-and-overdose-safety"}
 {"case_id":"route-099","category":"alcohol-reduction-not-abstinence","prompt":"我只想先减少喝酒，不想被逼着彻底戒。","expected_playbook":"reduce-alcohol-use-with-withdrawal-and-overdose-safety"}
+{"case_id":"route-100","category":"phone-late-night-scroll","prompt":"我一刷短视频就停不下来，睡前经常刷到两三点。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-101","category":"phone-time-loss","prompt":"我想少玩手机，但每次拿起来就忘了时间。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-102","category":"bedtime-procrastination","prompt":"我晚上总是报复性熬夜，明明困了也不睡。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-103","category":"doomscrolling","prompt":"I keep doomscrolling social media at night and want to reduce screen time.","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-104","category":"phone-app-limit-ignored","prompt":"我给小红书设了应用限时，但每天都忽略，还是一直刷。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-105","category":"phone-essential-access","prompt":"值班手机必须接电话，但我总刷短视频停不下来，怎么只改这一项？","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-106","category":"minor-phone-use","prompt":"我14岁，放学后刷短视频停不下来，已经影响作业和睡觉。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-107","category":"phone-gambling-harm","prompt":"我在手机上赌博越来越控制不住，已经欠钱并影响家里。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-108","category":"phone-driving-risk","prompt":"我开车时也忍不住看手机，差点撞到人。","expected_playbook":"reduce-unwanted-phone-use-and-bedtime-delay"}
+{"case_id":"route-109","category":"phone-removed-insomnia","prompt":"放下手机后还是睡不着。","expected_playbook":"support-trouble-falling-or-staying-asleep"}
+{"case_id":"route-110","category":"insomnia-causes-phone-use","prompt":"我不是刷手机才晚睡，是因为睡不着才刷手机。","expected_playbook":"support-trouble-falling-or-staying-asleep"}
+{"case_id":"route-111","category":"phone-work-interruption","prompt":"工作时总被手机打断，交付一直做不完。","expected_playbook":"protect-one-focus-block"}
+{"case_id":"route-112","category":"phone-repair-negative","prompt":"手机屏幕坏了怎么修？","expected_playbook":null}
+{"case_id":"route-113","category":"short-video-marketing-negative","prompt":"怎么提高短视频播放量？","expected_playbook":null}
+{"case_id":"route-114","category":"phone-negated-night-waking","prompt":"我不玩手机，只是半夜醒后睡不回去。","expected_playbook":"support-trouble-falling-or-staying-asleep"}

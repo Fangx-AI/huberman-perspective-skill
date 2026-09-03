@@ -338,6 +338,50 @@ class ActionPlaybookTests(unittest.TestCase):
             "start-and-sustain-one-habit",
         )
 
+    def test_phone_route_restores_a_life_result_without_moralizing_screen_time(self) -> None:
+        by_id = {item["playbook_id"]: item for item in self.playbooks}
+        phone = by_id["reduce-unwanted-phone-use-and-bedtime-delay"]
+        self.assertEqual(len(phone["actions"]), 3)
+        for phrase in (
+            "一个最容易失控的应用",
+            "满足同一需要的替代",
+            "现实结果",
+            "而不是只追总屏幕时长",
+            "多巴胺排毒",
+            "保留值班、照护、医疗、无障碍和紧急联络",
+        ):
+            self.assertIn(phrase, phone["safe_summary"])
+        self.assertIn("不羞辱", phone["actions"][0]["minimum_version"])
+        self.assertIn("驾驶", " ".join(phone["escalation"]))
+        self.assertIn("未成年人", " ".join(phone["escalation"]))
+        self.assertEqual(
+            {link["review_id"] for link in phone["evidence_links"]},
+            {
+                "jeoung-2023-bedtime-procrastination-rct",
+                "hill-2025-resto-bedtime-procrastination-pilot",
+                "valshtein-2020-mcii-bedtime-procrastination-trials",
+                "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+                "pieh-2025-smartphone-screen-time-reduction-rct",
+                "mertens-2026-wellspent-social-media-rct",
+                "stothart-2015-phone-notification-attention-experiment",
+            },
+        )
+        self.assertEqual({link["claim_id"] for link in phone["claim_links"]}, {"batch02-claim-0047"})
+
+    def test_phone_routing_separates_delay_insomnia_focus_and_non_health_requests(self) -> None:
+        expected = {
+            "我一刷短视频就停不下来，睡前经常刷到两三点": "reduce-unwanted-phone-use-and-bedtime-delay",
+            "我晚上总是报复性熬夜，明明困了也不睡": "reduce-unwanted-phone-use-and-bedtime-delay",
+            "放下手机后还是睡不着": "support-trouble-falling-or-staying-asleep",
+            "工作时总被手机打断": "protect-one-focus-block",
+            "我不玩手机，只是半夜醒后睡不回去": "support-trouble-falling-or-staying-asleep",
+        }
+        for query, playbook_id in expected.items():
+            with self.subTest(query=query):
+                self.assertEqual(QUERY.query_playbooks(self.playbooks, query)[0]["playbook_id"], playbook_id)
+        self.assertEqual(QUERY.query_playbooks(self.playbooks, "手机屏幕坏了怎么修"), [])
+        self.assertEqual(QUERY.query_playbooks(self.playbooks, "怎么提高短视频播放量"), [])
+
     def test_validator_rejects_more_than_three_actions_and_unknown_refs(self) -> None:
         too_many = copy.deepcopy(self.playbooks)
         extra = copy.deepcopy(too_many[0]["actions"][0])

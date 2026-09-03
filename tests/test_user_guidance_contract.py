@@ -56,6 +56,12 @@ class UserGuidanceContractTests(unittest.TestCase):
             "不要求独自在家突然停酒",
             "不要让其开车或独处",
             "咖啡、冷水澡、走路或催吐",
+            "已经困且有机会睡",
+            "手机放下后仍想睡却睡不着",
+            "只处理一个非必要应用",
+            "统一每日屏幕时长",
+            "多巴胺排毒",
+            "手机使用不是道德分数",
         ):
             self.assertIn(phrase, skill)
         self.assertLess(len(skill.splitlines()), 180)
@@ -78,7 +84,7 @@ class UserGuidanceContractTests(unittest.TestCase):
         self.assertIn("npx skills add Fangx-AI/huberman-perspective-skill", readme[:1800])
         self.assertIn("最小版本", readme[:1800])
         self.assertNotIn("当前公开快照包括", readme[:1800])
-        self.assertIn("普通睡眠、精力、压力、专注、习惯、运动、饮食、体重/食欲和少喝酒问题也可以自动触发", readme)
+        self.assertIn("普通睡眠、精力、压力、专注、习惯、运动、饮食、体重/食欲、少喝酒和刷手机停不下来等问题也可以自动触发", readme)
 
     def test_readme_does_not_send_users_to_missing_scripts(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")

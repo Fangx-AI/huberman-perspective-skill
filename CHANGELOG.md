@@ -7,6 +7,21 @@ All notable changes follow a simplified Keep a Changelog format. Versions use Se
 - Continue expanding structured study cards beyond the first high-priority batch.
 - Add replication/contradiction review cards and periodic drift checks for official Episode and platform metadata.
 
+## [0.23.0] - 2026-09-03
+
+### Added
+
+- Added a user-first path for unwanted phone use and bedtime delay that changes one application and one recurring context while preserving on-call, caregiving, medical, accessibility and emergency access.
+- Added seven bounded research cards, five evidence relations and one timestamped Huberman/Haidt source locator; guest claims and youth-focused discussion remain explicitly limited.
+- Added 15 ordinary-language routing regressions, bringing the maintained first-use corpus to 114 cases, including insomnia, focus and non-health negative controls.
+- Added an isolated eight-scenario user-value evaluation covering bedtime scrolling, ignored timers, on-call access, insomnia, work interruption, minors, gambling debt and driving risk; all eight passed with no safety hard failure.
+
+### Changed
+
+- Phone-use answers now restore one user-chosen life result instead of maximizing a screen-time score, and reject universal limits, full-device abstinence, shame and “dopamine detox”.
+- Bedtime procrastination now routes separately from phone-removed insomnia; severe harm and safety contexts stop ordinary habit experiments.
+- Updated the public snapshot to 72 evidence cards, 47 relations, 17 playbooks, 51 actions and 47 public claim locators.
+
 ## [0.22.0] - 2026-09-03
 
 ### Added

@@ -166,6 +166,28 @@ class AcademicStudyCardTests(unittest.TestCase):
             self.assertEqual(by_id[review_id]["source_scope"], "external-context")
             self.assertEqual(by_id[review_id]["queue_urls"], [])
 
+    def test_phone_cluster_keeps_bedtime_reduction_attention_and_rebound_separate(self) -> None:
+        by_id = {card["review_id"]: card for card in self.cards}
+        expected = {
+            "jeoung-2023-bedtime-procrastination-rct",
+            "hill-2025-resto-bedtime-procrastination-pilot",
+            "valshtein-2020-mcii-bedtime-procrastination-trials",
+            "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+            "pieh-2025-smartphone-screen-time-reduction-rct",
+            "mertens-2026-wellspent-social-media-rct",
+            "stothart-2015-phone-notification-attention-experiment",
+        }
+        self.assertTrue(expected <= set(by_id))
+        self.assertIn("开放标签", " ".join(by_id["jeoung-2023-bedtime-procrastination-rct"]["limitations"]))
+        self.assertIn("活性对照", by_id["hill-2025-resto-bedtime-procrastination-pilot"]["result_summary"])
+        self.assertIn("不要求数字排毒", by_id["brailovskaia-2023-smartphone-reduction-vs-abstinence"]["safe_interpretation"])
+        self.assertIn("反弹", by_id["pieh-2025-smartphone-screen-time-reduction-rct"]["safe_interpretation"])
+        self.assertIn("未显著改善", " ".join(by_id["mertens-2026-wellspent-social-media-rct"]["null_findings"]))
+        self.assertIn("必要联络", by_id["stothart-2015-phone-notification-attention-experiment"]["safe_interpretation"])
+        for review_id in expected:
+            self.assertEqual(by_id[review_id]["source_scope"], "external-context")
+            self.assertEqual(by_id[review_id]["queue_urls"], [])
+
     def test_review_card_uses_review_scope_instead_of_fake_sample_count(self) -> None:
         card = next(item for item in self.cards if item["review_id"] == "dunlosky-2013-effective-learning-techniques-review")
         self.assertEqual(card["verification_status"], "verified-review")

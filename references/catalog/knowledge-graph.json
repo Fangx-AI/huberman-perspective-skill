@@ -412,6 +412,61 @@
     },
     {
       "relation": "has_action",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:name-one-phone-loop-and-pass-the-safety-gate"
+    },
+    {
+      "relation": "has_action",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:review-life-result-not-screen-time-morality"
+    },
+    {
+      "relation": "uses_claim_context",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "claim:batch02-claim-0047"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:hill-2025-resto-bedtime-procrastination-pilot"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:jeoung-2023-bedtime-procrastination-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:mertens-2026-wellspent-social-media-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:pieh-2025-smartphone-screen-time-reduction-rct"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:stothart-2015-phone-notification-attention-experiment"
+    },
+    {
+      "relation": "uses_study_evidence",
+      "source": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "target": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials"
+    },
+    {
+      "relation": "has_action",
       "source": "action-playbook:restore-daytime-energy-without-stimulant-stacking",
       "target": "action-step:restore-daytime-energy-without-stimulant-stacking:review-the-latest-caffeine-without-escalating"
     },
@@ -1169,6 +1224,56 @@
       "relation": "grounded_in",
       "source": "action-step:reduce-alcohol-use-with-withdrawal-and-overdose-safety:triage-overdose-withdrawal-and-high-risk-context-first",
       "target": "study-card:niaaa-alcohol-overdose-danger-signs"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "target": "claim:batch02-claim-0047"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "target": "study-card:hill-2025-resto-bedtime-procrastination-pilot"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "target": "study-card:mertens-2026-wellspent-social-media-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "target": "study-card:stothart-2015-phone-notification-attention-experiment"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "target": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:name-one-phone-loop-and-pass-the-safety-gate",
+      "target": "claim:batch02-claim-0047"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:name-one-phone-loop-and-pass-the-safety-gate",
+      "target": "study-card:jeoung-2023-bedtime-procrastination-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:review-life-result-not-screen-time-morality",
+      "target": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:review-life-result-not-screen-time-morality",
+      "target": "study-card:mertens-2026-wellspent-social-media-rct"
+    },
+    {
+      "relation": "grounded_in",
+      "source": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:review-life-result-not-screen-time-morality",
+      "target": "study-card:pieh-2025-smartphone-screen-time-reduction-rct"
     },
     {
       "relation": "grounded_in",
@@ -2049,6 +2154,11 @@
       "relation": "located_in_video",
       "source": "claim:batch02-claim-0046",
       "target": "youtube:https://www.youtube.com/watch?v=DkS1pkKpILY"
+    },
+    {
+      "relation": "located_in_video",
+      "source": "claim:batch02-claim-0047",
+      "target": "youtube:https://www.youtube.com/watch?v=csubiPlvFWk"
     },
     {
       "relation": "cites_resource",
@@ -43432,6 +43542,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:hill-2025-qualifies-jeoung-2023-bedtime-procrastination",
+      "target": "study-card:jeoung-2023-bedtime-procrastination-rct"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:kaiser-2023-qualifies-laukkanen-2018-sauna-safety",
       "target": "study-card:laukkanen-2018-sauna-cvd-mortality-cohort"
     },
@@ -43454,6 +43569,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:mason-2022-qualifies-powner-2024-light-context",
       "target": "study-card:powner-2024-red-light-glucose"
+    },
+    {
+      "relation": "qualifies",
+      "source": "evidence-relation:mertens-2026-qualifies-brailovskaia-screen-time-as-outcome",
+      "target": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence"
     },
     {
       "relation": "qualifies",
@@ -43497,6 +43617,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:pieh-2025-qualifies-universal-smartphone-time-limits",
+      "target": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
       "target": "study-card:leppaluoto-1986-repeated-sauna-endocrine"
     },
@@ -43532,6 +43657,11 @@
     },
     {
       "relation": "qualifies",
+      "source": "evidence-relation:stothart-2015-qualifies-notification-removal",
+      "target": "study-card:mertens-2026-wellspent-social-media-rct"
+    },
+    {
+      "relation": "qualifies",
       "source": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
       "target": "study-card:cain-2025-cold-water-wellbeing-review"
     },
@@ -43539,6 +43669,11 @@
       "relation": "qualifies",
       "source": "evidence-relation:va-dod-2025-qualifies-edinger-2021-self-directed-sleep-restriction",
       "target": "study-card:edinger-2021-insomnia-behavioral-guideline"
+    },
+    {
+      "relation": "supports",
+      "source": "evidence-relation:valshtein-2020-supports-contextual-bedtime-plan",
+      "target": "study-card:jeoung-2023-bedtime-procrastination-rct"
     },
     {
       "relation": "qualifies",
@@ -44194,6 +44329,81 @@
       "relation": "reviews_resource",
       "source": "study-card:berman-2008-nature-directed-attention",
       "target": "resource:https://journals.sagepub.com/doi/10.1111/j.1467-9280.2008.02225.x?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "evidence-topic:abstinence"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "evidence-topic:behavior-change"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "evidence-topic:reduction"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "evidence-topic:smartphone-use"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "evidence-topic:well-being"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-limitation:5718d6682d3141ee"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-limitation:8e791ff6f599da9d"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-limitation:96d2629c09f28beb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-limitation:973470b70b9d256a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-finding:ca0ce834dac13995"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-finding:cb57fd0bec44897b"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-finding:e1c5fecb3b7cac40"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "study-finding:88243da093dfde26"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "resource:https://doi.org/10.1037/xap0000430"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/35389685/"
     },
     {
       "relation": "has_evidence_relation",
@@ -45811,6 +46021,86 @@
       "target": "resource:https://www.sciencedirect.com/science/article/pii/S088915912100177X?via%3Dihub"
     },
     {
+      "relation": "has_evidence_relation",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-relation:hill-2025-qualifies-jeoung-2023-bedtime-procrastination"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-topic:bedtime-procrastination"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-topic:evening-screen-use"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-topic:feasibility"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-topic:sleep-duration"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "evidence-topic:substitution"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-limitation:46857f5e90c0dcd6"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-limitation:deb6952afc4158de"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-limitation:e6f85528eb721d7f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-limitation:e9a9b6bde6471a7e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-finding:0852ee9ea8c28cca"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-finding:5391ea6a7ecd3ba2"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-finding:e93ffe92dba56049"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "study-finding:096f6cb99bea4a29"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "resource:https://doi.org/10.1016/j.sleep.2025.02.043"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/40081281/"
+    },
+    {
       "relation": "has_evidence_topic",
       "source": "study-card:jagdeo-2018-led-dermatology-review",
       "target": "evidence-topic:acne"
@@ -45974,6 +46264,81 @@
       "relation": "reviews_resource",
       "source": "study-card:jazayeri-2008-epa-fluoxetine-mdd",
       "target": "resource:https://journals.sagepub.com/doi/10.1080/00048670701827275?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "evidence-topic:bedtime-procrastination"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "evidence-topic:behavior-change"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "evidence-topic:emotion-regulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "evidence-topic:young-adults"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-limitation:327dc26e1a9b2db6"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-limitation:515fba53521cd239"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-limitation:b8d4ccc77d2650c1"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-limitation:cea18bb94c83fd10"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-finding:06b32db88fa44369"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-finding:34fcde5972652a6e"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-finding:6badf8aaf5399d0a"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "study-finding:1c2339a939cd49df"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "resource:https://doi.org/10.1016/j.sleep.2023.06.001"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/37354745/"
     },
     {
       "relation": "has_evidence_relation",
@@ -46829,6 +47194,86 @@
       "relation": "reviews_resource",
       "source": "study-card:mason-2022-light-during-sleep",
       "target": "resource:https://www.pnas.org/doi/10.1073/pnas.2113290119"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-relation:mertens-2026-qualifies-brailovskaia-screen-time-as-outcome"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-topic:autonomy"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-topic:digital-nudge"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-topic:screen-time"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-topic:self-regulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "evidence-topic:social-media"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-limitation:2f5fc2ca8d1fc5cb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-limitation:3c6d5eb046a7f35c"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-limitation:50372bb8878025e8"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-limitation:f06b35175cd0d8ae"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-finding:9ed7cafcbba6d083"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-finding:a719c8a0a953158a"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-finding:fe17a8aba5c1d65a"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "study-finding:a2e5a5140e9e3a31"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "resource:https://doi.org/10.2196/56824"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:mertens-2026-wellspent-social-media-rct",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/41950504/"
     },
     {
       "relation": "has_evidence_topic",
@@ -47719,6 +48164,86 @@
       "relation": "reviews_resource",
       "source": "study-card:niddk-prescription-weight-management-medications",
       "target": "resource:https://www.niddk.nih.gov/health-information/weight-management/prescription-medications-treat-overweight-obesity"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-relation:pieh-2025-qualifies-universal-smartphone-time-limits"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-topic:mental-health"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-topic:rebound"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-topic:sleep"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-topic:smartphone-screen-time"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "evidence-topic:students"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-limitation:008a702844f07bbc"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-limitation:490dc4b21ceb5252"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-limitation:5ede43d3afd8be66"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-limitation:63e4c3fa0207348c"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-finding:04f2fb89390396d9"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-finding:9f2c9d297e31fa03"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-finding:e66be6bfe26bd751"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "study-finding:1a7b96a672099ac9"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "resource:https://doi.org/10.1186/s12916-025-03944-z"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/39985031/"
     },
     {
       "relation": "has_evidence_topic",
@@ -49007,6 +49532,86 @@
     },
     {
       "relation": "has_evidence_relation",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-relation:stothart-2015-qualifies-notification-removal"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-topic:attention"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-topic:interruptions"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-topic:laboratory"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-topic:notifications"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "evidence-topic:smartphone"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-limitation:2b4e85618a17a3cb"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-limitation:3f379572dd63124f"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-limitation:460a36245657b565"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-limitation:6a909d104f196082"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-finding:e4a142262ad42b91"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-finding:ee9ae0c791221872"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-finding:fcf18f475ffee5a6"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "study-finding:0bcfc63383737df1"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "resource:https://doi.org/10.1037/xhp0000100"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/26121498/"
+    },
+    {
+      "relation": "has_evidence_relation",
       "source": "study-card:tipton-2017-cold-water-risks-benefits-review",
       "target": "evidence-relation:tipton-2017-qualifies-cain-2025-safety"
     },
@@ -49184,6 +49789,86 @@
       "relation": "reviews_resource",
       "source": "study-card:va-dod-2025-insomnia-osa-guideline",
       "target": "resource:https://www.healthquality.va.gov/guidelines/CD/insomnia/I-OSA-CPG_2025-Guideline_final_20250915.pdf"
+    },
+    {
+      "relation": "has_evidence_relation",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-relation:valshtein-2020-supports-contextual-bedtime-plan"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-topic:bedtime-procrastination"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-topic:if-then-planning"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-topic:implementation-intentions"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-topic:self-regulation"
+    },
+    {
+      "relation": "has_evidence_topic",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "evidence-topic:students"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-limitation:1df7c64363f7b776"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-limitation:9cf209f71e6bb4cf"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-limitation:9dbdf55d392120c0"
+    },
+    {
+      "relation": "has_limitation",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-limitation:ea859bb9ef604e4f"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-finding:0a3fa0e0b26c40d3"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-finding:386bb44496d8d7cf"
+    },
+    {
+      "relation": "reports_null_finding",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-finding:9e1fff3cbb5723b8"
+    },
+    {
+      "relation": "reports_result",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "study-finding:3cf5a843c488e277"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "resource:https://doi.org/10.1080/08870446.2019.1652753"
+    },
+    {
+      "relation": "reviews_resource",
+      "source": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target": "resource:https://pubmed.ncbi.nlm.nih.gov/31403339/"
     },
     {
       "relation": "has_evidence_topic",
@@ -49596,7 +50281,7 @@
       "target": "resource:https://pubmed.ncbi.nlm.nih.gov/23910656/"
     }
   ],
-  "generated_at": "2026-09-03T14:16:45.685933+00:00",
+  "generated_at": "2026-09-03T14:39:09.242907+00:00",
   "nodes": [
     {
       "aliases": [
@@ -49944,6 +50629,55 @@
       "scope": "适用于普通成人想减少一个重复饮酒场景、理解酒精与睡眠关系或获得下一步支持；也可用于识别疑似戒断、药物混用和急性过量并立即分流，但不是酒精使用障碍诊断、家庭戒断、个人安全酒量或药物管理",
       "type": "action-playbook",
       "user_goal": "在不被说教或强迫一刀切的前提下，减少一个最常发生的饮酒场景，同时及时识别不能独自处理的戒断、混用和醉酒风险"
+    },
+    {
+      "aliases": [
+        "刷短视频停不下来",
+        "一拿手机就忘了时间",
+        "想少玩手机",
+        "手机上瘾",
+        "报复性熬夜",
+        "明明困了也不睡",
+        "睡前一直刷手机",
+        "总是刷到凌晨",
+        "社交媒体戒不掉",
+        "应用限时总被跳过",
+        "玩游戏停不下来",
+        "doomscrolling",
+        "reduce screen time",
+        "problematic smartphone use"
+      ],
+      "baseline_checks": [
+        "明明已经困、也有机会睡却继续刷，优先按睡前拖延处理；手机放下后仍想睡却睡不着、夜醒或早醒，转失眠支持，不继续加手机限制",
+        "只选择一个最困扰的应用、一个重复时刻和一个现实结果；总屏幕时长不是诊断，也不把工作、照护、联络、导航或无障碍使用算成失败",
+        "先判断手机满足的功能并准备同功能替代；不使用羞耻、强制没收、统一每日小时数、全设备戒断或“多巴胺排毒”"
+      ],
+      "escalation": [
+        "正在驾驶或操作危险设备时，在最近安全位置停止使用手机；无法安全停下时寻求道路或当地紧急协助",
+        "出现自伤/他伤想法、无法保证安全、勒索/性剥削、严重网络霸凌或现实威胁时，立即联系当地急救、危机支持或可信任者并获得实时帮助",
+        "赌博、色情内容或游戏导致显著金钱、关系、学习/工作损害，或长期反复无法控制时，联系相应成瘾/心理健康专业服务；不把一般屏幕时长当诊断",
+        "持续低落、焦虑、孤独、失眠或功能受损使手机成为主要逃避方式时，优先评估并处理这些问题；手机规则只是辅助",
+        "未成年人明显受损、遭遇不安全内容或家庭冲突升级时，由可信任照护者、学校和儿科/心理专业人员共同处理，避免羞辱与秘密惩罚"
+      ],
+      "first_questions": [
+        "你最想拿回的一个现实结果是什么：按自己想要的时间睡、完成一段工作、专心陪人，还是休息后真的恢复一点？",
+        "最容易失控的是哪个应用和哪个时刻；打开前你更像是想放松、逃开任务、等消息、获得一点属于自己的时间，还是其实已经睡不着？",
+        "手机是否承担值班、照护、医疗、无障碍或紧急联络；是否已明显影响工作/学习/关系，或伴持续低落、自伤想法、网络霸凌、赌博/色情内容失控和现实安全风险？"
+      ],
+      "id": "action-playbook:reduce-unwanted-phone-use-and-bedtime-delay",
+      "label": "把失控刷手机变成一次可控选择",
+      "last_reviewed": "2026-09-03",
+      "not_for": [
+        "手机放下后仍想睡却睡不着、夜醒或早醒的失眠处理；这应转失眠剧本",
+        "驾驶、道路、机械操作、照护疏忽、网络勒索/剥削、自伤/他伤风险或其他急性安全问题的普通习惯实验",
+        "诊断手机/社交媒体成瘾，或远程治疗赌博障碍、游戏障碍、强迫性色情内容使用、抑郁、焦虑或 ADHD",
+        "对未成年人强制没收、监控、羞辱或直接套用成人屏幕时长；家庭、学校与临床情境需共同决策",
+        "要求完全数字排毒、关闭全部必要通知、统一每日小时数、固定睡前关机时间或用蓝光/多巴胺解释全部问题"
+      ],
+      "safe_summary": "先别戒整部手机，也别用“多巴胺排毒”责怪自己。只找一个最容易失控的应用和时刻，问它当时替你满足了什么：放松、逃开任务、等消息、社交，还是补回一点属于自己的时间。下一次只加一个自己选的暂停，并准备满足同一需要的替代；保留值班、照护、医疗、无障碍和紧急联络。复盘看一次自动重开和一个现实结果，而不是只追总屏幕时长。明明困却继续刷属于睡前拖延；手机放下后仍睡不着则转失眠支持。驾驶、无法保证安全、网络勒索/剥削、自伤风险、赌博/色情/游戏造成明显伤害，或持续功能受损时，停止普通习惯实验并获得实时或专业帮助。",
+      "scope": "适用于一般成人在非紧急情况下想减少社交媒体、短视频、游戏或睡前自动刷手机；先区分睡前拖延、放下手机后的失眠、工作/照护等必要使用，以及需要专业支持的明显功能受损",
+      "type": "action-playbook",
+      "user_goal": "不靠自责、统一限时或“多巴胺排毒”，减少一个最困扰的自动刷手机场景，恢复睡眠、专注、相处或自己真正想要的休息"
     },
     {
       "aliases": [
@@ -50744,6 +51478,60 @@
       "trigger": "用户或身边的人当前醉酒、准备驾驶，或提到每日大量饮酒、减停后不适、既往戒断抽搐/幻觉、镇静药物、妊娠或未成年时",
       "type": "action-step",
       "why": "叫不醒、呼吸异常、反复呕吐、抽搐或意识变化可能危及生命；长期大量饮酒后突然停止也可能发生危险戒断，酒精与镇静药/阿片可共同抑制呼吸"
+    },
+    {
+      "adaptation": "提醒总被跳过时，不把时限设得更狠；改一个更早的环境线索或换更能满足同一需要的替代。必要通知被漏掉就恢复并只关非必要来源；放下手机后仍睡不着则转失眠支持",
+      "classification": "bounded-experiment",
+      "id": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:add-one-self-chosen-pause-and-same-function-substitute",
+      "label": "在下一次最常发生的触发点，只增加一个用户自己选择的暂停，并准备一个能满足同一需要的替代；保留必要联络",
+      "metric": "目标场景中是否少了一次自动重开或更容易主动停下，以及入睡、工作、相处或休息质量中的一个现实结果是否更接近目标",
+      "minimum_version": "写成一句：“如果我在____又打开____，我先____，然后再决定要不要继续。”暂停可以是关闭这个应用的非必要通知、把入口移出随手位置、退出登录、在用户自定节点弹出提醒，或把它留到电脑使用；替代要满足同一需要，例如真正休息、联系某个人或结束一天。睡前已经困时，只把这一应用停在固定位置并转向预先选好的低刺激替代；不规定统一关机时间，也不要求把整部手机放到不安全或无法联络的位置。",
+      "playbook_id": "reduce-unwanted-phone-use-and-bedtime-delay",
+      "priority": 2,
+      "review_after_days": 3,
+      "stop_conditions": [
+        "干预导致漏接关键照护、医疗、值班、交通或紧急联系，或需要绕过安全/无障碍功能",
+        "为了强行断网而引发家庭冲突、监控、惩罚、藏匿设备、睡眠进一步减少或明显情绪恶化"
+      ],
+      "trigger": "已明确一个应用、一个场景和手机当时承担的需要，且没有第一步的高风险信号时",
+      "type": "action-step",
+      "why": "随机试验支持一个具体的如果—那么计划、自定义暂停或替代行为可改变短期使用；完全戒断并非必要，且僵硬总时长目标容易反弹"
+    },
+    {
+      "adaptation": "若原因是放下手机仍睡不着，改走失眠路径；若是值班、照护或无障碍需要，保留必要入口，只处理一个非必要应用；若是长期低落、孤独或工作压迫，优先处理这些来源而不是继续加锁",
+      "classification": "framework-inference",
+      "id": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:name-one-phone-loop-and-pass-the-safety-gate",
+      "label": "先把问题缩成“一个应用—一个时刻—一个真正需要—一个被挤掉的结果”，同时排除驾驶、危机、严重功能受损和特殊内容风险",
+      "metric": "是否明确一个具体循环、手机承担的真实需要、一个必要联络例外和一个最想恢复的生活结果",
+      "minimum_version": "只写一句：“我通常在____打开____，其实想要____，结果挤掉了____。”如果正在驾驶或操作危险设备，先在最近安全位置停止使用；若伴无法保证安全、自伤/他伤想法、严重网络霸凌/勒索、赌博或色情内容导致明显伤害，停止普通习惯实验并获得实时或专业帮助。未成年人不单独套成人方案，由可信任照护者共同处理且不羞辱。",
+      "playbook_id": "reduce-unwanted-phone-use-and-bedtime-delay",
+      "priority": 1,
+      "review_after_days": 1,
+      "stop_conditions": [
+        "使用手机正在造成驾驶、道路、机械、照护或其他现实安全风险",
+        "出现自伤/他伤风险、无法保证安全、勒索/剥削、严重网络霸凌、赌博性损失、色情内容明显失控或快速功能恶化"
+      ],
+      "trigger": "用户说手机、短视频、社交媒体或游戏停不下来、忘了时间、报复性熬夜或想戒手机时",
+      "type": "action-step",
+      "why": "睡前拖延可能承担情绪调节、补偿和归属功能；只责怪意志力或只看总时长，会删掉用户真正需要的休息、联络或支持，也可能漏掉更严重的问题"
+    },
+    {
+      "adaptation": "时长下降但生活结果没变时，不继续追数字，重新确认真正问题；结果改善但总时长没明显变时，可保留当前场景规则；明显功能受损或反复无法控制时，从自助转专业评估",
+      "classification": "evidence-supported",
+      "id": "action-step:reduce-unwanted-phone-use-and-bedtime-delay:review-life-result-not-screen-time-morality",
+      "label": "复盘一个行为信号和一个生活结果；没有改善就换场景或获得支持，不把反弹解释成自律差",
+      "metric": "自动打开/重开是否下降；用户选择的现实结果是否改善；必要功能是否保留；限制是否带来额外焦虑、冲突或绕过行为",
+      "minimum_version": "只比较两件事：目标应用是否少了一次自动打开，以及你最在意的睡眠/工作/相处/休息是否变好。两者都没变，就撤销无用限制，只换一个触发点或替代。反复失控并明显影响学习、工作、关系或睡眠，或手机主要用于逃避持续低落、焦虑、孤独时，联系合格心理/睡眠或相应专业支持；不要求先失败固定天数。",
+      "playbook_id": "reduce-unwanted-phone-use-and-bedtime-delay",
+      "priority": 3,
+      "review_after_days": 7,
+      "stop_conditions": [
+        "限制越来越严、不断绕过并伴明显羞耻、冲突、睡眠不足、工作/学习下降或社交退缩",
+        "出现持续抑郁/焦虑、无法照顾自己、自伤/他伤风险、赌博损失、性剥削或其他需要专门处理的问题"
+      ],
+      "trigger": "同一个最小改变已经出现几次，或用户准备因一次反弹而完全戒手机、叠加多个限制时",
+      "type": "action-step",
+      "why": "短期减少时长不一定改变问题性使用或自我效能，严格目标也可能快速反弹；用户真正需要的是恢复睡眠、专注、关系或休息，而不是得到漂亮的屏幕时长数字"
     },
     {
       "adaptation": "调整后睡眠或次日状态改善才保留；无变化就恢复基线并检查其他原因，不继续加码或叠加兴奋剂。日常总量不清、摄入高、停用会头痛/恶心或正在用药时，不自行选择直接停还是逐步减，先问医生/药师如何安全调整",
@@ -52170,6 +52958,20 @@
         "01:04:25",
         "01:25:25",
         "01:46:54"
+      ],
+      "type": "claim"
+    },
+    {
+      "boundary": "可复用的是先判断手机在当前场景中替用户满足了什么需要，再只改变一个应用、一个时刻和一个环境线索；本集以 Huberman 与 Jonathan Haidt 的混合对话及青少年议题为主，不能把嘉宾观点升级为所有成人的因果定论、把一般手机困扰诊断为成瘾，或生成统一屏幕时长、强制没收和“多巴胺排毒”方案",
+      "evidence_layer": "framework-synthesis",
+      "id": "claim:batch02-claim-0047",
+      "label": "手机失控、睡前拖延与用户自主边界（2026-09-03）",
+      "record_kind": "topic-synthesis",
+      "speaker_scope": "guest-or-mixed",
+      "timestamps": [
+        "01:54:36",
+        "02:00:14",
+        "02:09:33"
       ],
       "type": "claim"
     },
@@ -56819,6 +57621,22 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "可以用预防触发或同功能替代做低风险实验，但不承诺固定增加睡眠分钟，也不把所有睡前拖延归因于屏幕。",
+      "id": "evidence-relation:hill-2025-qualifies-jeoung-2023-bedtime-procrastination",
+      "label": "睡前拖延行为干预是否足以证明减少屏幕会稳定增加睡眠",
+      "provenance_urls": [
+        "https://doi.org/10.1016/j.sleep.2025.02.043",
+        "https://doi.org/10.1016/j.sleep.2023.06.001"
+      ],
+      "rationale": "Jeoung 等的小型等待名单试验显示多成分干预改善睡前拖延；REST-O 活性对照也改善，干预组睡眠时长增加未达到显著，说明可行性强于确定疗效。",
+      "relation": "qualifies",
+      "relation_id": "hill-2025-qualifies-jeoung-2023-bedtime-procrastination",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "target_review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "病例系列没有总暴露分母，不能估计伤害率或证明桑拿整体净危害；它只支持防滑、禁酒、避免独处和症状即停等边界。",
       "id": "evidence-relation:kaiser-2023-qualifies-laukkanen-2018-sauna-safety",
       "label": "观察性死亡率关联能否被表述成桑拿对一般用户安全且越频繁越好",
@@ -56903,6 +57721,22 @@
       "reviewed_at": "2026-08-31",
       "source_review_id": "mason-2022-light-during-sleep",
       "target_review_id": "powner-2024-red-light-glucose",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "把时长当一个行为指标而非健康诊断；复盘还必须看睡眠、工作、关系或情绪等用户真正关心的结果。",
+      "id": "evidence-relation:mertens-2026-qualifies-brailovskaia-screen-time-as-outcome",
+      "label": "手机时长下降是否等于问题性使用、自我调节和底层需求已经改善",
+      "provenance_urls": [
+        "https://doi.org/10.2196/56824",
+        "https://doi.org/10.1037/xap0000430"
+      ],
+      "rationale": "一般减少组出现多项自报改善，但自定义单应用提醒虽降低时长，却没有显著改善问题性社交媒体使用或自我效能。",
+      "relation": "qualifies",
+      "relation_id": "mertens-2026-qualifies-brailovskaia-screen-time-as-outcome",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "mertens-2026-wellspent-social-media-rct",
+      "target_review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
       "type": "evidence-relation"
     },
     {
@@ -57038,6 +57872,22 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "不把一小时减少或两小时上限变成个人处方；优先由用户选择一个应用、时刻和现实结果。",
+      "id": "evidence-relation:pieh-2025-qualifies-universal-smartphone-time-limits",
+      "label": "短期减少手机是否能推导出统一每日阈值和可长期维持的数字排毒",
+      "provenance_urls": [
+        "https://doi.org/10.1186/s12916-025-03944-z",
+        "https://doi.org/10.1037/xap0000430"
+      ],
+      "rationale": "两项试验都提供短期减少信号，但 Pieh 等的严格两小时目标在干预后迅速反弹，且只研究健康学生。",
+      "relation": "qualifies",
+      "relation_id": "pieh-2025-qualifies-universal-smartphone-time-limits",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "target_review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "两项实验方案、年代和人群不同，不构成严格复制；Podstawski含冷水且无平行对照，也不能证明桑拿本身无任何急性内分泌反应。",
       "id": "evidence-relation:podstawski-2021-qualifies-leppaluoto-1986-hormone-optimization",
       "label": "旧式极端重复桑拿中的急性生长激素和催乳素峰值，能否支持桑拿或冷热交替普遍提高睾酮并长期优化激素",
@@ -57158,6 +58008,22 @@
       "type": "evidence-relation"
     },
     {
+      "boundary": "只关闭用户选定场景中的非必要通知；保留照护、医疗、交通、工作值班和紧急联系人等必要联络。",
+      "id": "evidence-relation:stothart-2015-qualifies-notification-removal",
+      "label": "关闭通知是否应成为所有手机困扰的统一方案",
+      "provenance_urls": [
+        "https://doi.org/10.1037/xhp0000100",
+        "https://doi.org/10.2196/56824"
+      ],
+      "rationale": "实验室通知可扰乱持续注意，且自定义暂停能减少单应用时长；但两项研究都没有证明关闭全部通知能解决睡前拖延、情绪调节或长期问题性使用。",
+      "relation": "qualifies",
+      "relation_id": "stothart-2015-qualifies-notification-removal",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "stothart-2015-phone-notification-attention-experiment",
+      "target_review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "evidence-relation"
+    },
+    {
       "boundary": "该关系不是说冷水对所有健康成人都不可接受，也不提供个体安全阈值；它要求把环境和医学安全门放在潜在收益之前。",
       "id": "evidence-relation:tipton-2017-qualifies-cain-2025-safety",
       "label": "健康成人随机试验中的潜在 wellbeing 信号能否直接变成面向所有人的自助冷水建议",
@@ -57189,6 +58055,22 @@
       "reviewed_at": "2026-09-03",
       "source_review_id": "va-dod-2025-insomnia-osa-guideline",
       "target_review_id": "edinger-2021-insomnia-behavioral-guideline",
+      "type": "evidence-relation"
+    },
+    {
+      "boundary": "效果主要来自年轻学生自报，不能生成多个僵化规则、统一 bedtime 或临床失眠治疗。",
+      "id": "evidence-relation:valshtein-2020-supports-contextual-bedtime-plan",
+      "label": "睡前拖延是否适合用一个具体触发与预先选择的行动处理",
+      "provenance_urls": [
+        "https://doi.org/10.1080/08870446.2019.1652753",
+        "https://doi.org/10.1016/j.sleep.2023.06.001"
+      ],
+      "rationale": "两项学生随机试验支持围绕现实障碍形成如果—那么计划，Jeoung 等则显示睡前拖延承担多种功能；二者共同支持先识别场景再定单一计划。",
+      "relation": "supports",
+      "relation_id": "valshtein-2020-supports-contextual-bedtime-plan",
+      "reviewed_at": "2026-09-03",
+      "source_review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "target_review_id": "jeoung-2023-bedtime-procrastination-rct",
       "type": "evidence-relation"
     },
     {
@@ -57349,8 +58231,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:autonomy",
+      "label": "autonomy",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:bbt-i",
       "label": "BBT-I",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:bedtime-procrastination",
+      "label": "bedtime-procrastination",
       "type": "evidence-topic"
     },
     {
@@ -57634,6 +58526,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:digital-nudge",
+      "label": "digital-nudge",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:directed-attention",
       "label": "directed-attention",
       "type": "evidence-topic"
@@ -57709,6 +58606,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:emotion-regulation",
+      "label": "emotion-regulation",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:endurance",
       "label": "endurance",
       "type": "evidence-topic"
@@ -57739,6 +58641,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:evening-screen-use",
+      "label": "evening-screen-use",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:executive-attention",
       "label": "executive-attention",
       "type": "evidence-topic"
@@ -57766,6 +58673,11 @@
     {
       "id": "evidence-topic:fatigue",
       "label": "fatigue",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:feasibility",
+      "label": "feasibility",
       "type": "evidence-topic"
     },
     {
@@ -57934,6 +58846,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:if-then-planning",
+      "label": "if-then-planning",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:illness-days",
       "label": "illness-days",
       "type": "evidence-topic"
@@ -57946,6 +58863,11 @@
     {
       "id": "evidence-topic:immunosuppression",
       "label": "immunosuppression",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:implementation-intentions",
+      "label": "implementation-intentions",
       "type": "evidence-topic"
     },
     {
@@ -57969,8 +58891,18 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:interruptions",
+      "label": "interruptions",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:irradiance",
       "label": "irradiance",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:laboratory",
+      "label": "laboratory",
       "type": "evidence-topic"
     },
     {
@@ -58169,6 +59101,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:notifications",
+      "label": "notifications",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:nutrition",
       "label": "nutrition",
       "type": "evidence-topic"
@@ -58344,6 +59281,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:rebound",
+      "label": "rebound",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:recovery",
       "label": "recovery",
       "type": "evidence-topic"
@@ -58351,6 +59293,11 @@
     {
       "id": "evidence-topic:red-light",
       "label": "red-light",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:reduction",
+      "label": "reduction",
       "type": "evidence-topic"
     },
     {
@@ -58419,6 +59366,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:screen-time",
+      "label": "screen-time",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:seasonality",
       "label": "seasonality",
       "type": "evidence-topic"
@@ -58436,6 +59388,11 @@
     {
       "id": "evidence-topic:self-help",
       "label": "self-help",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:self-regulation",
+      "label": "self-regulation",
       "type": "evidence-topic"
     },
     {
@@ -58469,6 +59426,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:sleep-duration",
+      "label": "sleep-duration",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:sleep-environment",
       "label": "sleep-environment",
       "type": "evidence-topic"
@@ -58499,8 +59461,28 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:smartphone",
+      "label": "smartphone",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:smartphone-screen-time",
+      "label": "smartphone-screen-time",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:smartphone-use",
+      "label": "smartphone-use",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:social-jetlag",
       "label": "social-jetlag",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:social-media",
+      "label": "social-media",
       "type": "evidence-topic"
     },
     {
@@ -58561,6 +59543,16 @@
     {
       "id": "evidence-topic:stress-self-help",
       "label": "stress-self-help",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:students",
+      "label": "students",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:substitution",
+      "label": "substitution",
       "type": "evidence-topic"
     },
     {
@@ -58694,6 +59686,11 @@
       "type": "evidence-topic"
     },
     {
+      "id": "evidence-topic:well-being",
+      "label": "well-being",
+      "type": "evidence-topic"
+    },
+    {
       "id": "evidence-topic:wellbeing",
       "label": "wellbeing",
       "type": "evidence-topic"
@@ -58741,6 +59738,11 @@
     {
       "id": "evidence-topic:wound-healing",
       "label": "wound-healing",
+      "type": "evidence-topic"
+    },
+    {
+      "id": "evidence-topic:young-adults",
+      "label": "young-adults",
       "type": "evidence-topic"
     },
     {
@@ -62382,6 +63384,28 @@
       "verification_status": "verified-review"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：睡前拖延可能承担情绪调节、补偿和归属功能；小型年轻成人等待名单试验不能证明单一手机限制或通用作息处方。",
+      "id": "resource:https://doi.org/10.1016/j.sleep.2023.06.001",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1016/j.sleep.2023.06.001",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1016/j.sleep.2023.06.001",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部先导 RCT 核验：预防和替代睡前设备使用可行，但活性对照也改善且睡眠时长组间证据有限，不支持固定关机时间。",
+      "id": "resource:https://doi.org/10.1016/j.sleep.2025.02.043",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1016/j.sleep.2025.02.043",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1016/j.sleep.2025.02.043",
+      "verification_status": "verified-study"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "该文是心理学理论与证据综述，不是记忆增强、长寿或行为治疗干预；不能把理论框架写成人人适用的效果保证（证据台账回链；来源题名与 Episode 主题仍需分别解读。）",
       "id": "resource:https://doi.org/10.1037/0003-066X.54.3.165",
@@ -62392,6 +63416,39 @@
       "verification_status": "verified-review"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部随机干预核验：减少使用不必等于完全戒断；自报和单一国家样本不支持统一每日时长或“数字排毒”承诺。",
+      "id": "resource:https://doi.org/10.1037/xap0000430",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1037/xap0000430",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1037/xap0000430",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部实验核验：通知本身可扰乱本科生实验室注意任务，但不证明长期生活结局或必须关闭全部通知。",
+      "id": "resource:https://doi.org/10.1037/xhp0000100",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1037/xhp0000100",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1037/xhp0000100",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部双随机试验核验：单一触发的如果—那么计划可帮助学生减少自报睡前拖延，但不是临床失眠或长期数字依赖治疗证据。",
+      "id": "resource:https://doi.org/10.1080/08870446.2019.1652753",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1080/08870446.2019.1652753",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1080/08870446.2019.1652753",
+      "verification_status": "verified-study"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "PubMed 摘要已核对：89 名择期颈/腰椎手术患者按病房明亮侧或昏暗侧进行前瞻性比较；明亮侧日照强度平均高 46%，并与较低压力、镇痛药用量及费用相关。未随机分房，病房方向可能伴随其他差异；边缘显著的疼痛结果和术后样本不能外推为阳光镇痛处方。",
       "id": "resource:https://doi.org/10.1097/01.psy.0000149258.42508.70",
@@ -62400,6 +63457,28 @@
       "type": "resource",
       "url": "https://doi.org/10.1097/01.psy.0000149258.42508.70",
       "verification_status": "verified-observational"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：健康学生严格限时三周有短期信号但使用迅速反弹；两小时不是通用阈值，内容和目的未被区分。",
+      "id": "resource:https://doi.org/10.1186/s12916-025-03944-z",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.1186/s12916-025-03944-z",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.1186/s12916-025-03944-z",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：自定义暂停点降低单个应用时长，但未改善问题性社交媒体使用或自我效能；小样本、短期和商业应用关联需保留。",
+      "id": "resource:https://doi.org/10.2196/56824",
+      "kind": "academic-or-medical",
+      "label": "https://doi.org/10.2196/56824",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://doi.org/10.2196/56824",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "0",
@@ -74188,6 +75267,17 @@
       "verification_status": "verified-study"
     },
     {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部实验核验：通知本身可扰乱本科生实验室注意任务，但不证明长期生活结局或必须关闭全部通知。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/26121498/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+      "verification_status": "verified-study"
+    },
+    {
       "academic_episode_count": "1",
       "evidence_notes": "人工综述级核验：该结构化叙述性综述评估十种学习技术，将练习测试与分散练习评为高效用；同时指出无反馈且正确率低时优势可能消失、连续密集测试收益有限、迁移不总出现。它不是系统综述/荟萃分析，未给出统一效应量或固定次数/间隔。证据卡：academic-study-cards.jsonl#dunlosky-2013-effective-learning-techniques-review。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/26173288/",
@@ -74228,6 +75318,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/28833689/",
       "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部双随机试验核验：单一触发的如果—那么计划可帮助学生减少自报睡前拖延，但不是临床失眠或长期数字依赖治疗证据。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/31403339/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/31403339/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31403339/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "1",
@@ -74274,6 +75375,17 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部随机干预核验：减少使用不必等于完全戒断；自报和单一国家样本不支持统一每日时长或“数字排毒”承诺。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/35389685/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/35389685/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35389685/",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部安全信号核验：单一创伤中心209名桑拿伤害患者中，滑倒/跌倒和头晕/晕厥常见，少数需手术，并有酒后失去意识导致严重烧伤。无总暴露分母，不能估计发生率，但支持具体安全门。证据卡：academic-study-cards.jsonl#kaiser-2023-sauna-injury-series。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37211472/",
       "kind": "academic-or-medical",
@@ -74292,6 +75404,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37260255/",
       "verification_status": "verified-bibliographic"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：睡前拖延可能承担情绪调节、补偿和归属功能；小型年轻成人等待名单试验不能证明单一手机限制或通用作息处方。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/37354745/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/37354745/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37354745/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "0",
@@ -74339,6 +75462,28 @@
     },
     {
       "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：健康学生严格限时三周有短期信号但使用迅速反弹；两小时不是通用阈值，内容和目的未被区分。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/39985031/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/39985031/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39985031/",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部先导 RCT 核验：预防和替代睡前设备使用可行，但活性对照也改善且睡眠时长组间证据有限，不支持固定关机时间。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/40081281/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/40081281/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40081281/",
+      "verification_status": "verified-study"
+    },
+    {
+      "academic_episode_count": "0",
       "evidence_notes": "外部综述级核验：14项研究、194名参与者中，运动后热暴露的急性恢复有4项无效、4项有益、1项不利；慢性结果可能帮助高温跑步，但未改善骑行或VO2max。低到中等质量与高度异质不支持固定协议。证据卡：academic-study-cards.jsonl#ahokas-2025-postexercise-heat-review。",
       "id": "resource:https://pubmed.ncbi.nlm.nih.gov/41032138/",
       "kind": "academic-or-medical",
@@ -74369,6 +75514,17 @@
       "type": "resource",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41858223/",
       "verification_status": "verified-review"
+    },
+    {
+      "academic_episode_count": "0",
+      "evidence_notes": "外部 RCT 核验：自定义暂停点降低单个应用时长，但未改善问题性社交媒体使用或自我效能；小样本、短期和商业应用关联需保留。",
+      "id": "resource:https://pubmed.ncbi.nlm.nih.gov/41950504/",
+      "kind": "academic-or-medical",
+      "label": "https://pubmed.ncbi.nlm.nih.gov/41950504/",
+      "source_scope": "external-context",
+      "type": "resource",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41950504/",
+      "verification_status": "verified-study"
     },
     {
       "academic_episode_count": "0",
@@ -106757,6 +107913,35 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "照常使用对照组",
+      "doi": "10.1037/xap0000430",
+      "evidence_level": "B-Randomized experimental intervention（自报为主）",
+      "id": "study-card:brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "intervention_exposure": "短期完全停用或减少每日智能手机使用",
+      "label": "Finding the sweet spot of smartphone use: Reduction or abstinence to increase well-being and healthy lifestyle?! An experimental intervention study",
+      "outcomes": [
+        "使用强度与问题使用倾向",
+        "生活满意度",
+        "抑郁与焦虑自评",
+        "身体活动",
+        "吸烟"
+      ],
+      "population": "德国成年智能手机用户",
+      "provenance_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35389685/",
+        "https://supp.apa.org/psycarticles/supplemental/xap0000430/xap0000430_supp.html"
+      ],
+      "result_summary": "两种干预均伴随多项自报改善；减少组多数效果比完全停用组更强且在四个月内更稳定，说明改变不必以完全戒断为前提。",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "不要求数字排毒或完全戒手机；先围绕用户自己最困扰的一个应用和一个场景减摩擦，并保留工作、照护、联络和无障碍功能。",
+      "sample_size": 619,
+      "source_scope": "external-context",
+      "study_design": "三组随机干预，比较七天完全不用智能手机、每天减少一小时和照常使用",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "维持常规热水淋浴的对照组",
       "doi": "10.1371/journal.pone.0161749",
       "evidence_level": "A-Direct（3,018 名成人的四组随机冷水淋浴试验）",
@@ -107248,6 +108433,35 @@
       "verification_status": "verified-study"
     },
     {
+      "comparator": "活性对照组",
+      "doi": "10.1016/j.sleep.2025.02.043",
+      "evidence_level": "B-Pilot randomized controlled trial（活性对照）",
+      "id": "study-card:hill-2025-resto-bedtime-procrastination-pilot",
+      "intervention_exposure": "为期两周的 REST-O 在线行为改变计划，包含问题解决、目标设定以及预防或替代睡前设备使用",
+      "label": "A randomised pilot trial for bedtime procrastination: Examining the efficacy and feasibility of the Reducing Evening Screen Time online intervention (REST-O)",
+      "outcomes": [
+        "睡前电子设备使用",
+        "睡眠时长",
+        "睡前拖延",
+        "过度设备使用",
+        "睡眠质量"
+      ],
+      "population": "完成全日制学习后一年内开始全职工作的成年新人；有睡前拖延，既往接受睡眠障碍治疗者被排除",
+      "provenance_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S1389945725001121",
+        "https://pubmed.ncbi.nlm.nih.gov/40081281/"
+      ],
+      "result_summary": "两种干预组睡前设备使用下降，但活性对照组也改善；所有组平均睡前设备使用减少 23.4 分钟、睡眠增加 12.7 分钟。干预组睡眠时长增加未达到显著，结果主要支持可接受性与初步可行性。",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "睡前手机改变可以从预防触发或准备同功能替代入手，但不应承诺增加固定分钟睡眠；用户可只测试一个场景并观察自己的入睡时间与第二天功能。",
+      "sample_size": 55,
+      "source_scope": "external-context",
+      "study_design": "三组随机先导试验，比较活性对照与不同时机的预防/替代行为",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "安慰/假照射、标准治疗、基线或其他光疗，随试验而异",
       "doi": "10.1002/lsm.22791",
       "evidence_level": "A-Synthesis（31项皮肤科LED随机对照试验的系统综述）",
@@ -107299,6 +108513,34 @@
       "sample_size": 60,
       "source_scope": "episode-linked",
       "study_design": "8 周、三组随机、双盲双模拟比较试验，每两周评估一次",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "等待名单对照",
+      "doi": "10.1016/j.sleep.2023.06.001",
+      "evidence_level": "B-Randomized controlled trial（开放标签、等待名单）",
+      "id": "study-card:jeoung-2023-bedtime-procrastination-rct",
+      "intervention_exposure": "针对睡前拖延功能与维持因素的多成分行为干预",
+      "label": "A randomized controlled trial of a behavioral intervention for decreasing bedtime procrastination using a wait-list control group in a non-clinical sample of young adults",
+      "outcomes": [
+        "睡前拖延量表",
+        "睡眠日记中的拖延时长",
+        "睡眠效率",
+        "失眠与白天嗜睡自评"
+      ],
+      "population": "平均 21.33 岁、86.7% 为女性、经常睡前拖延但没有失眠或精神病理的年轻成人",
+      "provenance_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S138994572300196X",
+        "https://pubmed.ncbi.nlm.nih.gov/37354745/"
+      ],
+      "result_summary": "与等待名单相比，干预组睡前拖延量表下降 35.56%，日记记录的平均拖延减少 46.29 分钟，睡眠效率提高 5.70%；功能分析中情绪调节、补偿感以及社交/归属需要最常见。",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "先判断睡前拖延在替用户满足放松、补偿、社交或逃避哪一种需要，再用一个可撤销的环境改变和同功能替代进行实验；放下手机后仍睡不着应转失眠路径。",
+      "sample_size": 60,
+      "source_scope": "external-context",
+      "study_design": "开放标签、等待名单随机对照试验",
       "type": "study-card",
       "verification_status": "verified-study"
     },
@@ -107549,6 +108791,34 @@
       "sample_size": 20,
       "source_scope": "episode-linked",
       "study_design": "20 名健康成人先在暗环境睡一夜，第二夜随机继续处于<3 lx暗光或暴露于100 lx房间光；实验室测量睡眠、自主神经和次晨口服葡萄糖耐量",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
+      "comparator": "无该干预的对照组",
+      "doi": "10.2196/56824",
+      "evidence_level": "B-Randomized controlled trial（短期、自定义应用提醒）",
+      "id": "study-card:mertens-2026-wellspent-social-media-rct",
+      "intervention_exposure": "在用户选定的最困扰应用超过自定单次时限时，提示退出或继续",
+      "label": "Promoting Self-Regulated Social Media Use on Smartphones With a Mobile Intervention App (Wellspent): Randomized Controlled Trial",
+      "outcomes": [
+        "最困扰应用的每日时长",
+        "问题性社交媒体使用",
+        "问题性手机使用感受",
+        "自我效能"
+      ],
+      "population": "至少经常使用一个社交媒体应用的 iPhone 用户，平均 26.2 岁，67% 为女性",
+      "provenance_urls": [
+        "https://mhealth.jmir.org/2026/1/e56824",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13062480/"
+      ],
+      "result_summary": "干预组最困扰应用每日使用减少约 29 分钟，感知问题性手机使用下降；问题性社交媒体使用和自我调节自我效能没有显著改善。",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "用户自定的暂停点可把自动打开变成一次重新选择，但不能承诺解决“上瘾”或自控；提醒被反复跳过时应调整场景和替代，而不是叠加惩罚。",
+      "sample_size": 70,
+      "source_scope": "external-context",
+      "study_design": "三周随机对照试验，以用户自定时限触发全屏暂停提醒",
       "type": "study-card",
       "verification_status": "verified-study"
     },
@@ -107843,6 +109113,35 @@
       "study_design": "美国 NIH/NIDDK 面向公众的专家审阅资料，概述处方体重管理药物的适用决策、预期差异、副作用、相互作用、妊娠和儿童边界，并强调由医疗专业人员结合健康状况共同选择",
       "type": "study-card",
       "verification_status": "verified-review"
+    },
+    {
+      "comparator": "维持通常使用",
+      "doi": "10.1186/s12916-025-03944-z",
+      "evidence_level": "B-Randomized controlled trial（短期、健康学生）",
+      "id": "study-card:pieh-2025-smartphone-screen-time-reduction-rct",
+      "intervention_exposure": "连续三周把智能手机屏幕时间限制到每天不超过两小时",
+      "label": "Smartphone screen time reduction improves mental health: a randomized controlled trial",
+      "outcomes": [
+        "幸福感",
+        "抑郁症状",
+        "压力",
+        "失眠症状",
+        "问题性手机使用"
+      ],
+      "population": "平均约 22.7 岁的健康学生，基线心理症状较低",
+      "provenance_urls": [
+        "https://link.springer.com/article/10.1186/s12916-025-03944-z",
+        "https://pubmed.ncbi.nlm.nih.gov/39985031/"
+      ],
+      "result_summary": "干预后多项自报心理与睡眠指标出现小到中等组间差异，但屏幕时间在干预结束后迅速回升，随访时组间使用差异消失。",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "短期严格限时可能改变部分结果，但反弹说明用户需要可持续的场景设计；不要给所有人固定小时数，也不要忽略手机的联络、支持和工作价值。",
+      "sample_size": 111,
+      "source_scope": "external-context",
+      "study_design": "非盲法平行随机对照试验",
+      "type": "study-card",
+      "verification_status": "verified-study"
     },
     {
       "comparator": "研究内基线、非热对照或通常照护，随纳入研究而异",
@@ -108212,6 +109511,32 @@
       "verification_status": "verified-observational"
     },
     {
+      "comparator": "无通知",
+      "doi": "10.1037/xhp0000100",
+      "evidence_level": "B-Randomized laboratory experiment（注意任务）",
+      "id": "study-card:stothart-2015-phone-notification-attention-experiment",
+      "intervention_exposure": "本人手机收到来电或短信通知但不允许互动",
+      "label": "The attentional cost of receiving a cell phone notification",
+      "outcomes": [
+        "持续注意任务错误",
+        "反应表现"
+      ],
+      "population": "佛罗里达州立大学本科生；最初 212 人中 46 人因查看手机、设备关闭或数据缺失等被排除",
+      "provenance_urls": [
+        "https://supp.apa.org/psycarticles/supplemental/xhp0000100/xhp0000100_supp.html",
+        "https://pubmed.ncbi.nlm.nih.gov/26121498/"
+      ],
+      "result_summary": "即使没有查看或操作手机，来电和短信通知也会扰乱实验室持续注意任务表现。",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "在用户自己选定的睡前、工作或相处场景关闭非必要通知，可作为低风险可撤销实验；必要联络、医疗、照护和交通通知应保留。",
+      "sample_size": 166,
+      "source_scope": "external-context",
+      "study_design": "参与者在持续注意任务中随机接收电话、短信通知或不接收通知",
+      "type": "study-card",
+      "verification_status": "verified-study"
+    },
+    {
       "comparator": "不同温度、暴露方式、适应状态或非冷水条件，随所综述研究而异",
       "doi": "10.1113/EP086283",
       "evidence_level": "A-Synthesis（跨冷水危害与用途的人体生理叙述性综述）",
@@ -108267,6 +109592,33 @@
       "study_design": "VA/DoD基于系统证据审查形成的成人慢性失眠障碍与阻塞性睡眠呼吸暂停管理指南，包含筛查、失眠管理和OSA管理算法及29条建议",
       "type": "study-card",
       "verification_status": "verified-review"
+    },
+    {
+      "comparator": "动机相关控制练习或睡眠卫生控制",
+      "doi": "10.1080/08870446.2019.1652753",
+      "evidence_level": "B-Two randomized trials（学生、自报结局）",
+      "id": "study-card:valshtein-2020-mcii-bedtime-procrastination-trials",
+      "intervention_exposure": "围绕睡前目标、现实障碍和具体触发情境形成心理对照与“如果—那么”执行意图",
+      "label": "Using mental contrasting with implementation intentions to reduce bedtime procrastination: two randomised trials",
+      "outcomes": [
+        "减少睡前拖延的承诺",
+        "自报每晚睡前拖延分钟",
+        "睡前目标执行"
+      ],
+      "population": "两项本科生样本（研究一 383 人、研究二 221 人）",
+      "provenance_urls": [
+        "https://bpb-us-e1.wpmucdn.com/wp.nyu.edu/dist/c/6235/files/2020/05/Using-MCII-to-reduce-bedtime-procrastination.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/31403339/"
+      ],
+      "result_summary": "两项研究中，MCII 提高减少睡前拖延的承诺，并相对对照减少自报的平均每晚睡前拖延。",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "reviewed_at": "2026-09-03",
+      "safe_interpretation": "把一个重复触发写成用户自己选择的“如果我在某时刻又打开某应用，那么先做某个替代”，可作为低风险实验；不规定统一睡前时间或多个并行规则。",
+      "sample_size": 604,
+      "source_scope": "external-context",
+      "study_design": "两项在线随机试验，将心理对照结合执行意图与动机相关对照或睡眠卫生对照比较",
+      "type": "study-card",
+      "verification_status": "verified-study"
     },
     {
       "comparator": "同日较早给予糖片安慰剂；固定顺序而非随机平衡",
@@ -108474,6 +109826,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:04f2fb89390396d9",
+      "label": "研究不能区分内容、使用目的或其他设备迁移",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:06a81cd3b08ddd9e",
       "label": "频率与时长分类不能确定最佳或最低有效剂量",
       "review_id": "laukkanen-2015-sauna-mortality-cohort",
@@ -108487,10 +109846,24 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:06b32db88fa44369",
+      "label": "研究没有纳入临床失眠或精神疾病样本",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:0799abe948b7136b",
       "label": "复合冷热暴露后皮质醇由约13.61降至9.67 µg/ml；睾酮、DHEA-S和催乳素没有显著变化。结果不能区分桑拿、休息和冷水各自作用。",
       "review_id": "podstawski-2021-sauna-cold-endocrine",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:0852ee9ea8c28cca",
+      "label": "先导研究没有建立长期维持效果",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
       "type": "study-finding"
     },
     {
@@ -108508,6 +109881,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:096f6cb99bea4a29",
+      "label": "两种干预组睡前设备使用下降，但活性对照组也改善；所有组平均睡前设备使用减少 23.4 分钟、睡眠增加 12.7 分钟。干预组睡眠时长增加未达到显著，结果主要支持可接受性与初步可行性。",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:098bc7899f884f88",
       "label": "生活方式支持、药物与疾病管理不能被一段节目或单个机制互相替代",
@@ -108519,6 +109899,20 @@
       "id": "study-finding:09bd3e63be6a4aae",
       "label": "只有 4 项研究报告形成时长，因异质性和资料不足没有对时长进行荟萃",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:0a3fa0e0b26c40d3",
+      "label": "主要结局不是客观设备记录或长期健康结局",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:0bcfc63383737df1",
+      "label": "即使没有查看或操作手机，来电和短信通知也会扰乱实验室持续注意任务表现。",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
       "type": "study-finding"
     },
     {
@@ -108613,6 +110007,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:1a7b96a672099ac9",
+      "label": "干预后多项自报心理与睡眠指标出现小到中等组间差异，但屏幕时间在干预结束后迅速回升，随访时组间使用差异消失。",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:1abc9be9df0de5b4",
       "label": "部分研究中只有少数参与者达到预设习惯阈值；形成并非必然",
@@ -108631,6 +110032,13 @@
       "id": "study-finding:1b46e6b8b5d7c77f",
       "label": "PSQI 结果反而提示冥想组睡眠质量变差，且该组更多在睡前时段练习",
       "review_id": "basso-2019-brief-daily-meditation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:1c2339a939cd49df",
+      "label": "与等待名单相比，干预组睡前拖延量表下降 35.56%，日记记录的平均拖延减少 46.29 分钟，睡眠效率提高 5.70%；功能分析中情绪调节、补偿感以及社交/归属需要最常见。",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
       "type": "study-finding"
     },
     {
@@ -108831,6 +110239,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:34fcde5972652a6e",
+      "label": "没有比较统一屏幕时长阈值或完全戒断",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:35668f2204261eed",
       "label": "研究没有证明所有冷水暴露形式、训练目标或安排都会产生同样影响",
       "review_id": "malta-2021-regular-cold-water-training-adaptation-review",
@@ -108848,6 +110263,13 @@
       "id": "study-finding:36125fd0eeb5556a",
       "label": "纳入研究不足以独立确定早晨、行为类型或情境等因素的普遍因果作用",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:386bb44496d8d7cf",
+      "label": "没有证明所有预写计划或所有人群同效",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
       "type": "study-finding"
     },
     {
@@ -108876,6 +110298,13 @@
       "id": "study-finding:3cd044b3d4041121",
       "label": "研究没有测试红光、近红外或消费LED设备",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "result",
+      "id": "study-finding:3cf5a843c488e277",
+      "label": "两项研究中，MCII 提高减少睡前拖延的承诺，并相对对照减少自报的平均每晚睡前拖延。",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
       "type": "study-finding"
     },
     {
@@ -109068,6 +110497,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "null",
+      "id": "study-finding:5391ea6a7ecd3ba2",
+      "label": "活性对照组同样出现设备使用和睡眠改善",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "result",
       "id": "study-finding:56fe6334fcad96a1",
       "label": "部分家庭设备在特定适应证中显示可能有效且短期耐受，但证据由有限RCT和大量病例系列构成；综述强调长期疗效、安全性及更严格试验仍不足。",
@@ -109240,6 +110676,13 @@
       "id": "study-finding:6a6bbec0f1965645",
       "label": "实验 2 一周后 STTT 相对 SSST 的 61% 对 56% 差异仅为边缘结果（t(58)=1.21，d=0.31）",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:6badf8aaf5399d0a",
+      "label": "研究没有证明单独限制手机就是有效成分",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
       "type": "study-finding"
     },
     {
@@ -109481,6 +110924,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:88243da093dfde26",
+      "label": "两种干预均伴随多项自报改善；减少组多数效果比完全停用组更强且在四个月内更稳定，说明改变不必以完全戒断为前提。",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:88d1997593fdfb8b",
       "label": "组织层建议不保证个体通过一次沟通就能改变岗位、管理或经济约束",
@@ -109678,6 +111128,20 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:9e1fff3cbb5723b8",
+      "label": "没有验证临床失眠治疗效果",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9ed7cafcbba6d083",
+      "label": "没有长期维持结局",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:9eea1b526b2d06cd",
       "label": "执行功能、情景记忆及其他测量变量未见显著条件×时间差异",
       "review_id": "dempsey-2016-walking-breaks-fatigue",
@@ -109688,6 +111152,13 @@
       "id": "study-finding:9ef862e345607e77",
       "label": "不同水温浸泡均未提高血浆皮质醇，皮质醇反而有下降趋势",
       "review_id": "sramek-2000-cold-water-physiology",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:9f2c9d297e31fa03",
+      "label": "屏幕时间效果在随访时没有维持",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
       "type": "study-finding"
     },
     {
@@ -109726,6 +111197,13 @@
       "type": "study-finding"
     },
     {
+      "finding_kind": "result",
+      "id": "study-finding:a2e5a5140e9e3a31",
+      "label": "干预组最困扰应用每日使用减少约 29 分钟，感知问题性手机使用下降；问题性社交媒体使用和自我调节自我效能没有显著改善。",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "study-finding"
+    },
+    {
       "finding_kind": "null",
       "id": "study-finding:a40a7b59c2408b05",
       "label": "没有人体感染、免疫增强、临床症状或长期健康结局",
@@ -109744,6 +111222,13 @@
       "id": "study-finding:a627e68f389e8e6d",
       "label": "躯体疾病样本和仅一项精神健康样本的压力亚组未达到显著，不能据此宣布临床治疗效果",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:a719c8a0a953158a",
+      "label": "自我调节自我效能未显著改善",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
       "type": "study-finding"
     },
     {
@@ -110014,6 +111499,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:ca0ce834dac13995",
+      "label": "完全停用并未普遍优于适度减少",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:ca31cd6a601f9533",
       "label": "所测基因型对客观或主观睡眠结局未见显著主效应",
       "review_id": "stanyer-2024-caffeine-dose-timing-sleep",
@@ -110031,6 +111523,13 @@
       "id": "study-finding:cb38927fad4d7be3",
       "label": "不同 30、60、90 秒冷水时长之间没有明确剂量优势可用于推荐",
       "review_id": "buijze-2016-cold-shower-rct",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:cb57fd0bec44897b",
+      "label": "没有按具体应用功能或内容建立统一规则",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
       "type": "study-finding"
     },
     {
@@ -110210,6 +111709,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:e1c5fecb3b7cac40",
+      "label": "研究没有确定适用于个人的“甜点”时长",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:e387835f0fc9bbfe",
       "label": "约 4 项已有结果的研究未发现自动化变化或显著组间自动化差异",
       "review_id": "fritz-2020-habit-interventions-scoping-review",
@@ -110227,6 +111733,13 @@
       "id": "study-finding:e4872b0fba6ba337",
       "label": "快速呼吸研究中有少数参与者报告潮热、气短或出汗",
       "review_id": "fincham-2023-breathwork-stress-meta-analysis",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e4a142262ad42b91",
+      "label": "研究没有测量长期生产力、睡眠或心理健康",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
       "type": "study-finding"
     },
     {
@@ -110248,6 +111761,13 @@
       "id": "study-finding:e57e7f0cc8c6f291",
       "label": "摘要报告PBM与部分空腹、餐后血糖和HbA1c改善相关，但总体证据确定性为极低至低，并明确要求更严格试验和标准化方案。综述不能把小型急性健康人实验升级为可靠糖尿病治疗。",
       "review_id": "rocha-2026-pbm-glycemic-control-review",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:e66be6bfe26bd751",
+      "label": "焦虑与紊乱进食未见显著时间乘组别交互",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
       "type": "study-finding"
     },
     {
@@ -110294,6 +111814,13 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:e93ffe92dba56049",
+      "label": "预防与替代组的睡眠时长增加未达到显著",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:ec2a05de90a8bfb4",
       "label": "只靠药物、补剂、意志力或食物环境替换不能替代进食障碍评估和治疗",
       "review_id": "nice-2017-eating-disorders-recognition-treatment-guideline",
@@ -110325,6 +111852,13 @@
       "id": "study-finding:ee81cf788c2b1a56",
       "label": "约一半有足够数据的参与者未表现出可由该模型良好描述的习惯形成轨迹",
       "review_id": "lally-2010-real-world-habit-formation",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:ee9ae0c791221872",
+      "label": "没有测试现实工作、照护或紧急联络情境",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
       "type": "study-finding"
     },
     {
@@ -110469,10 +112003,30 @@
     },
     {
       "finding_kind": "null",
+      "id": "study-finding:fcf18f475ffee5a6",
+      "label": "没有证明关闭所有通知优于保留必要通知",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
+      "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
       "id": "study-finding:fdc64cc281e20972",
       "label": "综述没有证明循环叹息是急性焦虑的最佳或普遍有效工具",
       "review_id": "chin-2024-brief-state-anxiety-review",
       "type": "study-finding"
+    },
+    {
+      "finding_kind": "null",
+      "id": "study-finding:fe17a8aba5c1d65a",
+      "label": "问题性社交媒体使用未显著改善",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "study-finding"
+    },
+    {
+      "id": "study-limitation:008a702844f07bbc",
+      "label": "非盲法并依赖问卷和屏幕截图",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "type": "study-limitation"
     },
     {
       "id": "study-limitation:015ee7481943f7bf",
@@ -110667,6 +112221,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:1df7c64363f7b776",
+      "label": "MCII 是组合策略，不能拆出单一有效成分",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:1e51c611c1656912",
       "label": "总样本仅 40 人，论文未报告每组人数和人口学构成，精度与代表性有限",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
@@ -110769,6 +112329,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:2b4e85618a17a3cb",
+      "label": "单次实验室任务和本科生样本",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:2b5290a7d22aea68",
       "label": "指南面向成人临床管理，不是单晚睡不好时的自助处方",
       "review_id": "va-dod-2025-insomnia-osa-guideline",
@@ -110790,6 +112356,12 @@
       "id": "study-limitation:2de82379dc380a86",
       "label": "公众健康资料不是系统综述或个体诊断算法",
       "review_id": "niddk-2023-factors-affecting-weight-health",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:2f5fc2ca8d1fc5cb",
+      "label": "减少时长不等于底层情绪或关系需求已解决",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
       "type": "study-limitation"
     },
     {
@@ -110832,6 +112404,12 @@
       "id": "study-limitation:31ff37a16fdbd090",
       "label": "多数具体治疗建议以完成专业评估和诊断为前提",
       "review_id": "nice-2024-gad-panic-guideline",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:327dc26e1a9b2db6",
+      "label": "不能外推为所有年龄、轮班或临床睡眠问题的固定方案",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
       "type": "study-limitation"
     },
     {
@@ -110931,6 +112509,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:3c6d5eb046a7f35c",
+      "label": "一位作者隶属 Wellspent GmbH，干预为特定商业应用",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:3cfbc2f4c70e80e2",
       "label": "这是叙述性综述而非预注册系统综述或荟萃分析，没有提供完整检索策略、风险偏倚评级或合并效应量",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
@@ -110946,6 +112530,12 @@
       "id": "study-limitation:3ef5f2b5b67ee968",
       "label": "仅纳入中年芬兰男性",
       "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:3f379572dd63124f",
+      "label": "通知内容与现实重要性有限",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
       "type": "study-limitation"
     },
     {
@@ -111009,6 +112599,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:460a36245657b565",
+      "label": "不能把任务错误外推为长期功能损害",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:46857f5e90c0dcd6",
+      "label": "多项指标为自报，无法把改善归因于某一个组件",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:47b1bc3190ff3a03",
       "label": "证据截止较早，后续设备与试验可能更新结论",
       "review_id": "jagdeo-2018-led-dermatology-review",
@@ -111036,6 +112638,12 @@
       "id": "study-limitation:4901abbb9ae190bb",
       "label": "当前资料不能确定最佳温度、时长、频率或长期安全性",
       "review_id": "cain-2025-cold-water-wellbeing-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:490dc4b21ceb5252",
+      "label": "不能把两小时变成通用健康阈值",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
       "type": "study-limitation"
     },
     {
@@ -111087,6 +112695,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:50372bb8878025e8",
+      "label": "仅 70 人、三周且只纳入 iPhone 用户",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:51143d01f0026b3e",
       "label": "实验 2 仅 12 人，多项注意指标增加偶然发现风险",
       "review_id": "berman-2008-nature-directed-attention",
@@ -111102,6 +112716,12 @@
       "id": "study-limitation:513c6dbeb04c2a13",
       "label": "死亡率结果不能告诉个体温度、时长和耐受边界",
       "review_id": "laukkanen-2015-sauna-mortality-cohort",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:515fba53521cd239",
+      "label": "多项结局依赖自报和睡眠日记",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
       "type": "study-limitation"
     },
     {
@@ -111189,6 +112809,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:5718d6682d3141ee",
+      "label": "单一国家样本和自愿参与可能有选择偏差",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:57b66b3b75283694",
       "label": "只测量一周结果，没有即时终测、更长期保持、课堂成绩或跨题型迁移",
       "review_id": "karpicke-roediger-2008-repeated-retrieval",
@@ -111258,6 +112884,12 @@
       "id": "study-limitation:5e94a4a2d6cde2a5",
       "label": "品牌与批准信息以美国为主",
       "review_id": "niaaa-alcohol-medication-interactions",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:5ede43d3afd8be66",
+      "label": "基线症状低、随访脱落较多",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
       "type": "study-limitation"
     },
     {
@@ -111339,6 +112971,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:63e4c3fa0207348c",
+      "label": "样本小且仅健康学生",
+      "review_id": "pieh-2025-smartphone-screen-time-reduction-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:6444b84fc52799a0",
       "label": "短期观察不足以建立长期眼部安全",
       "review_id": "shinhmar-2021-red-light-colour-contrast",
@@ -111402,6 +113040,12 @@
       "id": "study-limitation:6a0108a382d3b63a",
       "label": "时长最长值与平均值可能来自模型外推或未完成形成者处理方式，不能用于个人倒计时",
       "review_id": "singh-2024-health-habit-formation-systematic-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:6a909d104f196082",
+      "label": "分析排除 46 人，现实依从性可能更差",
+      "review_id": "stothart-2015-phone-notification-attention-experiment",
       "type": "study-limitation"
     },
     {
@@ -111693,6 +113337,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:8e791ff6f599da9d",
+      "label": "行为与健康结局主要为自报",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:8e815451d37e5562",
       "label": "多数参与者来自单一大学课程，且中重度精神/躯体疾病、孕期、癫痫、青光眼、物质使用障碍等被排除",
       "review_id": "balban-2023-structured-respiration-rct",
@@ -111759,6 +113409,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:96d2629c09f28beb",
+      "label": "短期指令不等于自然长期使用",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:973470b70b9d256a",
+      "label": "不能证明具体减少幅度适用于所有用户",
+      "review_id": "brailovskaia-2023-smartphone-reduction-vs-abstinence",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:9829e83f4678f541",
       "label": "总样本量被一项大型冷水淋浴研究主导，多数单项研究样本小",
       "review_id": "cain-2025-cold-water-wellbeing-review",
@@ -111813,9 +113475,21 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:9cf209f71e6bb4cf",
+      "label": "仅本科生样本",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:9d426bca929e8362",
       "label": "高/中/低效用等级是作者基于广度、推广性和实施性的综合判断，不等同于确定的效果大小",
       "review_id": "dunlosky-2013-effective-learning-techniques-review",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:9dbdf55d392120c0",
+      "label": "依赖自报",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
       "type": "study-limitation"
     },
     {
@@ -112065,6 +113739,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:b8d4ccc77d2650c1",
+      "label": "开放标签并使用等待名单而非活性对照",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:b9264b38cc80dd31",
       "label": "结果不等于一般健康成人的绝对风险",
       "review_id": "kaiser-2023-sauna-injury-series",
@@ -112233,6 +113913,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:cea18bb94c83fd10",
+      "label": "样本仅 60 人且以年轻女性为主",
+      "review_id": "jeoung-2023-bedtime-procrastination-rct",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:cebbb6bcee6df80f",
       "label": "没有随机临床对照或疗效结局",
       "review_id": "baeza-moyano-2026-commercial-led-mask-spectra",
@@ -112323,6 +114009,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:deb6952afc4158de",
+      "label": "人群限于新入职成人",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e00b68c902d6a46f",
       "label": "从 96 人到 82 人有足够数据、62 人可拟合、39 人良好拟合，选择性建模限制代表性",
       "review_id": "lally-2010-real-world-habit-formation",
@@ -112395,6 +114087,12 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e6f85528eb721d7f",
+      "label": "总样本 55 人且每组很小",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:e78057991500c4f2",
       "label": "UVB有已知皮肤和眼部风险，不能把生理反应当作健康收益",
       "review_id": "skobowiat-2017-uvb-mouse-neuroimmune",
@@ -112425,6 +114123,18 @@
       "type": "study-limitation"
     },
     {
+      "id": "study-limitation:e9a9b6bde6471a7e",
+      "label": "随访仅到第三周",
+      "review_id": "hill-2025-resto-bedtime-procrastination-pilot",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:ea859bb9ef604e4f",
+      "label": "随访分别约一周和三周",
+      "review_id": "valshtein-2020-mcii-bedtime-procrastination-trials",
+      "type": "study-limitation"
+    },
+    {
       "id": "study-limitation:eb229dcc8c853604",
       "label": "参与者和研究团队无法对淋浴分组盲法，主要结局依赖自报",
       "review_id": "buijze-2016-cold-shower-rct",
@@ -112452,6 +114162,12 @@
       "id": "study-limitation:f065445200736fa5",
       "label": "仅检验最长一周保持，没有考察学期成绩、复杂问题解决、创造性迁移或长期课程结果",
       "review_id": "roediger-karpicke-2006-test-enhanced-learning",
+      "type": "study-limitation"
+    },
+    {
+      "id": "study-limitation:f06b35175cd0d8ae",
+      "label": "没有直接测量行动控制",
+      "review_id": "mertens-2026-wellspent-social-media-rct",
       "type": "study-limitation"
     },
     {
@@ -115355,20 +117071,20 @@
   ],
   "schema": "public-evidence-v2",
   "stats": {
-    "academic_resource_nodes": 1778,
-    "action_playbook_nodes": 16,
-    "action_step_nodes": 48,
+    "academic_resource_nodes": 1792,
+    "action_playbook_nodes": 17,
+    "action_step_nodes": 51,
     "bilibili_nodes": 34,
-    "claim_nodes": 46,
+    "claim_nodes": 47,
     "course_lecture_nodes": 8,
-    "edges": 9919,
+    "edges": 10056,
     "episode_nodes": 425,
-    "evidence_relation_nodes": 42,
-    "evidence_topic_nodes": 307,
-    "resource_nodes": 6062,
-    "study_card_nodes": 65,
-    "study_finding_nodes": 295,
-    "study_limitation_nodes": 360,
+    "evidence_relation_nodes": 47,
+    "evidence_topic_nodes": 331,
+    "resource_nodes": 6076,
+    "study_card_nodes": 72,
+    "study_finding_nodes": 323,
+    "study_limitation_nodes": 388,
     "top_topics": [
       {
         "count": 58,
@@ -115472,7 +117188,7 @@
       }
     ],
     "topic_nodes": 29,
-    "verified_academic_resource_nodes": 726,
+    "verified_academic_resource_nodes": 740,
     "youtube_nodes": 424
   }
 }

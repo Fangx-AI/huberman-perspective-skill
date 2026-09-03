@@ -20,7 +20,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 
 两种入口应得到相同的用户优先行为。
 
-## 十六个结果优先场景
+## 十七个结果优先场景
 
 | 用户原话 | 后台匹配剧本 | 回答必须保留的边界 |
 |---|---|---|
@@ -34,6 +34,7 @@ Use $huberman-perspective. Help me turn my current health problem into one small
 | `我总点外卖、吃零食，但不想算卡路里。` | `improve-food-environment-first` | 不要求 skip meals，不把所有加工食品道德化，不替代临床营养照护 |
 | `我白天一直忍着不吃，晚上回家就停不下来，吃到撑。` | `support-weight-and-appetite-without-restrictive-protocols` | 先分普通追加进食、失控进食、快速/原因不明变化和药物/疾病风险；不加码节食，不羞辱用户 |
 | `我想少喝酒但不想完全戒；停一天又会手抖出汗。` | `reduce-alcohol-use-with-withdrawal-and-overdose-safety` | 尊重减量目标；戒断信号不独自骤停，药物混用说明呼吸抑制，叫不醒或严重戒断立即急救 |
+| `我明明困了却一直刷短视频到两三点，但不能关掉值班电话。` | `reduce-unwanted-phone-use-and-bedtime-delay` | 只改一个非必要应用和时刻，保留必要联络；放下手机仍睡不着时转失眠支持，不发统一限时或“多巴胺排毒” |
 | `补剂和协议太多，怎么判断一个值不值得试？` | `decide-whether-to-try-one-health-protocol` | 代理指标不等于个人疗效；药物、激素、肽类和相互作用交给医生或药师 |
 | `冷水澡提高多巴胺和免疫，我要不要每天冰浴？` | `decide-whether-and-when-to-use-cold-exposure` | 区分感受、急性恢复和长期适应；不发明剂量，不做开放水域或屏息实验 |
 | `红光能改善线粒体、血糖、视力和皮肤，我该买面板或面罩吗？` | `decide-whether-a-red-light-device-is-worth-buying` | 泛健康目标默认可以不买；先匹配适应证和设备，不直照眼睛或编造剂量 |
@@ -87,6 +88,14 @@ python scripts/query_action_playbooks.py "我久坐很久，运动协议太多�
 
 好的回答不会贴标签或发统一安全酒量，只帮用户改变一个反复发生的场景，并先确认减停后是否手抖、出汗、心慌、恶心、幻觉或抽搐。可能戒断时不要求独自在家骤停；靠酒入睡时主动核对安眠药、苯二氮卓和阿片，并说明混用可抑制呼吸、导致昏迷或死亡；叫不醒、呼吸异常、抽搐、意识变化或反复呕吐时立即联系当地急救。
 
+## 刷手机停不下来：先拿回一个生活结果
+
+```text
+我一到睡前就刷短视频，明明困了还是停不下来，但手机还要接值班电话。
+```
+
+好的回答不会要求戒整部手机，也不会把屏幕时长变成道德分数。它只处理一个最困扰的应用和时刻，保留值班、照护、医疗、无障碍与紧急联络；增加一个用户自己选择的暂停和满足同一需要的替代。复盘看是否少一次自动重开，以及睡眠、工作、相处或休息是否真的改善。手机放下后仍想睡却睡不着时转失眠支持；驾驶、赌博欠债、网络剥削、自伤风险和明显功能受损先走现实安全或专业支持。
+
 ## 证据模式是第二层
 
 ```text
@@ -110,6 +119,7 @@ python scripts/query_evidence.py "失眠 CBT-I 刺激控制 睡眠卫生"
 python scripts/query_evidence.py "长期压力 工作负荷 反复担忧 功能受损"
 python scripts/query_evidence.py "减肥 体重管理 暴食 GLP-1 司美格鲁肽"
 python scripts/query_evidence.py "想少喝酒 停酒手抖 酒后叫不醒 酒和安眠药 怀孕喝酒"
+python scripts/query_evidence.py "睡前拖延 手机"
 ```
 
 ## 医疗边界

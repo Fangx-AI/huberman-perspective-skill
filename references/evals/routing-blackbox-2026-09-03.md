@@ -4,11 +4,11 @@
 
 Users should not need to know a playbook name or use Huberman vocabulary. The routing layer must understand ordinary Chinese, and it must prefer no match over confidently loading an unrelated playbook.
 
-The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 99 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, weight/appetite, alcohol reduction/safety, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep/alcohol language, externally interrupted sleep, eating-disorder signals, withdrawal, overdose and medication risks.
+The durable corpus is [routing-user-language-v1.jsonl](routing-user-language-v1.jsonl). It now contains 114 prompts across sleep, daytime energy, acute and ongoing stress, worry, work overload, focus, learning, habits, exercise, food, weight/appetite, alcohol reduction/safety, phone use/bedtime delay, protocol purchases and safety boundaries, including deliberate no-match cases, negated sleep/alcohol/phone language, externally interrupted sleep, eating-disorder signals, withdrawal, overdose, essential-contact, gambling and driving risks.
 
 ## Deterministic result
 
-The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 99/99 after adding daytime-energy, insomnia-language, ongoing-distress, weight/appetite and alcohol regressions:
+The original 33-case subset was run against the released `v0.17.0` router and its first corrected router. The maintained corpus now passes 114/114 after adding daytime-energy, insomnia-language, ongoing-distress, weight/appetite, alcohol and phone-use regressions:
 
 | Router | Correct | Observed accuracy on this corpus |
 |---|---:|---:|
@@ -18,6 +18,7 @@ The original 33-case subset was run against the released `v0.17.0` router and it
 | Current router, with ongoing-stress and negation cases | 66/66 | 100.0% |
 | Current router, with weight/appetite and medication safety cases | 84/84 | 100.0% |
 | Current router, with alcohol reduction, withdrawal, medication, pregnancy and overdose cases | 99/99 | 100.0% |
+| Current router, with phone use, bedtime delay, essential access and safety controls | 114/114 | 100.0% |
 
 This is regression-corpus accuracy, not a population estimate. The corpus was created after observing failures, so it protects known user language but cannot prove performance on unseen phrasing.
 

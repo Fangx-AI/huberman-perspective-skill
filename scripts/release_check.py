@@ -217,7 +217,7 @@ def check() -> list[str]:
                     errors.append(f"claim_text leaked at claim-index line {line_number}")
                 if not record.get("source_urls") or not record.get("youtube_ids"):
                     errors.append(f"claim locator incomplete at line {line_number}")
-        if claim_count != 46:
+        if claim_count != 47:
             errors.append(f"unexpected public claim count: {claim_count}")
 
     action_playbooks: list[dict] = []
@@ -228,7 +228,7 @@ def check() -> list[str]:
             validate_playbooks(action_playbooks, study_cards, claims)
         except (OSError, ValueError) as exc:
             errors.append(f"invalid action playbook catalog: {exc}")
-        if len(action_playbooks) != 16:
+        if len(action_playbooks) != 17:
             errors.append(f"unexpected action playbook count: {len(action_playbooks)}")
 
     graph_path = ROOT / "references" / "catalog" / "knowledge-graph.json"

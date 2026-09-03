@@ -138,6 +138,22 @@ COMMON_ROUTING_ALIASES = {
         "alcohol withdrawal",
         "alcohol overdose",
     ),
+    "reduce-unwanted-phone-use-and-bedtime-delay": (
+        "刷短视频停不下来",
+        "一拿手机就忘了时间",
+        "想少玩手机",
+        "手机上瘾",
+        "报复性熬夜",
+        "明明困了也不睡",
+        "睡前一直刷手机",
+        "总是刷到凌晨",
+        "社交媒体戒不掉",
+        "应用限时总被跳过",
+        "玩游戏停不下来",
+        "doomscrolling",
+        "reduce screen time",
+        "problematic smartphone use",
+    ),
     "manage-an-acute-stress-spike-without-overclaiming-breathwork": (
         "压力大到无法工作",
         "先让我缓下来",
@@ -188,6 +204,7 @@ INSOMNIA_PLAYBOOK = "support-trouble-falling-or-staying-asleep"
 ONGOING_STRESS_PLAYBOOK = "support-ongoing-stress-worry-and-work-overload"
 WEIGHT_PLAYBOOK = "support-weight-and-appetite-without-restrictive-protocols"
 ALCOHOL_PLAYBOOK = "reduce-alcohol-use-with-withdrawal-and-overdose-safety"
+DIGITAL_PLAYBOOK = "reduce-unwanted-phone-use-and-bedtime-delay"
 ACUTE_STRESS_PLAYBOOK = "manage-an-acute-stress-spike-without-overclaiming-breathwork"
 PROTOCOL_PLAYBOOK = "decide-whether-to-try-one-health-protocol"
 SLEEP_PLAYBOOKS = {INSOMNIA_PLAYBOOK, "stabilize-sleep-wake-timing"}
@@ -217,6 +234,26 @@ ALCOHOL_HIGH_RISK_TERMS = (
     "手抖", "出汗", "心慌", "抽搐", "癫痫", "幻觉", "看到不存在", "意识混乱", "叫不醒", "呼吸慢",
     "呼吸异常", "呼吸不规则", "嘴唇发青", "反复呕吐", "吐了几次", "安眠药", "阿普唑仑", "苯二氮卓",
     "阿片", "强效止痛药", "怀孕", "孕期", "备孕", "未成年", "开车", "驾驶",
+)
+DIGITAL_CONTEXT_TERMS = (
+    "手机", "短视频", "社交媒体", "朋友圈", "微博", "小红书", "抖音", "快手", "b站", "游戏", "刷屏",
+    "screen time", "smartphone", "social media", "doomscrolling",
+)
+DIGITAL_PROBLEM_TERMS = (
+    "停不下来", "忘了时间", "少玩", "戒不掉", "上瘾", "报复性熬夜", "明明困了也不睡", "刷到凌晨",
+    "一直刷", "总是刷", "控制不住", "忍不住", "应用限时", "减少使用", "少刷", "不想刷", "沉迷",
+    "problematic", "doomscrolling", "reduce screen time",
+)
+DIGITAL_SLEEP_DELAY_TERMS = (
+    "报复性熬夜", "明明困了也不睡", "明明困了却不睡", "睡前一直刷", "刷到凌晨", "刷到两三点",
+    "停不下来", "忘了时间",
+)
+DIGITAL_STANDALONE_BEDTIME_TERMS = (
+    "报复性熬夜", "明明困了也不睡", "明明困了却不睡",
+)
+PHONE_REMOVED_INSOMNIA_PATTERNS = (
+    "放下手机还是睡不着", "放下手机后还是睡不着", "关掉手机还是睡不着", "关了手机还是睡不着",
+    "不刷手机也睡不着", "手机放远仍然睡不着", "因为睡不着才刷手机", "睡不着才刷手机", "本来就睡不着",
 )
 EMERGENCY_TERMS = (
     "胸痛", "胸口发紧", "喘不上气", "呼吸不顺", "严重气促", "晕厥", "意识混乱", "单侧无力",
@@ -264,6 +301,15 @@ def searchable_text(playbook: dict) -> str:
 
 def blocked_by_context(playbook_id: str, normalized: str) -> bool:
     if playbook_id in SLEEP_PLAYBOOKS:
+        if (
+            (
+                any(term in normalized for term in DIGITAL_CONTEXT_TERMS)
+                or any(term in normalized for term in DIGITAL_STANDALONE_BEDTIME_TERMS)
+            )
+            and any(term in normalized for term in DIGITAL_SLEEP_DELAY_TERMS)
+            and not any(term in normalized for term in PHONE_REMOVED_INSOMNIA_PATTERNS)
+        ):
+            return True
         has_sleep_context = any(term in normalized for term in SLEEP_CONTEXT_TERMS)
         if not has_sleep_context:
             return True
@@ -280,6 +326,13 @@ def blocked_by_context(playbook_id: str, normalized: str) -> bool:
         return not any(term in normalized for term in WEIGHT_CONTEXT_TERMS)
     if playbook_id == ALCOHOL_PLAYBOOK:
         return not contains_unnegated_term(normalized, ALCOHOL_CONTEXT_TERMS)
+    if playbook_id == DIGITAL_PLAYBOOK:
+        has_context = any(term in normalized for term in DIGITAL_CONTEXT_TERMS) or any(
+            term in normalized for term in DIGITAL_STANDALONE_BEDTIME_TERMS
+        )
+        has_problem = any(term in normalized for term in DIGITAL_PROBLEM_TERMS)
+        is_phone_removed_insomnia = any(term in normalized for term in PHONE_REMOVED_INSOMNIA_PATTERNS)
+        return not (has_context and has_problem) or is_phone_removed_insomnia
     return False
 
 
@@ -305,6 +358,11 @@ def context_bonus(playbook_id: str, normalized: str) -> int:
         return 2400
     if playbook_id == ALCOHOL_PLAYBOOK and has_alcohol_context:
         return 2600
+    if playbook_id == DIGITAL_PLAYBOOK and (
+        any(term in normalized for term in DIGITAL_CONTEXT_TERMS)
+        or any(term in normalized for term in DIGITAL_STANDALONE_BEDTIME_TERMS)
+    ) and any(term in normalized for term in DIGITAL_PROBLEM_TERMS):
+        return 2800
     if playbook_id == INSOMNIA_PLAYBOOK and any(term in normalized for term in SELF_SLEEP_DIFFICULTY_TERMS):
         return 30
     return 0

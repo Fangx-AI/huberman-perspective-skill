@@ -40,6 +40,9 @@ REQUIRED_FILES = (
     "references/evals/user-value-blackbox-2026-09-03.md",
     "references/evals/insomnia-user-value-blackbox-2026-09-03.md",
     "references/evals/ongoing-stress-user-value-blackbox-2026-09-03.md",
+    "references/evals/weight-appetite-user-value-blackbox-2026-09-03.md",
+    "references/evals/alcohol-user-value-blackbox-2026-09-03.md",
+    "references/evals/phone-use-user-value-blackbox-2026-09-03.md",
     "references/evals/routing-user-language-v1.jsonl",
     "references/evals/routing-blackbox-2026-09-03.md",
     "references/huberman-operating-model.md",
@@ -76,6 +79,9 @@ PLAYBOOK_IDS = (
     "start-exercise-without-protocol-overload",
     "support-trouble-falling-or-staying-asleep",
     "support-ongoing-stress-worry-and-work-overload",
+    "support-weight-and-appetite-without-restrictive-protocols",
+    "reduce-alcohol-use-with-withdrawal-and-overdose-safety",
+    "reduce-unwanted-phone-use-and-bedtime-delay",
 )
 
 
